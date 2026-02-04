@@ -60,7 +60,18 @@
         <!-- Account Switcher -->
         <div class="p-4 border-b border-zinc-800/50">
             <label class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2 block">Active Account</label>
-            <div id="account-switcher"></div>
+            <div id="account-switcher">
+                <!-- Loading fallback -->
+                <div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-surface-800 border border-zinc-700/50">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white font-bold text-sm animate-pulse">
+                        K
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-medium text-sm text-zinc-100">Loading...</p>
+                        <p class="text-xs text-zinc-500">Initializing</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Navigation -->
