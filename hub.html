@@ -31,6 +31,8 @@
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -12px rgba(0,0,0,0.4); }
     </style>
+    <!-- Account Switcher Component -->
+    <script src="/js/account-switcher.js"></script>
 </head>
 <body class="bg-surface-950 text-zinc-100 min-h-screen flex">
     
@@ -58,13 +60,7 @@
         <!-- Account Switcher -->
         <div class="p-4 border-b border-zinc-800/50">
             <label class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2 block">Active Account</label>
-            <div class="relative">
-                <select id="accountSwitcher" class="w-full appearance-none bg-surface-800 border border-zinc-700/50 rounded-xl px-4 py-3 pr-10 text-sm font-medium cursor-pointer hover:border-zinc-600 focus:outline-none focus:border-brand-500/50 transition-all">
-                    <option value="kona-coffee-donut" selected>☕ Kona Coffee Donut</option>
-                    <option value="add-new" class="text-zinc-400">+ Add New Account...</option>
-                </select>
-                <i class="fas fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-zinc-500 text-xs pointer-events-none"></i>
-            </div>
+            <div id="account-switcher"></div>
         </div>
 
         <!-- Navigation -->

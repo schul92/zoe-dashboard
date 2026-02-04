@@ -1,0 +1,131 @@
+{
+  "id": "kona-coffee-2142",
+  "name": "Kona Coffee Donut",
+  "slug": "kona",
+  "logo": "/icons/kona-logo.svg",
+  "theme": {
+    "primary": "#6B4423",
+    "secondary": "#F5E6D3",
+    "accent": "#FF6B35"
+  },
+  "business": {
+    "type": "restaurant",
+    "industry": "Food & Beverage",
+    "address": "2142 Kalākaua Ave, Honolulu, HI 96815",
+    "phone": "+1-808-XXX-XXXX",
+    "email": "info@konacoffeedonut.com",
+    "website": "https://konacoffeedonut.com",
+    "timezone": "Pacific/Honolulu",
+    "grandOpening": "2026-02-25"
+  },
+  "integrations": {
+    "seo": {
+      "enabled": true,
+      "gsc": {
+        "siteUrl": "sc-domain:konacoffeedonut.com",
+        "dashboardUrl": "http://ip-172-31-15-35.tail383b59.ts.net:8088/seo/"
+      },
+      "ga4": {
+        "propertyId": "GA4_PROPERTY_ID",
+        "measurementId": "G-XXXXXXXXXX"
+      }
+    },
+    "social": {
+      "enabled": true,
+      "platforms": {
+        "twitter": {
+          "enabled": true,
+          "handle": "@konacoffeedonut",
+          "accountId": "697c45a393a320156c422f99",
+          "api": "late"
+        },
+        "facebook": {
+          "enabled": true,
+          "pageId": "konacoffeedonut",
+          "accountId": "697c406293a320156c422f1c",
+          "api": "late"
+        },
+        "googlebusiness": {
+          "enabled": true,
+          "locationId": "10744436116498197834",
+          "accountId": "697c40d793a320156c422f21",
+          "api": "late"
+        },
+        "threads": {
+          "enabled": true,
+          "handle": "@konacoffeedonut",
+          "accountId": "697c459993a320156c422f8e",
+          "api": "late"
+        },
+        "bluesky": {
+          "enabled": true,
+          "handle": "konacoffeedonut.bsky.social",
+          "did": "did:plc:rflsdzr6cjiarnwjgmrhqou5",
+          "api": "direct"
+        }
+      },
+      "posting": {
+        "schedule": "daily",
+        "time": "12:00 EST",
+        "approvalRequired": true,
+        "contentGuidelines": {
+          "mustInclude": [
+            "Grand opening February 25, 2026",
+            "Website URL: konacoffeedonut.com",
+            "Full address",
+            "Platform-optimized content"
+          ],
+          "avoid": [
+            "Claiming 100% Kona coffee",
+            "Same text across platforms",
+            "Missing opening date"
+          ]
+        }
+      }
+    },
+    "aws": {
+      "enabled": true,
+      "region": "us-east-2",
+      "resources": {
+        "ec2": ["i-0f7cfdb0cd410da98"],
+        "lambda": 5,
+        "eventbridge": 4,
+        "secrets": 12
+      }
+    }
+  },
+  "automation": {
+    "morningReview": {
+      "enabled": true,
+      "schedule": "0 12 * * *",
+      "timezone": "America/New_York",
+      "model": "opus",
+      "tasks": [
+        "SEO analysis (GSC + GA4)",
+        "Trend research (Bird CLI + Brave)",
+        "Competitor analysis",
+        "Platform SEO/GEO research",
+        "Content generation (5 platforms)",
+        "Image selection (Pexels)"
+      ]
+    },
+    "dashboardDeploy": {
+      "enabled": true,
+      "schedule": "*/5 * * * *",
+      "tasks": [
+        "Generate diagrams",
+        "Sync files to GitHub",
+        "Deploy to GitHub Pages"
+      ]
+    }
+  },
+  "dashboardSettings": {
+    "modules": {
+      "seo": true,
+      "social": true,
+      "aws": true,
+      "workflow": true
+    },
+    "defaultView": "hub"
+  }
+}

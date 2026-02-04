@@ -1,0 +1,60 @@
+{
+  "id": "demo-client",
+  "name": "Demo Client",
+  "slug": "demo",
+  "logo": "/icons/demo-logo.svg",
+  "theme": {
+    "primary": "#3B82F6",
+    "secondary": "#EFF6FF",
+    "accent": "#8B5CF6"
+  },
+  "business": {
+    "type": "retail",
+    "industry": "E-Commerce",
+    "address": "123 Demo Street, Los Angeles, CA 90001",
+    "phone": "+1-555-DEMO-123",
+    "email": "demo@example.com",
+    "website": "https://demo-client.example.com",
+    "timezone": "America/Los_Angeles"
+  },
+  "integrations": {
+    "seo": {
+      "enabled": true,
+      "gsc": {
+        "siteUrl": "sc-domain:demo-client.example.com",
+        "dashboardUrl": null
+      },
+      "ga4": {
+        "propertyId": "DEMO_GA4_PROPERTY",
+        "measurementId": "G-DEMO12345"
+      }
+    },
+    "social": {
+      "enabled": false,
+      "platforms": {}
+    },
+    "aws": {
+      "enabled": false,
+      "region": "us-west-2",
+      "resources": {}
+    }
+  },
+  "automation": {
+    "morningReview": {
+      "enabled": false
+    },
+    "dashboardDeploy": {
+      "enabled": false
+    }
+  },
+  "dashboardSettings": {
+    "modules": {
+      "seo": true,
+      "social": false,
+      "aws": false,
+      "workflow": false
+    },
+    "defaultView": "seo"
+  },
+  "notes": "This is a demo client for testing multi-account functionality."
+}
