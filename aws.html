@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOE STUDIO | AWS Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        aws: { 500: '#FF9900', 600: '#EC7211' },
+                        surface: { 800: '#27272a', 900: '#18181b', 950: '#09090b' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.06); }
+        .glass-hover:hover { background: rgba(255,255,255,0.06); }
+    </style>
+</head>
+<body class="bg-surface-950 text-zinc-100 min-h-screen">
+    
+    <!-- Ambient Background -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-aws-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-80 h-80 bg-aws-500/5 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="relative border-b border-zinc-800/50 sticky top-0 z-50 bg-surface-950/80 backdrop-blur-xl">
+        <div class="max-w-[1400px] mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-5">
+                    <a href="/hub.html" class="flex items-center gap-2 px-3 py-2 -ml-3 rounded-lg hover:bg-zinc-800/50 transition-colors text-zinc-400 hover:text-zinc-200">
+                        <i class="fas fa-arrow-left text-sm"></i>
+                        <span class="text-sm font-medium hidden sm:inline">Hub</span>
+                    </a>
+                    <div class="w-px h-8 bg-zinc-800 hidden sm:block"></div>
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-aws-500 to-aws-600 flex items-center justify-center shadow-lg shadow-aws-500/20">
+                        <i class="fab fa-aws text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold tracking-tight">AWS Infrastructure</h1>
+                        <p class="text-sm text-zinc-500">Region: us-east-2 (Ohio)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 max-w-[1400px] mx-auto px-6 py-8">
+        
+        <!-- Live Architecture Diagram -->
+        <section class="glass rounded-2xl p-6 mb-8">
+            <h2 class="font-bold mb-6 flex items-center gap-2">
+                <i class="fas fa-project-diagram text-aws-500"></i>
+                Live Architecture Diagram
+                <span class="ml-2 px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs animate-pulse">● Live</span>
+            </h2>
+            <div class="bg-surface-900 rounded-xl p-6 overflow-x-auto">
+                <div class="mermaid min-w-[800px]" id="archDiagram">
+flowchart LR
+    subgraph Triggers["⏰ EventBridge Triggers"]
+        EB1["ZoeIdleCheck<br/>rate(1 min)"]
+        EB2["ZoeMorningWake<br/>11:55 AM EST"]
+        EB3["ZoeSEO-Daily<br/>6:00 AM UTC"]
+        EB4["ZoeUniversal-Daily<br/>6:00 PM UTC"]
+    end
+
+    subgraph Lambda["⚡ Lambda Functions"]
+        L1["ZoeEC2Control"]
+        L2["ZoeMorningWake"]
+        L3["ZoeSEOMonitor"]
+        L4["ZoeUniversalPoster"]
+        L5["EC2WakeTelegram"]
+    end
+
+    subgraph Compute["💻 Compute"]
+        EC2["EC2: zoe<br/>c7i-flex.large"]
+    end
+
+    subgraph Secrets["🔐 Secrets Manager"]
+        S1["kona/api-keys"]
+        S2["google/oauth2-kona"]
+        S3["zoe/telegram"]
+    end
+
+    subgraph External["🌐 External Services"]
+        TG["Telegram Bot"]
+        GSC["Google Search Console"]
+        GA4["Google Analytics"]
+        SM["Social Media<br/>𝕏 📘 📍 🧵 🦋"]
+        SES["SES Email"]
+    end
+
+    EB1 --> L1
+    EB2 --> L2
+    EB3 --> L3
+    EB4 --> L4
+    
+    L1 --> EC2
+    L2 --> EC2
+    L5 --> TG
+    
+    L3 --> S2
+    L3 --> GSC
+    L3 --> GA4
+    L3 --> SES
+    
+    L4 --> S1
+    L4 --> SM
+
+    EC2 --> TG
+
+    classDef trigger fill:#9333ea,stroke:#a855f7,color:#fff
+    classDef lambda fill:#f97316,stroke:#fb923c,color:#fff
+    classDef compute fill:#3b82f6,stroke:#60a5fa,color:#fff
+    classDef secrets fill:#ef4444,stroke:#f87171,color:#fff
+    classDef external fill:#10b981,stroke:#34d399,color:#fff
+
+    class EB1,EB2,EB3,EB4 trigger
+    class L1,L2,L3,L4,L5 lambda
+    class EC2 compute
+    class S1,S2,S3 secrets
+    class TG,GSC,GA4,SM,SES external
+                </div>
+            </div>
+            <div class="mt-4 flex flex-wrap gap-4 justify-center text-xs">
+                <span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-purple-500"></span> EventBridge</span>
+                <span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-orange-500"></span> Lambda</span>
+                <span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-blue-500"></span> EC2</span>
+                <span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-red-500"></span> Secrets</span>
+                <span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-emerald-500"></span> External</span>
+            </div>
+        </section>
+
+        <!-- Stats Grid -->
+        <section class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+            <div class="glass rounded-2xl p-5 text-center glass-hover">
+                <div class="w-12 h-12 rounded-xl bg-orange-500/20 flex items-center justify-center mx-auto mb-3">
+                    <i class="fas fa-bolt text-aws-500 text-xl"></i>
+                </div>
+                <p class="text-3xl font-bold text-aws-500">5</p>
+                <p class="text-sm text-zinc-500 mt-1">Lambda Functions</p>
+            </div>
+            <div class="glass rounded-2xl p-5 text-center glass-hover">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mx-auto mb-3">
+                    <i class="fas fa-calendar-check text-purple-400 text-xl"></i>
+                </div>
+                <p class="text-3xl font-bold text-purple-400">4</p>
+                <p class="text-sm text-zinc-500 mt-1">EventBridge Rules</p>
+            </div>
+            <div class="glass rounded-2xl p-5 text-center glass-hover">
+                <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center mx-auto mb-3">
+                    <i class="fas fa-server text-blue-400 text-xl"></i>
+                </div>
+                <p class="text-3xl font-bold text-blue-400">1</p>
+                <p class="text-sm text-zinc-500 mt-1">EC2 Instance</p>
+            </div>
+            <div class="glass rounded-2xl p-5 text-center glass-hover">
+                <div class="w-12 h-12 rounded-xl bg-red-500/20 flex items-center justify-center mx-auto mb-3">
+                    <i class="fas fa-key text-red-400 text-xl"></i>
+                </div>
+                <p class="text-3xl font-bold text-red-400">8</p>
+                <p class="text-sm text-zinc-500 mt-1">Secrets</p>
+            </div>
+            <div class="glass rounded-2xl p-5 text-center glass-hover">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center mx-auto mb-3">
+                    <i class="fas fa-envelope text-emerald-400 text-xl"></i>
+                </div>
+                <p class="text-3xl font-bold text-emerald-400">1</p>
+                <p class="text-sm text-zinc-500 mt-1">SES Identity</p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <div class="grid lg:grid-cols-2 gap-6 mb-8">
+            
+            <!-- Lambda Functions -->
+            <div class="glass rounded-2xl p-6">
+                <h3 class="font-bold mb-4 flex items-center gap-2">
+                    <i class="fas fa-bolt text-aws-500"></i>
+                    Lambda Functions
+                </h3>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-surface-800/50">
+                        <div>
+                            <p class="font-medium">ZoeUniversalPoster</p>
+                            <p class="text-xs text-zinc-500">Social media posting to 5 platforms</p>
+                        </div>
+                        <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs">Active</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-surface-800/50">
+                        <div>
+                            <p class="font-medium">ZoeSEOMonitor</p>
+                            <p class="text-xs text-zinc-500">GSC + GA4 data collection & alerts</p>
+                        </div>
+                        <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs">Active</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-surface-800/50">
+                        <div>
+                            <p class="font-medium">ZoeEC2Control</p>
+                            <p class="text-xs text-zinc-500">Telegram /wake /sleep commands</p>
+                        </div>
+                        <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs">Active</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-surface-800/50">
+                        <div>
+                            <p class="font-medium">ZoeMorningWake</p>
+                            <p class="text-xs text-zinc-500">Auto-start EC2 for morning SEO task</p>
+                        </div>
+                        <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs">Active</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3 rounded-xl bg-surface-800/50">
+                        <div>
+                            <p class="font-medium">EC2WakeTelegram</p>
+                            <p class="text-xs text-zinc-500">Telegram bot webhook handler</p>
+                        </div>
+                        <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs">Active</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EventBridge Rules -->
+            <div class="glass rounded-2xl p-6">
+                <h3 class="font-bold mb-4 flex items-center gap-2">
+                    <i class="fas fa-calendar-check text-purple-400"></i>
+                    EventBridge Rules
+                </h3>
+                <div class="space-y-3">
+                    <div class="p-3 rounded-xl bg-surface-800/50">
+                        <div class="flex items-center justify-between mb-1">
+                            <p class="font-medium">ZoeIdleCheck</p>
+                            <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs">Enabled</span>
+                        </div>
+                        <p class="text-xs text-zinc-500">rate(1 minute) → Checks EC2 idle status</p>
+                    </div>
+                    <div class="p-3 rounded-xl bg-surface-800/50">
+                        <div class="flex items-center justify-between mb-1">
+                            <p class="font-medium">ZoeMorningWake</p>
+                            <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs">Enabled</span>
+                        </div>
+                        <p class="text-xs text-zinc-500">cron(55 16 * * ? *) → 11:55 AM EST → Wake EC2</p>
+                    </div>
+                    <div class="p-3 rounded-xl bg-surface-800/50">
+                        <div class="flex items-center justify-between mb-1">
+                            <p class="font-medium">ZoeSEO-KonaCoffee-Daily</p>
+                            <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs">Enabled</span>
+                        </div>
+                        <p class="text-xs text-zinc-500">cron(0 6 * * ? *) → 6:00 AM UTC → SEO Report</p>
+                    </div>
+                    <div class="p-3 rounded-xl bg-surface-800/50">
+                        <div class="flex items-center justify-between mb-1">
+                            <p class="font-medium">ZoeUniversal-KonaCoffee-Daily</p>
+                            <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 text-xs">Enabled</span>
+                        </div>
+                        <p class="text-xs text-zinc-500">cron(0 18 * * ? *) → 6:00 PM UTC → Social Posts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EC2 & Secrets -->
+        <div class="grid lg:grid-cols-2 gap-6">
+            
+            <!-- EC2 Instance -->
+            <div class="glass rounded-2xl p-6">
+                <h3 class="font-bold mb-4 flex items-center gap-2">
+                    <i class="fas fa-server text-blue-400"></i>
+                    EC2 Instance
+                </h3>
+                <div class="p-4 rounded-xl bg-surface-800/50">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center">
+                            <i class="fas fa-server text-blue-400 text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold">zoe</p>
+                            <p class="text-xs text-zinc-500">i-0f7cfdb0cd410da98</p>
+                        </div>
+                        <span class="ml-auto px-2 py-1 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs font-medium">Running</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p class="text-zinc-500">Type</p>
+                            <p class="font-medium">c7i-flex.large</p>
+                        </div>
+                        <div>
+                            <p class="text-zinc-500">Cost</p>
+                            <p class="font-medium">~$0.07/hr</p>
+                        </div>
+                        <div>
+                            <p class="text-zinc-500">Purpose</p>
+                            <p class="font-medium">Zoe AI Agent</p>
+                        </div>
+                        <div>
+                            <p class="text-zinc-500">Auto-Shutdown</p>
+                            <p class="font-medium text-emerald-400">Enabled</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secrets Manager -->
+            <div class="glass rounded-2xl p-6">
+                <h3 class="font-bold mb-4 flex items-center gap-2">
+                    <i class="fas fa-key text-red-400"></i>
+                    Secrets Manager (8)
+                </h3>
+                <div class="grid grid-cols-2 gap-2">
+                    <div class="flex items-center gap-2 p-2 rounded-lg bg-surface-800/50 text-sm">
+                        <i class="fas fa-lock text-zinc-500 text-xs"></i>
+                        <span class="truncate">kona/api-keys</span>
+                    </div>
+                    <div class="flex items-center gap-2 p-2 rounded-lg bg-surface-800/50 text-sm">
+                        <i class="fas fa-lock text-zinc-500 text-xs"></i>
+                        <span class="truncate">google/oauth2-kona</span>
+                    </div>
+                    <div class="flex items-center gap-2 p-2 rounded-lg bg-surface-800/50 text-sm">
+                        <i class="fas fa-lock text-zinc-500 text-xs"></i>
+                        <span class="truncate">zoe/telegram</span>
+                    </div>
+                    <div class="flex items-center gap-2 p-2 rounded-lg bg-surface-800/50 text-sm">
+                        <i class="fas fa-lock text-zinc-500 text-xs"></i>
+                        <span class="truncate">zoe/github</span>
+                    </div>
+                    <div class="flex items-center gap-2 p-2 rounded-lg bg-surface-800/50 text-sm">
+                        <i class="fas fa-lock text-zinc-500 text-xs"></i>
+                        <span class="truncate">vercel/token</span>
+                    </div>
+                    <div class="flex items-center gap-2 p-2 rounded-lg bg-surface-800/50 text-sm">
+                        <i class="fas fa-lock text-zinc-500 text-xs"></i>
+                        <span class="truncate">BraveSearchAPI</span>
+                    </div>
+                    <div class="flex items-center gap-2 p-2 rounded-lg bg-surface-800/50 text-sm">
+                        <i class="fas fa-lock text-zinc-500 text-xs"></i>
+                        <span class="truncate">seo-data/kona-coffee</span>
+                    </div>
+                    <div class="flex items-center gap-2 p-2 rounded-lg bg-surface-800/50 text-sm">
+                        <i class="fas fa-lock text-zinc-500 text-xs"></i>
+                        <span class="truncate">ahrefs-api-key</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SES -->
+        <section class="mt-6 glass rounded-2xl p-6">
+            <h3 class="font-bold mb-4 flex items-center gap-2">
+                <i class="fas fa-envelope text-emerald-400"></i>
+                Simple Email Service (SES)
+            </h3>
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center">
+                    <i class="fas fa-check text-emerald-400 text-xl"></i>
+                </div>
+                <div>
+                    <p class="font-medium">info@konacoffeedonut.com</p>
+                    <p class="text-xs text-zinc-500">Verified • Used for SEO reports and alerts</p>
+                </div>
+                <span class="ml-auto px-2 py-1 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs font-medium">Verified</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-zinc-800/50 mt-8 py-6">
+        <div class="max-w-[1400px] mx-auto px-6 flex items-center justify-between text-sm text-zinc-500">
+            <span><i class="fab fa-aws text-aws-500 mr-1"></i> AWS Infrastructure • us-east-2</span>
+            <span>Updated: Feb 2, 2026</span>
+        </div>
+    </footer>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            themeVariables: {
+                darkMode: true,
+                background: '#18181b',
+                primaryColor: '#f97316',
+                primaryTextColor: '#fff',
+                primaryBorderColor: '#fb923c',
+                lineColor: '#6b7280',
+                secondaryColor: '#3b82f6',
+                tertiaryColor: '#18181b',
+                fontSize: '14px'
+            },
+            flowchart: {
+                curve: 'basis',
+                padding: 20,
+                htmlLabels: true,
+                useMaxWidth: true
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,654 @@
+{
+  "business": "kona-coffee",
+  "businessName": "Kona Coffee Donut",
+  "domain": "konacoffeedonut.com",
+  "collectedAt": "2026-02-02T02:45:29.410292+00:00",
+  "searchConsole": {
+    "success": true,
+    "rows": [
+      {
+        "keys": [
+          "kona coffee donut"
+        ],
+        "clicks": 15,
+        "impressions": 32,
+        "ctr": 0.46875,
+        "position": 1
+      },
+      {
+        "keys": [
+          "コナコーヒー ワイキキ メニュー"
+        ],
+        "clicks": 1,
+        "impressions": 1,
+        "ctr": 1,
+        "position": 11
+      },
+      {
+        "keys": [
+          "coffee and donuts"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "coffee and doughnuts"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "coffee near me"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 19
+      },
+      {
+        "keys": [
+          "coffee near me open now"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "coffee shops in waikiki"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 87
+      },
+      {
+        "keys": [
+          "coffee shops near me"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 56
+      },
+      {
+        "keys": [
+          "coffee shops open late"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "domuts"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 15
+      },
+      {
+        "keys": [
+          "donut near me"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 2
+      },
+      {
+        "keys": [
+          "donut shop"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "donut shop near me"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 5
+      },
+      {
+        "keys": [
+          "donut shops"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "donuts near me"
+        ],
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 11.285714285714286
+      },
+      {
+        "keys": [
+          "donuts open now"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "doughnuts near me"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "hawaiian coffee and donuts"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 15.75
+      },
+      {
+        "keys": [
+          "hawaiian coffee growing district"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 36.25
+      },
+      {
+        "keys": [
+          "kona"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 22
+      },
+      {
+        "keys": [
+          "kona coffee"
+        ],
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 5.111111111111111
+      },
+      {
+        "keys": [
+          "kona coffee beans"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "kona coffee district"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 23
+      },
+      {
+        "keys": [
+          "kona coffee donuts"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 16.8
+      },
+      {
+        "keys": [
+          "kona coffee locations"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 7
+      },
+      {
+        "keys": [
+          "kona coffee near me"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 5.333333333333333
+      },
+      {
+        "keys": [
+          "kona coffee oahu"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 20
+      },
+      {
+        "keys": [
+          "kona coffee waikiki"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "kona donuts"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 13.6
+      },
+      {
+        "keys": [
+          "kona waikiki"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 11
+      },
+      {
+        "keys": [
+          "kona 커피"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "late night coffee shops"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 6
+      },
+      {
+        "keys": [
+          "premium hawaiian coffee"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 81
+      },
+      {
+        "keys": [
+          "premium kona coffee"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 82
+      },
+      {
+        "keys": [
+          "ucc kona coffee"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "what makes kona coffee special"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 100
+      },
+      {
+        "keys": [
+          "コーンドッグ 韓国"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "ワイキキコーヒー ハワイコナ"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 18.5
+      },
+      {
+        "keys": [
+          "夏威夷科纳咖啡风味"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 11
+      },
+      {
+        "keys": [
+          "夏威夷科纳适合冲美式吗"
+        ],
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0,
+        "position": 6.875
+      },
+      {
+        "keys": [
+          "科納咖啡"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 69
+      },
+      {
+        "keys": [
+          "韓国 コーンドッグ"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "韓国 ホットドッグ お店"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 4
+      },
+      {
+        "keys": [
+          "말라사다"
+        ],
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 10.8
+      },
+      {
+        "keys": [
+          "말라사다 도넛"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 10
+      },
+      {
+        "keys": [
+          "와이키키 코나커피"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 11.5
+      },
+      {
+        "keys": [
+          "코나 커피 농장"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 32
+      },
+      {
+        "keys": [
+          "코나커피"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 12
+      },
+      {
+        "keys": [
+          "코나커피 가격"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "코나커피 원두"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "keys": [
+          "하와이 원두"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "하와이 커피"
+        ],
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "하와이 코나 커피"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 57
+      },
+      {
+        "keys": [
+          "하와이 코나 커피 원두 추천"
+        ],
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 2.25
+      },
+      {
+        "keys": [
+          "하와이 코나 커피 추천"
+        ],
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "하와이 코나커피"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 3
+      },
+      {
+        "keys": [
+          "하와이안 코나 커피"
+        ],
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "keys": [
+          "하와이커피"
+        ],
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 1
+      }
+    ],
+    "totals": {
+      "clicks": 16,
+      "impressions": 163,
+      "ctr": 9.82
+    },
+    "dateRange": {
+      "start": "2026-01-24",
+      "end": "2026-01-31"
+    }
+  },
+  "keywordPositions": {
+    "kona coffee waikiki": {
+      "position": 10,
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0
+    },
+    "mochi donut waikiki": {
+      "position": null,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0
+    },
+    "coffee near waikiki beach": {
+      "position": null,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0
+    },
+    "best coffee honolulu": {
+      "position": null,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0
+    },
+    "kalakaua ave coffee": {
+      "position": null,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0
+    },
+    "kona coffee donut": {
+      "position": 1,
+      "clicks": 15,
+      "impressions": 32,
+      "ctr": 46.88
+    },
+    "breakfast waikiki": {
+      "position": null,
+      "clicks": 0,
+      "impressions": 0,
+      "ctr": 0
+    }
+  },
+  "ga4": {
+    "success": true,
+    "activeUsers": 134,
+    "sessions": 181,
+    "pageViews": 221,
+    "bounceRate": 35.4,
+    "avgSessionDuration": 195.0,
+    "trafficSources": [
+      {
+        "channel": "Organic Search",
+        "sessions": 98
+      },
+      {
+        "channel": "Paid Social",
+        "sessions": 60
+      },
+      {
+        "channel": "Organic Social",
+        "sessions": 24
+      },
+      {
+        "channel": "Unassigned",
+        "sessions": 8
+      }
+    ],
+    "countries": [
+      {
+        "country": "United States",
+        "users": 123
+      },
+      {
+        "country": "Japan",
+        "users": 5
+      },
+      {
+        "country": "Sweden",
+        "users": 2
+      },
+      {
+        "country": "Canada",
+        "users": 1
+      },
+      {
+        "country": "Singapore",
+        "users": 1
+      }
+    ],
+    "devices": [
+      {
+        "device": "mobile",
+        "sessions": 120
+      },
+      {
+        "device": "desktop",
+        "sessions": 49
+      },
+      {
+        "device": "tablet",
+        "sessions": 12
+      }
+    ]
+  },
+  "alerts": [],
+  "improvements": [],
+  "emailSent": {
+    "success": true
+  },
+  "saved": true
+}
