@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="/zoe-dashboard/">
     <title>ZOE STUDIO | Dashboard Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -33,7 +32,7 @@
         .card-hover:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -12px rgba(0,0,0,0.4); }
     </style>
     <!-- Account Switcher Component -->
-    <script src="js/account-switcher.js"></script>
+    <script src="/zoe-dashboard/js/account-switcher.js"></script>
 </head>
 <body class="bg-surface-950 text-zinc-100 min-h-screen flex">
     
@@ -78,13 +77,13 @@
         <!-- Navigation -->
         <nav class="flex-1 p-4 space-y-1 overflow-y-auto">
             <p class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-3 px-3">Overview</p>
-            <a href="hub.html" class="sidebar-link active flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium">
+            <a href="/zoe-dashboard/hub.html" class="sidebar-link active flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium">
                 <i class="fas fa-th-large w-5 text-brand-500"></i>
                 <span>Dashboard</span>
             </a>
             
             <p class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-3 mt-6 px-3">Account</p>
-            <a href="seo/" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400">
+            <a href="/zoe-dashboard/seo/" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400">
                 <i class="fas fa-search w-5 text-emerald-400"></i>
                 <span>SEO Analytics</span>
                 <span class="ml-auto px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-400 text-xs">Live</span>
@@ -96,11 +95,11 @@
             </a>
 
             <p class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-3 mt-6 px-3">Infrastructure</p>
-            <a href="aws.html" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400">
+            <a href="/zoe-dashboard/aws.html" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400">
                 <i class="fab fa-aws w-5 text-orange-400"></i>
                 <span>AWS Architecture</span>
             </a>
-            <a href="workflow.html" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400">
+            <a href="/zoe-dashboard/workflow.html" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400">
                 <i class="fas fa-diagram-project w-5 text-cyan-400"></i>
                 <span>Workflow</span>
             </a>
