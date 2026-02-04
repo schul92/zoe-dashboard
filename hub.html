@@ -139,7 +139,7 @@
             <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 
                 <!-- SEO Dashboard Card -->
-                <a href="/seo/" class="card-hover glass rounded-2xl overflow-hidden group">
+                <a href="/zoe-dashboard/seo/" class="card-hover glass rounded-2xl overflow-hidden group">
                     <div class="h-32 bg-gradient-to-br from-emerald-600 to-teal-600 relative">
                         <div class="absolute inset-0 flex items-center justify-center">
                             <i class="fas fa-chart-line text-white/20 text-6xl"></i>
@@ -180,7 +180,7 @@
                 </a>
 
                 <!-- AWS Dashboard Card -->
-                <a href="/aws.html" class="card-hover glass rounded-2xl overflow-hidden group">
+                <a href="/zoe-dashboard/aws.html" class="card-hover glass rounded-2xl overflow-hidden group">
                     <div class="h-32 bg-gradient-to-br from-orange-500 to-amber-500 relative">
                         <div class="absolute inset-0 flex items-center justify-center">
                             <i class="fab fa-aws text-white/20 text-6xl"></i>
@@ -222,7 +222,7 @@
                 </a>
 
                 <!-- Workflow Dashboard Card -->
-                <a href="/workflow.html" class="card-hover glass rounded-2xl overflow-hidden group">
+                <a href="/zoe-dashboard/workflow.html" class="card-hover glass rounded-2xl overflow-hidden group">
                     <div class="h-32 bg-gradient-to-br from-cyan-500 to-blue-500 relative">
                         <div class="absolute inset-0 flex items-center justify-center">
                             <i class="fas fa-diagram-project text-white/20 text-6xl"></i>
@@ -277,7 +277,7 @@
                         <a href="https://www.konacoffeedonut.com" target="_blank" class="text-sm text-zinc-400 hover:text-zinc-200 transition-colors">
                             <i class="fas fa-globe mr-1"></i> Website
                         </a>
-                        <a href="/seo/" class="text-sm text-zinc-400 hover:text-zinc-200 transition-colors">
+                        <a href="/zoe-dashboard/seo/" class="text-sm text-zinc-400 hover:text-zinc-200 transition-colors">
                             <i class="fas fa-chart-line mr-1"></i> SEO
                         </a>
                     </div>
@@ -342,7 +342,7 @@
         // Fetch SEO data
         async function fetchSEOData() {
             try {
-                const response = await fetch('/seo/data.json?' + Date.now());
+                const response = await fetch('/zoe-dashboard/seo/data.json?' + Date.now());
                 const data = await response.json();
                 const sc = data.searchConsole || {};
                 const kw = data.keywordPositions || {};

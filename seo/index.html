@@ -340,7 +340,7 @@
         async function fetchData() {
             document.getElementById('refreshIcon').classList.add('animate-spin');
             try {
-                const response = await fetch('/seo/data.json?' + Date.now());
+                const response = await fetch('/zoe-dashboard/seo/data.json?' + Date.now());
                 seoData = await response.json();
                 renderDashboard();
             } catch (e) {
