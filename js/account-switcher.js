@@ -47,7 +47,7 @@ class AccountSwitcher {
    * Load clients list from manifest
    */
   async loadClients() {
-    const response = await fetch('/config/clients.json');
+    const response = await fetch('config/clients.json');
     const data = await response.json();
     return data.clients.filter(c => c.status === 'active' || c.status === 'demo');
   }
@@ -56,7 +56,7 @@ class AccountSwitcher {
    * Load detailed config for a specific client
    */
   async loadClientConfig(clientId) {
-    const response = await fetch(`/config/clients/${clientId}.json`);
+    const response = await fetch(`config/clients/${clientId}.json`);
     const config = await response.json();
     
     // Merge config into current client
