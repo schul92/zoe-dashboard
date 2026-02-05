@@ -1,96 +1,29 @@
 {
-  "lastUpdated": "2026-02-04T23:59:15.300901Z",
-  "gsc": {
-    "clicks": 25,
-    "impressions": 340,
-    "ctr": 7.35,
-    "position": 7.8,
-    "topQueries": [
-      {
-        "query": "kona coffee donut",
-        "clicks": 11,
-        "impressions": 36,
-        "ctr": 30.56,
-        "position": 1.0
-      },
-      {
-        "query": "coffee near me",
-        "clicks": 1,
-        "impressions": 5,
-        "ctr": 20.0,
-        "position": 18.6
-      },
-      {
-        "query": "coffee and donuts",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 5
-      },
-      {
-        "query": "coffee and doughnuts",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 5
-      },
-      {
-        "query": "coffee open late",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 6
-      },
-      {
-        "query": "coffee shops near me",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 38
-      },
-      {
-        "query": "dessert near me",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 59.5
-      },
-      {
-        "query": "dessert near me open now",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 9.5
-      },
-      {
-        "query": "dessert open near me",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 8
-      },
-      {
-        "query": "donut",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 1
-      }
-    ],
-    "topPages": [
+  "collectedAt": "2026-02-05T00:03:17.784517Z",
+  "searchConsole": {
+    "totals": {
+      "clicks": 24,
+      "impressions": 303,
+      "ctr": 7.92
+    },
+    "dateRange": {
+      "start": "2026-01-29",
+      "end": "2026-02-04"
+    },
+    "rows": [
       {
         "page": "https://www.konacoffeedonut.com/",
-        "clicks": 22,
-        "impressions": 120,
-        "ctr": 18.33,
-        "position": 3.0
+        "clicks": 21,
+        "impressions": 111,
+        "ctr": 18.92,
+        "position": 3.1
       },
       {
         "page": "http://www.konacoffeedonut.com/en",
         "clicks": 3,
-        "impressions": 103,
-        "ctr": 2.91,
-        "position": 8.3
+        "impressions": 98,
+        "ctr": 3.06,
+        "position": 8.6
       },
       {
         "page": "https://www.konacoffeedonut.com/en",
@@ -102,16 +35,16 @@
       {
         "page": "https://www.konacoffeedonut.com/en/about-kona-coffee",
         "clicks": 0,
-        "impressions": 111,
+        "impressions": 101,
         "ctr": 0,
-        "position": 8.4
+        "position": 7.6
       },
       {
         "page": "https://www.konacoffeedonut.com/en/faq",
         "clicks": 0,
-        "impressions": 4,
+        "impressions": 1,
         "ctr": 0,
-        "position": 3.2
+        "position": 5
       },
       {
         "page": "https://www.konacoffeedonut.com/en/menu",
@@ -130,9 +63,9 @@
       {
         "page": "https://www.konacoffeedonut.com/es",
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 2,
         "ctr": 0,
-        "position": 22.7
+        "position": 33
       },
       {
         "page": "https://www.konacoffeedonut.com/es/about-kona-coffee",
@@ -142,30 +75,79 @@
         "position": 11.7
       },
       {
-        "page": "https://www.konacoffeedonut.com/es/faq",
+        "page": "https://www.konacoffeedonut.com/es/menu",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 8,
         "ctr": 0,
-        "position": 5
+        "position": 18.8
       }
-    ],
-    "dateRange": {
-      "start": "2026-01-28",
-      "end": "2026-02-03"
+    ]
+  },
+  "keywordPositions": {
+    "kona coffee donut": {
+      "position": 1.0,
+      "clicks": 11,
+      "impressions": 35
+    },
+    "coffee near me": {
+      "position": 18.6,
+      "clicks": 1,
+      "impressions": 5
+    },
+    "coffee open late": {
+      "position": 6,
+      "clicks": 0,
+      "impressions": 1
+    },
+    "coffee shops near me": {
+      "position": 38,
+      "clicks": 0,
+      "impressions": 2
+    },
+    "dessert near me": {
+      "position": 59.5,
+      "clicks": 0,
+      "impressions": 2
+    },
+    "dessert near me open now": {
+      "position": 9.5,
+      "clicks": 0,
+      "impressions": 2
+    },
+    "dessert open near me": {
+      "position": 8,
+      "clicks": 0,
+      "impressions": 1
+    },
+    "donut": {
+      "position": 1,
+      "clicks": 0,
+      "impressions": 1
+    },
+    "donut near me": {
+      "position": 4,
+      "clicks": 0,
+      "impressions": 1
+    },
+    "donut shop": {
+      "position": 5,
+      "clicks": 0,
+      "impressions": 1
     }
   },
   "ga4": {
-    "users": 69,
-    "sessions": 101,
-    "bounceRate": 27.72,
-    "avgSessionDuration": 124.0,
-    "pageviews": 133,
+    "success": true,
+    "activeUsers": 67,
+    "sessions": 100,
+    "bounceRate": 32.0,
+    "avgSessionDuration": 587.3,
+    "pageviews": 129,
     "topPages": [
       {
         "page": "/en",
-        "pageviews": 89,
-        "users": 52,
-        "avgDuration": 97.4
+        "pageviews": 88,
+        "users": 51,
+        "avgDuration": 681.7
       },
       {
         "page": "/en/menu",
@@ -181,21 +163,15 @@
       },
       {
         "page": "/ko/about-kona-coffee",
-        "pageviews": 4,
+        "pageviews": 5,
         "users": 3,
-        "avgDuration": 107.7
+        "avgDuration": 406.4
       },
       {
         "page": "/en/malasada-hawaii",
         "pageviews": 3,
         "users": 1,
         "avgDuration": 253.9
-      },
-      {
-        "page": "/ja",
-        "pageviews": 3,
-        "users": 1,
-        "avgDuration": 458.6
       },
       {
         "page": "/ko",
@@ -220,13 +196,14 @@
         "pageviews": 1,
         "users": 1,
         "avgDuration": 1.9
+      },
+      {
+        "page": "/zh/menu/malasada",
+        "pageviews": 1,
+        "users": 1,
+        "avgDuration": 41.3
       }
-    ],
-    "propertyId": "properties/508368220",
-    "dateRange": {
-      "start": "2026-01-28",
-      "end": "2026-02-03"
-    }
+    ]
   },
   "metadata": {
     "source": "AWS Lambda",
