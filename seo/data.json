@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-05T02:42:50.344798Z",
+  "collectedAt": "2026-02-05T02:56:29.625986Z",
   "searchConsole": {
     "totals": {
       "clicks": 24,
@@ -176,8 +176,8 @@
     "sessions": 101,
     "bounceRate": 32.67,
     "engagementRate": 67.3,
-    "avgSessionDuration": 581.5,
-    "pageviews": 129,
+    "avgSessionDuration": 581.9,
+    "pageviews": 130,
     "topPages": [
       {
         "page": "/en",
@@ -199,9 +199,9 @@
       },
       {
         "page": "/ko/about-kona-coffee",
-        "pageviews": 5,
+        "pageviews": 6,
         "users": 4,
-        "avgDuration": 305.9
+        "avgDuration": 316.5
       },
       {
         "page": "/en/malasada-hawaii",
@@ -342,7 +342,7 @@
         "sessions": 4,
         "users": 4,
         "engagementRate": 50.0,
-        "avgDuration": 72.5,
+        "avgDuration": 83.2,
         "conversions": 0
       },
       {
