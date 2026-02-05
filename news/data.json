@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-04T19:01:31.466289",
+  "collectedAt": "2026-02-04T19:03:02.475197",
   "timezone": "EST",
   "sources": {
     "twitter": "Bird CLI",
@@ -9,7 +9,134 @@
     "newsapi": "Disabled",
     "google": "Google Trends (pytrends)"
   },
-  "twitter": [],
+  "twitter": [
+    {
+      "title": "[AI \u00b7 Other] Daylight Shooting Kills Chicago Mom Near Church, Baby Unharmed",
+      "description": "4 hours ago | 13.0K posts",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 13000
+      },
+      "timestamp": "2026-02-04T19:03:03.430092"
+    },
+    {
+      "title": "[AI \u00b7 Sports] Karl-Anthony Towns Powers Through Bloody Cut in Knicks-Nuggets Clash",
+      "description": "3 hours ago | 3.8K posts",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 3800
+      },
+      "timestamp": "2026-02-04T19:03:03.430510"
+    },
+    {
+      "title": "[AI \u00b7 Entertainment] Peppa Pig's George Gets Hearing Aid in New Inclusive Storyline",
+      "description": "2 hours ago | 4.2K posts",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 4200
+      },
+      "timestamp": "2026-02-04T19:03:03.430525"
+    },
+    {
+      "title": "[Sports \u00b7 Trending] Double OT",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-04T19:03:03.430534"
+    },
+    {
+      "title": "[Sports \u00b7 Trending] Tyus Jones",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-04T19:03:03.430542"
+    },
+    {
+      "title": "[Music \u00b7 Trending] LIGHTSTICK",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-04T19:03:03.430547"
+    },
+    {
+      "title": "[Trending in United States] Collin Chandler",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-04T19:03:03.430559"
+    },
+    {
+      "title": "[Sports \u00b7 Trending] Trinidad Chambliss",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-04T19:03:03.430565"
+    },
+    {
+      "title": "[Sports \u00b7 Trending] Braun",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-04T19:03:03.430570"
+    },
+    {
+      "title": "[AI \u00b7 News] Two Fatal Shootings by Federal Agents Spark Minneapolis Deportation Clashes",
+      "description": "2 days ago | 300.0K posts",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 300000
+      },
+      "timestamp": "2026-02-04T19:03:03.430579"
+    },
+    {
+      "title": "\ud83d\udd0d hawaii coffee",
+      "description": "@MichaelDeLauzon (The TRUMP PAGE \ud83c\uddfa\ud83c\uddf8): | @GuntherEagleman It\u2019s poor quality and over-roasted. Kona Coffee is the best. At $50 for a 8oz bag of beans it should be. Kona is from Hawaii. | \ud83d\udcc5 Thu Feb 05 01:07:48 +0000 2026",
+      "url": "https://twitter.com/search?q=hawaii%20coffee",
+      "stats": {
+        "mentions": 13
+      },
+      "timestamp": "2026-02-04T19:03:04.042466"
+    },
+    {
+      "title": "\ud83d\udd0d kona coffee",
+      "description": "@Bhess (Cranky Cold War Vet): | @eatinglasvegas If I want super fancy coffee I'll stick with Kona or Jamaica Blue | \ud83d\udcc5 Thu Feb 05 01:44:35 +0000 2026",
+      "url": "https://twitter.com/search?q=kona%20coffee",
+      "stats": {
+        "mentions": 16
+      },
+      "timestamp": "2026-02-04T19:03:06.823301"
+    },
+    {
+      "title": "\ud83d\udd0d waikiki",
+      "description": "@grok (Grok): | Expanded HawaiiUSA FCU tabular: | \ud83c\udfe0 HQ: 1226 College Walk, Honolulu, HI 96817",
+      "url": "https://twitter.com/search?q=waikiki",
+      "stats": {
+        "mentions": 35
+      },
+      "timestamp": "2026-02-04T19:03:09.443027"
+    },
+    {
+      "title": "\ud83d\udd0d coffee trends",
+      "description": "@YMahale75214 (Yogesh Mahale): | https://t.co/iUegEZTCnz | \ud83d\udcc5 Thu Feb 05 02:24:22 +0000 2026",
+      "url": "https://twitter.com/search?q=coffee%20trends",
+      "stats": {
+        "mentions": 9
+      },
+      "timestamp": "2026-02-04T19:03:12.097005"
+    }
+  ],
   "hackerNews": [
     {
       "title": "Voxtral Transcribe 2",
@@ -17,7 +144,7 @@
       "url": "https://mistral.ai/news/voxtral-transcribe-2",
       "stats": {
         "points": 761,
-        "comments": 180
+        "comments": 181
       },
       "timestamp": "2026-02-04T07:08:17"
     },
@@ -27,7 +154,7 @@
       "url": "https://www.jakequist.com/thoughts/openclaw-is-what-apple-intelligence-should-have-been",
       "stats": {
         "points": 136,
-        "comments": 132
+        "comments": 133
       },
       "timestamp": "2026-02-04T16:28:06"
     },
@@ -46,8 +173,8 @@
       "description": "",
       "url": "https://boxc.net/blog/2026/claude-code-connecting-to-local-models-when-your-quota-runs-out/",
       "stats": {
-        "points": 204,
-        "comments": 104
+        "points": 205,
+        "comments": 105
       },
       "timestamp": "2026-02-01T04:43:41"
     },
@@ -57,7 +184,7 @@
       "url": "https://nmn.gl/blog/ai-killing-b2b-saas",
       "stats": {
         "points": 247,
-        "comments": 400
+        "comments": 401
       },
       "timestamp": "2026-02-04T09:09:28"
     },
@@ -106,74 +233,184 @@
       "description": "",
       "url": "https://lily-lang.org",
       "stats": {
-        "points": 13,
+        "points": 14,
         "comments": 5
       },
       "timestamp": "2026-02-01T13:53:12"
     }
   ],
-  "reddit": [],
-  "news": [],
+  "reddit": [
+    {
+      "title": "[MOD] The Daily Question Thread",
+      "description": "From r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1qvlm0q/mod_the_daily_question_thread/",
+      "timestamp": "2026-02-04T11:01:10+00:00"
+    },
+    {
+      "title": "[MOD] The Daily Question Thread",
+      "description": "From r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1qup0jd/mod_the_daily_question_thread/",
+      "timestamp": "2026-02-03T11:01:22+00:00"
+    },
+    {
+      "title": "History of Coffee",
+      "description": "From r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1qw25kv/history_of_coffee/",
+      "timestamp": "2026-02-04T21:49:46+00:00"
+    },
+    {
+      "title": "Why do people mix less across cultures on the mainland than in Hawai\u02bbi?",
+      "description": "From r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1qvqemg/why_do_people_mix_less_across_cultures_on_the/",
+      "timestamp": "2026-02-04T14:44:46+00:00"
+    },
+    {
+      "title": "Morning Traffic",
+      "description": "From r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1qvtqld/morning_traffic/",
+      "timestamp": "2026-02-04T16:49:02+00:00"
+    },
+    {
+      "title": "COVID-19 Update for 2/4/26",
+      "description": "From r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1qw2sk5/covid19_update_for_2426/",
+      "timestamp": "2026-02-04T22:13:48+00:00"
+    },
+    {
+      "title": "\ud83c\udf99\ufe0f Episode 001: Christian Reed (Founder of REEKON Tools) | /r/Entrepreneur Podcast",
+      "description": "From r/entrepreneur",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1pyxz90/episode_001_christian_reed_founder_of_reekon/",
+      "timestamp": "2025-12-29T20:59:08+00:00"
+    },
+    {
+      "title": "Marketplace Tuesday! - February 03, 2026",
+      "description": "From r/entrepreneur",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1quo018/marketplace_tuesday_february_03_2026/",
+      "timestamp": "2026-02-03T10:00:35+00:00"
+    },
+    {
+      "title": "i stopped sending live links to clients and it\u2019s been a game-changer",
+      "description": "From r/entrepreneur",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1qvttz3/i_stopped_sending_live_links_to_clients_and_its/",
+      "timestamp": "2026-02-04T16:52:23+00:00"
+    },
+    {
+      "title": "Promote your business, week of February 2, 2026",
+      "description": "From r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1qtodvr/promote_your_business_week_of_february_2_2026/",
+      "timestamp": "2026-02-02T07:18:50+00:00"
+    },
+    {
+      "title": "In this post, share your small business experience, successes, failures, AMAS, and lessons learned.",
+      "description": "From r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1ltkg12/in_this_post_share_your_small_business_experience/",
+      "timestamp": "2025-07-07T03:56:16+00:00"
+    },
+    {
+      "title": "Working on delegating for months",
+      "description": "From r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1qvu4c2/working_on_delegating_for_months/",
+      "timestamp": "2026-02-04T17:02:37+00:00"
+    },
+    {
+      "title": "New Job Listings",
+      "description": "From r/marketing",
+      "url": "https://www.reddit.com/r/marketing/comments/1pihtx0/new_job_listings/",
+      "timestamp": "2025-12-09T20:10:32+00:00"
+    },
+    {
+      "title": "Please use the Report link to report posts and comments which don't belong in r/Marketing",
+      "description": "From r/marketing",
+      "url": "https://www.reddit.com/r/marketing/comments/1mb96gb/please_use_the_report_link_to_report_posts_and/",
+      "timestamp": "2025-07-28T06:50:20+00:00"
+    },
+    {
+      "title": "\u201cIntern\u201d",
+      "description": "From r/marketing",
+      "url": "https://www.reddit.com/r/marketing/comments/1qw78j8/intern/",
+      "timestamp": "2026-02-05T01:15:58+00:00"
+    }
+  ],
+  "news": [
+    {
+      "title": "Coffee Machines Market to Surpass USD 26 Bn by 2031 Growing at a 5.6% CAGR and Led by Filter Coffee Machines, Says Mordor Intelligence",
+      "description": "Rising coffee intake across major regions is reinforcing key coffee machines market trends, as consumers increasingly seek caf\u00e9-style beverages both at home and in the workplace. Growing participation",
+      "url": "https://www.globenewswire.com/news-release/2026/02/04/3231810/0/en/Coffee-Machines-Market-to-Surpass-USD-26-Bn-by-2031-Growing-at-a-5-6-CAGR-and-Led-by-Filter-Coffee-Machines-Says-Mordor-Intelligence.html",
+      "timestamp": "2026-02-04T19:03:38.755687"
+    },
+    {
+      "title": "Weather | kitv.com",
+      "description": "Honolulu breaking news, weather and live video. Covering weather, alerts, traffic and the latest forecast for Honolulu and the islands of Oahu, Kauai, Maui, and the Big Island.",
+      "url": "https://www.kitv.com/weather/",
+      "timestamp": "2026-02-04T19:03:41.517031"
+    },
+    {
+      "title": "Latest World & National News & Headlines - USATODAY.com",
+      "description": "USA TODAY delivers current national and local news, sports, entertainment, finance, technology, and more through award-winning journalism, photos, and videos.",
+      "url": "https://www.usatoday.com/",
+      "timestamp": "2026-02-04T19:03:41.517053"
+    }
+  ],
   "hawaii": [
     {
       "title": "Waimea Cherry Blossom Festival on Saturday, February 7, 2026 - Hawaii Real Estate Market & Trends | Hawaii Life",
       "description": "Every February, the sleepy town of Waimea bursts into shades of pink as the beloved <strong>Cherry Blossom Festival</strong> returns! This much-anticipated event celebrates the breathtaking bloom of t",
       "url": "https://www.hawaiilife.com/blog/waimea-cherry-blossom-festival-saturday-february-7-2026/",
-      "timestamp": "2026-02-04T19:01:44.810344"
+      "timestamp": "2026-02-04T19:03:44.198202"
     },
     {
       "title": "Your Guide to the Perfect Weekend in Honolulu: Feb. 5\u201311, 2026",
       "description": "Free, Hawaiian Aroma Caffe\u0301 at Outrigger Waik\u012bk\u012b Beachcomber Hotel, 2300 Kal\u0101kaua Ave., Waik\u012bk\u012b, eventbrite.com, @endlessstylesfestival \u00b7 SEE ALSO: Your Insider Guide to the 2026 <strong>Punahou Carni",
       "url": "https://www.honolulumagazine.com/weekend-guide-feb-5-11-2026/",
-      "timestamp": "2026-02-04T19:01:44.810367"
+      "timestamp": "2026-02-04T19:03:44.198228"
     },
     {
       "title": "News in brief for February 4 - Hawaii Tribune-Herald",
       "description": "News in brief for February 4 - Nation and World News | Hawaii Tribune-Herald",
       "url": "https://www.hawaiitribune-herald.com/2026/02/04/nation-world-news/news-in-brief-for-february-4/",
-      "timestamp": "2026-02-04T19:01:44.810373"
+      "timestamp": "2026-02-04T19:03:44.198233"
     },
     {
       "title": "TDY Lodging expects 2026 Hawaii surge of Military and Government travel to Oahu as Government Shutdown Ends",
       "description": "Postponed travel from the 43-day government shutdown, a January 2026 shutdown, economic snapback in the U.S., and Indo-Pacific security priorities collide with softer tourism and vacation travel. TDY ",
       "url": "https://www.prnewswire.com/news-releases/tdy-lodging-expects-2026-hawaii-surge-of-military-and-government-travel-to-oahu-as-government-shutdown-ends-302678298.html",
-      "timestamp": "2026-02-04T19:01:44.810378"
+      "timestamp": "2026-02-04T19:03:44.198238"
     },
     {
       "title": "Your Views for February 4 - Hawaii Tribune-Herald",
       "description": "Your Views for February 4 - Opinion, Your Views | Hawaii Tribune-Herald",
       "url": "https://www.hawaiitribune-herald.com/2026/02/04/opinion/your-views-for-february-4-8/",
-      "timestamp": "2026-02-04T19:01:44.810382"
+      "timestamp": "2026-02-04T19:03:44.198243"
     },
     {
       "title": "Letters \u2014Your Voice \u2014 for February 4 - West Hawaii Today",
       "description": "Letters \u2014Your Voice \u2014 for February 4 \u2013 Opinion, Your Voice | West Hawaii Today",
       "url": "https://www.westhawaiitoday.com/2026/02/04/opinion/letters-your-voice-for-february-4/",
-      "timestamp": "2026-02-04T19:01:44.810386"
+      "timestamp": "2026-02-04T19:03:44.198247"
     },
     {
       "title": "These are the new Xbox Game Pass games in February 2026 - Digitec",
       "description": "With <strong>&quot;High on Life 2&quot;, &quot;Avowed&quot; and &quot;Like A Dragon: Pirate Yakuza in Hawaii&quot;,</strong> the Xbox Game Pass will feature big names in February 2026: from shooters t",
       "url": "https://www.digitec.ch/en/page/these-are-the-new-xbox-game-pass-games-in-february-2026-41421",
-      "timestamp": "2026-02-04T19:01:44.810390"
+      "timestamp": "2026-02-04T19:03:44.198251"
     },
     {
       "title": "Xbox Game Pass Feb 2026: 12 games inc High on Life | tbreak",
       "description": "Major titles include <strong>High on Life 2 (day one launch), Madden NFL 26, Avatar: Frontiers of Pandora, Avowed, Like A Dragon: Pirate Yakuza in Hawaii, and Kingdom Come Deliverance</strong> across ",
       "url": "https://tbreak.com/xbox-game-pass-february-2026-games/",
-      "timestamp": "2026-02-04T19:01:44.810394"
+      "timestamp": "2026-02-04T19:03:44.198255"
     },
     {
       "title": "Monopoly Go Events Today Schedule - February 4, 2026 - Monopoly GO!",
       "description": "This includes details of the main events and tournaments, today&#x27;s Quick Win tasks and rewards, the flash boost schedule, and our own summary of what to watch for, including the best times to play",
       "url": "https://www.supercheats.com/monopoly-go-walkthrough-guide/monopoly-go-todays-events-schedule-daily-updates",
-      "timestamp": "2026-02-04T19:01:44.810398"
+      "timestamp": "2026-02-04T19:03:44.198259"
     },
     {
       "title": "$1.5 trillion for the Pentagon is a recipe for waste and fraud - Hawaii Tribune-Herald",
       "description": "Wednesday, February 4, 2026 Today&#x27;s Paper \u00b7 Subscribe Account \u00b7 Hawaii News \u00b7 Entertainment \u00b7 Sports \u00b7 Obituaries \u00b7 Community \u00b7 Calendar \u00b7 Submit an Event \u00b7 Opinion \u00b7 Our Views \u00b7 Your Views \u00b7 The",
       "url": "https://www.hawaiitribune-herald.com/2026/02/04/opinion/1-5-trillion-for-the-pentagon-is-a-recipe-for-waste-and-fraud/",
-      "timestamp": "2026-02-04T19:01:44.810403"
+      "timestamp": "2026-02-04T19:03:44.198264"
     }
   ],
   "googleTrends": []
