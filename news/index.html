@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOE STUDIO | SEO Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 500: '#f97316', 600: '#ea580c' },
+                        surface: { 50: '#18181b', 100: '#1f1f23', 200: '#27272a', 300: '#3f3f46' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #09090b; }
+        .glass { background: rgba(255,255,255,0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.05); }
+        .card { transition: all 0.3s ease; }
+        .card:hover { transform: translateY(-2px); }
+        .action-btn { transition: all 0.2s ease; }
+        .action-btn:hover { transform: scale(1.02); }
+    </style>
+</head>
+<body class="text-zinc-100 min-h-screen">
+    
+    <!-- Ambient Background -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="relative border-b border-zinc-800/50 sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-xl">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <a href="/zoe-dashboard/hub.html" class="text-zinc-400 hover:text-zinc-200">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                    </a>
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-xl">
+                        🎯
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold">SEO Intelligence</h1>
+                        <p class="text-xs text-zinc-500">Actionable insights from <span id="total-stories">--</span> stories</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-xs text-zinc-500" id="last-updated">Loading...</span>
+                    <button onclick="refreshData()" class="px-3 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-sm flex items-center gap-2">
+                        <svg class="w-4 h-4" id="refreshIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                        Refresh
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-8">
+
+        <!-- Quick Stats -->
+        <section class="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div class="glass rounded-xl p-4 text-center">
+                <p class="text-3xl font-bold text-emerald-400" id="stat-ideas">--</p>
+                <p class="text-xs text-zinc-500 mt-1">Content Ideas</p>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+                <p class="text-3xl font-bold text-blue-400" id="stat-keywords">--</p>
+                <p class="text-xs text-zinc-500 mt-1">Keywords</p>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+                <p class="text-3xl font-bold text-purple-400" id="stat-hashtags">--</p>
+                <p class="text-xs text-zinc-500 mt-1">Hashtags</p>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+                <p class="text-3xl font-bold text-orange-400" id="stat-events">--</p>
+                <p class="text-xs text-zinc-500 mt-1">Events</p>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+                <p class="text-3xl font-bold" id="stat-alerts">--</p>
+                <p class="text-xs text-zinc-500 mt-1">Alerts</p>
+            </div>
+        </section>
+
+        <!-- Content Ideas -->
+        <section class="glass rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-xl">💡</div>
+                <div>
+                    <h2 class="text-lg font-bold">Content Ideas</h2>
+                    <p class="text-xs text-zinc-500">Ready-to-use topics for your posts</p>
+                </div>
+            </div>
+            <div class="space-y-4" id="content-ideas">
+                <div class="text-zinc-500 text-sm">Loading...</div>
+            </div>
+        </section>
+
+        <!-- Two Column: Keywords + Hashtags -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Keywords -->
+            <section class="glass rounded-2xl p-6">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-xl">🔑</div>
+                    <div>
+                        <h2 class="text-lg font-bold">Keywords to Target</h2>
+                        <p class="text-xs text-zinc-500">For website SEO & social posts</p>
+                    </div>
+                </div>
+                <div class="space-y-2" id="keywords-list">
+                    <div class="text-zinc-500 text-sm">Loading...</div>
+                </div>
+            </section>
+
+            <!-- Hashtags -->
+            <section class="glass rounded-2xl p-6">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/20 flex items-center justify-center text-xl">#️⃣</div>
+                    <div>
+                        <h2 class="text-lg font-bold">Hashtags to Use</h2>
+                        <p class="text-xs text-zinc-500">Copy & paste for social media</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2" id="hashtags-list">
+                    <div class="text-zinc-500 text-sm">Loading...</div>
+                </div>
+                <button onclick="copyHashtags()" class="mt-4 w-full py-2 bg-purple-500/20 hover:bg-purple-500/30 rounded-lg text-sm text-purple-400 transition-colors">
+                    📋 Copy All Usable Hashtags
+                </button>
+            </section>
+        </div>
+
+        <!-- Events -->
+        <section class="glass rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-xl bg-orange-500/20 flex items-center justify-center text-xl">📅</div>
+                <div>
+                    <h2 class="text-lg font-bold">Upcoming Events</h2>
+                    <p class="text-xs text-zinc-500">Content opportunities & tie-ins</p>
+                </div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4" id="events-list">
+                <div class="text-zinc-500 text-sm">Loading...</div>
+            </div>
+        </section>
+
+        <!-- Competitor Watch -->
+        <section class="glass rounded-2xl p-6">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-xl bg-red-500/20 flex items-center justify-center text-xl">👀</div>
+                <div>
+                    <h2 class="text-lg font-bold">Competitor Watch</h2>
+                    <p class="text-xs text-zinc-500">Monitoring Island Vintage, Honolulu Coffee, Sunrise Shack</p>
+                </div>
+            </div>
+            <div id="competitors-list">
+                <div class="text-zinc-500 text-sm">Loading...</div>
+            </div>
+        </section>
+
+        <!-- Where to Use This Data -->
+        <section class="glass rounded-2xl p-6 border border-emerald-500/20">
+            <h2 class="text-lg font-bold mb-4 flex items-center gap-2">
+                <span>🎯</span> Where to Use This Data
+            </h2>
+            <div class="grid sm:grid-cols-3 gap-4">
+                <div class="bg-zinc-800/50 rounded-xl p-4">
+                    <div class="text-2xl mb-2">📱</div>
+                    <h3 class="font-semibold mb-1">Social Posts</h3>
+                    <p class="text-xs text-zinc-500">Use content ideas + hashtags for Twitter, Facebook, Threads, Bluesky, Google Business</p>
+                </div>
+                <div class="bg-zinc-800/50 rounded-xl p-4">
+                    <div class="text-2xl mb-2">🌐</div>
+                    <h3 class="font-semibold mb-1">Website SEO</h3>
+                    <p class="text-xs text-zinc-500">Use keywords for blog posts, meta descriptions, alt text, page titles</p>
+                </div>
+                <div class="bg-zinc-800/50 rounded-xl p-4">
+                    <div class="text-2xl mb-2">📍</div>
+                    <h3 class="font-semibold mb-1">Google Business</h3>
+                    <p class="text-xs text-zinc-500">Use events for local posts, Q&A updates, and promotional content</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Raw Data Link -->
+        <div class="text-center text-sm text-zinc-500">
+            <a href="data.json" class="hover:text-zinc-300">View raw data (106 stories)</a>
+            <span class="mx-2">•</span>
+            <a href="insights.json" class="hover:text-zinc-300">View insights JSON</a>
+        </div>
+
+    </main>
+
+    <script>
+        let insightsData = null;
+
+        async function fetchData() {
+            document.getElementById('refreshIcon').classList.add('animate-spin');
+            try {
+                const response = await fetch('insights.json?' + Date.now());
+                insightsData = await response.json();
+                renderInsights();
+            } catch (e) {
+                console.error('Error:', e);
+            }
+            document.getElementById('refreshIcon').classList.remove('animate-spin');
+        }
+
+        function refreshData() { fetchData(); }
+
+        function renderInsights() {
+            if (!insightsData) return;
+
+            const summary = insightsData.summary || {};
+            
+            // Update stats
+            document.getElementById('total-stories').textContent = summary.total_stories_analyzed || 0;
+            document.getElementById('stat-ideas').textContent = summary.content_ideas_generated || 0;
+            document.getElementById('stat-keywords').textContent = summary.keywords_extracted || 0;
+            document.getElementById('stat-hashtags').textContent = summary.hashtags_available || 0;
+            document.getElementById('stat-events').textContent = summary.events_tracked || 0;
+            
+            const alerts = summary.competitor_alerts || 0;
+            const alertsEl = document.getElementById('stat-alerts');
+            alertsEl.textContent = alerts;
+            alertsEl.className = alerts > 0 ? 'text-3xl font-bold text-red-400' : 'text-3xl font-bold text-emerald-400';
+
+            // Update timestamp
+            const dt = new Date(summary.generated_at);
+            document.getElementById('last-updated').textContent = `Updated ${dt.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}`;
+
+            // Render content ideas
+            const ideas = insightsData.content_ideas || [];
+            document.getElementById('content-ideas').innerHTML = ideas.map((idea, i) => `
+                <div class="card bg-zinc-800/50 rounded-xl p-4 border-l-4 border-emerald-500">
+                    <div class="flex items-start justify-between">
+                        <div class="flex-1">
+                            <h3 class="font-semibold text-emerald-400">${idea.topic}</h3>
+                            <p class="text-xs text-zinc-500 mt-1">${idea.reason}</p>
+                            ${idea.suggested_hook ? `<p class="text-sm text-zinc-300 mt-2 italic">"${idea.suggested_hook}"</p>` : ''}
+                        </div>
+                        <span class="text-xs px-2 py-1 rounded bg-zinc-700 text-zinc-400">${idea.source}</span>
+                    </div>
+                    <div class="flex gap-2 mt-3">
+                        ${idea.platforms.map(p => `<span class="text-xs px-2 py-1 rounded bg-emerald-500/10 text-emerald-400">${p}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('') || '<div class="text-zinc-500">No content ideas available</div>';
+
+            // Render keywords
+            const keywords = insightsData.keywords || [];
+            const relevantKeywords = keywords.filter(k => k.relevance > 0);
+            document.getElementById('keywords-list').innerHTML = relevantKeywords.map(kw => `
+                <div class="flex items-center justify-between py-2 border-b border-zinc-800">
+                    <span class="font-medium text-blue-400">${kw.keyword}</span>
+                    <span class="text-xs text-zinc-500">${kw.action}</span>
+                </div>
+            `).join('') || '<div class="text-zinc-500">No relevant keywords found</div>';
+
+            // Render hashtags
+            const hashtags = insightsData.hashtags || [];
+            const usableHashtags = hashtags.filter(h => h.usable);
+            document.getElementById('hashtags-list').innerHTML = usableHashtags.map(h => `
+                <span class="px-3 py-1.5 rounded-full bg-purple-500/20 text-purple-400 text-sm cursor-pointer hover:bg-purple-500/30" onclick="copyToClipboard('${h.hashtag}')">${h.hashtag}</span>
+            `).join('') || '<div class="text-zinc-500">No usable hashtags</div>';
+
+            // Render events
+            const events = insightsData.events || [];
+            document.getElementById('events-list').innerHTML = events.map(event => `
+                <div class="card bg-zinc-800/50 rounded-xl p-4">
+                    <h3 class="font-semibold text-orange-400 text-sm">${event.name}</h3>
+                    <p class="text-xs text-zinc-500 mt-1">${event.date}</p>
+                    ${event.suggested_tie_in ? `<p class="text-xs text-zinc-400 mt-2 italic">${event.suggested_tie_in}</p>` : ''}
+                    ${event.url ? `<a href="${event.url}" target="_blank" class="text-xs text-blue-400 hover:underline mt-2 block">Learn more →</a>` : ''}
+                </div>
+            `).join('') || '<div class="text-zinc-500">No events tracked</div>';
+
+            // Render competitors
+            const competitors = insightsData.competitors || [];
+            document.getElementById('competitors-list').innerHTML = competitors.map(c => `
+                <div class="flex items-center justify-between py-3 ${c.alert ? 'bg-red-500/10 rounded-lg px-4' : ''}">
+                    <div>
+                        <span class="font-medium ${c.alert ? 'text-red-400' : 'text-zinc-300'}">${c.competitor}</span>
+                        ${c.mentions > 0 ? `<span class="text-xs text-zinc-500 ml-2">(${c.mentions} mentions)</span>` : ''}
+                    </div>
+                    <span class="text-xs ${c.alert ? 'text-red-400' : 'text-emerald-400'}">${c.action}</span>
+                </div>
+            `).join('');
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+            // Show brief feedback
+            const btn = event.target;
+            const original = btn.textContent;
+            btn.textContent = '✓ Copied!';
+            setTimeout(() => btn.textContent = original, 1000);
+        }
+
+        function copyHashtags() {
+            const hashtags = insightsData?.hashtags?.filter(h => h.usable).map(h => h.hashtag).join(' ') || '';
+            navigator.clipboard.writeText(hashtags);
+            event.target.textContent = '✓ Copied to clipboard!';
+            setTimeout(() => event.target.textContent = '📋 Copy All Usable Hashtags', 2000);
+        }
+
+        // Init
+        fetchData();
+        setInterval(fetchData, 5 * 60 * 1000);
+    </script>
+</body>
+</html>
