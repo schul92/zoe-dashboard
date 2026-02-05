@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-05T05:12:49.900634Z",
+  "collectedAt": "2026-02-05T05:26:29.296844Z",
   "searchConsole": {
     "totals": {
       "clicks": 24,
@@ -176,14 +176,14 @@
     "sessions": 103,
     "bounceRate": 33.98,
     "engagementRate": 66.0,
-    "avgSessionDuration": 574.4,
+    "avgSessionDuration": 575.3,
     "pageviews": 133,
     "topPages": [
       {
         "page": "/en",
         "pageviews": 89,
         "users": 52,
-        "avgDuration": 674.4
+        "avgDuration": 675.5
       },
       {
         "page": "/en/menu",
@@ -310,7 +310,7 @@
         "sessions": 59,
         "users": 44,
         "engagementRate": 74.6,
-        "avgDuration": 908.4,
+        "avgDuration": 910.0,
         "conversions": 0
       },
       {
@@ -322,19 +322,19 @@
         "conversions": 0
       },
       {
+        "page": "",
+        "sessions": 5,
+        "users": 3,
+        "engagementRate": 0.0,
+        "avgDuration": 33.7,
+        "conversions": 0
+      },
+      {
         "page": "/en/breakfast-waikiki",
         "sessions": 5,
         "users": 5,
         "engagementRate": 80.0,
         "avgDuration": 174.2,
-        "conversions": 0
-      },
-      {
-        "page": "",
-        "sessions": 4,
-        "users": 2,
-        "engagementRate": 0.0,
-        "avgDuration": 42.1,
         "conversions": 0
       },
       {
