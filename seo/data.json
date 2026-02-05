@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-05T06:56:29.199177Z",
+  "collectedAt": "2026-02-05T07:12:50.280542Z",
   "searchConsole": {
     "totals": {
       "clicks": 24,
@@ -172,18 +172,18 @@
   },
   "ga4": {
     "success": true,
-    "activeUsers": 70,
-    "sessions": 103,
-    "bounceRate": 33.98,
-    "engagementRate": 66.0,
-    "avgSessionDuration": 575.3,
-    "pageviews": 133,
+    "activeUsers": 74,
+    "sessions": 108,
+    "bounceRate": 36.11,
+    "engagementRate": 63.9,
+    "avgSessionDuration": 551.9,
+    "pageviews": 138,
     "topPages": [
       {
         "page": "/en",
-        "pageviews": 89,
-        "users": 52,
-        "avgDuration": 675.5
+        "pageviews": 93,
+        "users": 55,
+        "avgDuration": 648.1
       },
       {
         "page": "/en/menu",
@@ -243,8 +243,8 @@
     "trafficSources": [
       {
         "channel": "Organic Search",
-        "sessions": 93,
-        "users": 61
+        "sessions": 98,
+        "users": 65
       },
       {
         "channel": "Organic Social",
@@ -253,8 +253,8 @@
       },
       {
         "channel": "Unassigned",
-        "sessions": 4,
-        "users": 4
+        "sessions": 7,
+        "users": 7
       },
       {
         "channel": "Cross-network",
@@ -265,36 +265,36 @@
     "devices": [
       {
         "device": "desktop",
-        "sessions": 61,
-        "users": 40,
-        "bounceRate": 36.1
+        "sessions": 64,
+        "users": 43,
+        "bounceRate": 39.1
       },
       {
         "device": "mobile",
-        "sessions": 40,
+        "sessions": 41,
         "users": 29,
-        "bounceRate": 30.0
+        "bounceRate": 29.3
       },
       {
         "device": "tablet",
-        "sessions": 2,
-        "users": 2,
-        "bounceRate": 50.0
+        "sessions": 3,
+        "users": 3,
+        "bounceRate": 66.7
       }
     ],
     "countries": [
       {
         "country": "United States",
-        "users": 63,
-        "sessions": 95
-      },
-      {
-        "country": "Japan",
-        "users": 3,
-        "sessions": 3
+        "users": 66,
+        "sessions": 99
       },
       {
         "country": "South Korea",
+        "users": 4,
+        "sessions": 4
+      },
+      {
+        "country": "Japan",
         "users": 3,
         "sessions": 3
       },
@@ -307,10 +307,10 @@
     "landingPages": [
       {
         "page": "/en",
-        "sessions": 59,
-        "users": 44,
-        "engagementRate": 74.6,
-        "avgDuration": 910.0,
+        "sessions": 63,
+        "users": 47,
+        "engagementRate": 71.4,
+        "avgDuration": 855.9,
         "conversions": 0
       },
       {
@@ -323,10 +323,10 @@
       },
       {
         "page": "",
-        "sessions": 5,
-        "users": 3,
+        "sessions": 8,
+        "users": 6,
         "engagementRate": 0.0,
-        "avgDuration": 33.7,
+        "avgDuration": 21.9,
         "conversions": 0
       },
       {
