@@ -195,6 +195,11 @@
                 <i class="fas fa-diagram-project w-5 text-cyan-400"></i>
                 <span>Workflow</span>
             </a>
+
+            <a href="/zoe-dashboard/news.html" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-base sm:text-sm font-medium text-zinc-400 min-h-[48px]">
+                <i class="fas fa-newspaper w-5 text-red-400"></i>
+                <span>Daily News</span>
+            </a>
         </nav>
 
         <!-- Footer -->
@@ -234,8 +239,8 @@
         <!-- Content -->
         <div class="p-4 sm:p-6 lg:p-8">
             
-            <!-- Quick Access Cards - Stack on mobile, 2 cols on tablet, 3 cols on desktop -->
-            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 mb-6 sm:mb-8">
+            <!-- Quick Access Cards - Stack on mobile, 2 cols on tablet, 4 cols on desktop -->
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 mb-6 sm:mb-8">
                 
                 <!-- SEO Dashboard Card -->
                 <a href="/zoe-dashboard/seo/" class="card-hover glass rounded-2xl overflow-hidden group active:scale-[0.98]">
@@ -321,7 +326,7 @@
                 </a>
 
                 <!-- Workflow Dashboard Card -->
-                <a href="/zoe-dashboard/workflow.html" class="card-hover glass rounded-2xl overflow-hidden group active:scale-[0.98] sm:col-span-2 lg:col-span-1">
+                <a href="/zoe-dashboard/workflow.html" class="card-hover glass rounded-2xl overflow-hidden group active:scale-[0.98]">
                     <div class="h-28 sm:h-32 bg-gradient-to-br from-cyan-500 to-blue-500 relative">
                         <div class="absolute inset-0 flex items-center justify-center">
                             <i class="fas fa-diagram-project text-white/20 text-5xl sm:text-6xl"></i>
@@ -346,6 +351,41 @@
                         </div>
                         <div class="flex items-center justify-between text-sm text-zinc-400 group-hover:text-cyan-400 transition-colors">
                             <span>View Workflow</span>
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Daily News Card -->
+                <a href="/zoe-dashboard/news.html" class="card-hover glass rounded-2xl overflow-hidden group active:scale-[0.98]">
+                    <div class="h-28 sm:h-32 bg-gradient-to-br from-red-500 to-orange-500 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-newspaper text-white/20 text-5xl sm:text-6xl"></i>
+                        </div>
+                        <div class="absolute top-3 sm:top-4 right-3 sm:right-4">
+                            <span class="px-2 py-1 rounded-lg bg-white/20 text-white text-xs font-medium animate-pulse">NEW</span>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-11 h-11 sm:w-10 sm:h-10 rounded-xl bg-red-500/20 flex items-center justify-center shrink-0">
+                                <i class="fas fa-fire text-red-400 text-lg sm:text-base"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="font-bold text-base sm:text-base truncate">Daily News & Trends</h3>
+                                <p class="text-xs text-zinc-500 truncate">Multi-source intelligence</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 mb-4 justify-center py-2 flex-wrap">
+                            <span class="text-xl" title="Twitter/X">𝕏</span>
+                            <span class="text-xl" title="Reddit">📱</span>
+                            <span class="text-xl" title="Hacker News">⚡</span>
+                            <span class="text-xl" title="News">📰</span>
+                            <span class="text-xl" title="Google Trends">🔍</span>
+                            <span class="text-xl" title="Hawaii">🌺</span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm text-zinc-400 group-hover:text-red-400 transition-colors">
+                            <span>View News Feed</span>
                             <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                         </div>
                     </div>
