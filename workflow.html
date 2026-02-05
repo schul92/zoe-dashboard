@@ -1022,11 +1022,20 @@
         <section>
             <div class="section-header">
                 <h2><i class="fas fa-clock text-cyan-400"></i> Daily Cron Schedule</h2>
-                <span class="section-badge active">2 Active Jobs</span>
+                <span class="section-badge active">3 Active Jobs</span>
             </div>
             
             <div class="cron-timeline" role="region" aria-label="Daily cron job schedule">
                 <!-- Mobile View: List of jobs -->
+                <div class="cron-job-mobile active" tabindex="0">
+                    <div class="cron-job-time">9 AM<br><small>EST</small></div>
+                    <div class="cron-job-content">
+                        <div class="cron-job-title">🔥 SEO Trend Collection</div>
+                        <div class="cron-job-meta">Sonnet 4.5 • Daily</div>
+                    </div>
+                    <div class="cron-job-status active"></div>
+                </div>
+                
                 <div class="cron-job-mobile active" tabindex="0">
                     <div class="cron-job-time">12 PM<br><small>EST</small></div>
                     <div class="cron-job-content">
@@ -1050,7 +1059,13 @@
                 <div class="cron-hour"><span class="cron-hour-label">6 AM</span></div>
                 <div class="cron-hour"><span class="cron-hour-label">7 AM</span></div>
                 <div class="cron-hour"><span class="cron-hour-label">8 AM</span></div>
-                <div class="cron-hour"><span class="cron-hour-label">9 AM</span></div>
+                <div class="cron-hour">
+                    <span class="cron-hour-label">9 AM</span>
+                    <div class="cron-job active">
+                        🔥 SEO Trend Collection<br>
+                        <small style="opacity: 0.7;">Sonnet 4.5 • EST</small>
+                    </div>
+                </div>
                 <div class="cron-hour"><span class="cron-hour-label">10 AM</span></div>
                 <div class="cron-hour"><span class="cron-hour-label">11 AM</span></div>
                 <div class="cron-hour">
