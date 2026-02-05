@@ -1,40 +1,51 @@
 {
-  "collectedAt": "2026-02-04T18:27:49.659913",
+  "collectedAt": "2026-02-04T18:33:25.419960",
   "timezone": "EST",
-  "birdAvailable": false,
+  "birdAvailable": true,
   "twitter": {
-    "trending": [],
+    "trending": [
+      "[AI \u00b7 Other] Daylight Shooting Kills Chicago Mom Near Church, Baby Unharmed",
+      "3 hours ago | 11.0K posts",
+      "\ud83d\udd17 twitter://trending/2019189425029411041",
+      "[AI \u00b7 Entertainment] Peppa Pig's George Gets Hearing Aid in New Inclusive Storyline",
+      "2.6K posts",
+      "\ud83d\udd17 twitter://trending/2019227265280909509",
+      "[AI \u00b7 Sports] Karl-Anthony Towns Powers Through Bloody Cut in Knicks-Nuggets Clash",
+      "2 hours ago | 1.6K posts",
+      "\ud83d\udd17 twitter://trending/2019213051850076236",
+      "[Trending in United States] Stoutland"
+    ],
     "hawaii_coffee": {
       "query": "hawaii coffee",
-      "mentions": 0,
-      "snippet": "Bird CLI unavailable"
+      "mentions": 77,
+      "snippet": "\n@MichaelDeLauzon (The TRUMP PAGE \ud83c\uddfa\ud83c\uddf8):\n@GuntherEagleman It\u2019s poor quality and over-roasted. Kona Coffee is the best. At $50 for a 8oz bag of beans it should be. Kona is from Hawaii.\n\ud83d\udcc5 Thu Feb 05 01:07"
     },
     "kona_coffee": {
       "query": "kona coffee",
-      "mentions": 0,
-      "snippet": "Bird CLI unavailable"
+      "mentions": 103,
+      "snippet": "\n@Bhess (Cranky Cold War Vet):\n@eatinglasvegas If I want super fancy coffee I'll stick with Kona or Jamaica Blue\n\ud83d\udcc5 Thu Feb 05 01:44:35 +0000 2026\n\ud83d\udd17 https://x.com/Bhess/status/2019225610619650134\n\u2500\u2500\u2500\u2500\u2500"
     },
     "waikiki": {
       "query": "waikiki",
-      "mentions": 0,
-      "snippet": "Bird CLI unavailable"
+      "mentions": 89,
+      "snippet": "\n@HawaiiSuppaman (suppaman):\nLet's enjoy a virtual trip \ud83d\ude0a\n#Hawaii #Waikiki #\u30cf\u30ef\u30a4 #\u30ef\u30a4\u30ad\u30ad #WaikikiBeach #KoOlina \nTrip on a Car Window \ud83d\ude97 season 103 \ud83d\ude09 \nGo West\ud83d\ude98\n\u8eca\u7a93\u306e\u65c5 \ud83d\ude97 \u30b7\u30fc\u30ba\u30f3 103 \ud83d\ude09\n\u521d\u3081\u3066\u3054\u7d39\u4ecb\u3059\u308b\u30eb\u30fc\u30c8\u306b\u306a\u308a\u307e\u3059\u3002\u30af\u30cb\u30a2\u30fb\u30ed\u30fc\u30c9\u3067\u4e00"
     }
   },
   "competitors": {
     "island_vintage": {
       "query": "island vintage coffee",
-      "mentions": 0,
-      "snippet": "Bird CLI unavailable"
+      "mentions": 95,
+      "snippet": "\n@Donaldverger (Donald Verger \u2665\ufe0f Maine):\nRare Red - Vintage Bottles Of Sea Glass Treasure In A Window , Long Island, Maine Coffee Mug by Donald Verger -  https://t.co/N0iciBhhni\n\ud83d\udcc5 Wed Jan 28 13:18:59 "
     },
     "honolulu_coffee": {
       "query": "honolulu coffee",
-      "mentions": 0,
-      "snippet": "Bird CLI unavailable"
+      "mentions": 84,
+      "snippet": "\n@AaronRedwolf513 (Aaron The Artificer):\nAlso made a quick stop at the Honolulu Coffee for the Vancouver Hot Chocolate Festival. Acquired both 116 &amp; 117.\n\ud83e\udd0c\nThe spice on 116 was on point, but 117 r"
     },
     "sunrise_shack": {
       "query": "sunrise shack",
-      "mentions": 0,
-      "snippet": "Bird CLI unavailable"
+      "mentions": 79,
+      "snippet": "\n@LukeDavidMurph1 (LukeDavidMurphy):\n@biggieU_U Absolutely chewing your jaw off on Jet staring blankly at a lonely old woman in a decrepit shack. The sunrise and her violin playing sobering you up.\n\ud83d\udcc5 "
     }
   },
   "news": {
