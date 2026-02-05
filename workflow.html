@@ -1058,7 +1058,7 @@
                     <div class="cron-job-time">6 PM<br><small>HST</small></div>
                     <div class="cron-job-content">
                         <div class="cron-job-title">💼 Interview Prep</div>
-                        <div class="cron-job-meta">Sonnet 4.5 • Daily</div>
+                        <div class="cron-job-meta">Opus 4.5 • Daily</div>
                     </div>
                     <div class="cron-job-status active"></div>
                 </div>
@@ -1099,7 +1099,7 @@
                     <span class="cron-hour-label">6 PM</span>
                     <div class="cron-job active">
                         💼 Interview Prep<br>
-                        <small style="opacity: 0.7;">Sonnet 4.5 • HST</small>
+                        <small style="opacity: 0.7;">Opus 4.5 • HST</small>
                     </div>
                 </div>
                 <div class="cron-hour"><span class="cron-hour-label">7 PM</span></div>
@@ -1256,7 +1256,159 @@
             </div>
         </section>
 
-        <!-- 4. Social Media Platforms -->
+        <!-- 4. Research & Intelligence Tools -->
+        <section>
+            <div class="section-header">
+                <h2><i class="fas fa-search text-yellow-400"></i> Research & Intelligence</h2>
+                <span class="section-badge active">6 Data Sources</span>
+            </div>
+
+            <div class="infra-grid" role="list" aria-label="Research tools">
+                <div class="infra-card active" role="listitem" tabindex="0">
+                    <span class="infra-status active">
+                        <span class="status-dot"></span> Active
+                    </span>
+                    <h4>🐦 Bird CLI (Twitter/X)</h4>
+                    <p>Trends + Search</p>
+                    <small><i class="fas fa-fire mr-1"></i>Trending topics, niche searches</small>
+                </div>
+
+                <div class="infra-card active" role="listitem" tabindex="0">
+                    <span class="infra-status active">
+                        <span class="status-dot"></span> Active
+                    </span>
+                    <h4>🔍 Brave Search API</h4>
+                    <p>Web + News</p>
+                    <small><i class="fas fa-globe mr-1"></i>Hawaii news, coffee trends</small>
+                </div>
+
+                <div class="infra-card active" role="listitem" tabindex="0">
+                    <span class="infra-status active">
+                        <span class="status-dot"></span> Active
+                    </span>
+                    <h4>🔥 Hacker News</h4>
+                    <p>Firebase API</p>
+                    <small><i class="fas fa-laptop-code mr-1"></i>Tech + startup trends</small>
+                </div>
+
+                <div class="infra-card active" role="listitem" tabindex="0">
+                    <span class="infra-status active">
+                        <span class="status-dot"></span> Active
+                    </span>
+                    <h4>👽 Reddit</h4>
+                    <p>JSON API</p>
+                    <small><i class="fas fa-coffee mr-1"></i>r/coffee, r/hawaii, r/marketing</small>
+                </div>
+
+                <div class="infra-card active" role="listitem" tabindex="0">
+                    <span class="infra-status active">
+                        <span class="status-dot"></span> Active
+                    </span>
+                    <h4>📈 Google Trends</h4>
+                    <p>pytrends + fallback</p>
+                    <small><i class="fas fa-chart-line mr-1"></i>Trending searches</small>
+                </div>
+
+                <div class="infra-card active" role="listitem" tabindex="0">
+                    <span class="infra-status active">
+                        <span class="status-dot"></span> Optional
+                    </span>
+                    <h4>📰 NewsAPI.org</h4>
+                    <p>Headlines API</p>
+                    <small><i class="fas fa-newspaper mr-1"></i>Global headlines</small>
+                </div>
+            </div>
+
+            <!-- Research Flow -->
+            <div class="mt-4 sm:mt-6 glass rounded-xl sm:rounded-2xl p-4 sm:p-6">
+                <h3 class="font-bold mb-3 sm:mb-4 flex items-center gap-2 text-sm sm:text-base">
+                    <i class="fas fa-brain text-yellow-400"></i>
+                    Daily Intelligence Pipeline
+                </h3>
+                <div class="mermaid-container">
+                    <div class="mermaid-scroll">
+                        <div class="mermaid">
+%%{init: {'theme':'dark', 'themeVariables': {'primaryColor':'#1e293b','primaryTextColor':'#f1f5f9','primaryBorderColor':'#eab308','lineColor':'#64748b'}}}%%
+flowchart LR
+    subgraph Sources["🔍 6 Data Sources"]
+        A[🐦 Bird CLI<br>Twitter Trends]
+        B[🔍 Brave<br>Web Search]
+        C[🔥 HN<br>Tech News]
+        D[👽 Reddit<br>Communities]
+        E[📈 G.Trends<br>Searches]
+        F[📰 NewsAPI<br>Headlines]
+    end
+    
+    subgraph Process["⚡ Processing"]
+        G[Aggregate<br>& Dedupe]
+        H[Score<br>& Rank]
+    end
+    
+    subgraph Output["📊 Output"]
+        I[Trend Dashboard]
+        J[News Dashboard]
+        K[Telegram Summary]
+        L[Content Ideas]
+    end
+    
+    A --> G
+    B --> G
+    C --> G
+    D --> G
+    E --> G
+    F --> G
+    G --> H
+    H --> I
+    H --> J
+    H --> K
+    H --> L
+    
+    style A fill:#1da1f2,stroke:#0c8bd9
+    style B fill:#fb923c,stroke:#ea580c
+    style C fill:#ff6600,stroke:#cc5200
+    style D fill:#ff4500,stroke:#cc3700
+    style E fill:#4285f4,stroke:#2a75f3
+    style F fill:#22c55e,stroke:#16a34a
+    style K fill:#0088cc,stroke:#006699
+                        </div>
+                    </div>
+                    <div class="mermaid-hint">
+                        <i class="fas fa-hand-pointer"></i>
+                        <span>Swipe to explore diagram</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Topics -->
+            <div class="mt-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-3">
+                <div class="glass rounded-lg p-3 text-center">
+                    <div class="text-lg mb-1">🏝️</div>
+                    <div class="text-xs font-semibold text-cyan-400">hawaii coffee</div>
+                </div>
+                <div class="glass rounded-lg p-3 text-center">
+                    <div class="text-lg mb-1">☕</div>
+                    <div class="text-xs font-semibold text-amber-400">kona coffee</div>
+                </div>
+                <div class="glass rounded-lg p-3 text-center">
+                    <div class="text-lg mb-1">🏖️</div>
+                    <div class="text-xs font-semibold text-blue-400">waikiki</div>
+                </div>
+                <div class="glass rounded-lg p-3 text-center">
+                    <div class="text-lg mb-1">📊</div>
+                    <div class="text-xs font-semibold text-purple-400">coffee trends</div>
+                </div>
+                <div class="glass rounded-lg p-3 text-center">
+                    <div class="text-lg mb-1">🍽️</div>
+                    <div class="text-xs font-semibold text-pink-400">honolulu food</div>
+                </div>
+                <div class="glass rounded-lg p-3 text-center">
+                    <div class="text-lg mb-1">✈️</div>
+                    <div class="text-xs font-semibold text-emerald-400">hawaii tourism</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Social Media Platforms -->
         <section>
             <div class="section-header">
                 <h2><i class="fas fa-share-nodes text-blue-400"></i> 5-Platform Distribution</h2>
@@ -1310,15 +1462,17 @@
                         <div class="mermaid">
 %%{init: {'theme':'dark', 'themeVariables': {'primaryColor':'#1e293b','primaryTextColor':'#f1f5f9','primaryBorderColor':'#3b82f6','lineColor':'#64748b','secondaryColor':'#0f172a','tertiaryColor':'#020617','background':'#0f172a','mainBkg':'#1e293b','secondaryBkg':'#334155','tertiaryBkg':'#475569','fontSize':'14px'}}}%%
 flowchart LR
-    subgraph Research["🔍 Research"]
-        A[Trend Analysis]
-        B[Competitor Review]
+    subgraph Research["🔍 6-Source Research"]
+        A1[🐦 Bird CLI<br>Twitter Trends]
+        A2[🔍 Brave Search<br>Web + News]
+        A3[👽 Reddit + HN<br>Communities]
+        B[🏪 Competitor<br>Analysis]
     end
     
     subgraph Generate["✍️ Content Generation"]
         C[Opus 4.5 Sub-agent]
-        D[5 Platform-specific Posts]
-        E[1 Pexels Image]
+        D[5 Platform Posts<br>SEO Optimized]
+        E[1 Pexels Image<br>Brand Consistent]
     end
     
     subgraph Approve["✅ Approval"]
@@ -1339,7 +1493,9 @@ flowchart LR
         N[Bluesky]
     end
     
-    A --> C
+    A1 --> C
+    A2 --> C
+    A3 --> C
     B --> C
     C --> D
     C --> E
@@ -1354,6 +1510,9 @@ flowchart LR
     H --> M
     I --> N
     
+    style A1 fill:#1da1f2,stroke:#0c8bd9
+    style A2 fill:#fb923c,stroke:#ea580c
+    style A3 fill:#ff4500,stroke:#cc3700
     style C fill:#8b5cf6,stroke:#7c3aed
     style G fill:#f59e0b,stroke:#d97706
     style J fill:#1da1f2,stroke:#0c8bd9
