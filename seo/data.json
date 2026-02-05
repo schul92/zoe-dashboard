@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-05T02:26:29.742854Z",
+  "collectedAt": "2026-02-05T02:42:50.344798Z",
   "searchConsole": {
     "totals": {
       "clicks": 24,
@@ -172,11 +172,11 @@
   },
   "ga4": {
     "success": true,
-    "activeUsers": 67,
-    "sessions": 100,
-    "bounceRate": 32.0,
-    "engagementRate": 68.0,
-    "avgSessionDuration": 587.3,
+    "activeUsers": 68,
+    "sessions": 101,
+    "bounceRate": 32.67,
+    "engagementRate": 67.3,
+    "avgSessionDuration": 581.5,
     "pageviews": 129,
     "topPages": [
       {
@@ -200,8 +200,8 @@
       {
         "page": "/ko/about-kona-coffee",
         "pageviews": 5,
-        "users": 3,
-        "avgDuration": 406.4
+        "users": 4,
+        "avgDuration": 305.9
       },
       {
         "page": "/en/malasada-hawaii",
@@ -243,8 +243,8 @@
     "trafficSources": [
       {
         "channel": "Organic Search",
-        "sessions": 90,
-        "users": 58
+        "sessions": 91,
+        "users": 59
       },
       {
         "channel": "Organic Social",
@@ -271,9 +271,9 @@
       },
       {
         "device": "mobile",
-        "sessions": 39,
-        "users": 28,
-        "bounceRate": 28.2
+        "sessions": 40,
+        "users": 29,
+        "bounceRate": 30.0
       },
       {
         "device": "tablet",
@@ -289,12 +289,12 @@
         "sessions": 94
       },
       {
-        "country": "Japan",
-        "users": 2,
-        "sessions": 2
+        "country": "South Korea",
+        "users": 3,
+        "sessions": 3
       },
       {
-        "country": "South Korea",
+        "country": "Japan",
         "users": 2,
         "sessions": 2
       },
@@ -338,19 +338,19 @@
         "conversions": 0
       },
       {
+        "page": "/ko/about-kona-coffee",
+        "sessions": 4,
+        "users": 4,
+        "engagementRate": 50.0,
+        "avgDuration": 72.5,
+        "conversions": 0
+      },
+      {
         "page": "/en/menu",
         "sessions": 3,
         "users": 3,
         "engagementRate": 100.0,
         "avgDuration": 289.6,
-        "conversions": 0
-      },
-      {
-        "page": "/ko/about-kona-coffee",
-        "sessions": 3,
-        "users": 3,
-        "engagementRate": 66.7,
-        "avgDuration": 95.2,
         "conversions": 0
       },
       {
