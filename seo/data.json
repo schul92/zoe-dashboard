@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-05T00:13:38.878563Z",
+  "collectedAt": "2026-02-05T01:51:12.898746Z",
   "searchConsole": {
     "totals": {
       "clicks": 24,
@@ -81,7 +81,42 @@
         "ctr": 0,
         "position": 18.8
       }
-    ]
+    ],
+    "brandedVsNonBranded": {
+      "branded": {
+        "clicks": 11,
+        "impressions": 38,
+        "percentage": 45.8
+      },
+      "nonBranded": {
+        "clicks": 13,
+        "impressions": 265,
+        "percentage": 54.2
+      }
+    },
+    "positionBrackets": {
+      "1-3": {
+        "clicks": 11,
+        "impressions": 58,
+        "keywords": 11
+      },
+      "4-10": {
+        "clicks": 0,
+        "impressions": 46,
+        "keywords": 15
+      },
+      "11-20": {
+        "clicks": 1,
+        "impressions": 21,
+        "keywords": 9
+      },
+      "21+": {
+        "clicks": 0,
+        "impressions": 9,
+        "keywords": 4
+      }
+    },
+    "opportunityKeywords": []
   },
   "keywordPositions": {
     "kona coffee donut": {
@@ -140,6 +175,7 @@
     "activeUsers": 67,
     "sessions": 100,
     "bounceRate": 32.0,
+    "engagementRate": 68.0,
     "avgSessionDuration": 587.3,
     "pageviews": 129,
     "topPages": [
@@ -203,11 +239,157 @@
         "users": 1,
         "avgDuration": 41.3
       }
+    ],
+    "trafficSources": [
+      {
+        "channel": "Organic Search",
+        "sessions": 90,
+        "users": 58
+      },
+      {
+        "channel": "Organic Social",
+        "sessions": 10,
+        "users": 10
+      },
+      {
+        "channel": "Unassigned",
+        "sessions": 3,
+        "users": 3
+      },
+      {
+        "channel": "Cross-network",
+        "sessions": 1,
+        "users": 1
+      }
+    ],
+    "devices": [
+      {
+        "device": "desktop",
+        "sessions": 59,
+        "users": 38,
+        "bounceRate": 33.9
+      },
+      {
+        "device": "mobile",
+        "sessions": 39,
+        "users": 28,
+        "bounceRate": 28.2
+      },
+      {
+        "device": "tablet",
+        "sessions": 2,
+        "users": 2,
+        "bounceRate": 50.0
+      }
+    ],
+    "countries": [
+      {
+        "country": "United States",
+        "users": 62,
+        "sessions": 94
+      },
+      {
+        "country": "Japan",
+        "users": 2,
+        "sessions": 2
+      },
+      {
+        "country": "South Korea",
+        "users": 2,
+        "sessions": 2
+      },
+      {
+        "country": "Singapore",
+        "users": 1,
+        "sessions": 2
+      }
+    ],
+    "landingPages": [
+      {
+        "page": "/en",
+        "sessions": 58,
+        "users": 43,
+        "engagementRate": 75.9,
+        "avgDuration": 924.1,
+        "conversions": 0
+      },
+      {
+        "page": "(not set)",
+        "sessions": 13,
+        "users": 6,
+        "engagementRate": 23.1,
+        "avgDuration": 39.5,
+        "conversions": 0
+      },
+      {
+        "page": "/en/breakfast-waikiki",
+        "sessions": 5,
+        "users": 5,
+        "engagementRate": 80.0,
+        "avgDuration": 174.2,
+        "conversions": 0
+      },
+      {
+        "page": "",
+        "sessions": 4,
+        "users": 2,
+        "engagementRate": 0.0,
+        "avgDuration": 42.1,
+        "conversions": 0
+      },
+      {
+        "page": "/en/menu",
+        "sessions": 3,
+        "users": 3,
+        "engagementRate": 100.0,
+        "avgDuration": 289.6,
+        "conversions": 0
+      },
+      {
+        "page": "/ko/about-kona-coffee",
+        "sessions": 3,
+        "users": 3,
+        "engagementRate": 66.7,
+        "avgDuration": 95.2,
+        "conversions": 0
+      },
+      {
+        "page": "/es",
+        "sessions": 2,
+        "users": 1,
+        "engagementRate": 50.0,
+        "avgDuration": 63.5,
+        "conversions": 0
+      },
+      {
+        "page": "/en/careers",
+        "sessions": 1,
+        "users": 1,
+        "engagementRate": 0.0,
+        "avgDuration": 1.9,
+        "conversions": 0
+      },
+      {
+        "page": "/en/malasada-hawaii",
+        "sessions": 1,
+        "users": 1,
+        "engagementRate": 100.0,
+        "avgDuration": 382.5,
+        "conversions": 0
+      },
+      {
+        "page": "/ko",
+        "sessions": 1,
+        "users": 1,
+        "engagementRate": 100.0,
+        "avgDuration": 96.3,
+        "conversions": 0
+      }
     ]
   },
   "metadata": {
     "source": "AWS Lambda",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "property": "sc-domain:konacoffeedonut.com"
   }
 }
