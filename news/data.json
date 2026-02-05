@@ -1,0 +1,180 @@
+{
+  "collectedAt": "2026-02-04T19:01:31.466289",
+  "timezone": "EST",
+  "sources": {
+    "twitter": "Bird CLI",
+    "brave": "Brave Search API",
+    "hackerNews": "Hacker News Firebase API",
+    "reddit": "Reddit RSS",
+    "newsapi": "Disabled",
+    "google": "Google Trends (pytrends)"
+  },
+  "twitter": [],
+  "hackerNews": [
+    {
+      "title": "Voxtral Transcribe 2",
+      "description": "",
+      "url": "https://mistral.ai/news/voxtral-transcribe-2",
+      "stats": {
+        "points": 761,
+        "comments": 180
+      },
+      "timestamp": "2026-02-04T07:08:17"
+    },
+    {
+      "title": "OpenClaw is what Apple intelligence should have been",
+      "description": "",
+      "url": "https://www.jakequist.com/thoughts/openclaw-is-what-apple-intelligence-should-have-been",
+      "stats": {
+        "points": 136,
+        "comments": 132
+      },
+      "timestamp": "2026-02-04T16:28:06"
+    },
+    {
+      "title": "Sqldef: Idempotent schema management tool for MySQL, PostgreSQL, SQLite",
+      "description": "",
+      "url": "https://sqldef.github.io/",
+      "stats": {
+        "points": 69,
+        "comments": 15
+      },
+      "timestamp": "2026-02-01T02:56:42"
+    },
+    {
+      "title": "Claude Code: connect to a local model when your quota runs out",
+      "description": "",
+      "url": "https://boxc.net/blog/2026/claude-code-connecting-to-local-models-when-your-quota-runs-out/",
+      "stats": {
+        "points": 204,
+        "comments": 104
+      },
+      "timestamp": "2026-02-01T04:43:41"
+    },
+    {
+      "title": "AI is killing B2B SaaS",
+      "description": "",
+      "url": "https://nmn.gl/blog/ai-killing-b2b-saas",
+      "stats": {
+        "points": 247,
+        "comments": 400
+      },
+      "timestamp": "2026-02-04T09:09:28"
+    },
+    {
+      "title": "Claude Code for Infrastructure",
+      "description": "",
+      "url": "https://www.fluid.sh/",
+      "stats": {
+        "points": 158,
+        "comments": 134
+      },
+      "timestamp": "2026-02-04T10:34:08"
+    },
+    {
+      "title": "Remarkable Pro Colors",
+      "description": "",
+      "url": "https://www.thregr.org/wavexx/rnd/20260201-remarkable_pro_colors/",
+      "stats": {
+        "points": 66,
+        "comments": 26
+      },
+      "timestamp": "2026-02-01T04:12:00"
+    },
+    {
+      "title": "Building a 24-bit arcade CRT display adapter from scratch",
+      "description": "",
+      "url": "https://www.scd31.com/posts/building-an-arcade-display-adapter",
+      "stats": {
+        "points": 129,
+        "comments": 35
+      },
+      "timestamp": "2026-02-04T09:35:05"
+    },
+    {
+      "title": "Microsoft's Copilot chatbot is running into problems",
+      "description": "Gift link: <a href=\"https:&#x2F;&#x2F;www.wsj.com&#x2F;tech&#x2F;ai&#x2F;microsofts-pivotal-ai-product-is-running-into-big-problems-ce235b28?st=V8rLES&amp;reflink=desktopwebshare_permalink\" rel=\"nofol",
+      "url": "https://www.wsj.com/tech/ai/microsofts-pivotal-ai-product-is-running-into-big-problems-ce235b28",
+      "stats": {
+        "points": 140,
+        "comments": 170
+      },
+      "timestamp": "2026-02-04T08:08:55"
+    },
+    {
+      "title": "Lily Programming Language",
+      "description": "",
+      "url": "https://lily-lang.org",
+      "stats": {
+        "points": 13,
+        "comments": 5
+      },
+      "timestamp": "2026-02-01T13:53:12"
+    }
+  ],
+  "reddit": [],
+  "news": [],
+  "hawaii": [
+    {
+      "title": "Waimea Cherry Blossom Festival on Saturday, February 7, 2026 - Hawaii Real Estate Market & Trends | Hawaii Life",
+      "description": "Every February, the sleepy town of Waimea bursts into shades of pink as the beloved <strong>Cherry Blossom Festival</strong> returns! This much-anticipated event celebrates the breathtaking bloom of t",
+      "url": "https://www.hawaiilife.com/blog/waimea-cherry-blossom-festival-saturday-february-7-2026/",
+      "timestamp": "2026-02-04T19:01:44.810344"
+    },
+    {
+      "title": "Your Guide to the Perfect Weekend in Honolulu: Feb. 5\u201311, 2026",
+      "description": "Free, Hawaiian Aroma Caffe\u0301 at Outrigger Waik\u012bk\u012b Beachcomber Hotel, 2300 Kal\u0101kaua Ave., Waik\u012bk\u012b, eventbrite.com, @endlessstylesfestival \u00b7 SEE ALSO: Your Insider Guide to the 2026 <strong>Punahou Carni",
+      "url": "https://www.honolulumagazine.com/weekend-guide-feb-5-11-2026/",
+      "timestamp": "2026-02-04T19:01:44.810367"
+    },
+    {
+      "title": "News in brief for February 4 - Hawaii Tribune-Herald",
+      "description": "News in brief for February 4 - Nation and World News | Hawaii Tribune-Herald",
+      "url": "https://www.hawaiitribune-herald.com/2026/02/04/nation-world-news/news-in-brief-for-february-4/",
+      "timestamp": "2026-02-04T19:01:44.810373"
+    },
+    {
+      "title": "TDY Lodging expects 2026 Hawaii surge of Military and Government travel to Oahu as Government Shutdown Ends",
+      "description": "Postponed travel from the 43-day government shutdown, a January 2026 shutdown, economic snapback in the U.S., and Indo-Pacific security priorities collide with softer tourism and vacation travel. TDY ",
+      "url": "https://www.prnewswire.com/news-releases/tdy-lodging-expects-2026-hawaii-surge-of-military-and-government-travel-to-oahu-as-government-shutdown-ends-302678298.html",
+      "timestamp": "2026-02-04T19:01:44.810378"
+    },
+    {
+      "title": "Your Views for February 4 - Hawaii Tribune-Herald",
+      "description": "Your Views for February 4 - Opinion, Your Views | Hawaii Tribune-Herald",
+      "url": "https://www.hawaiitribune-herald.com/2026/02/04/opinion/your-views-for-february-4-8/",
+      "timestamp": "2026-02-04T19:01:44.810382"
+    },
+    {
+      "title": "Letters \u2014Your Voice \u2014 for February 4 - West Hawaii Today",
+      "description": "Letters \u2014Your Voice \u2014 for February 4 \u2013 Opinion, Your Voice | West Hawaii Today",
+      "url": "https://www.westhawaiitoday.com/2026/02/04/opinion/letters-your-voice-for-february-4/",
+      "timestamp": "2026-02-04T19:01:44.810386"
+    },
+    {
+      "title": "These are the new Xbox Game Pass games in February 2026 - Digitec",
+      "description": "With <strong>&quot;High on Life 2&quot;, &quot;Avowed&quot; and &quot;Like A Dragon: Pirate Yakuza in Hawaii&quot;,</strong> the Xbox Game Pass will feature big names in February 2026: from shooters t",
+      "url": "https://www.digitec.ch/en/page/these-are-the-new-xbox-game-pass-games-in-february-2026-41421",
+      "timestamp": "2026-02-04T19:01:44.810390"
+    },
+    {
+      "title": "Xbox Game Pass Feb 2026: 12 games inc High on Life | tbreak",
+      "description": "Major titles include <strong>High on Life 2 (day one launch), Madden NFL 26, Avatar: Frontiers of Pandora, Avowed, Like A Dragon: Pirate Yakuza in Hawaii, and Kingdom Come Deliverance</strong> across ",
+      "url": "https://tbreak.com/xbox-game-pass-february-2026-games/",
+      "timestamp": "2026-02-04T19:01:44.810394"
+    },
+    {
+      "title": "Monopoly Go Events Today Schedule - February 4, 2026 - Monopoly GO!",
+      "description": "This includes details of the main events and tournaments, today&#x27;s Quick Win tasks and rewards, the flash boost schedule, and our own summary of what to watch for, including the best times to play",
+      "url": "https://www.supercheats.com/monopoly-go-walkthrough-guide/monopoly-go-todays-events-schedule-daily-updates",
+      "timestamp": "2026-02-04T19:01:44.810398"
+    },
+    {
+      "title": "$1.5 trillion for the Pentagon is a recipe for waste and fraud - Hawaii Tribune-Herald",
+      "description": "Wednesday, February 4, 2026 Today&#x27;s Paper \u00b7 Subscribe Account \u00b7 Hawaii News \u00b7 Entertainment \u00b7 Sports \u00b7 Obituaries \u00b7 Community \u00b7 Calendar \u00b7 Submit an Event \u00b7 Opinion \u00b7 Our Views \u00b7 Your Views \u00b7 The",
+      "url": "https://www.hawaiitribune-herald.com/2026/02/04/opinion/1-5-trillion-for-the-pentagon-is-a-recipe-for-waste-and-fraud/",
+      "timestamp": "2026-02-04T19:01:44.810403"
+    }
+  ],
+  "googleTrends": []
+}
