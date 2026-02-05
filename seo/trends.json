@@ -1,72 +1,233 @@
 {
-  "collectedAt": "2026-02-04T18:33:25.419960",
+  "collectedAt": "2026-02-04T20:26:42.459522",
   "timezone": "EST",
   "birdAvailable": true,
+  "sources": "6-source aggregation (Twitter, HN, Reddit, Brave, NewsAPI, Google Trends)",
   "twitter": {
     "trending": [
-      "[AI \u00b7 Other] Daylight Shooting Kills Chicago Mom Near Church, Baby Unharmed",
-      "3 hours ago | 11.0K posts",
-      "\ud83d\udd17 twitter://trending/2019189425029411041",
-      "[AI \u00b7 Entertainment] Peppa Pig's George Gets Hearing Aid in New Inclusive Storyline",
-      "2.6K posts",
-      "\ud83d\udd17 twitter://trending/2019227265280909509",
-      "[AI \u00b7 Sports] Karl-Anthony Towns Powers Through Bloody Cut in Knicks-Nuggets Clash",
-      "2 hours ago | 1.6K posts",
-      "\ud83d\udd17 twitter://trending/2019213051850076236",
-      "[Trending in United States] Stoutland"
+      "[AI \u00b7 Other] Daylight Shooting Kills Mother Near Chicago Church, Baby Unharmed",
+      "5 hours ago | 19.0K posts",
+      "[AI \u00b7 News] Silver Prices Plunge Below $75 After Wild Weekly Swings",
+      "16 hours ago | 15.0K posts",
+      "[AI \u00b7 Other] Kamala Harris Campaign Account Posts Cryptic Video Teasing Tomorrow's Announcement",
+      "4 hours ago | 29.0K posts",
+      "[Trending in United States] Anthony Roy",
+      "[Sports \u00b7 Trending] Oklahoma State",
+      "[Sports \u00b7 Trending] Keldon Johnson",
+      "[Sports \u00b7 Trending] Fears",
+      "[Sports \u00b7 Trending] Northwestern",
+      "[Sports \u00b7 Trending] Skubal",
+      "[AI \u00b7 Other] Momentum Builds for SAVE America Act Requiring Voter ID and Citizenship Proof",
+      "21 hours ago | 432.0K posts"
     ],
     "hawaii_coffee": {
       "query": "hawaii coffee",
-      "mentions": 77,
-      "snippet": "\n@MichaelDeLauzon (The TRUMP PAGE \ud83c\uddfa\ud83c\uddf8):\n@GuntherEagleman It\u2019s poor quality and over-roasted. Kona Coffee is the best. At $50 for a 8oz bag of beans it should be. Kona is from Hawaii.\n\ud83d\udcc5 Thu Feb 05 01:07"
+      "mentions": 17,
+      "snippet": "@MichaelDeLauzon (The TRUMP PAGE \ud83c\uddfa\ud83c\uddf8): | @GuntherEagleman It\u2019s poor quality and over-roasted. Kona Coffee is the best. At $50 for a 8oz bag of beans it should be. Kona is from Hawaii. | \ud83d\udcc5 Thu Feb 05 01:07:48 +0000 2026"
     },
     "kona_coffee": {
       "query": "kona coffee",
-      "mentions": 103,
-      "snippet": "\n@Bhess (Cranky Cold War Vet):\n@eatinglasvegas If I want super fancy coffee I'll stick with Kona or Jamaica Blue\n\ud83d\udcc5 Thu Feb 05 01:44:35 +0000 2026\n\ud83d\udd17 https://x.com/Bhess/status/2019225610619650134\n\u2500\u2500\u2500\u2500\u2500"
+      "mentions": 26,
+      "snippet": "@Bhess (Cranky Cold War Vet): | @eatinglasvegas If I want super fancy coffee I'll stick with Kona or Jamaica Blue | \ud83d\udcc5 Thu Feb 05 01:44:35 +0000 2026"
     },
     "waikiki": {
       "query": "waikiki",
-      "mentions": 89,
-      "snippet": "\n@HawaiiSuppaman (suppaman):\nLet's enjoy a virtual trip \ud83d\ude0a\n#Hawaii #Waikiki #\u30cf\u30ef\u30a4 #\u30ef\u30a4\u30ad\u30ad #WaikikiBeach #KoOlina \nTrip on a Car Window \ud83d\ude97 season 103 \ud83d\ude09 \nGo West\ud83d\ude98\n\u8eca\u7a93\u306e\u65c5 \ud83d\ude97 \u30b7\u30fc\u30ba\u30f3 103 \ud83d\ude09\n\u521d\u3081\u3066\u3054\u7d39\u4ecb\u3059\u308b\u30eb\u30fc\u30c8\u306b\u306a\u308a\u307e\u3059\u3002\u30af\u30cb\u30a2\u30fb\u30ed\u30fc\u30c9\u3067\u4e00"
+      "mentions": 18,
+      "snippet": "@universe_is_art (Running Critical): | @HawaiiNewsNow He\u2019s right about the need to move infrastructure back. | What he leaves out is the Kakaako and Waikiki areas were once wetlands/marsh. He knows this."
     }
   },
   "competitors": {
     "island_vintage": {
       "query": "island vintage coffee",
-      "mentions": 95,
-      "snippet": "\n@Donaldverger (Donald Verger \u2665\ufe0f Maine):\nRare Red - Vintage Bottles Of Sea Glass Treasure In A Window , Long Island, Maine Coffee Mug by Donald Verger -  https://t.co/N0iciBhhni\n\ud83d\udcc5 Wed Jan 28 13:18:59 "
+      "mentions": 36,
+      "snippet": "@Donaldverger (Donald Verger \u2665\ufe0f Maine): | Rare Red - Vintage Bottles Of Sea Glass Treasure In A Window , Long Island, Maine Coffee Mug by Donald Verger -  https://t.co/N0iciBhhni | \ud83d\udcc5 Wed Jan 28 13:18:59 +0000 2026"
     },
     "honolulu_coffee": {
       "query": "honolulu coffee",
-      "mentions": 84,
-      "snippet": "\n@AaronRedwolf513 (Aaron The Artificer):\nAlso made a quick stop at the Honolulu Coffee for the Vancouver Hot Chocolate Festival. Acquired both 116 &amp; 117.\n\ud83e\udd0c\nThe spice on 116 was on point, but 117 r"
+      "mentions": 29,
+      "snippet": "@AaronRedwolf513 (Aaron The Artificer): | Also made a quick stop at the Honolulu Coffee for the Vancouver Hot Chocolate Festival. Acquired both 116 &amp; 117. | \ud83e\udd0c"
     },
     "sunrise_shack": {
       "query": "sunrise shack",
-      "mentions": 79,
-      "snippet": "\n@LukeDavidMurph1 (LukeDavidMurphy):\n@biggieU_U Absolutely chewing your jaw off on Jet staring blankly at a lonely old woman in a decrepit shack. The sunrise and her violin playing sobering you up.\n\ud83d\udcc5 "
+      "mentions": 30,
+      "snippet": "@BitcoinMorfeo (Bitcoin Morfeo): | I\u2019m in kailua, Hawaii, and I just bought a couple of a\u00e7ai bowls with bitcoin at the Sunrise Shack! \u20bf | \ud83d\udcc5 Sat Jan 31 22:09:30 +0000 2026"
     }
   },
   "news": {
     "hawaii_events": [
       {
-        "title": "February 2026 Events in O\u02bbahu, Honolulu & Waik\u012bk\u012b",
-        "url": "https://waikikibeachstays.com/oahu-events/by-month/february/",
-        "description": "February 2026 <strong>Craft &amp; Collectibles Fair</strong> \u00b7 First Saturday at Ward Village \u00b7 Hawaiian Steel Guitar Festival at Ka Makana Ali\u2018i \u00b7 Ho"
+        "title": "News briefs for Monday, February 2, 2026 - The Garden Island",
+        "url": "https://www.thegardenisland.com/2026/02/02/hawaii-news/news-briefs-for-monday-february-2-2026/",
+        "description": "Jill Tokuda, D-District 2, began a series of town-hall meetings this weekend that will take her to every county of Hawaii. Tokuda will discuss policie"
       },
       {
-        "title": "Events in Hawaii in February 2026",
-        "url": "https://www.myguidehawaii.com/events/february-2026",
-        "description": "... See the best of Honolulu with this 1, 4 or 7-day all-line pass. Explore Diamond Head, Sea Life Park, Waikiki, and more from open-air trolleys and "
+        "title": "Things to Do on O\u2018ahu in February 2026",
+        "url": "https://www.honolulumagazine.com/things-to-do-oahu-february-2026/",
+        "description": "<strong>Celebrate African American culture through films, have a roaring good time at Punahou Carnival</strong>, welcome the Lunar New Year and more."
       },
       {
-        "title": "February 2026 events & updates at Hawai\u2018i Volcanoes National Park - Hawai\u02bbi Volcanoes National Park (U.S. National Park Service)",
-        "url": "https://www.nps.gov/havo/learn/news/20260120-nr-feb-2026-events.htm",
-        "description": "Contact: Jessica Ferracane HAWAII NATIONAL PARK, Hawai\u02bbi \u2013 Hawai\u02bbi Volcanoes National Park announces updates and events for February 2026: <strong>K\u012bl"
+        "title": "February 2026 anniversaries | University of Hawai\u02bbi System News",
+        "url": "https://www.hawaii.edu/news/2026/02/02/february-2026-anniversaries/",
+        "description": "The University of Hawai\u02bbi celebrates February 2026 <strong>faculty and staff anniversaries</strong>."
+      },
+      {
+        "title": "2026 Chinatown Festival & Parade",
+        "url": "https://chinatown808.com/events/chinatown-festival-parade/",
+        "description": "<strong>Lunar New Year officially falls on Tuesday, February 17, 2026</strong>, marking the beginning of the Year of the Horse. The parade will step o"
+      },
+      {
+        "title": "Your Guide to the Perfect Weekend in Honolulu: Feb. 5\u201311, 2026",
+        "url": "https://www.honolulumagazine.com/weekend-guide-feb-5-11-2026/",
+        "description": "Watch top-notch breakdancers, see African American films, clean up an east side beach, listen to Hawaiian steel guitar tunes and more."
       }
     ],
-    "coffee_industry": [],
-    "waikiki_news": []
-  }
+    "coffee_industry": [
+      {
+        "title": "Kauai Coffee Company, a popular tourist attraction, faces closure: Travel Weekly",
+        "url": "https://www.travelweekly.com/Hawaii-Travel/Lease-expiry-threatens-future-of-Kauai-largest-coffee-farm",
+        "description": "Hawaii \u00b7 By Christine Hitt \u00b7 ... decades in operation, the popular visitor destination <strong>Kauai Coffee Company is scheduled to close in March whe"
+      },
+      {
+        "title": "Let\u2019s Talk Food: The latest foodie news - West Hawaii Today",
+        "url": "https://www.westhawaiitoday.com/2026/02/03/features/lets-talk-food-the-latest-foodie-news/",
+        "description": "At the 5:30-9:30 p.m. Saturday ... tea and coffee. The gala also offers VIP seating with two specially curated drinks paired with pupus. A panel of in"
+      },
+      {
+        "title": "2026 EXPLORING THE GREEN WORLD COFFEE FARM IN OAHU, HAWAII (AMAZING 100% KONA COFFEE IN WAHIAWA) - YouTube",
+        "url": "https://www.youtube.com/watch?v=vnWdk9GksTE",
+        "description": "#coffee #coffeefarm #oahu #hawaii #exploringoahu #2026 #roadtrip #farm #Greenworld #coffeefarm #GreenWorldCoffeeFarmHello everybody, welcome to Explor"
+      },
+      {
+        "title": "Let\u2019s Talk Food: The latest foodie news - Hawaii Tribune-Herald",
+        "url": "https://www.hawaiitribune-herald.com/2026/02/03/features/lets-talk-food-the-latest-foodie-news/",
+        "description": "<strong>At the 5:30-9:30 p.m. Saturday gala, guests can enjoy unlimited wine, beer, iced tea and coffee</strong>. The gala also offers VIP seating wit"
+      },
+      {
+        "title": "Last year was difficult for the coffee industry: Will 2026 be different? - Perfect Daily Grind",
+        "url": "https://perfectdailygrind.com/2026/02/will-2026-be-different-coffee-industry-challenges/",
+        "description": "The trend has been around for a while now; it may be the result of a changing coffee culture.\u201d \u00b7 <strong>The coffee industry was fundamentally reshape"
+      }
+    ],
+    "tech_trends": [
+      {
+        "title": "Child prodigies rarely become elite performers",
+        "url": "https://www.economist.com/science-and-technology/2026/01/14/why-child-prodigies-rarely-become-elite-performers",
+        "points": 48
+      },
+      {
+        "title": "Voxtral Transcribe 2",
+        "url": "https://mistral.ai/news/voxtral-transcribe-2",
+        "points": 797
+      },
+      {
+        "title": "Postgres Postmaster does not scale",
+        "url": "https://www.recall.ai/blog/postgres-postmaster-does-not-scale",
+        "points": 20
+      },
+      {
+        "title": "Sqldef: Idempotent schema management tool for MySQL, PostgreSQL, SQLite",
+        "url": "https://sqldef.github.io/",
+        "points": 90
+      },
+      {
+        "title": "OpenClaw is what Apple intelligence should have been",
+        "url": "https://www.jakequist.com/thoughts/openclaw-is-what-apple-intelligence-should-have-been",
+        "points": 197
+      }
+    ]
+  },
+  "reddit": {
+    "hot_topics": [
+      {
+        "title": "[MOD] The Daily Question Thread",
+        "url": "https://www.reddit.com/r/Coffee/comments/1qvlm0q/mod_the_daily_question_thread/",
+        "subreddit": "r/coffee",
+        "points": 1
+      },
+      {
+        "title": "[MOD] The Daily Question Thread",
+        "url": "https://www.reddit.com/r/Coffee/comments/1qup0jd/mod_the_daily_question_thread/",
+        "subreddit": "r/coffee",
+        "points": 13
+      },
+      {
+        "title": "History of Coffee",
+        "url": "https://www.reddit.com/r/Coffee/comments/1qw25kv/history_of_coffee/",
+        "subreddit": "r/coffee",
+        "points": 4
+      },
+      {
+        "title": "Small Fridge for Milk Carafe and Qt of Milk?",
+        "url": "https://www.reddit.com/r/Coffee/comments/1qw3319/small_fridge_for_milk_carafe_and_qt_of_milk/",
+        "subreddit": "r/coffee",
+        "points": 2
+      },
+      {
+        "title": "I accidentally ground coffee at an espresso granularity for my pourover, and decided to make the cof",
+        "url": "https://www.reddit.com/r/Coffee/comments/1qv1fmf/i_accidentally_ground_coffee_at_an_espresso/",
+        "subreddit": "r/coffee",
+        "points": 184
+      },
+      {
+        "title": "Why do people mix less across cultures on the mainland than in Hawai\u02bbi?",
+        "url": "https://www.reddit.com/r/Hawaii/comments/1qvqemg/why_do_people_mix_less_across_cultures_on_the/",
+        "subreddit": "r/hawaii",
+        "points": 82
+      },
+      {
+        "title": "COVID-19 Update for 2/4/26",
+        "url": "https://www.reddit.com/r/Hawaii/comments/1qw2sk5/covid19_update_for_2426/",
+        "subreddit": "r/hawaii",
+        "points": 18
+      },
+      {
+        "title": "Morning Traffic",
+        "url": "https://www.reddit.com/r/Hawaii/comments/1qvtqld/morning_traffic/",
+        "subreddit": "r/hawaii",
+        "points": 52
+      }
+    ]
+  },
+  "googleTrends": [
+    {
+      "term": "Reuters Latest U.S. News | Top headlines from the USA | Reuters",
+      "url": "https://www.reuters.com/world/us/"
+    },
+    {
+      "term": "United States \u2014 X (Twitter) trending topics and hashtags today | trends24.in",
+      "url": "https://trends24.in/united-states/"
+    },
+    {
+      "term": "USA TODAY - Breaking News and Latest News Today",
+      "url": "https://www.usatoday.com/"
+    },
+    {
+      "term": "Trending: Latest Buzz in Pop Culture and News, Photos & Videos - TODAY.com | TODAY",
+      "url": "https://www.today.com/trending"
+    },
+    {
+      "term": "Trending on The New York Times",
+      "url": "https://www.nytimes.com/trending/"
+    },
+    {
+      "term": "United States | United States | Today's latest from Al Jazeera",
+      "url": "https://www.aljazeera.com/where/united-states/"
+    },
+    {
+      "term": "CBS News | Breaking news, top stories & today's latest headlines",
+      "url": "https://www.cbsnews.com/"
+    },
+    {
+      "term": "What\u2019s Trending",
+      "url": "https://whatstrending.com/"
+    },
+    {
+      "term": "BuzzFeed Trending",
+      "url": "https://www.buzzfeed.com/trending"
+    },
+    {
+      "term": "Trending Now - Google Trends",
+      "url": "https://trends.google.com/trending"
+    }
+  ]
 }
