@@ -721,10 +721,11 @@
             let brackets = { top3: 0, top10: 0, top20: 0, beyond: 0 };
             
             if (data) {
-                brackets.top3 = data.pos1to3 || data['1-3'] || 0;
-                brackets.top10 = data.pos4to10 || data['4-10'] || 0;
-                brackets.top20 = data.pos11to20 || data['11-20'] || 0;
-                brackets.beyond = data.pos21plus || data['21+'] || 0;
+                // Handle both formats: direct number or object with keywords property
+                brackets.top3 = (typeof data['1-3'] === 'object' ? data['1-3'].keywords : data['1-3']) || data.pos1to3 || 0;
+                brackets.top10 = (typeof data['4-10'] === 'object' ? data['4-10'].keywords : data['4-10']) || data.pos4to10 || 0;
+                brackets.top20 = (typeof data['11-20'] === 'object' ? data['11-20'].keywords : data['11-20']) || data.pos11to20 || 0;
+                brackets.beyond = (typeof data['21+'] === 'object' ? data['21+'].keywords : data['21+']) || data.pos21plus || 0;
             } else {
                 // Calculate from keyword data
                 for (const [_, kwData] of Object.entries(kw)) {
