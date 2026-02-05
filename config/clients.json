@@ -4,21 +4,27 @@
       "id": "kona-coffee-2142",
       "name": "Kona Coffee Donut",
       "slug": "kona",
+      "emoji": "☕",
       "logo": "/icons/kona-logo.svg",
       "status": "active",
       "createdAt": "2026-01-15",
-      "location": "Waikiki, HI"
+      "location": "Waikiki, HI",
+      "website": "konacoffeedonut.com",
+      "timezone": "America/New_York"
     },
     {
-      "id": "demo-client",
-      "name": "Demo Client",
-      "slug": "demo",
-      "logo": "/icons/demo-logo.svg",
-      "status": "demo",
-      "createdAt": "2026-02-04",
-      "location": "Los Angeles, CA"
+      "id": "carek9-california",
+      "name": "CareK9",
+      "slug": "carek9",
+      "emoji": "🐕",
+      "logo": "/icons/carek9-logo.svg",
+      "status": "setup",
+      "createdAt": "2026-02-05",
+      "location": "California",
+      "website": "carek9.com",
+      "timezone": "America/Los_Angeles"
     }
   ],
-  "version": "1.0.0",
-  "lastUpdated": "2026-02-04T15:11:00-08:00"
+  "version": "1.1.0",
+  "lastUpdated": "2026-02-05T07:08:00-08:00"
 }

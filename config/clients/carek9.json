@@ -1,0 +1,35 @@
+{
+  "id": "carek9-california",
+  "name": "CareK9",
+  "code": "CAREK9",
+  "emoji": "🐕",
+  "website": "carek9.com",
+  "location": "California",
+  "timezone": "America/Los_Angeles",
+  "industry": "Pet Products",
+  "status": "setup",
+  "platforms": {
+    "twitter": { "enabled": true, "handle": "TBD" },
+    "facebook": { "enabled": true, "page": "TBD" },
+    "threads": { "enabled": true, "handle": "TBD" },
+    "googlebusiness": { "enabled": true, "location": "TBD" },
+    "bluesky": { "enabled": true, "handle": "TBD" }
+  },
+  "schedule": {
+    "contentGeneration": { "time": "07:00", "tz": "PST" },
+    "posting": { "time": "08:00", "tz": "PST" },
+    "report": { "time": "18:00", "tz": "PST" }
+  },
+  "contacts": {
+    "reportEmail": "zoestudiollc@gmail.com"
+  },
+  "seo": {
+    "gscProperty": "",
+    "ga4Property": ""
+  },
+  "secrets": {
+    "awsSecretId": "carek9/api-keys"
+  },
+  "createdAt": "2026-02-05",
+  "notes": "Premium dog treats and pet products e-commerce"
+}
