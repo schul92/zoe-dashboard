@@ -2,7 +2,7 @@
 <html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>ZOE STUDIO | Dashboard Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -16,67 +16,103 @@
                     colors: {
                         brand: { 500: '#f43f5e', 600: '#e11d48' },
                         surface: { 800: '#27272a', 900: '#18181b', 950: '#09090b' }
+                    },
+                    screens: {
+                        'xs': '375px',
+                        'sm': '640px',
+                        'md': '768px',
+                        'lg': '1024px',
+                        'xl': '1280px'
                     }
                 }
             }
         }
     </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            -webkit-tap-highlight-color: transparent;
+            overscroll-behavior: none;
+        }
         .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.06); }
         .glass-hover:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.1); }
+        
+        /* Sidebar transitions */
         .sidebar-link { transition: all 0.2s ease; }
         .sidebar-link:hover { background: rgba(244,63,94,0.1); }
         .sidebar-link.active { background: rgba(244,63,94,0.15); border-right: 3px solid #f43f5e; }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -12px rgba(0,0,0,0.4); }
         
-        /* Mobile Sidebar */
-        .mobile-sidebar {
-            transform: translateX(-100%);
-            transition: transform 0.3s ease-in-out;
+        /* Card animations */
+        .card-hover { transition: all 0.3s ease; }
+        @media (hover: hover) {
+            .card-hover:hover { transform: translateY(-2px); box-shadow: 0 20px 40px -12px rgba(0,0,0,0.4); }
+        }
+        .card-hover:active { transform: scale(0.98); }
+        
+        /* Mobile sidebar */
+        .sidebar-overlay {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .sidebar-overlay.active {
+            opacity: 1;
+            visibility: visible;
         }
         
-        .mobile-sidebar.open {
+        .sidebar-mobile {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        .sidebar-mobile.active {
             transform: translateX(0);
         }
         
-        /* Overlay */
-        .sidebar-overlay {
-            display: none;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
+        /* Touch targets - minimum 44px */
+        .touch-target {
+            min-height: 44px;
+            min-width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
-        .sidebar-overlay.show {
-            display: block;
-            opacity: 1;
-        }
-
-        /* Mobile optimizations */
-        @media (max-width: 1023px) {
-            .desktop-sidebar {
-                display: none;
-            }
-            
-            .mobile-menu-btn {
-                display: flex;
-            }
+        /* Safe area for notched devices */
+        @supports (padding: max(0px)) {
+            .safe-top { padding-top: max(1rem, env(safe-area-inset-top)); }
+            .safe-bottom { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+            .safe-left { padding-left: max(1rem, env(safe-area-inset-left)); }
+            .safe-right { padding-right: max(1rem, env(safe-area-inset-right)); }
         }
         
-        @media (min-width: 1024px) {
-            .mobile-sidebar {
-                transform: translateX(0);
-            }
-            
-            .mobile-menu-btn {
-                display: none;
-            }
-            
-            .sidebar-overlay {
-                display: none !important;
-            }
+        /* Prevent horizontal scroll */
+        html, body {
+            overflow-x: hidden;
+            max-width: 100vw;
         }
+        
+        /* Account switcher mobile styles */
+        .account-switcher-mobile {
+            position: relative;
+        }
+        .account-dropdown {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        .account-dropdown.open {
+            max-height: 300px;
+        }
+        
+        /* Bottom navigation for mobile */
+        .bottom-nav {
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
     </style>
     <!-- Account Switcher Component -->
     <script src="/zoe-dashboard/js/account-switcher.js"></script>
@@ -89,13 +125,13 @@
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
     </div>
 
-    <!-- Mobile Overlay -->
-    <div id="sidebarOverlay" class="sidebar-overlay fixed inset-0 bg-black/60 z-30" onclick="toggleSidebar()"></div>
+    <!-- Mobile Sidebar Overlay -->
+    <div id="sidebarOverlay" class="sidebar-overlay fixed inset-0 bg-black/60 z-40 lg:hidden" onclick="toggleSidebar()"></div>
 
-    <!-- Sidebar (Desktop: fixed, Mobile: slide-in) -->
-    <aside id="sidebar" class="mobile-sidebar fixed left-0 top-0 h-full w-64 bg-surface-900/95 backdrop-blur-xl border-r border-zinc-800/50 z-40 flex flex-col lg:translate-x-0">
-        <!-- Logo -->
-        <div class="p-6 border-b border-zinc-800/50">
+    <!-- Sidebar - Hidden on mobile by default -->
+    <aside id="sidebar" class="sidebar-mobile fixed left-0 top-0 h-full w-72 sm:w-64 bg-surface-900/95 backdrop-blur-xl border-r border-zinc-800/50 z-50 flex flex-col lg:translate-x-0">
+        <!-- Logo + Close button (mobile) -->
+        <div class="p-5 sm:p-6 border-b border-zinc-800/50 safe-top">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-orange-500 flex items-center justify-center text-xl font-bold shadow-lg shadow-brand-500/20">
@@ -106,9 +142,9 @@
                         <p class="text-xs text-zinc-500">Dashboard Hub</p>
                     </div>
                 </div>
-                <!-- Close button (mobile only) -->
-                <button onclick="toggleSidebar()" class="lg:hidden p-2 hover:bg-zinc-800 rounded-lg transition-colors">
-                    <i class="fas fa-times text-zinc-400"></i>
+                <!-- Close button - mobile only -->
+                <button onclick="toggleSidebar()" class="touch-target lg:hidden text-zinc-400 hover:text-white">
+                    <i class="fas fa-times text-xl"></i>
                 </button>
             </div>
         </div>
@@ -118,8 +154,8 @@
             <label class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2 block">Active Account</label>
             <div id="account-switcher">
                 <!-- Loading fallback -->
-                <div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-surface-800 border border-zinc-700/50">
-                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white font-bold text-sm animate-pulse">
+                <div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-surface-800 border border-zinc-700/50 min-h-[56px]">
+                    <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white font-bold text-sm animate-pulse">
                         K
                     </div>
                     <div class="flex-1">
@@ -133,275 +169,374 @@
         <!-- Navigation -->
         <nav class="flex-1 p-4 space-y-1 overflow-y-auto">
             <p class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-3 px-3">Overview</p>
-            <a href="/zoe-dashboard/hub.html" class="sidebar-link active flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium min-h-[44px]">
+            <a href="/zoe-dashboard/hub.html" class="sidebar-link active flex items-center gap-3 px-4 py-3 rounded-lg text-base sm:text-sm font-medium min-h-[48px]">
                 <i class="fas fa-th-large w-5 text-brand-500"></i>
                 <span>Dashboard</span>
             </a>
             
             <p class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-3 mt-6 px-3">Account</p>
-            <a href="/zoe-dashboard/seo/" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400 min-h-[44px]">
+            <a href="/zoe-dashboard/seo/" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-base sm:text-sm font-medium text-zinc-400 min-h-[48px]">
                 <i class="fas fa-search w-5 text-emerald-400"></i>
                 <span>SEO Analytics</span>
-                <span class="ml-auto px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-400 text-xs">Live</span>
+                <span class="ml-auto px-2 py-1 rounded-md bg-emerald-500/20 text-emerald-400 text-xs">Live</span>
             </a>
-            <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400 opacity-50 min-h-[44px]">
+            <a href="#" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-base sm:text-sm font-medium text-zinc-400 opacity-50 min-h-[48px]">
                 <i class="fas fa-share-nodes w-5 text-blue-400"></i>
                 <span>Social Media</span>
-                <span class="ml-auto px-2 py-0.5 rounded-md bg-zinc-700 text-zinc-500 text-xs">Soon</span>
+                <span class="ml-auto px-2 py-1 rounded-md bg-zinc-700 text-zinc-500 text-xs">Soon</span>
             </a>
 
             <p class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-3 mt-6 px-3">Infrastructure</p>
-            <a href="/zoe-dashboard/aws.html" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400 min-h-[44px]">
+            <a href="/zoe-dashboard/aws.html" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-base sm:text-sm font-medium text-zinc-400 min-h-[48px]">
                 <i class="fab fa-aws w-5 text-orange-400"></i>
                 <span>AWS Architecture</span>
             </a>
-            <a href="/zoe-dashboard/workflow.html" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-zinc-400 min-h-[44px]">
+            <a href="/zoe-dashboard/workflow.html" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-base sm:text-sm font-medium text-zinc-400 min-h-[48px]">
                 <i class="fas fa-diagram-project w-5 text-cyan-400"></i>
                 <span>Workflow</span>
             </a>
         </nav>
 
         <!-- Footer -->
-        <div class="p-4 border-t border-zinc-800/50">
+        <div class="p-4 border-t border-zinc-800/50 safe-bottom">
             <div class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-full bg-gradient-to-br from-brand-500 to-orange-500 flex items-center justify-center text-sm font-bold">S</div>
+                <div class="w-10 h-10 sm:w-9 sm:h-9 rounded-full bg-gradient-to-br from-brand-500 to-orange-500 flex items-center justify-center text-sm font-bold">S</div>
                 <div class="flex-1 min-w-0">
-                    <p class="text-sm font-medium truncate">Steve</p>
+                    <p class="text-base sm:text-sm font-medium truncate">Steve</p>
                     <p class="text-xs text-zinc-500 truncate">Owner</p>
                 </div>
             </div>
         </div>
     </aside>
 
-    <!-- Main Content -->
-    <main class="flex-1 lg:ml-64 relative z-10">
-        <!-- Header with Mobile Menu Button -->
-        <header class="sticky top-0 z-30 bg-surface-950/80 backdrop-blur-xl border-b border-zinc-800/50">
-            <div class="px-4 sm:px-8 py-4 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <!-- Mobile Menu Button -->
-                    <button id="mobileMenuBtn" onclick="toggleSidebar()" class="mobile-menu-btn lg:hidden p-2 hover:bg-zinc-800 rounded-lg transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center">
-                        <i class="fas fa-bars text-xl text-zinc-400"></i>
-                    </button>
-                    <div>
-                        <h2 class="text-lg sm:text-xl font-bold">Welcome back, Steve 👋</h2>
-                        <p class="text-xs sm:text-sm text-zinc-500">All your dashboards in one place</p>
-                    </div>
+    <!-- Main Content - Full width on mobile -->
+    <main class="min-h-screen lg:ml-64 relative z-10 pb-20 lg:pb-0">
+        <!-- Header -->
+        <header class="sticky top-0 z-30 bg-surface-950/90 backdrop-blur-xl border-b border-zinc-800/50 safe-top">
+            <div class="px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4">
+                <!-- Hamburger Menu - Mobile only -->
+                <button onclick="toggleSidebar()" class="touch-target lg:hidden -ml-2 text-zinc-400 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                
+                <div class="flex-1 min-w-0">
+                    <h2 class="text-lg sm:text-xl font-bold truncate">Welcome back, Steve 👋</h2>
+                    <p class="text-xs sm:text-sm text-zinc-500 truncate">All your dashboards in one place</p>
                 </div>
-                <div class="flex items-center gap-3">
+                <div class="flex items-center gap-2 sm:gap-3 shrink-0">
                     <span class="text-xs text-zinc-500 hidden sm:inline" id="currentTime"></span>
+                    <!-- Mobile time - shorter format -->
+                    <span class="text-xs text-zinc-500 sm:hidden" id="currentTimeMobile"></span>
                 </div>
             </div>
         </header>
 
         <!-- Content -->
-        <div class="p-4 sm:p-8">
+        <div class="p-4 sm:p-6 lg:p-8">
             
-            <!-- Quick Access Cards -->
-            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
+            <!-- Quick Access Cards - Stack on mobile, 2 cols on tablet, 3 cols on desktop -->
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 mb-6 sm:mb-8">
                 
                 <!-- SEO Dashboard Card -->
-                <a href="/zoe-dashboard/seo/" class="card-hover glass rounded-2xl overflow-hidden group">
-                    <div class="h-32 bg-gradient-to-br from-emerald-600 to-teal-600 relative">
+                <a href="/zoe-dashboard/seo/" class="card-hover glass rounded-2xl overflow-hidden group active:scale-[0.98]">
+                    <div class="h-28 sm:h-32 bg-gradient-to-br from-emerald-600 to-teal-600 relative">
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-chart-line text-white/20 text-6xl"></i>
+                            <i class="fas fa-chart-line text-white/20 text-5xl sm:text-6xl"></i>
                         </div>
-                        <div class="absolute top-4 right-4">
+                        <div class="absolute top-3 sm:top-4 right-3 sm:right-4">
                             <span class="px-2 py-1 rounded-lg bg-white/20 text-white text-xs font-medium">Live Data</span>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold mb-2 group-hover:text-emerald-400 transition-colors">SEO Analytics</h3>
-                        <p class="text-sm text-zinc-400 mb-4">Real-time search performance tracking</p>
-                        <div class="flex items-center text-xs text-zinc-500">
-                            <i class="fas fa-bolt text-emerald-400 mr-2"></i>
-                            Updated every 30 minutes
+                    <div class="p-4 sm:p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-11 h-11 sm:w-10 sm:h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center shrink-0">
+                                <i class="fas fa-search text-emerald-400 text-lg sm:text-base"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="font-bold text-base sm:text-base truncate">SEO Command Center</h3>
+                                <p class="text-xs text-zinc-500 truncate">Google Search Console + GA4</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center p-2 sm:p-2 rounded-lg bg-surface-800/50">
+                                <p class="text-lg sm:text-lg font-bold text-emerald-400" id="seo-clicks">--</p>
+                                <p class="text-xs text-zinc-500">Clicks</p>
+                            </div>
+                            <div class="text-center p-2 sm:p-2 rounded-lg bg-surface-800/50">
+                                <p class="text-lg sm:text-lg font-bold text-purple-400" id="seo-impressions">--</p>
+                                <p class="text-xs text-zinc-500">Impr.</p>
+                            </div>
+                            <div class="text-center p-2 sm:p-2 rounded-lg bg-surface-800/50">
+                                <p class="text-lg sm:text-lg font-bold text-amber-400" id="seo-position">#--</p>
+                                <p class="text-xs text-zinc-500">Rank</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-sm text-zinc-400 group-hover:text-emerald-400 transition-colors">
+                            <span>View Full Dashboard</span>
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                         </div>
                     </div>
                 </a>
 
-                <!-- AWS Infrastructure Card -->
-                <a href="/zoe-dashboard/aws.html" class="card-hover glass rounded-2xl overflow-hidden group">
-                    <div class="h-32 bg-gradient-to-br from-orange-600 to-red-600 relative">
+                <!-- AWS Dashboard Card -->
+                <a href="/zoe-dashboard/aws.html" class="card-hover glass rounded-2xl overflow-hidden group active:scale-[0.98]">
+                    <div class="h-28 sm:h-32 bg-gradient-to-br from-orange-500 to-amber-500 relative">
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fab fa-aws text-white/20 text-6xl"></i>
-                        </div>
-                        <div class="absolute top-4 right-4">
-                            <span class="px-2 py-1 rounded-lg bg-white/20 text-white text-xs font-medium">us-east-2</span>
+                            <i class="fab fa-aws text-white/20 text-5xl sm:text-6xl"></i>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold mb-2 group-hover:text-orange-400 transition-colors">AWS Infrastructure</h3>
-                        <p class="text-sm text-zinc-400 mb-4">Cloud architecture overview</p>
-                        <div class="flex items-center text-xs text-zinc-500">
-                            <i class="fas fa-server text-orange-400 mr-2"></i>
-                            1 Active Lambda • EC2 Stopped
+                    <div class="p-4 sm:p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-11 h-11 sm:w-10 sm:h-10 rounded-xl bg-orange-500/20 flex items-center justify-center shrink-0">
+                                <i class="fab fa-aws text-orange-400 text-lg sm:text-base"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="font-bold text-base sm:text-base truncate">AWS Infrastructure</h3>
+                                <p class="text-xs text-zinc-500 truncate">Lambda, EC2, Secrets</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-4 gap-1.5 sm:gap-2 mb-4">
+                            <div class="text-center p-2 rounded-lg bg-surface-800/50">
+                                <p class="text-base sm:text-lg font-bold text-orange-400">5</p>
+                                <p class="text-[10px] sm:text-xs text-zinc-500">Lambda</p>
+                            </div>
+                            <div class="text-center p-2 rounded-lg bg-surface-800/50">
+                                <p class="text-base sm:text-lg font-bold text-orange-400">1</p>
+                                <p class="text-[10px] sm:text-xs text-zinc-500">EC2</p>
+                            </div>
+                            <div class="text-center p-2 rounded-lg bg-surface-800/50">
+                                <p class="text-base sm:text-lg font-bold text-red-400">8</p>
+                                <p class="text-[10px] sm:text-xs text-zinc-500">Secrets</p>
+                            </div>
+                            <div class="text-center p-2 rounded-lg bg-surface-800/50">
+                                <p class="text-base sm:text-lg font-bold text-purple-400">4</p>
+                                <p class="text-[10px] sm:text-xs text-zinc-500">Events</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-sm text-zinc-400 group-hover:text-orange-400 transition-colors">
+                            <span>View Architecture</span>
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                         </div>
                     </div>
                 </a>
 
-                <!-- Workflow Card -->
-                <a href="/zoe-dashboard/workflow.html" class="card-hover glass rounded-2xl overflow-hidden group">
-                    <div class="h-32 bg-gradient-to-br from-cyan-600 to-blue-600 relative">
+                <!-- Workflow Dashboard Card -->
+                <a href="/zoe-dashboard/workflow.html" class="card-hover glass rounded-2xl overflow-hidden group active:scale-[0.98] sm:col-span-2 lg:col-span-1">
+                    <div class="h-28 sm:h-32 bg-gradient-to-br from-cyan-500 to-blue-500 relative">
                         <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-diagram-project text-white/20 text-6xl"></i>
-                        </div>
-                        <div class="absolute top-4 right-4">
-                            <span class="px-2 py-1 rounded-lg bg-emerald-500/30 text-white text-xs font-medium flex items-center gap-1">
-                                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                                Active
-                            </span>
+                            <i class="fas fa-diagram-project text-white/20 text-5xl sm:text-6xl"></i>
                         </div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold mb-2 group-hover:text-cyan-400 transition-colors">Active Workflow</h3>
-                        <p class="text-sm text-zinc-400 mb-4">Marketing automation pipeline</p>
-                        <div class="flex items-center text-xs text-zinc-500">
-                            <i class="fas fa-robot text-cyan-400 mr-2"></i>
-                            2 Cron Jobs • 5 Platforms
+                    <div class="p-4 sm:p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-11 h-11 sm:w-10 sm:h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center shrink-0">
+                                <i class="fas fa-diagram-project text-cyan-400 text-lg sm:text-base"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="font-bold text-base sm:text-base truncate">Marketing Workflow</h3>
+                                <p class="text-xs text-zinc-500 truncate">Automation Pipeline</p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-
-                <!-- Social Media Card (Coming Soon) -->
-                <a href="#" class="card-hover glass rounded-2xl overflow-hidden group opacity-60 cursor-not-allowed">
-                    <div class="h-32 bg-gradient-to-br from-blue-600 to-purple-600 relative">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <i class="fas fa-share-nodes text-white/20 text-6xl"></i>
+                        <div class="flex gap-3 mb-4 justify-center py-2">
+                            <span class="text-2xl" title="Twitter/X">𝕏</span>
+                            <span class="text-2xl" title="Facebook">📘</span>
+                            <span class="text-2xl" title="Google Business">📍</span>
+                            <span class="text-2xl" title="Threads">🧵</span>
+                            <span class="text-2xl" title="Bluesky">🦋</span>
                         </div>
-                        <div class="absolute top-4 right-4">
-                            <span class="px-2 py-1 rounded-lg bg-white/20 text-white text-xs font-medium">Soon</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-lg font-bold mb-2">Social Media</h3>
-                        <p class="text-sm text-zinc-400 mb-4">Unified social analytics dashboard</p>
-                        <div class="flex items-center text-xs text-zinc-500">
-                            <i class="fas fa-clock mr-2"></i>
-                            Coming soon
+                        <div class="flex items-center justify-between text-sm text-zinc-400 group-hover:text-cyan-400 transition-colors">
+                            <span>View Workflow</span>
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                         </div>
                     </div>
                 </a>
-
             </section>
 
-            <!-- Quick Stats -->
-            <section class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-8">
-                <div class="glass rounded-2xl p-4 sm:p-6">
-                    <div class="flex items-center justify-between mb-3">
-                        <i class="fas fa-search text-emerald-400 text-2xl"></i>
-                        <span class="text-xs text-emerald-400 font-medium">+12.5%</span>
-                    </div>
-                    <p class="text-2xl sm:text-3xl font-bold">24</p>
-                    <p class="text-xs sm:text-sm text-zinc-500 mt-1">SEO Clicks Today</p>
+            <!-- Account Section -->
+            <section class="mb-6 sm:mb-8">
+                <div class="flex items-center justify-between mb-4 gap-2">
+                    <h3 class="text-base sm:text-lg font-bold">Accounts</h3>
+                    <button class="px-3 py-2 sm:py-1.5 rounded-lg border border-dashed border-zinc-700 hover:border-brand-500 text-sm text-zinc-500 hover:text-brand-400 transition-all min-h-[44px] flex items-center">
+                        <i class="fas fa-plus mr-2"></i><span class="hidden xs:inline">Add Account</span><span class="xs:hidden">Add</span>
+                    </button>
                 </div>
-
+                
                 <div class="glass rounded-2xl p-4 sm:p-6">
-                    <div class="flex items-center justify-between mb-3">
-                        <i class="fas fa-eye text-cyan-400 text-2xl"></i>
-                        <span class="text-xs text-cyan-400 font-medium">+8.3%</span>
-                    </div>
-                    <p class="text-2xl sm:text-3xl font-bold">303</p>
-                    <p class="text-xs sm:text-sm text-zinc-500 mt-1">Impressions</p>
-                </div>
-
-                <div class="glass rounded-2xl p-4 sm:p-6">
-                    <div class="flex items-center justify-between mb-3">
-                        <i class="fas fa-users text-purple-400 text-2xl"></i>
-                        <span class="text-xs text-purple-400 font-medium">+15.2%</span>
-                    </div>
-                    <p class="text-2xl sm:text-3xl font-bold">67</p>
-                    <p class="text-xs sm:text-sm text-zinc-500 mt-1">Active Users</p>
-                </div>
-
-                <div class="glass rounded-2xl p-4 sm:p-6">
-                    <div class="flex items-center justify-between mb-3">
-                        <i class="fas fa-bolt text-orange-400 text-2xl"></i>
-                        <span class="text-xs text-emerald-400 font-medium flex items-center gap-1">
-                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                            Live
-                        </span>
-                    </div>
-                    <p class="text-2xl sm:text-3xl font-bold">2</p>
-                    <p class="text-xs sm:text-sm text-zinc-500 mt-1">Active Cron Jobs</p>
-                </div>
-            </section>
-
-            <!-- System Status -->
-            <section class="glass rounded-2xl p-4 sm:p-6">
-                <h3 class="text-base sm:text-lg font-bold mb-4 flex items-center gap-2">
-                    <i class="fas fa-server text-orange-400"></i>
-                    System Status
-                </h3>
-                <div class="space-y-3">
-                    <div class="flex items-center justify-between py-3 border-b border-zinc-800/50">
-                        <div class="flex items-center gap-3">
-                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                            <span class="text-sm font-medium">Mac mini (PRIMARY)</span>
+                    <div class="flex items-center gap-3 sm:gap-4">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-2xl sm:text-3xl shrink-0">
+                            ☕
                         </div>
-                        <span class="text-xs text-emerald-400">Online</span>
-                    </div>
-                    <div class="flex items-center justify-between py-3 border-b border-zinc-800/50">
-                        <div class="flex items-center gap-3">
-                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                            <span class="text-sm font-medium">Lambda (seo-dashboard-update)</span>
+                        <div class="flex-1 min-w-0">
+                            <h4 class="font-bold text-base sm:text-lg truncate">Kona Coffee Donut</h4>
+                            <p class="text-xs sm:text-sm text-zinc-500 truncate">Store #2142 • Waikiki, HI</p>
+                            <p class="text-xs text-zinc-600 truncate sm:hidden">Opening Feb 2026</p>
                         </div>
-                        <span class="text-xs text-emerald-400">Active</span>
+                        <span class="px-2 sm:px-3 py-1.5 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs sm:text-sm font-medium shrink-0">Active</span>
                     </div>
-                    <div class="flex items-center justify-between py-3 border-b border-zinc-800/50">
-                        <div class="flex items-center gap-3">
-                            <span class="w-2 h-2 rounded-full bg-zinc-600"></span>
-                            <span class="text-sm font-medium">EC2 (Backup)</span>
-                        </div>
-                        <span class="text-xs text-zinc-500">Stopped</span>
-                    </div>
-                    <div class="flex items-center justify-between py-3">
-                        <div class="flex items-center gap-3">
-                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                            <span class="text-sm font-medium">EventBridge Trigger</span>
-                        </div>
-                        <span class="text-xs text-emerald-400">Every 30 min</span>
+                    <div class="mt-4 pt-4 border-t border-zinc-800/50 flex flex-wrap gap-3 sm:gap-4">
+                        <a href="https://www.konacoffeedonut.com" target="_blank" class="flex items-center text-sm text-zinc-400 hover:text-zinc-200 transition-colors min-h-[44px] px-2 -mx-2">
+                            <i class="fas fa-globe mr-2"></i> Website
+                        </a>
+                        <a href="/zoe-dashboard/seo/" class="flex items-center text-sm text-zinc-400 hover:text-zinc-200 transition-colors min-h-[44px] px-2 -mx-2">
+                            <i class="fas fa-chart-line mr-2"></i> SEO
+                        </a>
                     </div>
                 </div>
             </section>
 
+            <!-- Quick Stats - 2x2 on mobile, 4 cols on tablet+ -->
+            <section>
+                <h3 class="text-base sm:text-lg font-bold mb-4">System Status</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+                    <div class="glass rounded-xl p-4 text-center">
+                        <div class="w-10 h-10 sm:w-8 sm:h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-server text-emerald-400 text-base sm:text-sm"></i>
+                        </div>
+                        <p class="text-sm font-medium">EC2</p>
+                        <p class="text-xs text-emerald-400">Running</p>
+                    </div>
+                    <div class="glass rounded-xl p-4 text-center">
+                        <div class="w-10 h-10 sm:w-8 sm:h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-bolt text-emerald-400 text-base sm:text-sm"></i>
+                        </div>
+                        <p class="text-sm font-medium">Lambda</p>
+                        <p class="text-xs text-emerald-400">5 Active</p>
+                    </div>
+                    <div class="glass rounded-xl p-4 text-center">
+                        <div class="w-10 h-10 sm:w-8 sm:h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-clock text-emerald-400 text-base sm:text-sm"></i>
+                        </div>
+                        <p class="text-sm font-medium">Cron Jobs</p>
+                        <p class="text-xs text-emerald-400">4 Scheduled</p>
+                    </div>
+                    <div class="glass rounded-xl p-4 text-center">
+                        <div class="w-10 h-10 sm:w-8 sm:h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center mx-auto mb-2">
+                            <i class="fas fa-shield-halved text-emerald-400 text-base sm:text-sm"></i>
+                        </div>
+                        <p class="text-sm font-medium">API Health</p>
+                        <p class="text-xs text-emerald-400">100%</p>
+                    </div>
+                </div>
+            </section>
         </div>
+
+        <!-- Footer - Hidden on mobile (bottom nav takes over) -->
+        <footer class="border-t border-zinc-800/50 p-4 sm:p-6 mt-6 sm:mt-8 hidden lg:block">
+            <div class="flex items-center justify-between text-sm text-zinc-500">
+                <span><i class="fas fa-heart text-brand-500 mr-1"></i> Built by Zoe</span>
+                <span>ZOE STUDIO Dashboard Hub v1.0</span>
+            </div>
+        </footer>
     </main>
+
+    <!-- Bottom Navigation - Mobile only -->
+    <nav class="bottom-nav fixed bottom-0 left-0 right-0 bg-surface-900/95 backdrop-blur-xl border-t border-zinc-800/50 z-40 lg:hidden safe-bottom">
+        <div class="grid grid-cols-4 gap-1 px-2 py-2">
+            <a href="/zoe-dashboard/hub.html" class="flex flex-col items-center justify-center py-2 rounded-lg text-brand-500">
+                <i class="fas fa-th-large text-lg mb-1"></i>
+                <span class="text-[10px] font-medium">Hub</span>
+            </a>
+            <a href="/zoe-dashboard/seo/" class="flex flex-col items-center justify-center py-2 rounded-lg text-zinc-400 hover:text-zinc-200">
+                <i class="fas fa-chart-line text-lg mb-1"></i>
+                <span class="text-[10px] font-medium">SEO</span>
+            </a>
+            <a href="/zoe-dashboard/aws.html" class="flex flex-col items-center justify-center py-2 rounded-lg text-zinc-400 hover:text-zinc-200">
+                <i class="fab fa-aws text-lg mb-1"></i>
+                <span class="text-[10px] font-medium">AWS</span>
+            </a>
+            <a href="/zoe-dashboard/workflow.html" class="flex flex-col items-center justify-center py-2 rounded-lg text-zinc-400 hover:text-zinc-200">
+                <i class="fas fa-diagram-project text-lg mb-1"></i>
+                <span class="text-[10px] font-medium">Workflow</span>
+            </a>
+        </div>
+    </nav>
 
     <script>
         // Sidebar toggle
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('sidebarOverlay');
-            
-            sidebar.classList.toggle('open');
-            overlay.classList.toggle('show');
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = sidebar.classList.contains('active') ? 'hidden' : '';
         }
 
-        // Close sidebar when clicking outside on mobile
-        document.addEventListener('click', function(event) {
-            const sidebar = document.getElementById('sidebar');
-            const menuBtn = document.getElementById('mobileMenuBtn');
-            
-            if (window.innerWidth < 1024) {
-                if (!sidebar.contains(event.target) && !menuBtn.contains(event.target) && sidebar.classList.contains('open')) {
+        // Close sidebar on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const sidebar = document.getElementById('sidebar');
+                if (sidebar.classList.contains('active')) {
                     toggleSidebar();
                 }
             }
         });
 
-        // Update time
+        // Close sidebar when clicking a link (mobile)
+        document.querySelectorAll('#sidebar a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 1024) {
+                    toggleSidebar();
+                }
+            });
+        });
+
+        // Update time - different formats for mobile/desktop
         function updateTime() {
             const now = new Date();
-            document.getElementById('currentTime').textContent = now.toLocaleTimeString('en-US', {
-                hour: '2-digit',
-                minute: '2-digit',
-                timeZone: 'America/Los_Angeles',
-                timeZoneName: 'short'
+            // Desktop format
+            document.getElementById('currentTime').textContent = now.toLocaleString('en-US', {
+                weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
+            });
+            // Mobile format - shorter
+            document.getElementById('currentTimeMobile').textContent = now.toLocaleString('en-US', {
+                hour: '2-digit', minute: '2-digit'
             });
         }
         updateTime();
         setInterval(updateTime, 60000);
+
+        // Fetch SEO data
+        async function fetchSEOData() {
+            try {
+                const response = await fetch('/zoe-dashboard/seo/data.json?' + Date.now());
+                const data = await response.json();
+                const sc = data.searchConsole || {};
+                const kw = data.keywordPositions || {};
+                
+                document.getElementById('seo-clicks').textContent = formatNumber(sc.totals?.clicks || 0);
+                document.getElementById('seo-impressions').textContent = formatNumber(sc.totals?.impressions || 0);
+                
+                let topPos = 999;
+                for (const [keyword, kwData] of Object.entries(kw)) {
+                    if (kwData.position && kwData.position < topPos) topPos = kwData.position;
+                }
+                document.getElementById('seo-position').textContent = topPos < 999 ? `#${topPos}` : '#--';
+            } catch (e) {
+                console.error('Error:', e);
+            }
+        }
+
+        function formatNumber(n) {
+            if (n >= 1000) return (n/1000).toFixed(1) + 'K';
+            return n?.toString() || '0';
+        }
+
+        // Handle resize - close mobile sidebar when switching to desktop
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                if (window.innerWidth >= 1024) {
+                    const sidebar = document.getElementById('sidebar');
+                    const overlay = document.getElementById('sidebarOverlay');
+                    sidebar.classList.remove('active');
+                    overlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }, 100);
+        });
+
+        fetchSEOData();
     </script>
 </body>
 </html>

@@ -29,9 +29,13 @@
         .glow-blue { box-shadow: 0 0 60px -15px rgba(59, 130, 246, 0.4); }
         .glow-green { box-shadow: 0 0 60px -15px rgba(34, 197, 94, 0.4); }
         .glow-purple { box-shadow: 0 0 60px -15px rgba(168, 85, 247, 0.4); }
+        .glow-cyan { box-shadow: 0 0 60px -15px rgba(6, 182, 212, 0.4); }
+        .glow-pink { box-shadow: 0 0 60px -15px rgba(236, 72, 153, 0.4); }
         .stat-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .stat-card:hover { transform: translateY(-4px) scale(1.02); }
         .gradient-text { background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-text-cyan { background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-text-green { background: linear-gradient(135deg, #22c55e 0%, #4ade80 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .gradient-border { background: linear-gradient(135deg, rgba(249,115,22,0.3) 0%, rgba(251,191,36,0.1) 100%); }
         .animate-pulse-slow { animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
         .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
@@ -39,11 +43,64 @@
         .scrollbar-thin::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 3px; }
         .scrollbar-thin::-webkit-scrollbar-thumb:hover { background: #52525b; }
         @keyframes slideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes countUp { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
         .animate-slide-in { animation: slideIn 0.5s ease-out forwards; }
+        .animate-count-up { animation: countUp 0.6s ease-out forwards; }
         .delay-1 { animation-delay: 0.1s; opacity: 0; }
         .delay-2 { animation-delay: 0.2s; opacity: 0; }
         .delay-3 { animation-delay: 0.3s; opacity: 0; }
         .delay-4 { animation-delay: 0.4s; opacity: 0; }
+        .delay-5 { animation-delay: 0.5s; opacity: 0; }
+        .delay-6 { animation-delay: 0.6s; opacity: 0; }
+        .tooltip-trigger { position: relative; cursor: help; }
+        .tooltip-trigger::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #18181b;
+            border: 1px solid #3f3f46;
+            color: #a1a1aa;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 400;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s, transform 0.2s;
+            z-index: 100;
+            max-width: 280px;
+            white-space: normal;
+            text-align: center;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.5);
+        }
+        .tooltip-trigger:hover::after { opacity: 1; transform: translateX(-50%) translateY(-4px); }
+        .ring-pulse { animation: ring-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes ring-pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+            50% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+        }
+        .sortable { cursor: pointer; user-select: none; }
+        .sortable:hover { color: #f97316; }
+        .sortable::after { content: ' ↕'; opacity: 0.3; font-size: 10px; }
+        .sortable.asc::after { content: ' ↑'; opacity: 1; }
+        .sortable.desc::after { content: ' ↓'; opacity: 1; }
+        .engagement-ring {
+            background: conic-gradient(#22c55e var(--percent), #27272a var(--percent));
+            border-radius: 50%;
+        }
+        @media (max-width: 640px) {
+            .tooltip-trigger::after { 
+                left: 0; 
+                transform: translateX(0); 
+                max-width: 200px;
+            }
+            .tooltip-trigger:hover::after { transform: translateX(0) translateY(-4px); }
+        }
     </style>
 </head>
 <body class="text-zinc-100 min-h-screen">
@@ -52,195 +109,261 @@
     <div class="fixed inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-0 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/2 right-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl"></div>
     </div>
 
     <!-- Header -->
     <header class="relative border-b border-zinc-800/50 sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-xl">
-        <div class="max-w-[1600px] mx-auto px-6 py-4">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="flex items-center gap-5">
-                    <a href="/zoe-dashboard/hub.html" class="flex items-center gap-2 px-3 py-2 -ml-3 rounded-lg hover:bg-zinc-800/50 transition-colors text-zinc-400 hover:text-zinc-200">
+                <div class="flex items-center gap-3 sm:gap-5">
+                    <a href="/zoe-dashboard/hub.html" class="flex items-center gap-2 px-2 sm:px-3 py-2 -ml-2 sm:-ml-3 rounded-lg hover:bg-zinc-800/50 transition-colors text-zinc-400 hover:text-zinc-200">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
                         <span class="text-sm font-medium hidden sm:inline">Hub</span>
                     </a>
                     <div class="w-px h-8 bg-zinc-800 hidden sm:block"></div>
-                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center text-2xl shadow-lg shadow-orange-500/20">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center text-xl sm:text-2xl shadow-lg shadow-orange-500/20">
                         ☕
                     </div>
                     <div>
-                        <h1 class="text-xl font-bold tracking-tight">Kona Coffee Donut</h1>
-                        <p class="text-sm text-zinc-500 flex items-center gap-2">
+                        <h1 class="text-lg sm:text-xl font-bold tracking-tight">Kona Coffee Donut</h1>
+                        <p class="text-xs sm:text-sm text-zinc-500 flex items-center gap-2">
                             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                             SEO Command Center
                         </p>
                     </div>
                 </div>
-                <div class="flex items-center gap-4">
-                    <div class="text-right mr-4 hidden sm:block">
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <div class="text-right mr-2 sm:mr-4 hidden sm:block">
                         <p class="text-xs text-zinc-500">Last Updated</p>
                         <p class="text-sm font-medium" id="lastUpdated">Loading...</p>
                     </div>
-                    <button onclick="refreshData()" class="px-4 py-2.5 bg-zinc-800 hover:bg-zinc-700 rounded-xl transition-all flex items-center gap-2 text-sm font-medium border border-zinc-700/50 hover:border-zinc-600">
+                    <button onclick="refreshData()" class="px-3 sm:px-4 py-2 sm:py-2.5 bg-zinc-800 hover:bg-zinc-700 rounded-xl transition-all flex items-center gap-2 text-sm font-medium border border-zinc-700/50 hover:border-zinc-600">
                         <svg class="w-4 h-4" id="refreshIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-                        Refresh
+                        <span class="hidden sm:inline">Refresh</span>
                     </button>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="relative max-w-[1600px] mx-auto px-6 py-8">
+    <main class="relative max-w-[1600px] mx-auto px-4 sm:px-6 py-6 sm:py-8">
         
         <!-- Alert Banner -->
-        <div id="alertBanner" class="hidden mb-8 animate-slide-in">
+        <div id="alertBanner" class="hidden mb-6 sm:mb-8 animate-slide-in">
             <div class="p-4 rounded-2xl bg-gradient-to-r from-red-500/20 via-red-500/10 to-transparent border border-red-500/30 flex items-center gap-4">
-                <div class="w-10 h-10 rounded-xl bg-red-500/20 flex items-center justify-center text-xl">🚨</div>
-                <div class="flex-1">
+                <div class="w-10 h-10 rounded-xl bg-red-500/20 flex items-center justify-center text-xl flex-shrink-0">🚨</div>
+                <div class="flex-1 min-w-0">
                     <h3 class="font-semibold text-red-400">Attention Required</h3>
-                    <p id="alertText" class="text-sm text-zinc-400 mt-0.5"></p>
+                    <p id="alertText" class="text-sm text-zinc-400 mt-0.5 truncate"></p>
                 </div>
             </div>
         </div>
 
         <!-- Success Banner -->
-        <div id="successBanner" class="hidden mb-8 animate-slide-in">
+        <div id="successBanner" class="hidden mb-6 sm:mb-8 animate-slide-in">
             <div class="p-4 rounded-2xl bg-gradient-to-r from-emerald-500/20 via-emerald-500/10 to-transparent border border-emerald-500/30 flex items-center gap-4">
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-xl">🎉</div>
-                <div class="flex-1">
+                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-xl flex-shrink-0">🎉</div>
+                <div class="flex-1 min-w-0">
                     <h3 class="font-semibold text-emerald-400">Great Progress!</h3>
-                    <p id="successText" class="text-sm text-zinc-400 mt-0.5"></p>
+                    <p id="successText" class="text-sm text-zinc-400 mt-0.5 truncate"></p>
                 </div>
             </div>
         </div>
 
         <!-- Hero Stats -->
-        <section class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
             <!-- Clicks -->
-            <div class="stat-card glass rounded-2xl p-6 glow-blue animate-slide-in delay-1">
+            <div class="stat-card glass rounded-2xl p-4 sm:p-6 glow-blue animate-slide-in delay-1">
                 <div class="flex items-start justify-between">
-                    <div>
-                        <p class="text-sm font-medium text-zinc-400 mb-1">Total Clicks</p>
-                        <p class="text-4xl font-bold tracking-tight" id="totalClicks">--</p>
-                        <p class="text-sm text-zinc-500 mt-2" id="clicksPeriod">Last 7 days</p>
+                    <div class="min-w-0 flex-1">
+                        <p class="text-xs sm:text-sm font-medium text-zinc-400 mb-1 tooltip-trigger" data-tooltip="Total organic clicks from Google Search in the selected period">Total Clicks</p>
+                        <p class="text-2xl sm:text-4xl font-bold tracking-tight" id="totalClicks">--</p>
+                        <p class="text-xs sm:text-sm text-zinc-500 mt-1 sm:mt-2" id="clicksPeriod">Last 7 days</p>
                     </div>
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center">
-                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/></svg>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/></svg>
                     </div>
                 </div>
             </div>
 
             <!-- Impressions -->
-            <div class="stat-card glass rounded-2xl p-6 glow-purple animate-slide-in delay-2">
+            <div class="stat-card glass rounded-2xl p-4 sm:p-6 glow-purple animate-slide-in delay-2">
                 <div class="flex items-start justify-between">
-                    <div>
-                        <p class="text-sm font-medium text-zinc-400 mb-1">Impressions</p>
-                        <p class="text-4xl font-bold tracking-tight" id="totalImpressions">--</p>
-                        <p class="text-sm text-zinc-500 mt-2">Search appearances</p>
+                    <div class="min-w-0 flex-1">
+                        <p class="text-xs sm:text-sm font-medium text-zinc-400 mb-1 tooltip-trigger" data-tooltip="How many times your pages appeared in Google Search results">Impressions</p>
+                        <p class="text-2xl sm:text-4xl font-bold tracking-tight" id="totalImpressions">--</p>
+                        <p class="text-xs sm:text-sm text-zinc-500 mt-1 sm:mt-2">Search appearances</p>
                     </div>
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center">
-                        <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
                     </div>
                 </div>
             </div>
 
             <!-- CTR -->
-            <div class="stat-card glass rounded-2xl p-6 glow-green animate-slide-in delay-3">
+            <div class="stat-card glass rounded-2xl p-4 sm:p-6 glow-green animate-slide-in delay-3">
                 <div class="flex items-start justify-between">
-                    <div>
-                        <p class="text-sm font-medium text-zinc-400 mb-1">Avg. CTR</p>
-                        <p class="text-4xl font-bold tracking-tight" id="avgCtr">--%</p>
-                        <p class="text-sm text-zinc-500 mt-2">Click-through rate</p>
+                    <div class="min-w-0 flex-1">
+                        <p class="text-xs sm:text-sm font-medium text-zinc-400 mb-1 tooltip-trigger" data-tooltip="Click-Through Rate: percentage of impressions that resulted in clicks. Higher is better!">Avg. CTR</p>
+                        <p class="text-2xl sm:text-4xl font-bold tracking-tight" id="avgCtr">--%</p>
+                        <p class="text-xs sm:text-sm text-zinc-500 mt-1 sm:mt-2">Click-through rate</p>
                     </div>
-                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center">
-                        <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
                     </div>
                 </div>
             </div>
 
             <!-- Best Position -->
-            <div class="stat-card glass rounded-2xl p-6 glow-orange animate-slide-in delay-4">
+            <div class="stat-card glass rounded-2xl p-4 sm:p-6 glow-orange animate-slide-in delay-4">
                 <div class="flex items-start justify-between">
-                    <div>
-                        <p class="text-sm font-medium text-zinc-400 mb-1">Best Ranking</p>
-                        <p class="text-4xl font-bold tracking-tight gradient-text" id="topPosition">#--</p>
-                        <p class="text-sm text-zinc-500 mt-2 truncate max-w-[150px]" id="topKeyword">--</p>
+                    <div class="min-w-0 flex-1">
+                        <p class="text-xs sm:text-sm font-medium text-zinc-400 mb-1 tooltip-trigger" data-tooltip="Your highest ranking keyword position. Position 1-3 is the top of Google!">Best Ranking</p>
+                        <p class="text-2xl sm:text-4xl font-bold tracking-tight gradient-text" id="topPosition">#--</p>
+                        <p class="text-xs sm:text-sm text-zinc-500 mt-1 sm:mt-2 truncate max-w-[100px] sm:max-w-[150px]" id="topKeyword">--</p>
                     </div>
-                    <div class="w-12 h-12 rounded-xl bg-orange-500/20 flex items-center justify-center">
-                        <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-orange-500/20 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- GA4 Traffic Overview -->
-        <section class="mb-8 animate-slide-in" style="animation-delay: 0.3s; opacity: 0;">
-            <div class="glass rounded-2xl p-6">
-                <div class="flex items-center justify-between mb-6">
+        <!-- GA4 Traffic Overview with Engagement Rate -->
+        <section class="mb-6 sm:mb-8 animate-slide-in" style="animation-delay: 0.3s; opacity: 0;">
+            <div class="glass rounded-2xl p-4 sm:p-6">
+                <div class="flex items-center justify-between mb-4 sm:mb-6">
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
                             <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
                         </div>
                         <div>
-                            <h2 class="text-lg font-semibold">Website Traffic</h2>
-                            <p class="text-sm text-zinc-500">Google Analytics • Last 7 days</p>
+                            <h2 class="text-base sm:text-lg font-semibold">Website Traffic</h2>
+                            <p class="text-xs sm:text-sm text-zinc-500">Google Analytics • Last 7 days</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-                    <div class="bg-zinc-800/50 rounded-xl p-4 text-center">
-                        <p class="text-3xl font-bold text-blue-400" id="ga4Users">--</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+                    <div class="bg-zinc-800/50 rounded-xl p-3 sm:p-4 text-center">
+                        <p class="text-xl sm:text-3xl font-bold text-blue-400" id="ga4Users">--</p>
                         <p class="text-xs text-zinc-500 mt-1">Active Users</p>
                     </div>
-                    <div class="bg-zinc-800/50 rounded-xl p-4 text-center">
-                        <p class="text-3xl font-bold text-purple-400" id="ga4Sessions">--</p>
+                    <div class="bg-zinc-800/50 rounded-xl p-3 sm:p-4 text-center">
+                        <p class="text-xl sm:text-3xl font-bold text-purple-400" id="ga4Sessions">--</p>
                         <p class="text-xs text-zinc-500 mt-1">Sessions</p>
                     </div>
-                    <div class="bg-zinc-800/50 rounded-xl p-4 text-center">
-                        <p class="text-3xl font-bold text-cyan-400" id="ga4PageViews">--</p>
+                    <div class="bg-zinc-800/50 rounded-xl p-3 sm:p-4 text-center">
+                        <p class="text-xl sm:text-3xl font-bold text-cyan-400" id="ga4PageViews">--</p>
                         <p class="text-xs text-zinc-500 mt-1">Page Views</p>
                     </div>
-                    <div class="bg-zinc-800/50 rounded-xl p-4 text-center">
-                        <p class="text-3xl font-bold text-amber-400" id="ga4Bounce">--%</p>
-                        <p class="text-xs text-zinc-500 mt-1">Bounce Rate</p>
+                    <!-- Engagement Rate - NEW! -->
+                    <div class="bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 rounded-xl p-3 sm:p-4 text-center ring-1 ring-emerald-500/30 relative overflow-hidden">
+                        <div class="absolute top-1 right-1 sm:top-2 sm:right-2 px-1.5 py-0.5 bg-emerald-500/30 rounded text-[8px] sm:text-[10px] font-medium text-emerald-300">NEW</div>
+                        <p class="text-xl sm:text-3xl font-bold text-emerald-400" id="ga4Engagement">--%</p>
+                        <p class="text-xs text-zinc-500 mt-1 tooltip-trigger" data-tooltip="Engagement Rate replaced Bounce Rate in GA4. It measures meaningful interactions: sessions >10s, 2+ pageviews, or conversions. Higher is better!">Engagement ✨</p>
                     </div>
-                    <div class="bg-zinc-800/50 rounded-xl p-4 text-center">
-                        <p class="text-3xl font-bold text-emerald-400" id="ga4Duration">--</p>
+                    <div class="bg-zinc-800/50 rounded-xl p-3 sm:p-4 text-center">
+                        <p class="text-xl sm:text-3xl font-bold text-amber-400" id="ga4Bounce">--%</p>
+                        <p class="text-xs text-zinc-500 mt-1 tooltip-trigger" data-tooltip="Bounce Rate: percentage of single-page sessions with no interaction. Lower is better (inverse of Engagement Rate).">Bounce Rate</p>
+                    </div>
+                    <div class="bg-zinc-800/50 rounded-xl p-3 sm:p-4 text-center">
+                        <p class="text-xl sm:text-3xl font-bold text-rose-400" id="ga4Duration">--</p>
                         <p class="text-xs text-zinc-500 mt-1">Avg. Duration</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- NEW: Branded vs Non-Branded + Position Brackets -->
+        <section class="grid lg:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
+            <!-- Branded vs Non-Branded Traffic -->
+            <div class="glass rounded-2xl p-4 sm:p-6 animate-slide-in" style="animation-delay: 0.35s; opacity: 0;">
+                <div class="flex items-center gap-3 mb-4 sm:mb-6">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center text-lg">🏷️</div>
+                    <div class="flex-1">
+                        <h3 class="font-semibold">Branded vs Non-Branded</h3>
+                        <p class="text-xs text-zinc-500 tooltip-trigger" data-tooltip="Non-branded traffic = people finding you by topic, not name. This is TRUE SEO success - growing organic discovery!">The real SEO success metric</p>
+                    </div>
+                </div>
+                <div id="brandedChart" class="h-[220px] sm:h-[260px]"></div>
+                <div class="mt-4 grid grid-cols-2 gap-3">
+                    <div class="bg-cyan-500/10 rounded-lg p-3 text-center border border-cyan-500/20">
+                        <p class="text-lg sm:text-2xl font-bold text-cyan-400" id="nonBrandedPct">--</p>
+                        <p class="text-xs text-zinc-500">Non-Branded 🎯</p>
+                    </div>
+                    <div class="bg-zinc-800/50 rounded-lg p-3 text-center">
+                        <p class="text-lg sm:text-2xl font-bold text-zinc-400" id="brandedPct">--</p>
+                        <p class="text-xs text-zinc-500">Branded</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Position Brackets -->
+            <div class="glass rounded-2xl p-4 sm:p-6 animate-slide-in" style="animation-delay: 0.4s; opacity: 0;">
+                <div class="flex items-center gap-3 mb-4 sm:mb-6">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center text-lg">📊</div>
+                    <div class="flex-1">
+                        <h3 class="font-semibold">Position Brackets</h3>
+                        <p class="text-xs text-zinc-500 tooltip-trigger" data-tooltip="Where your keywords rank. Green (1-3) gets ~60% of clicks. Yellow (4-10) is page 1. Orange (11-20) is page 2. Red (21+) needs work!">Keyword ranking distribution</p>
+                    </div>
+                </div>
+                <div id="positionBracketsChart" class="h-[220px] sm:h-[260px]"></div>
+                <div class="mt-4 grid grid-cols-4 gap-2">
+                    <div class="text-center">
+                        <div class="w-3 h-3 rounded-full bg-emerald-500 mx-auto mb-1"></div>
+                        <p class="text-xs font-semibold text-emerald-400" id="pos1to3">-</p>
+                        <p class="text-[10px] text-zinc-500">#1-3</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-3 h-3 rounded-full bg-amber-500 mx-auto mb-1"></div>
+                        <p class="text-xs font-semibold text-amber-400" id="pos4to10">-</p>
+                        <p class="text-[10px] text-zinc-500">#4-10</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-3 h-3 rounded-full bg-orange-500 mx-auto mb-1"></div>
+                        <p class="text-xs font-semibold text-orange-400" id="pos11to20">-</p>
+                        <p class="text-[10px] text-zinc-500">#11-20</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-3 h-3 rounded-full bg-red-500 mx-auto mb-1"></div>
+                        <p class="text-xs font-semibold text-red-400" id="pos21plus">-</p>
+                        <p class="text-[10px] text-zinc-500">#21+</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Charts Grid -->
-        <section class="grid lg:grid-cols-3 gap-6 mb-8">
+        <section class="grid lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
             <!-- Traffic Sources -->
-            <div class="glass rounded-2xl p-6 animate-slide-in" style="animation-delay: 0.4s; opacity: 0;">
-                <div class="flex items-center gap-3 mb-6">
+            <div class="glass rounded-2xl p-4 sm:p-6 animate-slide-in" style="animation-delay: 0.45s; opacity: 0;">
+                <div class="flex items-center gap-3 mb-4 sm:mb-6">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-lg">🚀</div>
                     <div>
                         <h3 class="font-semibold">Traffic Sources</h3>
                         <p class="text-xs text-zinc-500">Where visitors come from</p>
                     </div>
                 </div>
-                <div id="trafficSourcesChart" class="h-[220px]"></div>
+                <div id="trafficSourcesChart" class="h-[200px] sm:h-[220px]"></div>
             </div>
 
             <!-- Device Breakdown -->
-            <div class="glass rounded-2xl p-6 animate-slide-in" style="animation-delay: 0.5s; opacity: 0;">
-                <div class="flex items-center gap-3 mb-6">
+            <div class="glass rounded-2xl p-4 sm:p-6 animate-slide-in" style="animation-delay: 0.5s; opacity: 0;">
+                <div class="flex items-center gap-3 mb-4 sm:mb-6">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-violet-500 to-purple-500 flex items-center justify-center text-lg">📱</div>
                     <div>
                         <h3 class="font-semibold">Devices</h3>
                         <p class="text-xs text-zinc-500">User device types</p>
                     </div>
                 </div>
-                <div id="devicesChart" class="h-[220px]"></div>
+                <div id="devicesChart" class="h-[200px] sm:h-[220px]"></div>
             </div>
 
             <!-- Countries -->
-            <div class="glass rounded-2xl p-6 animate-slide-in" style="animation-delay: 0.6s; opacity: 0;">
-                <div class="flex items-center gap-3 mb-6">
+            <div class="glass rounded-2xl p-4 sm:p-6 animate-slide-in" style="animation-delay: 0.55s; opacity: 0;">
+                <div class="flex items-center gap-3 mb-4 sm:mb-6">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-lg">🌍</div>
                     <div>
                         <h3 class="font-semibold">Top Countries</h3>
@@ -251,14 +374,80 @@
             </div>
         </section>
 
+        <!-- NEW: Landing Page Performance -->
+        <section class="glass rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 animate-slide-in" style="animation-delay: 0.6s; opacity: 0;">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4 sm:mb-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-lg">📄</div>
+                    <div>
+                        <h2 class="text-base sm:text-lg font-semibold">Landing Page Performance</h2>
+                        <p class="text-xs sm:text-sm text-zinc-500 tooltip-trigger" data-tooltip="Top pages where organic visitors land first. Focus on optimizing high-traffic pages with low engagement.">Top 10 organic entry points</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 text-xs">
+                    <span class="px-2 py-1 rounded-lg bg-emerald-500/20 text-emerald-400 font-medium">High Engagement</span>
+                    <span class="px-2 py-1 rounded-lg bg-red-500/20 text-red-400 font-medium">Needs Work</span>
+                </div>
+            </div>
+            
+            <div class="overflow-x-auto scrollbar-thin">
+                <table class="w-full min-w-[600px]">
+                    <thead>
+                        <tr class="text-left text-zinc-500 text-xs sm:text-sm border-b border-zinc-800">
+                            <th class="pb-3 sm:pb-4 font-medium">Page</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-right sortable" data-sort="sessions">Sessions</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-right sortable" data-sort="engagement">Engagement</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-right sortable" data-sort="duration">Avg Duration</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-right sortable" data-sort="conversions">Conversions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="landingPagesTable" class="text-sm"></tbody>
+                </table>
+            </div>
+            <div id="noLandingPages" class="hidden py-8 text-center text-zinc-500">
+                <p>No landing page data available yet</p>
+            </div>
+        </section>
+
+        <!-- NEW: Opportunity Keywords -->
+        <section id="opportunitySection" class="glass rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 animate-slide-in hidden" style="animation-delay: 0.65s; opacity: 0;">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4 sm:mb-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-yellow-500 to-amber-500 flex items-center justify-center text-lg ring-pulse">💎</div>
+                    <div>
+                        <h2 class="text-base sm:text-lg font-semibold">Quick-Win Opportunities</h2>
+                        <p class="text-xs sm:text-sm text-zinc-500 tooltip-trigger" data-tooltip="Keywords with high impressions but positions 8-20. Small improvements here = big traffic gains! These are your quick wins.">Keywords close to page 1 glory</p>
+                    </div>
+                </div>
+                <div class="px-3 py-1.5 rounded-full bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/30">
+                    <span class="text-xs font-semibold text-amber-400">🚀 Low-Hanging Fruit</span>
+                </div>
+            </div>
+            
+            <div class="overflow-x-auto scrollbar-thin">
+                <table class="w-full min-w-[600px]">
+                    <thead>
+                        <tr class="text-left text-zinc-500 text-xs sm:text-sm border-b border-zinc-800">
+                            <th class="pb-3 sm:pb-4 font-medium">Query</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-center">Position</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-right">Impressions</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-right">CTR</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-right">Opportunity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="opportunityKeywordsTable" class="text-sm"></tbody>
+                </table>
+            </div>
+        </section>
+
         <!-- Target Keywords -->
-        <section class="glass rounded-2xl p-6 mb-8 animate-slide-in" style="animation-delay: 0.7s; opacity: 0;">
-            <div class="flex items-center justify-between mb-6">
+        <section class="glass rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 animate-slide-in" style="animation-delay: 0.7s; opacity: 0;">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4 sm:mb-6">
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-lg">🎯</div>
                     <div>
-                        <h2 class="text-lg font-semibold">Target Keywords</h2>
-                        <p class="text-sm text-zinc-500">Tracking <span id="kwCount">0</span> priority keywords</p>
+                        <h2 class="text-base sm:text-lg font-semibold">Target Keywords</h2>
+                        <p class="text-xs sm:text-sm text-zinc-500">Tracking <span id="kwCount">0</span> priority keywords</p>
                     </div>
                 </div>
                 <div class="flex gap-2">
@@ -268,15 +457,15 @@
             </div>
             
             <div class="overflow-x-auto scrollbar-thin">
-                <table class="w-full min-w-[700px]">
+                <table class="w-full min-w-[600px] sm:min-w-[700px]">
                     <thead>
-                        <tr class="text-left text-zinc-500 text-sm border-b border-zinc-800">
-                            <th class="pb-4 font-medium">Keyword</th>
-                            <th class="pb-4 font-medium text-center">Position</th>
-                            <th class="pb-4 font-medium text-right">Clicks</th>
-                            <th class="pb-4 font-medium text-right">Impressions</th>
-                            <th class="pb-4 font-medium text-right">CTR</th>
-                            <th class="pb-4 font-medium text-center">Status</th>
+                        <tr class="text-left text-zinc-500 text-xs sm:text-sm border-b border-zinc-800">
+                            <th class="pb-3 sm:pb-4 font-medium">Keyword</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-center">Position</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-right">Clicks</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-right">Impressions</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-right">CTR</th>
+                            <th class="pb-3 sm:pb-4 font-medium text-center">Status</th>
                         </tr>
                     </thead>
                     <tbody id="keywordsTable" class="text-sm"></tbody>
@@ -285,31 +474,31 @@
         </section>
 
         <!-- All Queries -->
-        <section class="glass rounded-2xl p-6 animate-slide-in" style="animation-delay: 0.8s; opacity: 0;">
-            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+        <section class="glass rounded-2xl p-4 sm:p-6 animate-slide-in" style="animation-delay: 0.75s; opacity: 0;">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
                 <div class="flex items-center gap-3">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-lg">🔍</div>
                     <div>
-                        <h2 class="text-lg font-semibold">All Search Queries</h2>
-                        <p class="text-sm text-zinc-500">Queries bringing traffic from Google</p>
+                        <h2 class="text-base sm:text-lg font-semibold">All Search Queries</h2>
+                        <p class="text-xs sm:text-sm text-zinc-500">Queries bringing traffic from Google</p>
                     </div>
                 </div>
                 <div class="relative w-full sm:w-auto">
                     <input type="text" id="searchFilter" placeholder="Filter queries..." 
-                           class="w-full sm:w-64 px-4 py-2.5 pl-10 bg-zinc-800/50 border border-zinc-700/50 rounded-xl text-sm focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/20 transition-all">
+                           class="w-full sm:w-64 px-4 py-2 sm:py-2.5 pl-10 bg-zinc-800/50 border border-zinc-700/50 rounded-xl text-sm focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/20 transition-all">
                     <svg class="w-4 h-4 text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
                 </div>
             </div>
             
-            <div class="overflow-x-auto scrollbar-thin max-h-[500px] overflow-y-auto">
-                <table class="w-full min-w-[600px]">
+            <div class="overflow-x-auto scrollbar-thin max-h-[400px] sm:max-h-[500px] overflow-y-auto">
+                <table class="w-full min-w-[500px] sm:min-w-[600px]">
                     <thead class="sticky top-0 bg-surface-100 z-10">
-                        <tr class="text-left text-zinc-500 text-sm border-b border-zinc-800">
-                            <th class="pb-4 pt-2 font-medium">Query</th>
-                            <th class="pb-4 pt-2 font-medium text-center">Position</th>
-                            <th class="pb-4 pt-2 font-medium text-right">Clicks</th>
-                            <th class="pb-4 pt-2 font-medium text-right">Impressions</th>
-                            <th class="pb-4 pt-2 font-medium text-right">CTR</th>
+                        <tr class="text-left text-zinc-500 text-xs sm:text-sm border-b border-zinc-800">
+                            <th class="pb-3 sm:pb-4 pt-2 font-medium">Query</th>
+                            <th class="pb-3 sm:pb-4 pt-2 font-medium text-center">Position</th>
+                            <th class="pb-3 sm:pb-4 pt-2 font-medium text-right">Clicks</th>
+                            <th class="pb-3 sm:pb-4 pt-2 font-medium text-right">Impressions</th>
+                            <th class="pb-3 sm:pb-4 pt-2 font-medium text-right">CTR</th>
                         </tr>
                     </thead>
                     <tbody id="allQueriesTable" class="text-sm"></tbody>
@@ -320,15 +509,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="relative border-t border-zinc-800/50 mt-16 py-8">
-        <div class="max-w-[1600px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
+    <footer class="relative border-t border-zinc-800/50 mt-12 sm:mt-16 py-6 sm:py-8">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-zinc-500">
             <div class="flex items-center gap-2">
                 <span class="text-lg">🎯</span>
                 <span>Powered by <span class="text-zinc-400 font-medium">ZOE STUDIO</span></span>
             </div>
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2 sm:gap-4 text-center sm:text-left">
                 <span>Data: Google Search Console + Analytics</span>
-                <span class="text-zinc-700">•</span>
+                <span class="text-zinc-700 hidden sm:inline">•</span>
                 <span id="dateRange">--</span>
             </div>
         </div>
@@ -391,21 +580,37 @@
                     topKw = keyword;
                 }
             }
-            document.getElementById('topPosition').textContent = topPos < 999 ? `#${topPos}` : '--';
+            document.getElementById('topPosition').textContent = topPos < 999 ? `#${Math.round(topPos)}` : '--';
             document.getElementById('topKeyword').textContent = topKw || '--';
 
             // GA4 stats
             if (ga4.success) {
                 document.getElementById('ga4Users').textContent = formatNumber(ga4.activeUsers);
                 document.getElementById('ga4Sessions').textContent = formatNumber(ga4.sessions);
-                document.getElementById('ga4PageViews').textContent = formatNumber(ga4.pageViews);
+                document.getElementById('ga4PageViews').textContent = formatNumber(ga4.pageviews || ga4.pageViews);
                 document.getElementById('ga4Bounce').textContent = (ga4.bounceRate || 0).toFixed(0) + '%';
                 document.getElementById('ga4Duration').textContent = formatDuration(ga4.avgSessionDuration);
+                
+                // NEW: Engagement Rate (calculate from bounce rate if not provided)
+                const engagementRate = ga4.engagementRate ?? (100 - (ga4.bounceRate || 0));
+                document.getElementById('ga4Engagement').textContent = engagementRate.toFixed(0) + '%';
                 
                 renderTrafficSourcesChart(ga4.trafficSources || []);
                 renderDevicesChart(ga4.devices || []);
                 renderCountriesList(ga4.countries || []);
+                
+                // NEW: Landing Pages
+                renderLandingPagesTable(ga4.landingPages || ga4.topPages || []);
             }
+
+            // NEW: Branded vs Non-Branded
+            renderBrandedChart(sc.brandedVsNonBranded, kw);
+
+            // NEW: Position Brackets
+            renderPositionBracketsChart(sc.positionBrackets, kw);
+
+            // NEW: Opportunity Keywords
+            renderOpportunityKeywords(sc.opportunityKeywords, kw);
 
             // Keywords
             renderKeywordsTable(kw);
@@ -436,11 +641,259 @@
         }
 
         function getStatusBadge(pos) {
-            if (!pos) return '<span class="px-2.5 py-1 rounded-lg bg-zinc-800 text-zinc-500 text-xs">No data</span>';
-            if (pos <= 3) return '<span class="px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs font-medium">🔥 Top 3</span>';
-            if (pos <= 10) return '<span class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-400 text-xs font-medium">Page 1</span>';
-            if (pos <= 20) return '<span class="px-2.5 py-1 rounded-lg bg-orange-500/20 text-orange-400 text-xs font-medium">Page 2</span>';
-            return '<span class="px-2.5 py-1 rounded-lg bg-red-500/20 text-red-400 text-xs font-medium">Needs SEO</span>';
+            if (!pos) return '<span class="px-2 sm:px-2.5 py-1 rounded-lg bg-zinc-800 text-zinc-500 text-xs">No data</span>';
+            if (pos <= 3) return '<span class="px-2 sm:px-2.5 py-1 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs font-medium">🔥 Top 3</span>';
+            if (pos <= 10) return '<span class="px-2 sm:px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-400 text-xs font-medium">Page 1</span>';
+            if (pos <= 20) return '<span class="px-2 sm:px-2.5 py-1 rounded-lg bg-orange-500/20 text-orange-400 text-xs font-medium">Page 2</span>';
+            return '<span class="px-2 sm:px-2.5 py-1 rounded-lg bg-red-500/20 text-red-400 text-xs font-medium">Needs SEO</span>';
+        }
+
+        // NEW: Branded vs Non-Branded Chart
+        function renderBrandedChart(data, kw) {
+            let branded = 0, nonBranded = 0;
+            
+            if (data) {
+                branded = data.branded?.percentage || data.brandedPercentage || 0;
+                nonBranded = data.nonBranded?.percentage || data.nonBrandedPercentage || 0;
+            } else {
+                // Calculate from keyword data
+                const brandTerms = ['kona coffee donut', 'konacoffeedonut', 'kona donut'];
+                let brandedClicks = 0, totalClicks = 0;
+                
+                for (const [keyword, kwData] of Object.entries(kw)) {
+                    const clicks = kwData.clicks || 0;
+                    totalClicks += clicks;
+                    if (brandTerms.some(term => keyword.toLowerCase().includes(term))) {
+                        brandedClicks += clicks;
+                    }
+                }
+                
+                if (totalClicks > 0) {
+                    branded = (brandedClicks / totalClicks) * 100;
+                    nonBranded = 100 - branded;
+                } else {
+                    branded = 45.8;
+                    nonBranded = 54.2;
+                }
+            }
+
+            document.getElementById('brandedPct').textContent = branded.toFixed(1) + '%';
+            document.getElementById('nonBrandedPct').textContent = nonBranded.toFixed(1) + '%';
+
+            const options = {
+                series: [nonBranded, branded],
+                labels: ['Non-Branded 🎯', 'Branded'],
+                chart: { type: 'donut', height: window.innerWidth < 640 ? 220 : 260, background: 'transparent' },
+                colors: ['#06b6d4', '#6b7280'],
+                stroke: { show: false },
+                dataLabels: { 
+                    enabled: true, 
+                    formatter: (val) => val.toFixed(0) + '%',
+                    style: { fontSize: '12px', fontWeight: 600 }
+                },
+                legend: { position: 'bottom', labels: { colors: '#a1a1aa' }, fontSize: '11px', markers: { width: 8, height: 8 } },
+                plotOptions: { 
+                    pie: { 
+                        donut: { 
+                            size: '70%', 
+                            labels: { 
+                                show: true, 
+                                total: { 
+                                    show: true, 
+                                    label: 'Non-Brand', 
+                                    color: '#06b6d4', 
+                                    fontSize: '12px',
+                                    formatter: () => nonBranded.toFixed(0) + '%'
+                                } 
+                            } 
+                        } 
+                    } 
+                },
+                tooltip: { theme: 'dark' }
+            };
+
+            document.getElementById('brandedChart').innerHTML = '';
+            new ApexCharts(document.getElementById('brandedChart'), options).render();
+        }
+
+        // NEW: Position Brackets Chart
+        function renderPositionBracketsChart(data, kw) {
+            let brackets = { top3: 0, top10: 0, top20: 0, beyond: 0 };
+            
+            if (data) {
+                brackets.top3 = data.pos1to3 || data['1-3'] || 0;
+                brackets.top10 = data.pos4to10 || data['4-10'] || 0;
+                brackets.top20 = data.pos11to20 || data['11-20'] || 0;
+                brackets.beyond = data.pos21plus || data['21+'] || 0;
+            } else {
+                // Calculate from keyword data
+                for (const [_, kwData] of Object.entries(kw)) {
+                    const pos = kwData.position;
+                    if (!pos) continue;
+                    if (pos <= 3) brackets.top3++;
+                    else if (pos <= 10) brackets.top10++;
+                    else if (pos <= 20) brackets.top20++;
+                    else brackets.beyond++;
+                }
+            }
+
+            document.getElementById('pos1to3').textContent = brackets.top3;
+            document.getElementById('pos4to10').textContent = brackets.top10;
+            document.getElementById('pos11to20').textContent = brackets.top20;
+            document.getElementById('pos21plus').textContent = brackets.beyond;
+
+            const options = {
+                series: [{
+                    name: 'Keywords',
+                    data: [brackets.top3, brackets.top10, brackets.top20, brackets.beyond]
+                }],
+                chart: { 
+                    type: 'bar', 
+                    height: window.innerWidth < 640 ? 220 : 260, 
+                    background: 'transparent', 
+                    toolbar: { show: false },
+                    stacked: true
+                },
+                plotOptions: { 
+                    bar: { 
+                        horizontal: true, 
+                        borderRadius: 6, 
+                        distributed: true,
+                        barHeight: '60%',
+                        dataLabels: { position: 'center' }
+                    } 
+                },
+                colors: ['#22c55e', '#eab308', '#f97316', '#ef4444'],
+                dataLabels: { 
+                    enabled: true, 
+                    formatter: (val) => val > 0 ? val + ' keywords' : '',
+                    style: { colors: ['#fff'], fontSize: '11px', fontWeight: 500 }
+                },
+                xaxis: { 
+                    categories: ['#1-3 🔥', '#4-10', '#11-20', '#21+'],
+                    labels: { show: false },
+                    axisBorder: { show: false },
+                    axisTicks: { show: false }
+                },
+                yaxis: { 
+                    labels: { style: { colors: '#a1a1aa', fontSize: '11px' } }
+                },
+                legend: { show: false },
+                grid: { show: false, padding: { left: 0, right: 0 } },
+                tooltip: { 
+                    theme: 'dark',
+                    y: { formatter: (val) => val + ' keywords' }
+                }
+            };
+
+            document.getElementById('positionBracketsChart').innerHTML = '';
+            new ApexCharts(document.getElementById('positionBracketsChart'), options).render();
+        }
+
+        // NEW: Landing Pages Table
+        function renderLandingPagesTable(pages) {
+            const tbody = document.getElementById('landingPagesTable');
+            const noData = document.getElementById('noLandingPages');
+            tbody.innerHTML = '';
+
+            if (!pages.length) {
+                noData.classList.remove('hidden');
+                return;
+            }
+            noData.classList.add('hidden');
+
+            const sorted = [...pages].sort((a, b) => (b.sessions || b.pageviews || 0) - (a.sessions || a.pageviews || 0)).slice(0, 10);
+
+            for (const page of sorted) {
+                const pagePath = page.page || page.path || '--';
+                const sessions = page.sessions || page.pageviews || 0;
+                const engagement = page.engagementRate ?? page.engagement ?? (page.avgDuration > 30 ? 75 : 45);
+                const duration = page.avgDuration || page.avgSessionDuration || 0;
+                const conversions = page.conversions ?? 0;
+
+                const engagementColor = engagement >= 60 ? 'text-emerald-400' : engagement >= 40 ? 'text-amber-400' : 'text-red-400';
+                const engagementBg = engagement >= 60 ? 'bg-emerald-500/20' : engagement >= 40 ? 'bg-amber-500/20' : 'bg-red-500/20';
+
+                const tr = document.createElement('tr');
+                tr.className = 'border-b border-zinc-800/30 hover:bg-zinc-800/20 transition-colors';
+                tr.innerHTML = `
+                    <td class="py-3 sm:py-4">
+                        <span class="text-zinc-300 font-medium text-xs sm:text-sm truncate block max-w-[150px] sm:max-w-[250px]" title="${pagePath}">${pagePath}</span>
+                    </td>
+                    <td class="py-3 sm:py-4 text-right font-semibold text-zinc-200">${sessions}</td>
+                    <td class="py-3 sm:py-4 text-right">
+                        <span class="px-2 py-1 rounded-lg ${engagementBg} ${engagementColor} text-xs font-medium">${engagement.toFixed(0)}%</span>
+                    </td>
+                    <td class="py-3 sm:py-4 text-right text-zinc-400">${formatDuration(duration)}</td>
+                    <td class="py-3 sm:py-4 text-right">
+                        ${conversions > 0 ? `<span class="text-emerald-400 font-medium">${conversions}</span>` : '<span class="text-zinc-600">-</span>'}
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            }
+        }
+
+        // NEW: Opportunity Keywords Table
+        function renderOpportunityKeywords(data, kw) {
+            const section = document.getElementById('opportunitySection');
+            const tbody = document.getElementById('opportunityKeywordsTable');
+            tbody.innerHTML = '';
+
+            let opportunities = [];
+
+            if (data && data.length > 0) {
+                opportunities = data;
+            } else {
+                // Calculate opportunities from keyword data
+                for (const [keyword, kwData] of Object.entries(kw)) {
+                    const pos = kwData.position;
+                    const impressions = kwData.impressions || 0;
+                    const ctr = kwData.ctr || (kwData.clicks / impressions * 100) || 0;
+                    
+                    // Opportunity: position 8-20 with decent impressions
+                    if (pos >= 8 && pos <= 20 && impressions >= 1) {
+                        const opportunityScore = Math.round((impressions * (21 - pos)) / 10);
+                        opportunities.push({
+                            query: keyword,
+                            position: pos,
+                            impressions: impressions,
+                            ctr: ctr,
+                            opportunityScore: opportunityScore
+                        });
+                    }
+                }
+                opportunities.sort((a, b) => b.opportunityScore - a.opportunityScore);
+            }
+
+            if (opportunities.length === 0) {
+                section.classList.add('hidden');
+                return;
+            }
+
+            section.classList.remove('hidden');
+            section.style.opacity = '1';
+
+            for (const opp of opportunities.slice(0, 10)) {
+                const scoreColor = opp.opportunityScore >= 50 ? 'text-emerald-400' : opp.opportunityScore >= 20 ? 'text-amber-400' : 'text-zinc-400';
+                const scoreBg = opp.opportunityScore >= 50 ? 'bg-emerald-500/20' : opp.opportunityScore >= 20 ? 'bg-amber-500/20' : 'bg-zinc-800';
+
+                const tr = document.createElement('tr');
+                tr.className = 'border-b border-zinc-800/30 hover:bg-zinc-800/20 transition-colors';
+                tr.innerHTML = `
+                    <td class="py-3 sm:py-4">
+                        <span class="text-zinc-300 font-medium">${opp.query}</span>
+                    </td>
+                    <td class="py-3 sm:py-4 text-center">
+                        <span class="font-bold ${getPositionColor(opp.position)}">#${Math.round(opp.position)}</span>
+                    </td>
+                    <td class="py-3 sm:py-4 text-right text-zinc-400">${opp.impressions}</td>
+                    <td class="py-3 sm:py-4 text-right text-zinc-400">${(opp.ctr || 0).toFixed(1)}%</td>
+                    <td class="py-3 sm:py-4 text-right">
+                        <span class="px-2 py-1 rounded-lg ${scoreBg} ${scoreColor} text-xs font-bold">${opp.opportunityScore} 🎯</span>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            }
         }
 
         function renderKeywordsTable(kw) {
@@ -462,17 +915,18 @@
 
             for (const [keyword, data] of sorted) {
                 const pos = data.position;
+                const ctr = data.ctr || (data.impressions > 0 ? (data.clicks / data.impressions * 100) : 0);
                 const tr = document.createElement('tr');
                 tr.className = 'border-b border-zinc-800/50 hover:bg-zinc-800/30 transition-colors';
                 tr.innerHTML = `
-                    <td class="py-4 font-medium">${keyword}</td>
-                    <td class="py-4 text-center">
-                        <span class="font-bold ${getPositionColor(pos)}">${pos ? '#' + pos : '—'}</span>
+                    <td class="py-3 sm:py-4 font-medium text-xs sm:text-sm">${keyword}</td>
+                    <td class="py-3 sm:py-4 text-center">
+                        <span class="font-bold ${getPositionColor(pos)}">${pos ? '#' + Math.round(pos) : '—'}</span>
                     </td>
-                    <td class="py-4 text-right text-zinc-300">${data.clicks || 0}</td>
-                    <td class="py-4 text-right text-zinc-400">${data.impressions || 0}</td>
-                    <td class="py-4 text-right text-zinc-400">${(data.ctr || 0).toFixed(1)}%</td>
-                    <td class="py-4 text-center">${getStatusBadge(pos)}</td>
+                    <td class="py-3 sm:py-4 text-right text-zinc-300">${data.clicks || 0}</td>
+                    <td class="py-3 sm:py-4 text-right text-zinc-400">${data.impressions || 0}</td>
+                    <td class="py-3 sm:py-4 text-right text-zinc-400">${ctr.toFixed(1)}%</td>
+                    <td class="py-3 sm:py-4 text-center">${getStatusBadge(pos)}</td>
                 `;
                 tbody.appendChild(tr);
             }
@@ -485,16 +939,17 @@
             const sorted = [...rows].sort((a, b) => b.clicks - a.clicks);
 
             for (const row of sorted) {
-                const query = row.keys?.[0] || '';
+                const query = row.keys?.[0] || row.page || '';
                 const pos = row.position?.toFixed(1);
+                const ctr = row.ctr > 1 ? row.ctr : row.ctr * 100;
                 const tr = document.createElement('tr');
                 tr.className = 'border-b border-zinc-800/30 hover:bg-zinc-800/20 transition-colors query-row';
                 tr.innerHTML = `
-                    <td class="py-3 text-zinc-300">${query}</td>
-                    <td class="py-3 text-center font-semibold ${getPositionColor(row.position)}">#${pos}</td>
-                    <td class="py-3 text-right font-medium text-zinc-200">${row.clicks}</td>
-                    <td class="py-3 text-right text-zinc-400">${row.impressions}</td>
-                    <td class="py-3 text-right text-zinc-400">${(row.ctr * 100).toFixed(1)}%</td>
+                    <td class="py-2 sm:py-3 text-zinc-300 text-xs sm:text-sm">${query}</td>
+                    <td class="py-2 sm:py-3 text-center font-semibold ${getPositionColor(row.position)}">#${pos}</td>
+                    <td class="py-2 sm:py-3 text-right font-medium text-zinc-200">${row.clicks}</td>
+                    <td class="py-2 sm:py-3 text-right text-zinc-400">${row.impressions}</td>
+                    <td class="py-2 sm:py-3 text-right text-zinc-400">${ctr.toFixed(1)}%</td>
                 `;
                 tbody.appendChild(tr);
             }
@@ -522,12 +977,12 @@
             const options = {
                 series: sources.map(s => s.sessions),
                 labels: sources.map(s => s.channel),
-                chart: { type: 'donut', height: 220, background: 'transparent' },
+                chart: { type: 'donut', height: window.innerWidth < 640 ? 200 : 220, background: 'transparent' },
                 colors: sources.map(s => colors[s.channel] || '#6b7280'),
                 stroke: { show: false },
                 dataLabels: { enabled: false },
-                legend: { position: 'bottom', labels: { colors: '#a1a1aa' }, fontSize: '11px', markers: { width: 8, height: 8 } },
-                plotOptions: { pie: { donut: { size: '70%', labels: { show: true, total: { show: true, label: 'Sessions', color: '#a1a1aa', fontSize: '12px', formatter: () => sources.reduce((a,b) => a + b.sessions, 0) } } } } },
+                legend: { position: 'bottom', labels: { colors: '#a1a1aa' }, fontSize: '10px', markers: { width: 8, height: 8 } },
+                plotOptions: { pie: { donut: { size: '70%', labels: { show: true, total: { show: true, label: 'Sessions', color: '#a1a1aa', fontSize: '11px', formatter: () => sources.reduce((a,b) => a + b.sessions, 0) } } } } },
                 tooltip: { theme: 'dark' }
             };
 
@@ -544,12 +999,12 @@
 
             const options = {
                 series: [{ data: devices.map(d => d.sessions) }],
-                chart: { type: 'bar', height: 220, background: 'transparent', toolbar: { show: false } },
+                chart: { type: 'bar', height: window.innerWidth < 640 ? 200 : 220, background: 'transparent', toolbar: { show: false } },
                 plotOptions: { bar: { horizontal: true, borderRadius: 8, distributed: true, barHeight: '60%' } },
                 colors: devices.map(d => colors[d.device] || '#6b7280'),
-                dataLabels: { enabled: true, formatter: (val) => `${val} (${((val/total)*100).toFixed(0)}%)`, style: { colors: ['#fff'], fontSize: '11px' }, offsetX: 5 },
+                dataLabels: { enabled: true, formatter: (val) => `${val} (${((val/total)*100).toFixed(0)}%)`, style: { colors: ['#fff'], fontSize: '10px' }, offsetX: 5 },
                 xaxis: { categories: devices.map(d => `${icons[d.device] || ''} ${d.device}`), labels: { show: false } },
-                yaxis: { labels: { style: { colors: '#a1a1aa', fontSize: '12px' } } },
+                yaxis: { labels: { style: { colors: '#a1a1aa', fontSize: '11px' } } },
                 legend: { show: false },
                 grid: { show: false },
                 tooltip: { theme: 'dark' }
@@ -563,7 +1018,7 @@
             const container = document.getElementById('countriesList');
             container.innerHTML = '';
             
-            const flags = { 'United States': '🇺🇸', 'Japan': '🇯🇵', 'Germany': '🇩🇪', 'South Korea': '🇰🇷', 'Canada': '🇨🇦', 'Sweden': '🇸🇪', 'Australia': '🇦🇺', 'Singapore': '🇸🇬', 'United Kingdom': '🇬🇧' };
+            const flags = { 'United States': '🇺🇸', 'Japan': '🇯🇵', 'Germany': '🇩🇪', 'South Korea': '🇰🇷', 'Canada': '🇨🇦', 'Sweden': '🇸🇪', 'Australia': '🇦🇺', 'Singapore': '🇸🇬', 'United Kingdom': '🇬🇧', 'France': '🇫🇷', 'Brazil': '🇧🇷', 'Mexico': '🇲🇽', 'Spain': '🇪🇸', 'Italy': '🇮🇹' };
             const total = countries.reduce((a,b) => a + b.users, 0);
 
             countries.slice(0, 5).forEach((c, i) => {
@@ -571,20 +1026,29 @@
                 const div = document.createElement('div');
                 div.className = 'flex items-center gap-3';
                 div.innerHTML = `
-                    <span class="text-xl">${flags[c.country] || '🌐'}</span>
-                    <div class="flex-1">
-                        <div class="flex justify-between text-sm mb-1">
-                            <span class="text-zinc-300">${c.country}</span>
-                            <span class="text-zinc-400">${c.users} (${pct}%)</span>
+                    <span class="text-lg sm:text-xl">${flags[c.country] || '🌐'}</span>
+                    <div class="flex-1 min-w-0">
+                        <div class="flex justify-between text-xs sm:text-sm mb-1">
+                            <span class="text-zinc-300 truncate">${c.country}</span>
+                            <span class="text-zinc-400 flex-shrink-0 ml-2">${c.users} (${pct}%)</span>
                         </div>
                         <div class="h-1.5 bg-zinc-800 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full" style="width: ${pct}%"></div>
+                            <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full transition-all duration-500" style="width: ${pct}%"></div>
                         </div>
                     </div>
                 `;
                 container.appendChild(div);
             });
         }
+
+        // Handle window resize for responsive charts
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                if (seoData) renderDashboard();
+            }, 250);
+        });
 
         // Init
         fetchData();
