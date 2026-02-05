@@ -1,39 +1,40 @@
 {
-  "collectedAt": "2026-02-04T18:26:59.218247",
+  "collectedAt": "2026-02-04T18:27:49.659913",
   "timezone": "EST",
+  "birdAvailable": false,
   "twitter": {
     "trending": [],
     "hawaii_coffee": {
       "query": "hawaii coffee",
       "mentions": 0,
-      "snippet": ""
+      "snippet": "Bird CLI unavailable"
     },
     "kona_coffee": {
       "query": "kona coffee",
       "mentions": 0,
-      "snippet": ""
+      "snippet": "Bird CLI unavailable"
     },
     "waikiki": {
       "query": "waikiki",
       "mentions": 0,
-      "snippet": ""
+      "snippet": "Bird CLI unavailable"
     }
   },
   "competitors": {
     "island_vintage": {
       "query": "island vintage coffee",
       "mentions": 0,
-      "snippet": ""
+      "snippet": "Bird CLI unavailable"
     },
     "honolulu_coffee": {
       "query": "honolulu coffee",
       "mentions": 0,
-      "snippet": ""
+      "snippet": "Bird CLI unavailable"
     },
     "sunrise_shack": {
       "query": "sunrise shack",
       "mentions": 0,
-      "snippet": ""
+      "snippet": "Bird CLI unavailable"
     }
   },
   "news": {
@@ -52,45 +53,9 @@
         "title": "February 2026 events & updates at Hawai\u2018i Volcanoes National Park - Hawai\u02bbi Volcanoes National Park (U.S. National Park Service)",
         "url": "https://www.nps.gov/havo/learn/news/20260120-nr-feb-2026-events.htm",
         "description": "Contact: Jessica Ferracane HAWAII NATIONAL PARK, Hawai\u02bbi \u2013 Hawai\u02bbi Volcanoes National Park announces updates and events for February 2026: <strong>K\u012bl"
-      },
-      {
-        "title": "TTD - Street Usage 2026 O'ahu Schedule of Major Parades and Events | Department of Transportation Services",
-        "url": "https://www.honolulu.gov/dts/2026-events/",
-        "description": "View 2025 2026 OAHU SCHEDULE OF MAJOR PARADES AND STREET ACTIVITIES January February March April May June July August September October November Decem"
-      },
-      {
-        "title": "Things to Do on O\u2018ahu in February 2026",
-        "url": "https://www.honolulumagazine.com/things-to-do-oahu-february-2026/",
-        "description": "Celebrate African American culture through films, have a roaring good time at <strong>Punahou Carnival</strong>, welcome the Lunar New Year and more."
       }
     ],
     "coffee_industry": [],
-    "waikiki_news": [
-      {
-        "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
-        "url": "https://www.hawaiinewsnow.com/",
-        "description": "Meet 15+ City departments at the Honolulu Career Expo on January 28 and explore meaningful careers with BWS and the City and County of Honolulu. ... H"
-      },
-      {
-        "title": "Hawaii News: In-Depth Local News From Honolulu Civil Beat",
-        "url": "https://www.civilbeat.org/",
-        "description": "Hawaii news daily. In-depth reporting on breaking news and more for Honolulu, Big Island, Maui and Kauai counties. No paywall."
-      },
-      {
-        "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
-        "url": "https://www.waikikigetdown.com/",
-        "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read <strong>Waikiki Get Down</strong> - Honolulu, Hawaii Newsletter December "
-      },
-      {
-        "title": "Waikiki Get Down - Honolulu, Hawaii News - Waikiki - Honolulu, Hawaii News",
-        "url": "https://www.waikikigetdown.com/waikiki-hawaii-news.html",
-        "description": "City Announces 2025 Thanksgiving Day Holiday Schedule City and County of Honolulu offices will be closed on Thursday, Nov. 27, 2025 to observe the Tha"
-      },
-      {
-        "title": "DISABLED VESSEL WITH TWO BOATERS RESCUED OUTSIDE WAIKIKI | Honolulu Fire Department",
-        "url": "https://fire.honolulu.gov/2026/01/27/disabled-vessel-with-two-boaters-rescued-outside-waikiki/",
-        "description": "<strong>On January 27, 2026, the Honolulu Fire Department (HFD) received a 911 call at 5:24 p.m. and responded to a boater in distress offshore of Wai"
-      }
-    ]
+    "waikiki_news": []
   }
 }
