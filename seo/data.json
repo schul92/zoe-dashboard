@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-05T07:12:50.280542Z",
+  "collectedAt": "2026-02-05T07:26:29.413185Z",
   "searchConsole": {
     "totals": {
       "clicks": 24,
@@ -310,7 +310,7 @@
         "sessions": 63,
         "users": 47,
         "engagementRate": 71.4,
-        "avgDuration": 855.9,
+        "avgDuration": 856.0,
         "conversions": 0
       },
       {
