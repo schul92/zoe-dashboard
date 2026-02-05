@@ -1022,7 +1022,7 @@
         <section>
             <div class="section-header">
                 <h2><i class="fas fa-clock text-cyan-400"></i> Daily Cron Schedule</h2>
-                <span class="section-badge active">4 Active Jobs</span>
+                <span class="section-badge active">3 Active Jobs</span>
             </div>
             
             <div class="cron-timeline" role="region" aria-label="Daily cron job schedule">
@@ -1036,13 +1036,13 @@
                     <div class="cron-job-status active"></div>
                 </div>
                 
-                <div class="cron-job-mobile active" tabindex="0">
+                <div class="cron-job-mobile" tabindex="0" style="opacity: 0.5;">
                     <div class="cron-job-time">9 AM<br><small>EST</small></div>
                     <div class="cron-job-content">
-                        <div class="cron-job-title">🔥 SEO Trend Collection</div>
-                        <div class="cron-job-meta">Opus 4.5 • Daily</div>
+                        <div class="cron-job-title">🔥 SEO Trends (Merged)</div>
+                        <div class="cron-job-meta">Now part of 8 AM News</div>
                     </div>
-                    <div class="cron-job-status active"></div>
+                    <div class="cron-job-status"></div>
                 </div>
                 
                 <div class="cron-job-mobile active" tabindex="0">
@@ -1076,9 +1076,9 @@
                 </div>
                 <div class="cron-hour">
                     <span class="cron-hour-label">9 AM</span>
-                    <div class="cron-job active">
-                        🔥 SEO Trend Collection<br>
-                        <small style="opacity: 0.7;">Opus 4.5 • EST</small>
+                    <div class="cron-job" style="opacity: 0.4; background: rgba(100,100,100,0.2);">
+                        🔥 SEO Trends<br>
+                        <small style="opacity: 0.7;">Merged → 8 AM</small>
                     </div>
                 </div>
                 <div class="cron-hour"><span class="cron-hour-label">10 AM</span></div>
@@ -1345,7 +1345,7 @@ flowchart LR
     end
     
     subgraph Output["📊 Output"]
-        I[Trend Dashboard]
+        I[SEO Trending Now]
         J[News Dashboard]
         K[Telegram Summary]
         L[Content Ideas]
