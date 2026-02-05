@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-05T03:26:29.241732Z",
+  "collectedAt": "2026-02-05T03:42:49.836931Z",
   "searchConsole": {
     "totals": {
       "clicks": 24,
@@ -172,12 +172,12 @@
   },
   "ga4": {
     "success": true,
-    "activeUsers": 68,
-    "sessions": 101,
-    "bounceRate": 32.67,
-    "engagementRate": 67.3,
-    "avgSessionDuration": 581.9,
-    "pageviews": 130,
+    "activeUsers": 69,
+    "sessions": 102,
+    "bounceRate": 33.33,
+    "engagementRate": 66.7,
+    "avgSessionDuration": 579.2,
+    "pageviews": 132,
     "topPages": [
       {
         "page": "/en",
@@ -234,17 +234,17 @@
         "avgDuration": 1.9
       },
       {
-        "page": "/zh/menu/malasada",
+        "page": "/ja",
         "pageviews": 1,
         "users": 1,
-        "avgDuration": 41.3
+        "avgDuration": 287.4
       }
     ],
     "trafficSources": [
       {
         "channel": "Organic Search",
-        "sessions": 91,
-        "users": 59
+        "sessions": 92,
+        "users": 60
       },
       {
         "channel": "Organic Social",
@@ -265,9 +265,9 @@
     "devices": [
       {
         "device": "desktop",
-        "sessions": 59,
-        "users": 38,
-        "bounceRate": 33.9
+        "sessions": 60,
+        "users": 39,
+        "bounceRate": 35.0
       },
       {
         "device": "mobile",
@@ -289,14 +289,14 @@
         "sessions": 94
       },
       {
-        "country": "South Korea",
+        "country": "Japan",
         "users": 3,
         "sessions": 3
       },
       {
-        "country": "Japan",
-        "users": 2,
-        "sessions": 2
+        "country": "South Korea",
+        "users": 3,
+        "sessions": 3
       },
       {
         "country": "Singapore",
@@ -378,11 +378,11 @@
         "conversions": 0
       },
       {
-        "page": "/ko",
+        "page": "/ja/menu/acai-bowl",
         "sessions": 1,
         "users": 1,
-        "engagementRate": 100.0,
-        "avgDuration": 96.3,
+        "engagementRate": 0.0,
+        "avgDuration": 305.4,
         "conversions": 0
       }
     ]
