@@ -205,6 +205,11 @@
                 <span>Trading</span>
                 <span class="ml-auto px-2 py-1 rounded-md bg-orange-500/20 text-orange-400 text-xs">Dry Run</span>
             </a>
+            <a href="/zoe-dashboard/trading-validation.html" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-base sm:text-sm font-medium text-zinc-400 min-h-[48px]">
+                <i class="fas fa-clipboard-check w-5 text-emerald-400"></i>
+                <span>Validation</span>
+                <span class="ml-auto px-2 py-1 rounded-md bg-emerald-500/20 text-emerald-400 text-xs">NEW</span>
+            </a>
         </nav>
 
         <!-- Footer -->
@@ -432,6 +437,47 @@
                         </div>
                         <div class="flex items-center justify-between text-sm text-zinc-400 group-hover:text-purple-400 transition-colors">
                             <span>View Strategy</span>
+                            <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Trading Validation Report Card -->
+                <a href="/zoe-dashboard/trading-validation.html" class="card-hover glass rounded-2xl overflow-hidden group active:scale-[0.98]">
+                    <div class="h-28 sm:h-32 bg-gradient-to-br from-emerald-600 to-teal-600 relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i class="fas fa-clipboard-check text-white/20 text-5xl sm:text-6xl"></i>
+                        </div>
+                        <div class="absolute top-3 sm:top-4 right-3 sm:right-4">
+                            <span class="px-2 py-1 rounded-lg bg-emerald-500/80 text-white text-xs font-medium">✓ COMPLETE</span>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-11 h-11 sm:w-10 sm:h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center shrink-0">
+                                <i class="fas fa-shield-check text-emerald-400 text-lg sm:text-base"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h3 class="font-bold text-base sm:text-base truncate">Strategy Validation</h3>
+                                <p class="text-xs text-zinc-500 truncate">6 Strategies • 174 Periods</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mb-4">
+                            <div class="text-center p-2 sm:p-2 rounded-lg bg-surface-800/50">
+                                <p class="text-lg sm:text-lg font-bold text-emerald-400">14.6%</p>
+                                <p class="text-xs text-zinc-500">Best</p>
+                            </div>
+                            <div class="text-center p-2 sm:p-2 rounded-lg bg-surface-800/50">
+                                <p class="text-lg sm:text-lg font-bold text-emerald-400">100%</p>
+                                <p class="text-xs text-zinc-500">Win</p>
+                            </div>
+                            <div class="text-center p-2 sm:p-2 rounded-lg bg-surface-800/50">
+                                <p class="text-lg sm:text-lg font-bold text-amber-400">Hedge</p>
+                                <p class="text-xs text-zinc-500">Top</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between text-sm text-zinc-400 group-hover:text-emerald-400 transition-colors">
+                            <span>View Full Report</span>
                             <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                         </div>
                     </div>

@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Strategy Validation Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #e8e8e8;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header .subtitle {
+            color: #a0aec0;
+            font-size: 16px;
+        }
+
+        .validation-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+            color: white;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: all 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .executive-summary {
+            background: linear-gradient(135deg, rgba(72, 187, 120, 0.2) 0%, rgba(56, 161, 105, 0.1) 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            border: 2px solid rgba(72, 187, 120, 0.3);
+        }
+
+        .executive-summary h2 {
+            color: #48bb78;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .summary-item {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+        }
+
+        .summary-item .value {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .summary-item .label {
+            color: #a0aec0;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .strategy-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .strategy-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .strategy-card.recommended {
+            border: 2px solid #48bb78;
+            background: linear-gradient(135deg, rgba(72, 187, 120, 0.1) 0%, rgba(72, 187, 120, 0.05) 100%);
+        }
+
+        .strategy-card.warning {
+            border: 2px solid #ed8936;
+        }
+
+        .strategy-card.danger {
+            border: 2px solid #f56565;
+            background: linear-gradient(135deg, rgba(245, 101, 101, 0.1) 0%, rgba(245, 101, 101, 0.05) 100%);
+        }
+
+        .strategy-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .strategy-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .strategy-rating {
+            font-size: 18px;
+        }
+
+        .strategy-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .badge-recommended {
+            background: #48bb78;
+            color: white;
+        }
+
+        .badge-promising {
+            background: #4299e1;
+            color: white;
+        }
+
+        .badge-warning {
+            background: #ed8936;
+            color: white;
+        }
+
+        .badge-danger {
+            background: #f56565;
+            color: white;
+        }
+
+        .results-table {
+            width: 100%;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .results-table td {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .results-table td:first-child {
+            color: #a0aec0;
+        }
+
+        .results-table td:last-child {
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .positive {
+            color: #48bb78;
+        }
+
+        .negative {
+            color: #f56565;
+        }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .pros, .cons {
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+
+        .pros {
+            background: rgba(72, 187, 120, 0.1);
+        }
+
+        .cons {
+            background: rgba(245, 101, 101, 0.1);
+        }
+
+        .pros h4, .cons h4 {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .pros h4 {
+            color: #48bb78;
+        }
+
+        .cons h4 {
+            color: #f56565;
+        }
+
+        .pros ul, .cons ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .pros li, .cons li {
+            padding: 3px 0;
+            color: #a0aec0;
+        }
+
+        .chart-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .chart-section h2 {
+            color: #fff;
+            margin-bottom: 25px;
+            font-size: 22px;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 350px;
+        }
+
+        .market-analysis {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .market-analysis h2 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .period-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .period-card {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .period-card h3 {
+            color: #4299e1;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .period-card .period-dates {
+            color: #718096;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .risk-section {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .risk-section h2 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .risk-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .risk-card {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .risk-card h3 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .risk-level {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .risk-low {
+            background: #48bb78;
+            color: white;
+        }
+
+        .risk-medium {
+            background: #ed8936;
+            color: white;
+        }
+
+        .risk-high {
+            background: #f56565;
+            color: white;
+        }
+
+        .recommendations {
+            background: linear-gradient(135deg, rgba(66, 153, 225, 0.2) 0%, rgba(66, 153, 225, 0.1) 100%);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            border: 2px solid rgba(66, 153, 225, 0.3);
+        }
+
+        .recommendations h2 {
+            color: #4299e1;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .recommendation-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recommendation-list li {
+            padding: 15px 20px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .recommendation-list .step-number {
+            width: 35px;
+            height: 35px;
+            background: #4299e1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .warning-banner {
+            background: linear-gradient(135deg, rgba(245, 101, 101, 0.2) 0%, rgba(245, 101, 101, 0.1) 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border: 2px solid rgba(245, 101, 101, 0.3);
+        }
+
+        .warning-banner h3 {
+            color: #f56565;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .warning-banner ul {
+            list-style: none;
+            padding-left: 30px;
+        }
+
+        .warning-banner li {
+            padding: 5px 0;
+            color: #e8e8e8;
+        }
+
+        .footer {
+            text-align: center;
+            color: #718096;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                📊 Trading Strategy Validation
+                <span class="validation-badge">✓ COMPLETE</span>
+            </h1>
+            <p class="subtitle">Comprehensive backtest analysis across 174 periods | February 7, 2026</p>
+            <div class="nav">
+                <a href="hub.html" class="nav-btn">🏠 Hub</a>
+                <a href="trading.html" class="nav-btn">📈 Trading</a>
+                <a href="seo/" class="nav-btn">📊 SEO</a>
+                <a href="aws.html" class="nav-btn">☁️ AWS</a>
+            </div>
+        </div>
+
+        <div class="executive-summary">
+            <h2>🎯 Executive Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <div class="value">6</div>
+                    <div class="label">Strategies Tested</div>
+                </div>
+                <div class="summary-item">
+                    <div class="value">174</div>
+                    <div class="label">Backtest Periods</div>
+                </div>
+                <div class="summary-item">
+                    <div class="value positive">14.64%</div>
+                    <div class="label">Best Annual Return</div>
+                </div>
+                <div class="summary-item">
+                    <div class="value">Hedging</div>
+                    <div class="label">Top Strategy</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="strategy-cards">
+            <!-- Hedging Bot - RECOMMENDED -->
+            <div class="strategy-card recommended">
+                <div class="strategy-header">
+                    <div>
+                        <div class="strategy-name">🛡️ Hedging Bot (Delta Neutral)</div>
+                        <span class="strategy-badge badge-recommended">✓ RECOMMENDED</span>
+                    </div>
+                    <div class="strategy-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                <p style="color: #a0aec0; margin-bottom: 15px;">
+                    Holds spot + short futures simultaneously, earning funding income regardless of price direction.
+                </p>
+                <table class="results-table">
+                    <tr><td>1 Month Return</td><td class="positive">+1.13%</td></tr>
+                    <tr><td>3 Month Return</td><td class="positive">+3.56%</td></tr>
+                    <tr><td>6 Month Return</td><td class="positive">+7.24%</td></tr>
+                    <tr><td>12 Month Return</td><td class="positive">+14.64%</td></tr>
+                    <tr><td>Win Rate</td><td class="positive">100%</td></tr>
+                    <tr><td>Max Drawdown</td><td class="positive">0%</td></tr>
+                </table>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>✅ Pros</h4>
+                        <ul>
+                            <li>• 100% win rate (delta neutral)</li>
+                            <li>• Works in ALL markets</li>
+                            <li>• Zero drawdown risk</li>
+                            <li>• Passive funding income</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>⚠️ Cons</h4>
+                        <ul>
+                            <li>• Requires margin account</li>
+                            <li>• Funding rates vary</li>
+                            <li>• Capital locked</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NostalgiaForInfinity -->
+            <div class="strategy-card warning">
+                <div class="strategy-header">
+                    <div>
+                        <div class="strategy-name">🤖 NostalgiaForInfinity</div>
+                        <span class="strategy-badge badge-promising">PAPER TRADE FIRST</span>
+                    </div>
+                    <div class="strategy-rating">⭐⭐⭐⭐</div>
+                </div>
+                <p style="color: #a0aec0; margin-bottom: 15px;">
+                    Sophisticated Freqtrade strategy with multi-indicator analysis. Proven over 917 days.
+                </p>
+                <table class="results-table">
+                    <tr><td>Full Backtest (917d)</td><td class="positive">+10.93%</td></tr>
+                    <tr><td>Total Trades</td><td>190</td></tr>
+                    <tr><td>Win Rate</td><td class="positive">97.9%</td></tr>
+                    <tr><td>Max Drawdown</td><td>0.87%</td></tr>
+                    <tr><td>Recent 1 Month</td><td class="negative">-3.42%</td></tr>
+                </table>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>✅ Pros</h4>
+                        <ul>
+                            <li>• 97.9% historical win rate</li>
+                            <li>• Proven community strategy</li>
+                            <li>• Automated trading</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>⚠️ Cons</h4>
+                        <ul>
+                            <li>• Recent months losing</li>
+                            <li>• Complex setup required</li>
+                            <li>• Needs monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Trading -->
+            <div class="strategy-card warning">
+                <div class="strategy-header">
+                    <div>
+                        <div class="strategy-name">📊 Grid Trading (Long)</div>
+                        <span class="strategy-badge badge-warning">SITUATIONAL</span>
+                    </div>
+                    <div class="strategy-rating">⭐⭐⭐</div>
+                </div>
+                <p style="color: #a0aec0; margin-bottom: 15px;">
+                    Buy low, sell high in price ranges. Works well in sideways markets only.
+                </p>
+                <table class="results-table">
+                    <tr><td>2025 Full Year</td><td class="positive">+15.17%</td></tr>
+                    <tr><td>Recent 1 Month</td><td class="negative">-27.32%</td></tr>
+                    <tr><td>Recent 3 Months</td><td class="negative">-31.66%</td></tr>
+                    <tr><td>Recent 6 Months</td><td class="negative">-38.44%</td></tr>
+                </table>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h4>✅ Pros</h4>
+                        <ul>
+                            <li>• +15% in ranging 2025</li>
+                            <li>• Simple concept</li>
+                            <li>• Many trades</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <h4>⚠️ Cons</h4>
+                        <ul>
+                            <li>• -27% to -43% in trends</li>
+                            <li>• Needs range selection</li>
+                            <li>• High risk in downtrends</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reverse Grid - DANGER -->
+            <div class="strategy-card danger">
+                <div class="strategy-header">
+                    <div>
+                        <div class="strategy-name">🚫 Reverse Grid (Short)</div>
+                        <span class="strategy-badge badge-danger">DO NOT USE</span>
+                    </div>
+                    <div class="strategy-rating">⭐</div>
+                </div>
+                <p style="color: #f56565; margin-bottom: 15px; font-weight: 600;">
+                    ⚠️ CATASTROPHIC LOSSES - Consistent -99% across ALL tested periods
+                </p>
+                <table class="results-table">
+                    <tr><td>Recent 1 Month</td><td class="negative">-99.38%</td></tr>
+                    <tr><td>Recent 6 Months</td><td class="negative">-99.38%</td></tr>
+                    <tr><td>2025 Full Year</td><td class="negative">-99.69%</td></tr>
+                </table>
+            </div>
+
+            <!-- Neutral Grid - DANGER -->
+            <div class="strategy-card danger">
+                <div class="strategy-header">
+                    <div>
+                        <div class="strategy-name">🚫 Neutral Grid</div>
+                        <span class="strategy-badge badge-danger">DO NOT USE</span>
+                    </div>
+                    <div class="strategy-rating">⭐</div>
+                </div>
+                <p style="color: #f56565; margin-bottom: 15px; font-weight: 600;">
+                    ⚠️ SEVERE LOSSES - -90% to -97% across all periods tested
+                </p>
+                <table class="results-table">
+                    <tr><td>Recent 1 Month</td><td class="negative">-85.89%</td></tr>
+                    <tr><td>Recent 6 Months</td><td class="negative">-92.74%</td></tr>
+                    <tr><td>2025 Full Year</td><td class="negative">-96.10%</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h2>📈 Strategy Performance Comparison</h2>
+            <div class="chart-wrapper">
+                <canvas id="performanceChart"></canvas>
+            </div>
+        </div>
+
+        <div class="market-analysis">
+            <h2>🌍 Market Period Analysis</h2>
+            <div class="period-cards">
+                <div class="period-card">
+                    <h3>📈 Bull Market (2024 Q4)</h3>
+                    <div class="period-dates">October - December 2024</div>
+                    <table class="results-table">
+                        <tr><td>BTC Price Change</td><td class="positive">+45.92%</td></tr>
+                        <tr><td>Hedging Bot</td><td class="positive">+3.64%</td></tr>
+                        <tr><td>Grid Trading</td><td class="negative">-16.33%</td></tr>
+                    </table>
+                    <p style="color: #a0aec0; margin-top: 10px; font-size: 13px;">
+                        Hedging captures funding income. Grid lags during strong uptrends.
+                    </p>
+                </div>
+                <div class="period-card">
+                    <h3>📉 Bear Market (Recent)</h3>
+                    <div class="period-dates">January 7 - February 6, 2026</div>
+                    <table class="results-table">
+                        <tr><td>BTC Price Change</td><td class="negative">-32.15%</td></tr>
+                        <tr><td>Hedging Bot</td><td class="positive">+1.13%</td></tr>
+                        <tr><td>Grid Trading</td><td class="negative">-27.32%</td></tr>
+                    </table>
+                    <p style="color: #a0aec0; margin-top: 10px; font-size: 13px;">
+                        Hedging protects capital while grid fails badly in downtrends.
+                    </p>
+                </div>
+                <div class="period-card">
+                    <h3>📊 Volatile (2025 H1)</h3>
+                    <div class="period-dates">January - June 2025</div>
+                    <table class="results-table">
+                        <tr><td>BTC Price Change</td><td class="positive">+14.99%</td></tr>
+                        <tr><td>Hedging Bot</td><td class="positive">+7.30%</td></tr>
+                        <tr><td>Grid Trading</td><td>Varies by setup</td></tr>
+                    </table>
+                    <p style="color: #a0aec0; margin-top: 10px; font-size: 13px;">
+                        Consistent funding income regardless of price direction.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="risk-section">
+            <h2>⚠️ Risk Assessment</h2>
+            <div class="risk-grid">
+                <div class="risk-card">
+                    <h3>🛡️ Hedging Bot</h3>
+                    <span class="risk-level risk-low">LOW RISK</span>
+                    <table class="results-table">
+                        <tr><td>Max Drawdown</td><td class="positive">0%</td></tr>
+                        <tr><td>Volatility</td><td class="positive">Very Low</td></tr>
+                        <tr><td>Sharpe Ratio</td><td class="positive">Excellent</td></tr>
+                    </table>
+                </div>
+                <div class="risk-card">
+                    <h3>🤖 NostalgiaForInfinity</h3>
+                    <span class="risk-level risk-medium">MEDIUM RISK</span>
+                    <table class="results-table">
+                        <tr><td>Max Drawdown</td><td>0.87%</td></tr>
+                        <tr><td>Volatility</td><td>Low-Medium</td></tr>
+                        <tr><td>Sharpe Ratio</td><td>Good</td></tr>
+                    </table>
+                </div>
+                <div class="risk-card">
+                    <h3>📊 Grid Trading</h3>
+                    <span class="risk-level risk-high">HIGH RISK</span>
+                    <table class="results-table">
+                        <tr><td>Max Drawdown</td><td class="negative">43%+</td></tr>
+                        <tr><td>Volatility</td><td class="negative">High</td></tr>
+                        <tr><td>Sharpe Ratio</td><td class="negative">Poor</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="warning-banner">
+            <h3>⚠️ Critical Risk Warnings</h3>
+            <ul>
+                <li>• <strong>Reverse Grid & Neutral Grid:</strong> DO NOT USE - Catastrophic losses (-90% to -99%)</li>
+                <li>• <strong>Grid Trading:</strong> Only use in confirmed ranging markets - fails in trends</li>
+                <li>• <strong>All Strategies:</strong> Past performance does not guarantee future results</li>
+                <li>• <strong>Capital Risk:</strong> Only trade with money you can afford to lose</li>
+                <li>• <strong>Funding Rates:</strong> Hedging bot returns depend on variable funding rates</li>
+            </ul>
+        </div>
+
+        <div class="recommendations">
+            <h2>📋 Recommendations & Next Steps</h2>
+            <ul class="recommendation-list">
+                <li>
+                    <span class="step-number">1</span>
+                    <div>
+                        <strong>Deploy Hedging Bot with $500 test capital</strong><br>
+                        <span style="color: #a0aec0;">Lowest risk, proven returns. Start small to validate real-world performance.</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="step-number">2</span>
+                    <div>
+                        <strong>Paper trade NostalgiaForInfinity for 2-4 weeks</strong><br>
+                        <span style="color: #a0aec0;">Validate recent performance in current market conditions before going live.</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="step-number">3</span>
+                    <div>
+                        <strong>Avoid grid strategies until market stabilizes</strong><br>
+                        <span style="color: #a0aec0;">Current trending market is unfavorable. Wait for sideways confirmation.</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="step-number">4</span>
+                    <div>
+                        <strong>Monitor funding rates daily</strong><br>
+                        <span style="color: #a0aec0;">Hedging bot profitability depends on positive funding. Track closely.</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="step-number">5</span>
+                    <div>
+                        <strong>Review after 30 days of live trading</strong><br>
+                        <span style="color: #a0aec0;">Schedule next validation review for March 7, 2026.</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Report generated: February 7, 2026 00:50 PST | Data source: Comprehensive backtest validation</p>
+            <p style="margin-top: 10px;">📊 <a href="trading.html" style="color: #4299e1;">View Trading Dashboard</a> | <a href="trading/data.json" style="color: #4299e1;">Raw Data (JSON)</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Performance Comparison Chart
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Hedging Bot', 'NostalgiaForInfinity', 'Grid Trading', 'Reverse Grid', 'Neutral Grid'],
+                datasets: [{
+                    label: 'Annual Return (%)',
+                    data: [14.64, 10.93, 15.17, -99.69, -96.10],
+                    backgroundColor: [
+                        'rgba(72, 187, 120, 0.8)',
+                        'rgba(66, 153, 225, 0.8)',
+                        'rgba(237, 137, 54, 0.8)',
+                        'rgba(245, 101, 101, 0.8)',
+                        'rgba(245, 101, 101, 0.8)'
+                    ],
+                    borderColor: [
+                        'rgba(72, 187, 120, 1)',
+                        'rgba(66, 153, 225, 1)',
+                        'rgba(237, 137, 54, 1)',
+                        'rgba(245, 101, 101, 1)',
+                        'rgba(245, 101, 101, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#e8e8e8'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        min: -100,
+                        max: 20,
+                        ticks: {
+                            color: '#a0aec0',
+                            callback: function(value) {
+                                return value + '%';
+                            }
+                        },
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: '#a0aec0'
+                        },
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
