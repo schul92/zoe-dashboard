@@ -40,6 +40,35 @@
         .badge-hawaii { background: rgba(249, 115, 22, 0.15); color: #f97316; border: 1px solid rgba(249, 115, 22, 0.3); }
         @keyframes slideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         .animate-slide-in { animation: slideIn 0.5s ease-out forwards; }
+        
+        /* Filter Button Styles */
+        .filter-btn { 
+            background: rgba(255,255,255,0.03); 
+            border: 1px solid rgba(255,255,255,0.1); 
+            color: #a1a1aa;
+        }
+        .filter-btn:hover { 
+            background: rgba(255,255,255,0.08); 
+            border-color: rgba(255,255,255,0.2);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        .filter-btn.active { 
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            border-color: #f97316;
+            color: #fff;
+            box-shadow: 0 4px 20px -5px rgba(249, 115, 22, 0.5);
+        }
+        .filter-btn[data-filter="twitter"].active { background: linear-gradient(135deg, #1d9bf0, #0c7abf); border-color: #1d9bf0; box-shadow: 0 4px 20px -5px rgba(29, 155, 240, 0.5); }
+        .filter-btn[data-filter="reddit"].active { background: linear-gradient(135deg, #ff4500, #cc3700); border-color: #ff4500; box-shadow: 0 4px 20px -5px rgba(255, 69, 0, 0.5); }
+        .filter-btn[data-filter="hn"].active { background: linear-gradient(135deg, #ff6600, #cc5200); border-color: #ff6600; box-shadow: 0 4px 20px -5px rgba(255, 102, 0, 0.5); }
+        .filter-btn[data-filter="news"].active { background: linear-gradient(135deg, #22c55e, #16a34a); border-color: #22c55e; box-shadow: 0 4px 20px -5px rgba(34, 197, 94, 0.5); }
+        .filter-btn[data-filter="google"].active { background: linear-gradient(135deg, #3b82f6, #2563eb); border-color: #3b82f6; box-shadow: 0 4px 20px -5px rgba(59, 130, 246, 0.5); }
+        .filter-btn[data-filter="hawaii"].active { background: linear-gradient(135deg, #f97316, #ea580c); border-color: #f97316; box-shadow: 0 4px 20px -5px rgba(249, 115, 22, 0.5); }
+        
+        .news-card.hidden { display: none; }
+        .news-card.fade-out { opacity: 0; transform: scale(0.95); }
+        .news-card.fade-in { opacity: 1; transform: scale(1); }
     </style>
 </head>
 <body class="text-zinc-100 min-h-screen">
@@ -88,38 +117,46 @@
 
     <main class="relative max-w-[1600px] mx-auto px-4 sm:px-6 py-6 sm:py-8">
 
-        <!-- Top Sources Summary -->
-        <section class="grid grid-cols-2 lg:grid-cols-6 gap-3 sm:gap-4 mb-6 sm:mb-8">
-            <div class="glass rounded-xl p-4 text-center">
-                <div class="text-2xl mb-1">𝕏</div>
-                <p class="text-xs text-zinc-500">Twitter/X</p>
-                <p class="text-lg font-bold text-blue-400" id="twitter-count">--</p>
+        <!-- Filter Buttons - Click to Filter -->
+        <section class="mb-6 sm:mb-8">
+            <div class="flex flex-wrap gap-2 sm:gap-3 justify-center">
+                <button onclick="setFilter('all')" data-filter="all" class="filter-btn active px-4 py-2.5 rounded-xl font-medium text-sm transition-all flex items-center gap-2">
+                    <span>🌐</span>
+                    <span>All</span>
+                    <span class="filter-count bg-white/10 px-2 py-0.5 rounded-md text-xs" id="all-count">--</span>
+                </button>
+                <button onclick="setFilter('twitter')" data-filter="twitter" class="filter-btn px-4 py-2.5 rounded-xl font-medium text-sm transition-all flex items-center gap-2">
+                    <span>𝕏</span>
+                    <span class="hidden sm:inline">Twitter</span>
+                    <span class="filter-count bg-white/10 px-2 py-0.5 rounded-md text-xs" id="twitter-count">--</span>
+                </button>
+                <button onclick="setFilter('reddit')" data-filter="reddit" class="filter-btn px-4 py-2.5 rounded-xl font-medium text-sm transition-all flex items-center gap-2">
+                    <span>📱</span>
+                    <span class="hidden sm:inline">Reddit</span>
+                    <span class="filter-count bg-white/10 px-2 py-0.5 rounded-md text-xs" id="reddit-count">--</span>
+                </button>
+                <button onclick="setFilter('hn')" data-filter="hn" class="filter-btn px-4 py-2.5 rounded-xl font-medium text-sm transition-all flex items-center gap-2">
+                    <span>⚡</span>
+                    <span class="hidden sm:inline">HN</span>
+                    <span class="filter-count bg-white/10 px-2 py-0.5 rounded-md text-xs" id="hn-count">--</span>
+                </button>
+                <button onclick="setFilter('news')" data-filter="news" class="filter-btn px-4 py-2.5 rounded-xl font-medium text-sm transition-all flex items-center gap-2">
+                    <span>📰</span>
+                    <span class="hidden sm:inline">News</span>
+                    <span class="filter-count bg-white/10 px-2 py-0.5 rounded-md text-xs" id="news-count">--</span>
+                </button>
+                <button onclick="setFilter('google')" data-filter="google" class="filter-btn px-4 py-2.5 rounded-xl font-medium text-sm transition-all flex items-center gap-2">
+                    <span>🔍</span>
+                    <span class="hidden sm:inline">Trends</span>
+                    <span class="filter-count bg-white/10 px-2 py-0.5 rounded-md text-xs" id="google-count">--</span>
+                </button>
+                <button onclick="setFilter('hawaii')" data-filter="hawaii" class="filter-btn px-4 py-2.5 rounded-xl font-medium text-sm transition-all flex items-center gap-2">
+                    <span>🌺</span>
+                    <span class="hidden sm:inline">Hawaii</span>
+                    <span class="filter-count bg-white/10 px-2 py-0.5 rounded-md text-xs" id="hawaii-count">--</span>
+                </button>
             </div>
-            <div class="glass rounded-xl p-4 text-center">
-                <div class="text-2xl mb-1">📱</div>
-                <p class="text-xs text-zinc-500">Reddit</p>
-                <p class="text-lg font-bold text-orange-400" id="reddit-count">--</p>
-            </div>
-            <div class="glass rounded-xl p-4 text-center">
-                <div class="text-2xl mb-1">⚡</div>
-                <p class="text-xs text-zinc-500">Hacker News</p>
-                <p class="text-lg font-bold text-orange-500" id="hn-count">--</p>
-            </div>
-            <div class="glass rounded-xl p-4 text-center">
-                <div class="text-2xl mb-1">📰</div>
-                <p class="text-xs text-zinc-500">News</p>
-                <p class="text-lg font-bold text-green-400" id="news-count">--</p>
-            </div>
-            <div class="glass rounded-xl p-4 text-center">
-                <div class="text-2xl mb-1">🔍</div>
-                <p class="text-xs text-zinc-500">Google Trends</p>
-                <p class="text-lg font-bold text-blue-400" id="google-count">--</p>
-            </div>
-            <div class="glass rounded-xl p-4 text-center">
-                <div class="text-2xl mb-1">🌺</div>
-                <p class="text-xs text-zinc-500">Hawaii</p>
-                <p class="text-lg font-bold text-orange-400" id="hawaii-count">--</p>
-            </div>
+            <p class="text-center text-xs text-zinc-500 mt-3">Click to filter • <span id="showing-count">Showing all</span></p>
         </section>
 
         <!-- Main News Grid -->
@@ -131,6 +168,7 @@
 
     <script>
         let newsData = null;
+        let currentFilter = 'all';
 
         async function fetchData() {
             document.getElementById('refreshIcon').classList.add('animate-spin');
@@ -147,6 +185,40 @@
 
         function refreshData() { fetchData(); }
 
+        function setFilter(filter) {
+            currentFilter = filter;
+            
+            // Update button states
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.filter === filter) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Filter the cards with animation
+            const cards = document.querySelectorAll('.news-card');
+            let visibleCount = 0;
+            
+            cards.forEach((card, index) => {
+                const cardSource = card.dataset.source;
+                const shouldShow = filter === 'all' || cardSource === filter;
+                
+                if (shouldShow) {
+                    visibleCount++;
+                    card.classList.remove('hidden');
+                    card.style.animationDelay = `${visibleCount * 0.03}s`;
+                    card.classList.add('animate-slide-in');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+            
+            // Update showing count
+            const filterName = filter === 'all' ? 'all sources' : getBadgeLabel(filter);
+            document.getElementById('showing-count').textContent = `Showing ${visibleCount} from ${filterName}`;
+        }
+
         function renderNews() {
             if (!newsData) return;
 
@@ -154,13 +226,25 @@
             const dt = new Date(newsData.collectedAt);
             document.getElementById('lastUpdated').textContent = dt.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 
+            // Calculate counts
+            const counts = {
+                twitter: newsData.twitter?.length || 0,
+                reddit: newsData.reddit?.length || 0,
+                hn: newsData.hackerNews?.length || 0,
+                news: newsData.news?.length || 0,
+                google: newsData.googleTrends?.length || 0,
+                hawaii: newsData.hawaii?.length || 0
+            };
+            const totalCount = Object.values(counts).reduce((a, b) => a + b, 0);
+
             // Update source counts
-            document.getElementById('twitter-count').textContent = newsData.twitter?.length || 0;
-            document.getElementById('reddit-count').textContent = newsData.reddit?.length || 0;
-            document.getElementById('hn-count').textContent = newsData.hackerNews?.length || 0;
-            document.getElementById('news-count').textContent = newsData.news?.length || 0;
-            document.getElementById('google-count').textContent = newsData.googleTrends?.length || 0;
-            document.getElementById('hawaii-count').textContent = newsData.hawaii?.length || 0;
+            document.getElementById('all-count').textContent = totalCount;
+            document.getElementById('twitter-count').textContent = counts.twitter;
+            document.getElementById('reddit-count').textContent = counts.reddit;
+            document.getElementById('hn-count').textContent = counts.hn;
+            document.getElementById('news-count').textContent = counts.news;
+            document.getElementById('google-count').textContent = counts.google;
+            document.getElementById('hawaii-count').textContent = counts.hawaii;
 
             // Combine and render all news
             const allNews = [
@@ -174,7 +258,7 @@
 
             const newsGrid = document.getElementById('newsGrid');
             newsGrid.innerHTML = allNews.map((item, index) => `
-                <div class="news-card glass rounded-2xl p-6 animate-slide-in" style="animation-delay: ${index * 0.05}s; opacity: 0;" onclick="window.open('${item.url}', '_blank')">
+                <div class="news-card glass rounded-2xl p-6 animate-slide-in" data-source="${item.source}" style="animation-delay: ${index * 0.05}s; opacity: 0;" onclick="window.open('${item.url}', '_blank')">
                     <div class="flex items-start justify-between mb-3">
                         <span class="badge badge-${item.source}">${getBadgeLabel(item.source)}</span>
                         <span class="text-xs text-zinc-500">${formatTime(item.timestamp)}</span>
@@ -190,6 +274,13 @@
                     ` : ''}
                 </div>
             `).join('');
+            
+            // Apply current filter
+            if (currentFilter !== 'all') {
+                setFilter(currentFilter);
+            } else {
+                document.getElementById('showing-count').textContent = `Showing ${totalCount} from all sources`;
+            }
         }
 
         function getBadgeLabel(source) {
