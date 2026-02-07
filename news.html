@@ -117,6 +117,67 @@
 
     <main class="relative max-w-[1600px] mx-auto px-4 sm:px-6 py-6 sm:py-8">
 
+        <!-- Big Date Display -->
+        <section class="mb-6 text-center">
+            <div class="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-gradient-to-r from-zinc-800/50 to-zinc-900/50 border border-zinc-700/50">
+                <span class="text-3xl">📅</span>
+                <div class="text-left">
+                    <p class="text-2xl font-bold text-white" id="bigDate">Loading...</p>
+                    <p class="text-sm text-zinc-400" id="timeAgo">Checking...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Today's Highlights -->
+        <section class="mb-8" id="highlightsSection">
+            <div class="glass rounded-2xl p-6 glow-orange">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-2xl">🔥</span>
+                    <h2 class="text-xl font-bold">Today's Highlights</h2>
+                    <span class="px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-xs font-semibold">AI Summary</span>
+                </div>
+                
+                <div id="highlightsList" class="space-y-3 mb-4">
+                    <div class="flex items-start gap-3 text-zinc-300">
+                        <span class="text-orange-400">•</span>
+                        <span>Loading highlights...</span>
+                    </div>
+                </div>
+
+                <div class="mt-4 pt-4 border-t border-zinc-700/50" id="actionBox">
+                    <div class="flex items-center gap-2 text-sm">
+                        <span class="px-2 py-1 rounded-lg bg-green-500/20 text-green-400 font-semibold">💡 ACTION</span>
+                        <span class="text-zinc-300" id="actionText">Analyzing trends...</span>
+                    </div>
+                </div>
+
+                <!-- Buzz Meters -->
+                <div class="grid grid-cols-3 gap-4 mt-4 pt-4 border-t border-zinc-700/50">
+                    <div class="text-center">
+                        <p class="text-xs text-zinc-500 mb-1">🌺 Hawaii Buzz</p>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-orange-500 to-red-500 rounded-full transition-all" id="hawaiiBuzz" style="width: 0%"></div>
+                        </div>
+                        <p class="text-xs font-semibold mt-1" id="hawaiiBuzzLabel">--</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-zinc-500 mb-1">☕ Coffee Trends</p>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full transition-all" id="coffeeBuzz" style="width: 0%"></div>
+                        </div>
+                        <p class="text-xs font-semibold mt-1" id="coffeeBuzzLabel">--</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-zinc-500 mb-1">👀 Competitor Activity</p>
+                        <div class="h-2 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all" id="competitorBuzz" style="width: 0%"></div>
+                        </div>
+                        <p class="text-xs font-semibold mt-1" id="competitorBuzzLabel">--</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Filter Buttons - Click to Filter -->
         <section class="mb-6 sm:mb-8">
             <div class="flex flex-wrap gap-2 sm:gap-3 justify-center">
@@ -226,6 +287,30 @@
             const dt = new Date(newsData.collectedAt);
             document.getElementById('lastUpdated').textContent = dt.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 
+            // Big Date Display
+            const dateOptions = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+            document.getElementById('bigDate').textContent = dt.toLocaleDateString('en-US', dateOptions);
+            
+            // Time ago calculation
+            const now = new Date();
+            const diffMs = now - dt;
+            const diffMins = Math.floor(diffMs / 60000);
+            const diffHours = Math.floor(diffMs / 3600000);
+            const diffDays = Math.floor(diffMs / 86400000);
+            
+            let timeAgoText = '';
+            if (diffMins < 60) {
+                timeAgoText = `🟢 ${diffMins} minutes ago`;
+            } else if (diffHours < 24) {
+                timeAgoText = `🟡 ${diffHours} hours ago`;
+            } else {
+                timeAgoText = `🔴 ${diffDays} days ago - needs refresh!`;
+            }
+            document.getElementById('timeAgo').textContent = timeAgoText;
+
+            // Generate Highlights
+            generateHighlights();
+
             // Calculate counts
             const counts = {
                 twitter: newsData.twitter?.length || 0,
@@ -305,6 +390,83 @@
             if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
             if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
             return `${Math.floor(diff / 86400)}d ago`;
+        }
+
+        function generateHighlights() {
+            if (!newsData) return;
+
+            const highlights = [];
+            const allItems = [
+                ...(newsData.twitter || []),
+                ...(newsData.reddit || []),
+                ...(newsData.hackerNews || []),
+                ...(newsData.news || []),
+                ...(newsData.hawaii || [])
+            ];
+
+            // Get top items (by engagement/points if available)
+            const topItems = allItems
+                .filter(item => item.title)
+                .sort((a, b) => {
+                    const scoreA = (a.stats?.points || 0) + (a.stats?.comments || 0) * 2;
+                    const scoreB = (b.stats?.points || 0) + (b.stats?.comments || 0) * 2;
+                    return scoreB - scoreA;
+                })
+                .slice(0, 4);
+
+            // Generate highlight bullets
+            const highlightsList = document.getElementById('highlightsList');
+            if (topItems.length > 0) {
+                highlightsList.innerHTML = topItems.map(item => `
+                    <div class="flex items-start gap-3 text-zinc-300 hover:text-white transition-colors cursor-pointer" onclick="window.open('${item.url}', '_blank')">
+                        <span class="text-orange-400 mt-1">•</span>
+                        <span class="text-sm">${item.title.substring(0, 80)}${item.title.length > 80 ? '...' : ''}</span>
+                    </div>
+                `).join('');
+            } else {
+                highlightsList.innerHTML = '<div class="text-zinc-500 text-sm">No highlights yet - waiting for data</div>';
+            }
+
+            // Generate action suggestion based on data
+            const hawaiiCount = newsData.hawaii?.length || 0;
+            const twitterCount = newsData.twitter?.length || 0;
+            const coffeeRelated = allItems.filter(i => 
+                i.title?.toLowerCase().includes('coffee') || 
+                i.title?.toLowerCase().includes('kona')
+            ).length;
+
+            let actionText = 'Monitor trends and look for content opportunities';
+            if (hawaiiCount > 5) {
+                actionText = '🌺 Hawaii is buzzing! Post about Waikiki or local events';
+            } else if (coffeeRelated > 3) {
+                actionText = '☕ Coffee is trending! Share your Kona coffee story';
+            } else if (twitterCount > 10) {
+                actionText = '𝕏 High Twitter activity - good time to engage!';
+            }
+            document.getElementById('actionText').textContent = actionText;
+
+            // Update buzz meters
+            const maxItems = 20; // baseline for 100%
+            
+            const hawaiiBuzzPct = Math.min(100, (hawaiiCount / maxItems) * 100);
+            document.getElementById('hawaiiBuzz').style.width = hawaiiBuzzPct + '%';
+            document.getElementById('hawaiiBuzzLabel').textContent = hawaiiCount > 10 ? 'HIGH' : hawaiiCount > 5 ? 'MEDIUM' : 'LOW';
+            document.getElementById('hawaiiBuzzLabel').className = 'text-xs font-semibold mt-1 ' + (hawaiiCount > 10 ? 'text-red-400' : hawaiiCount > 5 ? 'text-yellow-400' : 'text-zinc-400');
+
+            const coffeeBuzzPct = Math.min(100, (coffeeRelated / 10) * 100);
+            document.getElementById('coffeeBuzz').style.width = coffeeBuzzPct + '%';
+            document.getElementById('coffeeBuzzLabel').textContent = coffeeRelated > 5 ? 'HIGH' : coffeeRelated > 2 ? 'MEDIUM' : 'LOW';
+            document.getElementById('coffeeBuzzLabel').className = 'text-xs font-semibold mt-1 ' + (coffeeRelated > 5 ? 'text-red-400' : coffeeRelated > 2 ? 'text-yellow-400' : 'text-zinc-400');
+
+            // Competitor detection (simple keyword check)
+            const competitorKeywords = ['island vintage', 'honolulu coffee', 'sunrise shack', 'competitor'];
+            const competitorMentions = allItems.filter(i => 
+                competitorKeywords.some(kw => i.title?.toLowerCase().includes(kw))
+            ).length;
+            const competitorBuzzPct = Math.min(100, (competitorMentions / 5) * 100);
+            document.getElementById('competitorBuzz').style.width = competitorBuzzPct + '%';
+            document.getElementById('competitorBuzzLabel').textContent = competitorMentions > 3 ? 'HIGH' : competitorMentions > 0 ? 'MEDIUM' : 'LOW';
+            document.getElementById('competitorBuzzLabel').className = 'text-xs font-semibold mt-1 ' + (competitorMentions > 3 ? 'text-red-400' : competitorMentions > 0 ? 'text-yellow-400' : 'text-zinc-400');
         }
 
         // Init
