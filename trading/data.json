@@ -1,0 +1,67 @@
+{
+  "lastUpdated": "2026-02-07T00:12:11-08:00",
+  "strategy": "NostalgiaForInfinityX7",
+  "backtest": {
+    "period": "2023-08-03 to 2026-02-06",
+    "days": 917,
+    "pairs": 46,
+    "totalProfit": 1092.793,
+    "totalProfitPercent": 10.93,
+    "totalTrades": 190,
+    "avgProfitPercent": 1.54,
+    "winRate": 97.9,
+    "wins": 186,
+    "draws": 0,
+    "losses": 4,
+    "avgHoldTime": "4 days, 4:18:00",
+    "maxDrawdown": 97.312,
+    "maxDrawdownPercent": 0.87,
+    "startingCapital": 10000,
+    "finalCapital": 11092.793,
+    "maxConsecutiveWins": 113,
+    "maxConsecutiveLosses": 1
+  },
+  "comparison": [
+    {
+      "name": "28 Pairs",
+      "profit": 379.346,
+      "trades": 93,
+      "winRate": 96.8,
+      "avgHold": "8d 10h"
+    },
+    {
+      "name": "38 Pairs",
+      "profit": 1021.129,
+      "trades": 165,
+      "winRate": 97.6,
+      "avgHold": "4d 11h"
+    },
+    {
+      "name": "46 Pairs",
+      "profit": 1092.793,
+      "trades": 190,
+      "winRate": 97.9,
+      "avgHold": "4d 4h"
+    }
+  ],
+  "config": {
+    "exchange": "Binance.US",
+    "timeframe": "5m",
+    "maxOpenTrades": 10,
+    "stakeAmount": 500,
+    "stakeCurrency": "USDT",
+    "dryRun": true
+  },
+  "pairList": [
+    "BTC/USDT", "ETH/USDT", "SOL/USDT", "ADA/USDT", "DOT/USDT",
+    "LINK/USDT", "AVAX/USDT", "ATOM/USDT", "ALGO/USDT", "LTC/USDT",
+    "XLM/USDT", "AAVE/USDT", "UNI/USDT", "DOGE/USDT", "SHIB/USDT",
+    "XRP/USDT", "BCH/USDT", "ETC/USDT", "FIL/USDT", "APE/USDT",
+    "SAND/USDT", "AXS/USDT", "CHZ/USDT", "ENJ/USDT", "BAT/USDT",
+    "ZEC/USDT", "DASH/USDT", "BNB/USDT", "ARB/USDT", "OP/USDT",
+    "NEAR/USDT", "ICP/USDT", "IMX/USDT", "GRT/USDT", "SNX/USDT",
+    "CRV/USDT", "LDO/USDT", "COMP/USDT", "APT/USDT", "SUI/USDT",
+    "SEI/USDT", "HBAR/USDT", "RENDER/USDT", "FET/USDT", "BONK/USDT",
+    "FLOKI/USDT"
+  ]
+}
