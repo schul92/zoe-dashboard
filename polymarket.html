@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymarket Portfolio - Real-Time</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #1a202c;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .live-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #48bb78;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .portfolio-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .summary-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .summary-card h3 {
+            font-size: 14px;
+            color: #718096;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .summary-card .value {
+            font-size: 28px;
+            font-weight: bold;
+            color: #1a202c;
+        }
+
+        .summary-card .change {
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .positive { color: #48bb78; }
+        .negative { color: #f56565; }
+
+        .positions-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .position-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .position-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .position-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .position-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 8px;
+        }
+
+        .position-side {
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .side-no {
+            background: #fed7d7;
+            color: #c53030;
+        }
+
+        .side-yes {
+            background: #c6f6d5;
+            color: #2f855a;
+        }
+
+        .position-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .detail-label {
+            font-size: 12px;
+            color: #718096;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .detail-value {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .error {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .refresh-btn {
+            background: #4299e1;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 12px;
+        }
+
+        .refresh-btn:hover {
+            background: #3182ce;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                <span class="live-indicator"></span>
+                Polymarket Portfolio
+                <button class="refresh-btn" onclick="loadPositions()">🔄 Refresh</button>
+            </h1>
+            <p style="color: #718096; font-size: 14px;">Real-time position tracking with auto-refresh</p>
+        </div>
+
+        <div class="portfolio-summary">
+            <div class="summary-card">
+                <h3>Total Value</h3>
+                <div class="value" id="totalValue">$0.00</div>
+            </div>
+            <div class="summary-card">
+                <h3>Total P/L</h3>
+                <div class="value" id="totalPL">$0.00</div>
+                <div class="change" id="totalPLPercent">0.00%</div>
+            </div>
+            <div class="summary-card">
+                <h3>Positions</h3>
+                <div class="value" id="positionCount">0</div>
+            </div>
+            <div class="summary-card">
+                <h3>Available Cash</h3>
+                <div class="value" id="availableCash">$0.00</div>
+            </div>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="loading" class="loading">Loading positions...</div>
+        <div id="positions" class="positions-grid"></div>
+
+        <div class="last-updated" id="lastUpdated"></div>
+    </div>
+
+    <script>
+        let refreshInterval;
+        const REFRESH_INTERVAL = 30000; // 30 seconds
+
+        async function loadPositions() {
+            const loadingEl = document.getElementById('loading');
+            const errorEl = document.getElementById('error');
+            const positionsEl = document.getElementById('positions');
+
+            try {
+                loadingEl.style.display = 'block';
+                errorEl.style.display = 'none';
+
+                // TODO: Replace with actual API call to get positions
+                // For now, using mock data structure
+                const positions = await fetchPositions();
+
+                renderPositions(positions);
+                updateSummary(positions);
+                updateLastUpdated();
+
+                loadingEl.style.display = 'none';
+            } catch (error) {
+                console.error('Error loading positions:', error);
+                errorEl.textContent = `Error: ${error.message}`;
+                errorEl.style.display = 'block';
+                loadingEl.style.display = 'none';
+            }
+        }
+
+        // Actual position data from BankrBot
+        const POSITIONS_DATA = [
+            {
+                question: "Will Bitcoin dip to $15,000 by December 31, 2026?",
+                side: "NO",
+                shares: 15.97,
+                tokenId: "89977007741727017614798848147688321409996583214301844632616973663289014402184",
+                marketUrl: "https://polymarket.com/market/will-bitcoin-dip-to-15000-by-december-31-2026-416-954-417-853-885-363-335-458-585-275-615-269-479-379-516-218-918"
+            },
+            {
+                question: "Will the Portland Trail Blazers win the 2026 NBA Finals?",
+                side: "NO",
+                shares: 15.03,
+                tokenId: "48262548906086150698299934962091284390063927164151224719187427455086357699251",
+                marketUrl: "https://polymarket.com/market/will-the-portland-trail-blazers-win-the-2026-nba-finals"
+            },
+            {
+                question: "Will the Milwaukee Bucks win the 2026 NBA Finals?",
+                side: "NO",
+                shares: 15.01,
+                tokenId: "64634346694605544041215581235986248584974024218745113885051865881058253914827",
+                marketUrl: "https://polymarket.com/market/will-the-milwaukee-bucks-win-the-2026-nba-finals"
+            },
+            {
+                question: "Will the Dallas Mavericks win the 2026 NBA Finals?",
+                side: "NO",
+                shares: 15.01,
+                tokenId: "92282961215662985493644013568370549112541633931411010714654394041381234335870",
+                marketUrl: "https://polymarket.com/market/will-the-dallas-mavericks-win-the-2026-nba-finals"
+            }
+        ];
+
+        async function fetchTokenPrice(tokenId) {
+            try {
+                const response = await fetch(`https://clob.polymarket.com/price?token_id=${tokenId}`);
+                if (!response.ok) {
+                    console.error(`Failed to fetch price for token ${tokenId}`);
+                    return null;
+                }
+                const data = await response.json();
+                return parseFloat(data.price || 0);
+            } catch (error) {
+                console.error(`Error fetching price for token ${tokenId}:`, error);
+                return null;
+            }
+        }
+
+        async function fetchPositions() {
+            const availableCash = 164.00; // From BankrBot balance
+            const positions = [];
+            let totalValue = availableCash;
+            let totalPL = 0;
+
+            // Fetch real-time prices for each position
+            for (const pos of POSITIONS_DATA) {
+                const currentPrice = await fetchTokenPrice(pos.tokenId);
+                
+                if (currentPrice === null) {
+                    continue; // Skip if price fetch failed
+                }
+
+                const positionValue = pos.shares * currentPrice;
+                const avgPrice = currentPrice; // We don't have historical avg price, use current as placeholder
+                const pl = positionValue - (pos.shares * avgPrice);
+                const plPercent = avgPrice > 0 ? (pl / (pos.shares * avgPrice)) * 100 : 0;
+
+                positions.push({
+                    question: pos.question,
+                    side: pos.side,
+                    shares: pos.shares,
+                    avgPrice: avgPrice,
+                    currentPrice: currentPrice,
+                    pl: pl,
+                    plPercent: plPercent,
+                    marketUrl: pos.marketUrl,
+                    tokenId: pos.tokenId
+                });
+
+                totalValue += positionValue;
+                totalPL += pl;
+            }
+
+            return {
+                totalValue: totalValue,
+                totalPL: totalPL,
+                availableCash: availableCash,
+                positions: positions
+            };
+        }
+
+        function renderPositions(data) {
+            const positionsEl = document.getElementById('positions');
+            positionsEl.innerHTML = '';
+
+            data.positions.forEach(position => {
+                const card = document.createElement('div');
+                card.className = 'position-card';
+                
+                const plClass = position.pl >= 0 ? 'positive' : 'negative';
+                const plSign = position.pl >= 0 ? '+' : '';
+
+                card.innerHTML = `
+                    <div class="position-header">
+                        <div>
+                            <div class="position-title">${position.question}</div>
+                            <a href="${position.marketUrl}" target="_blank" style="font-size: 12px; color: #4299e1;">View on Polymarket →</a>
+                        </div>
+                        <div class="position-side side-${position.side.toLowerCase()}">${position.side}</div>
+                    </div>
+                    <div class="position-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Shares</div>
+                            <div class="detail-value">${position.shares.toFixed(2)}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Avg Price</div>
+                            <div class="detail-value">$${position.avgPrice.toFixed(2)}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Current Price</div>
+                            <div class="detail-value">$${position.currentPrice.toFixed(2)}</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">P/L</div>
+                            <div class="detail-value ${plClass}">${plSign}$${Math.abs(position.pl).toFixed(2)} (${plSign}${position.plPercent.toFixed(2)}%)</div>
+                        </div>
+                    </div>
+                `;
+
+                positionsEl.appendChild(card);
+            });
+        }
+
+        function updateSummary(data) {
+            document.getElementById('totalValue').textContent = `$${data.totalValue.toFixed(2)}`;
+            document.getElementById('positionCount').textContent = data.positions.length;
+            document.getElementById('availableCash').textContent = `$${data.availableCash.toFixed(2)}`;
+
+            const totalPL = data.totalPL;
+            const totalPLPercent = (totalPL / data.totalValue) * 100;
+            const plClass = totalPL >= 0 ? 'positive' : 'negative';
+            const plSign = totalPL >= 0 ? '+' : '';
+
+            const totalPLEl = document.getElementById('totalPL');
+            totalPLEl.textContent = `${plSign}$${Math.abs(totalPL).toFixed(2)}`;
+            totalPLEl.className = `value ${plClass}`;
+
+            const totalPLPercentEl = document.getElementById('totalPLPercent');
+            totalPLPercentEl.textContent = `${plSign}${totalPLPercent.toFixed(2)}%`;
+            totalPLPercentEl.className = `change ${plClass}`;
+        }
+
+        function updateLastUpdated() {
+            const now = new Date();
+            document.getElementById('lastUpdated').textContent = 
+                `Last updated: ${now.toLocaleTimeString()} (refreshes every 30s)`;
+        }
+
+        // Auto-refresh
+        function startAutoRefresh() {
+            refreshInterval = setInterval(loadPositions, REFRESH_INTERVAL);
+        }
+
+        function stopAutoRefresh() {
+            if (refreshInterval) {
+                clearInterval(refreshInterval);
+            }
+        }
+
+        // Load on page load
+        loadPositions();
+        startAutoRefresh();
+
+        // Stop refresh when page is hidden
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                stopAutoRefresh();
+            } else {
+                loadPositions();
+                startAutoRefresh();
+            }
+        });
+    </script>
+</body>
+</html>
