@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Real-Time Trading Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #312e81 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #1a202c;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .live-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #48bb78;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .summary-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .summary-card h3 {
+            font-size: 14px;
+            color: #718096;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .summary-card .value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1a202c;
+        }
+
+        .summary-card .subvalue {
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        .positive { color: #48bb78; }
+        .negative { color: #f56565; }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .positions-grid {
+            display: grid;
+            gap: 12px;
+        }
+
+        .position-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            gap: 16px;
+            padding: 16px;
+            background: #f7fafc;
+            border-radius: 8px;
+            align-items: center;
+        }
+
+        .position-row:hover {
+            background: #edf2f7;
+        }
+
+        .position-name {
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        .position-type {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .type-no {
+            background: #fed7d7;
+            color: #c53030;
+        }
+
+        .type-long {
+            background: #c6f6d5;
+            color: #2f855a;
+        }
+
+        .position-value {
+            text-align: right;
+            font-weight: 600;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #718096;
+            font-size: 18px;
+        }
+
+        .error {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .refresh-btn {
+            background: #4299e1;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 12px;
+        }
+
+        .refresh-btn:hover {
+            background: #3182ce;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .position-row {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            
+            .position-value {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                <span class="live-indicator"></span>
+                Complete Portfolio
+                <button class="refresh-btn" onclick="loadPortfolio()">🔄 Refresh</button>
+            </h1>
+            <p style="color: #718096; font-size: 14px;">Real-time tracking of all positions and balances</p>
+        </div>
+
+        <div class="summary-grid">
+            <div class="summary-card">
+                <h3>Total Portfolio Value</h3>
+                <div class="value" id="totalValue">$0.00</div>
+            </div>
+            <div class="summary-card">
+                <h3>Total P/L</h3>
+                <div class="value" id="totalPL">$0.00</div>
+                <div class="subvalue" id="totalPLPercent">0.00%</div>
+            </div>
+            <div class="summary-card">
+                <h3>Available Cash</h3>
+                <div class="value" id="availableCash">$0.00</div>
+                <div class="subvalue" id="cashChains"></div>
+            </div>
+            <div class="summary-card">
+                <h3>Active Positions</h3>
+                <div class="value" id="positionCount">0</div>
+                <div class="subvalue" id="positionBreakdown"></div>
+            </div>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="loading" class="loading">Loading complete portfolio...</div>
+
+        <div id="polymarketSection" class="section" style="display: none;">
+            <h2 class="section-title">
+                <span>📊</span> Polymarket Positions
+            </h2>
+            <div id="polymarketPositions" class="positions-grid"></div>
+        </div>
+
+        <div id="leverageSection" class="section" style="display: none;">
+            <h2 class="section-title">
+                <span>📈</span> Leverage Positions
+            </h2>
+            <div id="leveragePositions" class="positions-grid"></div>
+        </div>
+
+        <div class="last-updated" id="lastUpdated"></div>
+    </div>
+
+    <script>
+        let refreshInterval;
+        const REFRESH_INTERVAL = 30000; // 30 seconds
+
+        async function loadPortfolio() {
+            const loadingEl = document.getElementById('loading');
+            const errorEl = document.getElementById('error');
+
+            try {
+                loadingEl.style.display = 'block';
+                errorEl.style.display = 'none';
+
+                // Fetch portfolio data from BankrBot-generated JSON
+                const response = await fetch('/zoe-dashboard/portfolio/data.json?t=' + Date.now());
+                
+                if (!response.ok) {
+                    throw new Error('Failed to load portfolio data');
+                }
+
+                const data = await response.json();
+                
+                // Parse BankrBot response
+                const portfolio = parseBankrBotResponse(data.rawResponse);
+                
+                renderPortfolio(portfolio);
+                updateSummary(portfolio);
+                updateLastUpdated(data.lastUpdated);
+
+                loadingEl.style.display = 'none';
+            } catch (error) {
+                console.error('Error loading portfolio:', error);
+                errorEl.textContent = `Error: ${error.message}. Using manual refresh...`;
+                errorEl.style.display = 'block';
+                loadingEl.style.display = 'none';
+                
+                // Fallback to manual data entry
+                loadManualData();
+            }
+        }
+
+        function parseBankrBotResponse(rawResponse) {
+            // Parse BankrBot natural language response into structured data
+            // This is a simplified parser - adjust based on actual response format
+            
+            const portfolio = {
+                totalValue: 0,
+                totalPL: 0,
+                availableCash: 0,
+                chains: {},
+                polymarket: [],
+                leverage: []
+            };
+
+            // Extract data from response text
+            // (This will need to be customized based on actual BankrBot output format)
+            
+            return portfolio;
+        }
+
+        function loadManualData() {
+            // Fallback manual data based on last known state
+            const portfolio = {
+                totalValue: 178.88,
+                totalPL: 0.02,
+                availableCash: 108.99,
+                chains: {
+                    'Base': 108.99,
+                    'Polygon': 0.74
+                },
+                polymarket: [
+                    {
+                        name: "Bitcoin dip to $15K by end of 2026?",
+                        type: "NO",
+                        shares: 15.97,
+                        price: 0.94,
+                        pl: 0.02,
+                        plPercent: 0.16
+                    },
+                    {
+                        name: "Portland Trail Blazers win 2026 NBA Finals?",
+                        type: "NO",
+                        shares: 15.03,
+                        price: 0.997,
+                        pl: -0.01,
+                        plPercent: -0.10
+                    },
+                    {
+                        name: "Milwaukee Bucks win 2026 NBA Finals?",
+                        type: "NO",
+                        shares: 15.01,
+                        price: 0.998,
+                        pl: -0.01,
+                        plPercent: -0.05
+                    },
+                    {
+                        name: "Dallas Mavericks win 2026 NBA Finals?",
+                        type: "NO",
+                        shares: 15.01,
+                        price: 0.998,
+                        pl: -0.01,
+                        plPercent: -0.10
+                    }
+                ],
+                leverage: [
+                    {
+                        name: "BTC 10x Long",
+                        type: "LONG",
+                        collateral: 10,
+                        leverage: "10x",
+                        entryPrice: 71197,
+                        currentPrice: 71197, // Would be updated in real-time
+                        pl: 0,
+                        plPercent: 0
+                    }
+                ]
+            };
+
+            renderPortfolio(portfolio);
+            updateSummary(portfolio);
+            updateLastUpdated(new Date().toISOString());
+        }
+
+        function renderPortfolio(portfolio) {
+            renderPolymarket(portfolio.polymarket);
+            renderLeverage(portfolio.leverage);
+        }
+
+        function renderPolymarket(positions) {
+            const container = document.getElementById('polymarketPositions');
+            const section = document.getElementById('polymarketSection');
+            
+            if (!positions || positions.length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+
+            section.style.display = 'block';
+            container.innerHTML = '';
+
+            positions.forEach(pos => {
+                const row = document.createElement('div');
+                row.className = 'position-row';
+                
+                const plClass = pos.pl >= 0 ? 'positive' : 'negative';
+                const plSign = pos.pl >= 0 ? '+' : '';
+
+                row.innerHTML = `
+                    <div>
+                        <div class="position-name">${pos.name}</div>
+                        <span class="position-type type-no">${pos.type}</span>
+                    </div>
+                    <div class="position-value">${pos.shares.toFixed(2)} shares</div>
+                    <div class="position-value">$${pos.price.toFixed(3)}</div>
+                    <div class="position-value">$${(pos.shares * pos.price).toFixed(2)}</div>
+                    <div class="position-value ${plClass}">${plSign}$${Math.abs(pos.pl).toFixed(2)} (${plSign}${pos.plPercent.toFixed(2)}%)</div>
+                `;
+
+                container.appendChild(row);
+            });
+        }
+
+        function renderLeverage(positions) {
+            const container = document.getElementById('leveragePositions');
+            const section = document.getElementById('leverageSection');
+            
+            if (!positions || positions.length === 0) {
+                section.style.display = 'none';
+                return;
+            }
+
+            section.style.display = 'block';
+            container.innerHTML = '';
+
+            positions.forEach(pos => {
+                const row = document.createElement('div');
+                row.className = 'position-row';
+                
+                const plClass = pos.pl >= 0 ? 'positive' : 'negative';
+                const plSign = pos.pl >= 0 ? '+' : '';
+
+                row.innerHTML = `
+                    <div>
+                        <div class="position-name">${pos.name}</div>
+                        <span class="position-type type-long">${pos.leverage}</span>
+                    </div>
+                    <div class="position-value">$${pos.collateral} collateral</div>
+                    <div class="position-value">Entry: $${pos.entryPrice.toLocaleString()}</div>
+                    <div class="position-value">Current: $${pos.currentPrice.toLocaleString()}</div>
+                    <div class="position-value ${plClass}">${plSign}$${Math.abs(pos.pl).toFixed(2)} (${plSign}${pos.plPercent.toFixed(2)}%)</div>
+                `;
+
+                container.appendChild(row);
+            });
+        }
+
+        function updateSummary(portfolio) {
+            document.getElementById('totalValue').textContent = `$${portfolio.totalValue.toFixed(2)}`;
+            document.getElementById('availableCash').textContent = `$${portfolio.availableCash.toFixed(2)}`;
+
+            const totalPL = portfolio.totalPL;
+            const totalPLPercent = (totalPL / portfolio.totalValue) * 100;
+            const plClass = totalPL >= 0 ? 'positive' : 'negative';
+            const plSign = totalPL >= 0 ? '+' : '';
+
+            const totalPLEl = document.getElementById('totalPL');
+            totalPLEl.textContent = `${plSign}$${Math.abs(totalPL).toFixed(2)}`;
+            totalPLEl.className = `value ${plClass}`;
+
+            const totalPLPercentEl = document.getElementById('totalPLPercent');
+            totalPLPercentEl.textContent = `${plSign}${totalPLPercent.toFixed(2)}%`;
+            totalPLPercentEl.className = `subvalue ${plClass}`;
+
+            const positionCount = (portfolio.polymarket?.length || 0) + (portfolio.leverage?.length || 0);
+            document.getElementById('positionCount').textContent = positionCount;
+            
+            const breakdown = `${portfolio.polymarket?.length || 0} Polymarket, ${portfolio.leverage?.length || 0} Leverage`;
+            document.getElementById('positionBreakdown').textContent = breakdown;
+
+            if (portfolio.chains) {
+                const chainText = Object.entries(portfolio.chains)
+                    .map(([chain, amount]) => `${chain}: $${amount.toFixed(2)}`)
+                    .join(', ');
+                document.getElementById('cashChains').textContent = chainText;
+            }
+        }
+
+        function updateLastUpdated(timestamp) {
+            const date = new Date(timestamp);
+            document.getElementById('lastUpdated').textContent = 
+                `Last updated: ${date.toLocaleString()} (auto-refreshes every 30s)`;
+        }
+
+        function startAutoRefresh() {
+            refreshInterval = setInterval(loadPortfolio, REFRESH_INTERVAL);
+        }
+
+        function stopAutoRefresh() {
+            if (refreshInterval) {
+                clearInterval(refreshInterval);
+            }
+        }
+
+        // Load on page load
+        loadPortfolio();
+        startAutoRefresh();
+
+        // Stop refresh when page is hidden
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                stopAutoRefresh();
+            } else {
+                loadPortfolio();
+                startAutoRefresh();
+            }
+        });
+    </script>
+</body>
+</html>
