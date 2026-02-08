@@ -1,0 +1,46 @@
+{
+  "lastUpdated": "2026-02-08T17:30:00Z",
+  "totalValue": 188.37,
+  "totalPL": -4.65,
+  "availableCash": 60.60,
+  "chains": {
+    "Base": 0.54,
+    "Polygon": 60.06
+  },
+  "leverage": [
+    {
+      "name": "ETH/USD 75x Long",
+      "type": "LONG",
+      "collateral": 42.59,
+      "leverage": "75x",
+      "entryPrice": 2081.82,
+      "currentPrice": 2083.96,
+      "pl": -1.02,
+      "plPercent": -2.40,
+      "platform": "Avantis"
+    },
+    {
+      "name": "SOL/USD 75x Long",
+      "type": "LONG",
+      "collateral": 42.59,
+      "leverage": "75x",
+      "entryPrice": 155.00,
+      "currentPrice": 152.00,
+      "pl": -2.65,
+      "plPercent": -6.22,
+      "platform": "Avantis"
+    },
+    {
+      "name": "BTC/USD 75x Long",
+      "type": "LONG",
+      "collateral": 42.59,
+      "leverage": "75x",
+      "entryPrice": 71208.97,
+      "currentPrice": 70497.43,
+      "pl": -0.98,
+      "plPercent": -2.30,
+      "platform": "Avantis"
+    }
+  ],
+  "polymarket": []
+}
