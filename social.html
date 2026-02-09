@@ -328,8 +328,15 @@
 <body>
     <div class="container">
         <header>
-            <h1>📅 Social Media Calendar</h1>
-            <p class="subtitle">Kona Coffee Donut - Content Management</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <div>
+                    <h1>📅 Social Media Calendar</h1>
+                    <p class="subtitle">Kona Coffee Donut - Content Management</p>
+                </div>
+                <button class="btn btn-primary" onclick="openNewPostModal()" style="min-width: 120px;">
+                    + New Post
+                </button>
+            </div>
             
             <div class="stats">
                 <div class="stat-card">
@@ -376,6 +383,93 @@
             <div class="loading">
                 <div class="spinner"></div>
                 <div>Loading posts...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Post Modal -->
+    <div class="modal" id="newPostModal">
+        <div class="modal-content" style="position: relative; max-width: 900px;">
+            <button class="close-modal" onclick="closeNewPostModal()">&times;</button>
+            <div class="modal-header">
+                <h2>📝 Create New Post</h2>
+                <div class="meta">Fill in all fields and click "Copy Command"</div>
+            </div>
+            <div class="modal-body">
+                <form id="newPostForm">
+                    <!-- Date & Theme -->
+                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 12px; margin-bottom: 16px;">
+                        <div>
+                            <label style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">📅 Date</label>
+                            <input type="date" id="postDate" required 
+                                   style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px;">
+                        </div>
+                        <div>
+                            <label style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">🎨 Theme</label>
+                            <input type="text" id="postTheme" placeholder="e.g., Grand Opening Countdown" required
+                                   style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px;">
+                        </div>
+                    </div>
+
+                    <!-- Image -->
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">🖼️ Image URL</label>
+                        <input type="url" id="postImage" placeholder="https://images.pexels.com/..." required
+                               style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px;">
+                    </div>
+
+                    <!-- Platform Content -->
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">🐦 Twitter/X (280 chars max)</label>
+                        <textarea id="postTwitter" rows="3" required maxlength="280" placeholder="Include @HonoluluCoffee, Feb 25, 2026, konacoffeedonut.com, 2142 Kalākaua Ave"
+                                  style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; resize: vertical;"></textarea>
+                        <div style="text-align: right; font-size: 12px; color: #718096; margin-top: 4px;">
+                            <span id="twitterCount">0</span>/280
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">📘 Facebook (Storytelling)</label>
+                        <textarea id="postFacebook" rows="6" required placeholder="Engagement question at end, Feb 25 2026, konacoffeedonut.com, 2142 Kalākaua Ave"
+                                  style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; resize: vertical;"></textarea>
+                    </div>
+
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">🔴 Google Business (Q&A Format)</label>
+                        <textarea id="postGoogle" rows="5" required placeholder="Local SEO keywords, Feb 25 2026, konacoffeedonut.com, 2142 Kalākaua Ave"
+                                  style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; resize: vertical;"></textarea>
+                    </div>
+
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">📷 Threads/Instagram (Lowercase Casual)</label>
+                        <textarea id="postThreads" rows="4" required placeholder="lowercase style, Feb 25 2026, konacoffeedonut.com, 2142 Kalākaua Ave, hashtags"
+                                  style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; resize: vertical;"></textarea>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">🦋 Bluesky (Conversational, 300 chars)</label>
+                        <textarea id="postBluesky" rows="3" required maxlength="300" placeholder="Proudly serving Honolulu coffee, Feb 25, konacoffeedonut.com, 2142 Kalākaua Ave"
+                                  style="width: 100%; padding: 10px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 14px; resize: vertical;"></textarea>
+                        <div style="text-align: right; font-size: 12px; color: #718096; margin-top: 4px;">
+                            <span id="blueskyCount">0</span>/300
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div style="display: flex; gap: 12px; justify-content: flex-end;">
+                        <button type="button" class="btn btn-secondary" onclick="closeNewPostModal()">Cancel</button>
+                        <button type="button" class="btn btn-primary" onclick="copyCommand()">📋 Copy Command</button>
+                    </div>
+                </form>
+
+                <!-- Command Output -->
+                <div id="commandOutput" style="display: none; margin-top: 20px; padding: 16px; background: #f7fafc; border-radius: 12px; border-left: 4px solid #667eea;">
+                    <div style="font-weight: 600; margin-bottom: 8px; color: #667eea;">✅ Command Copied!</div>
+                    <div style="font-size: 13px; color: #4a5568; margin-bottom: 12px;">
+                        Paste this in your terminal to post:
+                    </div>
+                    <pre id="commandText" style="background: white; padding: 12px; border-radius: 8px; font-size: 12px; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;"></pre>
+                </div>
             </div>
         </div>
     </div>
@@ -520,6 +614,98 @@
             document.getElementById('postedCount').textContent = postedCount;
             document.getElementById('draftCount').textContent = draftCount;
         }
+
+        // New Post Modal
+        function openNewPostModal() {
+            // Set today's date as default
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('postDate').value = today;
+            
+            document.getElementById('newPostModal').classList.add('active');
+        }
+
+        function closeNewPostModal() {
+            document.getElementById('newPostModal').classList.remove('active');
+            document.getElementById('newPostForm').reset();
+            document.getElementById('commandOutput').style.display = 'none';
+        }
+
+        // Character counters
+        document.addEventListener('DOMContentLoaded', function() {
+            const twitterInput = document.getElementById('postTwitter');
+            const blueskyInput = document.getElementById('postBluesky');
+            
+            if (twitterInput) {
+                twitterInput.addEventListener('input', function() {
+                    document.getElementById('twitterCount').textContent = this.value.length;
+                });
+            }
+            
+            if (blueskyInput) {
+                blueskyInput.addEventListener('input', function() {
+                    document.getElementById('blueskyCount').textContent = this.value.length;
+                });
+            }
+        });
+
+        // Copy command to clipboard
+        function copyCommand() {
+            const date = document.getElementById('postDate').value;
+            const theme = document.getElementById('postTheme').value;
+            const image = document.getElementById('postImage').value;
+            const twitter = document.getElementById('postTwitter').value;
+            const facebook = document.getElementById('postFacebook').value;
+            const google = document.getElementById('postGoogle').value;
+            const threads = document.getElementById('postThreads').value;
+            const bluesky = document.getElementById('postBluesky').value;
+
+            // Validate
+            if (!date || !theme || !image || !twitter || !facebook || !google || !threads || !bluesky) {
+                alert('Please fill in all fields!');
+                return;
+            }
+
+            // Escape quotes in content
+            const escapeShell = (str) => str.replace(/"/g, '\\"').replace(/\$/g, '\\$').replace(/`/g, '\\`');
+
+            // Build command
+            const command = `cd /Users/zoelumos/.openclaw/workspace/konacoffeedonut && python3 scripts/post_and_record.py \\
+  --date ${date} \\
+  --theme "${escapeShell(theme)}" \\
+  --image "${image}" \\
+  --twitter "${escapeShell(twitter)}" \\
+  --facebook "${escapeShell(facebook)}" \\
+  --google "${escapeShell(google)}" \\
+  --threads "${escapeShell(threads)}" \\
+  --bluesky "${escapeShell(bluesky)}"`;
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(command).then(() => {
+                // Show command output
+                document.getElementById('commandText').textContent = command;
+                document.getElementById('commandOutput').style.display = 'block';
+                
+                // Success feedback
+                const btn = event.target;
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '✅ Copied!';
+                btn.style.background = '#48bb78';
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '';
+                }, 2000);
+            }).catch(err => {
+                alert('Failed to copy command: ' + err);
+            });
+        }
+
+        // Close modal on outside click
+        document.getElementById('newPostModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeNewPostModal();
+            }
+        });
     </script>
 </body>
 </html>
