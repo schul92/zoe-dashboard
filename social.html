@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Calendar - Kona Coffee Donut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #1a202c;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #718096;
+            font-size: 14px;
+        }
+
+        .filters {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #e2e8f0;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .filter-btn:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .calendar-wrapper {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* FullCalendar Custom Styles */
+        .fc {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .fc-event {
+            border: none;
+            padding: 4px 8px;
+            margin: 2px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .fc-event.twitter {
+            background: #1DA1F2;
+            color: white;
+        }
+
+        .fc-event.facebook {
+            background: #4267B2;
+            color: white;
+        }
+
+        .fc-event.google {
+            background: #EA4335;
+            color: white;
+        }
+
+        .fc-event.threads {
+            background: #000000;
+            color: white;
+        }
+
+        .fc-event.bluesky {
+            background: #0085FF;
+            color: white;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .modal.active {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 16px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3);
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-header {
+            padding: 24px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .modal-header h2 {
+            font-size: 24px;
+            color: #1a202c;
+            margin-bottom: 4px;
+        }
+
+        .modal-header .meta {
+            color: #718096;
+            font-size: 14px;
+        }
+
+        .modal-body {
+            padding: 24px;
+        }
+
+        .image-preview {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 24px;
+        }
+
+        .platform-post {
+            background: #f7fafc;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            border-left: 4px solid;
+        }
+
+        .platform-post.twitter {
+            border-left-color: #1DA1F2;
+        }
+
+        .platform-post.facebook {
+            border-left-color: #4267B2;
+        }
+
+        .platform-post.google {
+            border-left-color: #EA4335;
+        }
+
+        .platform-post.threads {
+            border-left-color: #000000;
+        }
+
+        .platform-post.bluesky {
+            border-left-color: #0085FF;
+        }
+
+        .platform-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .platform-name {
+            font-weight: 600;
+            font-size: 14px;
+            color: #1a202c;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .status-badge.posted {
+            background: #48bb78;
+            color: white;
+        }
+
+        .status-badge.draft {
+            background: #edf2f7;
+            color: #4a5568;
+        }
+
+        .post-text {
+            color: #2d3748;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            white-space: pre-wrap;
+        }
+
+        .post-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: none;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+
+        .btn-secondary {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+
+        .btn-secondary:hover {
+            background: #cbd5e0;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #e2e8f0;
+            border: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            color: #4a5568;
+            transition: all 0.2s;
+        }
+
+        .close-modal:hover {
+            background: #cbd5e0;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a202c;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #718096;
+            margin-top: 4px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 16px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .calendar-wrapper {
+                padding: 16px;
+            }
+
+            .modal-content {
+                margin: 0;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .fc-event {
+                font-size: 10px;
+                padding: 2px 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📅 Social Media Calendar</h1>
+            <p class="subtitle">Kona Coffee Donut - Content Management</p>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-platform="all">
+                    🌐 All Platforms
+                </button>
+                <button class="filter-btn" data-platform="twitter">
+                    🐦 Twitter
+                </button>
+                <button class="filter-btn" data-platform="facebook">
+                    📘 Facebook
+                </button>
+                <button class="filter-btn" data-platform="google">
+                    🔴 Google
+                </button>
+                <button class="filter-btn" data-platform="threads">
+                    📷 Threads
+                </button>
+                <button class="filter-btn" data-platform="bluesky">
+                    🦋 Bluesky
+                </button>
+            </div>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalPosts">0</div>
+                <div class="stat-label">Total Posts</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="postedCount">0</div>
+                <div class="stat-label">Posted</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="draftCount">0</div>
+                <div class="stat-label">Drafts</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="platformCount">5</div>
+                <div class="stat-label">Platforms</div>
+            </div>
+        </div>
+
+        <div class="calendar-wrapper">
+            <div id="calendar"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="postModal">
+        <div class="modal-content" style="position: relative;">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <div class="meta" id="modalMeta"></div>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        let allPosts = [];
+        let calendar;
+        let currentFilter = 'all';
+
+        // Platform icons and colors
+        const platformConfig = {
+            twitter: { icon: '🐦', name: 'Twitter/X', color: '#1DA1F2' },
+            facebook: { icon: '📘', name: 'Facebook', color: '#4267B2' },
+            google: { icon: '🔴', name: 'Google Business', color: '#EA4335' },
+            threads: { icon: '📷', name: 'Threads', color: '#000000' },
+            bluesky: { icon: '🦋', name: 'Bluesky', color: '#0085FF' }
+        };
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadPosts();
+            initCalendar();
+            setupFilters();
+            updateStats();
+        });
+
+        // Load posts from JSON
+        async function loadPosts() {
+            try {
+                const response = await fetch('social/posts.json');
+                const data = await response.json();
+                allPosts = data.posts;
+            } catch (error) {
+                console.error('Error loading posts:', error);
+                allPosts = [];
+            }
+        }
+
+        // Initialize FullCalendar
+        function initCalendar() {
+            const calendarEl = document.getElementById('calendar');
+            calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,dayGridWeek'
+                },
+                events: getCalendarEvents(),
+                eventClick: function(info) {
+                    info.jsEvent.preventDefault();
+                    showPostModal(info.event.extendedProps.postId);
+                },
+                height: 'auto',
+                eventContent: function(arg) {
+                    return {
+                        html: `<span>${arg.event.extendedProps.icon} ${arg.event.title}</span>`
+                    };
+                }
+            });
+            calendar.render();
+        }
+
+        // Get calendar events from posts
+        function getCalendarEvents() {
+            const events = [];
+            allPosts.forEach(post => {
+                Object.keys(post.platforms).forEach(platform => {
+                    if (currentFilter === 'all' || currentFilter === platform) {
+                        const platformData = post.platforms[platform];
+                        const config = platformConfig[platform];
+                        events.push({
+                            id: `${post.id}-${platform}`,
+                            title: config.name,
+                            start: post.date,
+                            backgroundColor: config.color,
+                            borderColor: config.color,
+                            className: platform,
+                            extendedProps: {
+                                postId: post.id,
+                                platform: platform,
+                                icon: config.icon
+                            }
+                        });
+                    }
+                });
+            });
+            return events;
+        }
+
+        // Setup filter buttons
+        function setupFilters() {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentFilter = this.dataset.platform;
+                    calendar.removeAllEvents();
+                    calendar.addEventSource(getCalendarEvents());
+                });
+            });
+        }
+
+        // Show post modal
+        function showPostModal(postId) {
+            const post = allPosts.find(p => p.id === postId);
+            if (!post) return;
+
+            document.getElementById('modalTitle').textContent = post.theme;
+            document.getElementById('modalMeta').textContent = `${post.date} at ${post.time}`;
+
+            let bodyHTML = '';
+            
+            // Image preview (if exists)
+            if (post.image) {
+                bodyHTML += `
+                    <img src="${post.image}" alt="${post.imageDescription}" class="image-preview" 
+                         onerror="this.style.display='none'">
+                `;
+            }
+
+            // Platform posts
+            Object.keys(post.platforms).forEach(platform => {
+                const platformData = post.platforms[platform];
+                const config = platformConfig[platform];
+                const statusClass = platformData.status === 'posted' ? 'posted' : 'draft';
+                
+                bodyHTML += `
+                    <div class="platform-post ${platform}">
+                        <div class="platform-header">
+                            <span class="platform-name">${config.icon} ${config.name}</span>
+                            <span class="status-badge ${statusClass}">${platformData.status}</span>
+                        </div>
+                        <div class="post-text">${platformData.text}</div>
+                        <div class="post-actions">
+                            ${platformData.url ? 
+                                `<a href="${platformData.url}" target="_blank" class="btn btn-primary">View Post →</a>` : 
+                                `<button class="btn btn-secondary">Not Posted Yet</button>`
+                            }
+                        </div>
+                    </div>
+                `;
+            });
+
+            document.getElementById('modalBody').innerHTML = bodyHTML;
+            document.getElementById('postModal').classList.add('active');
+        }
+
+        // Close modal
+        function closeModal() {
+            document.getElementById('postModal').classList.remove('active');
+        }
+
+        // Close modal on outside click
+        document.getElementById('postModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Update statistics
+        function updateStats() {
+            let totalPosts = 0;
+            let postedCount = 0;
+            let draftCount = 0;
+
+            allPosts.forEach(post => {
+                Object.values(post.platforms).forEach(platform => {
+                    totalPosts++;
+                    if (platform.status === 'posted') {
+                        postedCount++;
+                    } else {
+                        draftCount++;
+                    }
+                });
+            });
+
+            document.getElementById('totalPosts').textContent = totalPosts;
+            document.getElementById('postedCount').textContent = postedCount;
+            document.getElementById('draftCount').textContent = draftCount;
+        }
+    </script>
+</body>
+</html>

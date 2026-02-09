@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": "2026-02-09-agent-teams",
+      "date": "2026-02-09",
+      "time": "14:00",
+      "theme": "Grand Opening Countdown - Agent Teams Test",
+      "image": "/images/grand-opening-feb9.jpg",
+      "imageDescription": "Waikiki sunrise with coffee cup",
+      "platforms": {
+        "twitter": {
+          "text": "☀️ 16 days until our grand opening! Proudly serving Honolulu coffee at 2142 Kalākaua Ave. Join us February 25, 2026! 🍩☕ konacoffeedonut.com #WaikikiCoffee #KonaCoffeeDonut",
+          "url": "",
+          "status": "draft",
+          "postedAt": null
+        },
+        "facebook": {
+          "text": "We're counting down to our grand opening on February 25, 2026! 🎉\n\nProudly serving Honolulu coffee and fresh donuts in the heart of Waikiki.\n\n📍 2142 Kalākaua Ave, Honolulu, HI 96815\n🌐 konacoffeedonut.com\n\nSee you soon! ☕🍩",
+          "url": "",
+          "status": "draft",
+          "postedAt": null
+        },
+        "google": {
+          "text": "Grand opening February 25, 2026! Proudly serving Honolulu coffee and artisan donuts. Visit us at 2142 Kalākaua Ave, Honolulu, HI 96815. Learn more: konacoffeedonut.com",
+          "url": "",
+          "status": "draft",
+          "postedAt": null,
+          "cta": {
+            "type": "LEARN_MORE",
+            "url": "https://konacoffeedonut.com"
+          }
+        },
+        "threads": {
+          "text": "16 days til we open 🍩☕\n\nproudly serving honolulu coffee in waikiki\n\nfeb 25, 2026 → mark your calendar\n\nkonacoffeedonut.com",
+          "url": "",
+          "status": "draft",
+          "postedAt": null
+        },
+        "bluesky": {
+          "text": "Counting down to our grand opening! February 25, 2026 🎉\n\nProudly serving Honolulu coffee and fresh donuts in Waikiki.\n\n2142 Kalākaua Ave, Honolulu, HI 96815\nkonacoffeedonut.com ☕🍩",
+          "url": "",
+          "status": "draft",
+          "postedAt": null
+        }
+      }
+    }
+  ]
+}
