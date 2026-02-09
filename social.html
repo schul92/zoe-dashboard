@@ -208,6 +208,18 @@
             margin-bottom: 24px;
             padding-bottom: 24px;
             border-bottom: 2px solid #e2e8f0;
+            cursor: pointer;
+            padding: 16px;
+            border-radius: 12px;
+            transition: all 0.2s;
+        }
+        
+        .timeline-day:hover {
+            background: #f7fafc;
+        }
+        
+        .timeline-day:active {
+            transform: scale(0.98);
         }
 
         .timeline-day:last-child {
@@ -587,9 +599,9 @@
                 });
 
                 html += `
-                    <div class="timeline-day">
+                    <div class="timeline-day" onclick="showPost('${post.date}')">
                         <div class="day-header">
-                            <div class="day-date">${dateStr}</div>
+                            <div class="day-date">${dateStr} 👆</div>
                             <div class="day-meta">${post.theme || ''}</div>
                         </div>
                         <div class="platform-cards">
