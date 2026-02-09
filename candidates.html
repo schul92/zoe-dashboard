@@ -21,39 +21,42 @@
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 2rem;
+            padding: 1.5rem;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
         
         .header h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
         }
         
         .header .subtitle {
             opacity: 0.9;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
         
         .container {
-            max-width: 1400px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
         }
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-bottom: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 1rem;
         }
         
         .stat-card {
             background: white;
-            padding: 1.5rem;
+            padding: 1rem;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             text-align: center;
             border-left: 4px solid;
         }
@@ -65,37 +68,34 @@
         .stat-card.weak { border-left-color: #95a5a6; }
         
         .stat-card .number {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: bold;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
         }
         
         .stat-card .label {
             color: #7f8c8d;
-            font-size: 0.9rem;
+            font-size: 0.75rem;
+            line-height: 1.3;
         }
         
         .controls {
             background: white;
-            padding: 1.5rem;
+            padding: 1rem;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 2rem;
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
         }
         
         .search-box {
-            flex: 1;
-            min-width: 250px;
+            margin-bottom: 0.75rem;
         }
         
         .search-box input {
             width: 100%;
-            padding: 0.75rem;
+            padding: 0.875rem;
             border: 2px solid #ecf0f1;
-            border-radius: 6px;
+            border-radius: 8px;
             font-size: 1rem;
             transition: border-color 0.3s;
         }
@@ -106,23 +106,26 @@
         }
         
         .filter-buttons {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 0.5rem;
-            flex-wrap: wrap;
         }
         
         .filter-btn {
-            padding: 0.75rem 1.25rem;
+            padding: 0.75rem;
             border: 2px solid #ecf0f1;
             background: white;
-            border-radius: 6px;
+            border-radius: 8px;
             cursor: pointer;
             font-weight: 500;
+            font-size: 0.85rem;
             transition: all 0.3s;
+            text-align: center;
+            white-space: nowrap;
         }
         
-        .filter-btn:hover {
-            background: #ecf0f1;
+        .filter-btn:active {
+            transform: scale(0.98);
         }
         
         .filter-btn.active {
@@ -131,70 +134,48 @@
             border-color: #667eea;
         }
         
-        .candidates-table {
+        .candidates-list {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .candidate-card {
             background: white;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             overflow: hidden;
+            border-left: 4px solid;
         }
         
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+        .candidate-card.top { border-left-color: #e74c3c; }
+        .candidate-card.strong { border-left-color: #3498db; }
+        .candidate-card.good { border-left-color: #2ecc71; }
+        .candidate-card.fair { border-left-color: #f39c12; }
+        .candidate-card.weak { border-left-color: #95a5a6; }
         
-        thead {
-            background: #f8f9fa;
-            border-bottom: 2px solid #ecf0f1;
-        }
-        
-        th {
+        .card-header {
             padding: 1rem;
-            text-align: left;
-            font-weight: 600;
-            color: #2c3e50;
-            cursor: pointer;
-            user-select: none;
-        }
-        
-        th:hover {
-            background: #ecf0f1;
-        }
-        
-        th.sortable::after {
-            content: ' ⇅';
-            opacity: 0.3;
-        }
-        
-        th.sorted-asc::after {
-            content: ' ↑';
-            opacity: 1;
-        }
-        
-        th.sorted-desc::after {
-            content: ' ↓';
-            opacity: 1;
-        }
-        
-        tbody tr {
+            background: #f8f9fa;
             border-bottom: 1px solid #ecf0f1;
-            transition: background-color 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
-        tbody tr:hover {
-            background: #f8f9fa;
-        }
-        
-        td {
-            padding: 1rem;
+        .card-name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2c3e50;
+            flex: 1;
         }
         
         .tier-badge {
             display: inline-block;
-            padding: 0.25rem 0.75rem;
+            padding: 0.25rem 0.625rem;
             border-radius: 12px;
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             font-weight: 600;
+            white-space: nowrap;
         }
         
         .tier-badge.top { background: #fee; color: #e74c3c; }
@@ -203,23 +184,64 @@
         .tier-badge.fair { background: #fff3e0; color: #ff9800; }
         .tier-badge.weak { background: #eceff1; color: #607d8b; }
         
-        .score-badge {
-            background: #4caf50;
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 0.85rem;
+        .card-body {
+            padding: 1rem;
+        }
+        
+        .info-row {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f8f9fa;
+        }
+        
+        .info-row:last-child {
+            border-bottom: none;
+        }
+        
+        .info-icon {
+            font-size: 1.2rem;
+            width: 2rem;
+            text-align: center;
+        }
+        
+        .info-content {
+            flex: 1;
+            font-size: 0.95rem;
+        }
+        
+        .info-label {
+            font-size: 0.75rem;
+            color: #7f8c8d;
+            margin-bottom: 0.125rem;
         }
         
         .phone-link {
             color: #667eea;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 1.05rem;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #f0f4ff;
+            border-radius: 6px;
+            margin-top: 0.5rem;
+            width: 100%;
+            text-align: center;
         }
         
-        .phone-link:hover {
-            text-decoration: underline;
+        .phone-link:active {
+            background: #e0e9ff;
+        }
+        
+        .score-badge {
+            background: #4caf50;
+            color: white;
+            padding: 0.375rem 0.75rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-left: 0.5rem;
         }
         
         .resume-status {
@@ -233,90 +255,98 @@
             display: none;
         }
         
-        @media (max-width: 768px) {
+        .results-count {
+            padding: 0.75rem 1rem;
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-weight: 500;
+            color: #7f8c8d;
+        }
+        
+        /* Desktop optimizations */
+        @media (min-width: 768px) {
             .header h1 {
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
             
-            .stats-grid {
+            .header .subtitle {
+                font-size: 1rem;
+            }
+            
+            .filter-buttons {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            
+            .candidates-list {
                 grid-template-columns: repeat(2, 1fr);
             }
             
-            .controls {
-                flex-direction: column;
+            .stat-card .number {
+                font-size: 2.5rem;
             }
             
-            table {
+            .stat-card .label {
                 font-size: 0.9rem;
             }
-            
-            th, td {
-                padding: 0.75rem 0.5rem;
+        }
+        
+        @media (min-width: 1024px) {
+            .candidates-list {
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>☕ 77 Candidates - Kona Coffee Donut</h1>
-        <div class="subtitle">Waikiki Store #2142 | February 9, 2026</div>
+        <h1>☕ 77 Candidates</h1>
+        <div class="subtitle">Kona Coffee Donut | Feb 9, 2026</div>
     </div>
     
     <div class="container">
         <div class="stats-grid">
             <div class="stat-card top">
                 <div class="number" id="stat-top">39</div>
-                <div class="label">🌟 TOP TIER<br>11/11 Qualifications</div>
+                <div class="label">🌟 TOP<br>11/11</div>
             </div>
             <div class="stat-card strong">
                 <div class="number" id="stat-strong">7</div>
-                <div class="label">⭐ STRONG<br>9-10 Qualifications</div>
+                <div class="label">⭐ STRONG<br>9-10</div>
             </div>
             <div class="stat-card good">
                 <div class="number" id="stat-good">12</div>
-                <div class="label">✅ GOOD<br>7-8 Qualifications</div>
+                <div class="label">✅ GOOD<br>7-8</div>
             </div>
             <div class="stat-card fair">
                 <div class="number" id="stat-fair">11</div>
-                <div class="label">⚠️ FAIR<br>5-6 Qualifications</div>
+                <div class="label">⚠️ FAIR<br>5-6</div>
             </div>
             <div class="stat-card weak">
                 <div class="number" id="stat-weak">8</div>
-                <div class="label">❌ TRAINING<br>&lt;5 Qualifications</div>
+                <div class="label">❌ TRAIN<br>&lt;5</div>
             </div>
         </div>
         
         <div class="controls">
             <div class="search-box">
-                <input type="text" id="search" placeholder="Search by name, experience, or skills...">
+                <input type="text" id="search" placeholder="🔍 Search name, experience...">
             </div>
             <div class="filter-buttons">
-                <button class="filter-btn active" data-tier="all">All (77)</button>
-                <button class="filter-btn" data-tier="top">🌟 TOP (39)</button>
-                <button class="filter-btn" data-tier="strong">⭐ STRONG (7)</button>
-                <button class="filter-btn" data-tier="good">✅ GOOD (12)</button>
-                <button class="filter-btn" data-tier="fair">⚠️ FAIR (11)</button>
-                <button class="filter-btn" data-tier="weak">❌ TRAIN (8)</button>
+                <button class="filter-btn active" data-tier="all">All</button>
+                <button class="filter-btn" data-tier="top">🌟 TOP</button>
+                <button class="filter-btn" data-tier="strong">⭐ STRONG</button>
+                <button class="filter-btn" data-tier="good">✅ GOOD</button>
+                <button class="filter-btn" data-tier="fair">⚠️ FAIR</button>
+                <button class="filter-btn" data-tier="weak">❌ TRAIN</button>
             </div>
         </div>
         
-        <div class="candidates-table">
-            <table id="candidates-table">
-                <thead>
-                    <tr>
-                        <th class="sortable" data-sort="name">Name</th>
-                        <th class="sortable" data-sort="tier">Tier</th>
-                        <th class="sortable" data-sort="score">Score</th>
-                        <th class="sortable" data-sort="phone">Phone</th>
-                        <th class="sortable" data-sort="experience">Experience</th>
-                        <th class="sortable" data-sort="date">Applied</th>
-                        <th>Resume</th>
-                    </tr>
-                </thead>
-                <tbody id="candidates-body">
-                    <!-- Populated by JavaScript -->
-                </tbody>
-            </table>
+        <div class="results-count" id="results-count">Showing 77 candidates</div>
+        
+        <div class="candidates-list" id="candidates-list">
+            <!-- Populated by JavaScript -->
         </div>
     </div>
     
@@ -324,16 +354,15 @@
     <script>
         // State
         let currentFilter = 'all';
-        let currentSort = { column: 'score', direction: 'desc' };
         let searchQuery = '';
         
         // Initialize
-        renderTable();
+        renderCards();
         
         // Event listeners
         document.getElementById('search').addEventListener('input', (e) => {
             searchQuery = e.target.value.toLowerCase();
-            renderTable();
+            renderCards();
         });
         
         document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -341,30 +370,11 @@
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 e.target.classList.add('active');
                 currentFilter = e.target.dataset.tier;
-                renderTable();
+                renderCards();
             });
         });
         
-        document.querySelectorAll('th.sortable').forEach(th => {
-            th.addEventListener('click', (e) => {
-                const column = e.target.dataset.sort;
-                if (currentSort.column === column) {
-                    currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
-                } else {
-                    currentSort.column = column;
-                    currentSort.direction = 'desc';
-                }
-                
-                document.querySelectorAll('th').forEach(h => {
-                    h.classList.remove('sorted-asc', 'sorted-desc');
-                });
-                e.target.classList.add(`sorted-${currentSort.direction}`);
-                
-                renderTable();
-            });
-        });
-        
-        function renderTable() {
+        function renderCards() {
             let filtered = candidatesData;
             
             // Filter by tier
@@ -377,49 +387,86 @@
                 filtered = filtered.filter(c => {
                     return c.name.toLowerCase().includes(searchQuery) ||
                            (c.experience && c.experience.toLowerCase().includes(searchQuery)) ||
-                           (c.skills && c.skills.toLowerCase().includes(searchQuery));
+                           (c.education && c.education.toLowerCase().includes(searchQuery));
                 });
             }
             
-            // Sort
-            filtered.sort((a, b) => {
-                let aVal = a[currentSort.column];
-                let bVal = b[currentSort.column];
-                
-                if (currentSort.column === 'score') {
-                    aVal = parseInt(aVal);
-                    bVal = parseInt(bVal);
-                }
-                
-                if (currentSort.direction === 'asc') {
-                    return aVal > bVal ? 1 : -1;
-                } else {
-                    return aVal < bVal ? 1 : -1;
-                }
-            });
+            // Update count
+            document.getElementById('results-count').textContent = 
+                `Showing ${filtered.length} candidate${filtered.length !== 1 ? 's' : ''}`;
             
-            // Render
-            const tbody = document.getElementById('candidates-body');
-            tbody.innerHTML = filtered.map(c => `
-                <tr>
-                    <td><strong>${c.name}</strong></td>
-                    <td><span class="tier-badge ${c.tier}">${getTierLabel(c.tier)}</span></td>
-                    <td><span class="score-badge">${c.score}/11</span></td>
-                    <td><a href="tel:${c.phone}" class="phone-link">${c.phone}</a></td>
-                    <td>${c.experience || '-'}</td>
-                    <td>${c.date}</td>
-                    <td class="resume-status ${c.resume ? 'has' : 'missing'}">${c.resume ? '✓' : '✗'}</td>
-                </tr>
+            // Render cards
+            const container = document.getElementById('candidates-list');
+            container.innerHTML = filtered.map(c => `
+                <div class="candidate-card ${c.tier}">
+                    <div class="card-header">
+                        <div class="card-name">${c.name}</div>
+                        <span class="tier-badge ${c.tier}">${getTierLabel(c.tier)}</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-row">
+                            <div class="info-icon">📊</div>
+                            <div class="info-content">
+                                <div class="info-label">Qualifications</div>
+                                <span class="score-badge">${c.score}/11 ✅</span>
+                            </div>
+                        </div>
+                        ${c.experience ? `
+                        <div class="info-row">
+                            <div class="info-icon">💼</div>
+                            <div class="info-content">
+                                <div class="info-label">Experience</div>
+                                ${c.experience}
+                            </div>
+                        </div>
+                        ` : ''}
+                        ${c.education ? `
+                        <div class="info-row">
+                            <div class="info-icon">🎓</div>
+                            <div class="info-content">
+                                <div class="info-label">Education</div>
+                                ${c.education}
+                            </div>
+                        </div>
+                        ` : ''}
+                        <div class="info-row">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <div class="info-label">Location</div>
+                                ${c.location}
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-icon">📅</div>
+                            <div class="info-content">
+                                <div class="info-label">Applied</div>
+                                ${c.date}
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-icon">📄</div>
+                            <div class="info-content">
+                                <div class="info-label">Resume</div>
+                                <span class="resume-status ${c.resume ? 'has' : 'missing'}">
+                                    ${c.resume ? '✓ Available' : '✗ Not found'}
+                                </span>
+                            </div>
+                        </div>
+                        <a href="tel:${c.phone.replace(/[^\d]/g, '')}" class="phone-link">
+                            📞 ${c.phone}
+                        </a>
+                    </div>
+                </div>
             `).join('');
         }
         
         function getTierLabel(tier) {
             const labels = {
-                'top': '🌟 TOP',
-                'strong': '⭐ STRONG',
-                'good': '✅ GOOD',
-                'fair': '⚠️ FAIR',
-                'weak': '❌ TRAIN'
+                'top': '🌟',
+                'strong': '⭐',
+                'good': '✅',
+                'fair': '⚠️',
+                'weak': '❌'
             };
             return labels[tier] || tier;
         }
