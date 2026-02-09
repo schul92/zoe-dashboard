@@ -10,6 +10,7 @@ const candidatesData = [
     "date": "2026-02-01",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeSanjinaRao.pdf",
     "skills": ""
   },
   {
@@ -22,6 +23,7 @@ const candidatesData = [
     "date": "2026-02-01",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeJoshuaLee.pdf",
     "skills": ""
   },
   {
@@ -34,6 +36,7 @@ const candidatesData = [
     "date": "2026-02-01",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumePieter(Kobus)Breet.pdf",
     "skills": ""
   },
   {
@@ -46,6 +49,7 @@ const candidatesData = [
     "date": "2026-02-01",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeHeatherFencl.pdf",
     "skills": ""
   },
   {
@@ -58,6 +62,7 @@ const candidatesData = [
     "date": "2026-02-09",
     "location": "Honolulu",
     "resume": true,
+    "resumeFile": "ResumeLeilaniLoveless.pdf",
     "skills": ""
   },
   {
@@ -70,6 +75,7 @@ const candidatesData = [
     "date": "2026-02-08",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeBeylaJones.pdf",
     "skills": ""
   },
   {
@@ -82,6 +88,7 @@ const candidatesData = [
     "date": "2026-02-08",
     "location": "10000",
     "resume": true,
+    "resumeFile": "ResumeCatherinePiano.pdf",
     "skills": ""
   },
   {
@@ -94,6 +101,7 @@ const candidatesData = [
     "date": "2026-02-08",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeEmilyNewell.pdf",
     "skills": ""
   },
   {
@@ -106,6 +114,7 @@ const candidatesData = [
     "date": "2026-02-08",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeHallieDugan.pdf",
     "skills": ""
   },
   {
@@ -118,6 +127,7 @@ const candidatesData = [
     "date": "2026-02-08",
     "location": "Honolulu",
     "resume": true,
+    "resumeFile": "ResumeCamiloHaro.pdf",
     "skills": ""
   },
   {
@@ -130,6 +140,7 @@ const candidatesData = [
     "date": "2026-02-07",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeCarlaSilva.pdf",
     "skills": ""
   },
   {
@@ -142,6 +153,7 @@ const candidatesData = [
     "date": "2026-02-07",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeDonnaSowell.pdf",
     "skills": ""
   },
   {
@@ -154,6 +166,7 @@ const candidatesData = [
     "date": "2026-02-06",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeNevaehBerman.pdf",
     "skills": ""
   },
   {
@@ -166,6 +179,7 @@ const candidatesData = [
     "date": "2026-02-06",
     "location": "Honolulu, Hawaii",
     "resume": true,
+    "resumeFile": "ResumeAnLiAllison.pdf",
     "skills": ""
   },
   {
@@ -178,6 +192,7 @@ const candidatesData = [
     "date": "2026-02-05",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeAlexandraXua.pdf",
     "skills": ""
   },
   {
@@ -190,6 +205,7 @@ const candidatesData = [
     "date": "2026-02-05",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeAvaFairbrother.pdf",
     "skills": ""
   },
   {
@@ -202,6 +218,7 @@ const candidatesData = [
     "date": "2026-02-05",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeLUCYPOOL.pdf",
     "skills": ""
   },
   {
@@ -214,6 +231,7 @@ const candidatesData = [
     "date": "2026-02-05",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeHarunaEmmer.pdf",
     "skills": ""
   },
   {
@@ -226,6 +244,7 @@ const candidatesData = [
     "date": "2026-02-05",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeKileyButkus.pdf",
     "skills": ""
   },
   {
@@ -238,6 +257,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "Honolulu, Hi",
     "resume": false,
+    "resumeFile": null,
     "skills": ""
   },
   {
@@ -250,6 +270,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "'Ewa Beach, HI",
     "resume": true,
+    "resumeFile": "ResumeSayakaGaspard.pdf",
     "skills": ""
   },
   {
@@ -262,6 +283,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeHonesty-MarieRiley.pdf",
     "skills": ""
   },
   {
@@ -274,6 +296,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeHannahQuick.pdf",
     "skills": ""
   },
   {
@@ -286,6 +309,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "Honolulu, HI, 96822, US",
     "resume": true,
+    "resumeFile": "ResumeMARIANAFIGUEROA.pdf",
     "skills": ""
   },
   {
@@ -298,6 +322,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "Resumekayornatowski.pdf",
     "skills": ""
   },
   {
@@ -310,6 +335,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, Hawaii, US",
     "resume": true,
+    "resumeFile": "ResumeAlexisShulga.pdf",
     "skills": ""
   },
   {
@@ -322,6 +348,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeKimLe.pdf",
     "skills": ""
   },
   {
@@ -334,6 +361,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeDorianCovahey.pdf",
     "skills": ""
   },
   {
@@ -346,6 +374,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI, US",
     "resume": true,
+    "resumeFile": "ResumeParrishViator.pdf",
     "skills": ""
   },
   {
@@ -358,6 +387,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeDwayneKahoonei.pdf",
     "skills": ""
   },
   {
@@ -370,6 +400,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeHuyen-TranHaDang.pdf",
     "skills": ""
   },
   {
@@ -382,6 +413,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeAuroraMarcy.pdf",
     "skills": ""
   },
   {
@@ -394,6 +426,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeLeahKliem.pdf",
     "skills": ""
   },
   {
@@ -406,6 +439,7 @@ const candidatesData = [
     "date": "2026-02-02",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeEDMELYNHAZLEWOOD.pdf",
     "skills": ""
   },
   {
@@ -418,6 +452,7 @@ const candidatesData = [
     "date": "2026-02-02",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeIraRose.pdf",
     "skills": ""
   },
   {
@@ -430,6 +465,7 @@ const candidatesData = [
     "date": "2026-02-02",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeLawsonMcNeely.pdf",
     "skills": ""
   },
   {
@@ -442,6 +478,7 @@ const candidatesData = [
     "date": "2026-02-02",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeJasonRiddle.pdf",
     "skills": ""
   },
   {
@@ -454,6 +491,7 @@ const candidatesData = [
     "date": "2026-02-02",
     "location": "Honolulu, HI, US",
     "resume": true,
+    "resumeFile": "ResumeJaelahMuñoz.pdf",
     "skills": ""
   },
   {
@@ -466,6 +504,7 @@ const candidatesData = [
     "date": "2026-02-01",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeMarcelaNaomiHuacchoChoque.pdf",
     "skills": ""
   },
   {
@@ -478,6 +517,7 @@ const candidatesData = [
     "date": "2026-02-08",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeGaryBasuil.pdf",
     "skills": ""
   },
   {
@@ -490,6 +530,7 @@ const candidatesData = [
     "date": "2026-02-07",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeJaylynWharton.pdf",
     "skills": ""
   },
   {
@@ -502,6 +543,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI 96822",
     "resume": true,
+    "resumeFile": "ResumeBENJAMINAQUINO.pdf",
     "skills": ""
   },
   {
@@ -514,6 +556,7 @@ const candidatesData = [
     "date": "2026-02-06",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeIsabellaMendoza.pdf",
     "skills": ""
   },
   {
@@ -526,6 +569,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeChristianMelegrito.pdf",
     "skills": ""
   },
   {
@@ -538,6 +582,7 @@ const candidatesData = [
     "date": "2026-02-02",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeTdlynFrank.pdf",
     "skills": ""
   },
   {
@@ -550,6 +595,7 @@ const candidatesData = [
     "date": "2026-02-01",
     "location": "La Cañada Flintridge, CA",
     "resume": true,
+    "resumeFile": "ResumeNaomiHosford.pdf",
     "skills": ""
   },
   {
@@ -562,6 +608,7 @@ const candidatesData = [
     "date": "2026-02-08",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeGiangTran.pdf",
     "skills": ""
   },
   {
@@ -574,6 +621,7 @@ const candidatesData = [
     "date": "2026-02-05",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeAlanaImage.pdf",
     "skills": ""
   },
   {
@@ -586,6 +634,7 @@ const candidatesData = [
     "date": "2026-02-02",
     "location": "Pearl City, HI",
     "resume": true,
+    "resumeFile": "ResumeMadisonBeardsley.pdf",
     "skills": ""
   },
   {
@@ -598,6 +647,7 @@ const candidatesData = [
     "date": "2026-02-02",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeEmmaGretsch.pdf",
     "skills": ""
   },
   {
@@ -610,6 +660,7 @@ const candidatesData = [
     "date": "2026-02-02",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeRinaRobert.pdf",
     "skills": ""
   },
   {
@@ -622,6 +673,7 @@ const candidatesData = [
     "date": "2026-02-09",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeJanelleCabanit.pdf",
     "skills": ""
   },
   {
@@ -634,6 +686,7 @@ const candidatesData = [
     "date": "2026-02-06",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeSkyBrown.pdf",
     "skills": ""
   },
   {
@@ -646,6 +699,7 @@ const candidatesData = [
     "date": "2026-02-05",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeElianaCarnes.pdf",
     "skills": ""
   },
   {
@@ -658,6 +712,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeAustinM.pdf",
     "skills": ""
   },
   {
@@ -670,6 +725,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeEmmanuelRidgley.pdf",
     "skills": ""
   },
   {
@@ -682,6 +738,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumecheyenneBailey.pdf",
     "skills": ""
   },
   {
@@ -694,6 +751,7 @@ const candidatesData = [
     "date": "2026-02-01",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeMiaArreza.pdf",
     "skills": ""
   },
   {
@@ -706,6 +764,7 @@ const candidatesData = [
     "date": "2026-02-08",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeChantalMarieCacpal.pdf",
     "skills": ""
   },
   {
@@ -718,6 +777,7 @@ const candidatesData = [
     "date": "2026-02-07",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeJasmineBoyd.pdf",
     "skills": ""
   },
   {
@@ -730,6 +790,7 @@ const candidatesData = [
     "date": "2026-02-06",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeTrucyThomas.pdf",
     "skills": ""
   },
   {
@@ -742,6 +803,7 @@ const candidatesData = [
     "date": "2026-02-05",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeHaydenBode.pdf",
     "skills": ""
   },
   {
@@ -754,6 +816,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeRachanneMiquel.pdf",
     "skills": ""
   },
   {
@@ -766,6 +829,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeJmarkRivera.pdf",
     "skills": ""
   },
   {
@@ -778,6 +842,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "2579 Dole Street Rm 452, Honolulu, HI 96822",
     "resume": true,
+    "resumeFile": "ResumeBrookeViolette.pdf",
     "skills": ""
   },
   {
@@ -790,6 +855,7 @@ const candidatesData = [
     "date": "2026-02-05",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeTylerCrawford.pdf",
     "skills": ""
   },
   {
@@ -802,6 +868,7 @@ const candidatesData = [
     "date": "2026-02-05",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeJamesonO'Connell.pdf",
     "skills": ""
   },
   {
@@ -814,6 +881,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI, 96822, US",
     "resume": true,
+    "resumeFile": "ResumeAUBREYGRIMES.pdf",
     "skills": ""
   },
   {
@@ -826,6 +894,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeHirutDenver.pdf",
     "skills": ""
   },
   {
@@ -838,6 +907,7 @@ const candidatesData = [
     "date": "2026-02-05",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeKennethLiu.pdf",
     "skills": ""
   },
   {
@@ -850,6 +920,7 @@ const candidatesData = [
     "date": "2026-02-01",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeLeilaZaragoza.pdf",
     "skills": ""
   },
   {
@@ -862,6 +933,7 @@ const candidatesData = [
     "date": "2026-02-06",
     "location": "Fort Shafter, HI",
     "resume": true,
+    "resumeFile": "ResumeCAROLINECOOK.pdf",
     "skills": ""
   },
   {
@@ -874,6 +946,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeMayforeenAlbert.pdf",
     "skills": ""
   },
   {
@@ -886,6 +959,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeAshleyMiyata.pdf",
     "skills": ""
   },
   {
@@ -898,6 +972,7 @@ const candidatesData = [
     "date": "2026-02-04",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeJamesReyes.pdf",
     "skills": ""
   },
   {
@@ -910,6 +985,7 @@ const candidatesData = [
     "date": "2026-02-02",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeJendelynDuhaylongsod.pdf",
     "skills": ""
   },
   {
@@ -922,6 +998,7 @@ const candidatesData = [
     "date": "2026-02-03",
     "location": "Honolulu, HI",
     "resume": true,
+    "resumeFile": "ResumeKainoaValdez.pdf",
     "skills": ""
   }
 ];

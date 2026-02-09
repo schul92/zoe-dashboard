@@ -655,12 +655,21 @@
                 </div>
                 
                 <div class="detail-section">
-                    <h3>📄 Resume Status</h3>
-                    <p>
-                        <span class="resume-status ${c.resume ? 'has' : 'missing'}">
-                            ${c.resume ? '✓ Resume file available in downloads' : '✗ Resume not found'}
-                        </span>
-                    </p>
+                    <h3>📄 Resume</h3>
+                    ${c.resume ? `
+                        <p style="margin-bottom: 1rem;">
+                            <a href="resumes/${c.resumeFile}" target="_blank" class="phone-link" style="display: inline-block;">
+                                📄 새창으로 Resume 보기
+                            </a>
+                        </p>
+                        <iframe src="resumes/${c.resumeFile}" style="width: 100%; height: 600px; border: 2px solid #ecf0f1; border-radius: 8px;"></iframe>
+                    ` : `
+                        <p>
+                            <span class="resume-status missing">
+                                ✗ Resume not found
+                            </span>
+                        </p>
+                    `}
                 </div>
             `;
             
