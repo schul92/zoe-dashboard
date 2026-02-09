@@ -421,6 +421,92 @@
                 grid-template-columns: repeat(3, 1fr);
             }
         }
+        
+        /* Pagination Styles */
+        .pagination-container {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .pagination-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .items-selector {
+            padding: 0.5rem 1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            font-size: 0.9rem;
+            cursor: pointer;
+            min-height: 44px;
+        }
+        
+        .pagination-controls {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .page-btn {
+            min-width: 44px;
+            min-height: 44px;
+            padding: 0.5rem 1rem;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .page-btn:hover {
+            background: #f0f0f0;
+            border-color: #667eea;
+        }
+        
+        .page-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .page-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .page-btn.ellipsis {
+            border: none;
+            background: transparent;
+            cursor: default;
+        }
+        
+        .page-btn.ellipsis:hover {
+            background: transparent;
+            border: none;
+        }
+        
+        @media (max-width: 640px) {
+            .pagination-container {
+                margin-top: 1.5rem;
+            }
+            
+            .page-btn {
+                min-width: 40px;
+                min-height: 40px;
+                padding: 0.4rem 0.8rem;
+                font-size: 0.85rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -472,6 +558,19 @@
         <div class="candidates-list" id="candidates-list">
             <!-- Populated by JavaScript -->
         </div>
+        
+        <!-- Pagination Controls -->
+        <div class="pagination-container">
+            <div class="pagination-info">
+                <select id="items-per-page" class="items-selector">
+                    <option value="10">10 per page</option>
+                    <option value="20" selected>20 per page</option>
+                    <option value="50">50 per page</option>
+                    <option value="99999">Show all</option>
+                </select>
+            </div>
+            <div class="pagination-controls" id="pagination"></div>
+        </div>
     </div>
     
     <!-- Modal -->
@@ -493,6 +592,8 @@
         let currentFilter = 'all';
         let searchQuery = '';
         let lastScrollY = 0;
+        let currentPage = 1;
+        let itemsPerPage = 20;
         
         // Initialize
         renderCards();
@@ -516,6 +617,7 @@
         // Event listeners
         document.getElementById('search').addEventListener('input', (e) => {
             searchQuery = e.target.value.toLowerCase();
+            currentPage = 1; // Reset to first page on new search
             renderCards();
         });
         
@@ -524,8 +626,15 @@
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 e.target.classList.add('active');
                 currentFilter = e.target.dataset.tier;
+                currentPage = 1; // Reset to first page on filter change
                 renderCards();
             });
+        });
+        
+        document.getElementById('items-per-page').addEventListener('change', (e) => {
+            itemsPerPage = parseInt(e.target.value);
+            currentPage = 1; // Reset to first page when changing items per page
+            renderCards();
         });
         
         // Modal close on background click
@@ -552,13 +661,34 @@
                 });
             }
             
-            // Update count
-            document.getElementById('results-count').textContent = 
-                `Showing ${filtered.length} candidate${filtered.length !== 1 ? 's' : ''}`;
+            // Calculate pagination
+            const totalItems = filtered.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
             
-            // Render cards
+            // Ensure current page is within bounds
+            if (currentPage > totalPages && totalPages > 0) {
+                currentPage = totalPages;
+            }
+            if (currentPage < 1) {
+                currentPage = 1;
+            }
+            
+            // Get current page items
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
+            const currentPageItems = filtered.slice(startIndex, endIndex);
+            
+            // Update count
+            const countText = itemsPerPage >= 99999 
+                ? `Showing all ${totalItems} candidate${totalItems !== 1 ? 's' : ''}`
+                : `Showing ${startIndex + 1}-${endIndex} of ${totalItems} candidate${totalItems !== 1 ? 's' : ''}`;
+            document.getElementById('results-count').textContent = countText;
+            
+            // Render cards (only current page)
             const container = document.getElementById('candidates-list');
-            container.innerHTML = filtered.map((c, idx) => `
+            container.innerHTML = currentPageItems.map((c, idx) => {
+                const originalIndex = filtered.indexOf(c);
+                return `
                 <div class="candidate-card ${c.tier}">
                     <div class="card-header">
                         <div class="card-name">${c.name}</div>
@@ -599,13 +729,103 @@
                             <a href="tel:${c.phone.replace(/[^\d]/g, '')}" class="phone-link">
                                 📞 ${c.phone}
                             </a>
-                            <button class="detail-btn" onclick="showDetails(${idx})">
+                            <button class="detail-btn" onclick="showDetails(${originalIndex})">
                                 상세보기
                             </button>
                         </div>
                     </div>
                 </div>
-            `).join('');
+            `}).join('');
+            
+            // Render pagination
+            renderPagination(totalPages);
+            
+            // Scroll to top on page change
+            if (currentPage > 1) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+        
+        function renderPagination(totalPages) {
+            const container = document.getElementById('pagination');
+            
+            if (totalPages <= 1 || itemsPerPage >= 99999) {
+                container.innerHTML = '';
+                return;
+            }
+            
+            let html = [];
+            
+            // Previous button
+            html.push(`
+                <button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})">
+                    ◀ Prev
+                </button>
+            `);
+            
+            // Page numbers with smart ellipsis
+            const maxButtons = 7; // Max page buttons to show
+            
+            if (totalPages <= maxButtons) {
+                // Show all pages
+                for (let i = 1; i <= totalPages; i++) {
+                    html.push(`
+                        <button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">
+                            ${i}
+                        </button>
+                    `);
+                }
+            } else {
+                // Show first page
+                html.push(`
+                    <button class="page-btn ${1 === currentPage ? 'active' : ''}" onclick="changePage(1)">
+                        1
+                    </button>
+                `);
+                
+                // Ellipsis or pages near current
+                if (currentPage > 3) {
+                    html.push('<button class="page-btn ellipsis" disabled>...</button>');
+                }
+                
+                // Pages around current page
+                const start = Math.max(2, currentPage - 1);
+                const end = Math.min(totalPages - 1, currentPage + 1);
+                
+                for (let i = start; i <= end; i++) {
+                    html.push(`
+                        <button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">
+                            ${i}
+                        </button>
+                    `);
+                }
+                
+                // Ellipsis or pages near end
+                if (currentPage < totalPages - 2) {
+                    html.push('<button class="page-btn ellipsis" disabled>...</button>');
+                }
+                
+                // Show last page
+                html.push(`
+                    <button class="page-btn ${totalPages === currentPage ? 'active' : ''}" onclick="changePage(${totalPages})">
+                        ${totalPages}
+                    </button>
+                `);
+            }
+            
+            // Next button
+            html.push(`
+                <button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})">
+                    Next ▶
+                </button>
+            `);
+            
+            container.innerHTML = html.join('');
+        }
+        
+        function changePage(page) {
+            currentPage = page;
+            renderCards();
         }
         
         function showDetails(index) {
