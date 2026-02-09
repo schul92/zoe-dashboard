@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>77 Candidates - Kona Coffee Donut</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header .subtitle {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            border-left: 4px solid;
+        }
+        
+        .stat-card.top { border-left-color: #e74c3c; }
+        .stat-card.strong { border-left-color: #3498db; }
+        .stat-card.good { border-left-color: #2ecc71; }
+        .stat-card.fair { border-left-color: #f39c12; }
+        .stat-card.weak { border-left-color: #95a5a6; }
+        
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-card .label {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        .controls {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ecf0f1;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.75rem 1.25rem;
+            border: 2px solid #ecf0f1;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .filter-btn:hover {
+            background: #ecf0f1;
+        }
+        
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .candidates-table {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        thead {
+            background: #f8f9fa;
+            border-bottom: 2px solid #ecf0f1;
+        }
+        
+        th {
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        th:hover {
+            background: #ecf0f1;
+        }
+        
+        th.sortable::after {
+            content: ' ⇅';
+            opacity: 0.3;
+        }
+        
+        th.sorted-asc::after {
+            content: ' ↑';
+            opacity: 1;
+        }
+        
+        th.sorted-desc::after {
+            content: ' ↓';
+            opacity: 1;
+        }
+        
+        tbody tr {
+            border-bottom: 1px solid #ecf0f1;
+            transition: background-color 0.2s;
+        }
+        
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+        
+        td {
+            padding: 1rem;
+        }
+        
+        .tier-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .tier-badge.top { background: #fee; color: #e74c3c; }
+        .tier-badge.strong { background: #e3f2fd; color: #2196f3; }
+        .tier-badge.good { background: #e8f5e9; color: #4caf50; }
+        .tier-badge.fair { background: #fff3e0; color: #ff9800; }
+        .tier-badge.weak { background: #eceff1; color: #607d8b; }
+        
+        .score-badge {
+            background: #4caf50;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        
+        .phone-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .phone-link:hover {
+            text-decoration: underline;
+        }
+        
+        .resume-status {
+            font-size: 1.2rem;
+        }
+        
+        .resume-status.has { color: #4caf50; }
+        .resume-status.missing { color: #e74c3c; }
+        
+        .hidden {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .controls {
+                flex-direction: column;
+            }
+            
+            table {
+                font-size: 0.9rem;
+            }
+            
+            th, td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>☕ 77 Candidates - Kona Coffee Donut</h1>
+        <div class="subtitle">Waikiki Store #2142 | February 9, 2026</div>
+    </div>
+    
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card top">
+                <div class="number" id="stat-top">39</div>
+                <div class="label">🌟 TOP TIER<br>11/11 Qualifications</div>
+            </div>
+            <div class="stat-card strong">
+                <div class="number" id="stat-strong">7</div>
+                <div class="label">⭐ STRONG<br>9-10 Qualifications</div>
+            </div>
+            <div class="stat-card good">
+                <div class="number" id="stat-good">12</div>
+                <div class="label">✅ GOOD<br>7-8 Qualifications</div>
+            </div>
+            <div class="stat-card fair">
+                <div class="number" id="stat-fair">11</div>
+                <div class="label">⚠️ FAIR<br>5-6 Qualifications</div>
+            </div>
+            <div class="stat-card weak">
+                <div class="number" id="stat-weak">8</div>
+                <div class="label">❌ TRAINING<br>&lt;5 Qualifications</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search by name, experience, or skills...">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-tier="all">All (77)</button>
+                <button class="filter-btn" data-tier="top">🌟 TOP (39)</button>
+                <button class="filter-btn" data-tier="strong">⭐ STRONG (7)</button>
+                <button class="filter-btn" data-tier="good">✅ GOOD (12)</button>
+                <button class="filter-btn" data-tier="fair">⚠️ FAIR (11)</button>
+                <button class="filter-btn" data-tier="weak">❌ TRAIN (8)</button>
+            </div>
+        </div>
+        
+        <div class="candidates-table">
+            <table id="candidates-table">
+                <thead>
+                    <tr>
+                        <th class="sortable" data-sort="name">Name</th>
+                        <th class="sortable" data-sort="tier">Tier</th>
+                        <th class="sortable" data-sort="score">Score</th>
+                        <th class="sortable" data-sort="phone">Phone</th>
+                        <th class="sortable" data-sort="experience">Experience</th>
+                        <th class="sortable" data-sort="date">Applied</th>
+                        <th>Resume</th>
+                    </tr>
+                </thead>
+                <tbody id="candidates-body">
+                    <!-- Populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="candidates-data.js"></script>
+    <script>
+        // State
+        let currentFilter = 'all';
+        let currentSort = { column: 'score', direction: 'desc' };
+        let searchQuery = '';
+        
+        // Initialize
+        renderTable();
+        
+        // Event listeners
+        document.getElementById('search').addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase();
+            renderTable();
+        });
+        
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                currentFilter = e.target.dataset.tier;
+                renderTable();
+            });
+        });
+        
+        document.querySelectorAll('th.sortable').forEach(th => {
+            th.addEventListener('click', (e) => {
+                const column = e.target.dataset.sort;
+                if (currentSort.column === column) {
+                    currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+                } else {
+                    currentSort.column = column;
+                    currentSort.direction = 'desc';
+                }
+                
+                document.querySelectorAll('th').forEach(h => {
+                    h.classList.remove('sorted-asc', 'sorted-desc');
+                });
+                e.target.classList.add(`sorted-${currentSort.direction}`);
+                
+                renderTable();
+            });
+        });
+        
+        function renderTable() {
+            let filtered = candidatesData;
+            
+            // Filter by tier
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(c => c.tier === currentFilter);
+            }
+            
+            // Filter by search
+            if (searchQuery) {
+                filtered = filtered.filter(c => {
+                    return c.name.toLowerCase().includes(searchQuery) ||
+                           (c.experience && c.experience.toLowerCase().includes(searchQuery)) ||
+                           (c.skills && c.skills.toLowerCase().includes(searchQuery));
+                });
+            }
+            
+            // Sort
+            filtered.sort((a, b) => {
+                let aVal = a[currentSort.column];
+                let bVal = b[currentSort.column];
+                
+                if (currentSort.column === 'score') {
+                    aVal = parseInt(aVal);
+                    bVal = parseInt(bVal);
+                }
+                
+                if (currentSort.direction === 'asc') {
+                    return aVal > bVal ? 1 : -1;
+                } else {
+                    return aVal < bVal ? 1 : -1;
+                }
+            });
+            
+            // Render
+            const tbody = document.getElementById('candidates-body');
+            tbody.innerHTML = filtered.map(c => `
+                <tr>
+                    <td><strong>${c.name}</strong></td>
+                    <td><span class="tier-badge ${c.tier}">${getTierLabel(c.tier)}</span></td>
+                    <td><span class="score-badge">${c.score}/11</span></td>
+                    <td><a href="tel:${c.phone}" class="phone-link">${c.phone}</a></td>
+                    <td>${c.experience || '-'}</td>
+                    <td>${c.date}</td>
+                    <td class="resume-status ${c.resume ? 'has' : 'missing'}">${c.resume ? '✓' : '✗'}</td>
+                </tr>
+            `).join('');
+        }
+        
+        function getTierLabel(tier) {
+            const labels = {
+                'top': '🌟 TOP',
+                'strong': '⭐ STRONG',
+                'good': '✅ GOOD',
+                'fair': '⚠️ FAIR',
+                'weak': '❌ TRAIN'
+            };
+            return labels[tier] || tier;
+        }
+    </script>
+</body>
+</html>
