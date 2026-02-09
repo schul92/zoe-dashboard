@@ -20,7 +20,7 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
@@ -76,47 +76,132 @@
             margin-top: 2px;
         }
 
-        /* Filters */
-        .filters {
+        /* Calendar Navigation */
+        .calendar-nav {
             display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
             margin-top: 16px;
             padding-top: 16px;
             border-top: 2px solid #e2e8f0;
         }
 
-        .filter-btn {
-            padding: 8px 14px;
-            border: 2px solid #e2e8f0;
+        .calendar-nav button {
+            padding: 8px 16px;
             background: white;
+            border: 2px solid #e2e8f0;
             border-radius: 8px;
             cursor: pointer;
-            font-size: 13px;
-            font-weight: 500;
-            transition: all 0.2s;
+            font-weight: 600;
             min-height: 44px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
+            transition: all 0.2s;
         }
 
-        .filter-btn:active {
-            transform: scale(0.95);
-        }
-
-        .filter-btn.active {
-            background: #667eea;
-            color: white;
+        .calendar-nav button:hover {
+            background: #f7fafc;
             border-color: #667eea;
         }
 
-        /* Timeline View (Mobile-First) */
+        .calendar-nav h2 {
+            font-size: 18px;
+            color: #1a202c;
+        }
+
+        /* Calendar Container */
+        .calendar-wrapper {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .calendar-wrapper {
+                display: block;
+            }
+        }
+
+        /* Calendar Grid */
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+        }
+
+        .calendar-header {
+            text-align: center;
+            font-weight: 600;
+            padding: 12px;
+            color: #4a5568;
+            font-size: 14px;
+        }
+
+        .calendar-day {
+            min-height: 100px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: white;
+        }
+
+        .calendar-day:hover {
+            border-color: #667eea;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+        }
+
+        .calendar-day.other-month {
+            opacity: 0.3;
+            cursor: default;
+        }
+
+        .calendar-day.other-month:hover {
+            border-color: #e2e8f0;
+            box-shadow: none;
+        }
+
+        .calendar-day.today {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+
+        .calendar-day.has-post {
+            background: #f0fff4;
+            border-color: #48bb78;
+        }
+
+        .day-number {
+            font-weight: 600;
+            font-size: 14px;
+            color: #2d3748;
+            margin-bottom: 4px;
+        }
+
+        .day-platforms {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+            margin-top: 6px;
+        }
+
+        .platform-icon {
+            font-size: 16px;
+        }
+
+        /* Timeline (Mobile) */
         .timeline {
             background: white;
             border-radius: 16px;
             padding: 16px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        @media (min-width: 768px) {
+            .timeline {
+                display: none;
+            }
         }
 
         .timeline-day {
@@ -149,7 +234,7 @@
             color: #718096;
         }
 
-        /* Platform Post Cards */
+        /* Platform Cards */
         .platform-cards {
             display: flex;
             flex-direction: column;
@@ -211,11 +296,6 @@
             white-space: pre-wrap;
         }
 
-        .post-actions {
-            display: flex;
-            gap: 8px;
-        }
-
         .btn {
             padding: 8px 14px;
             border-radius: 8px;
@@ -246,13 +326,72 @@
             color: #4a5568;
         }
 
-        /* Image Preview */
-        .day-image {
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            max-height: 200px;
-            object-fit: cover;
-            border-radius: 12px;
-            margin-bottom: 16px;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 40px 20px;
+        }
+
+        .modal.active {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 16px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        .modal-header {
+            padding: 24px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .modal-header h2 {
+            font-size: 24px;
+            color: #1a202c;
+            margin-bottom: 4px;
+        }
+
+        .modal-header .meta {
+            color: #718096;
+            font-size: 14px;
+        }
+
+        .modal-body {
+            padding: 24px;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #e2e8f0;
+            border: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            color: #4a5568;
+            transition: all 0.2s;
+        }
+
+        .close-modal:hover {
+            background: #cbd5e0;
         }
 
         /* Empty State */
@@ -265,63 +404,6 @@
         .empty-icon {
             font-size: 64px;
             margin-bottom: 16px;
-        }
-
-        /* Loading */
-        .loading {
-            text-align: center;
-            padding: 40px 20px;
-            color: #718096;
-        }
-
-        .spinner {
-            border: 3px solid #e2e8f0;
-            border-top: 3px solid #667eea;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 16px;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Tablet/Desktop */
-        @media (min-width: 768px) {
-            body {
-                padding: 20px;
-            }
-
-            header {
-                padding: 24px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            .timeline {
-                padding: 24px;
-            }
-
-            .platform-cards {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 16px;
-            }
-
-            .day-date {
-                font-size: 20px;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .platform-cards {
-                grid-template-columns: repeat(3, 1fr);
-            }
         }
     </style>
 </head>
@@ -350,39 +432,41 @@
                 </div>
             </div>
 
-            <div class="filters">
-                <button class="filter-btn active" data-platform="all">
-                    🌐 All
-                </button>
-                <button class="filter-btn" data-platform="twitter">
-                    🐦 Twitter
-                </button>
-                <button class="filter-btn" data-platform="facebook">
-                    📘 Facebook
-                </button>
-                <button class="filter-btn" data-platform="google">
-                    🔴 Google
-                </button>
-                <button class="filter-btn" data-platform="threads">
-                    📷 Threads
-                </button>
-                <button class="filter-btn" data-platform="bluesky">
-                    🦋 Bluesky
-                </button>
+            <div class="calendar-nav">
+                <button onclick="previousMonth()">◀ Prev</button>
+                <h2 id="current-month">February 2026</h2>
+                <button onclick="nextMonth()">Next ▶</button>
             </div>
         </header>
 
-        <div class="timeline" id="timeline">
-            <div class="loading">
-                <div class="spinner"></div>
-                <div>Loading posts...</div>
+        <!-- Desktop Calendar View -->
+        <div class="calendar-wrapper">
+            <div class="calendar" id="calendar">
+                <!-- Calendar days here -->
             </div>
+        </div>
+
+        <!-- Mobile Timeline View -->
+        <div class="timeline" id="timeline">
+            <!-- Timeline here -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="postModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <div class="meta" id="modalMeta"></div>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
         </div>
     </div>
 
     <script>
         let allPosts = [];
-        let currentFilter = 'all';
+        let currentMonth = new Date();
 
         // Platform config
         const platformConfig = {
@@ -396,8 +480,8 @@
         // Initialize
         document.addEventListener('DOMContentLoaded', async function() {
             await loadPosts();
+            renderCalendar();
             renderTimeline();
-            setupFilters();
             updateStats();
         });
 
@@ -407,16 +491,76 @@
                 const response = await fetch('social/posts.json');
                 const data = await response.json();
                 allPosts = data.posts || [];
-                
-                // Sort by date (newest first)
-                allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
             } catch (error) {
                 console.error('Error loading posts:', error);
                 allPosts = [];
             }
         }
 
-        // Render timeline
+        // Render Calendar
+        function renderCalendar() {
+            const calendar = document.getElementById('calendar');
+            const monthName = currentMonth.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+            document.getElementById('current-month').textContent = monthName;
+
+            // Get first day of month and total days
+            const year = currentMonth.getFullYear();
+            const month = currentMonth.getMonth();
+            const firstDay = new Date(year, month, 1);
+            const lastDay = new Date(year, month + 1, 0);
+            const daysInMonth = lastDay.getDate();
+            const startingDayOfWeek = firstDay.getDay();
+
+            // Headers
+            const headers = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            let html = headers.map(day => `<div class="calendar-header">${day}</div>`).join('');
+
+            // Previous month days
+            const prevMonthDays = new Date(year, month, 0).getDate();
+            for (let i = startingDayOfWeek - 1; i >= 0; i--) {
+                const dayNum = prevMonthDays - i;
+                html += `<div class="calendar-day other-month"><div class="day-number">${dayNum}</div></div>`;
+            }
+
+            // Current month days
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+                const post = allPosts.find(p => p.date === dateStr);
+                const today = new Date();
+                const isToday = dateStr === today.toISOString().split('T')[0];
+                
+                let dayClass = 'calendar-day';
+                if (isToday) dayClass += ' today';
+                if (post) dayClass += ' has-post';
+
+                let platforms = '';
+                if (post) {
+                    platforms = '<div class="day-platforms">';
+                    Object.keys(post.platforms || {}).forEach(platform => {
+                        platforms += `<span class="platform-icon">${platformConfig[platform]?.icon || ''}</span>`;
+                    });
+                    platforms += '</div>';
+                }
+
+                html += `
+                    <div class="${dayClass}" ${post ? `onclick="showPost('${dateStr}')"` : ''}>
+                        <div class="day-number">${day}</div>
+                        ${platforms}
+                    </div>
+                `;
+            }
+
+            // Next month days
+            const totalCells = startingDayOfWeek + daysInMonth;
+            const remainingCells = totalCells % 7 === 0 ? 0 : 7 - (totalCells % 7);
+            for (let day = 1; day <= remainingCells; day++) {
+                html += `<div class="calendar-day other-month"><div class="day-number">${day}</div></div>`;
+            }
+
+            calendar.innerHTML = html;
+        }
+
+        // Render Timeline (Mobile)
         function renderTimeline() {
             const timeline = document.getElementById('timeline');
             
@@ -431,8 +575,9 @@
             }
 
             let html = '';
+            const sortedPosts = [...allPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
 
-            allPosts.forEach(post => {
+            sortedPosts.forEach(post => {
                 const date = new Date(post.date);
                 const dateStr = date.toLocaleDateString('en-US', { 
                     weekday: 'long', 
@@ -445,21 +590,12 @@
                     <div class="timeline-day">
                         <div class="day-header">
                             <div class="day-date">${dateStr}</div>
-                            <div class="day-meta">${post.theme}</div>
+                            <div class="day-meta">${post.theme || ''}</div>
                         </div>
+                        <div class="platform-cards">
                 `;
 
-                if (post.image) {
-                    html += `<img src="${post.image}" alt="${post.imageDescription}" class="day-image" onerror="this.style.display='none'">`;
-                }
-
-                html += '<div class="platform-cards">';
-
-                Object.keys(post.platforms).forEach(platform => {
-                    if (currentFilter !== 'all' && currentFilter !== platform) {
-                        return;
-                    }
-
+                Object.keys(post.platforms || {}).forEach(platform => {
                     const platformData = post.platforms[platform];
                     const config = platformConfig[platform];
                     const statusClass = platformData.status === 'posted' ? 'posted' : 'draft';
@@ -470,13 +606,11 @@
                                 <span class="platform-name">${config.icon} ${config.name}</span>
                                 <span class="status-badge ${statusClass}">${platformData.status}</span>
                             </div>
-                            <div class="post-text">${platformData.text}</div>
-                            <div class="post-actions">
-                                ${platformData.url ? 
-                                    `<a href="${platformData.url}" target="_blank" class="btn btn-primary">View Post →</a>` : 
-                                    `<button class="btn btn-secondary" disabled>Not Posted</button>`
-                                }
-                            </div>
+                            <div class="post-text">${platformData.text.substring(0, 150)}...</div>
+                            ${platformData.url ? 
+                                `<a href="${platformData.url}" target="_blank" class="btn btn-primary">View Post →</a>` : 
+                                `<button class="btn btn-secondary" disabled>Not Posted</button>`
+                            }
                         </div>
                     `;
                 });
@@ -487,16 +621,54 @@
             timeline.innerHTML = html;
         }
 
-        // Setup filters
-        function setupFilters() {
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-                    currentFilter = this.dataset.platform;
-                    renderTimeline();
-                });
+        // Show post modal
+        function showPost(dateStr) {
+            const post = allPosts.find(p => p.date === dateStr);
+            if (!post) return;
+
+            document.getElementById('modalTitle').textContent = post.theme || dateStr;
+            document.getElementById('modalMeta').textContent = `${post.date} at ${post.time || ''}`;
+
+            let bodyHTML = '';
+
+            Object.keys(post.platforms || {}).forEach(platform => {
+                const platformData = post.platforms[platform];
+                const config = platformConfig[platform];
+                const statusClass = platformData.status === 'posted' ? 'posted' : 'draft';
+
+                bodyHTML += `
+                    <div class="platform-card ${platform}" style="margin-bottom: 16px;">
+                        <div class="platform-header">
+                            <span class="platform-name">${config.icon} ${config.name}</span>
+                            <span class="status-badge ${statusClass}">${platformData.status}</span>
+                        </div>
+                        <div class="post-text">${platformData.text}</div>
+                        ${platformData.url ? 
+                            `<a href="${platformData.url}" target="_blank" class="btn btn-primary">View Post →</a>` : 
+                            `<button class="btn btn-secondary" disabled>Not Posted</button>`
+                        }
+                    </div>
+                `;
             });
+
+            document.getElementById('modalBody').innerHTML = bodyHTML;
+            document.getElementById('postModal').classList.add('active');
+        }
+
+        // Close modal
+        function closeModal() {
+            document.getElementById('postModal').classList.remove('active');
+        }
+
+        // Calendar navigation
+        function previousMonth() {
+            currentMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1, 1);
+            renderCalendar();
+        }
+
+        function nextMonth() {
+            currentMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 1);
+            renderCalendar();
         }
 
         // Update stats
@@ -506,7 +678,7 @@
             let draftCount = 0;
 
             allPosts.forEach(post => {
-                Object.values(post.platforms).forEach(platform => {
+                Object.values(post.platforms || {}).forEach(platform => {
                     totalPosts++;
                     if (platform.status === 'posted') {
                         postedCount++;
@@ -521,6 +693,12 @@
             document.getElementById('draftCount').textContent = draftCount;
         }
 
+        // Close modal on outside click
+        document.getElementById('postModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
     </script>
 </body>
 </html>
