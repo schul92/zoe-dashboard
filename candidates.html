@@ -27,6 +27,11 @@
             position: sticky;
             top: 0;
             z-index: 100;
+            transition: transform 0.3s ease;
+        }
+        
+        .header.hidden {
+            transform: translateY(-100%);
         }
         
         .header h1 {
@@ -216,22 +221,42 @@
             margin-bottom: 0.125rem;
         }
         
+        .card-actions {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
         .phone-link {
-            color: #667eea;
+            color: white;
+            background: #667eea;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.05rem;
+            font-size: 1rem;
             display: inline-block;
-            padding: 0.5rem 1rem;
-            background: #f0f4ff;
+            padding: 0.75rem 1rem;
             border-radius: 6px;
-            margin-top: 0.5rem;
-            width: 100%;
             text-align: center;
         }
         
         .phone-link:active {
-            background: #e0e9ff;
+            background: #5568d3;
+        }
+        
+        .detail-btn {
+            background: #f8f9fa;
+            border: 2px solid #ecf0f1;
+            color: #667eea;
+            font-weight: 600;
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        
+        .detail-btn:active {
+            background: #ecf0f1;
         }
         
         .score-badge {
@@ -241,11 +266,10 @@
             border-radius: 12px;
             font-weight: 600;
             font-size: 0.85rem;
-            margin-left: 0.5rem;
         }
         
         .resume-status {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
         
         .resume-status.has { color: #4caf50; }
@@ -263,6 +287,106 @@
             text-align: center;
             font-weight: 500;
             color: #7f8c8d;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        
+        .modal.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        
+        .modal-header {
+            padding: 1.5rem;
+            border-bottom: 2px solid #ecf0f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 1;
+        }
+        
+        .modal-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            line-height: 1;
+            color: #7f8c8d;
+        }
+        
+        .modal-body {
+            padding: 1.5rem;
+        }
+        
+        .detail-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .detail-section h3 {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .detail-section p {
+            font-size: 1rem;
+            color: #2c3e50;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+        
+        .skill-item {
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .skill-item.yes {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .skill-item.no {
+            background: #ffebee;
+            color: #c62828;
         }
         
         /* Desktop optimizations */
@@ -300,7 +424,7 @@
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="header">
         <h1>☕ 77 Candidates</h1>
         <div class="subtitle">Kona Coffee Donut | Feb 9, 2026</div>
     </div>
@@ -350,14 +474,44 @@
         </div>
     </div>
     
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="modal-title">Candidate Details</div>
+                <button class="modal-close" onclick="closeModal()">×</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
     <script src="candidates-data.js"></script>
     <script>
         // State
         let currentFilter = 'all';
         let searchQuery = '';
+        let lastScrollY = 0;
         
         // Initialize
         renderCards();
+        
+        // Scroll handler for header hide/show
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                // Scrolling down
+                header.classList.add('hidden');
+            } else {
+                // Scrolling up
+                header.classList.remove('hidden');
+            }
+            
+            lastScrollY = currentScrollY;
+        });
         
         // Event listeners
         document.getElementById('search').addEventListener('input', (e) => {
@@ -372,6 +526,13 @@
                 currentFilter = e.target.dataset.tier;
                 renderCards();
             });
+        });
+        
+        // Modal close on background click
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') {
+                closeModal();
+            }
         });
         
         function renderCards() {
@@ -397,7 +558,7 @@
             
             // Render cards
             const container = document.getElementById('candidates-list');
-            container.innerHTML = filtered.map(c => `
+            container.innerHTML = filtered.map((c, idx) => `
                 <div class="candidate-card ${c.tier}">
                     <div class="card-header">
                         <div class="card-name">${c.name}</div>
@@ -420,15 +581,6 @@
                             </div>
                         </div>
                         ` : ''}
-                        ${c.education ? `
-                        <div class="info-row">
-                            <div class="info-icon">🎓</div>
-                            <div class="info-content">
-                                <div class="info-label">Education</div>
-                                ${c.education}
-                            </div>
-                        </div>
-                        ` : ''}
                         <div class="info-row">
                             <div class="info-icon">📍</div>
                             <div class="info-content">
@@ -443,30 +595,92 @@
                                 ${c.date}
                             </div>
                         </div>
-                        <div class="info-row">
-                            <div class="info-icon">📄</div>
-                            <div class="info-content">
-                                <div class="info-label">Resume</div>
-                                <span class="resume-status ${c.resume ? 'has' : 'missing'}">
-                                    ${c.resume ? '✓ Available' : '✗ Not found'}
-                                </span>
-                            </div>
+                        <div class="card-actions">
+                            <a href="tel:${c.phone.replace(/[^\d]/g, '')}" class="phone-link">
+                                📞 ${c.phone}
+                            </a>
+                            <button class="detail-btn" onclick="showDetails(${idx})">
+                                상세보기
+                            </button>
                         </div>
-                        <a href="tel:${c.phone.replace(/[^\d]/g, '')}" class="phone-link">
-                            📞 ${c.phone}
-                        </a>
                     </div>
                 </div>
             `).join('');
         }
         
+        function showDetails(index) {
+            const c = candidatesData[index];
+            const modal = document.getElementById('modal');
+            const title = document.getElementById('modal-title');
+            const body = document.getElementById('modal-body');
+            
+            title.textContent = c.name;
+            
+            body.innerHTML = `
+                <div class="detail-section">
+                    <h3>🏆 Tier & Score</h3>
+                    <p>
+                        <span class="tier-badge ${c.tier}">${getTierLabel(c.tier)}</span>
+                        <span class="score-badge">${c.score}/11 Qualifications</span>
+                    </p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>📞 Contact</h3>
+                    <p><a href="tel:${c.phone.replace(/[^\d]/g, '')}" class="phone-link">${c.phone}</a></p>
+                </div>
+                
+                ${c.experience ? `
+                <div class="detail-section">
+                    <h3>💼 Experience</h3>
+                    <p>${c.experience}</p>
+                </div>
+                ` : ''}
+                
+                ${c.education ? `
+                <div class="detail-section">
+                    <h3>🎓 Education</h3>
+                    <p>${c.education}</p>
+                </div>
+                ` : ''}
+                
+                <div class="detail-section">
+                    <h3>📍 Location</h3>
+                    <p>${c.location}</p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>📅 Application Date</h3>
+                    <p>${c.date}</p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>📄 Resume Status</h3>
+                    <p>
+                        <span class="resume-status ${c.resume ? 'has' : 'missing'}">
+                            ${c.resume ? '✓ Resume file available in downloads' : '✗ Resume not found'}
+                        </span>
+                    </p>
+                </div>
+            `;
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
         function getTierLabel(tier) {
             const labels = {
-                'top': '🌟',
-                'strong': '⭐',
-                'good': '✅',
-                'fair': '⚠️',
-                'weak': '❌'
+                'top': '🌟 TOP TIER',
+                'strong': '⭐ STRONG',
+                'good': '✅ GOOD',
+                'fair': '⚠️ FAIR',
+                'weak': '❌ TRAINING'
             };
             return labels[tier] || tier;
         }
