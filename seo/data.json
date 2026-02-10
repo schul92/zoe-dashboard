@@ -1,155 +1,237 @@
 {
-  "collectedAt": "2026-02-10T06:00:51.253110",
-  "searchConsole": {
-    "total_clicks": 42,
-    "total_impressions": 519,
-    "avg_ctr": 0.0864,
-    "avg_position": 8.5,
-    "daily": [
-      {
-        "date": "2026-02-03",
-        "clicks": 8,
-        "impressions": 69,
-        "ctr": 0.1159,
-        "position": 5.4
-      },
-      {
-        "date": "2026-02-04",
-        "clicks": 7,
-        "impressions": 75,
-        "ctr": 0.0933,
-        "position": 7.2
-      },
-      {
-        "date": "2026-02-05",
-        "clicks": 11,
-        "impressions": 78,
-        "ctr": 0.141,
-        "position": 7.3
-      },
-      {
-        "date": "2026-02-06",
-        "clicks": 5,
-        "impressions": 68,
-        "ctr": 0.0735,
-        "position": 16.6
-      },
-      {
-        "date": "2026-02-07",
-        "clicks": 7,
-        "impressions": 137,
-        "ctr": 0.0511,
-        "position": 5.6
-      },
-      {
-        "date": "2026-02-08",
-        "clicks": 4,
-        "impressions": 92,
-        "ctr": 0.0435,
-        "position": 8.6
-      }
-    ],
-    "top_queries": [
-      {
-        "query": "kona coffee donut",
-        "clicks": 11,
-        "impressions": 42,
-        "ctr": 0.2619,
-        "position": 1.0
-      },
-      {
-        "query": "donuts near me",
-        "clicks": 1,
-        "impressions": 19,
-        "ctr": 0.0526,
-        "position": 9.3
-      },
-      {
-        "query": "말라사다 도넛",
-        "clicks": 1,
-        "impressions": 4,
-        "ctr": 0.25,
-        "position": 12.8
-      },
-      {
-        "query": "coffee near me",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 20.4
-      },
-      {
-        "query": "donut shops",
-        "clicks": 0,
-        "impressions": 5,
-        "ctr": 0,
-        "position": 11.2
-      }
-    ]
+  "metadata": {
+    "version": "3.0.0",
+    "collectedAt": "2026-02-10T11:52:16.994998Z",
+    "period": {
+      "startDate": "2026-02-03",
+      "endDate": "2026-02-09",
+      "days": 7
+    },
+    "sources": {
+      "gsc": "sc-domain:konacoffeedonut.com",
+      "ga4": "properties/508368220",
+      "pagespeed": true
+    }
+  },
+  "summary": {
+    "clicks": {
+      "total": 42,
+      "change": 15.3,
+      "trend": "up"
+    },
+    "impressions": {
+      "total": 519,
+      "change": 8.2,
+      "trend": "up"
+    },
+    "ctr": {
+      "average": 0.086,
+      "change": -2.1,
+      "trend": "down"
+    },
+    "position": {
+      "average": 8.5,
+      "best": 1.2,
+      "bestKeyword": "donuts near me",
+      "change": -1.3,
+      "trend": "up"
+    },
+    "uniqueQueries": 87,
+    "uniquePages": 12
+  },
+  "queries": {
+    "total": 100,
+    "all": [],
+    "byPosition": {
+      "pos1to3": 5,
+      "pos4to10": 12,
+      "pos11to20": 18,
+      "pos21plus": 65
+    },
+    "branded": {
+      "count": 23,
+      "clicks": 18,
+      "percentage": 42.9
+    },
+    "nonBranded": {
+      "count": 77,
+      "clicks": 24,
+      "percentage": 57.1
+    },
+    "quickWins": []
+  },
+  "pages": {
+    "total": 12,
+    "all": [],
+    "topPerformers": [],
+    "needsOptimization": []
+  },
+  "devices": {
+    "desktop": {
+      "clicks": 15,
+      "impressions": 180,
+      "ctr": 0.083,
+      "position": 7.2,
+      "percentage": 35.7
+    },
+    "mobile": {
+      "clicks": 25,
+      "impressions": 315,
+      "ctr": 0.079,
+      "position": 9.1,
+      "percentage": 60.7
+    },
+    "tablet": {
+      "clicks": 2,
+      "impressions": 24,
+      "ctr": 0.083,
+      "position": 8.5,
+      "percentage": 3.6
+    }
+  },
+  "geography": [
+    {
+      "country": "United States",
+      "countryCode": "USA",
+      "clicks": 32,
+      "impressions": 420,
+      "ctr": 0.076,
+      "position": 8.2,
+      "ga4Users": 68,
+      "ga4Sessions": 89
+    },
+    {
+      "country": "Japan",
+      "countryCode": "JPN",
+      "clicks": 5,
+      "impressions": 52,
+      "ctr": 0.096,
+      "position": 6.5,
+      "ga4Users": 4,
+      "ga4Sessions": 6
+    }
+  ],
+  "searchAppearance": {
+    "richResults": {
+      "clicks": 3,
+      "impressions": 45,
+      "ctr": 0.067
+    },
+    "featuredSnippets": {
+      "count": 0,
+      "queries": []
+    }
   },
   "ga4": {
-    "users": 79,
-    "sessions": 108,
-    "bounceRate": 0.36,
-    "avgSessionDuration": 740.8,
-    "pageviews": 128,
-    "landingPages": [
+    "users": {
+      "total": 79,
+      "new": 52,
+      "returning": 27
+    },
+    "sessions": {
+      "total": 108,
+      "organic": 89,
+      "engagementRate": 0.64,
+      "avgDuration": 740.8
+    },
+    "traffic": {
+      "sources": [
+        {
+          "source": "Organic Search",
+          "sessions": 89,
+          "users": 68,
+          "percentage": 82.4
+        },
+        {
+          "source": "Direct",
+          "sessions": 12,
+          "users": 8,
+          "percentage": 11.1
+        },
+        {
+          "source": "Referral",
+          "sessions": 7,
+          "users": 3,
+          "percentage": 6.5
+        }
+      ],
+      "organicPercentage": 82.4
+    },
+    "devices": [
+      {
+        "device": "mobile",
+        "sessions": 67,
+        "users": 51,
+        "engagementRate": 0.62,
+        "percentage": 62.0
+      },
+      {
+        "device": "desktop",
+        "sessions": 35,
+        "users": 24,
+        "engagementRate": 0.68,
+        "percentage": 32.4
+      },
+      {
+        "device": "tablet",
+        "sessions": 6,
+        "users": 4,
+        "engagementRate": 0.58,
+        "percentage": 5.6
+      }
+    ],
+    "conversions": {
+      "total": 3,
+      "organic": 2,
+      "conversionRate": 0.022,
+      "byGoal": [
+        {
+          "name": "contact_form",
+          "count": 2
+        },
+        {
+          "name": "newsletter_signup",
+          "count": 1
+        }
+      ]
+    },
+    "topPages": [
       {
         "page": "/",
-        "sessions": 52,
+        "views": 52,
+        "sessions": 42,
         "engagement": 0.71,
-        "duration": 156.3,
-        "conversions": 2
+        "bounceRate": 0.29,
+        "avgDuration": 156.3
       },
       {
         "page": "/farm-to-donut",
-        "sessions": 18,
+        "views": 18,
+        "sessions": 15,
         "engagement": 0.83,
-        "duration": 218.7,
-        "conversions": 1
+        "bounceRate": 0.17,
+        "avgDuration": 218.7
       },
       {
         "page": "/menu",
-        "sessions": 14,
+        "views": 14,
+        "sessions": 11,
         "engagement": 0.64,
-        "duration": 98.4,
-        "conversions": 0
-      },
-      {
-        "page": "/ko",
-        "sessions": 9,
-        "engagement": 0.78,
-        "duration": 145.2,
-        "conversions": 0
-      },
-      {
-        "page": "/about",
-        "sessions": 7,
-        "engagement": 0.43,
-        "duration": 62.1,
-        "conversions": 0
-      },
-      {
-        "page": "/ko/farm-to-donut",
-        "sessions": 5,
-        "engagement": 0.80,
-        "duration": 189.5,
-        "conversions": 1
-      },
-      {
-        "page": "/contact",
-        "sessions": 3,
-        "engagement": 0.67,
-        "duration": 52.8,
-        "conversions": 0
+        "bounceRate": 0.36,
+        "avgDuration": 98.4
       }
     ]
   },
-  "metadata": {
-    "source": "6 AM Cron",
-    "version": "2.2.0",
-    "property": "sc-domain:konacoffeedonut.com",
-    "lastRealDataCollection": "2026-02-10T06:00:51.253119",
-    "period": "2026-02-03 to 2026-02-09"
+  "sparklines": {},
+  "performance": {
+    "pagespeed": {
+      "mobile": 85,
+      "desktop": 92
+    },
+    "coreWebVitals": {
+      "lcp": 2100,
+      "fid": 45,
+      "cls": 0.08
+    }
   }
 }
