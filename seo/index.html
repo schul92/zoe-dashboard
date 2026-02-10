@@ -766,39 +766,40 @@
             const sc = seoData.searchConsole || {};
             const kw = seoData.keywordPositions || {};
             const ga4 = seoData.ga4 || {};
-            const rows = sc.rows || [];
+            const rows = sc.top_queries || [];
 
             // Update timestamp
             const dt = new Date(seoData.collectedAt);
             document.getElementById('lastUpdated').textContent = dt.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
-            document.getElementById('dateRange').textContent = `${sc.dateRange?.start || '--'} to ${sc.dateRange?.end || '--'}`;
+            document.getElementById('dateRange').textContent = seoData.metadata?.period || 'Last 7 days';
 
             // Hero stats
-            document.getElementById('totalClicks').textContent = formatNumber(sc.totals?.clicks);
-            document.getElementById('totalImpressions').textContent = formatNumber(sc.totals?.impressions);
-            document.getElementById('avgCtr').textContent = (sc.totals?.ctr || 0).toFixed(1) + '%';
+            document.getElementById('totalClicks').textContent = formatNumber(sc.total_clicks);
+            document.getElementById('totalImpressions').textContent = formatNumber(sc.total_impressions);
+            document.getElementById('avgCtr').textContent = ((sc.avg_ctr || 0) * 100).toFixed(1) + '%';
 
-            // Find top position
+            // Find top position from queries
             let topPos = 999, topKw = '';
-            for (const [keyword, data] of Object.entries(kw)) {
-                if (data.position && data.position < topPos) {
-                    topPos = data.position;
-                    topKw = keyword;
-                }
+            const queries = sc.top_queries || [];
+            if (queries.length > 0) {
+                // Find query with best (lowest) position
+                const best = queries.reduce((min, q) => q.position < min.position ? q : min, queries[0]);
+                topPos = best.position;
+                topKw = best.query;
             }
             document.getElementById('topPosition').textContent = topPos < 999 ? `#${Math.round(topPos)}` : '--';
             document.getElementById('topKeyword').textContent = topKw || '--';
 
             // GA4 stats
-            if (ga4.success) {
-                document.getElementById('ga4Users').textContent = formatNumber(ga4.activeUsers);
+            if (ga4 && ga4.users) {
+                document.getElementById('ga4Users').textContent = formatNumber(ga4.users);
                 document.getElementById('ga4Sessions').textContent = formatNumber(ga4.sessions);
-                document.getElementById('ga4PageViews').textContent = formatNumber(ga4.pageviews || ga4.pageViews);
-                document.getElementById('ga4Bounce').textContent = (ga4.bounceRate || 0).toFixed(0) + '%';
+                document.getElementById('ga4PageViews').textContent = formatNumber(ga4.pageviews);
+                document.getElementById('ga4Bounce').textContent = ((ga4.bounceRate || 0) * 100).toFixed(0) + '%';
                 document.getElementById('ga4Duration').textContent = formatDuration(ga4.avgSessionDuration);
                 
                 // NEW: Engagement Rate (calculate from bounce rate if not provided)
-                const engagementRate = ga4.engagementRate ?? (100 - (ga4.bounceRate || 0));
+                const engagementRate = ga4.engagementRate ?? (100 - ((ga4.bounceRate || 0) * 100));
                 document.getElementById('ga4Engagement').textContent = engagementRate.toFixed(0) + '%';
                 
                 renderTrafficSourcesChart(ga4.trafficSources || []);
@@ -818,8 +819,9 @@
             // NEW: Opportunity Keywords
             renderOpportunityKeywords(sc.opportunityKeywords, kw);
 
-            // Keywords
-            renderKeywordsTable(kw);
+            // Keywords (use top 10 queries)
+            const topQueries = rows.slice(0, 10);
+            renderKeywordsTable(topQueries);
             renderAllQueriesTable(rows);
 
             // Alerts
