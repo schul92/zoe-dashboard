@@ -1,0 +1,385 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SEO Dashboard Data Schema v3.0",
+  "description": "Comprehensive schema leveraging all GSC + GA4 dimensions, inspired by Ahrefs/SEMrush/Data Bloo",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "version": { "type": "string", "const": "3.0.0" },
+        "collectedAt": { "type": "string", "format": "date-time" },
+        "period": {
+          "type": "object",
+          "properties": {
+            "startDate": { "type": "string", "format": "date" },
+            "endDate": { "type": "string", "format": "date" },
+            "days": { "type": "integer" }
+          }
+        },
+        "sources": {
+          "type": "object",
+          "properties": {
+            "gsc": { "type": "string" },
+            "ga4": { "type": "string" },
+            "pagespeed": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    
+    "summary": {
+      "description": "Top-level KPIs (hero stats)",
+      "type": "object",
+      "properties": {
+        "clicks": {
+          "type": "object",
+          "properties": {
+            "total": { "type": "integer" },
+            "change": { "type": "number", "description": "% change vs previous period" },
+            "trend": { "type": "string", "enum": ["up", "down", "flat"] }
+          }
+        },
+        "impressions": {
+          "type": "object",
+          "properties": {
+            "total": { "type": "integer" },
+            "change": { "type": "number" },
+            "trend": { "type": "string", "enum": ["up", "down", "flat"] }
+          }
+        },
+        "ctr": {
+          "type": "object",
+          "properties": {
+            "average": { "type": "number" },
+            "change": { "type": "number" },
+            "trend": { "type": "string", "enum": ["up", "down", "flat"] }
+          }
+        },
+        "position": {
+          "type": "object",
+          "properties": {
+            "average": { "type": "number" },
+            "best": { "type": "number" },
+            "bestKeyword": { "type": "string" },
+            "change": { "type": "number" },
+            "trend": { "type": "string", "enum": ["up", "down", "flat"] }
+          }
+        },
+        "uniqueQueries": {
+          "type": "integer",
+          "description": "Total number of unique keywords driving traffic"
+        },
+        "uniquePages": {
+          "type": "integer",
+          "description": "Number of pages receiving organic traffic"
+        }
+      }
+    },
+
+    "queries": {
+      "description": "Keyword-level data (expanded to 100+)",
+      "type": "object",
+      "properties": {
+        "total": { "type": "integer" },
+        "all": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "query": { "type": "string" },
+              "clicks": { "type": "integer" },
+              "impressions": { "type": "integer" },
+              "ctr": { "type": "number" },
+              "position": { "type": "number" },
+              "device": { "type": "string", "enum": ["DESKTOP", "MOBILE", "TABLET"] },
+              "country": { "type": "string" },
+              "branded": { "type": "boolean" },
+              "searchType": { "type": "string", "enum": ["WEB", "IMAGE", "VIDEO", "NEWS"] },
+              "opportunityScore": { "type": "integer", "description": "Calculated score for quick-win potential" }
+            }
+          }
+        },
+        "byPosition": {
+          "type": "object",
+          "properties": {
+            "pos1to3": { "type": "integer", "description": "Count of keywords in positions 1-3" },
+            "pos4to10": { "type": "integer" },
+            "pos11to20": { "type": "integer" },
+            "pos21plus": { "type": "integer" }
+          }
+        },
+        "branded": {
+          "type": "object",
+          "properties": {
+            "count": { "type": "integer" },
+            "clicks": { "type": "integer" },
+            "percentage": { "type": "number" }
+          }
+        },
+        "nonBranded": {
+          "type": "object",
+          "properties": {
+            "count": { "type": "integer" },
+            "clicks": { "type": "integer" },
+            "percentage": { "type": "number" }
+          }
+        },
+        "quickWins": {
+          "description": "Keywords in positions 4-20 with high impressions (optimization targets)",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "query": { "type": "string" },
+              "position": { "type": "number" },
+              "impressions": { "type": "integer" },
+              "ctr": { "type": "number" },
+              "potentialClicks": { "type": "integer", "description": "Estimated clicks if moved to position 1-3" }
+            }
+          }
+        }
+      }
+    },
+
+    "pages": {
+      "description": "Landing page performance (NEW!)",
+      "type": "object",
+      "properties": {
+        "total": { "type": "integer" },
+        "all": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "page": { "type": "string" },
+              "clicks": { "type": "integer" },
+              "impressions": { "type": "integer" },
+              "ctr": { "type": "number" },
+              "position": { "type": "number" },
+              "uniqueQueries": { "type": "integer" },
+              "ga4": {
+                "type": "object",
+                "properties": {
+                  "sessions": { "type": "integer" },
+                  "engagement": { "type": "number" },
+                  "bounceRate": { "type": "number" },
+                  "avgDuration": { "type": "number" },
+                  "conversions": { "type": "integer" }
+                }
+              }
+            }
+          }
+        },
+        "topPerformers": {
+          "description": "Pages with high traffic and engagement",
+          "type": "array",
+          "maxItems": 10
+        },
+        "needsOptimization": {
+          "description": "Pages with high impressions but low CTR",
+          "type": "array",
+          "maxItems": 10
+        }
+      }
+    },
+
+    "devices": {
+      "description": "Device-level breakdown (GSC data)",
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "type": "object",
+          "properties": {
+            "clicks": { "type": "integer" },
+            "impressions": { "type": "integer" },
+            "ctr": { "type": "number" },
+            "position": { "type": "number" },
+            "percentage": { "type": "number" }
+          }
+        },
+        "mobile": {
+          "type": "object",
+          "properties": {
+            "clicks": { "type": "integer" },
+            "impressions": { "type": "integer" },
+            "ctr": { "type": "number" },
+            "position": { "type": "number" },
+            "percentage": { "type": "number" }
+          }
+        },
+        "tablet": {
+          "type": "object",
+          "properties": {
+            "clicks": { "type": "integer" },
+            "impressions": { "type": "integer" },
+            "ctr": { "type": "number" },
+            "position": { "type": "number" },
+            "percentage": { "type": "number" }
+          }
+        }
+      }
+    },
+
+    "geography": {
+      "description": "Country-level data (GSC + GA4)",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "countryCode": { "type": "string" },
+          "clicks": { "type": "integer" },
+          "impressions": { "type": "integer" },
+          "ctr": { "type": "number" },
+          "position": { "type": "number" },
+          "ga4Users": { "type": "integer" },
+          "ga4Sessions": { "type": "integer" }
+        }
+      }
+    },
+
+    "searchAppearance": {
+      "description": "SERP features (rich results, featured snippets)",
+      "type": "object",
+      "properties": {
+        "richResults": {
+          "type": "object",
+          "properties": {
+            "clicks": { "type": "integer" },
+            "impressions": { "type": "integer" },
+            "ctr": { "type": "number" }
+          }
+        },
+        "featuredSnippets": {
+          "type": "object",
+          "properties": {
+            "count": { "type": "integer" },
+            "queries": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+
+    "ga4": {
+      "description": "Google Analytics 4 data (expanded)",
+      "type": "object",
+      "properties": {
+        "users": {
+          "type": "object",
+          "properties": {
+            "total": { "type": "integer" },
+            "new": { "type": "integer" },
+            "returning": { "type": "integer" }
+          }
+        },
+        "sessions": {
+          "type": "object",
+          "properties": {
+            "total": { "type": "integer" },
+            "organic": { "type": "integer" },
+            "engagementRate": { "type": "number" },
+            "avgDuration": { "type": "number" }
+          }
+        },
+        "traffic": {
+          "type": "object",
+          "properties": {
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "source": { "type": "string" },
+                  "sessions": { "type": "integer" },
+                  "users": { "type": "integer" },
+                  "percentage": { "type": "number" }
+                }
+              }
+            },
+            "organicPercentage": { "type": "number" }
+          }
+        },
+        "devices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "device": { "type": "string" },
+              "sessions": { "type": "integer" },
+              "users": { "type": "integer" },
+              "engagementRate": { "type": "number" },
+              "percentage": { "type": "number" }
+            }
+          }
+        },
+        "conversions": {
+          "type": "object",
+          "properties": {
+            "total": { "type": "integer" },
+            "organic": { "type": "integer" },
+            "conversionRate": { "type": "number" },
+            "byGoal": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "count": { "type": "integer" }
+                }
+              }
+            }
+          }
+        },
+        "topPages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "page": { "type": "string" },
+              "views": { "type": "integer" },
+              "sessions": { "type": "integer" },
+              "engagement": { "type": "number" },
+              "bounceRate": { "type": "number" },
+              "avgDuration": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+
+    "sparklines": {
+      "description": "7-day trend data for hero stats",
+      "type": "object",
+      "properties": {
+        "dates": { "type": "array", "items": { "type": "string", "format": "date" } },
+        "clicks": { "type": "array", "items": { "type": "integer" } },
+        "impressions": { "type": "array", "items": { "type": "integer" } },
+        "ctr": { "type": "array", "items": { "type": "number" } },
+        "position": { "type": "array", "items": { "type": "number" } }
+      }
+    },
+
+    "performance": {
+      "description": "PageSpeed and technical SEO",
+      "type": "object",
+      "properties": {
+        "pagespeed": {
+          "type": "object",
+          "properties": {
+            "mobile": { "type": "integer" },
+            "desktop": { "type": "integer" }
+          }
+        },
+        "coreWebVitals": {
+          "type": "object",
+          "properties": {
+            "lcp": { "type": "number", "description": "Largest Contentful Paint (ms)" },
+            "fid": { "type": "number", "description": "First Input Delay (ms)" },
+            "cls": { "type": "number", "description": "Cumulative Layout Shift" }
+          }
+        }
+      }
+    }
+  }
+}

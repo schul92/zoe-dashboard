@@ -104,8 +104,12 @@
                 </div>
             </div>
             <div class="flex items-center gap-3">
+                <select id="clientSelector" class="px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-sm font-medium hover:bg-zinc-700 transition-colors cursor-pointer">
+                    <option value="kona">☕ Kona Coffee Donut</option>
+                    <option value="carek9">🐕 CareK9</option>
+                </select>
                 <span class="badge success">All Systems Operational</span>
-                <button class="btn">
+                <button class="btn" onclick="window.location.reload()">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                     </svg>
@@ -396,3 +400,47 @@
 
 </body>
 </html>
+
+<script>
+// Client switcher functionality
+const clientSelector = document.getElementById('clientSelector');
+const currentClient = localStorage.getItem('selectedClient') || 'kona';
+
+// Set initial selection
+clientSelector.value = currentClient;
+
+// Handle client change
+clientSelector.addEventListener('change', (e) => {
+    const newClient = e.target.value;
+    localStorage.setItem('selectedClient', newClient);
+    
+    // Update dashboard links
+    document.querySelectorAll('a[href*="/seo"], a[href*="/news"], a[href*="/social"]').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href.includes('/seo')) {
+            link.setAttribute('href', `clients/${newClient}/seo/`);
+        } else if (href.includes('/news')) {
+            link.setAttribute('href', `clients/${newClient}/news.html`);
+        } else if (href.includes('/social')) {
+            link.setAttribute('href', `clients/${newClient}/social.html`);
+        }
+    });
+    
+    // Reload to show new client data
+    window.location.reload();
+});
+
+// Initialize links based on current client
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href*="/seo"], a[href*="/news"], a[href*="/social"]').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href.startsWith('./seo') || href.startsWith('seo/')) {
+            link.setAttribute('href', `clients/${currentClient}/seo/`);
+        } else if (href.includes('news.html')) {
+            link.setAttribute('href', `clients/${currentClient}/news.html`);
+        } else if (href.includes('social.html')) {
+            link.setAttribute('href', `clients/${currentClient}/social.html`);
+        }
+    });
+});
+</script>

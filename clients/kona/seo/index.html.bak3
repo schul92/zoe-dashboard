@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kona Coffee Donut | SEO Command Center v3.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 500: '#f97316', 600: '#ea580c' },
+                        surface: { 50: '#18181b', 100: '#1f1f23', 200: '#27272a', 300: '#3f3f46' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #09090b; }
+        .glass { background: rgba(255,255,255,0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.05); }
+        .glass-hover:hover { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1); }
+        .glow-orange { box-shadow: 0 0 60px -15px rgba(249, 115, 22, 0.4); }
+        .glow-blue { box-shadow: 0 0 60px -15px rgba(59, 130, 246, 0.4); }
+        .glow-green { box-shadow: 0 0 60px -15px rgba(34, 197, 94, 0.4); }
+        .glow-purple { box-shadow: 0 0 60px -15px rgba(168, 85, 247, 0.4); }
+        .glow-amber { box-shadow: 0 0 60px -15px rgba(245, 158, 11, 0.4); }
+        .stat-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; }
+        .stat-card:hover { transform: translateY(-4px) scale(1.02); }
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            transition: left 0.5s;
+        }
+        .stat-card:hover::before { left: 100%; }
+        .sparkline-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        .gradient-text { background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .sortable { cursor: pointer; user-select: none; transition: color 0.2s; }
+        .sortable:hover { color: #f97316; }
+        @keyframes slideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-slide-in { animation: slideIn 0.5s ease-out forwards; }
+        .delay-1 { animation-delay: 0.1s; opacity: 0; }
+        .delay-2 { animation-delay: 0.2s; opacity: 0; }
+        .delay-3 { animation-delay: 0.3s; opacity: 0; }
+        .delay-4 { animation-delay: 0.4s; opacity: 0; }
+        .tooltip-trigger { position: relative; cursor: help; }
+        .tooltip-trigger::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #18181b;
+            border: 1px solid #3f3f46;
+            color: #a1a1aa;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 400;
+            white-space: normal;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s, transform 0.2s;
+            z-index: 100;
+            max-width: 280px;
+            text-align: center;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.5);
+        }
+        .tooltip-trigger:hover::after { opacity: 1; transform: translateX(-50%) translateY(-4px); }
+        .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+        .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+        .scrollbar-thin::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 3px; }
+        .scrollbar-thin::-webkit-scrollbar-thumb:hover { background: #52525b; }
+        .pagination-btn { transition: all 0.2s; }
+        .pagination-btn:hover:not(:disabled) { background: rgba(249, 115, 22, 0.2); border-color: rgba(249, 115, 22, 0.5); }
+        .pagination-btn.active { background: rgba(249, 115, 22, 0.3); border-color: #f97316; color: #f97316; }
+        .pagination-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+    </style>
+</head>
+<body class="text-zinc-100 min-h-screen">
+    
+    <!-- Ambient Background -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="relative border-b border-zinc-800/50 sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-xl">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3 sm:gap-5">
+                    <a href="../" class="flex items-center gap-2 px-2 sm:px-3 py-2 -ml-2 sm:-ml-3 rounded-lg hover:bg-zinc-800/50 transition-colors text-zinc-400 hover:text-zinc-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                        <span class="text-sm font-medium hidden sm:inline">Hub</span>
+                    </a>
+                    <div class="w-px h-8 bg-zinc-800 hidden sm:block"></div>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-amber-500 flex items-center justify-center text-xl sm:text-2xl shadow-lg shadow-orange-500/20">
+                        ☕
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-bold tracking-tight">Kona Coffee Donut</h1>
+                        <p class="text-xs sm:text-sm text-zinc-500 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            SEO Command Center
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <div class="text-right mr-2 sm:mr-4 hidden sm:block">
+                        <p class="text-xs text-zinc-500">Last Updated</p>
+                        <p class="text-sm font-medium" id="lastUpdated">Loading...</p>
+                    </div>
+                    <button onclick="refreshData()" class="px-3 sm:px-4 py-2 sm:py-2.5 bg-zinc-800 hover:bg-zinc-700 rounded-xl transition-all flex items-center gap-2 text-sm font-medium border border-zinc-700/50 hover:border-zinc-600">
+                        <svg class="w-4 h-4" id="refreshIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                        <span class="hidden sm:inline">Refresh</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative max-w-[1600px] mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        
+        <!-- Unique Metrics Badges -->
+        <section class="flex flex-wrap gap-3 mb-6 sm:mb-8 animate-slide-in">
+            <div class="stat-card glass rounded-2xl px-5 py-4 flex items-center gap-3 glow-amber">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/20 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/></svg>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold gradient-text" id="uniqueQueries">--</p>
+                    <p class="text-xs text-zinc-400">Unique Keywords</p>
+                </div>
+            </div>
+            <div class="stat-card glass rounded-2xl px-5 py-4 flex items-center gap-3 glow-blue">
+                <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold text-blue-400" id="uniquePages">--</p>
+                    <p class="text-xs text-zinc-400">Unique Pages</p>
+                </div>
+            </div>
+            <div class="stat-card glass rounded-2xl px-5 py-4 flex items-center gap-3 glow-green">
+                <div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-lg">📊</div>
+                <div>
+                    <p class="text-2xl font-bold text-emerald-400" id="posBreakdown">--</p>
+                    <p class="text-xs text-zinc-400">Page 1 Keywords</p>
+                </div>
+            </div>
+            <div class="stat-card glass rounded-2xl px-5 py-4 flex items-center gap-3 glow-purple">
+                <div class="w-10 h-10 rounded-xl bg-purple-500/20 flex items-center justify-center text-lg">🏷️</div>
+                <div>
+                    <p class="text-2xl font-bold text-purple-400" id="brandedPct">--</p>
+                    <p class="text-xs text-zinc-400">Branded Traffic</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Stats with Sparklines -->
+        <section class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
+            <div class="stat-card glass rounded-2xl p-4 sm:p-6 glow-blue animate-slide-in delay-1">
+                <div class="flex items-start justify-between mb-3 relative z-10">
+                    <div class="min-w-0 flex-1">
+                        <p class="text-xs sm:text-sm font-medium text-zinc-400 mb-1 tooltip-trigger" data-tooltip="Total organic clicks from Google Search in the selected period">Total Clicks</p>
+                        <p class="text-2xl sm:text-4xl font-bold tracking-tight" id="totalClicks">--</p>
+                        <p class="text-sm font-semibold mt-1" id="clicksChange"><span class="text-zinc-500">-- vs last week</span></p>
+                    </div>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/></svg>
+                    </div>
+                </div>
+                <div class="sparkline-container"><canvas id="sparklineClicks"></canvas></div>
+            </div>
+            <div class="stat-card glass rounded-2xl p-4 sm:p-6 glow-purple animate-slide-in delay-2">
+                <div class="flex items-start justify-between mb-3 relative z-10">
+                    <div class="min-w-0 flex-1">
+                        <p class="text-xs sm:text-sm font-medium text-zinc-400 mb-1 tooltip-trigger" data-tooltip="How many times your pages appeared in Google Search results">Impressions</p>
+                        <p class="text-2xl sm:text-4xl font-bold tracking-tight" id="totalImpressions">--</p>
+                        <p class="text-sm font-semibold mt-1" id="impressionsChange"><span class="text-zinc-500">-- vs last week</span></p>
+                    </div>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                    </div>
+                </div>
+                <div class="sparkline-container"><canvas id="sparklineImpressions"></canvas></div>
+            </div>
+            <div class="stat-card glass rounded-2xl p-4 sm:p-6 glow-green animate-slide-in delay-3">
+                <div class="flex items-start justify-between mb-3 relative z-10">
+                    <div class="min-w-0 flex-1">
+                        <p class="text-xs sm:text-sm font-medium text-zinc-400 mb-1 tooltip-trigger" data-tooltip="Click-Through Rate: percentage of impressions that resulted in clicks">Avg. CTR</p>
+                        <p class="text-2xl sm:text-4xl font-bold tracking-tight" id="avgCtr">--%</p>
+                        <p class="text-sm font-semibold mt-1" id="ctrChange"><span class="text-zinc-500">-- vs last week</span></p>
+                    </div>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    </div>
+                </div>
+                <div class="sparkline-container"><canvas id="sparklineCTR"></canvas></div>
+            </div>
+            <div class="stat-card glass rounded-2xl p-4 sm:p-6 glow-orange animate-slide-in delay-4">
+                <div class="flex items-start justify-between mb-3 relative z-10">
+                    <div class="min-w-0 flex-1">
+                        <p class="text-xs sm:text-sm font-medium text-zinc-400 mb-1 tooltip-trigger" data-tooltip="Your highest ranking keyword position. Position 1-3 is the top of Google!">Best Ranking</p>
+                        <p class="text-2xl sm:text-4xl font-bold tracking-tight gradient-text" id="topPosition">#--</p>
+                        <p class="text-xs sm:text-sm text-zinc-500 mt-2 truncate max-w-[100px] sm:max-w-[150px]" id="topKeyword">--</p>
+                    </div>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-orange-500/20 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                    </div>
+                </div>
+                <div class="sparkline-container"><canvas id="sparklinePosition"></canvas></div>
+            </div>
+        </section>
+
+        <!-- Quick Wins Section -->
+        <section class="glass rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 animate-slide-in border border-amber-500/20" id="quickWinsSection" style="display:none;">
+            <div class="flex items-center gap-3 mb-4 sm:mb-6">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-lg">🎯</div>
+                <div>
+                    <h2 class="text-base sm:text-lg font-semibold">Quick-Win Opportunities</h2>
+                    <p class="text-xs sm:text-sm text-zinc-500">Keywords in positions 4-20 with high impressions — small push = big gains</p>
+                </div>
+            </div>
+            <div class="grid gap-3" id="quickWinsContainer"></div>
+        </section>
+
+        <!-- Device Performance Chart -->
+        <section class="glass rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 animate-slide-in">
+            <div class="flex items-center gap-3 mb-4 sm:mb-6">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-lg">📱</div>
+                <div>
+                    <h2 class="text-base sm:text-lg font-semibold">Device Breakdown</h2>
+                    <p class="text-xs sm:text-sm text-zinc-500">Performance by device type</p>
+                </div>
+            </div>
+            <div id="deviceChart" style="min-height: 300px;"></div>
+        </section>
+
+        <!-- Geography + Pages side by side on large screens -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
+            <!-- Geography Table -->
+            <section class="glass rounded-2xl p-4 sm:p-6 animate-slide-in">
+                <div class="flex items-center gap-3 mb-4 sm:mb-6">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-lg">🌍</div>
+                    <div>
+                        <h2 class="text-base sm:text-lg font-semibold">Top Countries</h2>
+                        <p class="text-xs sm:text-sm text-zinc-500">Geographic distribution of traffic</p>
+                    </div>
+                </div>
+                <div class="overflow-x-auto scrollbar-thin">
+                    <table class="w-full min-w-[400px]">
+                        <thead>
+                            <tr class="text-left text-zinc-500 text-xs border-b border-zinc-800">
+                                <th class="pb-3 font-medium">Country</th>
+                                <th class="pb-3 font-medium text-right">Clicks</th>
+                                <th class="pb-3 font-medium text-right">Impressions</th>
+                                <th class="pb-3 font-medium text-right">CTR</th>
+                                <th class="pb-3 font-medium text-right">GA4 Users</th>
+                            </tr>
+                        </thead>
+                        <tbody id="geoTable" class="text-sm"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Top Landing Pages -->
+            <section class="glass rounded-2xl p-4 sm:p-6 animate-slide-in">
+                <div class="flex items-center gap-3 mb-4 sm:mb-6">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-lg">📄</div>
+                    <div>
+                        <h2 class="text-base sm:text-lg font-semibold">Top Landing Pages</h2>
+                        <p class="text-xs sm:text-sm text-zinc-500">Page-level performance</p>
+                    </div>
+                </div>
+                <div class="overflow-x-auto scrollbar-thin max-h-[400px] overflow-y-auto">
+                    <table class="w-full min-w-[500px]">
+                        <thead class="sticky top-0 z-10" style="background: rgba(31,31,35,0.95);">
+                            <tr class="text-left text-zinc-500 text-xs border-b border-zinc-800">
+                                <th class="pb-3 pt-1 font-medium sortable" data-column="page" data-table="pages">Page</th>
+                                <th class="pb-3 pt-1 font-medium text-right sortable" data-column="clicks" data-table="pages">Clicks</th>
+                                <th class="pb-3 pt-1 font-medium text-right sortable" data-column="impressions" data-table="pages">Impr.</th>
+                                <th class="pb-3 pt-1 font-medium text-right sortable" data-column="ctr" data-table="pages">CTR</th>
+                                <th class="pb-3 pt-1 font-medium text-right sortable" data-column="position" data-table="pages">Pos.</th>
+                                <th class="pb-3 pt-1 font-medium text-right">Sessions</th>
+                                <th class="pb-3 pt-1 font-medium text-right">Engage</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pagesTable" class="text-sm"></tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <!-- All Queries with Pagination -->
+        <section class="glass rounded-2xl p-4 sm:p-6 animate-slide-in">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-lg">🔍</div>
+                    <div>
+                        <h2 class="text-base sm:text-lg font-semibold">All Search Queries</h2>
+                        <p class="text-xs sm:text-sm text-zinc-500"><span id="queryTotal">0</span> total keywords</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs font-medium" id="top3Badge">0 Top 3</span>
+                    <span class="px-2 py-1 rounded-lg bg-amber-500/20 text-amber-400 text-xs font-medium" id="top10Badge">0 Top 10</span>
+                    <span class="px-2 py-1 rounded-lg bg-blue-500/20 text-blue-400 text-xs font-medium" id="top20Badge">0 Top 20</span>
+                    <span class="px-2 py-1 rounded-lg bg-purple-500/20 text-purple-400 text-xs font-medium" id="withClicksBadge">0 With Clicks</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between gap-3 mb-4 sm:mb-6">
+                <div class="relative w-full sm:w-auto">
+                    <input type="text" id="searchFilter" placeholder="Filter queries..." 
+                           class="w-full sm:w-64 px-4 py-2 sm:py-2.5 pl-10 bg-zinc-800/50 border border-zinc-700/50 rounded-xl text-sm focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/20 transition-all">
+                    <svg class="w-4 h-4 text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                </div>
+                <div>
+                <div class="relative w-full sm:w-auto">
+                    <input type="text" id="searchFilter" placeholder="Filter queries..." 
+                           class="w-full sm:w-64 px-4 py-2 sm:py-2.5 pl-10 bg-zinc-800/50 border border-zinc-700/50 rounded-xl text-sm focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/20 transition-all">
+                    <svg class="w-4 h-4 text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                </div>
+            </div>
+            
+            <div class="overflow-x-auto scrollbar-thin">
+                <table class="w-full min-w-[500px] sm:min-w-[600px]">
+                    <thead class="sticky top-0 z-10" style="background: rgba(31,31,35,0.95);">
+                        <tr class="text-left text-zinc-500 text-xs sm:text-sm border-b border-zinc-800">
+                            <th class="pb-3 sm:pb-4 pt-2 font-medium sortable" data-column="query" data-table="allQueries">Query</th>
+                            <th class="pb-3 sm:pb-4 pt-2 font-medium text-center sortable" data-column="position" data-table="allQueries">Position</th>
+                            <th class="pb-3 sm:pb-4 pt-2 font-medium text-right sortable" data-column="clicks" data-table="allQueries">Clicks</th>
+                            <th class="pb-3 sm:pb-4 pt-2 font-medium text-right sortable" data-column="impressions" data-table="allQueries">Impressions</th>
+                            <th class="pb-3 sm:pb-4 pt-2 font-medium text-right sortable" data-column="ctr" data-table="allQueries">CTR</th>
+                        </tr>
+                    </thead>
+                    <tbody id="allQueriesTable" class="text-sm"></tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex items-center justify-between mt-4 pt-4 border-t border-zinc-800/50" id="paginationContainer" style="display:none;">
+                <p class="text-xs text-zinc-500" id="paginationInfo">Showing 1-20 of 100</p>
+                <div class="flex gap-1" id="paginationButtons"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        let seoData = null;
+        let sparklineTrends = null;
+        let sparklineCharts = {};
+        let keywordsData = [];
+        let allQueriesData = [];
+        let pagesData = [];
+        let currentPage = 1;
+        const PAGE_SIZE = 20;
+        let filteredQueries = [];
+        let deviceChart = null;
+
+        // Country code to flag emoji
+        const countryFlags = {
+            'USA': '🇺🇸', 'GBR': '🇬🇧', 'CAN': '🇨🇦', 'AUS': '🇦🇺', 'DEU': '🇩🇪',
+            'FRA': '🇫🇷', 'JPN': '🇯🇵', 'KOR': '🇰🇷', 'BRA': '🇧🇷', 'IND': '🇮🇳',
+            'MEX': '🇲🇽', 'ESP': '🇪🇸', 'ITA': '🇮🇹', 'NLD': '🇳🇱', 'SGP': '🇸🇬',
+            'PHL': '🇵🇭', 'THA': '🇹🇭', 'VNM': '🇻🇳', 'IDN': '🇮🇩', 'MYS': '🇲🇾',
+            'NZL': '🇳🇿', 'CHN': '🇨🇳', 'TWN': '🇹🇼', 'HKG': '🇭🇰', 'RUS': '🇷🇺',
+            'ZAF': '🇿🇦', 'ARE': '🇦🇪', 'SAU': '🇸🇦', 'ISR': '🇮🇱', 'TUR': '🇹🇷',
+            'POL': '🇵🇱', 'SWE': '🇸🇪', 'NOR': '🇳🇴', 'DNK': '🇩🇰', 'FIN': '🇫🇮',
+            'CHE': '🇨🇭', 'AUT': '🇦🇹', 'BEL': '🇧🇪', 'PRT': '🇵🇹', 'IRL': '🇮🇪',
+            'ARG': '🇦🇷', 'CHL': '🇨🇱', 'COL': '🇨🇴', 'PER': '🇵🇪',
+            'US': '🇺🇸', 'GB': '🇬🇧', 'CA': '🇨🇦', 'AU': '🇦🇺', 'DE': '🇩🇪',
+            'FR': '🇫🇷', 'JP': '🇯🇵', 'KR': '🇰🇷', 'BR': '🇧🇷', 'IN': '🇮🇳',
+            'MX': '🇲🇽', 'ES': '🇪🇸', 'IT': '🇮🇹', 'NL': '🇳🇱', 'SG': '🇸🇬',
+        };
+
+        async function fetchData() {
+            document.getElementById('refreshIcon').classList.add('animate-spin');
+            try {
+                const response = await fetch('./data.json?' + Date.now());
+                seoData = await response.json();
+                await fetchSparklineTrends();
+                renderDashboard();
+            } catch (e) {
+                console.error('Error:', e);
+                document.getElementById('lastUpdated').textContent = 'Error loading';
+            }
+            document.getElementById('refreshIcon').classList.remove('animate-spin');
+        }
+
+        async function fetchSparklineTrends() {
+            try {
+                const response = await fetch('./sparkline_trends.json?' + Date.now());
+                sparklineTrends = await response.json();
+            } catch (e) {
+                sparklineTrends = null;
+            }
+        }
+
+        function refreshData() { fetchData(); }
+
+        function formatNumber(n) {
+            if (n >= 1000000) return (n/1000000).toFixed(1) + 'M';
+            if (n >= 1000) return (n/1000).toFixed(1) + 'K';
+            return n?.toLocaleString() || '0';
+        }
+
+        function createSparkline(canvasId, data, color) {
+            const ctx = document.getElementById(canvasId);
+            if (!ctx) return;
+            if (sparklineCharts[canvasId]) sparklineCharts[canvasId].destroy();
+            sparklineCharts[canvasId] = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: data.map((_, i) => i),
+                    datasets: [{
+                        data: data,
+                        borderColor: color,
+                        borderWidth: 2,
+                        fill: true,
+                        backgroundColor: color + '20',
+                        tension: 0.4,
+                        pointRadius: 0,
+                        pointHoverRadius: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false }, tooltip: { enabled: false } },
+                    scales: { x: { display: false }, y: { display: false } },
+                    interaction: { mode: 'index', intersect: false }
+                }
+            });
+        }
+
+        function generateSparklines() {
+            let clicks, impressions, ctr, position;
+            if (sparklineTrends && sparklineTrends.trends) {
+                const t = sparklineTrends.trends;
+                clicks = t.clicks || [30,35,32,38,40,42,45];
+                impressions = t.impressions || [450,470,460,490,500,510,520];
+                ctr = t.ctr || [6.5,7.0,6.8,7.5,7.8,8.0,8.6];
+                position = t.position || [3.5,3.2,2.9,2.5,2.2,1.8,1.5];
+            } else {
+                clicks = [30,35,32,38,40,42,45];
+                impressions = [450,470,460,490,500,510,520];
+                ctr = [6.5,7.0,6.8,7.5,7.8,8.0,8.6];
+                position = [3.5,3.2,2.9,2.5,2.2,1.8,1.5];
+            }
+            createSparkline('sparklineClicks', clicks, '#3b82f6');
+            createSparkline('sparklineImpressions', impressions, '#a855f7');
+            createSparkline('sparklineCTR', ctr, '#22c55e');
+            createSparkline('sparklinePosition', [...position].reverse(), '#f97316');
+        }
+
+        function getPositionColor(pos) {
+            if (!pos) return 'text-zinc-500';
+            if (pos <= 3) return 'text-emerald-400';
+            if (pos <= 10) return 'text-amber-400';
+            if (pos <= 20) return 'text-orange-400';
+            return 'text-red-400';
+        }
+
+        function getStatusBadge(pos) {
+            if (!pos) return '<span class="px-2 py-1 rounded-lg bg-zinc-800 text-zinc-500 text-xs">No data</span>';
+            if (pos <= 3) return '<span class="px-2 py-1 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs font-medium">🔥 Top 3</span>';
+            if (pos <= 10) return '<span class="px-2 py-1 rounded-lg bg-amber-500/20 text-amber-400 text-xs font-medium">Page 1</span>';
+            if (pos <= 20) return '<span class="px-2 py-1 rounded-lg bg-orange-500/20 text-orange-400 text-xs font-medium">Page 2</span>';
+            return '<span class="px-2 py-1 rounded-lg bg-red-500/20 text-red-400 text-xs font-medium">Needs SEO</span>';
+        }
+
+        // ==== SORTABLE ====
+        function initSortable() {
+            document.querySelectorAll('.sortable').forEach(header => {
+                if (!header.querySelector('.sort-indicator')) {
+                    const s = document.createElement('span');
+                    s.className = 'sort-indicator';
+                    s.textContent = ' ↕';
+                    s.style.cssText = 'opacity:0.3;font-size:10px;margin-left:4px;';
+                    header.appendChild(s);
+                }
+                header.onclick = () => {
+                    const col = header.dataset.column;
+                    const table = header.dataset.table;
+                    const asc = header.classList.contains('asc');
+                    const dir = asc ? 'desc' : 'asc';
+                    header.closest('tr').querySelectorAll('.sortable').forEach(h => {
+                        h.classList.remove('asc','desc');
+                        const ind = h.querySelector('.sort-indicator');
+                        if (ind) { ind.textContent = ' ↕'; ind.style.opacity = '0.3'; ind.style.color = ''; }
+                    });
+                    header.classList.add(dir);
+                    const ind = header.querySelector('.sort-indicator');
+                    if (ind) { ind.textContent = dir === 'asc' ? ' ↑' : ' ↓'; ind.style.opacity = '1'; ind.style.color = dir === 'asc' ? '#22c55e' : '#ef4444'; }
+
+                    const sortFn = (a, b) => {
+                        let vA, vB;
+                        switch(col) {
+                            case 'keyword': case 'query': case 'page':
+                                vA = (a.query || a.page || '').toLowerCase();
+                                vB = (b.query || b.page || '').toLowerCase();
+                                break;
+                            case 'position': vA = a.position||999; vB = b.position||999; break;
+                            case 'clicks': vA = a.clicks||0; vB = b.clicks||0; break;
+                            case 'impressions': vA = a.impressions||0; vB = b.impressions||0; break;
+                            case 'ctr': vA = a.ctr||0; vB = b.ctr||0; break;
+                            default: return 0;
+                        }
+                        return dir === 'asc' ? (vA > vB ? 1 : vA < vB ? -1 : 0) : (vA < vB ? 1 : vA > vB ? -1 : 0);
+                    };
+
+                    if (table === 'allQueries') { allQueriesData.sort(sortFn); currentPage = 1; renderQueriesPage(); }
+                    else if (table === 'pages') { pagesData.sort(sortFn); renderPagesTable(pagesData); }
+                };
+            });
+        }
+
+        // ==== KEYWORDS TABLE ====
+        function renderQueriesPage() {
+            const data = filteredQueries.length ? filteredQueries : allQueriesData;
+            const total = data.length;
+            const totalPages = Math.ceil(total / PAGE_SIZE);
+            if (currentPage > totalPages) currentPage = totalPages || 1;
+            const start = (currentPage - 1) * PAGE_SIZE;
+            const slice = data.slice(start, start + PAGE_SIZE);
+
+            const tbody = document.getElementById('allQueriesTable');
+            tbody.innerHTML = '';
+            if (!slice.length) {
+                tbody.innerHTML = '<tr><td colspan="5" class="py-8 text-center text-zinc-500">No query data available</td></tr>';
+            } else {
+                for (const row of slice) {
+                    const pos = row.position?.toFixed(1) || '--';
+                    const ctr = ((row.ctr||0)*100).toFixed(1);
+                    const tr = document.createElement('tr');
+                    tr.className = 'border-b border-zinc-800/30 hover:bg-zinc-800/20 transition-colors';
+                    tr.innerHTML = `
+                        <td class="py-2 sm:py-3 text-zinc-300 text-xs sm:text-sm">${row.query||'--'}</td>
+                        <td class="py-2 sm:py-3 text-center font-semibold ${getPositionColor(row.position)}">#${pos}</td>
+                        <td class="py-2 sm:py-3 text-right font-medium text-zinc-200">${row.clicks||0}</td>
+                        <td class="py-2 sm:py-3 text-right text-zinc-400">${row.impressions||0}</td>
+                        <td class="py-2 sm:py-3 text-right text-zinc-400">${ctr}%</td>`;
+                    tbody.appendChild(tr);
+                }
+            }
+
+            // Pagination controls
+            const container = document.getElementById('paginationContainer');
+            if (total > PAGE_SIZE) {
+                container.style.display = 'flex';
+                document.getElementById('paginationInfo').textContent = `Showing ${start+1}-${Math.min(start+PAGE_SIZE, total)} of ${total}`;
+                const btns = document.getElementById('paginationButtons');
+                btns.innerHTML = '';
+                // Prev
+                const prev = document.createElement('button');
+                prev.className = 'pagination-btn px-3 py-1.5 rounded-lg bg-zinc-800 border border-zinc-700/50 text-xs font-medium text-zinc-300';
+                prev.textContent = '← Prev';
+                prev.disabled = currentPage === 1;
+                prev.onclick = () => { currentPage--; renderQueriesPage(); };
+                btns.appendChild(prev);
+                // Page numbers
+                for (let i = 1; i <= totalPages; i++) {
+                    const btn = document.createElement('button');
+                    btn.className = `pagination-btn px-3 py-1.5 rounded-lg bg-zinc-800 border border-zinc-700/50 text-xs font-medium text-zinc-300 ${i === currentPage ? 'active' : ''}`;
+                    btn.textContent = i;
+                    btn.onclick = () => { currentPage = i; renderQueriesPage(); };
+                    btns.appendChild(btn);
+                }
+                // Next
+                const next = document.createElement('button');
+                next.className = 'pagination-btn px-3 py-1.5 rounded-lg bg-zinc-800 border border-zinc-700/50 text-xs font-medium text-zinc-300';
+                next.textContent = 'Next →';
+                next.disabled = currentPage === totalPages;
+                next.onclick = () => { currentPage++; renderQueriesPage(); };
+                btns.appendChild(next);
+            } else {
+                container.style.display = 'none';
+            }
+        }
+
+        document.getElementById('searchFilter').addEventListener('input', (e) => {
+            const filter = e.target.value.toLowerCase();
+            filteredQueries = filter ? allQueriesData.filter(r => (r.query||'').toLowerCase().includes(filter)) : [];
+            currentPage = 1;
+            renderQueriesPage();
+        });
+
+        // ==== PAGES TABLE ====
+        function renderPagesTable(pages) {
+            pagesData = pages;
+            const tbody = document.getElementById('pagesTable');
+            tbody.innerHTML = '';
+            if (!pages || !pages.length) {
+                // Fallback: use ga4.topPages
+                const ga4Pages = seoData?.ga4?.topPages || [];
+                if (ga4Pages.length) {
+                    for (const p of ga4Pages) {
+                        const engageColor = (p.engagement||0) >= 0.7 ? 'text-emerald-400' : (p.engagement||0) < 0.5 ? 'text-red-400' : 'text-zinc-300';
+                        const tr = document.createElement('tr');
+                        tr.className = 'border-b border-zinc-800/30 hover:bg-zinc-800/20 transition-colors';
+                        tr.innerHTML = `
+                            <td class="py-2 text-xs text-zinc-300 max-w-[180px] truncate" title="${p.page}">${p.page}</td>
+                            <td class="py-2 text-right text-zinc-500">—</td>
+                            <td class="py-2 text-right text-zinc-500">—</td>
+                            <td class="py-2 text-right text-zinc-500">—</td>
+                            <td class="py-2 text-right text-zinc-500">—</td>
+                            <td class="py-2 text-right text-zinc-300">${p.sessions||0}</td>
+                            <td class="py-2 text-right ${engageColor}">${((p.engagement||0)*100).toFixed(0)}%</td>`;
+                        tbody.appendChild(tr);
+                    }
+                } else {
+                    tbody.innerHTML = '<tr><td colspan="7" class="py-8 text-center text-zinc-500">No page data available</td></tr>';
+                }
+                return;
+            }
+            for (const p of pages) {
+                const ctr = ((p.ctr||0)*100).toFixed(1);
+                const ctrColor = parseFloat(ctr) < 2 ? 'text-red-400' : 'text-zinc-400';
+                const engageVal = p.ga4Engagement || p.engagement || 0;
+                const engageColor = engageVal >= 0.7 ? 'text-emerald-400' : engageVal < 0.5 ? 'text-red-400' : 'text-zinc-300';
+                const tr = document.createElement('tr');
+                tr.className = 'border-b border-zinc-800/30 hover:bg-zinc-800/20 transition-colors';
+                tr.innerHTML = `
+                    <td class="py-2 text-xs text-zinc-300 max-w-[180px] truncate" title="${p.page}">${p.page}</td>
+                    <td class="py-2 text-right font-medium text-zinc-200">${p.clicks||0}</td>
+                    <td class="py-2 text-right text-zinc-400">${p.impressions||0}</td>
+                    <td class="py-2 text-right ${ctrColor}">${ctr}%</td>
+                    <td class="py-2 text-right ${getPositionColor(p.position)}">${p.position ? p.position.toFixed(1) : '—'}</td>
+                    <td class="py-2 text-right text-zinc-300">${p.ga4Sessions || p.sessions || 0}</td>
+                    <td class="py-2 text-right ${engageColor}">${(engageVal*100).toFixed(0)}%</td>`;
+                tbody.appendChild(tr);
+            }
+        }
+
+        // ==== DEVICE CHART ====
+        function renderDeviceChart(devices) {
+            if (deviceChart) deviceChart.destroy();
+            const labels = ['Desktop', 'Mobile', 'Tablet'];
+            const d = devices || {};
+            const clicks = [d.desktop?.clicks||0, d.mobile?.clicks||0, d.tablet?.clicks||0];
+            const impressions = [d.desktop?.impressions||0, d.mobile?.impressions||0, d.tablet?.impressions||0];
+            const ctrs = [((d.desktop?.ctr||0)*100), ((d.mobile?.ctr||0)*100), ((d.tablet?.ctr||0)*100)];
+
+            deviceChart = new ApexCharts(document.getElementById('deviceChart'), {
+                chart: { type: 'bar', height: 300, background: 'transparent', toolbar: { show: false },
+                    fontFamily: 'Inter, sans-serif' },
+                series: [
+                    { name: 'Clicks', data: clicks },
+                    { name: 'Impressions', data: impressions.map(v => v / 10) }, // scaled for visual
+                    { name: 'CTR %', data: ctrs }
+                ],
+                plotOptions: { bar: { borderRadius: 6, columnWidth: '60%', grouped: true } },
+                colors: ['#3b82f6', '#a855f7', '#22c55e'],
+                xaxis: { categories: labels, labels: { style: { colors: '#a1a1aa', fontSize: '12px' } } },
+                yaxis: { labels: { style: { colors: '#a1a1aa', fontSize: '12px' } } },
+                grid: { borderColor: '#27272a', strokeDashArray: 3 },
+                legend: { labels: { colors: '#a1a1aa' }, position: 'top' },
+                tooltip: {
+                    theme: 'dark',
+                    custom: function({series, seriesIndex, dataPointIndex}) {
+                        const dev = ['desktop','mobile','tablet'][dataPointIndex];
+                        const dd = d[dev] || {};
+                        return `<div style="padding:12px;background:#18181b;border:1px solid #3f3f46;border-radius:8px;">
+                            <b style="color:#f97316">${labels[dataPointIndex]}</b><br/>
+                            Clicks: <b>${dd.clicks||0}</b><br/>
+                            Impressions: <b>${dd.impressions||0}</b><br/>
+                            CTR: <b>${((dd.ctr||0)*100).toFixed(1)}%</b><br/>
+                            Position: <b>${(dd.position||0).toFixed(1)}</b><br/>
+                            Share: <b>${(dd.percentage||0).toFixed(1)}%</b>
+                        </div>`;
+                    }
+                },
+                dataLabels: { enabled: false }
+            });
+            deviceChart.render();
+        }
+
+        // ==== GEOGRAPHY TABLE ====
+        function renderGeoTable(geo) {
+            const tbody = document.getElementById('geoTable');
+            tbody.innerHTML = '';
+            if (!geo || !geo.length) {
+                tbody.innerHTML = '<tr><td colspan="5" class="py-8 text-center text-zinc-500">No geography data</td></tr>';
+                return;
+            }
+            const top10 = geo.slice(0, 10);
+            for (const g of top10) {
+                const flag = countryFlags[g.countryCode] || countryFlags[g.country] || '🌐';
+                const ctr = ((g.ctr||0)*100).toFixed(1);
+                const tr = document.createElement('tr');
+                tr.className = 'border-b border-zinc-800/30 hover:bg-zinc-800/20 transition-colors';
+                tr.innerHTML = `
+                    <td class="py-2.5 text-sm"><span class="mr-2">${flag}</span>${g.country}</td>
+                    <td class="py-2.5 text-right font-medium text-zinc-200">${g.clicks||0}</td>
+                    <td class="py-2.5 text-right text-zinc-400">${g.impressions||0}</td>
+                    <td class="py-2.5 text-right text-zinc-400">${ctr}%</td>
+                    <td class="py-2.5 text-right text-zinc-300">${g.ga4Users||0}</td>`;
+                tbody.appendChild(tr);
+            }
+        }
+
+        // ==== QUICK WINS ====
+        function renderQuickWins(quickWins) {
+            const section = document.getElementById('quickWinsSection');
+            const container = document.getElementById('quickWinsContainer');
+            if (!quickWins || !quickWins.length) {
+                section.style.display = 'none';
+                return;
+            }
+            section.style.display = 'block';
+            container.innerHTML = '';
+            for (const qw of quickWins) {
+                const ctr = ((qw.ctr||0)*100).toFixed(1);
+                // Estimate: if moved to pos 1-3, CTR ~30%. Potential extra clicks = impressions * (0.30 - currentCTR)
+                const potentialCTR = 0.30;
+                const currentCTR = qw.ctr || 0;
+                const potentialGain = Math.max(0, Math.round((qw.impressions||0) * (potentialCTR - currentCTR)));
+                
+                const card = document.createElement('div');
+                card.className = 'glass rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 glass-hover';
+                card.innerHTML = `
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm font-medium text-zinc-200 truncate">${qw.query}</p>
+                        <div class="flex gap-4 mt-1 text-xs text-zinc-500">
+                            <span>Pos: <span class="${getPositionColor(qw.position)} font-semibold">#${Math.round(qw.position)}</span></span>
+                            <span>Clicks: ${qw.clicks||0}</span>
+                            <span>Impr: ${qw.impressions||0}</span>
+                            <span>CTR: ${ctr}%</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20">
+                            <p class="text-xs text-zinc-400">Potential gain</p>
+                            <p class="text-sm font-bold text-emerald-400">+${potentialGain} clicks/wk</p>
+                        </div>
+                    </div>`;
+                container.appendChild(card);
+            }
+        }
+
+        // ==== COMPARISONS ====
+        function renderComparisons() {
+            const s = seoData?.summary || {};
+            const changes = [
+                { id: 'clicksChange', val: s.clicks?.change, trend: s.clicks?.trend },
+                { id: 'impressionsChange', val: s.impressions?.change, trend: s.impressions?.trend },
+                { id: 'ctrChange', val: s.ctr?.change, trend: s.ctr?.trend }
+            ];
+            for (const c of changes) {
+                const el = document.getElementById(c.id);
+                if (!el) continue;
+                const val = c.val ?? 0;
+                const up = c.trend === 'up';
+                const arrow = up ? '↑' : '↓';
+                const color = up ? 'text-emerald-400' : 'text-red-400';
+                el.innerHTML = `<span class="${color}">${arrow} ${Math.abs(val).toFixed(1)}%</span> vs last week`;
+            }
+        }
+
+        // ==== MAIN RENDER ====
+        function renderDashboard() {
+            if (!seoData) return;
+            const s = seoData.summary || {};
+            const q = seoData.queries || {};
+
+            // Timestamp
+            const dt = new Date(seoData.metadata?.collectedAt || seoData.collectedAt);
+            document.getElementById('lastUpdated').textContent = dt.toLocaleString('en-US', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' });
+
+            // Unique metrics badges
+            document.getElementById('uniqueQueries').textContent = s.uniqueQueries || q.total || '--';
+            document.getElementById('uniquePages').textContent = s.uniquePages || seoData.pages?.total || '--';
+            const page1 = (q.byPosition?.pos1to3 || 0) + (q.byPosition?.pos4to10 || 0);
+            document.getElementById('posBreakdown').textContent = page1 || '--';
+            document.getElementById('brandedPct').textContent = q.branded?.percentage ? q.branded.percentage.toFixed(0) + '%' : '--';
+
+            // Hero stats
+            document.getElementById('totalClicks').textContent = formatNumber(s.clicks?.total ?? 0);
+            document.getElementById('totalImpressions').textContent = formatNumber(s.impressions?.total ?? 0);
+            document.getElementById('avgCtr').textContent = ((s.ctr?.average ?? 0) * 100).toFixed(1) + '%';
+
+            // Best position
+            const bestPos = s.position?.best;
+            const bestKw = s.position?.bestKeyword;
+            document.getElementById('topPosition').textContent = bestPos ? `#${Math.round(bestPos)}` : '--';
+            document.getElementById('topKeyword').textContent = bestKw || '--';
+
+            renderComparisons();
+            generateSparklines();
+
+            // Quick wins
+            renderQuickWins(q.quickWins);
+
+            // Device chart
+            renderDeviceChart(seoData.devices);
+
+            // Geography
+            renderGeoTable(seoData.geography);
+
+            // Pages
+            renderPagesTable(seoData.pages?.all || []);
+
+            // All queries (100, paginated)
+            const allQ = q.all || [];
+            allQueriesData = [...allQ].sort((a,b) => (b.clicks||0) - (a.clicks||0));
+            document.getElementById('queryTotal').textContent = allQueriesData.length;
+            
+            // Calculate badge stats
+            const top3Count = allQueriesData.filter(q => q.position && q.position <= 3).length;
+            const top10Count = allQueriesData.filter(q => q.position && q.position <= 10).length;
+            const top20Count = allQueriesData.filter(q => q.position && q.position <= 20).length;
+            const withClicksCount = allQueriesData.filter(q => q.clicks && q.clicks > 0).length;
+            
+            document.getElementById('top3Badge').textContent = `${top3Count} Top 3`;
+            document.getElementById('top10Badge').textContent = `${top10Count} Top 10`;
+            document.getElementById('top20Badge').textContent = `${top20Count} Top 20`;
+            document.getElementById('withClicksBadge').textContent = `${withClicksCount} With Clicks`;
+            
+            filteredQueries = [];
+            currentPage = 1;
+            renderQueriesPage();
+
+            initSortable();
+        }
+
+        fetchData();
+        setInterval(fetchData, 5 * 60 * 1000);
+    </script>
+</body>
+</html>

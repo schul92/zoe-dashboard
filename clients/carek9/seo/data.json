@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "version": "3.0.0",
+    "collectedAt": "2026-02-10T00:00:00Z",
+    "client": "carek9",
+    "status": "placeholder",
+    "message": "No data collected yet. Run: python3 scripts/fetch_seo_comprehensive.py --client carek9"
+  },
+  "summary": {
+    "uniqueQueries": 0,
+    "uniquePages": 0,
+    "clicks": {"total": 0, "change": 0, "trend": "neutral"},
+    "impressions": {"total": 0, "change": 0, "trend": "neutral"},
+    "ctr": {"average": 0, "change": 0, "trend": "neutral"}
+  },
+  "queries": {
+    "total": 0,
+    "all": [],
+    "quickWins": [],
+    "byPosition": {},
+    "branded": {"count": 0, "percentage": 0}
+  },
+  "pages": {
+    "total": 0,
+    "all": []
+  },
+  "devices": {},
+  "geography": [],
+  "searchAppearance": {},
+  "ga4": {}
+}
