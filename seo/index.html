@@ -301,6 +301,7 @@
 
     <script>
         let seoData = null;
+        let sparklineTrends = null;
         let sparklineCharts = {};
         let keywordsData = [];
         let allQueriesData = [];
@@ -310,12 +311,23 @@
             try {
                 const response = await fetch('./data.json?' + Date.now());
                 seoData = await response.json();
+                await fetchSparklineTrends();
                 renderDashboard();
             } catch (e) {
                 console.error('Error:', e);
                 document.getElementById('lastUpdated').textContent = 'Error loading';
             }
             document.getElementById('refreshIcon').classList.remove('animate-spin');
+        }
+
+        async function fetchSparklineTrends() {
+            try {
+                const response = await fetch('./sparkline_trends.json?' + Date.now());
+                sparklineTrends = await response.json();
+            } catch (e) {
+                console.error('Error loading sparkline trends:', e);
+                sparklineTrends = null;
+            }
         }
 
         function refreshData() { fetchData(); }
@@ -374,16 +386,27 @@
         }
 
         function generateSparklines() {
-            // Generate mock trend data (in production, this comes from history)
-            const mockClicks = [30, 35, 32, 38, 40, 42, 45];
-            const mockImpressions = [450, 470, 460, 490, 500, 510, 520];
-            const mockCTR = [6.5, 7.0, 6.8, 7.5, 7.8, 8.0, 8.6];
-            const mockPosition = [3.5, 3.2, 2.9, 2.5, 2.2, 1.8, 1.5];
+            // Use real trend data if available, otherwise fallback to mock
+            let clicks, impressions, ctr, position;
+            
+            if (sparklineTrends && sparklineTrends.trends) {
+                const trends = sparklineTrends.trends;
+                clicks = trends.clicks || [30, 35, 32, 38, 40, 42, 45];
+                impressions = trends.impressions || [450, 470, 460, 490, 500, 510, 520];
+                ctr = trends.ctr || [6.5, 7.0, 6.8, 7.5, 7.8, 8.0, 8.6];
+                position = trends.position || [3.5, 3.2, 2.9, 2.5, 2.2, 1.8, 1.5];
+            } else {
+                // Fallback to mock data
+                clicks = [30, 35, 32, 38, 40, 42, 45];
+                impressions = [450, 470, 460, 490, 500, 510, 520];
+                ctr = [6.5, 7.0, 6.8, 7.5, 7.8, 8.0, 8.6];
+                position = [3.5, 3.2, 2.9, 2.5, 2.2, 1.8, 1.5];
+            }
 
-            createSparkline('sparklineClicks', mockClicks, '#3b82f6');
-            createSparkline('sparklineImpressions', mockImpressions, '#a855f7');
-            createSparkline('sparklineCTR', mockCTR, '#22c55e');
-            createSparkline('sparklinePosition', mockPosition.reverse(), '#f97316'); // reverse so down is better
+            createSparkline('sparklineClicks', clicks, '#3b82f6');
+            createSparkline('sparklineImpressions', impressions, '#a855f7');
+            createSparkline('sparklineCTR', ctr, '#22c55e');
+            createSparkline('sparklinePosition', [...position].reverse(), '#f97316'); // reverse so down is better
         }
 
         // ==== SORTABLE TABLES ====
