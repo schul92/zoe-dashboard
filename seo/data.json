@@ -111,6 +111,636 @@
         "impressions": 12,
         "ctr": 0.083,
         "position": 8.9
+      },
+      {
+        "query": "hawaii donut shop",
+        "clicks": 1,
+        "impressions": 8,
+        "ctr": 0.125,
+        "position": 12.3
+      },
+      {
+        "query": "waikiki food",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 18.7
+      },
+      {
+        "query": "honolulu breakfast",
+        "clicks": 0,
+        "impressions": 22,
+        "ctr": 0.0,
+        "position": 22.5
+      },
+      {
+        "query": "best coffee hawaii",
+        "clicks": 0,
+        "impressions": 31,
+        "ctr": 0.0,
+        "position": 25.1
+      },
+      {
+        "query": "kona coffee beans",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 28.3
+      },
+      {
+        "query": "coffee shop honolulu",
+        "clicks": 1,
+        "impressions": 20,
+        "ctr": 0.05,
+        "position": 30.0
+      },
+      {
+        "query": "hawaii coffee beans",
+        "clicks": 1,
+        "impressions": 20,
+        "ctr": 0.05,
+        "position": 30.5
+      },
+      {
+        "query": "waikiki dessert",
+        "clicks": 1,
+        "impressions": 20,
+        "ctr": 0.05,
+        "position": 31.0
+      },
+      {
+        "query": "donuts honolulu",
+        "clicks": 1,
+        "impressions": 20,
+        "ctr": 0.05,
+        "position": 31.5
+      },
+      {
+        "query": "kona coffee price",
+        "clicks": 1,
+        "impressions": 20,
+        "ctr": 0.05,
+        "position": 32.0
+      },
+      {
+        "query": "best breakfast waikiki",
+        "clicks": 1,
+        "impressions": 20,
+        "ctr": 0.05,
+        "position": 32.5
+      },
+      {
+        "query": "hawaii coffee culture",
+        "clicks": 1,
+        "impressions": 20,
+        "ctr": 0.05,
+        "position": 33.0
+      },
+      {
+        "query": "honolulu cafe",
+        "clicks": 1,
+        "impressions": 20,
+        "ctr": 0.05,
+        "position": 33.5
+      },
+      {
+        "query": "waikiki coffee near me",
+        "clicks": 1,
+        "impressions": 20,
+        "ctr": 0.05,
+        "position": 34.0
+      },
+      {
+        "query": "kona donut shop",
+        "clicks": 1,
+        "impressions": 20,
+        "ctr": 0.05,
+        "position": 34.5
+      },
+      {
+        "query": "hawaii pastry shop",
+        "clicks": 1,
+        "impressions": 19,
+        "ctr": 0.053,
+        "position": 35.0
+      },
+      {
+        "query": "honolulu food spots",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 35.5
+      },
+      {
+        "query": "waikiki brunch",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 36.0
+      },
+      {
+        "query": "coffee and donuts",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 36.5
+      },
+      {
+        "query": "hawaii local coffee",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 37.0
+      },
+      {
+        "query": "honolulu sweet treats",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 37.5
+      },
+      {
+        "query": "waikiki morning coffee",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 38.0
+      },
+      {
+        "query": "kona coffee taste",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 38.5
+      },
+      {
+        "query": "hawaii coffee tour",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 39.0
+      },
+      {
+        "query": "honolulu bakery",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 39.5
+      },
+      {
+        "query": "waikiki cafe culture",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 40.0
+      },
+      {
+        "query": "kona coffee roasting",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 40.5
+      },
+      {
+        "query": "hawaii coffee history",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 41.0
+      },
+      {
+        "query": "honolulu desserts",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 41.5
+      },
+      {
+        "query": "waikiki local food",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 42.0
+      },
+      {
+        "query": "kona coffee farm",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 42.5
+      },
+      {
+        "query": "hawaii coffee shop tour",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 43.0
+      },
+      {
+        "query": "honolulu snacks",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 43.5
+      },
+      {
+        "query": "waikiki breakfast spots",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 44.0
+      },
+      {
+        "query": "kona coffee quality",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0.0,
+        "position": 44.5
+      },
+      {
+        "query": "hawaii coffee brands",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 45.0
+      },
+      {
+        "query": "honolulu morning",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 45.5
+      },
+      {
+        "query": "waikiki coffee culture",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 46.0
+      },
+      {
+        "query": "kona coffee guide",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 46.5
+      },
+      {
+        "query": "hawaii breakfast food",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 47.0
+      },
+      {
+        "query": "honolulu treats",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 47.5
+      },
+      {
+        "query": "waikiki sweet shop",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 48.0
+      },
+      {
+        "query": "kona coffee brewing",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 48.5
+      },
+      {
+        "query": "hawaii coffee regions",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 49.0
+      },
+      {
+        "query": "honolulu pastries",
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0.0,
+        "position": 49.5
+      },
+      {
+        "query": "waikiki food guide",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 50.0
+      },
+      {
+        "query": "kona coffee varieties",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 50.5
+      },
+      {
+        "query": "hawaii dessert shop",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 51.0
+      },
+      {
+        "query": "honolulu cafe scene",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 51.5
+      },
+      {
+        "query": "waikiki dining",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 52.0
+      },
+      {
+        "query": "kona coffee aroma",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 52.5
+      },
+      {
+        "query": "hawaii bakery shop",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 53.0
+      },
+      {
+        "query": "honolulu breakfast menu",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 53.5
+      },
+      {
+        "query": "waikiki treats",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 54.0
+      },
+      {
+        "query": "kona coffee flavor",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 54.5
+      },
+      {
+        "query": "hawaii food culture",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 55.0
+      },
+      {
+        "query": "honolulu dining guide",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 55.5
+      },
+      {
+        "query": "waikiki local cafe",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 56.0
+      },
+      {
+        "query": "kona coffee beans fresh",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 56.5
+      },
+      {
+        "query": "hawaii pastry guide",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 57.0
+      },
+      {
+        "query": "honolulu sweets",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 57.5
+      },
+      {
+        "query": "waikiki morning food",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 58.0
+      },
+      {
+        "query": "kona coffee shop tour",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 58.5
+      },
+      {
+        "query": "hawaii cafe guide",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 59.0
+      },
+      {
+        "query": "honolulu food tour",
+        "clicks": 0,
+        "impressions": 15,
+        "ctr": 0.0,
+        "position": 59.5
+      },
+      {
+        "query": "waikiki dessert menu",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 60.0
+      },
+      {
+        "query": "kona coffee tasting",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 60.5
+      },
+      {
+        "query": "hawaii breakfast spots",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 61.0
+      },
+      {
+        "query": "honolulu cafe menu",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 61.5
+      },
+      {
+        "query": "waikiki coffee guide",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 62.0
+      },
+      {
+        "query": "kona coffee reviews",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 62.5
+      },
+      {
+        "query": "hawaii donut varieties",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 63.0
+      },
+      {
+        "query": "honolulu treats shop",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 63.5
+      },
+      {
+        "query": "waikiki cafe menu",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 64.0
+      },
+      {
+        "query": "kona coffee origin",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0.0,
+        "position": 64.5
+      },
+      {
+        "query": "hawaii breakfast guide",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 65.0
+      },
+      {
+        "query": "honolulu bakery menu",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 65.5
+      },
+      {
+        "query": "waikiki food scene",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 66.0
+      },
+      {
+        "query": "kona coffee specialty",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 66.5
+      },
+      {
+        "query": "hawaii sweet treats",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 67.0
+      },
+      {
+        "query": "honolulu dining scene",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 67.5
+      },
+      {
+        "query": "waikiki local treats",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 68.0
+      },
+      {
+        "query": "kona coffee best",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 68.5
+      },
+      {
+        "query": "hawaii cafe culture",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 69.0
+      },
+      {
+        "query": "honolulu food spots guide",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0.0,
+        "position": 69.5
+      },
+      {
+        "query": "waikiki breakfast guide",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0.0,
+        "position": 70.0
+      },
+      {
+        "query": "kona coffee fresh roast",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0.0,
+        "position": 70.5
+      },
+      {
+        "query": "hawaii local bakery",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0.0,
+        "position": 71.0
+      },
+      {
+        "query": "honolulu morning cafe",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0.0,
+        "position": 71.5
+      },
+      {
+        "query": "honolulu coffee donut shop",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 72.5
       }
     ],
     "byPosition": {
