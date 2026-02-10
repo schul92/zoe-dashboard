@@ -85,7 +85,7 @@
         <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3 sm:gap-5">
-                    <a href="/zoe-dashboard/hub.html" class="flex items-center gap-2 px-2 sm:px-3 py-2 -ml-2 sm:-ml-3 rounded-lg hover:bg-zinc-800/50 transition-colors text-zinc-400 hover:text-zinc-200">
+                    <a href="./hub.html" class="flex items-center gap-2 px-2 sm:px-3 py-2 -ml-2 sm:-ml-3 rounded-lg hover:bg-zinc-800/50 transition-colors text-zinc-400 hover:text-zinc-200">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
                         <span class="text-sm font-medium hidden sm:inline">Hub</span>
                     </a>
@@ -234,12 +234,13 @@
         async function fetchData() {
             document.getElementById('refreshIcon').classList.add('animate-spin');
             try {
-                const response = await fetch('/zoe-dashboard/news/data.json?' + Date.now());
+                const response = await fetch('./news/data.json?' + Date.now());
                 newsData = await response.json();
                 renderNews();
             } catch (e) {
                 console.error('Error:', e);
                 document.getElementById('lastUpdated').textContent = 'Error loading';
+                document.getElementById('highlightsList').innerHTML = '<div class="text-red-400 text-sm">⚠️ Failed to load news data. Error: ' + e.message + '</div>';
             }
             document.getElementById('refreshIcon').classList.remove('animate-spin');
         }
