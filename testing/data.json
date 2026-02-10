@@ -1,0 +1,13 @@
+{
+  "date": "2026-02-09",
+  "timestamp": "2026-02-09T17:22:00-08:00",
+  "tests": {
+    "passed": 7,
+    "failed": 1,
+    "total": 8
+  },
+  "screenshots": {
+    "desktop": "/screenshots/desktop-homepage.png",
+    "mobile": "/screenshots/mobile-homepage.png"
+  }
+}
