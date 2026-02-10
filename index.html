@@ -43,6 +43,7 @@
         .btn {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 0.5rem;
             padding: 0.625rem 1.25rem;
             background: var(--primary);
@@ -53,10 +54,23 @@
             transition: all 0.2s;
             cursor: pointer;
             border: none;
+            text-align: center;
+            min-height: 44px; /* Touch-friendly */
         }
         .btn:hover {
             opacity: 0.9;
             transform: translateY(-1px);
+        }
+        @media (max-width: 640px) {
+            .btn {
+                font-size: 0.75rem;
+                padding: 0.5rem 0.75rem;
+                gap: 0.375rem;
+            }
+            .btn svg {
+                width: 1rem;
+                height: 1rem;
+            }
         }
         .badge {
             display: inline-flex;
@@ -89,11 +103,38 @@
         }
     </style>
 </head>
-<body class="p-6 min-h-screen">
+<body class="p-4 sm:p-6 min-h-screen max-w-7xl mx-auto">
 
     <!-- Header -->
-    <header class="mb-8">
-        <div class="flex items-center justify-between">
+    <header class="mb-6 sm:mb-8">
+        <!-- Mobile: Stacked Layout -->
+        <div class="flex flex-col gap-4 sm:hidden">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-2xl shadow-lg">
+                        🎯
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold tracking-tight">ZOE STUDIO</h1>
+                        <p class="text-xs" style="color: var(--muted-foreground)">Marketing Hub</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <select id="clientSelector" class="flex-1 px-3 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-sm font-medium hover:bg-zinc-700 transition-colors cursor-pointer">
+                    <option value="kona">☕ Kona</option>
+                    <option value="carek9">🐕 CareK9</option>
+                </select>
+                <button class="btn px-3 py-2" onclick="window.location.reload()">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Desktop: Single Row -->
+        <div class="hidden sm:flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-3xl shadow-lg">
                     🎯
@@ -104,7 +145,7 @@
                 </div>
             </div>
             <div class="flex items-center gap-3">
-                <select id="clientSelector" class="px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-sm font-medium hover:bg-zinc-700 transition-colors cursor-pointer">
+                <select id="clientSelector-desktop" class="px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-lg text-sm font-medium hover:bg-zinc-700 transition-colors cursor-pointer">
                     <option value="kona">☕ Kona Coffee Donut</option>
                     <option value="carek9">🐕 CareK9</option>
                 </select>
@@ -402,33 +443,34 @@
 </html>
 
 <script>
-// Client switcher functionality
-const clientSelector = document.getElementById('clientSelector');
+// Client switcher functionality (mobile + desktop)
+const clientSelectorMobile = document.getElementById('clientSelector');
+const clientSelectorDesktop = document.getElementById('clientSelector-desktop');
 const currentClient = localStorage.getItem('selectedClient') || 'kona';
 
-// Set initial selection
-clientSelector.value = currentClient;
+// Set initial selection for both selectors
+if (clientSelectorMobile) clientSelectorMobile.value = currentClient;
+if (clientSelectorDesktop) clientSelectorDesktop.value = currentClient;
 
-// Handle client change
-clientSelector.addEventListener('change', (e) => {
-    const newClient = e.target.value;
+// Handle client change function
+function handleClientChange(newClient) {
     localStorage.setItem('selectedClient', newClient);
     
-    // Update dashboard links
-    document.querySelectorAll('a[href*="/seo"], a[href*="/news"], a[href*="/social"]').forEach(link => {
-        const href = link.getAttribute('href');
-        if (href.includes('/seo')) {
-            link.setAttribute('href', `clients/${newClient}/seo/`);
-        } else if (href.includes('/news')) {
-            link.setAttribute('href', `clients/${newClient}/news.html`);
-        } else if (href.includes('/social')) {
-            link.setAttribute('href', `clients/${newClient}/social.html`);
-        }
-    });
+    // Sync both selectors
+    if (clientSelectorMobile) clientSelectorMobile.value = newClient;
+    if (clientSelectorDesktop) clientSelectorDesktop.value = newClient;
     
     // Reload to show new client data
     window.location.reload();
-});
+}
+
+// Add listeners to both selectors
+if (clientSelectorMobile) {
+    clientSelectorMobile.addEventListener('change', (e) => handleClientChange(e.target.value));
+}
+if (clientSelectorDesktop) {
+    clientSelectorDesktop.addEventListener('change', (e) => handleClientChange(e.target.value));
+}
 
 // Initialize links based on current client
 document.addEventListener('DOMContentLoaded', () => {
