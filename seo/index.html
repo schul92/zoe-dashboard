@@ -509,7 +509,7 @@
             error.style.display = 'none';
 
             try {
-                const response = await fetch('https://zoe-dashboard-064111086179.s3.us-east-2.amazonaws.com/seo/recommendations.json?' + Date.now());
+                const response = await fetch('./recommendations.json?' + Date.now());
                 const data = await response.json();
                 
                 // Update timestamp
