@@ -928,23 +928,17 @@
         function renderPositionBracketsChart(data, kw) {
             let brackets = { top3: 0, top10: 0, top20: 0, beyond: 0 };
             
-            if (data) {
-                // Handle both formats: direct number or object with keywords property
-                brackets.top3 = (typeof data['1-3'] === 'object' ? data['1-3'].keywords : data['1-3']) || data.pos1to3 || 0;
-                brackets.top10 = (typeof data['4-10'] === 'object' ? data['4-10'].keywords : data['4-10']) || data.pos4to10 || 0;
-                brackets.top20 = (typeof data['11-20'] === 'object' ? data['11-20'].keywords : data['11-20']) || data.pos11to20 || 0;
-                brackets.beyond = (typeof data['21+'] === 'object' ? data['21+'].keywords : data['21+']) || data.pos21plus || 0;
-            } else {
-                // Calculate from keyword data
-                for (const [_, kwData] of Object.entries(kw)) {
-                    const pos = kwData.position;
-                    if (!pos) continue;
-                    if (pos <= 3) brackets.top3++;
-                    else if (pos <= 10) brackets.top10++;
-                    else if (pos <= 20) brackets.top20++;
-                    else brackets.beyond++;
-                }
-            }
+            // Use actual top_queries data from searchConsole
+            const queries = seoData?.searchConsole?.top_queries || [];
+            
+            queries.forEach(q => {
+                const pos = q.position;
+                if (!pos) return;
+                if (pos <= 3) brackets.top3++;
+                else if (pos <= 10) brackets.top10++;
+                else if (pos <= 20) brackets.top20++;
+                else brackets.beyond++;
+            });
 
             document.getElementById('pos1to3').textContent = brackets.top3;
             document.getElementById('pos4to10').textContent = brackets.top10;
@@ -1050,29 +1044,28 @@
 
             let opportunities = [];
 
-            if (data && data.length > 0) {
-                opportunities = data;
-            } else {
-                // Calculate opportunities from keyword data
-                for (const [keyword, kwData] of Object.entries(kw)) {
-                    const pos = kwData.position;
-                    const impressions = kwData.impressions || 0;
-                    const ctr = kwData.ctr || (kwData.clicks / impressions * 100) || 0;
-                    
-                    // Opportunity: position 8-20 with decent impressions
-                    if (pos >= 8 && pos <= 20 && impressions >= 1) {
-                        const opportunityScore = Math.round((impressions * (21 - pos)) / 10);
-                        opportunities.push({
-                            query: keyword,
-                            position: pos,
-                            impressions: impressions,
-                            ctr: ctr,
-                            opportunityScore: opportunityScore
-                        });
-                    }
+            // Use actual top_queries data from searchConsole
+            const queries = seoData?.searchConsole?.top_queries || [];
+            
+            queries.forEach(q => {
+                const pos = q.position;
+                const impressions = q.impressions || 0;
+                const ctr = (q.ctr || 0) * 100;  // Convert to percentage
+                
+                // Opportunity: position 8-20 with decent impressions (10+)
+                if (pos >= 8 && pos <= 20 && impressions >= 10) {
+                    const opportunityScore = Math.round((impressions * (21 - pos)) / 10);
+                    opportunities.push({
+                        query: q.query,
+                        position: pos,
+                        impressions: impressions,
+                        ctr: ctr,
+                        opportunityScore: opportunityScore
+                    });
                 }
-                opportunities.sort((a, b) => b.opportunityScore - a.opportunityScore);
-            }
+            });
+            
+            opportunities.sort((a, b) => b.opportunityScore - a.opportunityScore);
 
             if (opportunities.length === 0) {
                 section.classList.add('hidden');
