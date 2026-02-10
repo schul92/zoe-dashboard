@@ -312,38 +312,6 @@
             </section>
         </div>
 
-        <!-- Target Keywords -->
-        <section class="glass rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 animate-slide-in">
-            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4 sm:mb-6">
-                <div class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-lg">🎯</div>
-                    <div>
-                        <h2 class="text-base sm:text-lg font-semibold">Target Keywords</h2>
-                        <p class="text-xs sm:text-sm text-zinc-500">Tracking <span id="kwCount">0</span> priority keywords • Click headers to sort</p>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <span class="px-2 py-1 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs font-medium" id="top3Count">0 Top 3</span>
-                    <span class="px-2 py-1 rounded-lg bg-amber-500/20 text-amber-400 text-xs font-medium" id="top10Count">0 Top 10</span>
-                </div>
-            </div>
-            <div class="overflow-x-auto scrollbar-thin">
-                <table class="w-full min-w-[600px] sm:min-w-[700px]">
-                    <thead>
-                        <tr class="text-left text-zinc-500 text-xs sm:text-sm border-b border-zinc-800">
-                            <th class="pb-3 sm:pb-4 font-medium sortable" data-column="keyword" data-table="keywords">Keyword</th>
-                            <th class="pb-3 sm:pb-4 font-medium text-center sortable" data-column="position" data-table="keywords">Position</th>
-                            <th class="pb-3 sm:pb-4 font-medium text-right sortable" data-column="clicks" data-table="keywords">Clicks</th>
-                            <th class="pb-3 sm:pb-4 font-medium text-right sortable" data-column="impressions" data-table="keywords">Impressions</th>
-                            <th class="pb-3 sm:pb-4 font-medium text-right sortable" data-column="ctr" data-table="keywords">CTR</th>
-                            <th class="pb-3 sm:pb-4 font-medium text-center">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody id="keywordsTable" class="text-sm"></tbody>
-                </table>
-            </div>
-        </section>
-
         <!-- All Queries with Pagination -->
         <section class="glass rounded-2xl p-4 sm:p-6 animate-slide-in">
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
@@ -351,9 +319,23 @@
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-lg">🔍</div>
                     <div>
                         <h2 class="text-base sm:text-lg font-semibold">All Search Queries</h2>
-                        <p class="text-xs sm:text-sm text-zinc-500"><span id="queryTotal">0</span> queries • Click headers to sort</p>
+                        <p class="text-xs sm:text-sm text-zinc-500"><span id="queryTotal">0</span> total keywords</p>
                     </div>
                 </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs font-medium" id="top3Badge">0 Top 3</span>
+                    <span class="px-2 py-1 rounded-lg bg-amber-500/20 text-amber-400 text-xs font-medium" id="top10Badge">0 Top 10</span>
+                    <span class="px-2 py-1 rounded-lg bg-blue-500/20 text-blue-400 text-xs font-medium" id="top20Badge">0 Top 20</span>
+                    <span class="px-2 py-1 rounded-lg bg-purple-500/20 text-purple-400 text-xs font-medium" id="withClicksBadge">0 With Clicks</span>
+                </div>
+            </div>
+            <div class="flex items-center justify-between gap-3 mb-4 sm:mb-6">
+                <div class="relative w-full sm:w-auto">
+                    <input type="text" id="searchFilter" placeholder="Filter queries..." 
+                           class="w-full sm:w-64 px-4 py-2 sm:py-2.5 pl-10 bg-zinc-800/50 border border-zinc-700/50 rounded-xl text-sm focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/20 transition-all">
+                    <svg class="w-4 h-4 text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                </div>
+                <div>
                 <div class="relative w-full sm:w-auto">
                     <input type="text" id="searchFilter" placeholder="Filter queries..." 
                            class="w-full sm:w-64 px-4 py-2 sm:py-2.5 pl-10 bg-zinc-800/50 border border-zinc-700/50 rounded-xl text-sm focus:outline-none focus:border-orange-500/50 focus:ring-1 focus:ring-orange-500/20 transition-all">
@@ -389,7 +371,6 @@
         let seoData = null;
         let sparklineTrends = null;
         let sparklineCharts = {};
-        let keywordsData = [];
         let allQueriesData = [];
         let pagesData = [];
         let currentPage = 1;
@@ -549,43 +530,13 @@
                         return dir === 'asc' ? (vA > vB ? 1 : vA < vB ? -1 : 0) : (vA < vB ? 1 : vA > vB ? -1 : 0);
                     };
 
-                    if (table === 'keywords') { keywordsData.sort(sortFn); renderKeywordsTable(keywordsData); }
-                    else if (table === 'allQueries') { allQueriesData.sort(sortFn); currentPage = 1; renderQueriesPage(); }
+                    if (table === 'allQueries') { allQueriesData.sort(sortFn); currentPage = 1; renderQueriesPage(); }
                     else if (table === 'pages') { pagesData.sort(sortFn); renderPagesTable(pagesData); }
                 };
             });
         }
 
         // ==== KEYWORDS TABLE ====
-        function renderKeywordsTable(queries) {
-            keywordsData = queries;
-            const tbody = document.getElementById('keywordsTable');
-            tbody.innerHTML = '';
-            if (!queries || !queries.length) {
-                tbody.innerHTML = '<tr><td colspan="6" class="py-8 text-center text-zinc-500">No keyword data available</td></tr>';
-                return;
-            }
-            let top3 = 0, top10 = 0;
-            queries.forEach(d => { if (d.position && d.position <= 3) top3++; if (d.position && d.position <= 10) top10++; });
-            document.getElementById('kwCount').textContent = queries.length;
-            document.getElementById('top3Count').textContent = `${top3} Top 3`;
-            document.getElementById('top10Count').textContent = `${top10} Top 10`;
-            for (const d of queries) {
-                const ctr = (d.ctr || 0) * 100;
-                const tr = document.createElement('tr');
-                tr.className = 'border-b border-zinc-800/50 hover:bg-zinc-800/30 transition-colors';
-                tr.innerHTML = `
-                    <td class="py-3 sm:py-4 font-medium text-xs sm:text-sm">${d.query||'--'}</td>
-                    <td class="py-3 sm:py-4 text-center"><span class="font-bold ${getPositionColor(d.position)}">${d.position ? '#'+Math.round(d.position) : '—'}</span></td>
-                    <td class="py-3 sm:py-4 text-right text-zinc-300">${d.clicks||0}</td>
-                    <td class="py-3 sm:py-4 text-right text-zinc-400">${d.impressions||0}</td>
-                    <td class="py-3 sm:py-4 text-right text-zinc-400">${ctr.toFixed(1)}%</td>
-                    <td class="py-3 sm:py-4 text-center">${getStatusBadge(d.position)}</td>`;
-                tbody.appendChild(tr);
-            }
-        }
-
-        // ==== ALL QUERIES WITH PAGINATION ====
         function renderQueriesPage() {
             const data = filteredQueries.length ? filteredQueries : allQueriesData;
             const total = data.length;
@@ -870,14 +821,22 @@
             // Pages
             renderPagesTable(seoData.pages?.all || []);
 
-            // Keywords (top 10 by position from all queries)
-            const allQ = q.all || [];
-            const topKw = [...allQ].sort((a,b) => (a.position||999) - (b.position||999)).slice(0, 10);
-            renderKeywordsTable(topKw);
-
             // All queries (100, paginated)
+            const allQ = q.all || [];
             allQueriesData = [...allQ].sort((a,b) => (b.clicks||0) - (a.clicks||0));
             document.getElementById('queryTotal').textContent = allQueriesData.length;
+            
+            // Calculate badge stats
+            const top3Count = allQueriesData.filter(q => q.position && q.position <= 3).length;
+            const top10Count = allQueriesData.filter(q => q.position && q.position <= 10).length;
+            const top20Count = allQueriesData.filter(q => q.position && q.position <= 20).length;
+            const withClicksCount = allQueriesData.filter(q => q.clicks && q.clicks > 0).length;
+            
+            document.getElementById('top3Badge').textContent = `${top3Count} Top 3`;
+            document.getElementById('top10Badge').textContent = `${top10Count} Top 10`;
+            document.getElementById('top20Badge').textContent = `${top20Count} Top 20`;
+            document.getElementById('withClicksBadge').textContent = `${withClicksCount} With Clicks`;
+            
             filteredQueries = [];
             currentPage = 1;
             renderQueriesPage();
