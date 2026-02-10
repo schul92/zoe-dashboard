@@ -233,6 +233,94 @@
             </div>
         </section>
 
+        <!-- AI-Powered Recommendations -->
+        <section class="glass rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 animate-slide-in border border-purple-500/30 glow-purple" id="aiRecommendationsSection">
+            <div class="flex items-center justify-between mb-4 sm:mb-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-lg animate-pulse">🤖</div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <h2 class="text-base sm:text-lg font-semibold">AI-Powered Insights</h2>
+                            <span class="px-2 py-0.5 bg-purple-500/20 border border-purple-500/30 rounded-full text-xs font-medium text-purple-300">LIVE</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-zinc-500">Actionable recommendations updated daily at 6 AM PST</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-zinc-500">
+                    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <span id="aiLastUpdated">Loading...</span>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div id="aiLoading" class="text-center py-8">
+                <div class="inline-block w-8 h-8 border-4 border-purple-500/30 border-t-purple-500 rounded-full animate-spin"></div>
+                <p class="text-sm text-zinc-500 mt-3">Fetching AI recommendations...</p>
+            </div>
+
+            <!-- Recommendations Grid -->
+            <div id="aiRecommendations" class="grid gap-4 sm:gap-6" style="display:none;">
+                
+                <!-- Urgent Issues -->
+                <div id="urgentSection" style="display:none;">
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="w-8 h-8 rounded-lg bg-red-500/20 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                        </div>
+                        <h3 class="text-sm font-semibold text-red-400">🔴 URGENT - Fix Now</h3>
+                        <span class="px-2 py-0.5 bg-red-500/20 border border-red-500/30 rounded-full text-xs font-medium text-red-300" id="urgentCount">0</span>
+                    </div>
+                    <div class="grid gap-2" id="urgentContainer"></div>
+                </div>
+
+                <!-- Quick Wins -->
+                <div id="quickWinsAISection" style="display:none;">
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="w-8 h-8 rounded-lg bg-amber-500/20 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        </div>
+                        <h3 class="text-sm font-semibold text-amber-400">🟡 QUICK WINS - Easy Gains</h3>
+                        <span class="px-2 py-0.5 bg-amber-500/20 border border-amber-500/30 rounded-full text-xs font-medium text-amber-300" id="quickWinsCount">0</span>
+                    </div>
+                    <div class="grid gap-2" id="quickWinsAIContainer"></div>
+                </div>
+
+                <!-- Opportunities -->
+                <div id="opportunitiesSection" style="display:none;">
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <h3 class="text-sm font-semibold text-emerald-400">🟢 OPPORTUNITIES - Growth Potential</h3>
+                        <span class="px-2 py-0.5 bg-emerald-500/20 border border-emerald-500/30 rounded-full text-xs font-medium text-emerald-300" id="opportunitiesCount">0</span>
+                    </div>
+                    <div class="grid gap-2" id="opportunitiesContainer"></div>
+                </div>
+
+                <!-- Strategic Insights -->
+                <div id="insightsSection" style="display:none;">
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <h3 class="text-sm font-semibold text-blue-400">💡 STRATEGIC INSIGHTS</h3>
+                        <span class="px-2 py-0.5 bg-blue-500/20 border border-blue-500/30 rounded-full text-xs font-medium text-blue-300" id="insightsCount">0</span>
+                    </div>
+                    <div class="grid gap-2" id="insightsContainer"></div>
+                </div>
+
+            </div>
+
+            <!-- Error State -->
+            <div id="aiError" class="text-center py-8" style="display:none;">
+                <div class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center mx-auto mb-3">
+                    <svg class="w-6 h-6 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <p class="text-sm text-zinc-500">Unable to load AI recommendations</p>
+                <button onclick="loadAIRecommendations()" class="mt-3 px-4 py-2 bg-purple-500/20 hover:bg-purple-500/30 rounded-lg text-sm transition-colors">Retry</button>
+            </div>
+        </section>
+
         <!-- Quick Wins Section -->
         <section class="glass rounded-2xl p-4 sm:p-6 mb-6 sm:mb-8 animate-slide-in border border-amber-500/20" id="quickWinsSection" style="display:none;">
             <div class="flex items-center gap-3 mb-4 sm:mb-6">
@@ -411,7 +499,146 @@
             }
         }
 
-        function refreshData() { fetchData(); }
+        async function loadAIRecommendations() {
+            const loading = document.getElementById('aiLoading');
+            const content = document.getElementById('aiRecommendations');
+            const error = document.getElementById('aiError');
+            
+            loading.style.display = 'block';
+            content.style.display = 'none';
+            error.style.display = 'none';
+
+            try {
+                const response = await fetch('https://zoe-dashboard-064111086179.s3.us-east-2.amazonaws.com/seo/recommendations.json?' + Date.now());
+                const data = await response.json();
+                
+                // Update timestamp
+                const dt = new Date(data.generatedAt);
+                document.getElementById('aiLastUpdated').textContent = dt.toLocaleString('en-US', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' });
+                
+                renderAIRecommendations(data);
+                
+                loading.style.display = 'none';
+                content.style.display = 'grid';
+            } catch (e) {
+                console.error('Error loading AI recommendations:', e);
+                loading.style.display = 'none';
+                error.style.display = 'block';
+            }
+        }
+
+        function renderAIRecommendations(data) {
+            // Urgent Issues
+            if (data.urgent && data.urgent.length > 0) {
+                document.getElementById('urgentSection').style.display = 'block';
+                document.getElementById('urgentCount').textContent = data.urgent.length;
+                const container = document.getElementById('urgentContainer');
+                container.innerHTML = '';
+                data.urgent.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'glass-hover rounded-xl p-4 border border-red-500/20';
+                    card.innerHTML = `
+                        <div class="flex items-start justify-between gap-3">
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-zinc-200 mb-1">${item.action}</p>
+                                ${item.keyword ? `<p class="text-xs text-zinc-500 mb-2">Keyword: <span class="text-zinc-400">${item.keyword}</span></p>` : ''}
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-0.5 bg-red-500/20 border border-red-500/30 rounded text-xs font-medium text-red-300">Impact: ${item.impact}</span>
+                                    <span class="px-2 py-0.5 bg-zinc-700/50 border border-zinc-600 rounded text-xs text-zinc-400">Effort: ${item.effort}</span>
+                                </div>
+                            </div>
+                            ${item.ctr !== undefined ? `<div class="text-right"><p class="text-xs text-zinc-500">CTR</p><p class="text-lg font-bold text-red-400">${(item.ctr * 100).toFixed(1)}%</p></div>` : ''}
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            } else {
+                document.getElementById('urgentSection').style.display = 'none';
+            }
+
+            // Quick Wins
+            if (data.quickWins && data.quickWins.length > 0) {
+                document.getElementById('quickWinsAISection').style.display = 'block';
+                document.getElementById('quickWinsCount').textContent = data.quickWins.length;
+                const container = document.getElementById('quickWinsAIContainer');
+                container.innerHTML = '';
+                data.quickWins.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'glass-hover rounded-xl p-4 border border-amber-500/20';
+                    card.innerHTML = `
+                        <div class="flex items-start justify-between gap-3">
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-zinc-200 mb-1">${item.action}</p>
+                                ${item.keyword ? `<p class="text-xs text-zinc-500 mb-2">Keyword: <span class="text-zinc-400">${item.keyword}</span></p>` : ''}
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-0.5 bg-amber-500/20 border border-amber-500/30 rounded text-xs font-medium text-amber-300">Impact: ${item.impact}</span>
+                                    <span class="px-2 py-0.5 bg-zinc-700/50 border border-zinc-600 rounded text-xs text-zinc-400">Effort: ${item.effort}</span>
+                                </div>
+                            </div>
+                            ${item.potentialGain ? `<div class="text-right"><p class="text-xs text-zinc-500">Potential</p><p class="text-lg font-bold text-amber-400">+${item.potentialGain}</p><p class="text-xs text-zinc-500">clicks/wk</p></div>` : ''}
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            } else {
+                document.getElementById('quickWinsAISection').style.display = 'none';
+            }
+
+            // Opportunities
+            if (data.opportunities && data.opportunities.length > 0) {
+                document.getElementById('opportunitiesSection').style.display = 'block';
+                document.getElementById('opportunitiesCount').textContent = data.opportunities.length;
+                const container = document.getElementById('opportunitiesContainer');
+                container.innerHTML = '';
+                data.opportunities.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'glass-hover rounded-xl p-4 border border-emerald-500/20';
+                    card.innerHTML = `
+                        <div class="flex items-start justify-between gap-3">
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-zinc-200 mb-1">${item.action}</p>
+                                ${item.keyword ? `<p class="text-xs text-zinc-500 mb-2">Keyword: <span class="text-zinc-400">${item.keyword}</span></p>` : ''}
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-0.5 bg-emerald-500/20 border border-emerald-500/30 rounded text-xs font-medium text-emerald-300">Impact: ${item.impact}</span>
+                                    <span class="px-2 py-0.5 bg-zinc-700/50 border border-zinc-600 rounded text-xs text-zinc-400">Effort: ${item.effort}</span>
+                                </div>
+                            </div>
+                            ${item.impressions ? `<div class="text-right"><p class="text-xs text-zinc-500">Impressions</p><p class="text-lg font-bold text-emerald-400">${item.impressions}</p></div>` : ''}
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            } else {
+                document.getElementById('opportunitiesSection').style.display = 'none';
+            }
+
+            // Strategic Insights
+            if (data.insights && data.insights.length > 0) {
+                document.getElementById('insightsSection').style.display = 'block';
+                document.getElementById('insightsCount').textContent = data.insights.length;
+                const container = document.getElementById('insightsContainer');
+                container.innerHTML = '';
+                data.insights.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'glass-hover rounded-xl p-4 border border-blue-500/20';
+                    card.innerHTML = `
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-zinc-200 mb-1">${item.observation}</p>
+                            <p class="text-xs text-zinc-400 mb-2">${item.suggestion}</p>
+                            <span class="px-2 py-0.5 bg-blue-500/20 border border-blue-500/30 rounded text-xs font-medium text-blue-300">Priority: ${item.priority}</span>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            } else {
+                document.getElementById('insightsSection').style.display = 'none';
+            }
+        }
+
+        function refreshData() { 
+            fetchData(); 
+            loadAIRecommendations();
+        }
 
         function formatNumber(n) {
             if (n >= 1000000) return (n/1000000).toFixed(1) + 'M';
@@ -839,7 +1066,11 @@
         }
 
         fetchData();
-        setInterval(fetchData, 5 * 60 * 1000);
+        loadAIRecommendations();
+        setInterval(() => {
+            fetchData();
+            loadAIRecommendations();
+        }, 5 * 60 * 1000);
     </script>
 </body>
 </html>
