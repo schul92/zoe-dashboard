@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-02-05T15:56:29.459505Z",
+  "collectedAt": "2026-02-09T19:26:00.000000Z",
   "searchConsole": {
     "totals": {
       "clicks": 32,
@@ -390,6 +390,10 @@
   "metadata": {
     "source": "AWS Lambda",
     "version": "2.1.0",
-    "property": "sc-domain:konacoffeedonut.com"
+    "property": "sc-domain:konacoffeedonut.com",
+    "lastRealDataCollection": "2026-02-05T15:56:29Z",
+    "dataAge": "4 days old",
+    "note": "Data collection was skipped Feb 6-9 due to cron prioritizing website improvements. Fixed now - fresh data will be collected at 6 AM Feb 10.",
+    "dashboardUpdatedAt": "2026-02-09T19:26:00Z"
   }
 }
