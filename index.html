@@ -263,15 +263,15 @@
             <div class="grid grid-cols-3 gap-4 pt-2 border-t" style="border-color: var(--border);">
                 <div>
                     <p class="text-xs mb-1" style="color: var(--muted-foreground)">Twitter/X</p>
-                    <p class="text-xl font-bold">16</p>
+                    <p class="text-xl font-bold" id="news-twitter">16</p>
                 </div>
                 <div>
                     <p class="text-xs mb-1" style="color: var(--muted-foreground)">Reddit</p>
-                    <p class="text-xl font-bold">25</p>
+                    <p class="text-xl font-bold" id="news-reddit">25</p>
                 </div>
                 <div>
                     <p class="text-xs mb-1" style="color: var(--muted-foreground)">News</p>
-                    <p class="text-xl font-bold">20</p>
+                    <p class="text-xl font-bold" id="news-count">20</p>
                 </div>
             </div>
         </a>
@@ -337,19 +337,19 @@
             <div class="grid grid-cols-4 gap-4 pt-4 border-t" style="border-color: var(--border);">
                 <div>
                     <p class="text-xs mb-1" style="color: var(--muted-foreground)">TOP Tier</p>
-                    <p class="text-xl font-bold">39</p>
+                    <p class="text-xl font-bold" id="candidates-top">39</p>
                 </div>
                 <div>
                     <p class="text-xs mb-1" style="color: var(--muted-foreground)">STRONG</p>
-                    <p class="text-xl font-bold">7</p>
+                    <p class="text-xl font-bold" id="candidates-strong">7</p>
                 </div>
                 <div>
                     <p class="text-xs mb-1" style="color: var(--muted-foreground)">GOOD</p>
-                    <p class="text-xl font-bold">12</p>
+                    <p class="text-xl font-bold" id="candidates-good">12</p>
                 </div>
                 <div>
                     <p class="text-xs mb-1" style="color: var(--muted-foreground)">FAIR</p>
-                    <p class="text-xl font-bold">11</p>
+                    <p class="text-xl font-bold" id="candidates-fair">11</p>
                 </div>
             </div>
         </a>
@@ -479,6 +479,17 @@ async function loadClientStats(client) {
         document.getElementById('seo-clicks').textContent = stats.seo.clicks;
         document.getElementById('seo-impressions').textContent = stats.seo.impressions;
         document.getElementById('seo-position').textContent = stats.seo.avgPosition || '—';
+        
+        // Update News card
+        document.getElementById('news-twitter').textContent = stats.news.twitter;
+        document.getElementById('news-reddit').textContent = stats.news.reddit;
+        document.getElementById('news-count').textContent = stats.news.news;
+        
+        // Update Candidates card
+        document.getElementById('candidates-top').textContent = stats.candidates.top;
+        document.getElementById('candidates-strong').textContent = stats.candidates.strong;
+        document.getElementById('candidates-good').textContent = stats.candidates.good;
+        document.getElementById('candidates-fair').textContent = stats.candidates.fair;
         
         console.log(`✅ Loaded stats for ${stats.name}`);
     } catch (error) {

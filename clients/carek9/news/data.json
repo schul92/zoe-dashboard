@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "collectedAt": "2026-02-10T00:00:00Z",
+    "client": "carek9",
+    "status": "placeholder"
+  },
+  "sources": {
+    "twitter": [],
+    "reddit": [],
+    "hackernews": [],
+    "brave": [],
+    "googleTrends": []
+  },
+  "summary": {
+    "totalItems": 0,
+    "bySource": {
+      "twitter": 0,
+      "reddit": 0,
+      "hackernews": 0,
+      "brave": 0,
+      "googleTrends": 0
+    }
+  },
+  "highlights": [],
+  "actionItems": []
+}
