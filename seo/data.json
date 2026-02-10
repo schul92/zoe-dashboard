@@ -92,7 +92,58 @@
     "sessions": 108,
     "bounceRate": 0.36,
     "avgSessionDuration": 740.8,
-    "pageviews": 128
+    "pageviews": 128,
+    "landingPages": [
+      {
+        "page": "/",
+        "sessions": 52,
+        "engagement": 0.71,
+        "duration": 156.3,
+        "conversions": 2
+      },
+      {
+        "page": "/farm-to-donut",
+        "sessions": 18,
+        "engagement": 0.83,
+        "duration": 218.7,
+        "conversions": 1
+      },
+      {
+        "page": "/menu",
+        "sessions": 14,
+        "engagement": 0.64,
+        "duration": 98.4,
+        "conversions": 0
+      },
+      {
+        "page": "/ko",
+        "sessions": 9,
+        "engagement": 0.78,
+        "duration": 145.2,
+        "conversions": 0
+      },
+      {
+        "page": "/about",
+        "sessions": 7,
+        "engagement": 0.43,
+        "duration": 62.1,
+        "conversions": 0
+      },
+      {
+        "page": "/ko/farm-to-donut",
+        "sessions": 5,
+        "engagement": 0.80,
+        "duration": 189.5,
+        "conversions": 1
+      },
+      {
+        "page": "/contact",
+        "sessions": 3,
+        "engagement": 0.67,
+        "duration": 52.8,
+        "conversions": 0
+      }
+    ]
   },
   "metadata": {
     "source": "6 AM Cron",
