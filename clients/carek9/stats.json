@@ -1,0 +1,57 @@
+{
+  "client": "carek9",
+  "name": "CareK9",
+  "emoji": "🐕",
+  "activeClients": 1,
+  "dailyCrons": 0,
+  "dashboards": 0,
+  "grandOpening": {
+    "days": null,
+    "date": "TBD"
+  },
+  "seo": {
+    "clicks": 0,
+    "impressions": 0,
+    "avgPosition": 0,
+    "updatedHoursAgo": null
+  },
+  "news": {
+    "twitter": 0,
+    "reddit": 0,
+    "news": 0,
+    "updatedHoursAgo": null
+  },
+  "social": {
+    "platforms": [],
+    "autoPost": "Not configured"
+  },
+  "candidates": {
+    "top": 0,
+    "strong": 0,
+    "good": 0,
+    "fair": 0,
+    "total": 0
+  },
+  "highlights": [
+    {
+      "icon": "🔧",
+      "title": "Setup Required",
+      "subtitle": "CareK9 dashboard not configured yet"
+    },
+    {
+      "icon": "📊",
+      "title": "No SEO data",
+      "subtitle": "Run: python3 scripts/fetch_seo_comprehensive.py --client carek9"
+    },
+    {
+      "icon": "📰",
+      "title": "No news data",
+      "subtitle": "Configure news sources for CareK9"
+    },
+    {
+      "icon": "📱",
+      "title": "No social accounts",
+      "subtitle": "Add CareK9 social media credentials to AWS Secrets"
+    }
+  ]
+}

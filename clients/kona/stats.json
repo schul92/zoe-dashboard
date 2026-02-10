@@ -1,0 +1,57 @@
+{
+  "client": "kona",
+  "name": "Kona Coffee Donut",
+  "emoji": "☕",
+  "activeClients": 1,
+  "dailyCrons": 5,
+  "dashboards": 4,
+  "grandOpening": {
+    "days": 15,
+    "date": "February 25, 2026"
+  },
+  "seo": {
+    "clicks": 42,
+    "impressions": 519,
+    "avgPosition": 8.1,
+    "updatedHoursAgo": 2
+  },
+  "news": {
+    "twitter": 18,
+    "reddit": 25,
+    "news": 20,
+    "updatedHoursAgo": 2
+  },
+  "social": {
+    "platforms": ["Twitter", "Facebook", "Google", "Threads", "Bluesky"],
+    "autoPost": "12 PM"
+  },
+  "candidates": {
+    "top": 39,
+    "strong": 7,
+    "good": 12,
+    "fair": 11,
+    "total": 77
+  },
+  "highlights": [
+    {
+      "icon": "✅",
+      "title": "All 5 crons successful",
+      "subtitle": "6 AM SEO, 8 AM News, 12 PM Social, 6 PM Report, 11 PM Validation"
+    },
+    {
+      "icon": "📈",
+      "title": "SEO: +12% clicks vs yesterday",
+      "subtitle": "42 clicks today, 8.6% CTR, #1 position"
+    },
+    {
+      "icon": "👥",
+      "title": "77 candidates emailed",
+      "subtitle": "Interview delay notification sent"
+    },
+    {
+      "icon": "🎉",
+      "title": "Grand Opening: 15 days",
+      "subtitle": "February 25, 2026 • Kona Coffee Donut #2142"
+    }
+  ]
+}
