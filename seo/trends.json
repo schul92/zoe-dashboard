@@ -1,6 +1,233 @@
 {
-  "collectedAt": "2026-02-09T19:10:00-08:00",
-  "timezone": "PST",
-  "status": "✅ Manually updated", 
-  "note": "Full trend analysis will run at 8 AM tomorrow"
+  "collectedAt": "2026-02-09T19:11:11.314033",
+  "timezone": "EST",
+  "birdAvailable": true,
+  "sources": "6-source aggregation (Twitter, HN, Reddit, Brave, NewsAPI, Google Trends)",
+  "twitter": {
+    "trending": [
+      "[Trending] Get State Farm",
+      "[AI \u00b7 Other] House Republicans Press Thune for Vote on SAVE America Act Voter ID Bill",
+      "1 day ago | 338.0K posts",
+      "[AI \u00b7 Entertainment] Tony Yayo and Uncle Murda Clash with Ja Rule on Flight Amid Podcast Launch",
+      "2 hours ago | 6.9K posts",
+      "[AI \u00b7 News] Turning Point Action Endorses Paxton for Senate, Roy for Attorney General",
+      "6 hours ago | 14.0K posts",
+      "[Trending in United States] Coach Lee",
+      "[Trending in United States] Jamari McDowell",
+      "[Sports \u00b7 Trending] Pistons",
+      "[Sports \u00b7 Trending] Koa Peat",
+      "[Sports \u00b7 Trending] Darryn Peterson",
+      "[AI \u00b7 News] Lawmakers Demand Answers on Redacted Epstein Files",
+      "1 day ago | 410.0K posts"
+    ],
+    "hawaii_coffee": {
+      "query": "hawaii coffee",
+      "mentions": 27,
+      "snippet": "@Dvolni (D): | @tardwifeinsaree wow, high compliment that is I making the bold claims. | There is likely better coffee in Hawaii and Jamaica- at least the coffee beans grown there."
+    },
+    "kona_coffee": {
+      "query": "kona coffee",
+      "mentions": 19,
+      "snippet": "@PranaliB5636 (Pranali Bane): | https://t.co/tWfVhNg1AI | \ud83d\udcc5 Tue Feb 10 03:05:23 +0000 2026"
+    },
+    "waikiki": {
+      "query": "waikiki",
+      "mentions": 17,
+      "snippet": "@kobamasa_1 (\u3053\u3070\u307e\u3055): | @waikiki_drive @jaian_802 TBS\u3082\u305d\u3063\u3061\u3060\u304b\u3089 | \u30ad\u30e3\u30b9\u30c6\u30a3\u30f3\u30b0\u3057\u3061\u3083\u3046\u3093\u3067\u3057\u3087\u3046\u306d"
+    }
+  },
+  "competitors": {
+    "island_vintage": {
+      "query": "island vintage coffee",
+      "mentions": 36,
+      "snippet": "@Donaldverger (Donald Verger \u2665\ufe0f Maine): | Rare Red - Vintage Bottles Of Sea Glass Treasure In A Window , Long Island, Maine Coffee Mug by Donald Verger -  https://t.co/N0iciBhhni | \ud83d\udcc5 Wed Jan 28 13:18:59 +0000 2026"
+    },
+    "honolulu_coffee": {
+      "query": "honolulu coffee",
+      "mentions": 25,
+      "snippet": "@hacker_trace (Grandma Trace): | Rise and Grind Morning Show starts at 816 with your hosts @WillRockJr and Erik Rintamaki. Superbowl recap, Lions learned a ton. | Grab your Honolulu Blue Brew Coffee and come watch the show this morning"
+    },
+    "sunrise_shack": {
+      "query": "sunrise shack",
+      "mentions": 36,
+      "snippet": "@BitcoinMorfeo (Bitcoin Morfeo): | I\u2019m in kailua, Hawaii, and I just bought a couple of a\u00e7ai bowls with bitcoin at the Sunrise Shack! \u20bf | \ud83d\udcc5 Sat Jan 31 22:09:30 +0000 2026"
+    }
+  },
+  "news": {
+    "hawaii_events": [
+      {
+        "title": "LIST: Cancellations and closures due to severe weather",
+        "url": "https://www.hawaiinewsnow.com/2026/02/07/list-weekend-events-canceled-due-severe-weather/",
+        "description": "However, the UH men\u2019s tennis team had its exhibition match against Hawaii Pacific University canceled and will not be rescheduled. The HHSAA has postp"
+      },
+      {
+        "title": "2026 Chinatown Festival & Parade",
+        "url": "https://chinatown808.com/events/chinatown-festival-parade/",
+        "description": "<strong>Lunar New Year officially falls on Tuesday, February 17, 2026</strong>, marking the beginning of the Year of the Horse. The parade will step o"
+      },
+      {
+        "title": "Your Guide to the Perfect Weekend in Honolulu: Feb. 5\u201311, 2026",
+        "url": "https://www.honolulumagazine.com/weekend-guide-feb-5-11-2026/",
+        "description": "Watch top-notch breakdancers, see African American films, clean up an east side beach, listen to Hawaiian steel guitar tunes and more."
+      },
+      {
+        "title": "Maui Super Bowl Weekend Events 2026 - Hawaii Real Estate Market & Trends | Hawaii Life",
+        "url": "https://www.hawaiilife.com/blog/maui-super-bowl-weekend-events-2026/",
+        "description": "<strong>HeartFest Maui is happening this weekend at the YMCA</strong>, bringing the community together for a celebration focused on family fun, and he"
+      },
+      {
+        "title": "Chinese/Luna New Year 2026 Events in O\u02bbahu, Honolulu & Waik\u012bk\u012b",
+        "url": "https://waikikibeachstays.com/oahu-events/by-holiday/chinese-new-year/",
+        "description": "Browse this extensive list of Chinese/Lunar New Year events, activities and celebrations across O\u02bbahu. ... <strong>Chinese/Luna New Year in Hawai\u02bbi ta"
+      }
+    ],
+    "coffee_industry": [
+      {
+        "title": "Hawaii coffee shop closure after 40 years a loss for tourists, locals alike",
+        "url": "https://www.sfgate.com/hawaii/article/hawaii-coffee-gallery-closed-21334048.php",
+        "description": "By Christine Hitt, Hawaii Contributing EditorFeb 5, 2026 \u00b7 A customer walks into Coffee Gallery in Haleiwa on Oahu. Image via Yelp user Chris W. A bel"
+      },
+      {
+        "title": "\u2018Home away from home\u2019: Iconic Filipino bakery closes after 50+ years",
+        "url": "https://www.hawaiinewsnow.com/2026/02/09/jesses-coffee-shop-closes-after-50-years-being-home-away-home-hawaiis-filipino-community/",
+        "description": "Jesse\u2019s Coffee Shop <strong>closes on Feb. 9</strong> after 50 years of being \u2018home away from home\u2019 for Hawaii\u2019s Filipino community ... Published: Feb"
+      },
+      {
+        "title": "Claremont Planning Board to review Aroma Joe's plan - Valley News",
+        "url": "https://vnews.com/2026/02/05/aroma-joes-claremont-coffee-shop/",
+        "description": "Home \u00bb Aroma Joe\u2019s plans coffee shop on Washington Street in Claremont \u00b7 Posted inNews \u00b7 by Patrick O&#x27;Grady <strong>February 5, 2026</strong><str"
+      },
+      {
+        "title": "Let\u2019s Talk Food: The latest foodie news - West Hawaii Today",
+        "url": "https://www.westhawaiitoday.com/2026/02/03/features/lets-talk-food-the-latest-foodie-news/",
+        "description": "At the 5:30-9:30 p.m. Saturday ... tea and coffee. The gala also offers VIP seating with two specially curated drinks paired with pupus. A panel of in"
+      },
+      {
+        "title": "BIG LIST of Kona Coffee Tours on the Big Island (2026)",
+        "url": "https://www.lovebigisland.com/kona-coffee-tasting/",
+        "description": "<strong>Hog Heaven Coffee: Won first prize for their district at the 2022 &amp; 2023 Hawaii Coffee Association cupping competition</strong>. They orga"
+      }
+    ],
+    "tech_trends": [
+      {
+        "title": "Discord will require a face scan or ID for full access next month",
+        "url": "https://www.theverge.com/tech/875309/discord-age-verification-global-roll-out",
+        "points": 1293
+      },
+      {
+        "title": "What functional programmers get wrong about systems",
+        "url": "https://www.iankduncan.com/engineering/2026-02-09-what-functional-programmers-get-wrong-about-systems/",
+        "points": 76
+      },
+      {
+        "title": "The number of abandoned oil tankers and other commercial ships has shot up",
+        "url": "https://www.bbc.com/news/articles/cddg885344do",
+        "points": 78
+      },
+      {
+        "title": "Rust implementation of Mistral's Voxtral Mini 4B Realtime runs in your browser",
+        "url": "https://github.com/TrevorS/voxtral-mini-realtime-rs",
+        "points": 15
+      },
+      {
+        "title": "Converting a $3.88 analog clock from Walmart into a ESP8266-based Wi-Fi clock",
+        "url": "https://github.com/jim11662418/ESP8266_WiFi_Analog_Clock",
+        "points": 415
+      }
+    ]
+  },
+  "reddit": {
+    "hot_topics": [
+      {
+        "title": "[MOD] The Daily Question Thread",
+        "url": "https://www.reddit.com/r/Coffee/comments/1r01bfz/mod_the_daily_question_thread/",
+        "subreddit": "r/coffee",
+        "points": 5
+      },
+      {
+        "title": "[MOD] What have you been brewing this week?/ Coffee bean recommendations",
+        "url": "https://www.reddit.com/r/Coffee/comments/1qxo6nm/mod_what_have_you_been_brewing_this_week_coffee/",
+        "subreddit": "r/coffee",
+        "points": 11
+      },
+      {
+        "title": "Are we going dark again?",
+        "url": "https://www.reddit.com/r/Coffee/comments/1r06ogl/are_we_going_dark_again/",
+        "subreddit": "r/coffee",
+        "points": 82
+      },
+      {
+        "title": "Coffee Grinder / Setup for Michelin * Restaurant",
+        "url": "https://www.reddit.com/r/Coffee/comments/1qzk5ob/coffee_grinder_setup_for_michelin_restaurant/",
+        "subreddit": "r/coffee",
+        "points": 73
+      },
+      {
+        "title": "Thinking About a Budget Chinese Espresso Machine \u2014 Is It Worth It?",
+        "url": "https://www.reddit.com/r/Coffee/comments/1r02ibv/thinking_about_a_budget_chinese_espresso_machine/",
+        "subreddit": "r/coffee",
+        "points": 3
+      },
+      {
+        "title": "You might live in Hawaii if\u2026.",
+        "url": "https://www.reddit.com/r/Hawaii/comments/1r08g1x/you_might_live_in_hawaii_if/",
+        "subreddit": "r/hawaii",
+        "points": 232
+      },
+      {
+        "title": "Affordable Makiki Rentals Sit Empty For 10 Months",
+        "url": "https://www.reddit.com/r/Hawaii/comments/1r0j3m5/affordable_makiki_rentals_sit_empty_for_10_months/",
+        "subreddit": "r/hawaii",
+        "points": 70
+      },
+      {
+        "title": "Submit testimony in support of HB2611 by tomorrow morning",
+        "url": "https://www.reddit.com/r/Hawaii/comments/1r0ojg8/submit_testimony_in_support_of_hb2611_by_tomorrow/",
+        "subreddit": "r/hawaii",
+        "points": 11
+      }
+    ]
+  },
+  "googleTrends": [
+    {
+      "term": "United States \u2014 X (Twitter) trending topics and hashtags today | trends24.in",
+      "url": "https://trends24.in/united-states/"
+    },
+    {
+      "term": "Breaking News, Latest News and Videos | CNN",
+      "url": "https://www.cnn.com/"
+    },
+    {
+      "term": "Trending: Latest Buzz in Pop Culture and News, Photos & Videos - TODAY.com | TODAY",
+      "url": "https://www.today.com/trending"
+    },
+    {
+      "term": "USA TODAY - Breaking News and Latest News Today",
+      "url": "https://www.usatoday.com/"
+    },
+    {
+      "term": "Reuters Latest U.S. News | Top headlines from the USA | Reuters",
+      "url": "https://www.reuters.com/world/us/"
+    },
+    {
+      "term": "Trending on The New York Times",
+      "url": "https://www.nytimes.com/trending/"
+    },
+    {
+      "term": "U.S. News: Top U.S. News Today | AP News",
+      "url": "https://apnews.com/us-news"
+    },
+    {
+      "term": "Trending Now - Google Trends",
+      "url": "https://trends.google.com/trending"
+    },
+    {
+      "term": "United States | United States | Today's latest from Al Jazeera",
+      "url": "https://www.aljazeera.com/where/united-states/"
+    },
+    {
+      "term": "What\u2019s Trending",
+      "url": "https://whatstrending.com/"
+    }
+  ]
 }

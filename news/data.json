@@ -1,8 +1,917 @@
 {
-  "collectedAt": "2026-02-09T19:10:00-08:00",
-  "timezone": "PST",
-  "status": "✅ Manually updated",
+  "collectedAt": "2026-02-09T19:11:11.314033",
+  "timezone": "EST",
   "sources": {
-    "note": "Full data collection will run at 8 AM tomorrow"
-  }
+    "twitter": "Bird CLI",
+    "brave": "Brave Search API",
+    "hackerNews": "Hacker News Firebase API",
+    "reddit": "Reddit RSS",
+    "newsapi": "Disabled",
+    "google": "Google Trends (pytrends)"
+  },
+  "twitter": [
+    {
+      "title": "[Trending] Get State Farm",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-09T19:11:12.785138"
+    },
+    {
+      "title": "[AI \u00b7 Other] House Republicans Press Thune for Vote on SAVE America Act Voter ID Bill",
+      "description": "1 day ago | 338.0K posts",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 338000
+      },
+      "timestamp": "2026-02-09T19:11:12.785177"
+    },
+    {
+      "title": "[AI \u00b7 Entertainment] Tony Yayo and Uncle Murda Clash with Ja Rule on Flight Amid Podcast Launch",
+      "description": "2 hours ago | 6.9K posts",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 6900
+      },
+      "timestamp": "2026-02-09T19:11:12.785752"
+    },
+    {
+      "title": "[AI \u00b7 News] Turning Point Action Endorses Paxton for Senate, Roy for Attorney General",
+      "description": "6 hours ago | 14.0K posts",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 14000
+      },
+      "timestamp": "2026-02-09T19:11:12.785769"
+    },
+    {
+      "title": "[Trending in United States] Coach Lee",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-09T19:11:12.785783"
+    },
+    {
+      "title": "[Trending in United States] Jamari McDowell",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-09T19:11:12.785790"
+    },
+    {
+      "title": "[Sports \u00b7 Trending] Pistons",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-09T19:11:12.785795"
+    },
+    {
+      "title": "[Sports \u00b7 Trending] Koa Peat",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-09T19:11:12.785805"
+    },
+    {
+      "title": "[Sports \u00b7 Trending] Darryn Peterson",
+      "description": "",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 0
+      },
+      "timestamp": "2026-02-09T19:11:12.785811"
+    },
+    {
+      "title": "[AI \u00b7 News] Lawmakers Demand Answers on Redacted Epstein Files",
+      "description": "1 day ago | 410.0K posts",
+      "url": "https://twitter.com/explore/tabs/trending",
+      "stats": {
+        "mentions": 410000
+      },
+      "timestamp": "2026-02-09T19:11:12.785816"
+    },
+    {
+      "title": "\ud83d\udd0d hawaii coffee",
+      "description": "@Dvolni (D): | @tardwifeinsaree wow, high compliment that is I making the bold claims. | There is likely better coffee in Hawaii and Jamaica- at least the coffee beans grown there.",
+      "url": "https://twitter.com/search?q=hawaii%20coffee",
+      "stats": {
+        "mentions": 27
+      },
+      "timestamp": "2026-02-09T19:11:13.651248"
+    },
+    {
+      "title": "\ud83d\udd0d kona coffee",
+      "description": "@PranaliB5636 (Pranali Bane): | https://t.co/tWfVhNg1AI | \ud83d\udcc5 Tue Feb 10 03:05:23 +0000 2026",
+      "url": "https://twitter.com/search?q=kona%20coffee",
+      "stats": {
+        "mentions": 19
+      },
+      "timestamp": "2026-02-09T19:11:16.379133"
+    },
+    {
+      "title": "\ud83d\udd0d waikiki",
+      "description": "@kobamasa_1 (\u3053\u3070\u307e\u3055): | @waikiki_drive @jaian_802 TBS\u3082\u305d\u3063\u3061\u3060\u304b\u3089 | \u30ad\u30e3\u30b9\u30c6\u30a3\u30f3\u30b0\u3057\u3061\u3083\u3046\u3093\u3067\u3057\u3087\u3046\u306d",
+      "url": "https://twitter.com/search?q=waikiki",
+      "stats": {
+        "mentions": 17
+      },
+      "timestamp": "2026-02-09T19:11:19.287868"
+    },
+    {
+      "title": "\ud83d\udd0d coffee trends",
+      "description": "@KalyaniK94805 (Kalyani Kotwal): | https://t.co/OOPdQKgkxI | \ud83d\udcc5 Tue Feb 10 02:47:07 +0000 2026",
+      "url": "https://twitter.com/search?q=coffee%20trends",
+      "stats": {
+        "mentions": 19
+      },
+      "timestamp": "2026-02-09T19:11:22.170669"
+    },
+    {
+      "title": "\ud83d\udd0d honolulu food",
+      "description": "@TastingTable (Tasting Table): | Upgrading grilled cheese isn't new, but Honolulu Bistro in Hawaii takes things a step further, serving up rainbow-colored grilled cheeses from its food truck. https://t.co/aMcZCc8sGb | \ud83d\udcc5 Mon Feb 09 13:44:27 +0000 2026",
+      "url": "https://twitter.com/search?q=honolulu%20food",
+      "stats": {
+        "mentions": 17
+      },
+      "timestamp": "2026-02-09T19:11:24.914282"
+    },
+    {
+      "title": "\ud83d\udd0d hawaii tourism",
+      "description": "@RennaW (Renna): | I'll never understand how any tropical paradise just hours from mainland America isn't wealthy. But especially one where Americans, your most reliable tourism dollars, don't need passports to visit and it's off the east coast. PR should be getting triple the tourism $ as Hawaii | ",
+      "url": "https://twitter.com/search?q=hawaii%20tourism",
+      "stats": {
+        "mentions": 25
+      },
+      "timestamp": "2026-02-09T19:11:27.727433"
+    }
+  ],
+  "competitors": [
+    {
+      "title": "\ud83d\udd0d Island Vintage Coffee",
+      "description": "@Donaldverger (Donald Verger \u2665\ufe0f Maine): | Rare Red - Vintage Bottles Of Sea Glass Treasure In A Window , Long Island, Maine Coffee Mug by Donald Verger -  https://t.co/N0iciBhhni | \ud83d\udcc5 Wed Jan 28 13:18:59 +0000 2026",
+      "url": "https://twitter.com/search?q=Island%20Vintage%20Coffee",
+      "stats": {
+        "mentions": 36
+      },
+      "timestamp": "2026-02-09T19:11:31.055483"
+    },
+    {
+      "title": "\ud83d\udd0d Honolulu Coffee",
+      "description": "@hacker_trace (Grandma Trace): | Rise and Grind Morning Show starts at 816 with your hosts @WillRockJr and Erik Rintamaki. Superbowl recap, Lions learned a ton. | Grab your Honolulu Blue Brew Coffee and come watch the show this morning",
+      "url": "https://twitter.com/search?q=Honolulu%20Coffee",
+      "stats": {
+        "mentions": 25
+      },
+      "timestamp": "2026-02-09T19:11:33.773101"
+    },
+    {
+      "title": "\ud83d\udd0d Sunrise Shack hawaii",
+      "description": "@BitcoinMorfeo (Bitcoin Morfeo): | I\u2019m in kailua, Hawaii, and I just bought a couple of a\u00e7ai bowls with bitcoin at the Sunrise Shack! \u20bf | \ud83d\udcc5 Sat Jan 31 22:09:30 +0000 2026",
+      "url": "https://twitter.com/search?q=Sunrise%20Shack%20hawaii",
+      "stats": {
+        "mentions": 36
+      },
+      "timestamp": "2026-02-09T19:11:37.261037"
+    }
+  ],
+  "hackerNews": [
+    {
+      "title": "Discord will require a face scan or ID for full access next month",
+      "description": "<a href=\"https:&#x2F;&#x2F;discord.com&#x2F;press-releases&#x2F;discord-launches-teen-by-default-settings-globally\" rel=\"nofollow\">https:&#x2F;&#x2F;discord.com&#x2F;press-releases&#x2F;discord-launch",
+      "url": "https://www.theverge.com/tech/875309/discord-age-verification-global-roll-out",
+      "stats": {
+        "points": 1293,
+        "comments": 1297
+      },
+      "timestamp": "2026-02-09T06:37:38"
+    },
+    {
+      "title": "What functional programmers get wrong about systems",
+      "description": "",
+      "url": "https://www.iankduncan.com/engineering/2026-02-09-what-functional-programmers-get-wrong-about-systems/",
+      "stats": {
+        "points": 76,
+        "comments": 36
+      },
+      "timestamp": "2026-02-09T16:07:44"
+    },
+    {
+      "title": "The number of abandoned oil tankers and other commercial ships has shot up",
+      "description": "",
+      "url": "https://www.bbc.com/news/articles/cddg885344do",
+      "stats": {
+        "points": 78,
+        "comments": 25
+      },
+      "timestamp": "2026-02-09T15:17:42"
+    },
+    {
+      "title": "Rust implementation of Mistral's Voxtral Mini 4B Realtime runs in your browser",
+      "description": "",
+      "url": "https://github.com/TrevorS/voxtral-mini-realtime-rs",
+      "stats": {
+        "points": 15,
+        "comments": 1
+      },
+      "timestamp": "2026-02-09T17:26:42"
+    },
+    {
+      "title": "Converting a $3.88 analog clock from Walmart into a ESP8266-based Wi-Fi clock",
+      "description": "",
+      "url": "https://github.com/jim11662418/ESP8266_WiFi_Analog_Clock",
+      "stats": {
+        "points": 415,
+        "comments": 142
+      },
+      "timestamp": "2026-02-09T08:26:31"
+    },
+    {
+      "title": "Why is the sky blue?",
+      "description": "",
+      "url": "https://explainers.blog/posts/why-is-the-sky-blue/",
+      "stats": {
+        "points": 422,
+        "comments": 160
+      },
+      "timestamp": "2026-02-09T07:39:51"
+    },
+    {
+      "title": "Hard-braking events as indicators of road segment crash risk",
+      "description": "",
+      "url": "https://research.google/blog/hard-braking-events-as-indicators-of-road-segment-crash-risk/",
+      "stats": {
+        "points": 217,
+        "comments": 335
+      },
+      "timestamp": "2026-02-09T09:09:37"
+    },
+    {
+      "title": "How I've run major projects (2025)",
+      "description": "",
+      "url": "https://www.benkuhn.net/pjm/",
+      "stats": {
+        "points": 111,
+        "comments": 17
+      },
+      "timestamp": "2026-02-03T14:38:21"
+    },
+    {
+      "title": "LiftKit \u2013 UI where \"everything derives from the golden ratio\"",
+      "description": "",
+      "url": "https://www.chainlift.io/liftkit",
+      "stats": {
+        "points": 71,
+        "comments": 45
+      },
+      "timestamp": "2026-02-09T14:01:34"
+    },
+    {
+      "title": "Stop using icons in data tables",
+      "description": "",
+      "url": "https://medium.com/@codythistleward/stop-using-icons-in-data-tables-7537af18ea0d",
+      "stats": {
+        "points": 77,
+        "comments": 23
+      },
+      "timestamp": "2026-02-05T08:42:55"
+    },
+    {
+      "title": "Richard F. Burton: On the English adventurer and writer",
+      "description": "",
+      "url": "https://thelampmagazine.com/issues/issue-32/richard-f-burton",
+      "stats": {
+        "points": 10,
+        "comments": 6
+      },
+      "timestamp": "2026-02-04T13:41:50"
+    },
+    {
+      "title": "Sandboxels",
+      "description": "",
+      "url": "https://neal.fun/sandboxels/",
+      "stats": {
+        "points": 179,
+        "comments": 30
+      },
+      "timestamp": "2026-02-09T07:31:09"
+    },
+    {
+      "title": "Game Theory Patterns at Work (2016)",
+      "description": "",
+      "url": "https://daeus.blog/2026/01/18/game-theory-patterns-at-work/",
+      "stats": {
+        "points": 39,
+        "comments": 2
+      },
+      "timestamp": "2026-02-09T12:30:10"
+    },
+    {
+      "title": "Everyone\u2019s building \u201casync agents,\u201d but almost no one can define them",
+      "description": "",
+      "url": "https://www.omnara.com/blog/what-is-an-async-agent-really",
+      "stats": {
+        "points": 29,
+        "comments": 24
+      },
+      "timestamp": "2026-02-09T10:01:44"
+    },
+    {
+      "title": "UEFI Bindings for JavaScript",
+      "description": "",
+      "url": "https://codeberg.org/smnx/promethee",
+      "stats": {
+        "points": 203,
+        "comments": 103
+      },
+      "timestamp": "2026-02-09T06:07:36"
+    },
+    {
+      "title": "I made an open-source juypter alternative",
+      "description": "",
+      "url": "https://github.com/DannyMang/more-compute",
+      "stats": {
+        "points": 7,
+        "comments": 6
+      },
+      "timestamp": "2026-02-04T09:50:31"
+    },
+    {
+      "title": "Game Boy Advance Audio Interpolation",
+      "description": "",
+      "url": "https://jsgroth.dev/blog/posts/gba-audio-interpolation/",
+      "stats": {
+        "points": 76,
+        "comments": 34
+      },
+      "timestamp": "2026-02-09T09:44:10"
+    },
+    {
+      "title": "Expansion Microscopy Has Transformed How We See the Cellular World",
+      "description": "",
+      "url": "https://www.quantamagazine.org/expansion-microscopy-has-transformed-how-we-see-the-cellular-world-20260204/",
+      "stats": {
+        "points": 52,
+        "comments": 3
+      },
+      "timestamp": "2026-02-05T04:18:59"
+    },
+    {
+      "title": "Thoughts on Generating C",
+      "description": "",
+      "url": "https://wingolog.org/archives/2026/02/09/six-thoughts-on-generating-c",
+      "stats": {
+        "points": 203,
+        "comments": 66
+      },
+      "timestamp": "2026-02-09T05:54:48"
+    },
+    {
+      "title": "F# 10",
+      "description": "",
+      "url": "https://devblogs.microsoft.com/dotnet/introducing-fsharp-10/",
+      "stats": {
+        "points": 98,
+        "comments": 14
+      },
+      "timestamp": "2026-02-04T11:06:18"
+    }
+  ],
+  "reddit": [
+    {
+      "title": "[MOD] The Daily Question Thread",
+      "description": "From r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r01bfz/mod_the_daily_question_thread/",
+      "stats": {
+        "points": 5,
+        "comments": 28
+      },
+      "timestamp": "2026-02-09T03:01:35"
+    },
+    {
+      "title": "[MOD] What have you been brewing this week?/ Coffee bean recommendations",
+      "description": "From r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1qxo6nm/mod_what_have_you_been_brewing_this_week_coffee/",
+      "stats": {
+        "points": 11,
+        "comments": 11
+      },
+      "timestamp": "2026-02-06T09:36:11"
+    },
+    {
+      "title": "Are we going dark again?",
+      "description": "From r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r06ogl/are_we_going_dark_again/",
+      "stats": {
+        "points": 82,
+        "comments": 25
+      },
+      "timestamp": "2026-02-09T07:10:11"
+    },
+    {
+      "title": "Coffee Grinder / Setup for Michelin * Restaurant",
+      "description": "From r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1qzk5ob/coffee_grinder_setup_for_michelin_restaurant/",
+      "stats": {
+        "points": 73,
+        "comments": 46
+      },
+      "timestamp": "2026-02-08T12:40:23"
+    },
+    {
+      "title": "Thinking About a Budget Chinese Espresso Machine \u2014 Is It Worth It?",
+      "description": "From r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r02ibv/thinking_about_a_budget_chinese_espresso_machine/",
+      "stats": {
+        "points": 3,
+        "comments": 2
+      },
+      "timestamp": "2026-02-09T04:07:58"
+    },
+    {
+      "title": "You might live in Hawaii if\u2026.",
+      "description": "From r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r08g1x/you_might_live_in_hawaii_if/",
+      "stats": {
+        "points": 232,
+        "comments": 14
+      },
+      "timestamp": "2026-02-09T08:15:54"
+    },
+    {
+      "title": "Affordable Makiki Rentals Sit Empty For 10 Months",
+      "description": "From r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r0j3m5/affordable_makiki_rentals_sit_empty_for_10_months/",
+      "stats": {
+        "points": 70,
+        "comments": 30
+      },
+      "timestamp": "2026-02-09T14:40:29"
+    },
+    {
+      "title": "Submit testimony in support of HB2611 by tomorrow morning",
+      "description": "From r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r0ojg8/submit_testimony_in_support_of_hb2611_by_tomorrow/",
+      "stats": {
+        "points": 11,
+        "comments": 2
+      },
+      "timestamp": "2026-02-09T18:30:45"
+    },
+    {
+      "title": "Ricky Martin sings \"LO QUE LE PAS\u00d3 A HAWAii\" (What Happened to Hawaii) during the halftime show",
+      "description": "From r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1qzr8yq/ricky_martin_sings_lo_que_le_pas\u00f3_a_hawaii_what/",
+      "stats": {
+        "points": 715,
+        "comments": 39
+      },
+      "timestamp": "2026-02-08T17:48:38"
+    },
+    {
+      "title": "HHFDC For Sale \u201cAffordable\u201d Housing Units: Anyone Buying?",
+      "description": "From r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r0hexg/hhfdc_for_sale_affordable_housing_units_anyone/",
+      "stats": {
+        "points": 16,
+        "comments": 30
+      },
+      "timestamp": "2026-02-09T13:37:08"
+    },
+    {
+      "title": "\ud83c\udf99\ufe0f Episode 001: Christian Reed (Founder of REEKON Tools) | /r/Entrepreneur Podcast",
+      "description": "From r/entrepreneur",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1pyxz90/episode_001_christian_reed_founder_of_reekon/",
+      "stats": {
+        "points": 7,
+        "comments": 16
+      },
+      "timestamp": "2025-12-29T12:59:08"
+    },
+    {
+      "title": "Marketplace Tuesday! - February 03, 2026",
+      "description": "From r/entrepreneur",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1quo018/marketplace_tuesday_february_03_2026/",
+      "stats": {
+        "points": 3,
+        "comments": 9
+      },
+      "timestamp": "2026-02-03T02:00:35"
+    },
+    {
+      "title": "Does anyone else feel guilty taking a day off?",
+      "description": "From r/entrepreneur",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1r0bm5l/does_anyone_else_feel_guilty_taking_a_day_off/",
+      "stats": {
+        "points": 44,
+        "comments": 25
+      },
+      "timestamp": "2026-02-09T10:08:43"
+    },
+    {
+      "title": "Ever had a business class analyze a real ad campaign you actually care about?",
+      "description": "From r/entrepreneur",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1r08q5f/ever_had_a_business_class_analyze_a_real_ad/",
+      "stats": {
+        "points": 54,
+        "comments": 7
+      },
+      "timestamp": "2026-02-09T08:26:28"
+    },
+    {
+      "title": "The Passion Trap of Founder: lack of mental readiness kills progress",
+      "description": "From r/entrepreneur",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1r0jpcp/the_passion_trap_of_founder_lack_of_mental/",
+      "stats": {
+        "points": 8,
+        "comments": 12
+      },
+      "timestamp": "2026-02-09T15:03:43"
+    },
+    {
+      "title": "Promote your business, week of February 9, 2026",
+      "description": "From r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1qzwty8/promote_your_business_week_of_february_9_2026/",
+      "stats": {
+        "points": 7,
+        "comments": 57
+      },
+      "timestamp": "2026-02-08T22:26:21"
+    },
+    {
+      "title": "In this post, share your small business experience, successes, failures, AMAS, and lessons learned.",
+      "description": "From r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1ltkg12/in_this_post_share_your_small_business_experience/",
+      "stats": {
+        "points": 31,
+        "comments": 216
+      },
+      "timestamp": "2025-07-06T20:56:16"
+    },
+    {
+      "title": "Got phished through microsoft teams, not email. Didn't even know that was possible.",
+      "description": "From r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r0m653/got_phished_through_microsoft_teams_not_email/",
+      "stats": {
+        "points": 24,
+        "comments": 36
+      },
+      "timestamp": "2026-02-09T16:46:47"
+    },
+    {
+      "title": "partner has abandoned the business",
+      "description": "From r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r0bovc/partner_has_abandoned_the_business/",
+      "stats": {
+        "points": 53,
+        "comments": 38
+      },
+      "timestamp": "2026-02-09T10:11:22"
+    },
+    {
+      "title": "How do you justify valet investments to ownership?",
+      "description": "From r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r04yzk/how_do_you_justify_valet_investments_to_ownership/",
+      "stats": {
+        "points": 66,
+        "comments": 9
+      },
+      "timestamp": "2026-02-09T06:01:40"
+    },
+    {
+      "title": "New Job Listings",
+      "description": "From r/marketing",
+      "url": "https://www.reddit.com/r/marketing/comments/1r0f1oc/new_job_listings/",
+      "stats": {
+        "points": 1,
+        "comments": 1
+      },
+      "timestamp": "2026-02-09T12:10:32"
+    },
+    {
+      "title": "Please use the Report link to report posts and comments which don't belong in r/Marketing",
+      "description": "From r/marketing",
+      "url": "https://www.reddit.com/r/marketing/comments/1mb96gb/please_use_the_report_link_to_report_posts_and/",
+      "stats": {
+        "points": 30,
+        "comments": 18
+      },
+      "timestamp": "2025-07-27T23:50:20"
+    },
+    {
+      "title": "The lamest cold email I've ever gotten (NSFW I guess)",
+      "description": "From r/marketing",
+      "url": "https://www.reddit.com/r/marketing/comments/1r0js2f/the_lamest_cold_email_ive_ever_gotten_nsfw_i_guess/",
+      "stats": {
+        "points": 155,
+        "comments": 64
+      },
+      "timestamp": "2026-02-09T15:06:38"
+    },
+    {
+      "title": "People using QR codes on social media posts, why are you?",
+      "description": "From r/marketing",
+      "url": "https://www.reddit.com/r/marketing/comments/1r06ml1/people_using_qr_codes_on_social_media_posts_why/",
+      "stats": {
+        "points": 82,
+        "comments": 47
+      },
+      "timestamp": "2026-02-09T07:08:10"
+    },
+    {
+      "title": "All this AI has made us lose our way. Embrace the cringe. Fire up MS paint. Grab that collection of ugly png and mash them togheter.",
+      "description": "From r/marketing",
+      "url": "https://www.reddit.com/r/marketing/comments/1r0850y/all_this_ai_has_made_us_lose_our_way_embrace_the/",
+      "stats": {
+        "points": 18,
+        "comments": 3
+      },
+      "timestamp": "2026-02-09T08:04:24"
+    }
+  ],
+  "news": [
+    {
+      "title": "Hawaii coffee shop closure after 40 years a loss for tourists, locals alike",
+      "description": "By Christine Hitt, Hawaii Contributing EditorFeb 5, 2026 \u00b7 A customer walks into Coffee Gallery in Haleiwa on Oahu. Image via Yelp user Chris W. A beloved Hawaii coffee shop and small-batch roaster, <",
+      "url": "https://www.sfgate.com/hawaii/article/hawaii-coffee-gallery-closed-21334048.php",
+      "timestamp": "2026-02-09T19:12:09.216499"
+    },
+    {
+      "title": "\u2018Home away from home\u2019: Iconic Filipino bakery closes after 50+ years",
+      "description": "Jesse\u2019s Coffee Shop <strong>closes on Feb. 9</strong> after 50 years of being \u2018home away from home\u2019 for Hawaii\u2019s Filipino community ... Published: Feb. 8, 2026 at 2:07 PM HST|Updated: 6 hours ago",
+      "url": "https://www.hawaiinewsnow.com/2026/02/09/jesses-coffee-shop-closes-after-50-years-being-home-away-home-hawaiis-filipino-community/",
+      "timestamp": "2026-02-09T19:12:09.216523"
+    },
+    {
+      "title": "Claremont Planning Board to review Aroma Joe's plan - Valley News",
+      "description": "Home \u00bb Aroma Joe\u2019s plans coffee shop on Washington Street in Claremont \u00b7 Posted inNews \u00b7 by Patrick O&#x27;Grady <strong>February 5, 2026</strong><strong>February 5, 2026</strong> \u00b7 Share on Facebook ",
+      "url": "https://vnews.com/2026/02/05/aroma-joes-claremont-coffee-shop/",
+      "timestamp": "2026-02-09T19:12:09.216529"
+    },
+    {
+      "title": "Let\u2019s Talk Food: The latest foodie news - West Hawaii Today",
+      "description": "At the 5:30-9:30 p.m. Saturday ... tea and coffee. The gala also offers VIP seating with two specially curated drinks paired with pupus. A panel of invited judges and attendees will critique chef and ",
+      "url": "https://www.westhawaiitoday.com/2026/02/03/features/lets-talk-food-the-latest-foodie-news/",
+      "timestamp": "2026-02-09T19:12:09.216535"
+    },
+    {
+      "title": "BIG LIST of Kona Coffee Tours on the Big Island (2026)",
+      "description": "<strong>Hog Heaven Coffee: Won first prize for their district at the 2022 &amp; 2023 Hawaii Coffee Association cupping competition</strong>. They organize paid ($40/pp) tours of their farm that run be",
+      "url": "https://www.lovebigisland.com/kona-coffee-tasting/",
+      "timestamp": "2026-02-09T19:12:09.216539"
+    },
+    {
+      "title": "Coffee Machines Market to Surpass USD 26 Bn by 2031 Growing at a 5.6% CAGR and Led by Filter Coffee Machines, Says Mordor Intelligence",
+      "description": "Rising coffee intake across major regions is reinforcing key coffee machines market trends, as consumers increasingly seek caf\u00e9-style beverages both at home and in the workplace. Growing participation",
+      "url": "https://www.globenewswire.com/news-release/2026/02/04/3231810/0/en/Coffee-Machines-Market-to-Surpass-USD-26-Bn-by-2031-Growing-at-a-5-6-CAGR-and-Led-by-Filter-Coffee-Machines-Says-Mordor-Intelligence.html",
+      "timestamp": "2026-02-09T19:12:13.029784"
+    },
+    {
+      "title": "Organic Coffee Market Growing at a CAGR of 12.56% Driven by Rising Health Awareness, Premium Arabica Demand, and Sustainable Packaging Innovations | Astute Analytica",
+      "description": "Chicago, Feb. 05, 2026 (GLOBE NEWSWIRE) -- <strong>The global organic coffee market is growing at a CAGR of 12.56% from 2023 to 2031</strong>. The global food and beverage industry is growing at a muc",
+      "url": "https://www.globenewswire.com/news-release/2026/02/05/3233090/0/en/Organic-Coffee-Market-Growing-at-a-CAGR-of-12-56-Driven-by-Rising-Health-Awareness-Premium-Arabica-Demand-and-Sustainable-Packaging-Innovations-Astute-Analytica.html",
+      "timestamp": "2026-02-09T19:12:13.029818"
+    },
+    {
+      "title": "Coffee Market Size, Share, Price, and Growth Rate Research Report 2026 Featuring The Kraft Heinz Company, Starbucks Coffee Company, and The J.M. Smucker Company",
+      "description": "While emphasizing the key driving and restraining forces for this market, the report also offers a complete study of the future trends ... Global Coffee Grounds Market \u2013 Scope of the Report \u201cCoffee Gr",
+      "url": "https://www.openpr.com/news/4377356/coffee-market-size-share-price-and-growth-rate-research",
+      "timestamp": "2026-02-09T19:12:13.029824"
+    },
+    {
+      "title": "Starbucks feeling the heat as more chains vie for coffee drinkers - Los Angeles Times",
+      "description": "Coffee chains are racing to cash in on that demand. <strong>The number of chain coffee stores in the U.S. jumped 19% to more than 34,500 over the last six years</strong>, according to Technomic, a con",
+      "url": "https://www.latimes.com/business/story/2026-02-02/starbucks-feeling-heat-as-more-chains-vie-for-coffee-drinkers",
+      "timestamp": "2026-02-09T19:12:13.029829"
+    },
+    {
+      "title": "Weekly Coffee News: Regenerative Certification + Tons of Coffee Seized",
+      "description": "<strong>Intelligentsia plans its first drive-through in Santa Monica, Stumptown closes a Portland cafe, Vietnam seizes alleged fake coffee</strong>.",
+      "url": "https://dailycoffeenews.com/2026/02/06/weekly-coffee-news-regenerative-certification-tons-of-coffee-seized/",
+      "timestamp": "2026-02-09T19:12:13.029833"
+    },
+    {
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
+      "description": "More Business News \u00b7 \u00a9 Copyright 2026 Allen Media Broadcasting, KITV | 801 South King Street Honolulu, HI \u00b7",
+      "url": "https://www.kitv.com/",
+      "timestamp": "2026-02-09T19:12:16.878145"
+    },
+    {
+      "title": "Surveillance in the sky. New drone security in Waikiki | News | kitv.com",
+      "description": "WAIKIKI, Hawaii (Island News) -- <strong>Waikiki Beach could soon get a new layer of surveillance in March</strong>. Trevor Abarzua, President of Waikiki Business Improvement District, said, \u201cWe&#x27;",
+      "url": "https://www.kitv.com/news/surveillance-in-the-sky-new-drone-security-in-waikiki/article_88ed2a34-b005-4711-8228-25a455d2803e.html",
+      "timestamp": "2026-02-09T19:12:16.878167"
+    },
+    {
+      "title": "Coffman Engineering affiliates sell former Honolulu office building for $3M - Pacific Business News",
+      "description": "By Alexander Lugo \u2013 Commercial Real Estate Reporter, Pacific Business News ... Previous owners of a firm now absorbed by Coffman Engineering sold their former Honolulu office building for just under $",
+      "url": "https://www.bizjournals.com/pacific/news/2026/02/04/coffman-affiliates-sell-honolulu-office-building.html",
+      "timestamp": "2026-02-09T19:12:16.878173"
+    },
+    {
+      "title": "Hawaii coffee shop closure after 40 years a loss for tourists, locals alike",
+      "description": "\u201c<strong>Coffee Gallery has always been more than a business</strong>. It has been people, relationships, shared moments, and years of hard work,\u201d the post continued. \u201c... Thank you to everyone who su",
+      "url": "https://www.sfgate.com/hawaii/article/hawaii-coffee-gallery-closed-21334048.php",
+      "timestamp": "2026-02-09T19:12:16.878177"
+    },
+    {
+      "title": "Here Are the Local Businesses & Restaurants Participating in Today\u2019s National Strike",
+      "description": "Here are the businesses and restaurants participating in the national strike. Check back for updates throughout the day. ... Andrea Lee is the digital editor of HONOLULU Magazine. Mari Taketa is the e",
+      "url": "https://www.honolulumagazine.com/local-businesses-restaurants-participating-national-strike/",
+      "timestamp": "2026-02-09T19:12:16.878182"
+    },
+    {
+      "title": "8 small business trends to watch in 2026 - KESQ",
+      "description": "From <strong>increased adoption of AI tools and the continued expansion of e-commerce to heightened cybersecurity risks and rising standards for personalized customer experiences</strong>, small busin",
+      "url": "https://kesq.com/stacker-money/2026/02/03/8-small-business-trends-to-watch-in-2026/",
+      "timestamp": "2026-02-09T19:12:20.744058"
+    },
+    {
+      "title": "The 8 Small Business Trends Shaping 2026 - Direct Selling News",
+      "description": "Breaches can cause lasting damage to customers and to brand reputations, so small businesses are increasingly taking more proactive approaches to proactively prevent these risks and strengthen defense",
+      "url": "https://www.directsellingnews.com/2026/02/03/the-8-small-business-trends-shaping-2026/",
+      "timestamp": "2026-02-09T19:12:20.744080"
+    },
+    {
+      "title": "As AI Disrupts the Workforce, These Small Businesses Are Still Safe to Start in 2026",
+      "description": "AI may be displacing workers, but these business models offer entrepreneurs strong opportunities to build thriving ventures in 2026.",
+      "url": "https://www.entrepreneur.com/starting-a-business/5-businesses-to-start-in-2026-that-will-thrive-despite/501822",
+      "timestamp": "2026-02-09T19:12:20.744086"
+    },
+    {
+      "title": "8 small business trends to watch in 2026 -newspressnow.com",
+      "description": "From <strong>increased adoption of AI tools and the continued expansion of e-commerce to heightened cybersecurity risks and rising standards for personalized customer experiences</strong>, small busin",
+      "url": "https://www.newspressnow.com/stacker-money/2026/02/02/8-small-business-trends-to-watch-in-2026/",
+      "timestamp": "2026-02-09T19:12:20.744090"
+    },
+    {
+      "title": "8 small business trends to watch in 2026 - KTVZ",
+      "description": "From <strong>increased adoption of AI tools and the continued expansion of e-commerce to heightened cybersecurity risks and rising standards for personalized customer experiences</strong>, small busin",
+      "url": "https://ktvz.com/stacker-money/2026/02/02/8-small-business-trends-to-watch-in-2026/",
+      "timestamp": "2026-02-09T19:12:20.744095"
+    }
+  ],
+  "hawaii": [
+    {
+      "title": "LIST: Cancellations and closures due to severe weather",
+      "description": "However, the UH men\u2019s tennis team had its exhibition match against Hawaii Pacific University canceled and will not be rescheduled. The HHSAA has postponed all Boys D1 Boys Basketball Regional First Ro",
+      "url": "https://www.hawaiinewsnow.com/2026/02/07/list-weekend-events-canceled-due-severe-weather/",
+      "timestamp": "2026-02-09T19:12:24.702093"
+    },
+    {
+      "title": "2026 Chinatown Festival & Parade",
+      "description": "<strong>Lunar New Year officially falls on Tuesday, February 17, 2026</strong>, marking the beginning of the Year of the Horse. The parade will step off at 4:30 pm from the Hawai\u2018i State Capitol lawn ",
+      "url": "https://chinatown808.com/events/chinatown-festival-parade/",
+      "timestamp": "2026-02-09T19:12:24.702116"
+    },
+    {
+      "title": "Your Guide to the Perfect Weekend in Honolulu: Feb. 5\u201311, 2026",
+      "description": "Watch top-notch breakdancers, see African American films, clean up an east side beach, listen to Hawaiian steel guitar tunes and more.",
+      "url": "https://www.honolulumagazine.com/weekend-guide-feb-5-11-2026/",
+      "timestamp": "2026-02-09T19:12:24.702121"
+    },
+    {
+      "title": "Maui Super Bowl Weekend Events 2026 - Hawaii Real Estate Market & Trends | Hawaii Life",
+      "description": "<strong>HeartFest Maui is happening this weekend at the YMCA</strong>, bringing the community together for a celebration focused on family fun, and heart health. The event features interactive activit",
+      "url": "https://www.hawaiilife.com/blog/maui-super-bowl-weekend-events-2026/",
+      "timestamp": "2026-02-09T19:12:24.702125"
+    },
+    {
+      "title": "Chinese/Luna New Year 2026 Events in O\u02bbahu, Honolulu & Waik\u012bk\u012b",
+      "description": "Browse this extensive list of Chinese/Lunar New Year events, activities and celebrations across O\u02bbahu. ... <strong>Chinese/Luna New Year in Hawai\u02bbi takes place on Tuesday, 17 February 2026</strong>.",
+      "url": "https://waikikibeachstays.com/oahu-events/by-holiday/chinese-new-year/",
+      "timestamp": "2026-02-09T19:12:24.702129"
+    },
+    {
+      "title": "Hawaii Evening Briefing: Feb. 5, 2026",
+      "description": "Hawaii State Archivist Adam Jansen flips through an index. (Photo courtesy of DAGS) ... The Army will be conducting routine training in February during the day and night that may be heard by the surro",
+      "url": "https://spectrumlocalnews.com/hi/hawaii/evening-briefing/2026/02/05/hi-evening-briefing--feb--5--2026",
+      "timestamp": "2026-02-09T19:12:24.702134"
+    },
+    {
+      "title": "2026 Hawai\u02bbi State Legislature arts and culture update (February 6, 2026) | State Foundation on Culture and the Arts",
+      "description": "Categories: Hawaii State Legislature News, SFCA News Posts \u00b7 PrevPrevious2026 Poetry Out Loud Hawaii state final competition February 22 at Tenney Theatre",
+      "url": "https://sfca.hawaii.gov/2026-hawai%CA%BBi-state-legislature-arts-and-culture-update-february-6-2026/",
+      "timestamp": "2026-02-09T19:12:24.702137"
+    },
+    {
+      "title": "Weekend Guide \u2022 Feb 6 - 12, 2026 - Maui Family Magazine",
+      "description": "<strong>Wailuku First Friday Lunar New Year</strong>The Revolutionists,Wizard of Oz Movie Night at the Historic \u02bb\u012aao TheaterFree Family-Friendly Super Bowl9th Annual World Whale Film FestivalKeiki Val",
+      "url": "https://mauifamilymagazine.com/weekend-guide-feb-6-12-2026/",
+      "timestamp": "2026-02-09T19:12:24.702141"
+    },
+    {
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
+      "description": "...HIGH WIND WARNING REMAINS IN EFFECT UNTIL 6 PM HST MONDAY... * WHAT...Northeast winds 25 to 35 mph gusting to 60 mph, with some locally higher gusts up to 70 mph. * WHERE...All Hawaiian islands. * ",
+      "url": "https://www.kitv.com/",
+      "timestamp": "2026-02-09T19:12:28.631324"
+    },
+    {
+      "title": "Gusty winds and showers pummel Hawaii, cutting power and downing trees | Honolulu Star-Advertiser",
+      "description": "Meanwhile, Hawaiian Electric Co. ... of 9 a.m. today, <strong>nearly 7,900 customers are without power in the Honolulu, Manoa, Aiea, Waiau and Nanakuli areas, while about 9,600 customers had their pow",
+      "url": "https://www.staradvertiser.com/2026/02/08/breaking-news/gusty-winds-showers-pummel-hawaii-multiple-power-outages-reported/",
+      "timestamp": "2026-02-09T19:12:28.631348"
+    },
+    {
+      "title": "Weather | kitv.com",
+      "description": "HONOLULU (Island News) -- <strong>Windy and stormy weather continues across Hawai\u02bbi today, with strong winds, heavy rain, and hazardous conditions impacting many areas statewide</strong>.",
+      "url": "https://www.kitv.com/weather/",
+      "timestamp": "2026-02-09T19:12:28.631353"
+    },
+    {
+      "title": "High Wind Warning downgraded to a Wind Advisory on Oahu | Local | kitv.com",
+      "description": "Weather conditions are on the mend with a Wind Advisory in effect until Tuesday morning. Stay cautious of gusty winds and avoid downed powerlines as the community cleans up the",
+      "url": "https://www.kitv.com/news/local/high-wind-warning-downgraded-to-a-wind-advisory-on-oahu/article_960ea8a6-5330-4c3b-9cb7-91c5b4dba21e.html",
+      "timestamp": "2026-02-09T19:12:28.631358"
+    },
+    {
+      "title": "First Alert Weather",
+      "description": "HONOLULU (HawaiiNewsNow) - <strong>The Flood Watch and High Wind Warning remain in effect through 6 p.m.</strong>",
+      "url": "https://www.hawaiinewsnow.com/weather/",
+      "timestamp": "2026-02-09T19:12:28.631362"
+    },
+    {
+      "title": "Oahu residents asked to conserve water during severe weather | Honolulu Star-Advertiser",
+      "description": "Today \u2022 Last updated 11:34 a.m. ... The Honolulu Board of Water Supply this morning is once again asking all Oahu customers to conserve water due to current and potential power outages related to seve",
+      "url": "https://www.staradvertiser.com/2026/02/09/breaking-news/oahu-residents-asked-to-conserve-water-during-severe-weather/",
+      "timestamp": "2026-02-09T19:12:28.631367"
+    },
+    {
+      "title": "News, Sports, Jobs - Maui News",
+      "description": "I was watching the Grammys last night and saw Bruno Mars perform. He is from Hawaii, and went to Roosevelt, a a public high school on Oahu.",
+      "url": "https://www.mauinews.com/",
+      "timestamp": "2026-02-09T19:12:28.631371"
+    }
+  ],
+  "googleTrends": [
+    {
+      "title": "United States \u2014 X (Twitter) trending topics and hashtags today | trends24.in",
+      "description": "Trending topic",
+      "url": "https://trends24.in/united-states/",
+      "timestamp": "2026-02-09T19:12:30.365895"
+    },
+    {
+      "title": "Breaking News, Latest News and Videos | CNN",
+      "description": "Trending topic",
+      "url": "https://www.cnn.com/",
+      "timestamp": "2026-02-09T19:12:30.365924"
+    },
+    {
+      "title": "Trending: Latest Buzz in Pop Culture and News, Photos & Videos - TODAY.com | TODAY",
+      "description": "Trending topic",
+      "url": "https://www.today.com/trending",
+      "timestamp": "2026-02-09T19:12:30.365929"
+    },
+    {
+      "title": "USA TODAY - Breaking News and Latest News Today",
+      "description": "Trending topic",
+      "url": "https://www.usatoday.com/",
+      "timestamp": "2026-02-09T19:12:30.365933"
+    },
+    {
+      "title": "Reuters Latest U.S. News | Top headlines from the USA | Reuters",
+      "description": "Trending topic",
+      "url": "https://www.reuters.com/world/us/",
+      "timestamp": "2026-02-09T19:12:30.365937"
+    },
+    {
+      "title": "Trending on The New York Times",
+      "description": "Trending topic",
+      "url": "https://www.nytimes.com/trending/",
+      "timestamp": "2026-02-09T19:12:30.365941"
+    },
+    {
+      "title": "U.S. News: Top U.S. News Today | AP News",
+      "description": "Trending topic",
+      "url": "https://apnews.com/us-news",
+      "timestamp": "2026-02-09T19:12:30.365945"
+    },
+    {
+      "title": "Trending Now - Google Trends",
+      "description": "Trending topic",
+      "url": "https://trends.google.com/trending",
+      "timestamp": "2026-02-09T19:12:30.365948"
+    },
+    {
+      "title": "United States | United States | Today's latest from Al Jazeera",
+      "description": "Trending topic",
+      "url": "https://www.aljazeera.com/where/united-states/",
+      "timestamp": "2026-02-09T19:12:30.365952"
+    },
+    {
+      "title": "What\u2019s Trending",
+      "description": "Trending topic",
+      "url": "https://whatstrending.com/",
+      "timestamp": "2026-02-09T19:12:30.365955"
+    }
+  ]
 }
