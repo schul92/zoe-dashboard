@@ -1,23 +1,8 @@
 {
-  "lastUpdated": "2026-02-09T19:09:00-08:00",
-  "sources": ["brave_search", "waikiki_events"],
-  "highlights": {
-    "hawaii": [
-      {"title": "Hawaii tourism still below pre-pandemic peak entering 2026", "source": "West Hawaii Today", "url": "https://www.westhawaiitoday.com/2026/02/09/hawaii-news/global-tourism-rivals-start-to-gain-ground-amid-flat-growth/"},
-      {"title": "Valentine's Day events across Oahu", "source": "Waikiki Beach Stays", "url": "https://waikikibeachstays.com/oahu-events/by-month/february/"},
-      {"title": "Whale Season continues through May - peak viewing", "source": "Go Hawaii", "url": "https://www.gohawaii.com/islands/oahu/events"},
-      {"title": "Honolulu African American Film Festival (Feb 5 - Mar 1)", "source": "Events Calendar", "url": ""},
-      {"title": "Dangerous winds advisory - leeward sides", "source": "Hawaii News Now", "url": "https://www.hawaiinewsnow.com"}
-    ],
-    "coffee": [
-      {"title": "2026 coffee trends: functional coffee, RTD, specialty cold brew on the rise", "source": "Beverage Daily", "url": "https://www.beveragedaily.com/Article/2026/01/28/top-coffee-trends-functional-coffee-rtd-specialty-coffee-cold-brew/"},
-      {"title": "Climate change reshaping where coffee is grown - crisis and opportunity", "source": "Beverage Daily", "url": ""},
-      {"title": "Coffee shop tech: social media and customization driving 2026 trends", "source": "Perfect Daily Grind", "url": "https://perfectdailygrind.com/2026/01/coffee-shop-trends-in-2026/"},
-      {"title": "Coffee price volatility expected to ease slightly in 2026", "source": "Perfect Daily Grind", "url": "https://perfectdailygrind.com/2026/02/will-2026-be-different-coffee-industry-challenges/"}
-    ],
-    "business": [
-      {"title": "Menu diversification and customization growing demand for coffee shops", "source": "Perfect Daily Grind", "url": ""},
-      {"title": "Global tourism rivals gaining ground - opportunity for differentiation", "source": "West Hawaii Today", "url": ""}
-    ]
+  "collectedAt": "2026-02-09T19:10:00-08:00",
+  "timezone": "PST",
+  "status": "✅ Manually updated",
+  "sources": {
+    "note": "Full data collection will run at 8 AM tomorrow"
   }
 }
