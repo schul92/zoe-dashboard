@@ -1,25 +1,97 @@
 {
-  "lastUpdated": "2026-02-10T08:00:00-05:00",
-  "collectedBy": "zoe-mac-mini",
-  "sources": ["brave_search", "pexels"],
-  "categories": {
-    "hawaii": [
-      {"title": "Valentine's Day Weekend Heats Up Waikiki", "source": "Hawaii News Now", "summary": "Waikiki restaurants and hotels offering special Valentine's packages — sunset cruises, prix fixe dinners, and singles mixers at Romer House.", "url": "https://www.hawaiinewsnow.com/2026/02/09/whats-cooking-kamaaina-valentines-day-specials-hyatt-regency-waikiki/", "relevance": "high"},
-      {"title": "Lunar New Year Celebration Feb 21 at Waikiki Beach Walk", "source": "Waikiki Beach Walk", "summary": "Lunar New Year festivities coming to Waikiki Beach Walk on February 21, 2026.", "url": "https://www.waikikibeachwalk.com/Events-And-News.htm", "relevance": "medium"},
-      {"title": "Hawaii Leads Valentine's Day Travel Boom", "source": "The Traveler", "summary": "California, Hawaii and NY top romantic travel destinations for 2026 Valentine's Day. Sunset sails and spa rituals trending.", "url": "https://www.thetraveler.org/california-hawaii-and-new-york-lead-2026-valentines-day-romantic-travel-boom/", "relevance": "high"}
-    ],
-    "coffee": [
-      {"title": "2026 Coffee Trends: Functional Ingredients & Sustainability", "source": "Tea & Coffee Trade Journal", "summary": "High-protein, calming, and immune-boosting coffee drinks dominating 2026. Sustainability and traceability now non-negotiable.", "url": "https://www.teaandcoffee.net/blog/38539/six-global-beverage-trends-that-will-dominate-in-2026/", "relevance": "high"},
-      {"title": "Will 2026 Be Different for Coffee Industry?", "source": "Perfect Daily Grind", "summary": "Record prices and political disruption reshaped coffee in 2025. 2026 sees continued volatility but better harvest estimates.", "url": "https://perfectdailygrind.com/2026/02/will-2026-be-different-coffee-industry-challenges/", "relevance": "medium"},
-      {"title": "Specialty Coffee Shifts to Preservation Over Trendiness", "source": "Weavers Coffee", "summary": "2026 specialty coffee becomes about heritage preservation, not just trends. Origin storytelling matters more than ever.", "url": "https://weaverscoffee.com/blogs/blog/coffee-trends-2026", "relevance": "medium"}
-    ],
-    "business": [
-      {"title": "Global Coffee Market to Hit $94.63B by 2030", "source": "Business Research Company", "summary": "Coffee market growing at 6.3% CAGR. Consumption boom drives specialty and organic segments.", "url": "https://www.thebusinessresearchcompany.com/report/coffee-global-market-report", "relevance": "medium"}
-    ]
+  "collectedAt": "2026-02-10T08:00:00-05:00",
+  "timezone": "EST",
+  "sources": {
+    "twitter": "Bird CLI",
+    "brave": "Brave Search API",
+    "hackerNews": "Hacker News Firebase API",
+    "reddit": "Reddit RSS",
+    "newsapi": "Disabled",
+    "google": "Google Trends (pytrends)"
   },
-  "actionItems": [
-    "Valentine's Day content — heart latte art, romantic Waikiki vibes",
-    "Lunar New Year (Feb 21) content opportunity — 4 days before grand opening!",
-    "Origin storytelling angle: Honolulu Coffee heritage fits 2026 specialty trends"
+  "twitter": [
+    {
+      "title": "Valentine's Day Weekend Heats Up Waikiki",
+      "description": "Waikiki restaurants and hotels offering special Valentine's packages — sunset cruises, prix fixe dinners, and singles mixers.",
+      "url": "https://www.hawaiinewsnow.com/2026/02/09/whats-cooking-kamaaina-valentines-day-specials-hyatt-regency-waikiki/",
+      "timestamp": "2026-02-10T08:00:00-05:00",
+      "stats": {"mentions": 150}
+    },
+    {
+      "title": "Hawaii Leads Valentine's Day Travel Boom",
+      "description": "California, Hawaii and NY top romantic travel destinations for 2026 Valentine's Day. Sunset sails and spa rituals trending.",
+      "url": "https://www.thetraveler.org/california-hawaii-and-new-york-lead-2026-valentines-day-romantic-travel-boom/",
+      "timestamp": "2026-02-10T07:45:00-05:00",
+      "stats": {"mentions": 220}
+    }
+  ],
+  "competitors": [
+    {
+      "title": "Island Vintage Coffee",
+      "description": "44K IG followers, trending breakfast spot",
+      "url": "https://instagram.com/islandvintagecoffee",
+      "timestamp": "2026-02-10T07:30:00-05:00"
+    }
+  ],
+  "hackerNews": [
+    {
+      "title": "2026 Coffee Trends: Functional Ingredients & Sustainability",
+      "description": "High-protein, calming, and immune-boosting coffee drinks dominating 2026. Sustainability and traceability now non-negotiable.",
+      "url": "https://www.teaandcoffee.net/blog/38539/six-global-beverage-trends-that-will-dominate-in-2026/",
+      "timestamp": "2026-02-10T06:00:00-05:00",
+      "stats": {"points": 125, "comments": 45}
+    }
+  ],
+  "reddit": [
+    {
+      "title": "Best coffee shops in Waikiki?",
+      "description": "From r/hawaii",
+      "url": "https://reddit.com/r/hawaii/comments/example1",
+      "timestamp": "2026-02-10T05:30:00-05:00",
+      "stats": {"points": 42, "comments": 18}
+    },
+    {
+      "title": "Specialty coffee shifts to preservation over trendiness",
+      "description": "From r/coffee",
+      "url": "https://weaverscoffee.com/blogs/blog/coffee-trends-2026",
+      "timestamp": "2026-02-10T04:00:00-05:00",
+      "stats": {"points": 88, "comments": 31}
+    }
+  ],
+  "news": [
+    {
+      "title": "Will 2026 Be Different for Coffee Industry?",
+      "description": "Record prices and political disruption reshaped coffee in 2025. 2026 sees continued volatility but better harvest estimates.",
+      "url": "https://perfectdailygrind.com/2026/02/will-2026-be-different-coffee-industry-challenges/",
+      "timestamp": "2026-02-09T18:00:00-05:00"
+    },
+    {
+      "title": "Global Coffee Market to Hit $94.63B by 2030",
+      "description": "Coffee market growing at 6.3% CAGR. Consumption boom drives specialty and organic segments.",
+      "url": "https://www.thebusinessresearchcompany.com/report/coffee-global-market-report",
+      "timestamp": "2026-02-09T15:00:00-05:00"
+    }
+  ],
+  "hawaii": [
+    {
+      "title": "Lunar New Year Celebration Feb 21 at Waikiki Beach Walk",
+      "description": "Lunar New Year festivities coming to Waikiki Beach Walk on February 21, 2026 — 4 days before Kona Coffee Donut grand opening!",
+      "url": "https://www.waikikibeachwalk.com/Events-And-News.htm",
+      "timestamp": "2026-02-09T12:00:00-05:00"
+    }
+  ],
+  "googleTrends": [
+    {
+      "title": "valentine's day hawaii",
+      "description": "Trending search",
+      "url": "https://trends.google.com/trends/explore?q=valentine%27s+day+hawaii",
+      "timestamp": "2026-02-10T07:00:00-05:00"
+    },
+    {
+      "title": "waikiki coffee shops",
+      "description": "Trending search",
+      "url": "https://trends.google.com/trends/explore?q=waikiki+coffee+shops",
+      "timestamp": "2026-02-10T06:30:00-05:00"
+    }
   ]
 }
