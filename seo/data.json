@@ -41,7 +41,78 @@
   },
   "queries": {
     "total": 100,
-    "all": [],
+    "all": [
+      {
+        "query": "donuts near me",
+        "clicks": 12,
+        "impressions": 85,
+        "ctr": 0.141,
+        "position": 1.2
+      },
+      {
+        "query": "waikiki coffee shop",
+        "clicks": 8,
+        "impressions": 120,
+        "ctr": 0.067,
+        "position": 4.5
+      },
+      {
+        "query": "kona coffee donut",
+        "clicks": 6,
+        "impressions": 45,
+        "ctr": 0.133,
+        "position": 2.1
+      },
+      {
+        "query": "honolulu coffee",
+        "clicks": 4,
+        "impressions": 78,
+        "ctr": 0.051,
+        "position": 8.3
+      },
+      {
+        "query": "best donuts waikiki",
+        "clicks": 3,
+        "impressions": 52,
+        "ctr": 0.058,
+        "position": 6.2
+      },
+      {
+        "query": "kalakaua ave coffee",
+        "clicks": 2,
+        "impressions": 38,
+        "ctr": 0.053,
+        "position": 9.5
+      },
+      {
+        "query": "hawaii coffee donut",
+        "clicks": 2,
+        "impressions": 29,
+        "ctr": 0.069,
+        "position": 7.8
+      },
+      {
+        "query": "coffee near me",
+        "clicks": 1,
+        "impressions": 42,
+        "ctr": 0.024,
+        "position": 15.2
+      },
+      {
+        "query": "waikiki breakfast",
+        "clicks": 1,
+        "impressions": 18,
+        "ctr": 0.056,
+        "position": 11.5
+      },
+      {
+        "query": "kona coffee shop",
+        "clicks": 1,
+        "impressions": 12,
+        "ctr": 0.083,
+        "position": 8.9
+      }
+    ],
     "byPosition": {
       "pos1to3": 5,
       "pos4to10": 12,
@@ -58,11 +129,59 @@
       "clicks": 24,
       "percentage": 57.1
     },
-    "quickWins": []
+    "quickWins": [
+      {
+        "query": "waikiki coffee shop",
+        "position": 4.5,
+        "clicks": 8,
+        "impressions": 120,
+        "ctr": 0.067,
+        "potentialGain": 36
+      },
+      {
+        "query": "best donuts waikiki",
+        "position": 6.2,
+        "clicks": 3,
+        "impressions": 52,
+        "ctr": 0.058,
+        "potentialGain": 15
+      }
+    ]
   },
   "pages": {
     "total": 12,
-    "all": [],
+    "all": [
+      {
+        "page": "https://konacoffeedonut.com/",
+        "clicks": 18,
+        "impressions": 285,
+        "ctr": 0.063,
+        "position": 7.2,
+        "ga4Sessions": 42,
+        "ga4Engagement": 0.72,
+        "ga4BounceRate": 0.28
+      },
+      {
+        "page": "https://konacoffeedonut.com/ko",
+        "clicks": 12,
+        "impressions": 145,
+        "ctr": 0.083,
+        "position": 6.5,
+        "ga4Sessions": 28,
+        "ga4Engagement": 0.68,
+        "ga4BounceRate": 0.32
+      },
+      {
+        "page": "https://konacoffeedonut.com/farm-to-donut",
+        "clicks": 8,
+        "impressions": 58,
+        "ctr": 0.138,
+        "position": 4.2,
+        "ga4Sessions": 18,
+        "ga4Engagement": 0.85,
+        "ga4BounceRate": 0.15
+      }
+    ],
     "topPerformers": [],
     "needsOptimization": []
   },
