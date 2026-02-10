@@ -1,11 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=/zoe-dashboard/hub.html">
-    <title>ZOE STUDIO Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOE STUDIO | Marketing Command Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --radius: 0.625rem;
+            --background: oklch(0.129 0.042 264.695);
+            --foreground: oklch(0.984 0.003 247.858);
+            --card: oklch(0.14 0.04 259.21);
+            --card-foreground: oklch(0.984 0.003 247.858);
+            --primary: oklch(0.929 0.013 255.508);
+            --muted: oklch(0.279 0.041 260.031);
+            --muted-foreground: oklch(0.704 0.04 256.788);
+            --border: oklch(1 0 0 / 10%);
+            --ring: oklch(0.551 0.027 264.364);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            line-height: 1.5;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            transition: all 0.2s;
+        }
+        .card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 1px var(--ring);
+            transform: translateY(-2px);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 1.25rem;
+            background: var(--primary);
+            color: var(--background);
+            border-radius: calc(var(--radius) - 2px);
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            background: var(--muted);
+            color: var(--muted-foreground);
+            border-radius: calc(var(--radius) - 4px);
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .badge.success { background: oklch(0.488 0.243 264.376 / 20%); color: oklch(0.696 0.17 162.48); }
+        .badge.warning { background: oklch(0.769 0.188 70.08 / 20%); color: oklch(0.828 0.189 84.429); }
+        .badge.error { background: oklch(0.704 0.191 22.216 / 20%); color: oklch(0.704 0.191 22.216); }
+        .stat-card {
+            background: linear-gradient(135deg, var(--card), var(--muted));
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+        }
+        .glow {
+            box-shadow: 0 0 60px -15px var(--ring);
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-in {
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+    </style>
 </head>
-<body>
-    <p>Redirecting to <a href="/zoe-dashboard/hub.html">Dashboard Hub</a>...</p>
+<body class="p-6 min-h-screen">
+
+    <!-- Header -->
+    <header class="mb-8">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-3xl shadow-lg">
+                    🎯
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold tracking-tight">ZOE STUDIO</h1>
+                    <p class="text-sm" style="color: var(--muted-foreground)">Marketing Command Center</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="badge success">All Systems Operational</span>
+                <button class="btn">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    Refresh
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div class="stat-card animate-in" style="animation-delay: 0.1s;">
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-sm" style="color: var(--muted-foreground)">Active Clients</span>
+                <span class="text-2xl">☕</span>
+            </div>
+            <p class="text-3xl font-bold mb-1">2</p>
+            <p class="text-xs" style="color: var(--muted-foreground)">Kona Coffee + CareK9</p>
+        </div>
+        
+        <div class="stat-card animate-in" style="animation-delay: 0.2s;">
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-sm" style="color: var(--muted-foreground)">Daily Crons</span>
+                <span class="text-2xl">⚙️</span>
+            </div>
+            <p class="text-3xl font-bold mb-1">5</p>
+            <p class="text-xs" style="color: var(--muted-foreground)">6 AM, 8 AM, 12 PM, 6 PM, 11 PM</p>
+        </div>
+        
+        <div class="stat-card animate-in" style="animation-delay: 0.3s;">
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-sm" style="color: var(--muted-foreground)">Dashboards</span>
+                <span class="text-2xl">📊</span>
+            </div>
+            <p class="text-3xl font-bold mb-1">4</p>
+            <p class="text-xs" style="color: var(--muted-foreground)">SEO, News, Social, Candidates</p>
+        </div>
+        
+        <div class="stat-card animate-in" style="animation-delay: 0.4s;">
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-sm" style="color: var(--muted-foreground)">Grand Opening</span>
+                <span class="text-2xl">🎉</span>
+            </div>
+            <p class="text-3xl font-bold mb-1">16</p>
+            <p class="text-xs" style="color: var(--muted-foreground)">days until Feb 25, 2026</p>
+        </div>
+    </section>
+
+    <!-- Main Dashboard Grid -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        
+        <!-- SEO Dashboard -->
+        <a href="./seo/" class="card animate-in glow" style="animation-delay: 0.5s; text-decoration: none; color: inherit;">
+            <div class="flex items-start justify-between mb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center text-2xl shadow-lg">
+                        📈
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold">SEO Command Center</h3>
+                        <p class="text-sm" style="color: var(--muted-foreground)">Google Search Console + GA4</p>
+                    </div>
+                </div>
+                <span class="badge success">Live</span>
+            </div>
+            <div class="grid grid-cols-3 gap-4 pt-4 border-t" style="border-color: var(--border);">
+                <div>
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">Clicks (7d)</p>
+                    <p class="text-xl font-bold">32</p>
+                </div>
+                <div>
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">Impressions</p>
+                    <p class="text-xl font-bold">372</p>
+                </div>
+                <div>
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">Avg Position</p>
+                    <p class="text-xl font-bold">3.2</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- News Dashboard -->
+        <a href="./news.html" class="card animate-in glow" style="animation-delay: 0.6s; text-decoration: none; color: inherit;">
+            <div class="flex items-start justify-between mb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-red-500 to-orange-600 flex items-center justify-center text-2xl shadow-lg">
+                        📰
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold">Daily News & Trends</h3>
+                        <p class="text-sm" style="color: var(--muted-foreground)">6 data sources, real-time intel</p>
+                    </div>
+                </div>
+                <span class="badge success">Updated Today</span>
+            </div>
+            <div class="grid grid-cols-3 gap-4 pt-4 border-t" style="border-color: var(--border);">
+                <div>
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">Twitter/X</p>
+                    <p class="text-xl font-bold">16</p>
+                </div>
+                <div>
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">Reddit</p>
+                    <p class="text-xl font-bold">25</p>
+                </div>
+                <div>
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">News</p>
+                    <p class="text-xl font-bold">20</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Social Calendar -->
+        <a href="./social.html" class="card animate-in glow" style="animation-delay: 0.7s; text-decoration: none; color: inherit;">
+            <div class="flex items-start justify-between mb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center text-2xl shadow-lg">
+                        📱
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold">Social Media Calendar</h3>
+                        <p class="text-sm" style="color: var(--muted-foreground)">5 platforms, automated posting</p>
+                    </div>
+                </div>
+                <span class="badge success">Auto-Post 12 PM</span>
+            </div>
+            <div class="grid grid-cols-5 gap-2 pt-4 border-t" style="border-color: var(--border);">
+                <div class="text-center">
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">Twitter</p>
+                    <p class="text-lg">𝕏</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">Facebook</p>
+                    <p class="text-lg">📘</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">Google</p>
+                    <p class="text-lg">🔴</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">Threads</p>
+                    <p class="text-lg">📷</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">Bluesky</p>
+                    <p class="text-lg">🦋</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- Candidates Dashboard -->
+        <a href="./candidates.html" class="card animate-in glow" style="animation-delay: 0.8s; text-decoration: none; color: inherit;">
+            <div class="flex items-start justify-between mb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-2xl shadow-lg">
+                        👥
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold">Interview Candidates</h3>
+                        <p class="text-sm" style="color: var(--muted-foreground)">Kona Coffee Donut hiring</p>
+                    </div>
+                </div>
+                <span class="badge warning">77 Total</span>
+            </div>
+            <div class="grid grid-cols-4 gap-4 pt-4 border-t" style="border-color: var(--border);">
+                <div>
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">TOP Tier</p>
+                    <p class="text-xl font-bold">39</p>
+                </div>
+                <div>
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">STRONG</p>
+                    <p class="text-xl font-bold">7</p>
+                </div>
+                <div>
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">GOOD</p>
+                    <p class="text-xl font-bold">12</p>
+                </div>
+                <div>
+                    <p class="text-xs mb-1" style="color: var(--muted-foreground)">FAIR</p>
+                    <p class="text-xl font-bold">11</p>
+                </div>
+            </div>
+        </a>
+
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="card animate-in" style="animation-delay: 0.9s;">
+        <h3 class="text-lg font-semibold mb-4">Quick Actions</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <button class="btn" onclick="window.location.href='https://github.com/schul92/konacoffeedonut'">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                Website Repo
+            </button>
+            <button class="btn" onclick="window.location.href='https://vercel.com/schul92'">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 22.525H0l12-21.05 12 21.05z"/></svg>
+                Vercel Deploy
+            </button>
+            <button class="btn" onclick="window.location.href='https://console.aws.amazon.com'">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335c-.072.048-.144.072-.208.072-.08 0-.16-.04-.239-.112-.112-.12-.207-.248-.279-.384-.072-.135-.144-.288-.224-.463-.559.66-1.263.99-2.111.99-.604 0-1.079-.172-1.431-.517-.352-.344-.528-.804-.528-1.379 0-.61.216-1.108.655-1.491.44-.384 1.016-.576 1.736-.576.24 0 .487.016.743.056.256.04.519.096.791.168v-.558c0-.579-.12-1.003-.36-1.267-.232-.264-.631-.392-1.199-.392-.256 0-.52.032-.791.096-.272.064-.536.144-.792.24-.12.047-.207.071-.263.087-.055.016-.095.024-.119.024-.104 0-.16-.08-.16-.248v-.391c0-.128.016-.224.056-.28.04-.056.12-.112.239-.168.256-.128.567-.24.927-.328.36-.088.744-.128 1.151-.128.88 0 1.527.2 1.943.607.416.408.624 1.019.624 1.843v2.42zm-2.927 1.099c.231 0 .471-.04.727-.128s.479-.271.671-.543c.12-.168.207-.36.247-.576.04-.216.064-.48.064-.783v-.375c-.223-.04-.439-.08-.655-.104-.216-.024-.423-.032-.631-.032-.448 0-.775.088-.991.272-.216.184-.328.448-.328.791 0 .328.08.567.247.727.168.16.408.24.703.24zm5.783 1.115c-.128 0-.215-.024-.264-.072-.048-.048-.088-.128-.12-.239l-1.335-4.392c-.032-.104-.048-.176-.048-.215 0-.088.04-.136.128-.136h.527c.136 0 .231.024.272.072.048.048.088.128.12.239l.951 3.743 1.567-3.743c.032-.112.08-.184.12-.239.048-.048.136-.072.272-.072h.431c.136 0 .231.024.272.072.048.048.088.128.12.239l1.591 3.791.967-3.791c.032-.112.072-.184.12-.239.048-.048.136-.072.272-.072h.503c.088 0 .136.04.136.136 0 .032-.008.064-.008.104-.008.04-.016.08-.032.12l-1.359 4.392c-.032.104-.072.176-.12.239-.048.048-.136.072-.264.072h-.463c-.136 0-.231-.024-.272-.072-.048-.048-.088-.128-.12-.239l-1.551-3.727-1.543 3.727c-.032.112-.08.184-.12.239-.048.048-.136.072-.272.072h-.463zm8.383.983c-.328 0-.655-.04-.967-.104-.312-.064-.568-.144-.767-.24-.128-.064-.216-.144-.247-.208-.032-.064-.048-.136-.048-.2v-.391c0-.168.064-.248.184-.248.048 0 .096.008.144.024.048.016.12.04.192.064.248.096.503.168.775.216.272.048.543.072.815.072.431 0 .759-.08.975-.24.216-.16.328-.384.328-.672 0-.2-.064-.368-.192-.512-.128-.144-.359-.272-.695-.392l-.999-.304c-.504-.16-.871-.392-1.103-.695-.232-.304-.344-.648-.344-1.019 0-.296.064-.568.184-.808.12-.24.288-.448.495-.624.207-.176.455-.312.743-.392.288-.08.599-.12.935-.12.136 0 .279.008.415.024.136.016.264.04.383.064.112.024.216.048.312.08.096.032.168.064.216.088.088.048.152.096.192.16.04.064.064.136.064.2v.367c0 .168-.064.248-.184.248-.048 0-.144-.024-.264-.064-.407-.16-.871-.24-1.383-.24-.392 0-.695.064-.895.2-.2.136-.304.344-.304.632 0 .2.08.368.224.504.144.136.415.272.807.416l.975.304c.504.16.87.392 1.087.688.216.296.32.632.32 1.003 0 .304-.064.584-.184.832-.12.248-.288.464-.495.655-.207.192-.463.336-.759.44-.296.104-.632.152-1.007.152z"/></svg>
+                AWS Console
+            </button>
+            <button class="btn" onclick="window.location.href='https://github.com/schul92/zoe-obsidian-vault'">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.5 0L22 8.5V19l-9.5 5.5L3 19V8.5L12.5 0zm0 2.5L6 7.5v10l6.5 3.5L19 17.5v-10L12.5 2.5z"/></svg>
+                Obsidian Vault
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-8 pt-6 border-t text-center" style="border-color: var(--border); color: var(--muted-foreground);">
+        <p class="text-sm">Last updated: <span id="lastUpdate">Loading...</span></p>
+        <p class="text-xs mt-2">ZOE STUDIO LLC • Powered by OpenClaw + shadcn/ui</p>
+    </footer>
+
+    <script>
+        // Update last update time
+        const now = new Date();
+        document.getElementById('lastUpdate').textContent = now.toLocaleString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+    </script>
+
 </body>
 </html>
