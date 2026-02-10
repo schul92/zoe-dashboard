@@ -57,9 +57,6 @@
         .gradient-text { background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .sortable { cursor: pointer; user-select: none; transition: color 0.2s; }
         .sortable:hover { color: #f97316; }
-        .sortable::after { content: ' ↕'; opacity: 0.3; font-size: 10px; margin-left: 4px; }
-        .sortable.asc::after { content: ' ↑'; opacity: 1; color: #22c55e; }
-        .sortable.desc::after { content: ' ↓'; opacity: 1; color: #ef4444; }
         .phase2-badge {
             position: fixed;
             top: 20px;
@@ -395,6 +392,17 @@
             document.querySelectorAll('#keywordsTable').forEach(table => {
                 const headers = table.closest('section').querySelectorAll('.sortable');
                 headers.forEach(header => {
+                    // Add sort indicator if not already present
+                    if (!header.querySelector('.sort-indicator')) {
+                        const indicator = document.createElement('span');
+                        indicator.className = 'sort-indicator';
+                        indicator.textContent = ' ↕';
+                        indicator.style.opacity = '0.3';
+                        indicator.style.fontSize = '10px';
+                        indicator.style.marginLeft = '4px';
+                        header.appendChild(indicator);
+                    }
+                    
                     header.addEventListener('click', () => {
                         const column = header.dataset.column;
                         sortTable('keywords', column, header);
@@ -406,6 +414,17 @@
             document.querySelectorAll('#allQueriesTable').forEach(table => {
                 const headers = table.closest('section').querySelectorAll('.sortable');
                 headers.forEach(header => {
+                    // Add sort indicator if not already present
+                    if (!header.querySelector('.sort-indicator')) {
+                        const indicator = document.createElement('span');
+                        indicator.className = 'sort-indicator';
+                        indicator.textContent = ' ↕';
+                        indicator.style.opacity = '0.3';
+                        indicator.style.fontSize = '10px';
+                        indicator.style.marginLeft = '4px';
+                        header.appendChild(indicator);
+                    }
+                    
                     header.addEventListener('click', () => {
                         const column = header.dataset.column;
                         sortTable('allQueries', column, header);
@@ -418,13 +437,25 @@
             const isAscending = headerEl.classList.contains('asc');
             const newDirection = isAscending ? 'desc' : 'asc';
 
-            // Clear all sort classes
+            // Clear all sort classes and reset indicators
             headerEl.closest('tr').querySelectorAll('.sortable').forEach(h => {
                 h.classList.remove('asc', 'desc');
+                const indicator = h.querySelector('.sort-indicator');
+                if (indicator) {
+                    indicator.textContent = ' ↕';
+                    indicator.style.opacity = '0.3';
+                    indicator.style.color = '';
+                }
             });
 
-            // Add new sort class
+            // Add new sort class and update indicator
             headerEl.classList.add(newDirection);
+            const indicator = headerEl.querySelector('.sort-indicator');
+            if (indicator) {
+                indicator.textContent = newDirection === 'asc' ? ' ↑' : ' ↓';
+                indicator.style.opacity = '1';
+                indicator.style.color = newDirection === 'asc' ? '#22c55e' : '#ef4444';
+            }
 
             // Sort data
             let data = tableType === 'keywords' ? keywordsData : allQueriesData;
