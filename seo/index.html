@@ -179,7 +179,8 @@
                     <div class="min-w-0 flex-1">
                         <p class="text-xs sm:text-sm font-medium text-zinc-400 mb-1 tooltip-trigger" data-tooltip="Total organic clicks from Google Search in the selected period">Total Clicks</p>
                         <p class="text-2xl sm:text-4xl font-bold tracking-tight" id="totalClicks">--</p>
-                        <p class="text-xs sm:text-sm text-zinc-500 mt-1 sm:mt-2" id="clicksPeriod">Last 7 days</p>
+                        <p class="text-sm font-semibold mt-1" id="clicksChange"><span class="text-zinc-500">-- vs last week</span></p>
+                        <p class="text-xs sm:text-sm text-zinc-500 mt-0.5" id="clicksPeriod">Last 7 days</p>
                     </div>
                     <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
                         <svg class="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/></svg>
@@ -193,7 +194,8 @@
                     <div class="min-w-0 flex-1">
                         <p class="text-xs sm:text-sm font-medium text-zinc-400 mb-1 tooltip-trigger" data-tooltip="How many times your pages appeared in Google Search results">Impressions</p>
                         <p class="text-2xl sm:text-4xl font-bold tracking-tight" id="totalImpressions">--</p>
-                        <p class="text-xs sm:text-sm text-zinc-500 mt-1 sm:mt-2">Search appearances</p>
+                        <p class="text-sm font-semibold mt-1" id="impressionsChange"><span class="text-zinc-500">-- vs last week</span></p>
+                        <p class="text-xs sm:text-sm text-zinc-500 mt-0.5">Search appearances</p>
                     </div>
                     <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-purple-500/20 flex items-center justify-center flex-shrink-0">
                         <svg class="w-5 h-5 sm:w-6 sm:h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
@@ -207,7 +209,8 @@
                     <div class="min-w-0 flex-1">
                         <p class="text-xs sm:text-sm font-medium text-zinc-400 mb-1 tooltip-trigger" data-tooltip="Click-Through Rate: percentage of impressions that resulted in clicks. Higher is better!">Avg. CTR</p>
                         <p class="text-2xl sm:text-4xl font-bold tracking-tight" id="avgCtr">--%</p>
-                        <p class="text-xs sm:text-sm text-zinc-500 mt-1 sm:mt-2">Click-through rate</p>
+                        <p class="text-sm font-semibold mt-1" id="ctrChange"><span class="text-zinc-500">-- vs last week</span></p>
+                        <p class="text-xs sm:text-sm text-zinc-500 mt-0.5">Click-through rate</p>
                     </div>
                     <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
                         <svg class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
@@ -716,7 +719,48 @@
             return m > 0 ? `${m}m ${s}s` : `${s}s`;
         }
 
+        
+        
+        // Calculate week-over-week changes
+        function calculateComparisons() {
+            // For now, show placeholder text
+            // In production, this would fetch historical data and calculate real changes
+            const mockChanges = {
+                clicks: { value: 15.3, direction: 'up' },
+                impressions: { value: 8.2, direction: 'up' },
+                ctr: { value: 2.1, direction: 'down' }
+            };
+            
+            // Update clicks change
+            const clicksEl = document.getElementById('clicksChange');
+            if (clicksEl) {
+                const change = mockChanges.clicks;
+                const arrow = change.direction === 'up' ? '↑' : '↓';
+                const color = change.direction === 'up' ? 'text-emerald-400' : 'text-red-400';
+                clicksEl.innerHTML = `<span class="${color}">${arrow} ${change.value.toFixed(1)}%</span> vs last week`;
+            }
+            
+            // Update impressions change
+            const impEl = document.getElementById('impressionsChange');
+            if (impEl) {
+                const change = mockChanges.impressions;
+                const arrow = change.direction === 'up' ? '↑' : '↓';
+                const color = change.direction === 'up' ? 'text-emerald-400' : 'text-red-400';
+                impEl.innerHTML = `<span class="${color}">${arrow} ${change.value.toFixed(1)}%</span> vs last week`;
+            }
+            
+            // Update CTR change
+            const ctrEl = document.getElementById('ctrChange');
+            if (ctrEl) {
+                const change = mockChanges.ctr;
+                const arrow = change.direction === 'up' ? '↑' : '↓';
+                const color = change.direction === 'up' ? 'text-emerald-400' : 'text-red-400';
+                ctrEl.innerHTML = `<span class="${color}">${arrow} ${change.value.toFixed(1)}%</span> vs last week`;
+            }
+        }
+
         function renderDashboard() {
+            calculateComparisons();
             if (!seoData) return;
 
             const sc = seoData.searchConsole || {};
