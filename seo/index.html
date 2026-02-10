@@ -57,24 +57,7 @@
         .gradient-text { background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .sortable { cursor: pointer; user-select: none; transition: color 0.2s; }
         .sortable:hover { color: #f97316; }
-        .phase2-badge {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            padding: 8px 16px;
-            background: linear-gradient(135deg, #f97316, #fbbf24);
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 700;
-            color: white;
-            box-shadow: 0 10px 25px -5px rgba(249, 115, 22, 0.5);
-            animation: pulse 2s ease-in-out infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
+        /* Phase 2 badge removed */
         @keyframes slideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         .animate-slide-in { animation: slideIn 0.5s ease-out forwards; }
         .delay-1 { animation-delay: 0.1s; opacity: 0; }
@@ -114,9 +97,6 @@
 </head>
 <body class="text-zinc-100 min-h-screen">
     
-    <!-- Phase 2 Badge -->
-    <div class="phase2-badge">✨ PHASE 2 ACTIVE</div>
-
     <!-- Ambient Background -->
     <div class="fixed inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-0 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
@@ -140,7 +120,7 @@
                         <h1 class="text-lg sm:text-xl font-bold tracking-tight">Kona Coffee Donut</h1>
                         <p class="text-xs sm:text-sm text-zinc-500 flex items-center gap-2">
                             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                            SEO Command Center • Phase 2
+                            SEO Command Center
                         </p>
                     </div>
                 </div>
