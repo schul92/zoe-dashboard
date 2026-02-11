@@ -35,141 +35,6 @@
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.95;
-        }
-
-        .diagram-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .diagram-card {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-
-        .diagram-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
-        }
-
-        .diagram-card h2 {
-            color: #667eea;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .diagram-card p {
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .diagram-card .highlights {
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 4px;
-        }
-
-        .diagram-card .highlights ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .diagram-card .highlights li {
-            padding: 0.3rem 0;
-            color: #555;
-        }
-
-        .diagram-card .highlights li:before {
-            content: "✓ ";
-            color: #667eea;
-            font-weight: bold;
-            margin-right: 0.5rem;
-        }
-
-        .btn-group {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .btn {
-            flex: 1;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 6px;
-            font-size: 1rem;
-            cursor: pointer;
-            text-decoration: none;
-            text-align: center;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-        }
-
-        .btn-secondary {
-            background: #f8f9fa;
-            color: #667eea;
-            border: 2px solid #667eea;
-        }
-
-        .btn-secondary:hover {
-            background: #667eea;
-            color: white;
-        }
-
-        .info-section {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        }
-
-        .info-section h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .info-section p, .info-section li {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .info-section ul {
-            margin: 1rem 0;
-            padding-left: 2rem;
-        }
-
-        .info-section code {
-            background: #f8f9fa;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-family: 'Monaco', 'Courier New', monospace;
-            color: #764ba2;
-        }
-
         .back-link {
             display: inline-block;
             color: white;
@@ -186,21 +51,133 @@
             transform: translateX(-5px);
         }
 
+        .diagram-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .diagram-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .diagram-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+        }
+
+        .diagram-icon {
+            font-size: 4rem;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+            border: 3px dashed #667eea;
+        }
+
+        .diagram-card h2 {
+            color: #667eea;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .diagram-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .highlights {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .highlights ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .highlights li {
+            padding: 0.3rem 0;
+            color: #555;
+        }
+
+        .highlights li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .btn-large {
+            display: block;
+            width: 100%;
+            padding: 1.25rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-large:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .info-box {
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .info-box p, .info-box li {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .info-box ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .info-box li {
+            margin: 0.5rem 0;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 1rem;
-            }
-
-            header h1 {
-                font-size: 2rem;
             }
 
             .diagram-grid {
                 grid-template-columns: 1fr;
             }
 
-            .btn-group {
-                flex-direction: column;
+            header h1 {
+                font-size: 2rem;
             }
         }
     </style>
@@ -214,10 +191,27 @@
             <p>Visual documentation of ZOE STUDIO automation workflows</p>
         </header>
 
+        <div class="info-box">
+            <h3>📖 How to View These Diagrams</h3>
+            <ol>
+                <li>Click the <strong>"View Diagram"</strong> button below</li>
+                <li>This opens Excalidraw.com in a new tab</li>
+                <li>Click <strong>File → Open</strong> in Excalidraw</li>
+                <li>Click the diagram card again to <strong>Download</strong> the file</li>
+                <li>Select the downloaded <code>.excalidraw</code> file</li>
+                <li>Explore the interactive diagram!</li>
+            </ol>
+            <p style="margin-top: 1rem;"><strong>💡 Tip:</strong> You can zoom, pan, and interact with all elements in Excalidraw</p>
+        </div>
+
         <div class="diagram-grid">
             <!-- SEO Data Collection -->
             <div class="diagram-card">
-                <h2>📊 SEO Data Collection</h2>
+                <h2>📊 SEO Data Collection Workflow</h2>
+                <div class="diagram-icon">
+                    📊<br>
+                    <span style="font-size: 1rem; color: #667eea;">Interactive Flowchart</span>
+                </div>
                 <p>Complete workflow showing how GSC + GA4 data flows through S3 to Opus 4.6 AI analysis and GitHub deployment.</p>
                 <div class="highlights">
                     <ul>
@@ -226,27 +220,19 @@
                         <li>Critical S3 checkpoint</li>
                         <li>Opus 4.6 AI analysis</li>
                         <li>Auto-deploy to dashboard</li>
+                        <li>Retry logic + error handling</li>
                     </ul>
                 </div>
-                <div class="diagram-preview" style="margin: 1.5rem 0; padding: 2rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
-                    <p style="color: #666; margin-bottom: 1rem;">📊 Interactive diagram - click to view full size</p>
-                    <iframe 
-                        src="https://excalidraw.com/#json=https://raw.githubusercontent.com/schul92/zoe-dashboard/main/diagrams/SEO-Data-Collection-Workflow.excalidraw"
-                        width="100%"
-                        height="500"
-                        frameborder="0"
-                        style="border-radius: 8px; border: 2px solid #e0e0e0;">
-                    </iframe>
-                </div>
-                <div class="btn-group">
-                    <a href="https://excalidraw.com/#json=https://raw.githubusercontent.com/schul92/zoe-dashboard/main/diagrams/SEO-Data-Collection-Workflow.excalidraw" target="_blank" class="btn btn-primary">Open Full Screen</a>
-                    <a href="./diagrams/SEO-Data-Collection-Workflow.excalidraw" download class="btn btn-secondary">Download</a>
-                </div>
+                <a href="./diagrams/SEO-Data-Collection-Workflow.excalidraw" download class="btn-large">📥 Download & View Diagram</a>
             </div>
 
             <!-- Daily Cron Chain -->
             <div class="diagram-card">
                 <h2>⏰ Daily Cron Chain</h2>
+                <div class="diagram-icon">
+                    ⏰<br>
+                    <span style="font-size: 1rem; color: #667eea;">Sequence Diagram</span>
+                </div>
                 <p>Sequence of 5 automated cron jobs running throughout the day, showing data flow and dependencies.</p>
                 <div class="highlights">
                     <ul>
@@ -254,124 +240,63 @@
                         <li>8 AM: News + Content</li>
                         <li>12 PM: Social Posting</li>
                         <li>6 PM: Executive Report</li>
-                        <li>11 PM: Validation</li>
+                        <li>11 PM: Validation + Cleanup</li>
+                        <li>External dependencies mapped</li>
                     </ul>
                 </div>
-                <div class="diagram-preview" style="margin: 1.5rem 0; padding: 2rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
-                    <p style="color: #666; margin-bottom: 1rem;">⏰ Interactive diagram - click to view full size</p>
-                    <iframe 
-                        src="https://excalidraw.com/#json=https://raw.githubusercontent.com/schul92/zoe-dashboard/main/diagrams/Daily-Cron-Chain.excalidraw"
-                        width="100%"
-                        height="500"
-                        frameborder="0"
-                        style="border-radius: 8px; border: 2px solid #e0e0e0;">
-                    </iframe>
-                </div>
-                <div class="btn-group">
-                    <a href="https://excalidraw.com/#json=https://raw.githubusercontent.com/schul92/zoe-dashboard/main/diagrams/Daily-Cron-Chain.excalidraw" target="_blank" class="btn btn-primary">Open Full Screen</a>
-                    <a href="./diagrams/Daily-Cron-Chain.excalidraw" download class="btn btn-secondary">Download</a>
-                </div>
+                <a href="./diagrams/Daily-Cron-Chain.excalidraw" download class="btn-large">📥 Download & View Diagram</a>
             </div>
 
             <!-- Social Posting Workflow -->
             <div class="diagram-card">
                 <h2>📱 Social Posting Workflow</h2>
+                <div class="diagram-icon">
+                    📱<br>
+                    <span style="font-size: 1rem; color: #667eea;">Process Flow</span>
+                </div>
                 <p>Two-phase workflow: 8 AM trend collection & content generation, 12 PM approval & posting to 5 platforms.</p>
                 <div class="highlights">
                     <ul>
                         <li>Bird CLI trend analysis</li>
-                        <li>SEO/GEO research</li>
+                        <li>SEO/GEO research per platform</li>
                         <li>5 different posts, 1 image</li>
                         <li>Steve approval checkpoint</li>
                         <li>5 platforms synchronized</li>
+                        <li>Mandatory post requirements</li>
                     </ul>
                 </div>
-                <div class="diagram-preview" style="margin: 1.5rem 0; padding: 2rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
-                    <p style="color: #666; margin-bottom: 1rem;">📱 Interactive diagram - click to view full size</p>
-                    <iframe 
-                        src="https://excalidraw.com/#json=https://raw.githubusercontent.com/schul92/zoe-dashboard/main/diagrams/Social-Posting-Workflow.excalidraw"
-                        width="100%"
-                        height="500"
-                        frameborder="0"
-                        style="border-radius: 8px; border: 2px solid #e0e0e0;">
-                    </iframe>
-                </div>
-                <div class="btn-group">
-                    <a href="https://excalidraw.com/#json=https://raw.githubusercontent.com/schul92/zoe-dashboard/main/diagrams/Social-Posting-Workflow.excalidraw" target="_blank" class="btn btn-primary">Open Full Screen</a>
-                    <a href="./diagrams/Social-Posting-Workflow.excalidraw" download class="btn btn-secondary">Download</a>
-                </div>
+                <a href="./diagrams/Social-Posting-Workflow.excalidraw" download class="btn-large">📥 Download & View Diagram</a>
             </div>
 
             <!-- Multi-Client Architecture -->
             <div class="diagram-card">
                 <h2>🏢 Multi-Client Architecture</h2>
+                <div class="diagram-icon">
+                    🏢<br>
+                    <span style="font-size: 1rem; color: #667eea;">System Architecture</span>
+                </div>
                 <p>Data isolation architecture showing how Kona Coffee Donut and CareK9 client data remains completely separated.</p>
                 <div class="highlights">
                     <ul>
                         <li>Client switcher dropdown</li>
                         <li>Isolated data folders</li>
                         <li>No data carryover</li>
-                        <li>Dynamic loading</li>
+                        <li>Dynamic stats loading</li>
                         <li>Security by design</li>
+                        <li>Script `--client` parameter</li>
                     </ul>
                 </div>
-                <div class="diagram-preview" style="margin: 1.5rem 0; padding: 2rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
-                    <p style="color: #666; margin-bottom: 1rem;">🏢 Interactive diagram - click to view full size</p>
-                    <iframe 
-                        src="https://excalidraw.com/#json=https://raw.githubusercontent.com/schul92/zoe-dashboard/main/diagrams/Multi-Client-Architecture.excalidraw"
-                        width="100%"
-                        height="500"
-                        frameborder="0"
-                        style="border-radius: 8px; border: 2px solid #e0e0e0;">
-                    </iframe>
-                </div>
-                <div class="btn-group">
-                    <a href="https://excalidraw.com/#json=https://raw.githubusercontent.com/schul92/zoe-dashboard/main/diagrams/Multi-Client-Architecture.excalidraw" target="_blank" class="btn btn-primary">Open Full Screen</a>
-                    <a href="./diagrams/Multi-Client-Architecture.excalidraw" download class="btn btn-secondary">Download</a>
-                </div>
+                <a href="./diagrams/Multi-Client-Architecture.excalidraw" download class="btn-large">📥 Download & View Diagram</a>
             </div>
         </div>
 
-        <div class="info-section">
-            <h3>📖 How to Use These Diagrams</h3>
-            <p><strong>Viewing Online:</strong></p>
-            <ol>
-                <li>Click "Open in Excalidraw" button above</li>
-                <li>On Excalidraw.com, click "File" → "Open"</li>
-                <li>Click "Download" button and select the <code>.excalidraw</code> file</li>
-                <li>Explore the interactive diagram!</li>
-            </ol>
-            <p style="margin-top: 1rem;"><strong>Editing:</strong></p>
-            <ul>
-                <li>Make changes in Excalidraw</li>
-                <li>Export as <code>.excalidraw</code> file</li>
-                <li>Replace the file in <code>/diagrams/</code> folder</li>
-                <li>Commit to GitHub (auto-deploys)</li>
-            </ul>
-        </div>
-
-        <div class="info-section">
-            <h3>🎨 DSL Syntax Quick Reference</h3>
-            <p>These diagrams use a simple Domain-Specific Language (DSL):</p>
-            <ul>
-                <li><code>(Label)</code> - Ellipse (Start/End points)</li>
-                <li><code>[Label]</code> - Rectangle (Process steps)</li>
-                <li><code>{Label?}</code> - Diamond (Decisions)</li>
-                <li><code>[[Label]]</code> - Database (Data storage)</li>
-                <li><code>-></code> - Arrow (Normal flow)</li>
-                <li><code>-> "text" -></code> - Labeled Arrow (Conditions)</li>
-                <li><code>--></code> - Dashed Arrow (Annotations)</li>
-            </ul>
-        </div>
-
-        <div class="info-section">
-            <h3>🔗 Related Resources</h3>
-            <ul>
-                <li><strong>Main Dashboard:</strong> <a href="./index.html" style="color: #667eea;">ZOE Hub</a></li>
-                <li><strong>SEO Dashboard:</strong> <a href="./seo/" style="color: #667eea;">Live SEO Metrics</a></li>
-                <li><strong>Social Calendar:</strong> <a href="./social.html" style="color: #667eea;">Posted Content</a></li>
-                <li><strong>Obsidian Vault:</strong> <a href="https://github.com/schul92/zoe-obsidian-vault" style="color: #667eea;" target="_blank">GitHub Repository</a></li>
-                <li><strong>Excalidraw CLI:</strong> <a href="https://github.com/swiftlysingh/excalidraw-cli" style="color: #667eea;" target="_blank">@swiftlysingh/excalidraw-cli</a></li>
+        <div class="info-box">
+            <h3>🔗 Quick Links</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.5rem 0;">📊 <a href="./seo/" style="color: #667eea; text-decoration: none;">SEO Dashboard</a> - Live metrics</li>
+                <li style="padding: 0.5rem 0;">📰 <a href="./news.html" style="color: #667eea; text-decoration: none;">News Dashboard</a> - Daily trends</li>
+                <li style="padding: 0.5rem 0;">📱 <a href="./social.html" style="color: #667eea; text-decoration: none;">Social Calendar</a> - Posted content</li>
+                <li style="padding: 0.5rem 0;">🌐 <a href="https://excalidraw.com" style="color: #667eea; text-decoration: none;" target="_blank">Excalidraw.com</a> - Diagram viewer</li>
             </ul>
         </div>
     </div>
