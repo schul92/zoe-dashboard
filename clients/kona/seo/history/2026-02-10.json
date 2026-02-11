@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "3.0.0",
-    "collectedAt": "2026-02-10T17:33:09.125837Z",
+    "version": "3.0.1",
+    "collectedAt": "2026-02-10T17:52:05.906863Z",
     "period": {
       "startDate": "2026-02-03",
       "endDate": "2026-02-09",
@@ -31,8 +31,8 @@
     },
     "position": {
       "average": 8.0,
-      "best": 1,
-      "bestKeyword": "donuts near me",
+      "best": 1.0,
+      "bestKeyword": "kona coffee donut",
       "change": 0,
       "trend": "stable"
     },
@@ -45,23 +45,23 @@
       {
         "query": "kona coffee donut",
         "clicks": 11,
-        "impressions": 192,
-        "ctr": 0.057,
-        "position": 1.0357142857142858
+        "impressions": 42,
+        "ctr": 0.262,
+        "position": 1.0
       },
       {
         "query": "donuts near me",
         "clicks": 1,
-        "impressions": 22,
-        "ctr": 0.045,
-        "position": 1
+        "impressions": 19,
+        "ctr": 0.053,
+        "position": 9.3
       },
       {
         "query": "\ub9d0\ub77c\uc0ac\ub2e4 \ub3c4\ub11b",
         "clicks": 1,
         "impressions": 4,
         "ctr": 0.25,
-        "position": 15
+        "position": 12.8
       },
       {
         "query": "beignets and coffee hawaii",
@@ -101,7 +101,7 @@
       {
         "query": "coffee shops near me",
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 2,
         "ctr": 0.0,
         "position": 18
       },
@@ -157,7 +157,7 @@
       {
         "query": "donut places near me",
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 1,
         "ctr": 0.0,
         "position": 3
       },
@@ -180,7 +180,7 @@
         "clicks": 0,
         "impressions": 4,
         "ctr": 0.0,
-        "position": 13.25
+        "position": 13.2
       },
       {
         "query": "hawaiian coffee growing district",
@@ -213,14 +213,14 @@
       {
         "query": "kona coffee",
         "clicks": 0,
-        "impressions": 24,
+        "impressions": 23,
         "ctr": 0.0,
-        "position": 4.869565217391305
+        "position": 4.9
       },
       {
         "query": "kona coffee donuts",
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 1,
         "ctr": 0.0,
         "position": 1
       },
@@ -243,7 +243,7 @@
         "clicks": 0,
         "impressions": 2,
         "ctr": 0.0,
-        "position": 86
+        "position": 89
       },
       {
         "query": "kona coffee waikiki",
@@ -262,9 +262,9 @@
       {
         "query": "konacoffeedonut.com",
         "clicks": 0,
-        "impressions": 9,
+        "impressions": 2,
         "ctr": 0.0,
-        "position": 1
+        "position": 7.5
       },
       {
         "query": "konas coffee",
@@ -292,7 +292,7 @@
         "clicks": 0,
         "impressions": 3,
         "ctr": 0.0,
-        "position": 17.333333333333332
+        "position": 17.3
       },
       {
         "query": "\u590f\u5a01\u5937\u79d1\u7eb3\u5496\u5561 \u4ecb\u7ecd",
@@ -306,21 +306,21 @@
         "clicks": 0,
         "impressions": 68,
         "ctr": 0.0,
-        "position": 8.75
+        "position": 8.8
       },
       {
         "query": "\u590f\u5a01\u5937\u79d1\u7eb3\u9002\u5408\u51b2\u7f8e\u5f0f\u5417",
         "clicks": 0,
         "impressions": 50,
         "ctr": 0.0,
-        "position": 7.66
+        "position": 7.7
       },
       {
         "query": "\u79d1\u7d0d\u5496\u5561",
         "clicks": 0,
         "impressions": 10,
         "ctr": 0.0,
-        "position": 1
+        "position": 51.4
       },
       {
         "query": "\u79d1\u7eb3\u5496\u5561",
@@ -348,14 +348,14 @@
         "clicks": 0,
         "impressions": 3,
         "ctr": 0.0,
-        "position": 10.5
+        "position": 10.7
       },
       {
         "query": "\ucf54\ub098 \ucee4\ud53c \ud2b9\uc9d5",
         "clicks": 0,
         "impressions": 4,
         "ctr": 0.0,
-        "position": 4.333333333333334
+        "position": 3.5
       },
       {
         "query": "\ucf54\ub098\ucee4\ud53c",
@@ -376,7 +376,7 @@
         "clicks": 0,
         "impressions": 2,
         "ctr": 0.0,
-        "position": 74
+        "position": 43.5
       },
       {
         "query": "\ud558\uc640\uc774 \ucee4\ud53c",
@@ -390,7 +390,7 @@
         "clicks": 0,
         "impressions": 4,
         "ctr": 0.0,
-        "position": 54
+        "position": 14.2
       },
       {
         "query": "\ud558\uc640\uc774 \ucf54\ub098 \ucee4\ud53c \uac00\uaca9",
@@ -411,14 +411,14 @@
         "clicks": 0,
         "impressions": 2,
         "ctr": 0.0,
-        "position": 12
+        "position": 11
       },
       {
         "query": "\ud558\uc640\uc774\uc548 \ucf54\ub098",
         "clicks": 0,
         "impressions": 4,
         "ctr": 0.0,
-        "position": 1
+        "position": 11.2
       },
       {
         "query": "\ud558\uc640\uc774\uc548 \ucf54\ub098 \ucee4\ud53c",
@@ -435,30 +435,38 @@
         "position": 1
       }
     ],
-    "byPosition": {
-      "pos1to3": 19,
-      "pos4to10": 13,
-      "pos11to20": 11,
-      "pos21plus": 11
-    },
-    "branded": {
-      "count": 3,
-      "clicks": 11,
-      "percentage": 26.2
-    },
-    "nonBranded": {
-      "count": 53,
-      "clicks": 2,
-      "percentage": 4.8
-    },
     "quickWins": [
       {
+        "query": "donuts near me",
+        "position": 9.3,
+        "clicks": 1,
+        "impressions": 19,
+        "ctr": 0.053,
+        "potentialGain": 4
+      },
+      {
+        "query": "kona coffee",
+        "position": 4.9,
+        "clicks": 0,
+        "impressions": 23,
+        "ctr": 0.0,
+        "potentialGain": 6
+      },
+      {
         "query": "\u590f\u5a01\u5937\u79d1\u7eb3\u5496\u5561\u98ce\u5473",
-        "position": 8.75,
+        "position": 8.8,
         "clicks": 0,
         "impressions": 68,
         "ctr": 0.0,
         "potentialGain": 20
+      },
+      {
+        "query": "\u590f\u5a01\u5937\u79d1\u7eb3\u9002\u5408\u51b2\u7f8e\u5f0f\u5417",
+        "position": 7.7,
+        "clicks": 0,
+        "impressions": 50,
+        "ctr": 0.0,
+        "potentialGain": 15
       }
     ]
   },
@@ -470,14 +478,14 @@
         "clicks": 11,
         "impressions": 52,
         "ctr": 0.212,
-        "position": 1.0357142857142858
+        "position": 2.5666666666666664
       },
       {
         "page": "https://www.konacoffeedonut.com/en/menu",
         "clicks": 1,
         "impressions": 44,
         "ctr": 0.023,
-        "position": 1
+        "position": 1.9411764705882353
       },
       {
         "page": "https://www.konacoffeedonut.com/ko/menu/malasada",
@@ -491,28 +499,7 @@
         "clicks": 0,
         "impressions": 114,
         "ctr": 0.0,
-        "position": 20.4
-      },
-      {
-        "page": "https://www.konacoffeedonut.com/ko/about-kona-coffee",
-        "clicks": 0,
-        "impressions": 49,
-        "ctr": 0.0,
-        "position": 1
-      },
-      {
-        "page": "https://www.konacoffeedonut.com/es",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0.0,
-        "position": 13
-      },
-      {
-        "page": "https://www.konacoffeedonut.com/en/about-kona-coffee",
-        "clicks": 0,
-        "impressions": 47,
-        "ctr": 0.0,
-        "position": 63
+        "position": 10.678571428571429
       },
       {
         "page": "https://www.konacoffeedonut.com/en",
@@ -522,11 +509,18 @@
         "position": 2
       },
       {
-        "page": "https://www.konacoffeedonut.com/zh/menu",
+        "page": "https://www.konacoffeedonut.com/en/about-kona-coffee",
         "clicks": 0,
-        "impressions": 30,
+        "impressions": 47,
         "ctr": 0.0,
-        "position": 1
+        "position": 87
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/es",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 13
       },
       {
         "page": "https://www.konacoffeedonut.com/faq",
@@ -543,29 +537,41 @@
         "position": 2
       },
       {
-        "page": "https://www.konacoffeedonut.com/zh/about-kona-coffee",
+        "page": "https://www.konacoffeedonut.com/ja/menu/kona-coffee",
         "clicks": 0,
-        "impressions": 134,
+        "impressions": 3,
         "ctr": 0.0,
-        "position": 20
+        "position": 17.333333333333332
       },
       {
         "page": "https://www.konacoffeedonut.com/ja/menu/korean-corn-dog",
         "clicks": 0,
         "impressions": 2,
         "ctr": 0.0,
-        "position": 9
+        "position": 5
       },
       {
-        "page": "https://www.konacoffeedonut.com/ja/menu/kona-coffee",
+        "page": "https://www.konacoffeedonut.com/ko/about-kona-coffee",
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 49,
         "ctr": 0.0,
-        "position": 17.333333333333332
+        "position": 8
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/zh/about-kona-coffee",
+        "clicks": 0,
+        "impressions": 134,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/zh/menu",
+        "clicks": 0,
+        "impressions": 30,
+        "ctr": 0.0,
+        "position": 6
       }
-    ],
-    "topPerformers": [],
-    "needsOptimization": []
+    ]
   },
   "devices": {
     "desktop": {
@@ -608,14 +614,6 @@
       "position": 0
     },
     {
-      "country": "esp",
-      "countryCode": "esp",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0.0,
-      "position": 0
-    },
-    {
       "country": "jpn",
       "countryCode": "jpn",
       "clicks": 0,
@@ -626,6 +624,38 @@
     {
       "country": "aus",
       "countryCode": "aus",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 0
+    },
+    {
+      "country": "esp",
+      "countryCode": "esp",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 0
+    },
+    {
+      "country": "can",
+      "countryCode": "can",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0.0,
+      "position": 0
+    },
+    {
+      "country": "hkg",
+      "countryCode": "hkg",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 0
+    },
+    {
+      "country": "uzb",
+      "countryCode": "uzb",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0.0,
@@ -646,49 +676,30 @@
       "impressions": 3,
       "ctr": 0.0,
       "position": 0
-    },
-    {
-      "country": "twn",
-      "countryCode": "twn",
-      "clicks": 0,
-      "impressions": 7,
-      "ctr": 0.0,
-      "position": 0
-    },
-    {
-      "country": "hkg",
-      "countryCode": "hkg",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0.0,
-      "position": 0
-    },
-    {
-      "country": "can",
-      "countryCode": "can",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0.0,
-      "position": 0
     }
   ],
-  "searchAppearance": {
-    "richResults": {
-      "clicks": 0,
-      "impressions": 0,
-      "ctr": 0
+  "positionBrackets": {
+    "1-3": 15,
+    "4-10": 15,
+    "11-20": 15,
+    "21+": 11
+  },
+  "brandedVsNonBranded": {
+    "branded": {
+      "clicks": 11,
+      "percentage": 26.2
     },
-    "featuredSnippets": {
-      "count": 0,
-      "queries": []
+    "nonBranded": {
+      "clicks": 31,
+      "percentage": 73.8
     }
   },
   "ga4": {
     "users": 0,
     "sessions": 0,
+    "pageviews": 0,
     "engagement": 0,
     "bounceRate": 0,
-    "trafficSources": [],
-    "topPages": []
+    "avgSessionDuration": 0
   }
 }
