@@ -500,7 +500,7 @@
         // Load posts
         async function loadPosts() {
             try {
-                const response = await fetch('social/posts.json');
+                const response = await fetch('clients/kona/social/posts.json?' + Date.now());
                 const data = await response.json();
                 allPosts = data.posts || [];
             } catch (error) {

@@ -234,7 +234,7 @@
         async function fetchData() {
             document.getElementById('refreshIcon').classList.add('animate-spin');
             try {
-                const response = await fetch('./news/data.json?' + Date.now());
+                const response = await fetch('./clients/kona/news/data.json?' + Date.now());
                 newsData = await response.json();
                 renderNews();
             } catch (e) {
