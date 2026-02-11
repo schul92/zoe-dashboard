@@ -24,8 +24,9 @@
           "url": "https://www.threads.com/@konacoffeedonut/post/DUoBGjtETqM"
         },
         "bluesky": {
-          "status": "skipped",
-          "note": "No account connected"
+          "status": "published",
+          "url": "https://bsky.app/profile/konacoffeedonut.bsky.social/post/3mem6siumm72x",
+          "note": "Fixed! AT Protocol working (Feb 11, 11:14 PST)"
         }
       }
     },
