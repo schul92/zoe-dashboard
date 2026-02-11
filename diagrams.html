@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Diagrams - ZOE STUDIO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .diagram-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .diagram-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .diagram-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+        }
+
+        .diagram-card h2 {
+            color: #667eea;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .diagram-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .diagram-card .highlights {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .diagram-card .highlights ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .diagram-card .highlights li {
+            padding: 0.3rem 0;
+            color: #555;
+        }
+
+        .diagram-card .highlights li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .info-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .info-section h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .info-section p, .info-section li {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .info-section ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .info-section code {
+            background: #f8f9fa;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            color: #764ba2;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .diagram-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="./index.html" class="back-link">← Back to Dashboard</a>
+
+        <header>
+            <h1>🎨 Workflow Diagrams</h1>
+            <p>Visual documentation of ZOE STUDIO automation workflows</p>
+        </header>
+
+        <div class="diagram-grid">
+            <!-- SEO Data Collection -->
+            <div class="diagram-card">
+                <h2>📊 SEO Data Collection</h2>
+                <p>Complete workflow showing how GSC + GA4 data flows through S3 to Opus 4.6 AI analysis and GitHub deployment.</p>
+                <div class="highlights">
+                    <ul>
+                        <li>6 AM EST trigger</li>
+                        <li>100+ queries collected</li>
+                        <li>Critical S3 checkpoint</li>
+                        <li>Opus 4.6 AI analysis</li>
+                        <li>Auto-deploy to dashboard</li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="https://excalidraw.com" target="_blank" class="btn btn-primary">Open in Excalidraw</a>
+                    <a href="./diagrams/SEO-Data-Collection-Workflow.excalidraw" download class="btn btn-secondary">Download</a>
+                </div>
+            </div>
+
+            <!-- Daily Cron Chain -->
+            <div class="diagram-card">
+                <h2>⏰ Daily Cron Chain</h2>
+                <p>Sequence of 5 automated cron jobs running throughout the day, showing data flow and dependencies.</p>
+                <div class="highlights">
+                    <ul>
+                        <li>6 AM: SEO & Performance</li>
+                        <li>8 AM: News + Content</li>
+                        <li>12 PM: Social Posting</li>
+                        <li>6 PM: Executive Report</li>
+                        <li>11 PM: Validation</li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="https://excalidraw.com" target="_blank" class="btn btn-primary">Open in Excalidraw</a>
+                    <a href="./diagrams/Daily-Cron-Chain.excalidraw" download class="btn btn-secondary">Download</a>
+                </div>
+            </div>
+
+            <!-- Social Posting Workflow -->
+            <div class="diagram-card">
+                <h2>📱 Social Posting Workflow</h2>
+                <p>Two-phase workflow: 8 AM trend collection & content generation, 12 PM approval & posting to 5 platforms.</p>
+                <div class="highlights">
+                    <ul>
+                        <li>Bird CLI trend analysis</li>
+                        <li>SEO/GEO research</li>
+                        <li>5 different posts, 1 image</li>
+                        <li>Steve approval checkpoint</li>
+                        <li>5 platforms synchronized</li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="https://excalidraw.com" target="_blank" class="btn btn-primary">Open in Excalidraw</a>
+                    <a href="./diagrams/Social-Posting-Workflow.excalidraw" download class="btn btn-secondary">Download</a>
+                </div>
+            </div>
+
+            <!-- Multi-Client Architecture -->
+            <div class="diagram-card">
+                <h2>🏢 Multi-Client Architecture</h2>
+                <p>Data isolation architecture showing how Kona Coffee Donut and CareK9 client data remains completely separated.</p>
+                <div class="highlights">
+                    <ul>
+                        <li>Client switcher dropdown</li>
+                        <li>Isolated data folders</li>
+                        <li>No data carryover</li>
+                        <li>Dynamic loading</li>
+                        <li>Security by design</li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="https://excalidraw.com" target="_blank" class="btn btn-primary">Open in Excalidraw</a>
+                    <a href="./diagrams/Multi-Client-Architecture.excalidraw" download class="btn btn-secondary">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>📖 How to Use These Diagrams</h3>
+            <p><strong>Viewing Online:</strong></p>
+            <ol>
+                <li>Click "Open in Excalidraw" button above</li>
+                <li>On Excalidraw.com, click "File" → "Open"</li>
+                <li>Click "Download" button and select the <code>.excalidraw</code> file</li>
+                <li>Explore the interactive diagram!</li>
+            </ol>
+            <p style="margin-top: 1rem;"><strong>Editing:</strong></p>
+            <ul>
+                <li>Make changes in Excalidraw</li>
+                <li>Export as <code>.excalidraw</code> file</li>
+                <li>Replace the file in <code>/diagrams/</code> folder</li>
+                <li>Commit to GitHub (auto-deploys)</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h3>🎨 DSL Syntax Quick Reference</h3>
+            <p>These diagrams use a simple Domain-Specific Language (DSL):</p>
+            <ul>
+                <li><code>(Label)</code> - Ellipse (Start/End points)</li>
+                <li><code>[Label]</code> - Rectangle (Process steps)</li>
+                <li><code>{Label?}</code> - Diamond (Decisions)</li>
+                <li><code>[[Label]]</code> - Database (Data storage)</li>
+                <li><code>-></code> - Arrow (Normal flow)</li>
+                <li><code>-> "text" -></code> - Labeled Arrow (Conditions)</li>
+                <li><code>--></code> - Dashed Arrow (Annotations)</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h3>🔗 Related Resources</h3>
+            <ul>
+                <li><strong>Main Dashboard:</strong> <a href="./index.html" style="color: #667eea;">ZOE Hub</a></li>
+                <li><strong>SEO Dashboard:</strong> <a href="./seo/" style="color: #667eea;">Live SEO Metrics</a></li>
+                <li><strong>Social Calendar:</strong> <a href="./social.html" style="color: #667eea;">Posted Content</a></li>
+                <li><strong>Obsidian Vault:</strong> <a href="https://github.com/schul92/zoe-obsidian-vault" style="color: #667eea;" target="_blank">GitHub Repository</a></li>
+                <li><strong>Excalidraw CLI:</strong> <a href="https://github.com/swiftlysingh/excalidraw-cli" style="color: #667eea;" target="_blank">@swiftlysingh/excalidraw-cli</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
