@@ -1,72 +1,17 @@
 {
-  "generatedAt": "2026-02-10T21:17:10.428982Z",
+  "generatedAt": "2026-02-10T21:30:38.934336Z",
+  "model": "fallback-rules",
   "urgent": [
     {
       "type": "low_ctr",
       "keyword": "donuts near me",
-      "position": 1,
-      "ctr": 0.045,
       "action": "Improve title/meta for 'donuts near me' - Position #1 but only 4.5% CTR",
       "impact": "high",
-      "effort": "low"
-    },
-    {
-      "type": "low_ctr",
-      "keyword": "kona coffee",
-      "position": 4.869565217391305,
-      "ctr": 0.0,
-      "action": "Improve title/meta for 'kona coffee' - Position #4 but only 0.0% CTR",
-      "impact": "high",
-      "effort": "low"
+      "effort": "low",
+      "reasoning": "Good position but low click-through indicates poor snippet appeal"
     }
   ],
-  "quickWins": [
-    {
-      "type": "ranking_opportunity",
-      "keyword": "\u590f\u5a01\u5937\u79d1\u7eb3\u5496\u5561\u98ce\u5473",
-      "position": 8.75,
-      "impressions": 68,
-      "potentialGain": 20,
-      "action": "Target '\u590f\u5a01\u5937\u79d1\u7eb3\u5496\u5561\u98ce\u5473' - #8, could gain 20 clicks",
-      "impact": "medium",
-      "effort": "medium"
-    }
-  ],
-  "opportunities": [
-    {
-      "type": "zero_clicks",
-      "keyword": "kona coffee",
-      "impressions": 24,
-      "position": 4.869565217391305,
-      "action": "Create content for 'kona coffee' - 24 impressions, 0 clicks",
-      "impact": "medium",
-      "effort": "high"
-    },
-    {
-      "type": "zero_clicks",
-      "keyword": "\u590f\u5a01\u5937\u79d1\u7eb3\u5496\u5561\u98ce\u5473",
-      "impressions": 68,
-      "position": 8.75,
-      "action": "Create content for '\u590f\u5a01\u5937\u79d1\u7eb3\u5496\u5561\u98ce\u5473' - 68 impressions, 0 clicks",
-      "impact": "medium",
-      "effort": "high"
-    },
-    {
-      "type": "zero_clicks",
-      "keyword": "\u590f\u5a01\u5937\u79d1\u7eb3\u9002\u5408\u51b2\u7f8e\u5f0f\u5417",
-      "impressions": 50,
-      "position": 7.66,
-      "action": "Create content for '\u590f\u5a01\u5937\u79d1\u7eb3\u9002\u5408\u51b2\u7f8e\u5f0f\u5417' - 50 impressions, 0 clicks",
-      "impact": "medium",
-      "effort": "high"
-    }
-  ],
-  "insights": [
-    {
-      "type": "language_opportunity",
-      "observation": "Found 15 Korean keyword(s)",
-      "suggestion": "Expand Korean content - untapped market",
-      "priority": "medium"
-    }
-  ]
+  "quickWins": [],
+  "opportunities": [],
+  "insights": []
 }
