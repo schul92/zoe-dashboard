@@ -1,6 +1,35 @@
 {
   "posts": [
     {
+      "id": "2026-02-11-valentines-week",
+      "date": "2026-02-11",
+      "time": "12:00 PM EST",
+      "theme": "Valentine's Week in Waikiki — Love, Coffee & Donuts",
+      "image": "https://images.pexels.com/photos/15269528/pexels-photo-15269528.jpeg",
+      "platforms": {
+        "twitter": {
+          "status": "failed",
+          "note": "LATE API issue"
+        },
+        "facebook": {
+          "status": "published",
+          "url": "https://www.facebook.com/1019743421211183_122105462229241380"
+        },
+        "google": {
+          "status": "published",
+          "url": "https://local.google.com/place?id=10744436116498197834&use=posts&lpsid=CIHM0ogKEJCL8qPZ_6KDgQE"
+        },
+        "threads": {
+          "status": "published",
+          "url": "https://www.threads.com/@konacoffeedonut/post/DUoBGjtETqM"
+        },
+        "bluesky": {
+          "status": "skipped",
+          "note": "No account connected"
+        }
+      }
+    },
+    {
       "id": "2026-02-09-agent-teams",
       "date": "2026-02-09",
       "time": "14:00",
@@ -41,6 +70,46 @@
           "url": "",
           "status": "draft",
           "postedAt": null
+        }
+      }
+    },
+    {
+      "id": "2026-02-11-0900",
+      "date": "2026-02-11",
+      "time": "09:00",
+      "theme": "Valentine's Week in Waikiki — Love, Coffee & Donuts",
+      "image": "https://images.pexels.com/photos/15269528/pexels-photo-15269528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "imageDescription": "",
+      "platforms": {
+        "twitter": {
+          "text": "Valentine's week just got sweeter 💕☕ Proudly serving Honolulu coffee + fresh donuts at 2142 Kalākaua Ave! Grand opening February 25, 2026 🎉🍩\n\nBring your date. Bring your bestie. Bring yourself.\n\n@HonoluluCoffee\n🌐 konacoffeedonut.com\n#WaikikiCoffee #ValentinesDay #KonaDonut #HonoluluEats",
+          "url": "",
+          "status": "posted",
+          "postedAt": "2026-02-11T09:00:18.401461"
+        },
+        "facebook": {
+          "text": "This Valentine's week, we're counting down to something special on Kalākaua Avenue 💕\n\nKona Coffee Donut is proudly serving Honolulu coffee alongside handcrafted donuts — the perfect way to start your morning in Waikiki. Whether you're strolling the beach with someone special or treating yourself to a solo coffee date, we've got the warmth waiting for you.\n\n🗓️ Grand opening: February 25, 2026\n📍 2142 Kalākaua Ave, Honolulu, HI 96815\n🌐 konacoffeedonut.com\n\nWhat's your ideal Valentine's morning — sunrise walk then coffee, or coffee first? ☕🌅",
+          "url": "",
+          "status": "posted",
+          "postedAt": "2026-02-11T09:00:19.325615"
+        },
+        "google": {
+          "text": "Looking for the best coffee near Waikiki this Valentine's Day? ☕💕\n\nKona Coffee Donut is proudly serving Honolulu coffee and fresh donuts at 2142 Kalākaua Ave, Honolulu, HI 96815 — steps from Waikiki Beach.\n\nPerfect for a Valentine's morning date, a quick Waikiki breakfast, or your daily coffee stop.\n\n🗓️ Grand opening: February 25, 2026\n🌐 konacoffeedonut.com\n\n{\"type\": \"LEARN_MORE\", \"url\": \"https://konacoffeedonut.com\"}",
+          "url": "",
+          "status": "posted",
+          "postedAt": "2026-02-11T09:00:20.228349"
+        },
+        "threads": {
+          "text": "valentine's week vibes ☕💕 proudly serving honolulu coffee + handcrafted donuts right on kalākaua ave.\n\n14 days until our grand opening and we literally cannot wait 🍩✨\n\nfeb 25, 2026 · 2142 kalākaua ave, honolulu\nkonacoffeedonut.com\n\n#waikiki #honolulucoffee #valentinesday #konadonut #hawaiieats #waikikibreakfast #coffeelover",
+          "url": "",
+          "status": "posted",
+          "postedAt": "2026-02-11T09:00:21.163965"
+        },
+        "bluesky": {
+          "text": "Valentine's week = an excuse to eat more donuts 🍩💕\n\nProudly serving Honolulu coffee at our new Waikiki spot. Grand opening Feb 25, 2026!\n\n📍 2142 Kalākaua Ave\n🌐 konacoffeedonut.com",
+          "url": "",
+          "status": "posted",
+          "postedAt": "2026-02-11T09:00:21.993555"
         }
       }
     }
