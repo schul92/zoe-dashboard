@@ -1,97 +1,61 @@
 {
-  "collectedAt": "2026-02-10T08:00:00-05:00",
-  "timezone": "EST",
+  "lastUpdated": "2026-02-11T14:48:00.877255Z",
+  "version": "manual-2026-02-11",
   "sources": {
-    "twitter": "Bird CLI",
-    "brave": "Brave Search API",
-    "hackerNews": "Hacker News Firebase API",
-    "reddit": "Reddit RSS",
-    "newsapi": "Disabled",
-    "google": "Google Trends (pytrends)"
+    "brave_search": true,
+    "twitter": false,
+    "hackernews": false,
+    "reddit": false
   },
-  "twitter": [
+  "headlines": [
     {
-      "title": "Valentine's Day Weekend Heats Up Waikiki",
-      "description": "Waikiki restaurants and hotels offering special Valentine's packages — sunset cruises, prix fixe dinners, and singles mixers.",
-      "url": "https://www.hawaiinewsnow.com/2026/02/09/whats-cooking-kamaaina-valentines-day-specials-hyatt-regency-waikiki/",
-      "timestamp": "2026-02-10T08:00:00-05:00",
-      "stats": {"mentions": 150}
+      "title": "Hawaii Tourism Still Below Pre-Pandemic Peak Entering 2026",
+      "source": "West Hawaii Today",
+      "url": "https://www.westhawaiitoday.com/2026/02/09/hawaii-news/global-tourism-rivals-start-to-gain-ground-amid-flat-growth/",
+      "category": "hawaii"
     },
     {
-      "title": "Hawaii Leads Valentine's Day Travel Boom",
-      "description": "California, Hawaii and NY top romantic travel destinations for 2026 Valentine's Day. Sunset sails and spa rituals trending.",
-      "url": "https://www.thetraveler.org/california-hawaii-and-new-york-lead-2026-valentines-day-romantic-travel-boom/",
-      "timestamp": "2026-02-10T07:45:00-05:00",
-      "stats": {"mentions": 220}
-    }
-  ],
-  "competitors": [
-    {
-      "title": "Island Vintage Coffee",
-      "description": "44K IG followers, trending breakfast spot",
-      "url": "https://instagram.com/islandvintagecoffee",
-      "timestamp": "2026-02-10T07:30:00-05:00"
-    }
-  ],
-  "hackerNews": [
-    {
-      "title": "2026 Coffee Trends: Functional Ingredients & Sustainability",
-      "description": "High-protein, calming, and immune-boosting coffee drinks dominating 2026. Sustainability and traceability now non-negotiable.",
-      "url": "https://www.teaandcoffee.net/blog/38539/six-global-beverage-trends-that-will-dominate-in-2026/",
-      "timestamp": "2026-02-10T06:00:00-05:00",
-      "stats": {"points": 125, "comments": 45}
-    }
-  ],
-  "reddit": [
-    {
-      "title": "Best coffee shops in Waikiki?",
-      "description": "From r/hawaii",
-      "url": "https://reddit.com/r/hawaii/comments/example1",
-      "timestamp": "2026-02-10T05:30:00-05:00",
-      "stats": {"points": 42, "comments": 18}
+      "title": "Valentine's Day Events Across Waikiki & Honolulu",
+      "source": "Waikiki Beach Stays",
+      "url": "https://waikikibeachstays.com/oahu-events/by-month/february/",
+      "category": "hawaii"
     },
     {
-      "title": "Specialty coffee shifts to preservation over trendiness",
-      "description": "From r/coffee",
-      "url": "https://weaverscoffee.com/blogs/blog/coffee-trends-2026",
-      "timestamp": "2026-02-10T04:00:00-05:00",
-      "stats": {"points": 88, "comments": 31}
-    }
-  ],
-  "news": [
+      "title": "Mahina \u02bb\u014clelo Hawai\u02bbi - Hawaiian Language Month",
+      "source": "City of Honolulu",
+      "url": "",
+      "category": "hawaii"
+    },
     {
-      "title": "Will 2026 Be Different for Coffee Industry?",
-      "description": "Record prices and political disruption reshaped coffee in 2025. 2026 sees continued volatility but better harvest estimates.",
+      "title": "Box Jellyfish Observed at Ala Moana and Waikiki Beaches",
+      "source": "Star-Advertiser",
+      "url": "https://www.staradvertiser.com/category/breaking-news/",
+      "category": "hawaii"
+    },
+    {
+      "title": "Coffee Prices Easing in 2026 After Record Highs",
+      "source": "Perfect Daily Grind",
       "url": "https://perfectdailygrind.com/2026/02/will-2026-be-different-coffee-industry-challenges/",
-      "timestamp": "2026-02-09T18:00:00-05:00"
+      "category": "coffee"
     },
     {
-      "title": "Global Coffee Market to Hit $94.63B by 2030",
-      "description": "Coffee market growing at 6.3% CAGR. Consumption boom drives specialty and organic segments.",
-      "url": "https://www.thebusinessresearchcompany.com/report/coffee-global-market-report",
-      "timestamp": "2026-02-09T15:00:00-05:00"
-    }
-  ],
-  "hawaii": [
-    {
-      "title": "Lunar New Year Celebration Feb 21 at Waikiki Beach Walk",
-      "description": "Lunar New Year festivities coming to Waikiki Beach Walk on February 21, 2026 — 4 days before Kona Coffee Donut grand opening!",
-      "url": "https://www.waikikibeachwalk.com/Events-And-News.htm",
-      "timestamp": "2026-02-09T12:00:00-05:00"
-    }
-  ],
-  "googleTrends": [
-    {
-      "title": "valentine's day hawaii",
-      "description": "Trending search",
-      "url": "https://trends.google.com/trends/explore?q=valentine%27s+day+hawaii",
-      "timestamp": "2026-02-10T07:00:00-05:00"
+      "title": "2026 Coffee Trends: Mushroom Coffee, Functional Brews Rising",
+      "source": "Beverage Daily",
+      "url": "https://www.beveragedaily.com/Article/2026/01/28/top-coffee-trends-functional-coffee-rtd-specialty-coffee-cold-brew/",
+      "category": "coffee"
     },
     {
-      "title": "waikiki coffee shops",
-      "description": "Trending search",
-      "url": "https://trends.google.com/trends/explore?q=waikiki+coffee+shops",
-      "timestamp": "2026-02-10T06:30:00-05:00"
+      "title": "Coffee Shop Tech Trends: Self-Service, Mobile Ordering",
+      "source": "Perfect Daily Grind",
+      "url": "https://perfectdailygrind.com/2026/01/coffee-shop-trends-in-2026/",
+      "category": "business"
     }
+  ],
+  "trending": [
+    "Valentine's Day Waikiki",
+    "Hawaii tourism 2026",
+    "coffee price relief",
+    "mushroom coffee trend",
+    "Hawaiian Language Month"
   ]
 }
