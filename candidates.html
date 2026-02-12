@@ -859,6 +859,7 @@
                                 <div class="card-location">📍 ${c.location}</div>
                             </div>
                             <div class="card-badges">
+                                ${c.potential ? `<span style="font-size:0.6rem;font-weight:700;padding:0.2rem 0.4rem;border-radius:100px;background:${c.potential.rating==='high'?'#F0FFF0':c.potential.rating==='medium'?'#FFFBE6':'#FFF1EC'};color:${c.potential.rating==='high'?'#389E0D':c.potential.rating==='medium'?'#D48806':'#D4380D'};">${c.potential.rating==='high'?'🟢':c.potential.rating==='medium'?'🟡':'🔴'}</span>` : ''}
                                 <span class="score-pill">${c.score}</span>
                                 <span class="tier-badge ${c.tier}">${c.tier}</span>
                             </div>
@@ -903,14 +904,21 @@
 
         function showDetails(idx) {
             const c = candidatesData[idx];
-            document.getElementById('modal-title').textContent = c.name;
+            const potentialColors = {high: '#389E0D', medium: '#D48806', low: '#D4380D'};
+            const potentialBg = {high: '#F0FFF0', medium: '#FFFBE6', low: '#FFF1EC'};
+            const potentialLabel = {high: '🟢 HIGH', medium: '🟡 MEDIUM', low: '🔴 LOW'};
+
+            document.getElementById('modal-title').innerHTML = `${c.name}${c.estimatedAge ? ` <span style="font-size:0.8rem;color:var(--text-muted);font-weight:400;">🎂 ~${c.estimatedAge}yo</span>` : ''}`;
             document.getElementById('modal-body').innerHTML = `
                 <div class="detail-group">
-                    <div style="display:flex;gap:0.5rem;align-items:center;margin-bottom:0.75rem;">
+                    <div style="display:flex;gap:0.5rem;align-items:center;margin-bottom:0.75rem;flex-wrap:wrap;">
                         <span class="tier-badge ${c.tier}">${c.tier}</span>
                         <span class="score-pill">${c.score} qualifications</span>
+                        ${c.potential ? `<span style="padding:0.25rem 0.625rem;border-radius:100px;font-size:0.7rem;font-weight:700;background:${potentialBg[c.potential.rating]};color:${potentialColors[c.potential.rating]};">${potentialLabel[c.potential.rating]} POTENTIAL</span>` : ''}
                     </div>
                 </div>
+                ${c.potential ? `<div class="detail-group"><div style="background:${potentialBg[c.potential.rating]};border-left:3px solid ${potentialColors[c.potential.rating]};border-radius:var(--radius-sm);padding:0.75rem 1rem;font-size:0.85rem;line-height:1.5;">💡 <strong>Potential Assessment:</strong> ${c.potential.reason}</div></div>` : ''}
+                ${c.resumeSummary && c.resumeSummary.length ? `<div class="detail-group"><div class="detail-label">📋 Resume Summary</div><ul style="margin:0.25rem 0 0 1.25rem;font-size:0.85rem;color:var(--text);line-height:1.7;">${c.resumeSummary.map(s => `<li>${s}</li>`).join('')}</ul></div>` : ''}
                 ${c.summary ? `<div class="detail-group"><div class="detail-summary">${c.summary}</div></div>` : ''}
                 <div class="detail-group">
                     <div class="detail-label">Phone</div>

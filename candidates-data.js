@@ -1,4 +1,4 @@
-// 83 Candidates Data - Updated 2026-02-11
+// 83 Candidates Data - Updated 2026-02-11 with AI Resume Analysis
 const candidatesData = [
   {
     "name": "Tia Taylor",
@@ -12,7 +12,10 @@ const candidatesData = [
     "resume": false,
     "resumeFile": null,
     "skills": "Cash management, culinary experience, food service, district management",
-    "summary": "Exceptional management candidate with 15+ years leadership experience — District Manager at Easy Spirit/Nine West, Restaurant Manager at Maggiano's & Darden. Culinary arts degree plus business management BA."
+    "summary": "Exceptional management candidate with 15+ years leadership experience — District Manager at Easy Spirit/Nine West, Restaurant Manager at Maggiano's & Darden. Culinary arts degree plus business management BA.",
+    "resumeSummary": ["15+ years management experience across retail & restaurant industries", "District Manager for Easy Spirit/Nine West and Gymboree/Janie & Jack", "Restaurant Manager at Maggiano's Little Italy and Darden Restaurants", "Associate's degrees in both Pastry/Culinary Arts and Restaurant Management", "BA in Business Management — strong operational and payroll skills"],
+    "estimatedAge": 45,
+    "potential": {"rating": "high", "reason": "Dream hire for a coffee/donut shop. Combines culinary arts training with 15+ years of multi-unit restaurant and retail management. Could run the store from day one and train others. Honolulu-based."}
   },
   {
     "name": "Sanjina Rao",
@@ -26,7 +29,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeSanjinaRao.pdf",
     "skills": "",
-    "summary": "Strong dual-role candidate with hands-on cashier and cook experience — ready for both front and back of house."
+    "summary": "Strong dual-role candidate with hands-on cashier and cook experience — ready for both front and back of house.",
+    "resumeSummary": ["9 years of Honolulu food service experience across multiple restaurants", "Dual cashier/cook with sushi chef skills", "ServSafe and Food Handler certified", "POS system proficient with espresso/coffee making skills", "Experience at Tacos, Ebinomi, Sushi Spot, Champions Steak & Seafood"],
+    "estimatedAge": 30,
+    "potential": {"rating": "high", "reason": "Exceptional local candidate with 9 years of Honolulu food service. ServSafe certified, experienced in both cashiering and cooking, plus coffee/espresso skills. No relocation risk — deeply rooted in Honolulu."}
   },
   {
     "name": "Joshua Lee",
@@ -40,7 +46,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeJoshuaLee.pdf",
     "skills": "",
-    "summary": "Experienced bartender with arts background — strong customer engagement and drink preparation skills."
+    "summary": "Experienced bartender with arts background — strong customer engagement and drink preparation skills.",
+    "resumeSummary": ["10+ years bartending experience including casino resort and fine dining", "Barista at Honey Bear Bakery in Seattle", "Line cook/pizza cook at Four Seasons Hualalai Resort", "Multi-role: bartender, server, barista, line cook, delivery driver", "Open availability, ready to start immediately"],
+    "estimatedAge": 35,
+    "potential": {"rating": "high", "reason": "Incredibly versatile — bartender, barista, line cook, and server across premium venues including Four Seasons and casino resorts. Already in Honolulu with open availability. Can handle any role in the shop."}
   },
   {
     "name": "Atalya Gonzalez",
@@ -54,7 +63,10 @@ const candidatesData = [
     "resume": false,
     "resumeFile": null,
     "skills": "Food Handling, POS Systems (Toast, Square), sales leadership",
-    "summary": "Outstanding Lead Barista who surpassed daily sales goals by 59% at Champagne Poetry Patisserie. Receptionist at JLL/Google, Lead Bookseller at Barnes & Noble. BA in English."
+    "summary": "Outstanding Lead Barista who surpassed daily sales goals by 59% at Champagne Poetry Patisserie. Receptionist at JLL/Google, Lead Bookseller at Barnes & Noble. BA in English.",
+    "resumeSummary": ["Lead Barista at Champagne Poetry Patisserie — surpassed sales goals by 59% daily", "Receptionist/Admin Assistant at JLL supporting Google", "Lead Bookseller at Barnes & Noble with training responsibilities", "BA in English from CUNY-Hunter College", "Proficient in Toast and Square POS systems"],
+    "estimatedAge": 28,
+    "potential": {"rating": "high", "reason": "Proven lead barista who crushed sales goals by 59%. Strong leadership and training skills from multiple roles. Only concern is relocation from Portland, OR — would need to confirm commitment to move to Honolulu."}
   },
   {
     "name": "Pieter  (Kobus) Breet",
@@ -68,7 +80,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumePieter(Kobus)Breet.pdf",
     "skills": "",
-    "summary": "Proven shift supervisor with leadership and team management capabilities."
+    "summary": "Proven shift supervisor with leadership and team management capabilities.",
+    "resumeSummary": ["Shift Supervisor at Starbucks Oahu — directing teams of 6-12 partners", "Line/Prep Cook at Aerie Ski Resort — 200+ menu items daily", "Line Cook/Server at Muddled Thyme Restaurant", "4 years hospitality experience across coffee shops, kitchens, restaurants", "Cash handling, inventory management, safety compliance"],
+    "estimatedAge": 24,
+    "potential": {"rating": "high", "reason": "Currently a Starbucks Shift Supervisor in Oahu — directly transferable skills for a coffee/donut shop. Manages teams of 6-12, handles cash, inventory, and operations. Also has kitchen experience. Already local."}
   },
   {
     "name": "Heather Fencl",
@@ -82,7 +97,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeHeatherFencl.pdf",
     "skills": "",
-    "summary": "Licensed professional with strong client service orientation and attention to detail."
+    "summary": "Licensed professional with strong client service orientation and attention to detail.",
+    "resumeSummary": ["Licensed Massage Therapist & Esthetician since 1995", "Lead Massage Therapist at Outrigger Reef Hotel spa (2016-2021)", "Worked at The Royal Hawaiian luxury hotel spa", "Self-employed spa business owner (Spa Matra) since 2002", "AVEDA trainer, product sales, inventory management"],
+    "estimatedAge": 53,
+    "potential": {"rating": "medium", "reason": "Extensive hospitality experience in luxury Waikiki hotels, strong customer service and management skills. However, no direct food/coffee experience. Long-time Honolulu resident with excellent reliability. Could be great for customer-facing role."}
   },
   {
     "name": "Alena Hamilton",
@@ -96,7 +114,10 @@ const candidatesData = [
     "resume": false,
     "resumeFile": null,
     "skills": "Food Handler Certified, POS, customer service",
-    "summary": "Strong food service background at 18 — current Popeyes team member, prior cashier at Zippy's & Teddy's Bigger Burger, plus entrepreneurial lipgloss business since 2021. Food Handler Certified."
+    "summary": "Strong food service background at 18 — current Popeyes team member, prior cashier at Zippy's & Teddy's Bigger Burger, plus entrepreneurial lipgloss business since 2021. Food Handler Certified.",
+    "resumeSummary": ["Current Popeyes team member — cashier, food prep, customer service", "Prior cashier at Zippy's Restaurants and Teddy's Bigger Burger", "Entrepreneur — runs lipgloss/lash business (Girlyyyygloss) since 2021", "Food Handler Certified, 18 years old", "UH Manoa Political Science student"],
+    "estimatedAge": 18,
+    "potential": {"rating": "high", "reason": "Multiple food service roles at 18 (Popeyes, Zippy's, Teddy's Bigger Burger) plus entrepreneurial drive with her own business. Food Handler Certified, UH Manoa student in Honolulu. Reliable, local, and motivated."}
   },
   {
     "name": "Leilani Loveless",
@@ -110,7 +131,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeLeilaniLoveless.pdf",
     "skills": "",
-    "summary": "Versatile retail professional with cashier, customer service, sales, and stocking experience."
+    "summary": "Versatile retail professional with cashier, customer service, sales, and stocking experience.",
+    "resumeSummary": ["Cashier/Barista at Izumi Bakery & Cafe in Nagoya, Japan (2023-2025)", "UH Manoa Marine Biology student, transferred from Kapi'olani CC", "Bilingual — improved Japanese fluency through work abroad", "Monk Seal Educator Volunteer at Waikiki Aquarium", "Multiple volunteer and community service experiences"],
+    "estimatedAge": 22,
+    "potential": {"rating": "high", "reason": "Bakery/café barista and cashier experience directly relevant to coffee/donut shop. Local UH Manoa student with strong work ethic (worked abroad in Japan). Bilingual asset for Waikiki tourist area."}
   },
   {
     "name": "Beyla Jones",
@@ -124,7 +148,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeBeylaJones.pdf",
     "skills": "",
-    "summary": "Store management experience with proven leadership and operational skills."
+    "summary": "Store management experience with proven leadership and operational skills.",
+    "resumeSummary": ["Shift Lead at Sunrise Shack Honolulu — opening/closing, training new hires, barista", "Helped open new Sunrise Shack location in Waikiki (Twin Fin hotel)", "Veterinary assistant experience — attention to detail", "UH Manoa Anthropology student, CPR certified", "Food Handlers license, bilingual English/Spanish"],
+    "estimatedAge": 20,
+    "potential": {"rating": "high", "reason": "Currently Shift Lead at Sunrise Shack in Waikiki — nearly identical role to what Kona Coffee Donut needs. Opened a new Waikiki location, trains new hires, does barista work. Perfect fit. Local UH Manoa student."}
   },
   {
     "name": "Catherine Piano",
@@ -138,7 +165,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeCatherinePiano.pdf",
     "skills": "",
-    "summary": "Senior-level server with extensive food service and customer interaction experience."
+    "summary": "Senior-level server with extensive food service and customer interaction experience.",
+    "resumeSummary": ["12+ years restaurant/hotel experience across multiple countries", "Senior Waitress at 5-star Al Bander Hotel & Resort (Bahrain)", "Waitress at Michelin Japanese restaurant in Zagreb, Croatia", "Cashiering, espresso/cappuccino/cocktail preparation skills", "Caregiving training and Associate degree in Computer Science"],
+    "estimatedAge": 40,
+    "potential": {"rating": "medium", "reason": "Impressive 12+ years of international restaurant/hotel experience with coffee preparation skills. Major concern: currently in Zagreb, Croatia — significant relocation required. If she's willing to move to Honolulu, she'd be highly capable."}
   },
   {
     "name": "Emily Newell",
@@ -152,7 +182,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeEmilyNewell.pdf",
     "skills": "",
-    "summary": "Experienced barista and cashier — ideal coffee shop skill set with dual-role capability."
+    "summary": "Experienced barista and cashier — ideal coffee shop skill set with dual-role capability.",
+    "resumeSummary": ["Customer Service Representative at Shake Tea (2024-2025)", "UH Manoa Marketing Major, expected graduation Spring 2029", "Team leadership — captained 4 sports teams across 6 years", "Student Government member at UH Manoa", "Social media management and Canva skills"],
+    "estimatedAge": 19,
+    "potential": {"rating": "medium", "reason": "Strong leadership background and customer service experience at Shake Tea (bubble tea). UH Manoa student in Honolulu. Limited direct coffee/food service experience but has the soft skills and availability as a student."}
   },
   {
     "name": "Hallie Dugan",
@@ -166,7 +199,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeHallieDugan.pdf",
     "skills": "",
-    "summary": "Engaging communicator with guest-facing experience as a Game Guide."
+    "summary": "Engaging communicator with guest-facing experience as a Game Guide.",
+    "resumeSummary": ["Game Guide at Breakout Waikiki — customer-facing entertainment role", "Barista at Marriott/Starbucks for 3 years (2015-2018)", "Cashier at Michaels with rewards enrollment and upselling", "Freelancer providing customer support and event assistance", "Assistant Teacher at Montessori school"],
+    "estimatedAge": 28,
+    "potential": {"rating": "high", "reason": "Has 3 years of barista experience at Marriott Starbucks — directly relevant. Currently in Waikiki as a Game Guide. Diverse customer service background including retail and teaching. Reliable and already local."}
   },
   {
     "name": "Camilo Haro",
@@ -180,7 +216,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeCamiloHaro.pdf",
     "skills": "",
-    "summary": "Reliable cashier with point-of-sale and customer service skills."
+    "summary": "Reliable cashier with point-of-sale and customer service skills.",
+    "resumeSummary": ["Cashier at Brug bakery/café in Honolulu — POS, cash handling, food safety", "Trained new cashiers on procedures and customer service", "Upselling techniques for bakery and café items", "TIPS certified, Food Handler certified", "Espresso coffee making and barista skills"],
+    "estimatedAge": 22,
+    "potential": {"rating": "high", "reason": "Currently working at Brug (a bakery/café) in Honolulu — almost identical to Kona Coffee Donut. Has espresso/barista skills, food safety training, TIPS certified, and experience training new cashiers. Local and ready."}
   },
   {
     "name": "Carla Silva",
@@ -194,7 +233,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeCarlaSilva.pdf",
     "skills": "",
-    "summary": "Server with formal hotel & restaurant administration education — strong hospitality foundation."
+    "summary": "Server with formal hotel & restaurant administration education — strong hospitality foundation.",
+    "resumeSummary": ["Extensive barista/shift supervisor/manager experience in NYC and Honolulu", "Shift Manager/Barista at multiple NYC cafés including Think Coffee", "General Manager at Il Piccolo Ristoro for 3 years", "Current server at Ginza Japanese Restaurant, Honolulu", "Hotel and restaurant administration education, lives in Waikiki"],
+    "estimatedAge": 38,
+    "potential": {"rating": "high", "reason": "Outstanding café/barista background — managed cafés in NYC for years, including 3 years as GM. Shift supervisor at Think Coffee. Now in Waikiki with Food Handler license. Overqualified in the best way — could manage the shop."}
   },
   {
     "name": "Donna Sowell",
@@ -208,7 +250,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeDonnaSowell.pdf",
     "skills": "",
-    "summary": "Fast-food crew experience combined with retail graduate education — quick learner in high-volume settings."
+    "summary": "Fast-food crew experience combined with retail graduate education — quick learner in high-volume settings.",
+    "resumeSummary": ["McDonald's crew member in Honolulu — grill, orders, breakfast prep, closing", "2+ years as Subway Sandwich Artist — food prep, register, deposits", "High school graduate, willing to relocate within Hawaii", "Multiple food service and customer service skills", "Experience with cash drops and nightly deposits"],
+    "estimatedAge": 40,
+    "potential": {"rating": "medium", "reason": "Solid food service experience at McDonald's and Subway with cash handling and food prep skills. Local to Honolulu. However, limited coffee/barista experience specifically. Reliable worker who can handle fast-paced environments."}
   },
   {
     "name": "Nevaeh Berman",
@@ -222,7 +267,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeNevaehBerman.pdf",
     "skills": "",
-    "summary": "Top-tier candidate based on qualifications assessment — see resume for detailed background."
+    "summary": "Top-tier candidate based on qualifications assessment — see resume for detailed background.",
+    "resumeSummary": ["Lead Dental Assistant at Honolulu Dental Care — inventory, patient care, leadership", "Barista Shift Supervisor at Metro Bru (2021-2023)", "Mentored junior staff and trained new team members", "Strong organizational and sterilization/sanitation skills", "High school diploma plus general studies coursework"],
+    "estimatedAge": 24,
+    "potential": {"rating": "high", "reason": "Has direct Barista Shift Supervisor experience at Metro Bru — exactly what's needed. Now a Lead Dental Assistant showing leadership growth. Strong mentoring and training abilities. In Honolulu and highly capable."}
   },
   {
     "name": "An Li Allison",
@@ -236,7 +284,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeAnLiAllison.pdf",
     "skills": "",
-    "summary": "Dual barista/cashier experience — coffee preparation and register skills ready to go."
+    "summary": "Dual barista/cashier experience — coffee preparation and register skills ready to go.",
+    "resumeSummary": ["Barista at BlueTree Cafe SALT Kaka'ako — espresso, smoothies, POS, 95%+ accuracy", "Event Coordinator/Bartender/Event Lead — leadership and hospitality", "UH Manoa sophomore — Double major Finance & International Business", "Food Handler's Certificate, CPR/First Aid certified", "Honors student with strong time management and customer service"],
+    "estimatedAge": 20,
+    "potential": {"rating": "high", "reason": "Currently a barista at BlueTree Cafe in Kaka'ako — directly relevant coffee shop experience. Event coordination shows leadership. UH Manoa business student with Food Handler cert. Local, motivated, excellent soft skills."}
   },
   {
     "name": "Alexandra Xua",
@@ -250,7 +301,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeAlexandraXua.pdf",
     "skills": "",
-    "summary": "Barista with A.A.S. degree — solid coffee skills backed by academic foundation."
+    "summary": "Barista with A.A.S. degree — solid coffee skills backed by academic foundation.",
+    "resumeSummary": ["Current Barista at Starbucks Honolulu — cash handling, drink making", "Crew member at TEXAS 808 — cash handling and expo", "A.A.S. from Whatcom Community College", "Skills: espresso, cold brew, POS systems, food safety", "Customer relationship building and teamwork"],
+    "estimatedAge": 28,
+    "potential": {"rating": "high", "reason": "Currently working as a Starbucks barista in Honolulu — perfect background for Kona Coffee Donut. Also has restaurant experience at TEXAS 808. Local, experienced with coffee equipment and POS systems."}
   },
   {
     "name": "Ava Fairbrother",
@@ -264,7 +318,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeAvaFairbrother.pdf",
     "skills": "",
-    "summary": "Cashier experience with college education in Criminal Justice — detail-oriented and dependable."
+    "summary": "Cashier experience with college education in Criminal Justice — detail-oriented and dependable.",
+    "resumeSummary": ["Cashier at Guiseppe's Restaurant — training new cashiers, serving food", "Bartender at Willow Creek Golf Course", "Camp Counselor for 2+ years working with children", "Criminal Justice student at Corning Community College", "Espresso/cold brew coffee making and café skills listed"],
+    "estimatedAge": 20,
+    "potential": {"rating": "medium", "reason": "Has restaurant cashier and bartender experience with coffee-making skills. Currently studying in Honolulu. However, most work experience is from New York — need to confirm she's settled in Hawaii. Good interpersonal skills from camp counselor work."}
   },
   {
     "name": "LUCY POOL",
@@ -278,7 +335,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeLUCYPOOL.pdf",
     "skills": "",
-    "summary": "Morning Brew barista — experienced in early-shift coffee preparation and service."
+    "summary": "Morning Brew barista — experienced in early-shift coffee preparation and service.",
+    "resumeSummary": ["Waitress/Food Runner at Pedals and Pints Brewing Company (2023-present)", "3+ years restaurant experience with proven upselling ability", "Previous hostess/server/busser at Rokabab Mediterranean Grill", "Currently enrolled at Santa Monica City College", "Leadership experience — UNICEF fundraising at Chaminade HS"],
+    "estimatedAge": 21,
+    "potential": {"rating": "medium", "reason": "Good restaurant experience with upselling skills and customer service. Leadership background from school. However, originally from LA and enrolled at Santa Monica College — need to verify commitment to Honolulu long-term."}
   },
   {
     "name": "Haruna Emmer",
@@ -292,7 +352,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeHarunaEmmer.pdf",
     "skills": "",
-    "summary": "Dedicated barista with hands-on coffee preparation experience."
+    "summary": "Dedicated barista with hands-on coffee preparation experience.",
+    "resumeSummary": ["10+ years food service experience in Honolulu", "Current Barista at Starbucks Honolulu — espresso, latte, cold brew", "Server at Yoshitsune Japanese Restaurant (2020-present)", "Server at Liliha Bakery (2022-2025) — iconic Honolulu bakery", "Strong multitasking across barista, cashier, and food prep roles"],
+    "estimatedAge": 32,
+    "potential": {"rating": "high", "reason": "Outstanding local candidate — 10+ years in Honolulu food service including Starbucks barista AND Liliha Bakery server (a famous donut/bakery spot!). Exactly the experience needed for Kona Coffee Donut. Deeply rooted locally."}
   },
   {
     "name": "Kiley Butkus",
@@ -306,7 +369,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeKileyButkus.pdf",
     "skills": "",
-    "summary": "Food runner and server experience — fast-paced food service and customer interaction skills."
+    "summary": "Food runner and server experience — fast-paced food service and customer interaction skills.",
+    "resumeSummary": ["Food Runner/Server at Fisherman's Restaurant (2021-2025)", "Cashier at Nalu Health Bar & Cafe Honolulu — lead shift, deposits", "Lead shift at Bowlology for 3 years — trained new employees", "Food Handler Certified with espresso/cold brew skills", "Experience with safe counts, deposits, and store management"],
+    "estimatedAge": 24,
+    "potential": {"rating": "high", "reason": "Strong café experience at Nalu Health Bar in Honolulu as lead shift. Trained employees, handled deposits, managed operations. Food Handler Certified with coffee skills. Currently in Honolulu with proven leadership."}
   },
   {
     "name": "Madison Pasaoa",
@@ -320,7 +386,10 @@ const candidatesData = [
     "resume": false,
     "resumeFile": null,
     "skills": "",
-    "summary": "Gelato server with specialty dessert and customer service experience."
+    "summary": "Gelato server with specialty dessert and customer service experience.",
+    "resumeSummary": ["Gelato server — dessert service experience relevant to donut shop", "Based in Honolulu — no relocation risk", "Customer service in specialty food/dessert environment"],
+    "estimatedAge": null,
+    "potential": {"rating": "medium", "reason": "Gelato serving is relevant to a donut/coffee shop dessert environment. Local to Honolulu. Limited details available — would need interview to assess full capabilities and availability."}
   },
   {
     "name": "Sayaka Gaspard",
@@ -334,7 +403,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeSayakaGaspard.pdf",
     "skills": "",
-    "summary": "Barista/cashier with combined coffee and register skills."
+    "summary": "Barista/cashier with combined coffee and register skills.",
+    "resumeSummary": ["Enterprise Account Manager at ANSYS Japan — major corporate sales", "Corporate sales professional in automotive/technology sectors", "Native Japanese speaker, TOEIC 885 English proficiency", "Bilingual (Japanese/English) — valuable for Waikiki tourism", "Career changer from corporate to food service"],
+    "estimatedAge": 32,
+    "potential": {"rating": "medium", "reason": "Highly professional with corporate sales background and bilingual Japanese/English — extremely valuable for Waikiki's Japanese tourist market. Career changer, so may lack hands-on café skills but brings maturity, reliability, and language assets."}
   },
   {
     "name": "Honesty-Marie Riley",
@@ -348,7 +420,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeHonesty-MarieRiley.pdf",
     "skills": "",
-    "summary": "Sales associate with strong customer-facing skills and GED education."
+    "summary": "Sales associate with strong customer-facing skills and GED education.",
+    "resumeSummary": ["Sales Associate at TJMaxx Kapolei — register, customer service", "Customer Service Rep at The Fudgery — candy making, engaging customers", "Sandwich Artist at Subway — food prep, register, food safety", "Kumon Assistant — tutoring, admin, customer interaction", "Experience across retail, food service, and education sectors"],
+    "estimatedAge": 22,
+    "potential": {"rating": "medium", "reason": "Good variety of customer service and food service experience (Subway, The Fudgery). In Honolulu. However, no direct coffee/barista experience. Engaging personality from The Fudgery role (singing to customers). Solid mid-level hire."}
   },
   {
     "name": "Hannah Quick",
@@ -362,7 +437,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeHannahQuick.pdf",
     "skills": "",
-    "summary": "Hostess and server with front-of-house experience in guest seating and service."
+    "summary": "Hostess and server with front-of-house experience in guest seating and service.",
+    "resumeSummary": ["Hostess/Server at Buho Cocina y Cantina Honolulu (2025)", "Donut Maker/Barista at Duck Donuts in Fairfax, VA (2021-2022)", "Lifeguard experience — safety awareness", "Extensive skills list including espresso, cold brew, café, food safety", "Coffee shop and restaurant experience"],
+    "estimatedAge": 21,
+    "potential": {"rating": "high", "reason": "Was literally a Donut Maker AND Barista at Duck Donuts — this is the most directly relevant experience possible for Kona Coffee Donut. Also has recent Honolulu restaurant experience. Strong match."}
   },
   {
     "name": "MARIANA FIGUEROA",
@@ -376,7 +454,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeMARIANAFIGUEROA.pdf",
     "skills": "",
-    "summary": "Barista with coffee preparation and customer service experience."
+    "summary": "Barista with coffee preparation and customer service experience.",
+    "resumeSummary": ["Restaurant Hostess at SH Hotels Princeville, Hawaii (2023-2025)", "Barista at SH Hotels Princeville — trained new baristas, espresso prep", "Special Needs Babysitter — patience, care, and responsibility", "POS system operations, conflict de-escalation, upselling skills", "Multi-unit operations experience with customer flow management"],
+    "estimatedAge": 23,
+    "potential": {"rating": "high", "reason": "Barista AND hostess at SH Hotels in Princeville — relevant Hawaii hospitality experience. Trained new baristas, handled espresso prep. Now in Honolulu. Strong customer service skills with conflict de-escalation ability."}
   },
   {
     "name": "kay ornatowski",
@@ -390,7 +471,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "Resumekayornatowski.pdf",
     "skills": "",
-    "summary": "Sales associate with retail customer service and high school education."
+    "summary": "Sales associate with retail customer service and high school education.",
+    "resumeSummary": ["Sales Associate at Windspinners Waikiki since Dec 2023", "Server at Buffalo Wild Wings — fast-paced food service, upselling", "Salesperson at IQ Gadgets Waikiki — customer engagement", "Sales Associate at Refreshed Shoe Cleaner Honolulu", "Strong proactive work ethic, initiative, and problem-solving"],
+    "estimatedAge": 22,
+    "potential": {"rating": "medium", "reason": "Multiple Waikiki retail/food service jobs showing reliability and customer service skills. Buffalo Wild Wings server experience is relevant. However, no direct coffee/barista experience. Local to Waikiki area which is a plus."}
   },
   {
     "name": "Alexis Shulga",
@@ -404,7 +488,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeAlexisShulga.pdf",
     "skills": "",
-    "summary": "Local barista with coffee shop experience in Honolulu."
+    "summary": "Local barista with coffee shop experience in Honolulu.",
+    "resumeSummary": ["Shift Leader at Pressed juice shop Honolulu (Oct 2025-present)", "UH Manoa BS Molecular Cell Biology, 3.6 GPA, expected 2028", "Biology Lab Intern and Calculus Learning Assistant at UH", "Bishop Museum research intern — lab skills and presentations", "Store closing, register counting, team management"],
+    "estimatedAge": 20,
+    "potential": {"rating": "high", "reason": "Currently a Shift Leader at Pressed in Honolulu — manages closing, register counts, and team. UH Manoa student with excellent 3.6 GPA showing reliability and intelligence. Local with leadership experience directly applicable to coffee/donut shop."}
   },
   {
     "name": "Kim Le",
@@ -418,7 +505,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeKimLe.pdf",
     "skills": "",
-    "summary": "Cashier with register experience and secondary education."
+    "summary": "Cashier with register experience and secondary education.",
+    "resumeSummary": ["Cashier at K Streetfood (Apr-Dec 2025)", "Food Handler Certified with driver's license", "Skills include espresso, cold brew, POS systems, food safety", "Barista experience listed among skills", "Store opening/closing procedures knowledge"],
+    "estimatedAge": 22,
+    "potential": {"rating": "medium", "reason": "Has cashier experience and Food Handler Certification. Lists barista and espresso skills. Limited detailed work history but seems to have café-relevant competencies. Local to Honolulu."}
   },
   {
     "name": "Dorian Covahey",
@@ -432,7 +522,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeDorianCovahey.pdf",
     "skills": "",
-    "summary": "Combined barista and cashier experience — versatile coffee shop skill set."
+    "summary": "Combined barista and cashier experience — versatile coffee shop skill set.",
+    "resumeSummary": ["Current Barista/Cashier at Bluetree Cafe — drinks, baked goods, açaí bowls", "Cat Staff at Cat Cafe MOFF Ala Moana — register, customer service", "Seasonal Stylist at Kate Spade New York Honolulu", "Service Associate at Consolidated Theaters", "Multi-role experience in food, retail, and entertainment"],
+    "estimatedAge": 21,
+    "potential": {"rating": "high", "reason": "Currently a barista/cashier at Bluetree Cafe making drinks, baked goods, smoothies, and açaí bowls — directly transferable to Kona Coffee Donut. Local Honolulu resident with diverse customer service background."}
   },
   {
     "name": "Parrish Viator",
@@ -446,7 +539,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeParrishViator.pdf",
     "skills": "",
-    "summary": "Barista with hands-on coffee preparation experience."
+    "summary": "Barista with hands-on coffee preparation experience.",
+    "resumeSummary": ["Barista at Crabby Coffee — coffee and food prep in fast-paced environment", "Lifeguard at Useless Bay Country Club — safety and guest services", "Sailing/Swim Instructor — teaching and leadership with children", "Sales Associate at Hollister Co. — retail customer service", "Dependable, confident, caring professional with strong service orientation"],
+    "estimatedAge": 21,
+    "potential": {"rating": "high", "reason": "Has direct barista experience at Crabby Coffee plus lifeguard/instructor background showing responsibility and leadership. Safety-focused and dependable. In Honolulu and ready for a coffee shop role."}
   },
   {
     "name": "Dwayne Kahoonei",
@@ -460,7 +556,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeDwayneKahoonei.pdf",
     "skills": "",
-    "summary": "Local Honolulu cashier with high school diploma — reliable and community-based."
+    "summary": "Local Honolulu cashier with high school diploma — reliable and community-based.",
+    "resumeSummary": ["Cashier at Popeyes Honolulu (2021) — customer service", "Food Handler Certified", "Kalani High School graduate", "Extensive skills: espresso, cold brew, POS, food safety, cashiering", "Available 40 hours/week, ready to start ASAP"],
+    "estimatedAge": 22,
+    "potential": {"rating": "medium", "reason": "Local Honolulu resident, Food Handler Certified, available 40 hrs/week and ready ASAP. However, only has ~1 year cashier experience at Popeyes. Lists coffee skills but unclear if hands-on. Eager and reliable based on profile."}
   },
   {
     "name": "Huyen - Tran Ha Dang",
@@ -474,7 +573,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeHuyen-TranHaDang.pdf",
     "skills": "",
-    "summary": "Retail sales associate and cashier with customer service and sales floor experience."
+    "summary": "Retail sales associate and cashier with customer service and sales floor experience.",
+    "resumeSummary": ["10+ years of Honolulu cashier/food service experience", "Sous Chef at Odoriko Restaurant — food prep and kitchen skills", "Cashier at Pizza Hut, Baskin-Robbins, Teddy's Bigger Burgers, Poke by the Pound", "After School Leader at Kapalama Elementary", "Seasonal Cashier at Nordstrom"],
+    "estimatedAge": 28,
+    "potential": {"rating": "high", "reason": "Exceptional local candidate with 10+ years of Honolulu food service including sous chef work. Has worked at ice cream (Baskin-Robbins), poke, pizza, and burgers — understands food service deeply. Lifelong Honolulu resident."}
   },
   {
     "name": "Aurora Marcy",
@@ -488,7 +590,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeAuroraMarcy.pdf",
     "skills": "",
-    "summary": "Creative professional with photography background — brings visual and detail-oriented skills."
+    "summary": "Creative professional with photography background — brings visual and detail-oriented skills.",
+    "resumeSummary": ["4+ years at McDonald's — crew trainer, food/drink prep, cash handling", "Photographer and videographer with marketing skills", "Social Media/Marketing Intern at Port of Shelton", "Skills include espresso, cold brew, POS, food safety", "High school diploma, currently in Honolulu"],
+    "estimatedAge": 21,
+    "potential": {"rating": "medium", "reason": "4 years of McDonald's experience with crew training responsibilities is solid. Photography/social media skills could help with marketing. In Honolulu but originally from Washington. Needs to build coffee-specific skills."}
   },
   {
     "name": "Leah Kliem",
@@ -502,7 +607,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeLeahKliem.pdf",
     "skills": "",
-    "summary": "Program manager with BA in Clinical Psychology — excellent leadership, communication, and people skills."
+    "summary": "Program manager with BA in Clinical Psychology — excellent leadership, communication, and people skills.",
+    "resumeSummary": ["After School Program Manager — supervising staff, managing operations", "Inventory Specialist/Assistant Deli Manager at Restaurant Depot", "Server at Cracker Barrel — restaurant service experience", "Cashier with membership enrollment and front-end management", "BA in Clinical Psychology — strong people and communication skills"],
+    "estimatedAge": 26,
+    "potential": {"rating": "high", "reason": "Management experience (After School Program Manager + Assistant Deli Manager at Restaurant Depot) combined with server experience. BA in Clinical Psychology means excellent people skills. Now in Honolulu. Could be a shift lead candidate."}
   },
   {
     "name": "EDMELYN HAZLEWOOD",
@@ -516,7 +624,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeEDMELYNHAZLEWOOD.pdf",
     "skills": "",
-    "summary": "Customer service agent with BS in IT — tech-savvy with strong reservation and client management skills."
+    "summary": "Customer service agent with BS in IT — tech-savvy with strong reservation and client management skills.",
+    "resumeSummary": ["Customer Service Reservation Agent at Hawaiian Parasail", "7+ years Food & Beverage Operations at Media Rotana Dubai (5-star hotel)", "Supervised service teams, managed inventory, trained staff", "BS in Information Technology", "Upselling, F&B menu knowledge, payment handling"],
+    "estimatedAge": 38,
+    "potential": {"rating": "high", "reason": "7+ years at a 5-star Dubai hotel in F&B operations — supervised teams, managed inventory, trained staff, and handled upselling. Now in Honolulu. Massively experienced in hospitality. BS in IT adds tech proficiency for POS systems."}
   },
   {
     "name": "Ira Rose",
@@ -530,7 +641,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeIraRose.pdf",
     "skills": "",
-    "summary": "Assistant barista with coffee shop support experience."
+    "summary": "Assistant barista with coffee shop support experience.",
+    "resumeSummary": ["Assistant Barista at Goat Kick Coffee (2024-2025)", "Duties: dishes, cleaning, restocking, occasional POS operation", "Skills: espresso machines, milk steaming, pour-over, aeropress", "Coffee recipe adherence and food quality maintenance", "High school graduate, now in Honolulu"],
+    "estimatedAge": 19,
+    "potential": {"rating": "medium", "reason": "Has entry-level barista experience at a coffee shop with espresso machine and milk steaming skills. Currently in Honolulu. Limited experience (1 year as assistant) but has the foundation and eagerness to grow into the role."}
   },
   {
     "name": "Lawson McNeely",
@@ -544,7 +658,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeLawsonMcNeely.pdf",
     "skills": "",
-    "summary": "Barista with Psychology degree — strong interpersonal skills and coffee preparation experience."
+    "summary": "Barista with Psychology degree — strong interpersonal skills and coffee preparation experience.",
+    "resumeSummary": ["Barista at Villon Coffee — espresso, cappuccino, latte, cold brew (2024-2025)", "Grocery Clerk at Publix — inventory, customer service, restocking", "Pursuing degree in Neuropsychology", "Espresso machine operation and quality coffee preparation", "Strong customer service and interpersonal skills"],
+    "estimatedAge": 23,
+    "potential": {"rating": "high", "reason": "Direct barista experience at Villon Coffee making espresso drinks. Psychology background means excellent people skills. Now in Honolulu. Can make quality coffee drinks from day one."}
   },
   {
     "name": "Jason Riddle",
@@ -558,7 +675,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeJasonRiddle.pdf",
     "skills": "",
-    "summary": "Server with food service and guest interaction experience."
+    "summary": "Server with food service and guest interaction experience.",
+    "resumeSummary": ["Server at T-bones Great American Eatery for 3+ years (2022-2026)", "Bartender at Ramunto's Brick Oven Pizza (2018-2021)", "Bartender at The Station Cigar Bar (2017-2019)", "BA Political Science — analytical and communication skills", "Veteran's Club Treasury — financial responsibility"],
+    "estimatedAge": 35,
+    "potential": {"rating": "medium", "reason": "8+ years of bar/restaurant experience with strong server and bartender skills. BA degree shows maturity. Now in Waikiki. However, no direct coffee/barista experience. Would be reliable and professional from day one."}
   },
   {
     "name": "Jaelah Muñoz",
@@ -572,7 +692,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeJaelahMuñoz.pdf",
     "skills": "",
-    "summary": "Top-tier candidate — see resume for detailed qualifications and background."
+    "summary": "Top-tier candidate — see resume for detailed qualifications and background.",
+    "resumeSummary": ["Hostess at Eating House 1849 by Roy Yamaguchi", "Barista at Nalu Health Bar & Cafe — register, drinks, customer service", "Strong communication, time management, and customer service skills", "OpenTable reservation system experience", "Team collaboration and critical thinking skills"],
+    "estimatedAge": 21,
+    "potential": {"rating": "high", "reason": "Barista at Nalu Health Bar & Cafe plus hostess at Roy Yamaguchi's restaurant — strong Hawaii food service experience. Has both front-of-house hosting and barista/café skills. Perfect combination for coffee/donut shop."}
   },
   {
     "name": "Marcela Naomi Huaccho Choque",
@@ -586,7 +709,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeMarcelaNaomiHuacchoChoque.pdf",
     "skills": "",
-    "summary": "Top-tier candidate — see resume for detailed qualifications and background."
+    "summary": "Top-tier candidate — see resume for detailed qualifications and background.",
+    "resumeSummary": ["Cashier at Sonic Drive-In and Broulims — order processing, payments", "English Teacher at Instituto Cultural Peruano Norteamericano", "Translation and Interpreting degree — multilingual (English, French, Spanish)", "Strong communication skills and ability to handle pressure", "Team leadership and deadline management"],
+    "estimatedAge": 24,
+    "potential": {"rating": "medium", "reason": "Multilingual (English/French/Spanish) is valuable for Waikiki tourism. Has cashier experience at Sonic and Broulims. Education background shows reliability. Currently in Honolulu. Moderate food service experience but strong soft skills."}
   },
   {
     "name": "Emily Jane Willson",
@@ -600,7 +726,10 @@ const candidatesData = [
     "resume": false,
     "resumeFile": null,
     "skills": "Server training, hospitality, front desk",
-    "summary": "BS Psychology with outstanding 3.9 GPA. Server & Server Trainer at Poland Spring Resort, currently Housekeeper/Receptionist at Polynesian Hostel Beach Club Waikiki. Strong training ability."
+    "summary": "BS Psychology with outstanding 3.9 GPA. Server & Server Trainer at Poland Spring Resort, currently Housekeeper/Receptionist at Polynesian Hostel Beach Club Waikiki. Strong training ability.",
+    "resumeSummary": ["Server/Server Trainer at Poland Spring Resort — training, catering weddings", "Housekeeper/Receptionist at Polynesian Hostel Beach Club Waikiki", "BS Psychology with 3.9 GPA from Thomas College", "Office Administration experience at Camp Laurel and Thomas College", "Mentor Intern at AYCC — youth mentoring and emotional development"],
+    "estimatedAge": 23,
+    "potential": {"rating": "high", "reason": "Currently working in Waikiki at Polynesian Hostel Beach Club. Server trainer with wedding catering experience. Outstanding 3.9 GPA shows reliability and intelligence. Training ability makes her a shift lead candidate."}
   },
   {
     "name": "Gary Basuil",
@@ -614,7 +743,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeGaryBasuil.pdf",
     "skills": "",
-    "summary": "Host with front-of-house guest experience and high school diploma."
+    "summary": "Host with front-of-house guest experience and high school diploma.",
+    "resumeSummary": ["Host at Roy's Waikiki — guest relations, reservations, seating management", "2nd Assistant Manager at Zumiez Waikiki — led team, POS, inventory", "Sales Associate at Shoe Palace Waikiki", "5+ years customer-facing retail and food service experience", "Cash handling, POS operation, and team management"],
+    "estimatedAge": 23,
+    "potential": {"rating": "high", "reason": "Management experience as 2nd Assistant Manager at Zumiez plus host at Roy's Waikiki. 5+ years customer-facing experience in Waikiki specifically. Knows the area, the customer base, and has leadership skills. Strong hire."}
   },
   {
     "name": "Jaylyn Wharton",
@@ -628,7 +760,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeJaylynWharton.pdf",
     "skills": "",
-    "summary": "Barista with strong coffee preparation skills."
+    "summary": "Barista with strong coffee preparation skills.",
+    "resumeSummary": ["Barista at Onaona Cafe Honolulu (2024-2025) — beverages, food, POS", "Fulfillment Expert at Target Salt Lake for 2 years", "AA in Biological Sciences from Leeward CC — summa cum laude (3.7+ GPA)", "Pearl City HS Valedictorian", "Volunteer at nursing homes and elementary schools"],
+    "estimatedAge": 22,
+    "potential": {"rating": "high", "reason": "Recent barista experience at Onaona Cafe in Honolulu — directly relevant. Valedictorian and summa cum laude graduate showing exceptional reliability and work ethic. Local (Pearl City). Volunteer work shows character and community ties."}
   },
   {
     "name": "BENJAMIN AQUINO",
@@ -642,7 +777,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeBENJAMINAQUINO.pdf",
     "skills": "",
-    "summary": "Combined barista/cashier with dual skill set for coffee shop operations."
+    "summary": "Combined barista/cashier with dual skill set for coffee shop operations.",
+    "resumeSummary": ["Multiple roles at Island Vintage Coffee Honolulu — barista, cashier, food runner, busser", "Espresso beverage preparation following established recipes", "Cash transactions with high accuracy", "Team collaboration across front and back of house", "Food allergy awareness and health/safety compliance"],
+    "estimatedAge": 21,
+    "potential": {"rating": "high", "reason": "Currently working at Island Vintage Coffee in Honolulu as barista/cashier/food runner/busser — this is essentially the same job at Kona Coffee Donut. Espresso skills, cash handling, and team player. Perfect lateral hire."}
   },
   {
     "name": "Maxine Patterson",
@@ -656,7 +794,10 @@ const candidatesData = [
     "resume": false,
     "resumeFile": null,
     "skills": "Cold brew & espresso coffee making, cashiering",
-    "summary": "Perfect 4.0 GPA Psychology BA from UH Manoa. English teaching abroad experience plus cold brew & espresso making skills. Intellectually sharp and service-oriented."
+    "summary": "Perfect 4.0 GPA Psychology BA from UH Manoa. English teaching abroad experience plus cold brew & espresso making skills. Intellectually sharp and service-oriented.",
+    "resumeSummary": ["BA Psychology from UH Manoa with perfect 4.0 GPA", "English Teacher in NALCAP Program (Spain) — classroom management", "Office Assistant at Kahala Clinic — scheduling, admin, phone skills", "Undergraduate Research Assistant at UH Manoa ISP Lab", "Skills: cold brew, espresso coffee making, cashiering"],
+    "estimatedAge": 25,
+    "potential": {"rating": "medium", "reason": "Brilliant student (4.0 GPA) with cold brew and espresso skills listed. However, no direct café/food service work experience. Office and teaching background shows reliability. Local UH Manoa graduate. Could learn quickly."}
   },
   {
     "name": "Isabella Mendoza",
@@ -670,7 +811,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeIsabellaMendoza.pdf",
     "skills": "",
-    "summary": "Barista and cashier with coffee and customer service experience."
+    "summary": "Barista and cashier with coffee and customer service experience.",
+    "resumeSummary": ["Resume available but text not extractable - review PDF manually"],
+    "estimatedAge": 22,
+    "potential": {"rating": "medium", "reason": "Listed as barista/cashier experience which is directly relevant. In Honolulu. Resume PDF needs manual review for full details. Based on title alone, should be a solid coffee shop candidate."}
   },
   {
     "name": "Christian Melegrito",
@@ -684,7 +828,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeChristianMelegrito.pdf",
     "skills": "",
-    "summary": "Sales associate with customer engagement and retail skills."
+    "summary": "Sales associate with customer engagement and retail skills.",
+    "resumeSummary": ["Sales Associate at Lupicia Hawaii since Oct 2022 — tea/beverage retail", "Interest in cafés, espresso, and food aesthetics", "Marketing and retail management experience", "Moanalua High School graduate (2014-2018)", "Strong customer relationships and upselling skills"],
+    "estimatedAge": 26,
+    "potential": {"rating": "medium", "reason": "3+ years at Lupicia Hawaii (tea shop) — beverage retail is closely related. Has interest in cafés and espresso. Local Honolulu resident since high school. Brings customer relationship and marketing skills. Solid candidate."}
   },
   {
     "name": "Tdlyn Frank",
@@ -698,7 +845,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeTdlynFrank.pdf",
     "skills": "",
-    "summary": "Cashier with register experience and high school education."
+    "summary": "Cashier with register experience and high school education.",
+    "resumeSummary": ["3+ years cashier at Ace Commercial in Pohnpei", "Cashier at Don Quijote Honolulu (2025)", "Housekeeping/Kitchen Helper at Convention Center", "Caregiver experience at Spring Living in Oregon", "Food Handler at LSG Sky Chefs — sandwich prep and shipping"],
+    "estimatedAge": 32,
+    "potential": {"rating": "medium", "reason": "Extensive cashier experience (3+ years in Pohnpei, plus Don Quijote and Convention Center in Honolulu). Food handling experience. Local to Honolulu. Diverse work background shows adaptability, though limited café-specific skills."}
   },
   {
     "name": "Naomi Hosford",
@@ -712,7 +862,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeNaomiHosford.pdf",
     "skills": "",
-    "summary": "Strong-tier candidate from California — see resume for qualifications."
+    "summary": "Strong-tier candidate from California — see resume for qualifications.",
+    "resumeSummary": ["Gymnastics Instructor at YMCA for 3 years — teaching and safety", "Head Summer Camp Counselor — leadership and mentoring", "Dishwasher at Sugarbird Sweets & Teas — kitchen sanitation", "First Aid and CPR certified", "Team collaboration, effective communication, training skills"],
+    "estimatedAge": 20,
+    "potential": {"rating": "low", "reason": "Located in La Cañada Flintridge, CA — significant relocation required. Work experience is gymnastics instruction and camp counseling, not food service. Only food-adjacent role is dishwasher at a sweets/tea shop. Would need substantial training."}
   },
   {
     "name": "Michelle Izquierdo",
@@ -726,7 +879,10 @@ const candidatesData = [
     "resume": false,
     "resumeFile": null,
     "skills": "Bilingual Spanish/English, cashiering, food expo",
-    "summary": "Bilingual (Spanish/English) UH Manoa student in Travel Industry Management. Cashier/Expo at Tight Tacos Kaimuki. Available Tue-Fri afternoons & weekends."
+    "summary": "Bilingual (Spanish/English) UH Manoa student in Travel Industry Management. Cashier/Expo at Tight Tacos Kaimuki. Available Tue-Fri afternoons & weekends.",
+    "resumeSummary": ["Cashier/Expo at Tight Tacos Kaimuki — fast-paced food service", "UH Manoa Travel Industry Management student (Shidler College)", "Bilingual Spanish/English — valuable for diverse customer base", "Available Tue-Fri 3pm-9:30pm and weekends", "West Valley HS graduate with Honors, dance team"],
+    "estimatedAge": 19,
+    "potential": {"rating": "medium", "reason": "Bilingual (Spanish/English) UH Manoa student with cashier/food expo experience. Good part-time availability for afternoons and weekends. Travel Industry Management major shows hospitality interest. Limited experience but good potential."}
   },
   {
     "name": "Giang Tran",
@@ -740,7 +896,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeGiangTran.pdf",
     "skills": "",
-    "summary": "Crew member with team-based food service experience."
+    "summary": "Crew member with team-based food service experience.",
+    "resumeSummary": ["Current Crew Member in Honolulu (Dec 2025-present)", "McKinley High School student", "Food Handler Certified", "Skills: espresso, cold brew, food safety, café experience", "Customer relationship building listed"],
+    "estimatedAge": 17,
+    "potential": {"rating": "medium", "reason": "Very young (likely high schooler at McKinley), but Food Handler Certified and lists espresso/cold brew skills. Currently working as crew member in Honolulu. Would need to verify age for scheduling/labor law compliance."}
   },
   {
     "name": "Alana Image",
@@ -754,7 +913,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeAlanaImage.pdf",
     "skills": "",
-    "summary": "Retail sales associate studying Psychology and Art — creative with strong people skills."
+    "summary": "Retail sales associate studying Psychology and Art — creative with strong people skills.",
+    "resumeSummary": ["Hostess/Cashier at Island Vintage Coffee & Wine Bar Honolulu (2025)", "Retail Sales Associate at Savers — cashier, customer service, training", "Implemented reservation system to enhance efficiency", "Managed seating chart and coordinated with kitchen/servers", "Trained new host/hostess team members"],
+    "estimatedAge": 21,
+    "potential": {"rating": "high", "reason": "Worked at Island Vintage Coffee & Wine Bar in Honolulu as hostess/cashier — very relevant coffee shop experience. Also has retail cashier skills and trained new employees. Local to Honolulu. Strong candidate despite 'good' tier rating."}
   },
   {
     "name": "Madison Beardsley",
@@ -768,7 +930,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeMadisonBeardsley.pdf",
     "skills": "",
-    "summary": "Waitress and cashier with food service and register experience."
+    "summary": "Waitress and cashier with food service and register experience.",
+    "resumeSummary": ["Sales Associate at Home Depot Pearl City (2024-2025)", "Beauty Advisor at Ulta Beauty Pearl City — personalized recommendations", "Host at Dixie BBQ Aiea — seating, reservations, guest services", "POS systems, inventory management, customer engagement", "Strong sales and customer loyalty skills"],
+    "estimatedAge": 22,
+    "potential": {"rating": "medium", "reason": "Diverse retail and hospitality experience across Home Depot, Ulta Beauty, and Dixie BBQ. Local to Pearl City/Honolulu area. Has POS and customer service skills but limited coffee/food prep experience. Good customer engagement."}
   },
   {
     "name": "Emma Gretsch",
@@ -782,7 +947,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeEmmaGretsch.pdf",
     "skills": "",
-    "summary": "Food runner with fast-paced kitchen-to-table delivery experience."
+    "summary": "Food runner with fast-paced kitchen-to-table delivery experience.",
+    "resumeSummary": ["Server/food runner/barback/host at Oggi's Pizza for 3+ years", "Server/food runner at Sky Box Waikiki (2025)", "Host/barback/food runner at The Roxy", "UH Manoa Business (Marketing) student, 3.4 GPA, expected 2027", "Multi-role restaurant experience in both CA and HI"],
+    "estimatedAge": 21,
+    "potential": {"rating": "medium", "reason": "3+ years of restaurant experience with multiple roles (server, food runner, barback, host). Currently at Sky Box Waikiki and UH Manoa business student. No direct coffee experience but strong food service foundation. Local."}
   },
   {
     "name": "Rina Robert",
@@ -796,7 +964,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeRinaRobert.pdf",
     "skills": "",
-    "summary": "Sales associate and cashier with retail and customer service skills."
+    "summary": "Sales associate and cashier with retail and customer service skills.",
+    "resumeSummary": ["Cashier with convenience store/retail experience in Honolulu", "Cash register operation, food handling, proper food rotation", "Electronic ordering and inventory management", "Alcohol sales compliance and age verification", "Bilingual: Chuukese and English"],
+    "estimatedAge": 30,
+    "potential": {"rating": "medium", "reason": "Cashier experience with food handling and proper food rotation knowledge. Bilingual (Chuukese/English). Local to Honolulu. Basic retail/convenience store background — would need coffee-specific training but has foundational skills."}
   },
   {
     "name": "Janelle Cabanit",
@@ -810,7 +981,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeJanelleCabanit.pdf",
     "skills": "",
-    "summary": "Barista/cashier with coffee shop operations experience."
+    "summary": "Barista/cashier with coffee shop operations experience.",
+    "resumeSummary": ["Barista Shift Lead at Sharetea Honolulu (Mar 2024-present)", "Trained new staff on beverage prep and customer service", "Dental Assistant experience — attention to detail, organization", "Managed inventory, restocked supplies, optimized workflow", "Strong multitasking and time management skills"],
+    "estimatedAge": 21,
+    "potential": {"rating": "high", "reason": "Current Barista Shift Lead at Sharetea Honolulu — directly relevant leadership and beverage experience. Trains new staff, manages inventory, and handles peak hour workflows. Local and currently active in a similar role."}
   },
   {
     "name": "Sky Brown",
@@ -824,7 +998,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeSkyBrown.pdf",
     "skills": "",
-    "summary": "Good-tier candidate — see resume for background details."
+    "summary": "Good-tier candidate — see resume for background details.",
+    "resumeSummary": ["Team member at Firehouse Subs (2024-2025) — fast-paced food service", "Current team member at Konos Northshore — cashier, drinks, back of house", "Criminal Justice/Criminology student with Political Science minor", "Babysitter, dog walker, and community volunteer experience", "Customer service and time management skills"],
+    "estimatedAge": 20,
+    "potential": {"rating": "medium", "reason": "Currently making drinks and working as cashier at Konos Northshore — relevant experience. Prior fast food at Firehouse Subs. Local to Honolulu. Criminal Justice student showing responsibility. Solid mid-level candidate."}
   },
   {
     "name": "Eliana Carnes",
@@ -838,7 +1015,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeElianaCarnes.pdf",
     "skills": "",
-    "summary": "Barista with coffee preparation skills."
+    "summary": "Barista with coffee preparation skills.",
+    "resumeSummary": ["Resume available but text not extractable - review PDF manually"],
+    "estimatedAge": null,
+    "potential": {"rating": "medium", "reason": "Listed as barista experience which is directly relevant for coffee/donut shop. In Honolulu. Resume PDF needs manual review to assess full qualifications and experience level."}
   },
   {
     "name": "Austin M",
@@ -852,7 +1032,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeAustinM.pdf",
     "skills": "",
-    "summary": "Good-tier candidate — see resume for background details."
+    "summary": "Good-tier candidate — see resume for background details.",
+    "resumeSummary": ["3 years retail customer service at various national retailers", "Cook at PRC — food prep, trained as chef", "Maintenance at Koa Maintenance — cleaning tasks", "Dishwasher/Prep Cook at Farmhouse Cafe", "Runner attendant at District/Republik — crowd management"],
+    "estimatedAge": 35,
+    "potential": {"rating": "medium", "reason": "Diverse work history including cook/chef training, food prep, and extensive customer service. Currently in Honolulu. Associate's degree with 3.5+ GPA. Wants steady employment. However, job-hopping pattern — verify reliability."}
   },
   {
     "name": "Emmanuel Ridgley",
@@ -866,7 +1049,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeEmmanuelRidgley.pdf",
     "skills": "",
-    "summary": "Sales associate with retail customer service experience."
+    "summary": "Sales associate with retail customer service experience.",
+    "resumeSummary": ["Crew Member at Dairy Queen — taking orders, making food/drinks, cleaning", "Sales Associate at West Marine — stocking, POS, customer service", "Vice President of Castle High School Auto Club", "Castle High School student (Innovation Academy, Automotive Pathway)", "People skills, teamwork, adaptability, reliable and punctual"],
+    "estimatedAge": 18,
+    "potential": {"rating": "medium", "reason": "Currently working at Dairy Queen making food and drinks — relevant fast food experience. Sales at West Marine adds retail skills. High school student so limited availability but shows leadership as VP of Auto Club. Local."}
   },
   {
     "name": "cheyenne Bailey",
@@ -880,7 +1066,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumecheyenneBailey.pdf",
     "skills": "",
-    "summary": "Cashier with customer service skills and secondary education."
+    "summary": "Cashier with customer service skills and secondary education.",
+    "resumeSummary": ["Cashier at Rainbow Drive-In Honolulu since June 2023", "Front End Supervisor at Kpop Donuts Corp — POS, online/phone orders", "Food & Beverage Expert at Target — stocking, warehouse, pallet jack", "McDonalds crew member and multiple retail cashier roles", "25+ years of various work experience in Honolulu"],
+    "estimatedAge": 43,
+    "potential": {"rating": "high", "reason": "Was Front End Supervisor at Kpop Donuts Corp — literally managed a donut shop operation! Also 2+ years at Rainbow Drive-In. 25+ years of Honolulu work experience. Extremely reliable local hire with directly relevant donut shop experience."}
   },
   {
     "name": "Mia Arreza",
@@ -894,7 +1083,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeMiaArreza.pdf",
     "skills": "",
-    "summary": "Unique specialist background — detail-oriented with animal care experience."
+    "summary": "Unique specialist background — detail-oriented with animal care experience.",
+    "resumeSummary": ["Bird Specialist at Raising Cane's Honolulu — cross-trained all positions", "Host at Shabuya Shabu Shabu — guest relations, waitlist management", "Service Associate at Consolidated Theaters", "3+ years hospitality experience, ServSafe certified", "Trained and mentored new team members"],
+    "estimatedAge": 21,
+    "potential": {"rating": "medium", "reason": "3+ years food service in Honolulu with cross-training in all positions at Raising Cane's. ServSafe certified. Trained new team members. Local and experienced in fast-paced food service, though no coffee-specific skills."}
   },
   {
     "name": "Chantal Marie Cacpal",
@@ -908,7 +1100,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeChantalMarieCacpal.pdf",
     "skills": "",
-    "summary": "Fair-tier candidate — see resume for qualifications."
+    "summary": "Fair-tier candidate — see resume for qualifications.",
+    "resumeSummary": ["Sophomore at McKinley High School — no work experience yet", "Looking to gain first work experience", "Good communication skills and basic computer skills", "Patient, trustworthy, and quick learner", "Coffee shop and café skills listed as interests"],
+    "estimatedAge": 16,
+    "potential": {"rating": "low", "reason": "High school sophomore with zero work experience — would be a complete training investment. Very young (likely 16). Shows eagerness but needs to verify age for labor law compliance. Only suitable if willing to train from scratch."}
   },
   {
     "name": "Jasmine Boyd",
@@ -922,7 +1117,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeJasmineBoyd.pdf",
     "skills": "",
-    "summary": "Guest services rep with university education in Marine Biology — strong guest interaction skills."
+    "summary": "Guest services rep with university education in Marine Biology — strong guest interaction skills.",
+    "resumeSummary": ["Guest Services Rep at US National Whitewater Center — pass sales, food stocking", "Marine Biology student at Hawaii Pacific University", "National Honors Society, Model UN, Toastmasters certified", "Adobe Certified Professional", "Multiple community service and leadership roles"],
+    "estimatedAge": 19,
+    "potential": {"rating": "medium", "reason": "Strong academic profile with Toastmasters certification (great for customer interaction) and guest services experience. HPU student in Honolulu. Limited food service experience but excellent communication skills and leadership potential."}
   },
   {
     "name": "Trucy Thomas",
@@ -936,7 +1134,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeTrucyThomas.pdf",
     "skills": "",
-    "summary": "National Guard veteran with warehouse experience — disciplined and dependable."
+    "summary": "National Guard veteran with warehouse experience — disciplined and dependable.",
+    "resumeSummary": ["Forklift Operator at Hawaii Community College", "Barber/Stylist at Job Challenge Academy", "Community Service at Job Challenge Academy", "HISET through Hawaii National Guard Youth Challenge Academy", "Food Handler Certified, extensive cleaning/maintenance skills"],
+    "estimatedAge": 20,
+    "potential": {"rating": "medium", "reason": "National Guard discipline is a plus for reliability. Food Handler Certified. Has cash handling and food prep skills listed. Local Honolulu resident. Non-traditional background but shows strong work ethic and willingness."}
   },
   {
     "name": "Hayden Bode",
@@ -950,7 +1151,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeHaydenBode.pdf",
     "skills": "",
-    "summary": "Tour guide with public speaking and guest engagement experience."
+    "summary": "Tour guide with public speaking and guest engagement experience.",
+    "resumeSummary": ["Tour Guide at The Mill at Ward Cove, Alaska — led groups of 2-16", "Outdoor Educator for 2 years — safety, teaching, team leadership", "Zipline Guide at Red River Ski Area — safety briefings", "Electrical Apprentice experience", "Passionate about outdoor adventure and guest experience"],
+    "estimatedAge": 23,
+    "potential": {"rating": "low", "reason": "Impressive outdoor/adventure guide experience but zero food service, coffee, or retail background. All work has been in outdoor recreation settings. Now in Honolulu but would need complete food service training from scratch."}
   },
   {
     "name": "Rachanne Miquel",
@@ -964,7 +1168,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeRachanneMiquel.pdf",
     "skills": "",
-    "summary": "Popeyes crew member with fast-food operations experience."
+    "summary": "Popeyes crew member with fast-food operations experience.",
+    "resumeSummary": ["Cashier at Popeyes Honolulu (April 2025-present)", "Time management and customer service skills", "Food preparation and POS system experience", "Restaurant and food & beverage experience", "Communication skills in English"],
+    "estimatedAge": 20,
+    "potential": {"rating": "medium", "reason": "Current fast-food cashier experience at Popeyes in Honolulu. Has food prep and POS skills. Limited resume detail but is local and currently employed in food service. Would need coffee-specific training."}
   },
   {
     "name": "Jmark Rivera",
@@ -978,7 +1185,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeJmarkRivera.pdf",
     "skills": "",
-    "summary": "Fair-tier candidate — see resume for qualifications."
+    "summary": "Fair-tier candidate — see resume for qualifications.",
+    "resumeSummary": ["Crew Member at Five Guys Mililani — stocking, training, team coordination", "UH Manoa Pre-Engineering student (Construction Engineering)", "Leilehua High School graduate with CTE Honors", "STEM/engineering focus with programming skills (C++, Python)", "Skills USA participant, ASCE member, leadership program"],
+    "estimatedAge": 19,
+    "potential": {"rating": "medium", "reason": "Has Five Guys crew member experience — relevant fast food background with training responsibilities. UH Manoa engineering student showing intelligence. Local (Honolulu). Would be a reliable part-time hire, though engineering career focus may mean short tenure."}
   },
   {
     "name": "Brooke Violette",
@@ -992,7 +1202,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeBrookeViolette.pdf",
     "skills": "",
-    "summary": "Deli attendant with food preparation and customer service experience."
+    "summary": "Deli attendant with food preparation and customer service experience.",
+    "resumeSummary": ["Deli Attendant at Farmlands Market — food prep, sandwiches, catering trays", "Animal care and ranch hand for 7+ years", "UH student living in dorms on Dole Street", "Oregon State University summer vet experience", "Quick learner, reliable, independent worker"],
+    "estimatedAge": 19,
+    "potential": {"rating": "medium", "reason": "Deli food preparation experience is relevant (sandwiches, catering trays). Now a UH student living on Dole Street near Waikiki. From Oregon but committed to Hawaii for school. Reliable and independent worker. Limited coffee skills."}
   },
   {
     "name": "Tyler Crawford",
@@ -1006,7 +1219,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeTylerCrawford.pdf",
     "skills": "",
-    "summary": "Server assistant currently studying Business — learning food service while pursuing degree."
+    "summary": "Server assistant currently studying Business — learning food service while pursuing degree.",
+    "resumeSummary": ["Server Assistant at Pacifica Del Mar, San Diego (2025-2026)", "Food Runner/Busser at Knotty Barrel (2024-2025)", "Business student at San Diego Miramar College", "Extensive certifications: ServSafe, TIPS, EMT, Lifeguard, Food Handler", "Fine dining and casual dining experience"],
+    "estimatedAge": 21,
+    "potential": {"rating": "medium", "reason": "Good restaurant experience as server assistant and food runner. Impressively certified (ServSafe, TIPS, EMT, Food Handler, Lifeguard). Now in Honolulu studying business. Certifications show dedication. Limited coffee experience."}
   },
   {
     "name": "Jameson O'Connell",
@@ -1020,7 +1236,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeJamesonO'Connell.pdf",
     "skills": "",
-    "summary": "Cashier with basic register and customer service experience."
+    "summary": "Cashier with basic register and customer service experience.",
+    "resumeSummary": ["Camp Counselor at YMCA — leading groups of 10-15 kids", "Direct Care Professional at ACR Homes — medications, patient care", "Online Ordering at Walmart — customer service, order processing", "EMT Program graduate from Moraine Park Technical College", "BS Elementary Education student at U of Minnesota (expected 2028)"],
+    "estimatedAge": 21,
+    "potential": {"rating": "medium", "reason": "EMT training shows reliability and composure under pressure. Camp counselor and care work shows responsibility. Walmart customer service experience. Now in Honolulu for school. No direct food/coffee experience but strong character."}
   },
   {
     "name": "AUBREY GRIMES",
@@ -1034,7 +1253,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeAUBREYGRIMES.pdf",
     "skills": "",
-    "summary": "Spa attendant with hospitality and guest service experience."
+    "summary": "Spa attendant with hospitality and guest service experience.",
+    "resumeSummary": ["Dock/Locker Room Attendant at Lake Austin Spa (2022-2024)", "Human Resource role at Peace Paddling (2022-2023)", "UH Manoa freshman, undecided major, from Texas", "CPR and Heimlich trained, bilingual English/basic Spanish", "Volunteer/fundraiser experience, FCCLA member"],
+    "estimatedAge": 19,
+    "potential": {"rating": "low", "reason": "No food service or coffee experience — background is in spa/resort hospitality. UH Manoa freshman from Texas. Would need complete training. CPR certified is a minor plus. Young and potentially trainable but not a priority hire."}
   },
   {
     "name": "Hirut Denver",
@@ -1048,7 +1270,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeHirutDenver.pdf",
     "skills": "",
-    "summary": "Drink maker and cashier — beverage preparation and register skills."
+    "summary": "Drink maker and cashier — beverage preparation and register skills.",
+    "resumeSummary": ["Babysitting experience (2023)", "Crescent Valley HS graduate with 3.5 GPA", "Dual enrollment at Linn-Benton CC with 3.8 GPA", "University of Oregon Political Science student (expected 2029)", "Strong leadership, communication, and adaptability skills"],
+    "estimatedAge": 19,
+    "potential": {"rating": "low", "reason": "Very limited work experience — only babysitting listed. Despite being listed as 'Drink Maker/Cashier', resume doesn't show actual beverage/café experience. Strong academics (3.5-3.8 GPA) but would need full training. From Oregon."}
   },
   {
     "name": "Kenneth Liu",
@@ -1062,7 +1287,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeKennethLiu.pdf",
     "skills": "",
-    "summary": "Entry-level candidate — would need training. See resume."
+    "summary": "Entry-level candidate — would need training. See resume.",
+    "resumeSummary": ["Barback/Bartender/Server at Brickyard bar in Taiwan (2023-2026)", "English Tutor in Taipei — private tutoring", "Kitchen Staff/Waiter at Comfort Burger Company Taiwan", "CS and Electrical Engineering degree", "Born in Majuro, Marshall Islands, multilingual"],
+    "estimatedAge": 27,
+    "potential": {"rating": "medium", "reason": "Actually has 3 years of bar/restaurant experience in Taiwan including bartending, serving, and kitchen work. CS/EE degree shows intelligence. Returned to Honolulu. Despite 'weak' tier score, has more experience than listed. Worth a closer look."}
   },
   {
     "name": "Leila Zaragoza",
@@ -1076,7 +1304,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeLeilaZaragoza.pdf",
     "skills": "",
-    "summary": "Mechanical Engineering degree with sales associate experience — analytical thinker."
+    "summary": "Mechanical Engineering degree with sales associate experience — analytical thinker.",
+    "resumeSummary": ["Seasonal Sales Associate at Ross Dress For Less Honolulu (2025)", "Medical Receptionist for 3 years at Ventura County Medical Center", "Mechanical Engineering student at UH Manoa", "CPR trained, customer service oriented", "Available weekends and select weekday hours"],
+    "estimatedAge": 19,
+    "potential": {"rating": "medium", "reason": "3 years as medical receptionist shows reliability and customer service skills. UH Manoa engineering student — very smart. Part-time availability with weekends open. No food/coffee experience but has professional demeanor and local."}
   },
   {
     "name": "CAROLINE COOK",
@@ -1090,7 +1321,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeCAROLINECOOK.pdf",
     "skills": "",
-    "summary": "Sales associate with phlebotomy certification — would need food service training."
+    "summary": "Sales associate with phlebotomy certification — would need food service training.",
+    "resumeSummary": ["Sales Associate at HI & Claw Toys arcade — customer service, tokens", "Seasonal Sales Associate/Cashier at Bath & Body Works (2 seasons)", "Hostess at IHOP — seating, bussing, to-go orders", "Phlebotomy certificate, some college at UT Knoxville", "Fort Shafter military base area — stable residence"],
+    "estimatedAge": 22,
+    "potential": {"rating": "medium", "reason": "Has IHOP hostess experience (food service) and 2 seasons at Bath & Body Works (retail/cashier). Fort Shafter location is stable (military family). Multiple customer-facing roles. Limited coffee experience but trainable with service background."}
   },
   {
     "name": "Mayforeen Albert",
@@ -1104,7 +1338,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeMayforeenAlbert.pdf",
     "skills": "",
-    "summary": "High school educated — entry-level, would need training."
+    "summary": "High school educated — entry-level, would need training.",
+    "resumeSummary": ["No work experience listed on resume", "Some high school education at Farrington High School (2020-2022)", "Skills: food handling, dishwashing, stocking, cleaning", "Restaurant experience and food & beverage industry listed", "English speaking, heavy lifting capable"],
+    "estimatedAge": 20,
+    "potential": {"rating": "low", "reason": "No formal work experience listed and didn't complete high school (some high school only). Lists food handling and restaurant skills but no actual positions. Would need comprehensive training and close supervision. Local Honolulu resident."}
   },
   {
     "name": "Ashley Miyata",
@@ -1118,7 +1355,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeAshleyMiyata.pdf",
     "skills": "",
-    "summary": "Entry-level candidate — would need comprehensive training."
+    "summary": "Entry-level candidate — would need comprehensive training.",
+    "resumeSummary": ["Lead Pharmacy Technician at Longs Drugs Kaimuki (2022-2025)", "Certified Pharmacy Technician (PTCB), Immunizer certified", "CPR Certified, CNA Program completion", "KCC Nursing Major, previously UH Business Major", "Kaiser High School — 3.744 GPA, Principal's List, Honor Roll"],
+    "estimatedAge": 21,
+    "potential": {"rating": "medium", "reason": "Despite 'weak' tier score, has 3 years as Lead Pharmacy Technician — shows extreme reliability, attention to detail, and customer service. Certified professional with excellent GPA. Local Honolulu. No food experience but strong work ethic and transferable skills."}
   },
   {
     "name": "James Reyes",
@@ -1132,7 +1372,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeJamesReyes.pdf",
     "skills": "",
-    "summary": "Entry-level candidate — would need full training program."
+    "summary": "Entry-level candidate — would need full training program.",
+    "resumeSummary": ["Spotter at Holu Hou Energy LLC — equipment movement, yard logistics", "Strong customer service and conflict resolution skills", "Leadership, situational awareness, and safety focus", "Flexible schedule with reliable attendance", "Physically capable with setup/teardown experience"],
+    "estimatedAge": 28,
+    "potential": {"rating": "low", "reason": "Only listed work experience is as a Spotter at an energy company — no food service, retail, or customer service background. Has relevant soft skills (conflict resolution, leadership) but would need complete food service training. Local Honolulu."}
   },
   {
     "name": "Jendelyn Duhaylongsod",
@@ -1146,7 +1389,10 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeJendelynDuhaylongsod.pdf",
     "skills": "",
-    "summary": "No prior experience listed — would need comprehensive training."
+    "summary": "No prior experience listed — would need comprehensive training.",
+    "resumeSummary": ["Sales Associate at SoHa Living Ala Moana since Oct 2024", "Farrington High School student — 3.4 GPA", "Advanced courses and dual enrollment (Early College)", "Creative Arts & Technology Academy", "Reference from SoHa Living store manager"],
+    "estimatedAge": 17,
+    "potential": {"rating": "low", "reason": "High school student with only retail experience at SoHa Living. No food service background. 3.4 GPA shows academic responsibility. Very young — would need to verify age/labor law compliance. Complete food service training required."}
   },
   {
     "name": "Kainoa Valdez",
@@ -1160,6 +1406,9 @@ const candidatesData = [
     "resume": true,
     "resumeFile": "ResumeKainoaValdez.pdf",
     "skills": "",
-    "summary": "Entry-level candidate — would need full training and mentorship."
+    "summary": "Entry-level candidate — would need full training and mentorship.",
+    "resumeSummary": ["Kalani High School graduate (2024) with 3.5 GPA", "Bilingual: English and Japanese (completed Japanese 1-4)", "Leadership: took care of 2 younger siblings", "Volunteer: Easter Eggstravaganza, Māla Māunuunu kalo planting", "Problem-solving, communication, and teamwork skills"],
+    "estimatedAge": 20,
+    "potential": {"rating": "low", "reason": "No work experience at all — only school, volunteering, and caring for siblings. Bilingual Japanese/English is valuable for Waikiki tourists. 3.5 GPA and leadership potential. Would need complete training but has good character and local roots."}
   }
 ];
