@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "collectedAt": "2026-02-12T19:29:07.702441Z",
+    "collectedAt": "2026-02-12T19:36:54.471393Z",
     "property": "properties/523137923",
     "period": {
       "startDate": "2026-01-13",
@@ -9,11 +9,11 @@
     }
   },
   "totals": {
-    "sessions": 106,
+    "sessions": 107,
     "activeUsers": 86,
-    "screenPageViews": 322,
-    "bounceRate": 0.7264150943396226,
-    "averageSessionDuration": 280.77814893396226,
+    "screenPageViews": 323,
+    "bounceRate": 0.7289719626168224,
+    "averageSessionDuration": 278.15405408411215,
     "engagedSessions": 29
   },
   "trafficSources": [
@@ -29,8 +29,8 @@
     },
     {
       "sessionDefaultChannelGroup": "Unassigned",
-      "sessions": 7,
-      "activeUsers": 7
+      "sessions": 8,
+      "activeUsers": 8
     },
     {
       "sessionDefaultChannelGroup": "Organic Shopping",
@@ -47,9 +47,9 @@
     {
       "pagePath": "/",
       "pageTitle": "CareK9",
-      "screenPageViews": 168,
+      "screenPageViews": 169,
       "activeUsers": 53,
-      "averageSessionDuration": 305.22599999999994
+      "averageSessionDuration": 300.86562857142854
     },
     {
       "pagePath": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
@@ -258,7 +258,7 @@
   "devices": [
     {
       "deviceCategory": "desktop",
-      "sessions": 78,
+      "sessions": 79,
       "activeUsers": 67
     },
     {
@@ -271,7 +271,7 @@
     {
       "country": "United States",
       "region": "New Jersey",
-      "sessions": 25,
+      "sessions": 26,
       "activeUsers": 17
     },
     {
@@ -446,17 +446,17 @@
     },
     {
       "date": "20260212",
-      "sessions": 4,
-      "activeUsers": 4,
-      "screenPageViews": 6
+      "sessions": 5,
+      "activeUsers": 5,
+      "screenPageViews": 7
     }
   ],
   "landingPages": [
     {
       "landingPage": "/",
-      "sessions": 65,
-      "bounceRate": 0.6461538461538462,
-      "averageSessionDuration": 388.4623158153846
+      "sessions": 66,
+      "bounceRate": 0.6515151515151515,
+      "averageSessionDuration": 382.5765231515152
     },
     {
       "landingPage": "",
@@ -586,8 +586,8 @@
     },
     {
       "sessionSource": "(not set)",
-      "sessions": 7,
-      "activeUsers": 7
+      "sessions": 8,
+      "activeUsers": 8
     },
     {
       "sessionSource": "admin.shopify.com",
