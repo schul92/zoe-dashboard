@@ -1,5 +1,19 @@
-// 77 Candidates Data - Generated 2026-02-01
+// 83 Candidates Data - Updated 2026-02-11
 const candidatesData = [
+  {
+    "name": "Tia Taylor",
+    "tier": "top",
+    "score": 13,
+    "phone": "+1 808 399 0728",
+    "experience": "Acting District Manager",
+    "education": "Bachelor's in Business Management; Associate's in Pastry/Culinary Arts & Restaurant Management",
+    "date": "2026-02-11",
+    "location": "Honolulu, HI 96830",
+    "resume": false,
+    "resumeFile": null,
+    "skills": "Cash management, culinary experience, food service, district management",
+    "summary": "Exceptional management candidate with 15+ years leadership experience — District Manager at Easy Spirit/Nine West, Restaurant Manager at Maggiano's & Darden. Culinary arts degree plus business management BA."
+  },
   {
     "name": "Sanjina Rao",
     "tier": "top",
@@ -11,7 +25,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeSanjinaRao.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Strong dual-role candidate with hands-on cashier and cook experience — ready for both front and back of house."
   },
   {
     "name": "Joshua Lee",
@@ -24,7 +39,22 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeJoshuaLee.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Experienced bartender with arts background — strong customer engagement and drink preparation skills."
+  },
+  {
+    "name": "Atalya Gonzalez",
+    "tier": "top",
+    "score": 12,
+    "phone": "808-798-2234",
+    "experience": "Lead Barista",
+    "education": "BA English, CUNY-Hunter College",
+    "date": "2026-02-11",
+    "location": "Portland, OR 97212",
+    "resume": false,
+    "resumeFile": null,
+    "skills": "Food Handling, POS Systems (Toast, Square), sales leadership",
+    "summary": "Outstanding Lead Barista who surpassed daily sales goals by 59% at Champagne Poetry Patisserie. Receptionist at JLL/Google, Lead Bookseller at Barnes & Noble. BA in English."
   },
   {
     "name": "Pieter  (Kobus) Breet",
@@ -37,7 +67,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumePieter(Kobus)Breet.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Proven shift supervisor with leadership and team management capabilities."
   },
   {
     "name": "Heather Fencl",
@@ -50,7 +81,22 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeHeatherFencl.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Licensed professional with strong client service orientation and attention to detail."
+  },
+  {
+    "name": "Alena Hamilton",
+    "tier": "top",
+    "score": 11,
+    "phone": "+1 937 641 1413",
+    "experience": "Cashier/Team Member",
+    "education": "High school",
+    "date": "2026-02-11",
+    "location": "Honolulu, HI 96822",
+    "resume": false,
+    "resumeFile": null,
+    "skills": "Food Handler Certified, POS, customer service",
+    "summary": "Strong food service background at 18 — current Popeyes team member, prior cashier at Zippy's & Teddy's Bigger Burger, plus entrepreneurial lipgloss business since 2021. Food Handler Certified."
   },
   {
     "name": "Leilani Loveless",
@@ -63,7 +109,8 @@ const candidatesData = [
     "location": "Honolulu",
     "resume": true,
     "resumeFile": "ResumeLeilaniLoveless.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Versatile retail professional with cashier, customer service, sales, and stocking experience."
   },
   {
     "name": "Beyla Jones",
@@ -76,7 +123,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeBeylaJones.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Store management experience with proven leadership and operational skills."
   },
   {
     "name": "Catherine Piano",
@@ -89,7 +137,8 @@ const candidatesData = [
     "location": "10000",
     "resume": true,
     "resumeFile": "ResumeCatherinePiano.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Senior-level server with extensive food service and customer interaction experience."
   },
   {
     "name": "Emily Newell",
@@ -102,7 +151,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeEmilyNewell.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Experienced barista and cashier — ideal coffee shop skill set with dual-role capability."
   },
   {
     "name": "Hallie Dugan",
@@ -115,7 +165,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeHallieDugan.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Engaging communicator with guest-facing experience as a Game Guide."
   },
   {
     "name": "Camilo Haro",
@@ -128,7 +179,8 @@ const candidatesData = [
     "location": "Honolulu",
     "resume": true,
     "resumeFile": "ResumeCamiloHaro.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Reliable cashier with point-of-sale and customer service skills."
   },
   {
     "name": "Carla Silva",
@@ -141,7 +193,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeCarlaSilva.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Server with formal hotel & restaurant administration education — strong hospitality foundation."
   },
   {
     "name": "Donna Sowell",
@@ -154,7 +207,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeDonnaSowell.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Fast-food crew experience combined with retail graduate education — quick learner in high-volume settings."
   },
   {
     "name": "Nevaeh Berman",
@@ -167,7 +221,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeNevaehBerman.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Top-tier candidate based on qualifications assessment — see resume for detailed background."
   },
   {
     "name": "An Li Allison",
@@ -180,7 +235,8 @@ const candidatesData = [
     "location": "Honolulu, Hawaii",
     "resume": true,
     "resumeFile": "ResumeAnLiAllison.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Dual barista/cashier experience — coffee preparation and register skills ready to go."
   },
   {
     "name": "Alexandra Xua",
@@ -193,7 +249,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeAlexandraXua.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Barista with A.A.S. degree — solid coffee skills backed by academic foundation."
   },
   {
     "name": "Ava Fairbrother",
@@ -206,7 +263,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeAvaFairbrother.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Cashier experience with college education in Criminal Justice — detail-oriented and dependable."
   },
   {
     "name": "LUCY POOL",
@@ -219,7 +277,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeLUCYPOOL.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Morning Brew barista — experienced in early-shift coffee preparation and service."
   },
   {
     "name": "Haruna Emmer",
@@ -232,7 +291,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeHarunaEmmer.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Dedicated barista with hands-on coffee preparation experience."
   },
   {
     "name": "Kiley Butkus",
@@ -245,7 +305,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeKileyButkus.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Food runner and server experience — fast-paced food service and customer interaction skills."
   },
   {
     "name": "Madison Pasaoa",
@@ -258,7 +319,8 @@ const candidatesData = [
     "location": "Honolulu, Hi",
     "resume": false,
     "resumeFile": null,
-    "skills": ""
+    "skills": "",
+    "summary": "Gelato server with specialty dessert and customer service experience."
   },
   {
     "name": "Sayaka Gaspard",
@@ -271,7 +333,8 @@ const candidatesData = [
     "location": "'Ewa Beach, HI",
     "resume": true,
     "resumeFile": "ResumeSayakaGaspard.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Barista/cashier with combined coffee and register skills."
   },
   {
     "name": "Honesty-Marie Riley",
@@ -284,7 +347,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeHonesty-MarieRiley.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Sales associate with strong customer-facing skills and GED education."
   },
   {
     "name": "Hannah Quick",
@@ -297,7 +361,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeHannahQuick.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Hostess and server with front-of-house experience in guest seating and service."
   },
   {
     "name": "MARIANA FIGUEROA",
@@ -310,7 +375,8 @@ const candidatesData = [
     "location": "Honolulu, HI, 96822, US",
     "resume": true,
     "resumeFile": "ResumeMARIANAFIGUEROA.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Barista with coffee preparation and customer service experience."
   },
   {
     "name": "kay ornatowski",
@@ -323,7 +389,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "Resumekayornatowski.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Sales associate with retail customer service and high school education."
   },
   {
     "name": "Alexis Shulga",
@@ -336,7 +403,8 @@ const candidatesData = [
     "location": "Honolulu, Hawaii, US",
     "resume": true,
     "resumeFile": "ResumeAlexisShulga.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Local barista with coffee shop experience in Honolulu."
   },
   {
     "name": "Kim Le",
@@ -349,7 +417,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeKimLe.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Cashier with register experience and secondary education."
   },
   {
     "name": "Dorian Covahey",
@@ -362,7 +431,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeDorianCovahey.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Combined barista and cashier experience — versatile coffee shop skill set."
   },
   {
     "name": "Parrish Viator",
@@ -375,7 +445,8 @@ const candidatesData = [
     "location": "Honolulu, HI, US",
     "resume": true,
     "resumeFile": "ResumeParrishViator.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Barista with hands-on coffee preparation experience."
   },
   {
     "name": "Dwayne Kahoonei",
@@ -388,7 +459,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeDwayneKahoonei.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Local Honolulu cashier with high school diploma — reliable and community-based."
   },
   {
     "name": "Huyen - Tran Ha Dang",
@@ -401,7 +473,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeHuyen-TranHaDang.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Retail sales associate and cashier with customer service and sales floor experience."
   },
   {
     "name": "Aurora Marcy",
@@ -414,7 +487,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeAuroraMarcy.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Creative professional with photography background — brings visual and detail-oriented skills."
   },
   {
     "name": "Leah Kliem",
@@ -427,7 +501,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeLeahKliem.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Program manager with BA in Clinical Psychology — excellent leadership, communication, and people skills."
   },
   {
     "name": "EDMELYN HAZLEWOOD",
@@ -440,7 +515,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeEDMELYNHAZLEWOOD.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Customer service agent with BS in IT — tech-savvy with strong reservation and client management skills."
   },
   {
     "name": "Ira Rose",
@@ -453,7 +529,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeIraRose.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Assistant barista with coffee shop support experience."
   },
   {
     "name": "Lawson McNeely",
@@ -466,7 +543,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeLawsonMcNeely.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Barista with Psychology degree — strong interpersonal skills and coffee preparation experience."
   },
   {
     "name": "Jason Riddle",
@@ -479,7 +557,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeJasonRiddle.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Server with food service and guest interaction experience."
   },
   {
     "name": "Jaelah Muñoz",
@@ -492,7 +571,8 @@ const candidatesData = [
     "location": "Honolulu, HI, US",
     "resume": true,
     "resumeFile": "ResumeJaelahMuñoz.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Top-tier candidate — see resume for detailed qualifications and background."
   },
   {
     "name": "Marcela Naomi Huaccho Choque",
@@ -505,7 +585,22 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeMarcelaNaomiHuacchoChoque.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Top-tier candidate — see resume for detailed qualifications and background."
+  },
+  {
+    "name": "Emily Jane Willson",
+    "tier": "strong",
+    "score": 10,
+    "phone": "(207) 345-8333",
+    "experience": "Server/Server Trainer",
+    "education": "BS Psychology (3.9 GPA), Thomas College",
+    "date": "2026-02-11",
+    "location": "Honolulu, HI",
+    "resume": false,
+    "resumeFile": null,
+    "skills": "Server training, hospitality, front desk",
+    "summary": "BS Psychology with outstanding 3.9 GPA. Server & Server Trainer at Poland Spring Resort, currently Housekeeper/Receptionist at Polynesian Hostel Beach Club Waikiki. Strong training ability."
   },
   {
     "name": "Gary Basuil",
@@ -518,7 +613,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeGaryBasuil.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Host with front-of-house guest experience and high school diploma."
   },
   {
     "name": "Jaylyn Wharton",
@@ -531,7 +627,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeJaylynWharton.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Barista with strong coffee preparation skills."
   },
   {
     "name": "BENJAMIN AQUINO",
@@ -544,7 +641,22 @@ const candidatesData = [
     "location": "Honolulu, HI 96822",
     "resume": true,
     "resumeFile": "ResumeBENJAMINAQUINO.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Combined barista/cashier with dual skill set for coffee shop operations."
+  },
+  {
+    "name": "Maxine Patterson",
+    "tier": "strong",
+    "score": 9,
+    "phone": "+1 206 579 6569",
+    "experience": "English Teacher / Office Assistant",
+    "education": "BA Psychology, UH Manoa (4.0 GPA)",
+    "date": "2026-02-11",
+    "location": "Honolulu, HI 96816",
+    "resume": false,
+    "resumeFile": null,
+    "skills": "Cold brew & espresso coffee making, cashiering",
+    "summary": "Perfect 4.0 GPA Psychology BA from UH Manoa. English teaching abroad experience plus cold brew & espresso making skills. Intellectually sharp and service-oriented."
   },
   {
     "name": "Isabella Mendoza",
@@ -557,7 +669,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeIsabellaMendoza.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Barista and cashier with coffee and customer service experience."
   },
   {
     "name": "Christian Melegrito",
@@ -570,7 +683,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeChristianMelegrito.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Sales associate with customer engagement and retail skills."
   },
   {
     "name": "Tdlyn Frank",
@@ -583,7 +697,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeTdlynFrank.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Cashier with register experience and high school education."
   },
   {
     "name": "Naomi Hosford",
@@ -596,7 +711,22 @@ const candidatesData = [
     "location": "La Cañada Flintridge, CA",
     "resume": true,
     "resumeFile": "ResumeNaomiHosford.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Strong-tier candidate from California — see resume for qualifications."
+  },
+  {
+    "name": "Michelle Izquierdo",
+    "tier": "good",
+    "score": 8,
+    "phone": "(619) 471-6202",
+    "experience": "Cashier/Expo",
+    "education": "BS Travel Industry Management (expected 2029), UH Manoa",
+    "date": "2026-02-11",
+    "location": "Honolulu, HI 96816",
+    "resume": false,
+    "resumeFile": null,
+    "skills": "Bilingual Spanish/English, cashiering, food expo",
+    "summary": "Bilingual (Spanish/English) UH Manoa student in Travel Industry Management. Cashier/Expo at Tight Tacos Kaimuki. Available Tue-Fri afternoons & weekends."
   },
   {
     "name": "Giang Tran",
@@ -609,7 +739,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeGiangTran.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Crew member with team-based food service experience."
   },
   {
     "name": "Alana Image",
@@ -622,7 +753,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeAlanaImage.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Retail sales associate studying Psychology and Art — creative with strong people skills."
   },
   {
     "name": "Madison Beardsley",
@@ -635,7 +767,8 @@ const candidatesData = [
     "location": "Pearl City, HI",
     "resume": true,
     "resumeFile": "ResumeMadisonBeardsley.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Waitress and cashier with food service and register experience."
   },
   {
     "name": "Emma Gretsch",
@@ -648,7 +781,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeEmmaGretsch.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Food runner with fast-paced kitchen-to-table delivery experience."
   },
   {
     "name": "Rina Robert",
@@ -661,7 +795,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeRinaRobert.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Sales associate and cashier with retail and customer service skills."
   },
   {
     "name": "Janelle Cabanit",
@@ -674,7 +809,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeJanelleCabanit.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Barista/cashier with coffee shop operations experience."
   },
   {
     "name": "Sky Brown",
@@ -687,7 +823,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeSkyBrown.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Good-tier candidate — see resume for background details."
   },
   {
     "name": "Eliana Carnes",
@@ -700,7 +837,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeElianaCarnes.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Barista with coffee preparation skills."
   },
   {
     "name": "Austin M",
@@ -713,7 +851,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeAustinM.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Good-tier candidate — see resume for background details."
   },
   {
     "name": "Emmanuel Ridgley",
@@ -726,7 +865,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeEmmanuelRidgley.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Sales associate with retail customer service experience."
   },
   {
     "name": "cheyenne Bailey",
@@ -739,7 +879,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumecheyenneBailey.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Cashier with customer service skills and secondary education."
   },
   {
     "name": "Mia Arreza",
@@ -752,7 +893,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeMiaArreza.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Unique specialist background — detail-oriented with animal care experience."
   },
   {
     "name": "Chantal Marie Cacpal",
@@ -765,7 +907,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeChantalMarieCacpal.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Fair-tier candidate — see resume for qualifications."
   },
   {
     "name": "Jasmine Boyd",
@@ -778,7 +921,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeJasmineBoyd.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Guest services rep with university education in Marine Biology — strong guest interaction skills."
   },
   {
     "name": "Trucy Thomas",
@@ -791,7 +935,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeTrucyThomas.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "National Guard veteran with warehouse experience — disciplined and dependable."
   },
   {
     "name": "Hayden Bode",
@@ -804,7 +949,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeHaydenBode.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Tour guide with public speaking and guest engagement experience."
   },
   {
     "name": "Rachanne Miquel",
@@ -817,7 +963,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeRachanneMiquel.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Popeyes crew member with fast-food operations experience."
   },
   {
     "name": "Jmark Rivera",
@@ -830,7 +977,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeJmarkRivera.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Fair-tier candidate — see resume for qualifications."
   },
   {
     "name": "Brooke Violette",
@@ -843,7 +991,8 @@ const candidatesData = [
     "location": "2579 Dole Street Rm 452, Honolulu, HI 96822",
     "resume": true,
     "resumeFile": "ResumeBrookeViolette.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Deli attendant with food preparation and customer service experience."
   },
   {
     "name": "Tyler Crawford",
@@ -856,7 +1005,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeTylerCrawford.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Server assistant currently studying Business — learning food service while pursuing degree."
   },
   {
     "name": "Jameson O'Connell",
@@ -869,7 +1019,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeJamesonO'Connell.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Cashier with basic register and customer service experience."
   },
   {
     "name": "AUBREY GRIMES",
@@ -882,7 +1033,8 @@ const candidatesData = [
     "location": "Honolulu, HI, 96822, US",
     "resume": true,
     "resumeFile": "ResumeAUBREYGRIMES.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Spa attendant with hospitality and guest service experience."
   },
   {
     "name": "Hirut Denver",
@@ -895,7 +1047,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeHirutDenver.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Drink maker and cashier — beverage preparation and register skills."
   },
   {
     "name": "Kenneth Liu",
@@ -908,7 +1061,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeKennethLiu.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Entry-level candidate — would need training. See resume."
   },
   {
     "name": "Leila Zaragoza",
@@ -921,7 +1075,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeLeilaZaragoza.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Mechanical Engineering degree with sales associate experience — analytical thinker."
   },
   {
     "name": "CAROLINE COOK",
@@ -934,7 +1089,8 @@ const candidatesData = [
     "location": "Fort Shafter, HI",
     "resume": true,
     "resumeFile": "ResumeCAROLINECOOK.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Sales associate with phlebotomy certification — would need food service training."
   },
   {
     "name": "Mayforeen Albert",
@@ -947,7 +1103,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeMayforeenAlbert.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "High school educated — entry-level, would need training."
   },
   {
     "name": "Ashley Miyata",
@@ -960,7 +1117,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeAshleyMiyata.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Entry-level candidate — would need comprehensive training."
   },
   {
     "name": "James Reyes",
@@ -973,7 +1131,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeJamesReyes.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Entry-level candidate — would need full training program."
   },
   {
     "name": "Jendelyn Duhaylongsod",
@@ -986,7 +1145,8 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeJendelynDuhaylongsod.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "No prior experience listed — would need comprehensive training."
   },
   {
     "name": "Kainoa Valdez",
@@ -999,6 +1159,7 @@ const candidatesData = [
     "location": "Honolulu, HI",
     "resume": true,
     "resumeFile": "ResumeKainoaValdez.pdf",
-    "skills": ""
+    "skills": "",
+    "summary": "Entry-level candidate — would need full training and mentorship."
   }
 ];

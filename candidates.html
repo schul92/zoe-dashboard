@@ -3,922 +3,965 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>77 Candidates - Kona Coffee Donut</title>
+    <title>83 Candidates — Kona Coffee Donut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --bg: #FBF7F2;
+            --bg-card: #FFFFFF;
+            --bg-hover: #F7F1EA;
+            --text: #3D2B1F;
+            --text-secondary: #8B7355;
+            --text-muted: #B8A48E;
+            --border: #E8DDD0;
+            --accent: #C17817;
+            --accent-light: #F5E6D0;
+            --accent-hover: #A8640F;
+            --top: #D4380D;
+            --top-bg: #FFF1EC;
+            --strong: #0958D9;
+            --strong-bg: #E6F4FF;
+            --good: #389E0D;
+            --good-bg: #F0FFF0;
+            --fair: #D48806;
+            --fair-bg: #FFFBE6;
+            --weak: #8C8C8C;
+            --weak-bg: #F5F5F5;
+            --shadow-sm: 0 1px 2px rgba(61,43,31,0.06);
+            --shadow-md: 0 4px 12px rgba(61,43,31,0.08);
+            --shadow-lg: 0 12px 32px rgba(61,43,31,0.12);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --transition: 0.2s ease;
         }
-        
+
+        [data-theme="dark"] {
+            --bg: #1A1410;
+            --bg-card: #262018;
+            --bg-hover: #332A1F;
+            --text: #F0E6D8;
+            --text-secondary: #B8A48E;
+            --text-muted: #7A6B58;
+            --border: #3D3228;
+            --accent: #E09030;
+            --accent-light: #3D2E18;
+            --accent-hover: #F0A040;
+            --top: #FF6B4A;
+            --top-bg: #3D1F15;
+            --strong: #4A9EFF;
+            --strong-bg: #15253D;
+            --good: #52C41A;
+            --good-bg: #1A3D10;
+            --fair: #FAAD14;
+            --fair-bg: #3D3010;
+            --weak: #8C8C8C;
+            --weak-bg: #2A2A2A;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+            --shadow-lg: 0 12px 32px rgba(0,0,0,0.4);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            background: #f5f7fa;
-            color: #2c3e50;
-            line-height: 1.6;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
         }
-        
+
+        /* Header */
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1.5rem;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 1.25rem 1.5rem;
             position: sticky;
             top: 0;
             z-index: 100;
-            transition: transform 0.3s ease;
+            backdrop-filter: blur(12px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
-        .header.hidden {
-            transform: translateY(-100%);
-        }
-        
-        .header h1 {
-            font-size: 1.5rem;
-            margin-bottom: 0.25rem;
-        }
-        
-        .header .subtitle {
-            opacity: 0.9;
-            font-size: 0.9rem;
-        }
-        
-        .container {
-            max-width: 1200px;
+
+        .header.scrolled { box-shadow: var(--shadow-md); }
+        .header.hidden { transform: translateY(-100%); }
+
+        .header-inner {
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 1rem;
-            padding-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+        .brand {
+            display: flex;
+            align-items: center;
             gap: 0.75rem;
-            margin-bottom: 1rem;
         }
-        
-        .stat-card {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            text-align: center;
-            border-left: 4px solid;
+
+        .brand-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--accent) 0%, #8B5E34 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
         }
-        
-        .stat-card.top { border-left-color: #e74c3c; }
-        .stat-card.strong { border-left-color: #3498db; }
-        .stat-card.good { border-left-color: #2ecc71; }
-        .stat-card.fair { border-left-color: #f39c12; }
-        .stat-card.weak { border-left-color: #95a5a6; }
-        
-        .stat-card .number {
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 0.25rem;
+
+        .brand h1 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
         }
-        
-        .stat-card .label {
-            color: #7f8c8d;
-            font-size: 0.75rem;
-            line-height: 1.3;
+
+        .brand h1 span {
+            color: var(--accent);
         }
-        
-        .controls {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 1rem;
-        }
-        
-        .search-box {
-            margin-bottom: 0.75rem;
-        }
-        
-        .search-box input {
-            width: 100%;
-            padding: 0.875rem;
-            border: 2px solid #ecf0f1;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-        
-        .search-box input:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-        
-        .filter-buttons {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+
+        .header-actions {
+            display: flex;
+            align-items: center;
             gap: 0.5rem;
         }
-        
-        .filter-btn {
-            padding: 0.75rem;
-            border: 2px solid #ecf0f1;
-            background: white;
-            border-radius: 8px;
+
+        .theme-toggle {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            background: var(--bg);
+            color: var(--text);
             cursor: pointer;
-            font-weight: 500;
-            font-size: 0.85rem;
-            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            transition: all var(--transition);
+        }
+
+        .theme-toggle:hover { background: var(--bg-hover); }
+
+        /* Container */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            padding-bottom: 4rem;
+        }
+
+        /* Stats */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1rem;
             text-align: center;
+            transition: all var(--transition);
+            cursor: pointer;
+        }
+
+        .stat:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+        .stat .num {
+            font-size: 1.75rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .stat .lbl {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.125rem;
+        }
+
+        .stat.top .num { color: var(--top); }
+        .stat.strong .num { color: var(--strong); }
+        .stat.good .num { color: var(--good); }
+        .stat.fair .num { color: var(--fair); }
+        .stat.weak .num { color: var(--weak); }
+        .stat.top .lbl { color: var(--top); }
+        .stat.strong .lbl { color: var(--strong); }
+        .stat.good .lbl { color: var(--good); }
+        .stat.fair .lbl { color: var(--fair); }
+        .stat.weak .lbl { color: var(--weak); }
+
+        /* Controls */
+        .controls {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .search-row {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            padding-left: 2.5rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            font-family: inherit;
+            background: var(--bg);
+            color: var(--text);
+            transition: border-color var(--transition);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .search-wrap {
+            position: relative;
+            flex: 1;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 0.875rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            pointer-events: none;
+        }
+
+        .sort-select {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            font-family: inherit;
+            background: var(--bg);
+            color: var(--text);
+            cursor: pointer;
+            min-width: 140px;
+        }
+
+        .filters {
+            display: flex;
+            gap: 0.375rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-pill {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            background: transparent;
+            border-radius: 100px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: inherit;
+            color: var(--text-secondary);
+            transition: all var(--transition);
             white-space: nowrap;
         }
-        
-        .filter-btn:active {
-            transform: scale(0.98);
-        }
-        
-        .filter-btn.active {
-            background: #667eea;
+
+        .filter-pill:hover { background: var(--bg-hover); }
+
+        .filter-pill.active {
+            background: var(--accent);
             color: white;
-            border-color: #667eea;
+            border-color: var(--accent);
         }
-        
-        .candidates-list {
+
+        .filter-pill.active.top { background: var(--top); border-color: var(--top); }
+        .filter-pill.active.strong { background: var(--strong); border-color: var(--strong); }
+        .filter-pill.active.good { background: var(--good); border-color: var(--good); }
+        .filter-pill.active.fair { background: var(--fair); border-color: var(--fair); }
+        .filter-pill.active.weak { background: var(--weak); border-color: var(--weak); }
+
+        /* Results bar */
+        .results-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .results-count {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
             display: grid;
+            gap: 0.75rem;
+        }
+
+        /* Card */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: all var(--transition);
+            animation: fadeUp 0.3s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--accent);
+        }
+
+        .card-inner {
+            padding: 1rem 1.25rem;
+        }
+
+        .card-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 0.625rem;
+        }
+
+        .card-name-section {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .card-name {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.125rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-location {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .card-badges {
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+            flex-shrink: 0;
+            margin-left: 0.75rem;
+        }
+
+        .tier-badge {
+            padding: 0.25rem 0.625rem;
+            border-radius: 100px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .tier-badge.top { background: var(--top-bg); color: var(--top); }
+        .tier-badge.strong { background: var(--strong-bg); color: var(--strong); }
+        .tier-badge.good { background: var(--good-bg); color: var(--good); }
+        .tier-badge.fair { background: var(--fair-bg); color: var(--fair); }
+        .tier-badge.weak { background: var(--weak-bg); color: var(--weak); }
+
+        .score-pill {
+            padding: 0.25rem 0.5rem;
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+
+        /* Summary */
+        .card-summary {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 0.75rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Card meta row */
+        .card-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .card-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        /* Card actions */
+        .card-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all var(--transition);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .btn-primary:hover { background: var(--accent-hover); }
+
+        .btn-secondary {
+            background: var(--bg);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover { background: var(--bg-hover); color: var(--text); }
+
+        /* Pagination */
+        .pagination {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             gap: 1rem;
         }
-        
-        .candidate-card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            overflow: hidden;
-            border-left: 4px solid;
-        }
-        
-        .candidate-card.top { border-left-color: #e74c3c; }
-        .candidate-card.strong { border-left-color: #3498db; }
-        .candidate-card.good { border-left-color: #2ecc71; }
-        .candidate-card.fair { border-left-color: #f39c12; }
-        .candidate-card.weak { border-left-color: #95a5a6; }
-        
-        .card-header {
-            padding: 1rem;
-            background: #f8f9fa;
-            border-bottom: 1px solid #ecf0f1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .card-name {
-            font-size: 1.1rem;
-            font-weight: bold;
-            color: #2c3e50;
-            flex: 1;
-        }
-        
-        .tier-badge {
-            display: inline-block;
-            padding: 0.25rem 0.625rem;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-        
-        .tier-badge.top { background: #fee; color: #e74c3c; }
-        .tier-badge.strong { background: #e3f2fd; color: #2196f3; }
-        .tier-badge.good { background: #e8f5e9; color: #4caf50; }
-        .tier-badge.fair { background: #fff3e0; color: #ff9800; }
-        .tier-badge.weak { background: #eceff1; color: #607d8b; }
-        
-        .card-body {
-            padding: 1rem;
-        }
-        
-        .info-row {
+
+        .pagination-info {
             display: flex;
             align-items: center;
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #f8f9fa;
+            gap: 0.75rem;
         }
-        
-        .info-row:last-child {
-            border-bottom: none;
-        }
-        
-        .info-icon {
-            font-size: 1.2rem;
-            width: 2rem;
-            text-align: center;
-        }
-        
-        .info-content {
-            flex: 1;
-            font-size: 0.95rem;
-        }
-        
-        .info-label {
-            font-size: 0.75rem;
-            color: #7f8c8d;
-            margin-bottom: 0.125rem;
-        }
-        
-        .card-actions {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-        
-        .phone-link {
-            color: white;
-            background: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            display: inline-block;
-            padding: 0.75rem 1rem;
-            border-radius: 6px;
-            text-align: center;
-        }
-        
-        .phone-link:active {
-            background: #5568d3;
-        }
-        
-        .detail-btn {
-            background: #f8f9fa;
-            border: 2px solid #ecf0f1;
-            color: #667eea;
-            font-weight: 600;
-            padding: 0.75rem 1rem;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.9rem;
-        }
-        
-        .detail-btn:active {
-            background: #ecf0f1;
-        }
-        
-        .score-badge {
-            background: #4caf50;
-            color: white;
-            padding: 0.375rem 0.75rem;
-            border-radius: 12px;
-            font-weight: 600;
+
+        .page-select {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            background: var(--bg-card);
+            color: var(--text);
+            font-family: inherit;
             font-size: 0.85rem;
+            cursor: pointer;
         }
-        
-        .resume-status {
-            font-size: 1rem;
+
+        .page-buttons {
+            display: flex;
+            gap: 0.25rem;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        
-        .resume-status.has { color: #4caf50; }
-        .resume-status.missing { color: #e74c3c; }
-        
-        .hidden {
-            display: none;
-        }
-        
-        .results-count {
-            padding: 0.75rem 1rem;
-            background: white;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            text-align: center;
+
+        .page-btn {
+            min-width: 40px;
+            height: 40px;
+            padding: 0 0.75rem;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: 0.85rem;
             font-weight: 500;
-            color: #7f8c8d;
+            font-family: inherit;
+            transition: all var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        
+
+        .page-btn:hover:not(:disabled) { background: var(--bg-hover); border-color: var(--accent); }
+        .page-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+        .page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .page-btn.ellipsis { border: none; background: transparent; cursor: default; }
+
         /* Modal */
-        .modal {
+        .modal-overlay {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            inset: 0;
             background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(4px);
             z-index: 1000;
             align-items: center;
             justify-content: center;
             padding: 1rem;
+            animation: fadeIn 0.2s ease;
         }
-        
-        .modal.active {
-            display: flex;
-        }
-        
-        .modal-content {
-            background: white;
-            border-radius: 12px;
-            max-width: 600px;
+
+        .modal-overlay.active { display: flex; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .modal {
+            background: var(--bg-card);
+            border-radius: 16px;
+            max-width: 640px;
             width: 100%;
             max-height: 90vh;
             overflow-y: auto;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            box-shadow: var(--shadow-lg);
+            animation: slideUp 0.25s ease;
         }
-        
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(16px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         .modal-header {
-            padding: 1.5rem;
-            border-bottom: 2px solid #ecf0f1;
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--border);
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
-            background: white;
+            background: var(--bg-card);
             z-index: 1;
+            border-radius: 16px 16px 0 0;
         }
-        
+
         .modal-title {
-            font-size: 1.25rem;
-            font-weight: bold;
-            color: #2c3e50;
+            font-size: 1.15rem;
+            font-weight: 700;
         }
-        
+
         .modal-close {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            padding: 0.5rem;
-            line-height: 1;
-            color: #7f8c8d;
-        }
-        
-        .modal-body {
-            padding: 1.5rem;
-        }
-        
-        .detail-section {
-            margin-bottom: 1.5rem;
-        }
-        
-        .detail-section h3 {
-            font-size: 0.9rem;
-            color: #7f8c8d;
-            margin-bottom: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .detail-section p {
-            font-size: 1rem;
-            color: #2c3e50;
-        }
-        
-        .skills-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.5rem;
-        }
-        
-        .skill-item {
-            padding: 0.5rem;
-            border-radius: 6px;
-            font-size: 0.9rem;
-        }
-        
-        .skill-item.yes {
-            background: #e8f5e9;
-            color: #2e7d32;
-        }
-        
-        .skill-item.no {
-            background: #ffebee;
-            color: #c62828;
-        }
-        
-        /* Desktop optimizations */
-        @media (min-width: 768px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            .header .subtitle {
-                font-size: 1rem;
-            }
-            
-            .filter-buttons {
-                grid-template-columns: repeat(6, 1fr);
-            }
-            
-            .candidates-list {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .stat-card .number {
-                font-size: 2.5rem;
-            }
-            
-            .stat-card .label {
-                font-size: 0.9rem;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .candidates-list {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        
-        /* Pagination Styles */
-        .pagination-container {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            align-items: center;
-        }
-        
-        .pagination-info {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        
-        .items-selector {
-            padding: 0.5rem 1rem;
-            border: 2px solid #ddd;
+            width: 36px;
+            height: 36px;
             border-radius: 8px;
-            background: white;
-            font-size: 0.9rem;
+            border: none;
+            background: var(--bg);
+            color: var(--text-secondary);
             cursor: pointer;
-            min-height: 44px;
-        }
-        
-        .pagination-controls {
+            font-size: 1.25rem;
             display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
+            align-items: center;
             justify-content: center;
+            transition: all var(--transition);
         }
-        
-        .page-btn {
-            min-width: 44px;
-            min-height: 44px;
-            padding: 0.5rem 1rem;
-            border: 2px solid #ddd;
-            background: white;
-            border-radius: 8px;
-            cursor: pointer;
+
+        .modal-close:hover { background: var(--bg-hover); color: var(--text); }
+
+        .modal-body { padding: 1.5rem; }
+
+        .detail-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .detail-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--text-muted);
+            margin-bottom: 0.375rem;
+        }
+
+        .detail-value {
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .detail-summary {
+            background: var(--accent-light);
+            border-radius: var(--radius-sm);
+            padding: 0.875rem 1rem;
             font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.2s;
+            color: var(--text);
+            line-height: 1.6;
+            border-left: 3px solid var(--accent);
         }
-        
-        .page-btn:hover {
-            background: #f0f0f0;
-            border-color: #667eea;
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            .cards-grid { grid-template-columns: repeat(2, 1fr); }
+            .stat .num { font-size: 2.25rem; }
         }
-        
-        .page-btn.active {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
+
+        @media (min-width: 1024px) {
+            .cards-grid { grid-template-columns: repeat(3, 1fr); }
         }
-        
-        .page-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-        
-        .page-btn.ellipsis {
-            border: none;
-            background: transparent;
-            cursor: default;
-        }
-        
-        .page-btn.ellipsis:hover {
-            background: transparent;
-            border: none;
-        }
-        
+
         @media (max-width: 640px) {
-            .container {
-                padding-bottom: 4rem;
-            }
-            
-            .pagination-container {
-                margin-top: 1.5rem;
-                margin-bottom: 3rem;
-            }
-            
-            .page-btn {
-                min-width: 40px;
-                min-height: 40px;
-                padding: 0.4rem 0.8rem;
-                font-size: 0.85rem;
-            }
+            .stats-row { grid-template-columns: repeat(5, 1fr); gap: 0.5rem; }
+            .stat { padding: 0.625rem 0.375rem; }
+            .stat .num { font-size: 1.25rem; }
+            .stat .lbl { font-size: 0.55rem; }
+            .header { padding: 0.875rem 1rem; }
+            .brand h1 { font-size: 1rem; }
+            .brand-icon { width: 32px; height: 32px; font-size: 1rem; }
+            .container { padding: 1rem; }
+            .search-row { flex-direction: column; }
+            .sort-select { width: 100%; }
+            .filters { gap: 0.25rem; }
+            .filter-pill { padding: 0.375rem 0.75rem; font-size: 0.7rem; }
         }
+
+        /* Color indicator stripe on card */
+        .card[data-tier="top"] { border-top: 3px solid var(--top); }
+        .card[data-tier="strong"] { border-top: 3px solid var(--strong); }
+        .card[data-tier="good"] { border-top: 3px solid var(--good); }
+        .card[data-tier="fair"] { border-top: 3px solid var(--fair); }
+        .card[data-tier="weak"] { border-top: 3px solid var(--weak); }
     </style>
 </head>
 <body>
     <div class="header" id="header">
-        <h1>☕ 77 Candidates</h1>
-        <div class="subtitle">Kona Coffee Donut | Feb 9, 2026</div>
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-icon">☕</div>
+                <h1><span>83</span> Candidates</h1>
+            </div>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode">🌙</button>
+            </div>
+        </div>
     </div>
-    
+
     <div class="container">
-        <div class="stats-grid">
-            <div class="stat-card top">
-                <div class="number" id="stat-top">39</div>
-                <div class="label">🌟 TOP<br>11/11</div>
+        <div class="stats-row">
+            <div class="stat top" onclick="setFilter('top')">
+                <div class="num" id="stat-top">42</div>
+                <div class="lbl">Top</div>
             </div>
-            <div class="stat-card strong">
-                <div class="number" id="stat-strong">7</div>
-                <div class="label">⭐ STRONG<br>9-10</div>
+            <div class="stat strong" onclick="setFilter('strong')">
+                <div class="num" id="stat-strong">9</div>
+                <div class="lbl">Strong</div>
             </div>
-            <div class="stat-card good">
-                <div class="number" id="stat-good">12</div>
-                <div class="label">✅ GOOD<br>7-8</div>
+            <div class="stat good" onclick="setFilter('good')">
+                <div class="num" id="stat-good">13</div>
+                <div class="lbl">Good</div>
             </div>
-            <div class="stat-card fair">
-                <div class="number" id="stat-fair">11</div>
-                <div class="label">⚠️ FAIR<br>5-6</div>
+            <div class="stat fair" onclick="setFilter('fair')">
+                <div class="num" id="stat-fair">11</div>
+                <div class="lbl">Fair</div>
             </div>
-            <div class="stat-card weak">
-                <div class="number" id="stat-weak">8</div>
-                <div class="label">❌ TRAIN<br>&lt;5</div>
+            <div class="stat weak" onclick="setFilter('weak')">
+                <div class="num" id="stat-weak">8</div>
+                <div class="lbl">Train</div>
             </div>
         </div>
-        
+
         <div class="controls">
-            <div class="search-box">
-                <input type="text" id="search" placeholder="🔍 Search name, experience...">
+            <div class="search-row">
+                <div class="search-wrap">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search" class="search-input" placeholder="Search candidates...">
+                </div>
+                <select id="sort" class="sort-select">
+                    <option value="score-desc">Score ↓</option>
+                    <option value="score-asc">Score ↑</option>
+                    <option value="date-desc">Newest</option>
+                    <option value="date-asc">Oldest</option>
+                    <option value="name-asc">Name A-Z</option>
+                    <option value="name-desc">Name Z-A</option>
+                </select>
             </div>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-tier="all">All</button>
-                <button class="filter-btn" data-tier="top">🌟 TOP</button>
-                <button class="filter-btn" data-tier="strong">⭐ STRONG</button>
-                <button class="filter-btn" data-tier="good">✅ GOOD</button>
-                <button class="filter-btn" data-tier="fair">⚠️ FAIR</button>
-                <button class="filter-btn" data-tier="weak">❌ TRAIN</button>
+            <div class="filters">
+                <button class="filter-pill active" data-tier="all">All 83</button>
+                <button class="filter-pill top" data-tier="top">🌟 Top</button>
+                <button class="filter-pill strong" data-tier="strong">⭐ Strong</button>
+                <button class="filter-pill good" data-tier="good">✅ Good</button>
+                <button class="filter-pill fair" data-tier="fair">⚠️ Fair</button>
+                <button class="filter-pill weak" data-tier="weak">❌ Train</button>
             </div>
         </div>
-        
-        <div class="results-count" id="results-count">Showing 77 candidates</div>
-        
-        <div class="candidates-list" id="candidates-list">
-            <!-- Populated by JavaScript -->
+
+        <div class="results-bar">
+            <div class="results-count" id="results-count">Showing 83 candidates</div>
         </div>
-        
-        <!-- Pagination Controls -->
-        <div class="pagination-container">
+
+        <div class="cards-grid" id="cards-grid"></div>
+
+        <div class="pagination">
             <div class="pagination-info">
-                <select id="items-per-page" class="items-selector">
-                    <option value="10">10 per page</option>
-                    <option value="20" selected>20 per page</option>
-                    <option value="50">50 per page</option>
+                <select id="items-per-page" class="page-select">
+                    <option value="12">12 per page</option>
+                    <option value="24" selected>24 per page</option>
+                    <option value="48">48 per page</option>
                     <option value="99999">Show all</option>
                 </select>
             </div>
-            <div class="pagination-controls" id="pagination"></div>
+            <div class="page-buttons" id="pagination"></div>
         </div>
     </div>
-    
+
     <!-- Modal -->
-    <div class="modal" id="modal">
-        <div class="modal-content">
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
             <div class="modal-header">
-                <div class="modal-title" id="modal-title">Candidate Details</div>
-                <button class="modal-close" onclick="closeModal()">×</button>
+                <div class="modal-title" id="modal-title">Details</div>
+                <button class="modal-close" onclick="closeModal()">✕</button>
             </div>
-            <div class="modal-body" id="modal-body">
-                <!-- Populated by JavaScript -->
-            </div>
+            <div class="modal-body" id="modal-body"></div>
         </div>
     </div>
-    
+
     <script src="candidates-data.js"></script>
     <script>
-        // State
         let currentFilter = 'all';
         let searchQuery = '';
-        let lastScrollY = 0;
         let currentPage = 1;
-        let itemsPerPage = 20;
-        
-        // Initialize
-        renderCards();
-        
-        // Scroll handler for header hide/show
+        let itemsPerPage = 24;
+        let sortBy = 'score-desc';
+        let lastScrollY = 0;
+
+        // Theme
+        const theme = localStorage.getItem('kcd-theme') || 'light';
+        if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.getElementById('theme-toggle').textContent = '☀️';
+        }
+
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
+            document.getElementById('theme-toggle').textContent = isDark ? '🌙' : '☀️';
+            localStorage.setItem('kcd-theme', isDark ? 'light' : 'dark');
+        });
+
+        // Scroll
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
-            const currentScrollY = window.scrollY;
-            
-            if (currentScrollY > lastScrollY && currentScrollY > 100) {
-                // Scrolling down
-                header.classList.add('hidden');
-            } else {
-                // Scrolling up
-                header.classList.remove('hidden');
-            }
-            
-            lastScrollY = currentScrollY;
+            const y = window.scrollY;
+            if (y > lastScrollY && y > 80) header.classList.add('hidden');
+            else header.classList.remove('hidden');
+            if (y > 10) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+            lastScrollY = y;
         });
-        
-        // Event listeners
-        document.getElementById('search').addEventListener('input', (e) => {
+
+        // Events
+        document.getElementById('search').addEventListener('input', e => {
             searchQuery = e.target.value.toLowerCase();
-            currentPage = 1; // Reset to first page on new search
-            renderCards();
+            currentPage = 1;
+            render();
         });
-        
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
-                currentFilter = e.target.dataset.tier;
-                currentPage = 1; // Reset to first page on filter change
-                renderCards();
+
+        document.getElementById('sort').addEventListener('change', e => {
+            sortBy = e.target.value;
+            currentPage = 1;
+            render();
+        });
+
+        document.querySelectorAll('.filter-pill').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.tier;
+                currentPage = 1;
+                render();
             });
         });
-        
-        document.getElementById('items-per-page').addEventListener('change', (e) => {
+
+        document.getElementById('items-per-page').addEventListener('change', e => {
             itemsPerPage = parseInt(e.target.value);
-            currentPage = 1; // Reset to first page when changing items per page
-            renderCards();
+            currentPage = 1;
+            render();
         });
-        
-        // Modal close on background click
-        document.getElementById('modal').addEventListener('click', (e) => {
-            if (e.target.id === 'modal') {
-                closeModal();
-            }
+
+        document.getElementById('modal-overlay').addEventListener('click', e => {
+            if (e.target.id === 'modal-overlay') closeModal();
         });
-        
-        function renderCards() {
-            let filtered = candidatesData;
-            
-            // Filter by tier
-            if (currentFilter !== 'all') {
-                filtered = filtered.filter(c => c.tier === currentFilter);
-            }
-            
-            // Filter by search
+
+        function setFilter(tier) {
+            document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+            const pill = document.querySelector(`.filter-pill[data-tier="${tier}"]`);
+            if (pill) pill.classList.add('active');
+            currentFilter = tier;
+            currentPage = 1;
+            render();
+        }
+
+        function getFiltered() {
+            let data = [...candidatesData];
+            if (currentFilter !== 'all') data = data.filter(c => c.tier === currentFilter);
             if (searchQuery) {
-                filtered = filtered.filter(c => {
-                    return c.name.toLowerCase().includes(searchQuery) ||
-                           (c.experience && c.experience.toLowerCase().includes(searchQuery)) ||
-                           (c.education && c.education.toLowerCase().includes(searchQuery));
-                });
+                data = data.filter(c =>
+                    c.name.toLowerCase().includes(searchQuery) ||
+                    (c.experience || '').toLowerCase().includes(searchQuery) ||
+                    (c.education || '').toLowerCase().includes(searchQuery) ||
+                    (c.summary || '').toLowerCase().includes(searchQuery) ||
+                    (c.location || '').toLowerCase().includes(searchQuery)
+                );
             }
-            
-            // Calculate pagination
-            const totalItems = filtered.length;
-            const totalPages = Math.ceil(totalItems / itemsPerPage);
-            
-            // Ensure current page is within bounds
-            if (currentPage > totalPages && totalPages > 0) {
-                currentPage = totalPages;
-            }
-            if (currentPage < 1) {
-                currentPage = 1;
-            }
-            
-            // Get current page items
-            const startIndex = (currentPage - 1) * itemsPerPage;
-            const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
-            const currentPageItems = filtered.slice(startIndex, endIndex);
-            
-            // Update count
-            const countText = itemsPerPage >= 99999 
-                ? `Showing all ${totalItems} candidate${totalItems !== 1 ? 's' : ''}`
-                : `Showing ${startIndex + 1}-${endIndex} of ${totalItems} candidate${totalItems !== 1 ? 's' : ''}`;
+            // Sort
+            const [key, dir] = sortBy.split('-');
+            data.sort((a, b) => {
+                let va, vb;
+                if (key === 'score') { va = a.score; vb = b.score; }
+                else if (key === 'date') { va = a.date; vb = b.date; }
+                else { va = a.name.toLowerCase(); vb = b.name.toLowerCase(); }
+                if (va < vb) return dir === 'asc' ? -1 : 1;
+                if (va > vb) return dir === 'asc' ? 1 : -1;
+                return 0;
+            });
+            return data;
+        }
+
+        function render() {
+            const filtered = getFiltered();
+            const total = filtered.length;
+            const totalPages = Math.ceil(total / itemsPerPage);
+            if (currentPage > totalPages && totalPages > 0) currentPage = totalPages;
+            if (currentPage < 1) currentPage = 1;
+
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = Math.min(start + itemsPerPage, total);
+            const page = filtered.slice(start, end);
+
+            const countText = itemsPerPage >= 99999
+                ? `Showing all ${total} candidates`
+                : `Showing ${start + 1}–${end} of ${total} candidates`;
             document.getElementById('results-count').textContent = countText;
-            
-            // Render cards (only current page)
-            const container = document.getElementById('candidates-list');
-            container.innerHTML = currentPageItems.map((c, idx) => {
-                const originalIndex = filtered.indexOf(c);
+
+            const grid = document.getElementById('cards-grid');
+            grid.innerHTML = page.map((c, i) => {
+                const idx = candidatesData.indexOf(c);
+                const exp = c.experience && c.experience !== 'None' ? c.experience : '';
                 return `
-                <div class="candidate-card ${c.tier}">
-                    <div class="card-header">
-                        <div class="card-name">${c.name}</div>
-                        <span class="tier-badge ${c.tier}">${getTierLabel(c.tier)}</span>
-                    </div>
-                    <div class="card-body">
-                        <div class="info-row">
-                            <div class="info-icon">📊</div>
-                            <div class="info-content">
-                                <div class="info-label">Qualifications</div>
-                                <span class="score-badge">${c.score}/11 ✅</span>
+                <div class="card" data-tier="${c.tier}" style="animation-delay:${i * 30}ms">
+                    <div class="card-inner">
+                        <div class="card-top">
+                            <div class="card-name-section">
+                                <div class="card-name">${c.name}</div>
+                                <div class="card-location">📍 ${c.location}</div>
+                            </div>
+                            <div class="card-badges">
+                                <span class="score-pill">${c.score}</span>
+                                <span class="tier-badge ${c.tier}">${c.tier}</span>
                             </div>
                         </div>
-                        ${c.experience ? `
-                        <div class="info-row">
-                            <div class="info-icon">💼</div>
-                            <div class="info-content">
-                                <div class="info-label">Experience</div>
-                                ${c.experience}
-                            </div>
-                        </div>
-                        ` : ''}
-                        <div class="info-row">
-                            <div class="info-icon">📍</div>
-                            <div class="info-content">
-                                <div class="info-label">Location</div>
-                                ${c.location}
-                            </div>
-                        </div>
-                        <div class="info-row">
-                            <div class="info-icon">📅</div>
-                            <div class="info-content">
-                                <div class="info-label">Applied</div>
-                                ${c.date}
-                            </div>
+                        ${c.summary ? `<div class="card-summary">${c.summary}</div>` : ''}
+                        <div class="card-meta">
+                            ${exp ? `<span class="card-meta-item">💼 ${exp}</span>` : ''}
+                            <span class="card-meta-item">📅 ${c.date}</span>
+                            ${c.resume ? '<span class="card-meta-item">📄 Resume</span>' : ''}
                         </div>
                         <div class="card-actions">
-                            <a href="tel:${c.phone.replace(/[^\d]/g, '')}" class="phone-link">
-                                📞 ${c.phone}
-                            </a>
-                            <button class="detail-btn" onclick="showDetails(${originalIndex})">
-                                상세보기
-                            </button>
+                            <a href="tel:${c.phone.replace(/[^\d+]/g, '')}" class="btn btn-primary">📞 Call</a>
+                            <button class="btn btn-secondary" onclick="showDetails(${idx})">Details</button>
                         </div>
                     </div>
-                </div>
-            `}).join('');
-            
-            // Render pagination
+                </div>`;
+            }).join('');
+
             renderPagination(totalPages);
-            
-            // Scroll to top on page change
-            if (currentPage > 1) {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
         }
-        
+
         function renderPagination(totalPages) {
-            const container = document.getElementById('pagination');
-            
-            if (totalPages <= 1 || itemsPerPage >= 99999) {
-                container.innerHTML = '';
-                return;
-            }
-            
-            let html = [];
-            
-            // Previous button
-            html.push(`
-                <button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(${currentPage - 1})">
-                    ◀ Prev
-                </button>
-            `);
-            
-            // Page numbers with smart ellipsis
-            const maxButtons = 7; // Max page buttons to show
-            
-            if (totalPages <= maxButtons) {
-                // Show all pages
-                for (let i = 1; i <= totalPages; i++) {
-                    html.push(`
-                        <button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">
-                            ${i}
-                        </button>
-                    `);
-                }
+            const el = document.getElementById('pagination');
+            if (totalPages <= 1 || itemsPerPage >= 99999) { el.innerHTML = ''; return; }
+            let html = [`<button class="page-btn" ${currentPage===1?'disabled':''} onclick="goPage(${currentPage-1})">‹</button>`];
+            if (totalPages <= 7) {
+                for (let i = 1; i <= totalPages; i++)
+                    html.push(`<button class="page-btn ${i===currentPage?'active':''}" onclick="goPage(${i})">${i}</button>`);
             } else {
-                // Show first page
-                html.push(`
-                    <button class="page-btn ${1 === currentPage ? 'active' : ''}" onclick="changePage(1)">
-                        1
-                    </button>
-                `);
-                
-                // Ellipsis or pages near current
-                if (currentPage > 3) {
-                    html.push('<button class="page-btn ellipsis" disabled>...</button>');
-                }
-                
-                // Pages around current page
-                const start = Math.max(2, currentPage - 1);
-                const end = Math.min(totalPages - 1, currentPage + 1);
-                
-                for (let i = start; i <= end; i++) {
-                    html.push(`
-                        <button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">
-                            ${i}
-                        </button>
-                    `);
-                }
-                
-                // Ellipsis or pages near end
-                if (currentPage < totalPages - 2) {
-                    html.push('<button class="page-btn ellipsis" disabled>...</button>');
-                }
-                
-                // Show last page
-                html.push(`
-                    <button class="page-btn ${totalPages === currentPage ? 'active' : ''}" onclick="changePage(${totalPages})">
-                        ${totalPages}
-                    </button>
-                `);
+                html.push(`<button class="page-btn ${1===currentPage?'active':''}" onclick="goPage(1)">1</button>`);
+                if (currentPage > 3) html.push('<button class="page-btn ellipsis" disabled>…</button>');
+                for (let i = Math.max(2,currentPage-1); i <= Math.min(totalPages-1,currentPage+1); i++)
+                    html.push(`<button class="page-btn ${i===currentPage?'active':''}" onclick="goPage(${i})">${i}</button>`);
+                if (currentPage < totalPages-2) html.push('<button class="page-btn ellipsis" disabled>…</button>');
+                html.push(`<button class="page-btn ${totalPages===currentPage?'active':''}" onclick="goPage(${totalPages})">${totalPages}</button>`);
             }
-            
-            // Next button
-            html.push(`
-                <button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(${currentPage + 1})">
-                    Next ▶
-                </button>
-            `);
-            
-            container.innerHTML = html.join('');
+            html.push(`<button class="page-btn" ${currentPage===totalPages?'disabled':''} onclick="goPage(${currentPage+1})">›</button>`);
+            el.innerHTML = html.join('');
         }
-        
-        function changePage(page) {
-            currentPage = page;
-            renderCards();
-        }
-        
-        function showDetails(index) {
-            const c = candidatesData[index];
-            const modal = document.getElementById('modal');
-            const title = document.getElementById('modal-title');
-            const body = document.getElementById('modal-body');
-            
-            title.textContent = c.name;
-            
-            body.innerHTML = `
-                <div class="detail-section">
-                    <h3>🏆 Tier & Score</h3>
-                    <p>
-                        <span class="tier-badge ${c.tier}">${getTierLabel(c.tier)}</span>
-                        <span class="score-badge">${c.score}/11 Qualifications</span>
-                    </p>
+
+        function goPage(p) { currentPage = p; render(); window.scrollTo({top: 0, behavior: 'smooth'}); }
+
+        function showDetails(idx) {
+            const c = candidatesData[idx];
+            document.getElementById('modal-title').textContent = c.name;
+            document.getElementById('modal-body').innerHTML = `
+                <div class="detail-group">
+                    <div style="display:flex;gap:0.5rem;align-items:center;margin-bottom:0.75rem;">
+                        <span class="tier-badge ${c.tier}">${c.tier}</span>
+                        <span class="score-pill">${c.score} qualifications</span>
+                    </div>
                 </div>
-                
-                <div class="detail-section">
-                    <h3>📞 Contact</h3>
-                    <p><a href="tel:${c.phone.replace(/[^\d]/g, '')}" class="phone-link">${c.phone}</a></p>
+                ${c.summary ? `<div class="detail-group"><div class="detail-summary">${c.summary}</div></div>` : ''}
+                <div class="detail-group">
+                    <div class="detail-label">Phone</div>
+                    <div class="detail-value"><a href="tel:${c.phone.replace(/[^\d+]/g,'')}" style="color:var(--accent);font-weight:600;text-decoration:none;">${c.phone}</a></div>
                 </div>
-                
-                ${c.experience ? `
-                <div class="detail-section">
-                    <h3>💼 Experience</h3>
-                    <p>${c.experience}</p>
-                </div>
-                ` : ''}
-                
-                ${c.education ? `
-                <div class="detail-section">
-                    <h3>🎓 Education</h3>
-                    <p>${c.education}</p>
-                </div>
-                ` : ''}
-                
-                <div class="detail-section">
-                    <h3>📍 Location</h3>
-                    <p>${c.location}</p>
-                </div>
-                
-                <div class="detail-section">
-                    <h3>📅 Application Date</h3>
-                    <p>${c.date}</p>
-                </div>
-                
-                <div class="detail-section">
-                    <h3>📄 Resume</h3>
+                ${c.experience && c.experience !== 'None' ? `<div class="detail-group"><div class="detail-label">Experience</div><div class="detail-value">${c.experience}</div></div>` : ''}
+                ${c.education ? `<div class="detail-group"><div class="detail-label">Education</div><div class="detail-value">${c.education}</div></div>` : ''}
+                ${c.skills ? `<div class="detail-group"><div class="detail-label">Skills</div><div class="detail-value">${c.skills}</div></div>` : ''}
+                <div class="detail-group"><div class="detail-label">Location</div><div class="detail-value">${c.location}</div></div>
+                <div class="detail-group"><div class="detail-label">Applied</div><div class="detail-value">${c.date}</div></div>
+                <div class="detail-group">
+                    <div class="detail-label">Resume</div>
                     ${c.resume ? `
-                        <p style="margin-bottom: 1rem;">
-                            <a href="resumes/${c.resumeFile}" target="_blank" class="phone-link" style="display: inline-block;">
-                                📄 새창으로 Resume 보기
-                            </a>
-                        </p>
-                        <iframe src="resumes/${c.resumeFile}" style="width: 100%; height: 600px; border: 2px solid #ecf0f1; border-radius: 8px;"></iframe>
-                    ` : `
-                        <p>
-                            <span class="resume-status missing">
-                                ✗ Resume not found
-                            </span>
-                        </p>
-                    `}
+                        <div style="margin-top:0.5rem;">
+                            <a href="resumes/${c.resumeFile}" target="_blank" class="btn btn-primary" style="display:inline-flex;margin-bottom:0.75rem;">📄 Open Resume</a>
+                        </div>
+                        <iframe src="resumes/${c.resumeFile}" style="width:100%;height:500px;border:1px solid var(--border);border-radius:var(--radius-sm);"></iframe>
+                    ` : '<div class="detail-value" style="color:var(--text-muted);">No resume on file</div>'}
                 </div>
             `;
-            
-            modal.classList.add('active');
+            document.getElementById('modal-overlay').classList.add('active');
             document.body.style.overflow = 'hidden';
         }
-        
+
         function closeModal() {
-            const modal = document.getElementById('modal');
-            modal.classList.remove('active');
+            document.getElementById('modal-overlay').classList.remove('active');
             document.body.style.overflow = '';
         }
-        
-        function getTierLabel(tier) {
-            const labels = {
-                'top': '🌟 TOP TIER',
-                'strong': '⭐ STRONG',
-                'good': '✅ GOOD',
-                'fair': '⚠️ FAIR',
-                'weak': '❌ TRAINING'
-            };
-            return labels[tier] || tier;
-        }
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        // Init
+        render();
     </script>
 </body>
 </html>
