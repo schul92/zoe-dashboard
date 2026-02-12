@@ -1,36 +1,36 @@
 {
   "metadata": {
-    "collectedAt": "2026-02-12T06:51:02.702594Z",
+    "collectedAt": "2026-02-12T19:29:07.702441Z",
     "property": "properties/523137923",
     "period": {
-      "startDate": "2026-01-12",
-      "endDate": "2026-02-11",
+      "startDate": "2026-01-13",
+      "endDate": "2026-02-12",
       "days": 30
     }
   },
   "totals": {
-    "sessions": 100,
-    "activeUsers": 80,
-    "screenPageViews": 314,
-    "bounceRate": 0.71,
-    "averageSessionDuration": 297.28354671,
+    "sessions": 106,
+    "activeUsers": 86,
+    "screenPageViews": 322,
+    "bounceRate": 0.7264150943396226,
+    "averageSessionDuration": 280.77814893396226,
     "engagedSessions": 29
   },
   "trafficSources": [
     {
       "sessionDefaultChannelGroup": "Direct",
-      "sessions": 81,
-      "activeUsers": 69
+      "sessions": 85,
+      "activeUsers": 73
     },
     {
       "sessionDefaultChannelGroup": "Organic Search",
-      "sessions": 16,
-      "activeUsers": 11
+      "sessions": 18,
+      "activeUsers": 13
     },
     {
       "sessionDefaultChannelGroup": "Unassigned",
-      "sessions": 5,
-      "activeUsers": 5
+      "sessions": 7,
+      "activeUsers": 7
     },
     {
       "sessionDefaultChannelGroup": "Organic Shopping",
@@ -47,16 +47,16 @@
     {
       "pagePath": "/",
       "pageTitle": "CareK9",
-      "screenPageViews": 165,
-      "activeUsers": 50,
-      "averageSessionDuration": 318.89936457575755
+      "screenPageViews": 168,
+      "activeUsers": 53,
+      "averageSessionDuration": 305.22599999999994
     },
     {
       "pagePath": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
       "pageTitle": "Chicken Wrapped Pumpkin Dog Treats | High Protein Gut Health | CareK9",
-      "screenPageViews": 28,
-      "activeUsers": 4,
-      "averageSessionDuration": 505.07464125
+      "screenPageViews": 30,
+      "activeUsers": 6,
+      "averageSessionDuration": 336.7164275
     },
     {
       "pagePath": "/collections/treat",
@@ -71,6 +71,13 @@
       "screenPageViews": 10,
       "activeUsers": 6,
       "averageSessionDuration": 195.38875516666667
+    },
+    {
+      "pagePath": "/pages/carek9-x-human-canine-collaborative",
+      "pageTitle": "CareK9 x Human Canine Collaborative",
+      "screenPageViews": 9,
+      "activeUsers": 8,
+      "averageSessionDuration": 9.784817125
     },
     {
       "pagePath": "/cart",
@@ -99,13 +106,6 @@
       "screenPageViews": 7,
       "activeUsers": 5,
       "averageSessionDuration": 17.936349
-    },
-    {
-      "pagePath": "/pages/carek9-x-human-canine-collaborative",
-      "pageTitle": "CareK9 x Human Canine Collaborative",
-      "screenPageViews": 7,
-      "activeUsers": 6,
-      "averageSessionDuration": 9.694720666666667
     },
     {
       "pagePath": "/collections/food-topper",
@@ -213,6 +213,13 @@
       "averageSessionDuration": 13.663435
     },
     {
+      "pagePath": "/a/blog",
+      "pageTitle": "Blog \u2013 CareK9",
+      "screenPageViews": 1,
+      "activeUsers": 1,
+      "averageSessionDuration": 0.782965
+    },
+    {
       "pagePath": "/checkouts/cn/hWN7oG8k0NB9uAscx2IaeC4W/en/thank-you",
       "pageTitle": "Checkout - Receipt",
       "screenPageViews": 1,
@@ -246,25 +253,18 @@
       "screenPageViews": 1,
       "activeUsers": 1,
       "averageSessionDuration": 264.049974
-    },
-    {
-      "pagePath": "/checkouts/cn/hWN8bV1zyLhNweUIs0syzjXu/en-us/thank-you",
-      "pageTitle": "Checkout - Receipt",
-      "screenPageViews": 1,
-      "activeUsers": 1,
-      "averageSessionDuration": 108.164721
     }
   ],
   "devices": [
     {
       "deviceCategory": "desktop",
-      "sessions": 74,
-      "activeUsers": 63
+      "sessions": 78,
+      "activeUsers": 67
     },
     {
       "deviceCategory": "mobile",
-      "sessions": 28,
-      "activeUsers": 19
+      "sessions": 30,
+      "activeUsers": 21
     }
   ],
   "geography": [
@@ -289,18 +289,18 @@
     {
       "country": "China",
       "region": "Gansu",
-      "sessions": 6,
-      "activeUsers": 6
-    },
-    {
-      "country": "United States",
-      "region": "Alabama",
-      "sessions": 3,
-      "activeUsers": 3
+      "sessions": 7,
+      "activeUsers": 7
     },
     {
       "country": "United States",
       "region": "Florida",
+      "sessions": 4,
+      "activeUsers": 4
+    },
+    {
+      "country": "United States",
+      "region": "Alabama",
       "sessions": 3,
       "activeUsers": 3
     },
@@ -329,6 +329,12 @@
       "activeUsers": 2
     },
     {
+      "country": "Singapore",
+      "region": "",
+      "sessions": 2,
+      "activeUsers": 2
+    },
+    {
       "country": "United States",
       "region": "Colorado",
       "sessions": 2,
@@ -343,6 +349,12 @@
     {
       "country": "United States",
       "region": "Pennsylvania",
+      "sessions": 2,
+      "activeUsers": 2
+    },
+    {
+      "country": "United States",
+      "region": "Washington",
       "sessions": 2,
       "activeUsers": 2
     },
@@ -373,18 +385,6 @@
     {
       "country": "South Africa",
       "region": "Western Cape",
-      "sessions": 1,
-      "activeUsers": 1
-    },
-    {
-      "country": "Spain",
-      "region": "Valencian Community",
-      "sessions": 1,
-      "activeUsers": 1
-    },
-    {
-      "country": "Sweden",
-      "region": "(not set)",
       "sessions": 1,
       "activeUsers": 1
     }
@@ -440,21 +440,27 @@
     },
     {
       "date": "20260211",
-      "sessions": 22,
-      "activeUsers": 22,
-      "screenPageViews": 29
+      "sessions": 24,
+      "activeUsers": 24,
+      "screenPageViews": 31
+    },
+    {
+      "date": "20260212",
+      "sessions": 4,
+      "activeUsers": 4,
+      "screenPageViews": 6
     }
   ],
   "landingPages": [
     {
       "landingPage": "/",
-      "sessions": 63,
-      "bounceRate": 0.6349206349206349,
-      "averageSessionDuration": 400.79445282539683
+      "sessions": 65,
+      "bounceRate": 0.6461538461538462,
+      "averageSessionDuration": 388.4623158153846
     },
     {
       "landingPage": "",
-      "sessions": 4,
+      "sessions": 5,
       "bounceRate": 1,
       "averageSessionDuration": 0
     },
@@ -471,10 +477,22 @@
       "averageSessionDuration": 2.1438973333333333
     },
     {
+      "landingPage": "/pages/carek9-x-human-canine-collaborative",
+      "sessions": 3,
+      "bounceRate": 1,
+      "averageSessionDuration": 0
+    },
+    {
       "landingPage": "/products/beef-training-treat",
       "sessions": 3,
       "bounceRate": 1,
       "averageSessionDuration": 6.784094333333333
+    },
+    {
+      "landingPage": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "sessions": 3,
+      "bounceRate": 0.6666666666666666,
+      "averageSessionDuration": 811.3212149999999
     },
     {
       "landingPage": "/products/pars-mint-dental-cookies",
@@ -507,12 +525,6 @@
       "averageSessionDuration": 0
     },
     {
-      "landingPage": "/pages/carek9-x-human-canine-collaborative",
-      "sessions": 2,
-      "bounceRate": 1,
-      "averageSessionDuration": 0
-    },
-    {
       "landingPage": "/pages/contact-us",
       "sessions": 2,
       "bounceRate": 1,
@@ -529,6 +541,12 @@
       "sessions": 2,
       "bounceRate": 1,
       "averageSessionDuration": 5.013842
+    },
+    {
+      "landingPage": "/a/blog",
+      "sessions": 1,
+      "bounceRate": 1,
+      "averageSessionDuration": 34.129116
     },
     {
       "landingPage": "/cart",
@@ -549,39 +567,27 @@
       "averageSessionDuration": 0.645341
     },
     {
-      "landingPage": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "sessions": 1,
-      "bounceRate": 0,
-      "averageSessionDuration": 2433.963645
-    },
-    {
       "landingPage": "/products/functional-dog-food-topper-for-joint",
       "sessions": 1,
       "bounceRate": 1,
       "averageSessionDuration": 14.953676
-    },
-    {
-      "landingPage": "/products/paw-balm",
-      "sessions": 1,
-      "bounceRate": 0,
-      "averageSessionDuration": 1407.725646
     }
   ],
   "referrers": [
     {
       "sessionSource": "(direct)",
-      "sessions": 81,
-      "activeUsers": 69
+      "sessions": 85,
+      "activeUsers": 73
     },
     {
       "sessionSource": "google",
-      "sessions": 16,
-      "activeUsers": 11
+      "sessions": 18,
+      "activeUsers": 13
     },
     {
       "sessionSource": "(not set)",
-      "sessions": 5,
-      "activeUsers": 5
+      "sessions": 7,
+      "activeUsers": 7
     },
     {
       "sessionSource": "admin.shopify.com",

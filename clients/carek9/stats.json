@@ -1,9 +1,9 @@
 {
   "client": "carek9",
   "name": "CareK9",
-  "emoji": "🐕",
+  "emoji": "\ud83d\udc15",
   "activeClients": 1,
-  "dailyCrons": 0,
+  "dailyCrons": 1,
   "dashboards": 1,
   "grandOpening": {
     "days": null,
@@ -12,7 +12,7 @@
   "seo": {
     "clicks": 16,
     "impressions": 100,
-    "avgPosition": "—",
+    "avgPosition": "\u2014",
     "updatedHoursAgo": 0
   },
   "news": {
@@ -34,24 +34,25 @@
   },
   "highlights": [
     {
-      "icon": "📊",
+      "icon": "\ud83d\udcca",
       "title": "GA4 Dashboard Live",
       "subtitle": "100 sessions, 80 users, 314 pageviews (30d)"
     },
     {
-      "icon": "🔍",
+      "icon": "\ud83d\udd0d",
       "title": "SEO Score: 62/100",
       "subtitle": "10 issues found, 5 strengths identified"
     },
     {
-      "icon": "⚠️",
+      "icon": "\u26a0\ufe0f",
       "title": "71% Bounce Rate",
       "subtitle": "Most landing pages have 100% bounce rate"
     },
     {
-      "icon": "📝",
+      "icon": "\ud83d\udcdd",
       "title": "No Blog Content",
       "subtitle": "Missing content marketing opportunity for organic traffic"
     }
-  ]
+  ],
+  "lastUpdated": "2026-02-12"
 }
