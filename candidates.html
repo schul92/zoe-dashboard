@@ -74,18 +74,8 @@
 
         /* Header */
         .header {
-            background: var(--bg-card);
-            border-bottom: 1px solid var(--border);
-            padding: 1.25rem 1.5rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(12px);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: none;
         }
-
-        .header.scrolled { box-shadow: var(--shadow-md); }
-        .header.hidden { transform: translateY(-100%); }
 
         .header-inner {
             max-width: 1280px;
@@ -695,7 +685,7 @@
             <div class="search-row">
                 <div class="search-wrap">
                     <span class="search-icon">🔍</span>
-                    <input type="text" id="search" class="search-input" placeholder="Search candidates...">
+                    <input type="text" id="search" class="search-input" placeholder="Search 83 candidates...">
                 </div>
                 <select id="sort" class="sort-select">
                     <option value="score-desc">Score ↓</option>
@@ -705,6 +695,7 @@
                     <option value="name-asc">Name A-Z</option>
                     <option value="name-desc">Name Z-A</option>
                 </select>
+                <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode">🌙</button>
             </div>
             <div class="filters">
                 <button class="filter-pill active" data-tier="all">All 83</button>
@@ -769,16 +760,7 @@
             localStorage.setItem('kcd-theme', isDark ? 'light' : 'dark');
         });
 
-        // Scroll
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            const y = window.scrollY;
-            if (y > lastScrollY && y > 80) header.classList.add('hidden');
-            else header.classList.remove('hidden');
-            if (y > 10) header.classList.add('scrolled');
-            else header.classList.remove('scrolled');
-            lastScrollY = y;
-        });
+        // (header removed per Steve's request)
 
         // Events
         document.getElementById('search').addEventListener('input', e => {
