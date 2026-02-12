@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-11T17:02:08.757527Z",
-  "version": "v2-2026-02-11",
+  "lastUpdated": "2026-02-12T13:00:11.952339Z",
+  "version": "v2-2026-02-12",
   "sources": {
     "brave_search": true,
     "twitter": true,
@@ -16,6 +16,13 @@
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com",
+      "category": "hawaii",
+      "description": "Hawaii\u2019s clue drop is set for 12 p.m. on Wednesday, Feb."
+    },
+    {
       "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
       "source": "Brave Search",
       "url": "https://www.waikikigetdown.com/",
@@ -23,11 +30,25 @@
       "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
     },
     {
-      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
+      "title": "Things to Do in Honolulu, HI This Week - Events & Activities | Eventbrite",
       "source": "Brave Search",
-      "url": "https://www.kitv.com/",
+      "url": "https://www.eventbrite.com/d/hi--honolulu/events--this-week/",
       "category": "hawaii",
-      "description": "<strong>Windy conditions today as strong trade winds continue across the islands</strong>. Skies will be mostly cloudy, with frequent showers moving into windward areas, especially on Kauai. A Wind Ad"
+      "description": "Share this event: <strong>Illusions The Drag Queen Show Honolulu - Drag Queen Dinner Show - Honolulu</strong>Save this event: <strong>Illusions The Drag Queen Show Honolulu - Drag Queen Dinner Show - "
+    },
+    {
+      "title": "Calendar",
+      "source": "Brave Search",
+      "url": "https://www.staradvertiser.com/calendar/",
+      "category": "hawaii",
+      "description": "Find out where to go for the latest community gatherings in Hawaii and fun events around town. Hosting an event? Add it to our calendar."
+    },
+    {
+      "title": "Events Calendar | kitv.com",
+      "source": "Brave Search",
+      "url": "https://www.kitv.com/island-style/calendar/",
+      "category": "hawaii",
+      "description": "Events Calendar \u00b7 Island Life \u00b7 Best of Hawaii \u00b7 Island Deals \u00b7 KIKU\u00ae \u00b7 Contact \u00b7 Meet the Team \u00b7 Our Apps \u00b7 Email Alerts \u00b7 About Us \u00b7 Jobs \u00b7 Advertise With Us \u00b7 Toggle navigation Menu \u00b7 80\u00b0 \u00b7 KULEANA"
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
@@ -51,11 +72,11 @@
       "description": "High-end coffee shop Blue Bottle, which has 78 U.S. stores, has opened two more since the start of the year. Even McDonald\u2019s and Taco Bell are bolstering their beverage offerings. \u201cPeople haven\u2019t fall"
     },
     {
-      "title": "[MOD] The Daily Question Thread",
+      "title": "Vietnamese Iced Coffee Setup",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1r1uerp/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r27abt/vietnamese_iced_coffee_setup/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>How do restaraunts make large amounts of slowdrip coffee? I am trying run my own Viet coffee stand and my first two days have been a flop. </p> <p>Everytime I lookup "
     },
     {
       "title": "[MOD] Inside Scoop - Ask the coffee industry",
@@ -65,126 +86,133 @@
       "description": "<!-- SC_OFF --><div class=\"md\"><p>This is a thread for the enthusiasts of <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> to connect with the industry insiders who post in this sub!</p> <p>Do "
     },
     {
-      "title": "Genuinely asking: Why do we pay the highest rates in the nation for a grid that collapses every time the wind blows?",
+      "title": "[MOD] The Daily Question Thread",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r2qj64/mod_the_daily_question_thread/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
+    },
+    {
+      "title": "COVID-19 Update for 2/11/26",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r1o1kv/genuinely_asking_why_do_we_pay_the_highest_rates/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r2d7f3/covid19_update_for_21126/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Stay warm, everyone. Sitting in the dark again on the West Side with this cold front, and I\u2019m just trying to make sense of this KHON2 article about restructuring HECO"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>242(+182) cases this week. 228 on Oahu, 11 in Maui County, 2 on Hawaii Island, and 1 on Kauai.</p> <p>7-day positivity rate is 0.9%(+0.1%)</p> <p>4(-) in the hospital"
     },
     {
-      "title": "Sylvia Luke Quietly Took Thousands From This Lobbyist Linked To Cullen",
+      "title": "Palaka holo card",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r1bas3/sylvia_luke_quietly_took_thousands_from_this/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r2omt1/palaka_holo_card/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r1bas3/sylvia_luke_quietly_took_thousands_from_this/\"> <img alt=\"Sylvia Luke Quietly Took Thousands From This Lobbyist Linked To Cul"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r2omt1/palaka_holo_card/\"> <img alt=\"Palaka holo card\" src=\"https://preview.redd.it/hgghqll741jg1.jpg?width=140&amp;height=105&amp;a"
     },
     {
-      "title": "Mauna Kea sunset, seen from Mauna loa camera",
+      "title": "What are some of the long-term effects of the Lahaina Wildfires that are not really discussed?",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r1oo6w/mauna_kea_sunset_seen_from_mauna_loa_camera/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r2i3f5/what_are_some_of_the_longterm_effects_of_the/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r1oo6w/mauna_kea_sunset_seen_from_mauna_loa_camera/\"> <img alt=\"Mauna Kea sunset, seen from Mauna loa camera\" src=\"https://preview.r"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>(For some context: I grew up on the mainland, but my mom is from Maui, her entire extended family lives there, and I grew up spending 2 months every summer on the isl"
     },
     {
-      "title": "went to a local networking event and every single person there was trying to sell something to every other person there",
+      "title": "Has anyone ever gone directly to a bank after they upheld a wrongful customer chargeback and/or sued them to get their decision overturned?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r1f45p/went_to_a_local_networking_event_and_every_single/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r1ya62/has_anyone_ever_gone_directly_to_a_bank_after/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>my wife told me to &quot;get out there and network&quot; so i went to one of those chamber of commerce mixer things.</p> <p>walked in. got handed 11 business cards in"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I own a motel and we rent to people by the week in the offseason. We had a guest stop paying and after telling him he had to leave he has posted up in the room and re"
     },
     {
-      "title": "My dermatology practice is growing but I can\u2019t afford to hire fast enough. Payroll is eating my margins alive.",
+      "title": "We promoted our best sales rep to manager and it was a disaster",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r1nfib/my_dermatology_practice_is_growing_but_i_cant/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r2oj2x/we_promoted_our_best_sales_rep_to_manager_and_it/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I opened my dermatology practice 18 months ago. Things are going well, too well, actually. I went from 12 patients a day to 28 in a year and a half. The problem is my"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>We have a team of about 35 people and sales were going pretty well. One rep in particular was crushing it, consistently hitting 150% of quota, closing deals the rest "
     },
     {
-      "title": "usiness banking technology is stuck in 2010 while consumer banking has moved on and it makes no sense",
+      "title": "Do small businesses need to monitor Reddit or is it overkill?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r1gfra/usiness_banking_technology_is_stuck_in_2010_while/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r23e1n/do_small_businesses_need_to_monitor_reddit_or_is/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Why can I use Apple Pay and Venmo and Cash App instantly with my personal accounts but my business bank still requires me to log into a website that looks like it has"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I run into this debate a lot. On one hand, Reddit feels like a \u201cbig brand\u201d thing. On the other hand, I keep seeing small local businesses pop up in random threads whe"
     },
     {
-      "title": "Railway (PaaS) Global Outage",
+      "title": "The \"Crown of Nobles\" Noble Gas Tube Display",
       "source": "Hacker News",
-      "url": "https://status.railway.com",
+      "url": "https://theshamblog.com/the-crown-of-nobles-noble-gas-tube-display/",
       "category": "tech",
       "stats": {
-        "points": 41,
-        "comments": 33
+        "points": 23,
+        "comments": 1
       }
     },
     {
-      "title": "GLM-OCR: Accurate \u00d7 Fast \u00d7 Comprehensive",
+      "title": "Warcraft III Peon Voice Notifications for Claude Code",
       "source": "Hacker News",
-      "url": "https://github.com/zai-org/GLM-OCR",
+      "url": "https://github.com/tonyyont/peon-ping",
       "category": "tech",
       "stats": {
-        "points": 79,
-        "comments": 24
+        "points": 530,
+        "comments": 176
       }
     },
     {
-      "title": "Why Vampires Live Forever",
+      "title": "AI agent opens a PR write a blogpost to shames the maintainer who closes it",
       "source": "Hacker News",
-      "url": "https://machielreyneke.com/blog/vampires-longevity/",
+      "url": "https://github.com/matplotlib/matplotlib/pull/31132",
       "category": "tech",
       "stats": {
-        "points": 48,
-        "comments": 8
+        "points": 246,
+        "comments": 192
       }
     },
     {
-      "title": "It's all a blur",
+      "title": "Discord/Twitch/Snapchat age verification bypass",
       "source": "Hacker News",
-      "url": "https://lcamtuf.substack.com/p/its-all-a-blur",
+      "url": "https://age-verifier.kibty.town/",
       "category": "tech",
       "stats": {
-        "points": 233,
-        "comments": 50
+        "points": 804,
+        "comments": 361
       }
     },
     {
-      "title": "GLM-5: From Vibe Coding to Agentic Engineering",
+      "title": "The missing digit of Stela C",
       "source": "Hacker News",
-      "url": "https://z.ai/blog/glm-5",
+      "url": "https://johncarlosbaez.wordpress.com/2026/02/12/stela-c/",
       "category": "tech",
       "stats": {
-        "points": 17,
-        "comments": 7
+        "points": 51,
+        "comments": 12
       }
     },
     {
-      "title": "[AI \u00b7 Other] Iran Holds 47th Revolution Anniversary with Rallies and Defiant Chants",
+      "title": "[Trending] OBSESSION MOVIE",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "23 hours ago | 349.0K posts",
+      "title": "[AI \u00b7 News] Senate Leader Thune Joins SAVE Act as Cosponsor Boosting Voter Citizenship Proof",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "\ud83d\udd17 twitter://trending/2021291872514159071",
+      "title": "9.4K posts",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     }
   ],
   "trending": [
-    "Top Coffee Shop Industry Trends and Statistics in ",
-    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
-    "Starbucks feeling the heat as more chains vie for ",
-    "[MOD] The Daily Question Thread",
-    "[MOD] Inside Scoop - Ask the coffee industry",
-    "Genuinely asking: Why do we pay the highest rates ",
+    "Calendar",
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "Vietnamese Iced Coffee Setup",
+    "Events Calendar | kitv.com",
     "Daily Coffee News by Roast Magazine - Business new",
-    "KITV 4 Island News | Honolulu, HI News & Weather",
+    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
     "Hawaii News, Weather, Sports, Breaking News & Live",
-    "Sylvia Luke Quietly Took Thousands From This Lobby"
+    "Top Coffee Shop Industry Trends and Statistics in ",
+    "Things to Do in Honolulu, HI This Week - Events & ",
+    "Starbucks feeling the heat as more chains vie for "
   ]
 }
