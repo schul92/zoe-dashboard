@@ -4,16 +4,16 @@
   "emoji": "🐕",
   "activeClients": 1,
   "dailyCrons": 0,
-  "dashboards": 0,
+  "dashboards": 1,
   "grandOpening": {
     "days": null,
-    "date": "TBD"
+    "date": "No event scheduled"
   },
   "seo": {
-    "clicks": 0,
-    "impressions": 0,
-    "avgPosition": 0,
-    "updatedHoursAgo": null
+    "clicks": 16,
+    "impressions": 100,
+    "avgPosition": "—",
+    "updatedHoursAgo": 0
   },
   "news": {
     "twitter": 0,
@@ -34,24 +34,24 @@
   },
   "highlights": [
     {
-      "icon": "🔧",
-      "title": "Setup Required",
-      "subtitle": "CareK9 dashboard not configured yet"
-    },
-    {
       "icon": "📊",
-      "title": "No SEO data",
-      "subtitle": "Run: python3 scripts/fetch_seo_comprehensive.py --client carek9"
+      "title": "GA4 Dashboard Live",
+      "subtitle": "100 sessions, 80 users, 314 pageviews (30d)"
     },
     {
-      "icon": "📰",
-      "title": "No news data",
-      "subtitle": "Configure news sources for CareK9"
+      "icon": "🔍",
+      "title": "SEO Score: 62/100",
+      "subtitle": "10 issues found, 5 strengths identified"
     },
     {
-      "icon": "📱",
-      "title": "No social accounts",
-      "subtitle": "Add CareK9 social media credentials to AWS Secrets"
+      "icon": "⚠️",
+      "title": "71% Bounce Rate",
+      "subtitle": "Most landing pages have 100% bounce rate"
+    },
+    {
+      "icon": "📝",
+      "title": "No Blog Content",
+      "subtitle": "Missing content marketing opportunity for organic traffic"
     }
   ]
 }

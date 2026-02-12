@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareK9 | SEO & Analytics Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 500: '#10b981', 600: '#059669' },
+                        surface: { 50: '#18181b', 100: '#1f1f23', 200: '#27272a', 300: '#3f3f46' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #09090b; }
+        .glass { background: rgba(255,255,255,0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.05); }
+        .stat-card { transition: all 0.3s; position: relative; overflow: hidden; }
+        .stat-card:hover { transform: translateY(-4px) scale(1.02); }
+        .gradient-text { background: linear-gradient(135deg, #10b981 0%, #34d399 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        @keyframes slideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-slide-in { animation: slideIn 0.5s ease-out forwards; }
+        .delay-1 { animation-delay: 0.1s; opacity: 0; }
+        .delay-2 { animation-delay: 0.2s; opacity: 0; }
+        .delay-3 { animation-delay: 0.3s; opacity: 0; }
+        .delay-4 { animation-delay: 0.4s; opacity: 0; }
+        .severity-critical { border-left: 3px solid #ef4444; }
+        .severity-high { border-left: 3px solid #f59e0b; }
+        .severity-medium { border-left: 3px solid #3b82f6; }
+        .severity-low { border-left: 3px solid #6b7280; }
+    </style>
+</head>
+<body class="text-zinc-100 min-h-screen p-4 sm:p-6 max-w-7xl mx-auto">
+
+    <!-- Header -->
+    <header class="mb-8">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="../../../" class="text-zinc-500 hover:text-zinc-300 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                </a>
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-green-600 flex items-center justify-center text-3xl shadow-lg">🐕</div>
+                <div>
+                    <h1 class="text-2xl font-bold tracking-tight">CareK9 <span class="gradient-text">SEO Dashboard</span></h1>
+                    <p class="text-sm text-zinc-500">GA4 Analytics · 30-Day Overview</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full text-xs font-semibold" id="last-updated">Loading...</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- KPI Cards -->
+    <section class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div class="stat-card glass rounded-xl p-5 animate-slide-in delay-1">
+            <p class="text-xs text-zinc-500 uppercase tracking-wider mb-1">Sessions</p>
+            <p class="text-3xl font-bold" id="kpi-sessions">—</p>
+            <p class="text-xs text-zinc-500 mt-1">30 days</p>
+        </div>
+        <div class="stat-card glass rounded-xl p-5 animate-slide-in delay-2">
+            <p class="text-xs text-zinc-500 uppercase tracking-wider mb-1">Users</p>
+            <p class="text-3xl font-bold" id="kpi-users">—</p>
+            <p class="text-xs text-zinc-500 mt-1">Active users</p>
+        </div>
+        <div class="stat-card glass rounded-xl p-5 animate-slide-in delay-3">
+            <p class="text-xs text-zinc-500 uppercase tracking-wider mb-1">Pageviews</p>
+            <p class="text-3xl font-bold" id="kpi-pageviews">—</p>
+            <p class="text-xs text-zinc-500 mt-1">Total views</p>
+        </div>
+        <div class="stat-card glass rounded-xl p-5 animate-slide-in delay-4">
+            <p class="text-xs text-zinc-500 uppercase tracking-wider mb-1">Bounce Rate</p>
+            <p class="text-3xl font-bold" id="kpi-bounce">—</p>
+            <p class="text-xs text-zinc-500 mt-1">Avg session: <span id="kpi-duration">—</span></p>
+        </div>
+    </section>
+
+    <!-- Charts Row -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        <!-- Daily Trend -->
+        <div class="glass rounded-xl p-6">
+            <h3 class="text-lg font-semibold mb-4">📈 Daily Traffic Trend</h3>
+            <canvas id="dailyChart" height="200"></canvas>
+        </div>
+        <!-- Traffic Sources -->
+        <div class="glass rounded-xl p-6">
+            <h3 class="text-lg font-semibold mb-4">🔗 Traffic Sources</h3>
+            <canvas id="sourcesChart" height="200"></canvas>
+        </div>
+    </section>
+
+    <!-- Second Row -->
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+        <!-- Top Pages -->
+        <div class="glass rounded-xl p-6 lg:col-span-2">
+            <h3 class="text-lg font-semibold mb-4">📄 Top Pages</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="text-zinc-500 text-xs uppercase border-b border-zinc-800">
+                            <th class="text-left py-2 pr-4">Page</th>
+                            <th class="text-right py-2 px-2">Views</th>
+                            <th class="text-right py-2 px-2">Users</th>
+                            <th class="text-right py-2 pl-2">Avg Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="topPagesTable"></tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Devices -->
+        <div class="glass rounded-xl p-6">
+            <h3 class="text-lg font-semibold mb-4">📱 Devices</h3>
+            <canvas id="devicesChart" height="200"></canvas>
+            <div id="devicesList" class="mt-4 space-y-2"></div>
+        </div>
+    </section>
+
+    <!-- Third Row -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        <!-- Geography -->
+        <div class="glass rounded-xl p-6">
+            <h3 class="text-lg font-semibold mb-4">🌍 Geography</h3>
+            <div id="geoList" class="space-y-2"></div>
+        </div>
+        <!-- Referrers -->
+        <div class="glass rounded-xl p-6">
+            <h3 class="text-lg font-semibold mb-4">🔀 Referrers</h3>
+            <div id="referrersList" class="space-y-2"></div>
+        </div>
+    </section>
+
+    <!-- SEO Recommendations -->
+    <section class="glass rounded-xl p-6 mb-8">
+        <div class="flex items-center justify-between mb-6">
+            <h3 class="text-lg font-semibold">🔍 SEO Health Score</h3>
+            <div class="flex items-center gap-3">
+                <div class="w-16 h-16 rounded-full border-4 border-amber-500 flex items-center justify-center">
+                    <span class="text-xl font-bold text-amber-400" id="seo-score">—</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div>
+                <h4 class="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">✅ Strengths</h4>
+                <div id="strengthsList" class="space-y-2"></div>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-red-400 uppercase tracking-wider mb-3">⚠️ Issues</h4>
+                <div id="issuesList" class="space-y-2"></div>
+            </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-zinc-800">
+            <h4 class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-3">🎯 Priority Actions</h4>
+            <div id="actionsList" class="space-y-1"></div>
+        </div>
+    </section>
+
+    <footer class="text-center text-xs text-zinc-600 py-4">
+        CareK9 SEO Dashboard · Powered by GA4 · ZOE STUDIO
+    </footer>
+
+<script>
+// Load data
+async function loadData() {
+    try {
+        const [ga4Resp, recsResp] = await Promise.all([
+            fetch('../ga4/data.json'),
+            fetch('recommendations.json')
+        ]);
+        const ga4 = await ga4Resp.json();
+        const recs = await recsResp.json();
+        renderDashboard(ga4, recs);
+    } catch(e) {
+        console.error('Failed to load data:', e);
+    }
+}
+
+function formatDuration(seconds) {
+    if (!seconds) return '0s';
+    const m = Math.floor(seconds / 60);
+    const s = Math.round(seconds % 60);
+    return m > 0 ? `${m}m ${s}s` : `${s}s`;
+}
+
+function renderDashboard(ga4, recs) {
+    // Last updated
+    const updated = new Date(ga4.metadata.collectedAt);
+    document.getElementById('last-updated').textContent = `Updated ${updated.toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}`;
+
+    // KPIs
+    const t = ga4.totals;
+    document.getElementById('kpi-sessions').textContent = t.sessions.toLocaleString();
+    document.getElementById('kpi-users').textContent = t.activeUsers.toLocaleString();
+    document.getElementById('kpi-pageviews').textContent = t.screenPageViews.toLocaleString();
+    document.getElementById('kpi-bounce').textContent = (t.bounceRate * 100).toFixed(0) + '%';
+    document.getElementById('kpi-duration').textContent = formatDuration(t.averageSessionDuration);
+
+    // Daily Chart
+    const daily = ga4.dailyTrend || [];
+    new Chart(document.getElementById('dailyChart'), {
+        type: 'line',
+        data: {
+            labels: daily.map(d => {
+                const s = d.date;
+                return `${s.slice(4,6)}/${s.slice(6,8)}`;
+            }),
+            datasets: [
+                { label: 'Sessions', data: daily.map(d => d.sessions), borderColor: '#10b981', backgroundColor: 'rgba(16,185,129,0.1)', fill: true, tension: 0.4 },
+                { label: 'Pageviews', data: daily.map(d => d.screenPageViews), borderColor: '#3b82f6', backgroundColor: 'rgba(59,130,246,0.1)', fill: true, tension: 0.4 }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { labels: { color: '#a1a1aa', font: { size: 11 } } } },
+            scales: {
+                x: { ticks: { color: '#71717a', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.03)' } },
+                y: { ticks: { color: '#71717a' }, grid: { color: 'rgba(255,255,255,0.03)' } }
+            }
+        }
+    });
+
+    // Sources Chart
+    const sources = ga4.trafficSources || [];
+    new Chart(document.getElementById('sourcesChart'), {
+        type: 'doughnut',
+        data: {
+            labels: sources.map(s => s.sessionDefaultChannelGroup),
+            datasets: [{ data: sources.map(s => s.sessions), backgroundColor: ['#10b981', '#3b82f6', '#8b5cf6', '#f59e0b', '#ef4444', '#6b7280'] }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { position: 'bottom', labels: { color: '#a1a1aa', padding: 15, font: { size: 11 } } } }
+        }
+    });
+
+    // Top Pages
+    const pages = (ga4.topPages || []).slice(0, 10);
+    const tbody = document.getElementById('topPagesTable');
+    tbody.innerHTML = pages.map(p => `
+        <tr class="border-b border-zinc-800/50 hover:bg-zinc-800/30">
+            <td class="py-2 pr-4 max-w-[200px] truncate text-zinc-300" title="${p.pagePath}">${p.pagePath}</td>
+            <td class="text-right py-2 px-2 font-semibold">${p.screenPageViews}</td>
+            <td class="text-right py-2 px-2 text-zinc-400">${p.activeUsers}</td>
+            <td class="text-right py-2 pl-2 text-zinc-400">${formatDuration(p.averageSessionDuration)}</td>
+        </tr>
+    `).join('');
+
+    // Devices Chart
+    const devices = ga4.devices || [];
+    new Chart(document.getElementById('devicesChart'), {
+        type: 'doughnut',
+        data: {
+            labels: devices.map(d => d.deviceCategory),
+            datasets: [{ data: devices.map(d => d.sessions), backgroundColor: ['#10b981', '#3b82f6', '#f59e0b'] }]
+        },
+        options: { responsive: true, plugins: { legend: { display: false } } }
+    });
+    document.getElementById('devicesList').innerHTML = devices.map(d => `
+        <div class="flex justify-between text-sm"><span class="text-zinc-400">${d.deviceCategory}</span><span class="font-semibold">${d.sessions} sessions</span></div>
+    `).join('');
+
+    // Geography
+    const geo = (ga4.geography || []).slice(0, 10);
+    document.getElementById('geoList').innerHTML = geo.map(g => `
+        <div class="flex justify-between text-sm"><span class="text-zinc-400">${g.region ? g.region + ', ' : ''}${g.country}</span><span class="font-semibold">${g.sessions} sessions</span></div>
+    `).join('');
+
+    // Referrers
+    const refs = ga4.referrers || [];
+    document.getElementById('referrersList').innerHTML = refs.map(r => `
+        <div class="flex justify-between text-sm"><span class="text-zinc-400">${r.sessionSource}</span><span class="font-semibold">${r.sessions} sessions</span></div>
+    `).join('');
+
+    // SEO Recommendations
+    document.getElementById('seo-score').textContent = recs.seoScore;
+    
+    // Color score circle
+    const scoreEl = document.getElementById('seo-score').parentElement;
+    if (recs.seoScore >= 80) scoreEl.className = scoreEl.className.replace('border-amber-500', 'border-emerald-500');
+    else if (recs.seoScore < 50) scoreEl.className = scoreEl.className.replace('border-amber-500', 'border-red-500');
+
+    document.getElementById('strengthsList').innerHTML = (recs.strengths || []).map(s => `
+        <div class="glass rounded-lg p-3 text-sm">
+            <span class="text-emerald-400 font-semibold">${s.category}</span>
+            <p class="text-zinc-400 text-xs mt-1">${s.detail}</p>
+        </div>
+    `).join('');
+
+    document.getElementById('issuesList').innerHTML = (recs.issues || []).map(i => `
+        <div class="glass rounded-lg p-3 text-sm severity-${i.severity}">
+            <div class="flex items-center gap-2">
+                <span class="text-xs px-1.5 py-0.5 rounded ${i.severity === 'critical' ? 'bg-red-500/20 text-red-400' : i.severity === 'high' ? 'bg-amber-500/20 text-amber-400' : 'bg-blue-500/20 text-blue-400'}">${i.severity}</span>
+                <span class="font-semibold">${i.category}</span>
+            </div>
+            <p class="text-zinc-400 text-xs mt-1">${i.detail}</p>
+            <p class="text-emerald-400/70 text-xs mt-1">→ ${i.recommendation}</p>
+        </div>
+    `).join('');
+
+    document.getElementById('actionsList').innerHTML = (recs.priorityActions || []).map(a => `
+        <p class="text-sm text-zinc-300">${a}</p>
+    `).join('');
+}
+
+loadData();
+</script>
+</body>
+</html>

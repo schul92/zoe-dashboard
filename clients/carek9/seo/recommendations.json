@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "generatedAt": "2026-02-12T06:51:00Z",
+    "site": "https://carek9.com",
+    "analyst": "Zoe AI"
+  },
+  "seoScore": 62,
+  "strengths": [
+    {
+      "category": "Schema Markup",
+      "detail": "Excellent structured data: Organization, WebSite, BreadcrumbList, CollectionPage, FAQPage schemas all implemented in Liquid snippets",
+      "impact": "high"
+    },
+    {
+      "category": "Product Pages",
+      "detail": "Product titles are well-optimized with keywords (e.g., 'Chicken Wrapped Pumpkin Dog Treats | High Protein Gut Health | CareK9')",
+      "impact": "high"
+    },
+    {
+      "category": "Canonical URLs",
+      "detail": "Proper canonical and hreflang tags in theme.liquid",
+      "impact": "medium"
+    },
+    {
+      "category": "Meta Description",
+      "detail": "Dynamic meta descriptions using page_description with shop.description fallback",
+      "impact": "medium"
+    },
+    {
+      "category": "Font Loading",
+      "detail": "Uses font-display: swap for web fonts, good for CLS",
+      "impact": "low"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "critical",
+      "category": "Homepage Title",
+      "detail": "Homepage title is just 'CareK9' - missing keywords like 'Premium Dog Treats' or 'Natural Pet Wellness'",
+      "recommendation": "Change to: 'CareK9 | Premium Natural Dog Treats & Pet Wellness Products'",
+      "impact": "high"
+    },
+    {
+      "severity": "critical",
+      "category": "Traffic Distribution",
+      "detail": "81% of traffic is Direct, only 16% Organic Search. Very low organic discovery.",
+      "recommendation": "Implement content marketing strategy: blog posts targeting 'healthy dog treats', 'natural dog food toppers', 'dog paw care' keywords",
+      "impact": "high"
+    },
+    {
+      "severity": "high",
+      "category": "Bounce Rate",
+      "detail": "71% bounce rate overall. About-us page has 100% bounce rate. Most landing pages except homepage have 100% bounce.",
+      "recommendation": "Add internal links, related products, and CTAs on all pages. Improve above-the-fold content.",
+      "impact": "high"
+    },
+    {
+      "severity": "high",
+      "category": "Collections Page Empty",
+      "detail": "/collections page renders almost no content - only footer payment methods visible",
+      "recommendation": "Add collection descriptions, featured products, and SEO content to the collections listing page",
+      "impact": "high"
+    },
+    {
+      "severity": "high",
+      "category": "No Blog Content",
+      "detail": "No blog or content marketing found. Missing huge opportunity for long-tail keyword targeting.",
+      "recommendation": "Create blog with articles: 'Best Dog Treats for Sensitive Stomachs', 'Benefits of Pumpkin for Dogs', 'How to Choose Healthy Dog Treats'",
+      "impact": "high"
+    },
+    {
+      "severity": "medium",
+      "category": "Collection Title Format",
+      "detail": "Collection titles use format 'Dog Treats – CareK9' with em dash, inconsistent with product pages using pipe separator",
+      "recommendation": "Standardize separator to pipe (|) across all pages for brand consistency",
+      "impact": "low"
+    },
+    {
+      "severity": "medium",
+      "category": "Low Page Depth",
+      "detail": "Only 314 pageviews in 30 days across 80 users (3.9 pages/user). Homepage dominates with 52% of all views.",
+      "recommendation": "Improve internal linking and navigation. Add 'You may also like' sections on product pages.",
+      "impact": "medium"
+    },
+    {
+      "severity": "medium",
+      "category": "Missing Alt Text Audit",
+      "detail": "Image gallery on homepage shows 5 identical product entries - likely missing diverse product showcase",
+      "recommendation": "Diversify homepage featured products. Ensure all images have descriptive alt text.",
+      "impact": "medium"
+    },
+    {
+      "severity": "low",
+      "category": "Duplicate Product URLs",
+      "detail": "Two URLs for chicken pumpkin treats: /products/chicken-wrapped-pumpkin AND /products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "recommendation": "301 redirect the shorter URL to the canonical longer one with keywords",
+      "impact": "medium"
+    },
+    {
+      "severity": "low",
+      "category": "QR Code Referral",
+      "detail": "qrcodes.pro referral detected - ensure QR codes point to trackable URLs with UTM parameters",
+      "recommendation": "Add UTM parameters to all QR code URLs for better attribution tracking",
+      "impact": "low"
+    }
+  ],
+  "priorityActions": [
+    "1. Fix homepage title tag to include primary keywords",
+    "2. Start a blog with 2-4 SEO-optimized articles per month",
+    "3. Fix /collections page to show actual collection content",
+    "4. Add related products and internal links to reduce bounce rate",
+    "5. Create Google Search Console property and submit sitemap",
+    "6. Set up social media profiles (Instagram, TikTok) for pet niche",
+    "7. Redirect duplicate product URLs",
+    "8. Add customer reviews/testimonials for social proof and review schema"
+  ]
+}
