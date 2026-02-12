@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Calendar | Kona Coffee Donut</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --radius: 0.625rem;
+            --background: oklch(0.129 0.042 264.695);
+            --foreground: oklch(0.984 0.003 247.858);
+            --card: oklch(0.14 0.04 259.21);
+            --card-foreground: oklch(0.984 0.003 247.858);
+            --primary: oklch(0.929 0.013 255.508);
+            --muted: oklch(0.279 0.041 260.031);
+            --muted-foreground: oklch(0.704 0.04 256.788);
+            --border: oklch(1 0 0 / 10%);
+            --ring: oklch(0.551 0.027 264.364);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background);
+            color: var(--foreground);
+            line-height: 1.5;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body class="p-6 min-h-screen max-w-7xl mx-auto">
+    <header class="mb-8">
+        <a href="../../../" class="text-sm text-blue-400 hover:underline mb-4 inline-block">← Back to Hub</a>
+        <div class="flex items-center gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center text-3xl shadow-lg">
+                📱
+            </div>
+            <div>
+                <h1 class="text-3xl font-bold tracking-tight">Social Media Calendar</h1>
+                <p class="text-sm" style="color: var(--muted-foreground)">Kona Coffee Donut • 5 Platforms</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="card">
+        <div class="text-center py-12">
+            <div class="text-6xl mb-4">🚧</div>
+            <h2 class="text-2xl font-bold mb-2">Coming Soon</h2>
+            <p style="color: var(--muted-foreground)">Social media calendar dashboard is under construction.</p>
+            <p class="text-sm mt-4" style="color: var(--muted-foreground)">Data available in <code>posts.json</code></p>
+        </div>
+    </section>
+
+    <footer class="mt-8 pt-6 border-t text-center" style="border-color: var(--border); color: var(--muted-foreground);">
+        <p class="text-xs">ZOE STUDIO LLC</p>
+    </footer>
+</body>
+</html>
