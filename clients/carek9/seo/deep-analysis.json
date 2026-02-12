@@ -1,0 +1,362 @@
+{
+  "analyzedAt": "2026-02-12T21:30:00.000Z",
+  "overallScore": 72,
+  "pagespeed": {
+    "note": "PageSpeed Insights API quota exceeded during analysis. Manual test recommended at https://pagespeed.web.dev/analysis?url=https://carek9.com",
+    "mobile": {
+      "status": "api_quota_exceeded",
+      "estimatedPerformance": "moderate",
+      "notes": "Shopify-hosted site with multiple CSS files loaded in head, large hero image (1500px wide), and multiple JS bundles. Likely LCP 2.5-4s on mobile."
+    },
+    "desktop": {
+      "status": "api_quota_exceeded",
+      "estimatedPerformance": "good",
+      "notes": "Desktop likely performs better. Shopify CDN handles caching well."
+    }
+  },
+  "metaTags": {
+    "issues": [
+      {
+        "page": "https://carek9.com/",
+        "issue": "Title previously showed just 'CareK9' but now updated to 'CareK9 | Premium Natural Dog Treats, Food Toppers & Paw Care' (63 chars - slightly over 60 char ideal)",
+        "severity": "low"
+      },
+      {
+        "page": "https://carek9.com/",
+        "issue": "Meta description mentions 'grooming/bathing supplies and (soon to come) treats' - outdated copy, treats are now the main product",
+        "severity": "high"
+      },
+      {
+        "page": "https://carek9.com/",
+        "issue": "No og:image set for homepage",
+        "severity": "medium"
+      },
+      {
+        "page": "https://carek9.com/collections/all",
+        "issue": "Duplicate meta description tags - Shopify default AND custom override both present in HTML",
+        "severity": "medium"
+      },
+      {
+        "page": "https://carek9.com/collections/all",
+        "issue": "No og:image set",
+        "severity": "medium"
+      },
+      {
+        "page": "https://carek9.com/collections/treat",
+        "issue": "No og:image set",
+        "severity": "medium"
+      },
+      {
+        "page": "https://carek9.com/collections/food-topper",
+        "issue": "Duplicate meta description tags in HTML",
+        "severity": "medium"
+      },
+      {
+        "page": "https://carek9.com/collections/paw-care",
+        "issue": "Duplicate meta description tags in HTML",
+        "severity": "medium"
+      },
+      {
+        "page": "https://carek9.com/collections/bath-product",
+        "issue": "Duplicate meta description tags in HTML",
+        "severity": "medium"
+      },
+      {
+        "page": "https://carek9.com/products/beef-wrapped-pumpkin",
+        "issue": "Meta description too long (231 chars, should be 120-160)",
+        "severity": "medium"
+      },
+      {
+        "page": "https://carek9.com/products/paw-balm",
+        "issue": "Meta description too long (186 chars, should be 120-160)",
+        "severity": "medium"
+      },
+      {
+        "page": "All product og:image tags",
+        "issue": "og:image uses HTTP instead of HTTPS (http://carek9.com/cdn/...)",
+        "severity": "high"
+      },
+      {
+        "page": "All collection pages",
+        "issue": "og:description uses outdated default text about 'grooming/bathing supplies'",
+        "severity": "medium"
+      }
+    ],
+    "pages": [
+      {
+        "url": "https://carek9.com/",
+        "title": "CareK9 | Premium Natural Dog Treats, Food Toppers & Paw Care",
+        "titleLength": 63,
+        "description": "Your dog's new favorite online shop! Shop simple, clean, and easy-to-use grooming/bathing supplies and (soon to come) treats.",
+        "descriptionLength": 124,
+        "ogImage": null,
+        "ogTitle": "CareK9",
+        "canonical": "https://carek9.com/",
+        "h1": null,
+        "structuredData": ["Organization", "WebSite", "OnlineStore", "ItemList/Navigation", "FAQPage"]
+      },
+      {
+        "url": "https://carek9.com/collections/all",
+        "title": "Shop All | CareK9",
+        "titleLength": 18,
+        "description": "Shop all CareK9 premium natural dog products — treats, food toppers, paw care & bath essentials. Made fresh to order with clean ingredients. Free shipping $50+.",
+        "descriptionLength": 159,
+        "ogImage": null,
+        "ogTitle": "Shop All",
+        "canonical": "https://carek9.com/collections/all",
+        "structuredData": ["BreadcrumbList", "Organization", "WebSite", "OnlineStore"]
+      },
+      {
+        "url": "https://carek9.com/collections/treat",
+        "title": "Dog Treats | CareK9",
+        "titleLength": 20,
+        "description": "Custom SEO description set via theme override",
+        "ogImage": null,
+        "canonical": "https://carek9.com/collections/treat"
+      },
+      {
+        "url": "https://carek9.com/collections/food-topper",
+        "title": "Food Topper | CareK9",
+        "titleLength": 21,
+        "description": "Natural dog food toppers to boost nutrition & flavor...",
+        "descriptionLength": 147,
+        "ogImage": null,
+        "canonical": "https://carek9.com/collections/food-topper"
+      },
+      {
+        "url": "https://carek9.com/collections/paw-care",
+        "title": "Paw Care | CareK9",
+        "titleLength": 18,
+        "description": "Natural dog paw care balms & treatments...",
+        "descriptionLength": 147,
+        "ogImage": null,
+        "canonical": "https://carek9.com/collections/paw-care"
+      },
+      {
+        "url": "https://carek9.com/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+        "title": "Chicken Wrapped Pumpkin Dog Treats | High Protein Gut Health | CareK9",
+        "titleLength": 69,
+        "description": "Human-grade U.S. chicken & fresh Kabocha pumpkin. High protein, high fiber dog treats for sensitive stomachs. No preservatives or GMOs. Shop CareK9 quality.",
+        "descriptionLength": 156,
+        "ogImage": "https://carek9.com/cdn/shop/files/4oz_for_shopify_3_compress_1.png?v=1751450497",
+        "canonical": "https://carek9.com/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+        "structuredData": ["BreadcrumbList", "Organization", "WebSite", "OnlineStore", "Product"]
+      },
+      {
+        "url": "https://carek9.com/products/beef-wrapped-pumpkin",
+        "title": "Beef Wrapped Pumpkin Dog Treats",
+        "titleLength": 30,
+        "description": "Beef wrapped pumpkin dog treats — chewable, air-dried, and gentle for any age or size dog...",
+        "descriptionLength": 231,
+        "ogImage": "http://carek9.com/cdn/shop/files/BwP_4oz_for_shopify4_1.png (HTTP!)",
+        "canonical": "https://carek9.com/products/beef-wrapped-pumpkin"
+      },
+      {
+        "url": "https://carek9.com/products/functional-dog-food-topper-for-digestive-support-immunity-health",
+        "title": "Functional Dog Food Topper - Digestive Support",
+        "titleLength": 47,
+        "description": "Whole-food probiotic topper with pumpkin, chicory & mushrooms for gut health...",
+        "descriptionLength": 149,
+        "ogImage": "http://carek9.com/cdn/shop/products/Myproject-1-2022-12-26T124329.378_1.png (HTTP!)",
+        "canonical": "https://carek9.com/products/functional-dog-food-topper-for-digestive-support-immunity-health"
+      },
+      {
+        "url": "https://carek9.com/products/paw-balm",
+        "title": "Paw Balm",
+        "titleLength": 8,
+        "description": "Protect your dog's paws with CareK9's Paw Balm/soother...",
+        "descriptionLength": 186,
+        "ogImage": "http://carek9.com/cdn/shop/products/MyPost-2021-05-02T002400.483_1.jpg (HTTP!)"
+      },
+      {
+        "url": "https://carek9.com/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+        "title": "Protein Chips",
+        "titleLength": 13,
+        "description": "Revitalize your pet with healthy Oxidog Chips™...",
+        "descriptionLength": 161,
+        "ogImage": "http://carek9.com/cdn/shop/files/1_07kb.png (HTTP!)"
+      }
+    ]
+  },
+  "brokenLinks": [
+    {
+      "url": "https://carek9.com/account/login",
+      "status": 503,
+      "note": "Returns 503 - likely Shopify password/auth redirect, not a true broken link"
+    }
+  ],
+  "images": {
+    "summary": "All homepage images have descriptive alt text. Lazy loading is properly implemented on below-fold images. Images use Shopify CDN with responsive srcset.",
+    "withoutAlt": [],
+    "withAlt": [
+      {"src": "logo-small-copy.png", "alt": "CareK9"},
+      {"src": "fourlegged-musketeers-picture-id480928959...", "alt": "Three dogs - a terrier mix, poodle, and schnauzer - enjoying a walk"},
+      {"src": "For_Shopify_1.png", "alt": "Air-Dried Alaskan Salmon Bite"},
+      {"src": "4oz_for_shopify_3_compress_1.png", "alt": "Chicken-Wrapped Pumpkin Super Healthy Dog Treats"},
+      {"src": "My_Post-1_4_2.png", "alt": "Pars-Mint Dental Cookies"}
+    ],
+    "oversized": [
+      {
+        "note": "Hero banner image serves up to 1500px wide - acceptable for full-width hero but could benefit from WebP format",
+        "url": "fourlegged-musketeers-picture-id480928959...jpg"
+      }
+    ],
+    "lazyLoading": "Properly implemented - below-fold images use loading='lazy'",
+    "responsiveImages": "Good - srcset with multiple widths provided"
+  },
+  "technical": {
+    "robots": {
+      "status": "excellent",
+      "details": "Well-configured robots.txt. Blocks admin/cart/checkout/account properly. Allows policy pages. AI crawler access enabled (GPTBot, ChatGPT-User, Anthropic-AI, etc.). Sitemap referenced.",
+      "content": "Disallow: /admin, /cart, /orders, /checkouts/, /checkout, /carts, /account, variant/sort/filter params, /search, /policies/ (with exceptions). Allow AI bots."
+    },
+    "sitemap": {
+      "status": "good",
+      "type": "sitemapindex",
+      "childSitemaps": [
+        "sitemap_products_1.xml",
+        "sitemap_pages_1.xml",
+        "sitemap_collections_1.xml",
+        "sitemap_blogs_1.xml"
+      ],
+      "issue": "Sitemap URL in robots.txt is relative (/sitemap.xml) - should be absolute URL",
+      "productsFound": true,
+      "hasImageTags": true
+    },
+    "https": {
+      "redirect": true,
+      "details": "HTTP correctly 301 redirects to HTTPS"
+    },
+    "canonicalTags": {
+      "status": "good",
+      "details": "All pages have proper canonical URLs with hreflang alternates (en + x-default)"
+    },
+    "structuredData": {
+      "status": "excellent",
+      "homepage": ["Organization", "WebSite", "OnlineStore", "ItemList (Navigation)", "FAQPage"],
+      "collections": ["BreadcrumbList", "Organization", "WebSite", "OnlineStore"],
+      "products": ["BreadcrumbList", "Organization", "WebSite", "OnlineStore", "Product"],
+      "issues": [
+        "BreadcrumbList has 'Translation missing: en.general.breadcrumbs.home' instead of 'Home' - translation key not resolved"
+      ]
+    },
+    "viewport": "width=device-width,initial-scale=1 - correctly set",
+    "charset": "utf-8",
+    "language": "en"
+  },
+  "content": {
+    "pages": [
+      {
+        "url": "https://carek9.com/",
+        "estimatedWordCount": 11664,
+        "note": "High word count includes inline JS/CSS in stripped HTML. Visible content ~300-500 words.",
+        "headingStructure": {
+          "h1": "None found (missing H1!)",
+          "h2": ["Collections", "Dog Treats", "Dog Food Toppers", "Dog Paw Care", "Image Gallery", "Products (footer)", "Info (footer)", "Save on Next Purchase (footer)", "Newsletter (footer)"],
+          "h3": ["Checkout securely with (x3)"]
+        },
+        "issues": ["No H1 tag on homepage - major SEO issue", "Multiple H2s used for navigation/footer sections"]
+      },
+      {
+        "url": "https://carek9.com/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+        "estimatedWordCount": 12679,
+        "note": "Includes JS/CSS. Visible product content likely 500-800 words.",
+        "headingStructure": "Product page with detailed description"
+      },
+      {
+        "url": "https://carek9.com/collections/all",
+        "estimatedWordCount": "Low - collection pages are product grid with minimal text content",
+        "headingStructure": "H2: Collections only"
+      }
+    ],
+    "internalLinking": {
+      "homepageLinks": 29,
+      "navigationPages": ["Home", "Shop (/collections/all)", "About (/pages/about-us)", "Resources (/pages/carek9-x-human-canine-collaborative)", "Upload (/pages/contact-us)"],
+      "footerLinks": ["Products links", "Info links", "Policy pages"],
+      "productLinks": 10,
+      "collectionLinks": 5
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "high",
+      "issue": "Missing H1 tag on homepage",
+      "fix": "Add a single H1 tag to the homepage with primary keyword, e.g., 'Premium Natural Dog Treats & Wellness Products'. Currently only H2s are used."
+    },
+    {
+      "priority": "high",
+      "issue": "Homepage meta description is outdated",
+      "fix": "Update meta description from 'grooming/bathing supplies and (soon to come) treats' to reflect current product focus on treats, food toppers, and paw care. Should be 120-160 chars."
+    },
+    {
+      "priority": "high",
+      "issue": "og:image tags use HTTP instead of HTTPS on product pages",
+      "fix": "Update Shopify theme to output og:image with https:// protocol. Currently outputs http://carek9.com/cdn/... which may cause social sharing preview failures."
+    },
+    {
+      "priority": "high",
+      "issue": "No og:image on homepage or collection pages",
+      "fix": "Set og:image for homepage (brand image/hero) and each collection page (collection featured image). Critical for social media sharing and link previews."
+    },
+    {
+      "priority": "high",
+      "issue": "Breadcrumb structured data has translation error",
+      "fix": "Fix 'Translation missing: en.general.breadcrumbs.home' in BreadcrumbList JSON-LD. Add the missing translation in Shopify theme locales."
+    },
+    {
+      "priority": "medium",
+      "issue": "Duplicate meta description tags on collection pages",
+      "fix": "Collection pages output TWO meta description tags (Shopify default + custom override). Remove the duplicate in the theme's collection template to avoid confusion for search engines."
+    },
+    {
+      "priority": "medium",
+      "issue": "Some product meta descriptions too long",
+      "fix": "Shorten meta descriptions for Beef Wrapped Pumpkin (231 chars) and Paw Balm (186 chars) to under 160 characters."
+    },
+    {
+      "priority": "medium",
+      "issue": "Some product titles too short for SEO",
+      "fix": "Expand thin titles: 'Paw Balm' (8 chars) and 'Protein Chips' (13 chars) should include brand + benefit keywords, e.g., 'Organic Paw Balm for Dogs | Cruelty-Free Moisturizer | CareK9'"
+    },
+    {
+      "priority": "medium",
+      "issue": "Collection page titles are generic",
+      "fix": "Expand 'Dog Treats | CareK9' to include keywords like 'Natural Dog Treats - Human-Grade & Air-Dried | CareK9'. Aim for 50-60 chars."
+    },
+    {
+      "priority": "medium",
+      "issue": "og:description on collections uses outdated default text",
+      "fix": "Update og:description template in Shopify theme to use the collection-specific description instead of the global site description."
+    },
+    {
+      "priority": "medium",
+      "issue": "Sitemap URL in robots.txt is relative",
+      "fix": "Change 'Sitemap: /sitemap.xml' to 'Sitemap: https://carek9.com/sitemap.xml' in robots.txt"
+    },
+    {
+      "priority": "medium",
+      "issue": "Collection pages have very thin content",
+      "fix": "Add descriptive text (150-300 words) to collection pages explaining the product category, benefits, and use cases. Helps with keyword rankings."
+    },
+    {
+      "priority": "low",
+      "issue": "Homepage title slightly over 60 chars (63)",
+      "fix": "Consider trimming to 60 chars for optimal SERP display, though 63 is acceptable."
+    },
+    {
+      "priority": "low",
+      "issue": "Navigation link labeled 'Upload' for contact page",
+      "fix": "Consider renaming to 'Contact' or 'Contact Us' for better UX and SEO clarity."
+    },
+    {
+      "priority": "low",
+      "issue": "Hero image is JPEG, not WebP",
+      "fix": "Shopify CDN may auto-serve WebP. Verify via browser DevTools. If not, consider uploading WebP versions for faster load times."
+    },
+    {
+      "priority": "low",
+      "issue": "Run PageSpeed Insights manually",
+      "fix": "API quota was exceeded. Run manual tests at https://pagespeed.web.dev/ for homepage, /collections/all, and a product page to get Core Web Vitals data."
+    }
+  ]
+}
