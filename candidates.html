@@ -136,11 +136,22 @@
         .theme-toggle:hover { background: var(--bg-hover); }
 
         .lang-toggle {
-            font-size: 0.7rem;
+            font-size: 1rem;
             font-weight: 700;
-            padding: 0 0.5rem;
-            min-width: 48px;
+            padding: 0.5rem 1rem;
+            min-width: 72px;
             letter-spacing: 0.02em;
+            border-radius: 100px;
+            background: linear-gradient(135deg, var(--accent) 0%, #8B5E34 100%);
+            color: white;
+            border: 2px solid var(--accent);
+            box-shadow: 0 2px 8px rgba(193,120,23,0.3);
+            transition: all 0.2s ease;
+        }
+
+        .lang-toggle:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(193,120,23,0.4);
         }
 
         /* Container */
@@ -703,7 +714,7 @@
                     <option value="name-asc" data-i18n="sortNameAsc">Name A-Z</option>
                     <option value="name-desc" data-i18n="sortNameDesc">Name Z-A</option>
                 </select>
-                <button class="theme-toggle lang-toggle" id="lang-toggle" title="Toggle language">한글</button>
+                <button class="lang-toggle" id="lang-toggle" title="Toggle language">🇰🇷 한국어</button>
                 <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode">🌙</button>
             </div>
             <div class="filters">
@@ -832,14 +843,14 @@
             }
         };
 
-        let currentLang = localStorage.getItem('kcd-lang') || 'ko';
+        let currentLang = localStorage.getItem('kcd-lang') || 'en';
 
         function setLang(lang) {
             currentLang = lang;
             localStorage.setItem('kcd-lang', lang);
             
             // Update toggle button
-            document.getElementById('lang-toggle').textContent = lang === 'ko' ? 'EN' : '한글';
+            document.getElementById('lang-toggle').innerHTML = lang === 'ko' ? '🇺🇸 English' : '🇰🇷 한국어';
             
             // Update all elements with data-i18n attributes
             document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -980,6 +991,7 @@
             grid.innerHTML = page.map((c, i) => {
                 const idx = candidatesData.indexOf(c);
                 const exp = c.experience && c.experience !== 'None' ? c.experience : '';
+                const summary = (currentLang === 'ko' && c.summary_ko) ? c.summary_ko : c.summary;
                 return `
                 <div class="card" data-tier="${c.tier}" style="animation-delay:${i * 30}ms">
                     <div class="card-inner">
@@ -994,7 +1006,7 @@
                                 <span class="tier-badge ${c.tier}">${c.tier}</span>
                             </div>
                         </div>
-                        ${c.summary ? `<div class="card-summary">${c.summary}</div>` : ''}
+                        ${summary ? `<div class="card-summary">${summary}</div>` : ''}
                         <div class="card-meta">
                             ${exp ? `<span class="card-meta-item">💼 ${exp}</span>` : ''}
                             <span class="card-meta-item">📅 ${c.date}</span>
@@ -1039,6 +1051,10 @@
             const potentialLabel = {high: '🟢 HIGH', medium: '🟡 MEDIUM', low: '🔴 LOW'};
 
             const t = i18n[currentLang];
+            const isKo = currentLang === 'ko';
+            const potentialReason = (isKo && c.potential && c.potential.reason_ko) ? c.potential.reason_ko : (c.potential ? c.potential.reason : '');
+            const summaryText = (isKo && c.summary_ko) ? c.summary_ko : c.summary;
+            const resumeBullets = (isKo && c.resumeSummary_ko) ? c.resumeSummary_ko : c.resumeSummary;
             document.getElementById('modal-title').innerHTML = `${c.name}${c.estimatedAge ? ` <span style="font-size:0.8rem;color:var(--text-muted);font-weight:400;">🎂 ~${c.estimatedAge}yo</span>` : ''}`;
             document.getElementById('modal-body').innerHTML = `
                 <div class="detail-group">
@@ -1048,9 +1064,9 @@
                         ${c.potential ? `<span style="padding:0.25rem 0.625rem;border-radius:100px;font-size:0.7rem;font-weight:700;background:${potentialBg[c.potential.rating]};color:${potentialColors[c.potential.rating]};">${potentialLabel[c.potential.rating]} POTENTIAL</span>` : ''}
                     </div>
                 </div>
-                ${c.potential ? `<div class="detail-group"><div style="background:${potentialBg[c.potential.rating]};border-left:3px solid ${potentialColors[c.potential.rating]};border-radius:var(--radius-sm);padding:0.75rem 1rem;font-size:0.85rem;line-height:1.5;">💡 <strong>${t.potentialAssessment}:</strong> ${c.potential.reason}</div></div>` : ''}
-                ${c.resumeSummary && c.resumeSummary.length ? `<div class="detail-group"><div class="detail-label">📋 ${t.resumeSummary}</div><ul style="margin:0.25rem 0 0 1.25rem;font-size:0.85rem;color:var(--text);line-height:1.7;">${c.resumeSummary.map(s => `<li>${s}</li>`).join('')}</ul></div>` : ''}
-                ${c.summary ? `<div class="detail-group"><div class="detail-summary">${c.summary}</div></div>` : ''}
+                ${c.potential ? `<div class="detail-group"><div style="background:${potentialBg[c.potential.rating]};border-left:3px solid ${potentialColors[c.potential.rating]};border-radius:var(--radius-sm);padding:0.75rem 1rem;font-size:0.85rem;line-height:1.5;">💡 <strong>${t.potentialAssessment}:</strong> ${potentialReason}</div></div>` : ''}
+                ${resumeBullets && resumeBullets.length ? `<div class="detail-group"><div class="detail-label">📋 ${t.resumeSummary}</div><ul style="margin:0.25rem 0 0 1.25rem;font-size:0.85rem;color:var(--text);line-height:1.7;">${resumeBullets.map(s => `<li>${s}</li>`).join('')}</ul></div>` : ''}
+                ${summaryText ? `<div class="detail-group"><div class="detail-summary">${summaryText}</div></div>` : ''}
                 <div class="detail-group">
                     <div class="detail-label">${t.phone}</div>
                     <div class="detail-value"><a href="tel:${c.phone.replace(/[^\d+]/g,'')}" style="color:var(--accent);font-weight:600;text-decoration:none;">${c.phone}</a></div>
