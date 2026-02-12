@@ -1,117 +1,240 @@
 {
   "metadata": {
-    "generatedAt": "2026-02-12T06:51:00Z",
+    "generatedAt": "2026-02-12T07:00:00Z",
     "site": "https://carek9.com",
-    "analyst": "Zoe AI"
+    "analyst": "Zoe AI + Zoe EC2 Research",
+    "sources": ["GA4 Analytics", "Site Crawl", "Shopify Theme Review", "Competitor Analysis", "Twitter/X Research", "Reddit Consumer Insights", "Technical SEO Audit"],
+    "version": "2.0"
   },
-  "seoScore": 62,
+  "seoScore": 54,
+  "marketContext": {
+    "usDogTreatMarket": "$11.25B (2026)",
+    "dogFoodTopperMarket": "$7.06B by 2030 (CAGR 13.2%)",
+    "avgHouseholdPetSpend": "$1,445/pet in 2026",
+    "keyTrends": ["Single-ingredient treats", "Functional/wellness treats", "Freeze-dried format", "Transparency & clean label", "DTC + subscription", "Probiotics (91% search growth)", "GEO optimization"]
+  },
   "strengths": [
     {
-      "category": "Schema Markup",
-      "detail": "Excellent structured data: Organization, WebSite, BreadcrumbList, CollectionPage, FAQPage schemas all implemented in Liquid snippets",
+      "category": "Comprehensive Schema Markup",
+      "detail": "7+ schema types: Organization, WebSite, OnlineStore, BreadcrumbList, Product (with AggregateRating), SiteNavigationElement, FAQPage. AI-optimization meta tags enabled.",
       "impact": "high"
     },
     {
-      "category": "Product Pages",
-      "detail": "Product titles are well-optimized with keywords (e.g., 'Chicken Wrapped Pumpkin Dog Treats | High Protein Gut Health | CareK9')",
+      "category": "Product Page SEO",
+      "detail": "Chicken Wrapped Pumpkin has excellent title ('Chicken Wrapped Pumpkin Dog Treats | High Protein Gut Health | CareK9'), strong meta description, full Product schema with ratings, proper OG tags with product data.",
       "impact": "high"
     },
     {
-      "category": "Canonical URLs",
-      "detail": "Proper canonical and hreflang tags in theme.liquid",
-      "impact": "medium"
+      "category": "Technical Foundation",
+      "detail": "Proper canonical/hreflang tags, CDN preconnect, font-display swap, deferred JS, mobile-responsive Dawn-based theme, AI-content-policy meta tags.",
+      "impact": "high"
     },
     {
-      "category": "Meta Description",
-      "detail": "Dynamic meta descriptions using page_description with shop.description fallback",
-      "impact": "medium"
+      "category": "Market Positioning",
+      "detail": "Fresh-to-order, single-ingredient, human-grade positioning aligns perfectly with Reddit consumer preferences and $11.25B market trends. Anti-filler messaging resonates strongly.",
+      "impact": "high"
     },
     {
-      "category": "Font Loading",
-      "detail": "Uses font-display: swap for web fonts, good for CLS",
-      "impact": "low"
+      "category": "Paw Care Niche Opportunity",
+      "detail": "Twitter/X analysis shows paw care has almost no brand marketing presence. CareK9 already has paw products — massive underserved niche.",
+      "impact": "high"
+    },
+    {
+      "category": "GEO-Ready FAQ Schema",
+      "detail": "Homepage FAQPage schema with 7 relevant Q&As. AI search engines (ChatGPT, Perplexity, Google AI Overviews) can directly cite this content.",
+      "impact": "medium"
     }
   ],
   "issues": [
     {
       "severity": "critical",
-      "category": "Homepage Title",
-      "detail": "Homepage title is just 'CareK9' - missing keywords like 'Premium Dog Treats' or 'Natural Pet Wellness'",
-      "recommendation": "Change to: 'CareK9 | Premium Natural Dog Treats & Pet Wellness Products'",
-      "impact": "high"
+      "category": "Homepage Missing H1 Tag",
+      "detail": "No H1 tag on homepage — fundamental SEO issue. Search engines use H1 to understand page topic.",
+      "recommendation": "Add H1: 'Premium Natural Dog Treats & Wellness Products' or similar with primary keywords. Edit the homepage section in Shopify theme.",
+      "impact": "high",
+      "source": "technical-audit"
     },
     {
       "severity": "critical",
-      "category": "Traffic Distribution",
-      "detail": "81% of traffic is Direct, only 16% Organic Search. Very low organic discovery.",
-      "recommendation": "Implement content marketing strategy: blog posts targeting 'healthy dog treats', 'natural dog food toppers', 'dog paw care' keywords",
-      "impact": "high"
+      "category": "Homepage Title Only 'CareK9'",
+      "detail": "Title tag is just 'CareK9' — missing all target keywords. Competitors use keyword-rich titles.",
+      "recommendation": "Change to: 'CareK9 | Premium Natural Dog Treats, Food Toppers & Paw Care'. Keep under 55 chars.",
+      "impact": "high",
+      "source": "technical-audit"
+    },
+    {
+      "severity": "critical",
+      "category": "Outdated Meta Description",
+      "detail": "Homepage meta says 'soon to come treats' but treats are already the main product line. Misleads users and search engines.",
+      "recommendation": "Update to: 'Premium single-ingredient dog treats made fresh to order. Human-grade chicken & pumpkin treats, functional food toppers, and natural paw care. Shop CareK9.'",
+      "impact": "high",
+      "source": "technical-audit"
+    },
+    {
+      "severity": "critical",
+      "category": "81% Direct Traffic / 16% Organic",
+      "detail": "Extremely low organic discovery. No blog content, no content marketing, no backlink strategy. Reddit shows competitors like Only One Treats and Devil Dog Pet Co drive traffic via educational blogs.",
+      "recommendation": "Implement content marketing: 4 cornerstone blog posts (month 1), then 2-4/month. Target 'single ingredient dog treats', 'best dog treats for sensitive stomachs', 'dog paw care guide'.",
+      "impact": "high",
+      "source": "ga4-analysis"
+    },
+    {
+      "severity": "critical",
+      "category": "/blogs Returns 404",
+      "detail": "Blog section returns 404. Missing entire content marketing channel. Competitors with blogs rank for long-tail keywords that drive purchase decisions.",
+      "recommendation": "Create Shopify blog. First 4 posts: 'Complete Guide to Single Ingredient Dog Treats', 'Dog Nutrition 101', 'Ultimate Dog Paw Care Guide', 'How to Choose Dog Food Toppers'.",
+      "impact": "high",
+      "source": "technical-audit"
     },
     {
       "severity": "high",
-      "category": "Bounce Rate",
-      "detail": "71% bounce rate overall. About-us page has 100% bounce rate. Most landing pages except homepage have 100% bounce.",
-      "recommendation": "Add internal links, related products, and CTAs on all pages. Improve above-the-fold content.",
-      "impact": "high"
+      "category": "Breadcrumb Translation Bug",
+      "detail": "All non-homepage pages show 'Translation missing: en.general.breadcrumbs.home' in BreadcrumbList schema. Google may reject this structured data.",
+      "recommendation": "Add missing translation key in Shopify locales: en.general.breadcrumbs.home = 'Home'. Check locales/en.default.json.",
+      "impact": "high",
+      "source": "technical-audit"
     },
     {
       "severity": "high",
-      "category": "Collections Page Empty",
-      "detail": "/collections page renders almost no content - only footer payment methods visible",
-      "recommendation": "Add collection descriptions, featured products, and SEO content to the collections listing page",
-      "impact": "high"
+      "category": "No og:image on Homepage",
+      "detail": "Missing og:image means poor social sharing appearance on Facebook, Twitter, Slack, etc. Homepage shares look broken.",
+      "recommendation": "Set a default OG image (1200x630px) featuring CareK9 branding + product collage. Set in Shopify theme settings or meta-tags.liquid.",
+      "impact": "high",
+      "source": "technical-audit"
     },
     {
       "severity": "high",
-      "category": "No Blog Content",
-      "detail": "No blog or content marketing found. Missing huge opportunity for long-tail keyword targeting.",
-      "recommendation": "Create blog with articles: 'Best Dog Treats for Sensitive Stomachs', 'Benefits of Pumpkin for Dogs', 'How to Choose Healthy Dog Treats'",
-      "impact": "high"
+      "category": "71% Bounce Rate / 100% on Landing Pages",
+      "detail": "About-us, collections, and most product landing pages have 100% bounce rate. Only homepage (63%) and chicken treats product page retain visitors.",
+      "recommendation": "Add related products, internal links, compelling CTAs on every page. Implement 'You May Also Like' section. Add collection page descriptions (200-300 words each).",
+      "impact": "high",
+      "source": "ga4-analysis"
+    },
+    {
+      "severity": "high",
+      "category": "Empty /collections/all Meta Description",
+      "detail": "Shop All collection page has empty meta description: content=''. Google will auto-generate a snippet which may not be optimal.",
+      "recommendation": "Add collection description: 'Shop CareK9's complete line of premium dog treats, functional food toppers, and natural paw care products. Made fresh to order with human-grade ingredients.'",
+      "impact": "medium",
+      "source": "technical-audit"
+    },
+    {
+      "severity": "high",
+      "category": "No Google Search Console",
+      "detail": "No GSC property set up. Cannot monitor search performance, keyword rankings, indexing issues, or structured data errors.",
+      "recommendation": "Create GSC property for carek9.com. Submit sitemap.xml. Monitor indexing and structured data validation.",
+      "impact": "high",
+      "source": "seo-research"
+    },
+    {
+      "severity": "high",
+      "category": "No Customer Reviews Strategy",
+      "detail": "Only 2 reviews on chicken treats product. Reddit research shows reviews are #9 decision factor. AggregateRating schema needs review volume.",
+      "recommendation": "Install Judge.me or Loox. Send post-purchase review request emails. Target 50+ reviews on hero product within 3 months. Reviews also feed AI search engines.",
+      "impact": "high",
+      "source": "reddit-research"
     },
     {
       "severity": "medium",
-      "category": "Collection Title Format",
-      "detail": "Collection titles use format 'Dog Treats – CareK9' with em dash, inconsistent with product pages using pipe separator",
-      "recommendation": "Standardize separator to pipe (|) across all pages for brand consistency",
-      "impact": "low"
+      "category": "Identical Alt Text on Product Images",
+      "detail": "All 14+ product images on chicken treats page share identical alt text (= meta description). Should describe each image uniquely.",
+      "recommendation": "Write unique alt text per image: 'close-up of chicken wrapped pumpkin treat', 'CareK9 treat bag front view', 'dog eating CareK9 chicken pumpkin treat', etc.",
+      "impact": "medium",
+      "source": "technical-audit"
     },
     {
       "severity": "medium",
-      "category": "Low Page Depth",
-      "detail": "Only 314 pageviews in 30 days across 80 users (3.9 pages/user). Homepage dominates with 52% of all views.",
-      "recommendation": "Improve internal linking and navigation. Add 'You may also like' sections on product pages.",
-      "impact": "medium"
+      "category": "Homepage Shows Same Product 5x",
+      "detail": "Image gallery on homepage displays 5 identical chicken pumpkin treat cards. Fails to showcase product range diversity.",
+      "recommendation": "Feature different products: chicken treats, OxiDog chips, paw balm, food topper, salmon bites. Drives cross-selling and reduces bounce.",
+      "impact": "medium",
+      "source": "technical-audit"
     },
     {
       "severity": "medium",
-      "category": "Missing Alt Text Audit",
-      "detail": "Image gallery on homepage shows 5 identical product entries - likely missing diverse product showcase",
-      "recommendation": "Diversify homepage featured products. Ensure all images have descriptive alt text.",
-      "impact": "medium"
+      "category": "No Twitter/X Presence",
+      "detail": "Zero brand awareness on Twitter. No @CareK9 handle. Twitter research shows single-ingredient and paw care niches are wide open.",
+      "recommendation": "Claim @CareK9 handle. Start with 'hot take' posts on industry problems (fillers, misleading labels). Use #SingleIngredient #CleanDogTreats #DogMomLife hashtags.",
+      "impact": "medium",
+      "source": "twitter-research"
     },
     {
-      "severity": "low",
+      "severity": "medium",
+      "category": "OnlineStore Schema Uses favicon as Logo",
+      "detail": "OnlineStore schema references /favicon.ico instead of actual brand logo. Affects how brand appears in knowledge panels.",
+      "recommendation": "Set settings.logo in Shopify theme settings, or fix the local-business-schema.liquid snippet to reference the correct logo URL.",
+      "impact": "low",
+      "source": "technical-audit"
+    },
+    {
+      "severity": "medium",
       "category": "Duplicate Product URLs",
-      "detail": "Two URLs for chicken pumpkin treats: /products/chicken-wrapped-pumpkin AND /products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "recommendation": "301 redirect the shorter URL to the canonical longer one with keywords",
-      "impact": "medium"
+      "detail": "Two URLs exist: /products/chicken-wrapped-pumpkin AND /products/chicken-wrapped-pumpkin-healthy-dog-treats. Splits link equity.",
+      "recommendation": "301 redirect shorter URL to the keyword-rich canonical. Add redirect in Shopify admin > Online Store > Navigation > URL Redirects.",
+      "impact": "medium",
+      "source": "site-crawl"
+    },
+    {
+      "severity": "medium",
+      "category": "No Social Media Links (except Facebook)",
+      "detail": "Only Facebook in sameAs schema. Missing Instagram, Twitter, TikTok. Incomplete social signals for GEO/knowledge panel.",
+      "recommendation": "Set up Instagram (visual pet content), TikTok (#DogTok 386M+ views), Twitter. Add all to Shopify social settings.",
+      "impact": "medium",
+      "source": "technical-audit"
     },
     {
       "severity": "low",
-      "category": "QR Code Referral",
-      "detail": "qrcodes.pro referral detected - ensure QR codes point to trackable URLs with UTM parameters",
-      "recommendation": "Add UTM parameters to all QR code URLs for better attribution tracking",
-      "impact": "low"
+      "category": "No LCP Image Optimization",
+      "detail": "No fetchpriority='high' on hero/LCP images. No preload hints for above-fold images.",
+      "recommendation": "Add fetchpriority='high' to hero image. Add <link rel='preload'> for LCP image in theme.liquid.",
+      "impact": "low",
+      "source": "technical-audit"
     }
   ],
   "priorityActions": [
-    "1. Fix homepage title tag to include primary keywords",
-    "2. Start a blog with 2-4 SEO-optimized articles per month",
-    "3. Fix /collections page to show actual collection content",
-    "4. Add related products and internal links to reduce bounce rate",
-    "5. Create Google Search Console property and submit sitemap",
-    "6. Set up social media profiles (Instagram, TikTok) for pet niche",
-    "7. Redirect duplicate product URLs",
-    "8. Add customer reviews/testimonials for social proof and review schema"
-  ]
+    "1. 🔴 Fix homepage H1 tag (missing entirely)",
+    "2. 🔴 Update homepage title: 'CareK9 | Premium Natural Dog Treats, Food Toppers & Paw Care'",
+    "3. 🔴 Update homepage meta description (remove 'soon to come', add current product keywords)",
+    "4. 🔴 Fix breadcrumb translation bug (en.general.breadcrumbs.home)",
+    "5. 🔴 Create /blogs and publish first 4 cornerstone articles targeting high-intent keywords",
+    "6. 🟡 Set up Google Search Console + submit sitemap.xml",
+    "7. 🟡 Add og:image to homepage for social sharing",
+    "8. 🟡 Install review app (Judge.me) and start collecting reviews",
+    "9. 🟡 Write unique alt text for all product images",
+    "10. 🟡 Add collection page descriptions and fix empty /collections/all meta",
+    "11. 🟡 Diversify homepage product gallery (currently 5x same product)",
+    "12. 🟡 301 redirect duplicate product URLs",
+    "13. 🔵 Claim @CareK9 on Twitter, Instagram, TikTok",
+    "14. 🔵 Build backlinks from pet bloggers (Dogster, Dog Food Advisor, Whole Dog Journal)",
+    "15. 🔵 Implement subscription model for recurring revenue (DTC trend)"
+  ],
+  "contentStrategy": {
+    "cornerstoneArticles": [
+      "The Complete Guide to Single Ingredient Dog Treats",
+      "Dog Nutrition 101: Understanding What's Really in Your Dog's Treats",
+      "The Ultimate Guide to Dog Paw Care (Seasonal Tips)",
+      "How to Choose the Best Dog Food Topper for Your Dog"
+    ],
+    "targetKeywords": {
+      "headTerms": ["dog treats", "dog food toppers", "dog paw balm", "natural dog treats"],
+      "highIntent": ["best natural dog treats", "single ingredient dog treats", "healthy dog treats", "human grade dog treats", "best dog food toppers"],
+      "longTail": ["single ingredient dog treats for allergies", "best dog treats for sensitive stomachs", "natural dog treats no preservatives", "dog paw balm for cracked paws", "dog treats made fresh to order"],
+      "trending": ["dog probiotics", "functional dog treats", "freeze dried dog treats", "collagen sticks for dogs"]
+    },
+    "publishingSchedule": "2-4 posts/month. Mix: 60% informational, 25% commercial, 15% brand story.",
+    "geoStrategy": "Create 'best of' comparison content, get listed in pet review sites, build entity authority via consistent NAP and structured data"
+  },
+  "competitorInsights": {
+    "topCompetitors": ["Vital Essentials", "Full Moon", "PureBites", "Stella & Chewy's", "Musher's Secret (paw care)"],
+    "competitiveGaps": [
+      "No dominant single-ingredient treat brand on Twitter",
+      "Paw care products have almost no social marketing presence",
+      "Food toppers discussed by consumers not brands (opportunity to lead conversation)",
+      "Fresh-to-order positioning is unique vs freeze-dried competitors"
+    ],
+    "redditSentiment": {
+      "consumersPrioritize": ["Ingredients transparency", "USA sourcing (avoid China)", "Single ingredient", "Freeze-dried format", "Functional benefits", "Reviews/recommendations"],
+      "topComplaint": "China-sourced ingredients (#1 concern after 2007 melamine scandal)"
+    }
+  }
 }
