@@ -135,6 +135,14 @@
 
         .theme-toggle:hover { background: var(--bg-hover); }
 
+        .lang-toggle {
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0 0.5rem;
+            min-width: 48px;
+            letter-spacing: 0.02em;
+        }
+
         /* Container */
         .container {
             max-width: 1280px;
@@ -685,25 +693,26 @@
             <div class="search-row">
                 <div class="search-wrap">
                     <span class="search-icon">🔍</span>
-                    <input type="text" id="search" class="search-input" placeholder="Search 83 candidates...">
+                    <input type="text" id="search" class="search-input" placeholder="Search 83 candidates..." data-i18n-placeholder="searchPlaceholder">
                 </div>
                 <select id="sort" class="sort-select">
-                    <option value="score-desc">Score ↓</option>
-                    <option value="score-asc">Score ↑</option>
-                    <option value="date-desc">Newest</option>
-                    <option value="date-asc">Oldest</option>
-                    <option value="name-asc">Name A-Z</option>
-                    <option value="name-desc">Name Z-A</option>
+                    <option value="score-desc" data-i18n="sortScoreDesc">Score ↓</option>
+                    <option value="score-asc" data-i18n="sortScoreAsc">Score ↑</option>
+                    <option value="date-desc" data-i18n="sortNewest">Newest</option>
+                    <option value="date-asc" data-i18n="sortOldest">Oldest</option>
+                    <option value="name-asc" data-i18n="sortNameAsc">Name A-Z</option>
+                    <option value="name-desc" data-i18n="sortNameDesc">Name Z-A</option>
                 </select>
+                <button class="theme-toggle lang-toggle" id="lang-toggle" title="Toggle language">한글</button>
                 <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode">🌙</button>
             </div>
             <div class="filters">
-                <button class="filter-pill active" data-tier="all">All 83</button>
-                <button class="filter-pill top" data-tier="top">🌟 Top</button>
-                <button class="filter-pill strong" data-tier="strong">⭐ Strong</button>
-                <button class="filter-pill good" data-tier="good">✅ Good</button>
-                <button class="filter-pill fair" data-tier="fair">⚠️ Fair</button>
-                <button class="filter-pill weak" data-tier="weak">❌ Train</button>
+                <button class="filter-pill active" data-tier="all" data-i18n="filterAll">All 83</button>
+                <button class="filter-pill top" data-tier="top" data-i18n="filterTop">🌟 TOP</button>
+                <button class="filter-pill strong" data-tier="strong" data-i18n="filterStrong">⭐ STRONG</button>
+                <button class="filter-pill good" data-tier="good" data-i18n="filterGood">✅ GOOD</button>
+                <button class="filter-pill fair" data-tier="fair" data-i18n="filterFair">⚠️ FAIR</button>
+                <button class="filter-pill weak" data-tier="weak" data-i18n="filterTrain">❌ TRAINING</button>
             </div>
         </div>
 
@@ -716,10 +725,10 @@
         <div class="pagination">
             <div class="pagination-info">
                 <select id="items-per-page" class="page-select">
-                    <option value="12">12 per page</option>
-                    <option value="24" selected>24 per page</option>
-                    <option value="48">48 per page</option>
-                    <option value="99999">Show all</option>
+                    <option value="12" data-i18n="perPage12">12 per page</option>
+                    <option value="24" selected data-i18n="perPage24">24 per page</option>
+                    <option value="48" data-i18n="perPage48">48 per page</option>
+                    <option value="99999" data-i18n="perPageAll">Show all</option>
                 </select>
             </div>
             <div class="page-buttons" id="pagination"></div>
@@ -739,6 +748,115 @@
 
     <script src="candidates-data.js"></script>
     <script>
+        // i18n translations
+        const i18n = {
+            en: {
+                searchPlaceholder: 'Search name, experience...',
+                filterAll: 'All',
+                filterTop: '🌟 TOP',
+                filterStrong: '⭐ STRONG',
+                filterGood: '✅ GOOD',
+                filterFair: '⚠️ FAIR',
+                filterTrain: '❌ TRAINING',
+                sortScoreDesc: 'Score ↓',
+                sortScoreAsc: 'Score ↑',
+                sortNewest: 'Newest',
+                sortOldest: 'Oldest',
+                sortNameAsc: 'Name A-Z',
+                sortNameDesc: 'Name Z-A',
+                perPage12: '12 per page',
+                perPage24: '24 per page',
+                perPage48: '48 per page',
+                perPageAll: 'Show all',
+                showingAll: 'Showing all {total} candidates',
+                showingRange: 'Showing {start}–{end} of {total} candidates',
+                experience: 'Experience',
+                location: 'Location',
+                applied: 'Applied',
+                score: 'Score',
+                details: '상세보기',
+                call: 'Call',
+                phone: 'Contact',
+                resume: 'Resume',
+                skills: 'Skills',
+                education: 'Education',
+                estimatedAge: 'Estimated Age',
+                potentialAssessment: 'Potential Assessment',
+                resumeSummary: 'Resume Summary',
+                openResume: 'Open Resume',
+                noResume: 'No resume on file',
+                tierScore: 'Tier & Score',
+                prev: 'Prev',
+                next: 'Next',
+                candidates: 'Candidates'
+            },
+            ko: {
+                searchPlaceholder: '이름, 경력 검색...',
+                filterAll: '전체',
+                filterTop: '🌟 최상',
+                filterStrong: '⭐ 우수',
+                filterGood: '✅ 양호',
+                filterFair: '⚠️ 보통',
+                filterTrain: '❌ 교육필요',
+                sortScoreDesc: '점수 ↓',
+                sortScoreAsc: '점수 ↑',
+                sortNewest: '최신순',
+                sortOldest: '오래된순',
+                sortNameAsc: '이름순 ↑',
+                sortNameDesc: '이름순 ↓',
+                perPage12: '페이지당 12개',
+                perPage24: '페이지당 24개',
+                perPage48: '페이지당 48개',
+                perPageAll: '전체 보기',
+                showingAll: '{total}명 표시 중',
+                showingRange: '{start}–{end} / {total}명',
+                experience: '경력',
+                location: '위치',
+                applied: '지원일',
+                score: '점수',
+                details: '상세보기',
+                call: '전화',
+                phone: '연락처',
+                resume: '이력서',
+                skills: '스킬',
+                education: '학력',
+                estimatedAge: '추정 나이',
+                potentialAssessment: '포텐셜 평가',
+                resumeSummary: '이력서 요약',
+                openResume: '이력서 열기',
+                noResume: '이력서 없음',
+                tierScore: '등급 & 점수',
+                prev: '이전',
+                next: '다음',
+                candidates: '지원자'
+            }
+        };
+
+        let currentLang = localStorage.getItem('kcd-lang') || 'ko';
+
+        function setLang(lang) {
+            currentLang = lang;
+            localStorage.setItem('kcd-lang', lang);
+            
+            // Update toggle button
+            document.getElementById('lang-toggle').textContent = lang === 'ko' ? 'EN' : '한글';
+            
+            // Update all elements with data-i18n attributes
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang][key]) el.textContent = i18n[lang][key];
+            });
+            
+            // Update placeholder
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (i18n[lang][key]) el.placeholder = i18n[lang][key];
+            });
+            
+            // Re-render to update dynamic text
+            render();
+        }
+
         let currentFilter = 'all';
         let searchQuery = '';
         let currentPage = 1;
@@ -759,6 +877,15 @@
             document.getElementById('theme-toggle').textContent = isDark ? '🌙' : '☀️';
             localStorage.setItem('kcd-theme', isDark ? 'light' : 'dark');
         });
+
+        // Language toggle
+        document.getElementById('lang-toggle').addEventListener('click', () => {
+            const newLang = currentLang === 'ko' ? 'en' : 'ko';
+            setLang(newLang);
+        });
+
+        // Initialize language
+        setLang(currentLang);
 
         // (header removed per Steve's request)
 
@@ -842,8 +969,11 @@
             const page = filtered.slice(start, end);
 
             const countText = itemsPerPage >= 99999
-                ? `Showing all ${total} candidates`
-                : `Showing ${start + 1}–${end} of ${total} candidates`;
+                ? i18n[currentLang].showingAll.replace('{total}', total)
+                : i18n[currentLang].showingRange
+                    .replace('{start}', start + 1)
+                    .replace('{end}', end)
+                    .replace('{total}', total);
             document.getElementById('results-count').textContent = countText;
 
             const grid = document.getElementById('cards-grid');
@@ -868,11 +998,11 @@
                         <div class="card-meta">
                             ${exp ? `<span class="card-meta-item">💼 ${exp}</span>` : ''}
                             <span class="card-meta-item">📅 ${c.date}</span>
-                            ${c.resume ? '<span class="card-meta-item">📄 Resume</span>' : ''}
+                            ${c.resume ? `<span class="card-meta-item">📄 ${i18n[currentLang].resume}</span>` : ''}
                         </div>
                         <div class="card-actions">
-                            <a href="tel:${c.phone.replace(/[^\d+]/g, '')}" class="btn btn-primary">📞 Call</a>
-                            <button class="btn btn-secondary" onclick="showDetails(${idx})">Details</button>
+                            <a href="tel:${c.phone.replace(/[^\d+]/g, '')}" class="btn btn-primary">📞 ${i18n[currentLang].call}</a>
+                            <button class="btn btn-secondary" onclick="showDetails(${idx})">${i18n[currentLang].details}</button>
                         </div>
                     </div>
                 </div>`;
@@ -908,35 +1038,36 @@
             const potentialBg = {high: '#F0FFF0', medium: '#FFFBE6', low: '#FFF1EC'};
             const potentialLabel = {high: '🟢 HIGH', medium: '🟡 MEDIUM', low: '🔴 LOW'};
 
+            const t = i18n[currentLang];
             document.getElementById('modal-title').innerHTML = `${c.name}${c.estimatedAge ? ` <span style="font-size:0.8rem;color:var(--text-muted);font-weight:400;">🎂 ~${c.estimatedAge}yo</span>` : ''}`;
             document.getElementById('modal-body').innerHTML = `
                 <div class="detail-group">
                     <div style="display:flex;gap:0.5rem;align-items:center;margin-bottom:0.75rem;flex-wrap:wrap;">
-                        <span class="tier-badge ${c.tier}">${c.tier}</span>
-                        <span class="score-pill">${c.score} qualifications</span>
+                        <span class="tier-badge ${c.tier}">${c.tier.toUpperCase()}</span>
+                        <span class="score-pill">${c.score} ${t.score}</span>
                         ${c.potential ? `<span style="padding:0.25rem 0.625rem;border-radius:100px;font-size:0.7rem;font-weight:700;background:${potentialBg[c.potential.rating]};color:${potentialColors[c.potential.rating]};">${potentialLabel[c.potential.rating]} POTENTIAL</span>` : ''}
                     </div>
                 </div>
-                ${c.potential ? `<div class="detail-group"><div style="background:${potentialBg[c.potential.rating]};border-left:3px solid ${potentialColors[c.potential.rating]};border-radius:var(--radius-sm);padding:0.75rem 1rem;font-size:0.85rem;line-height:1.5;">💡 <strong>Potential Assessment:</strong> ${c.potential.reason}</div></div>` : ''}
-                ${c.resumeSummary && c.resumeSummary.length ? `<div class="detail-group"><div class="detail-label">📋 Resume Summary</div><ul style="margin:0.25rem 0 0 1.25rem;font-size:0.85rem;color:var(--text);line-height:1.7;">${c.resumeSummary.map(s => `<li>${s}</li>`).join('')}</ul></div>` : ''}
+                ${c.potential ? `<div class="detail-group"><div style="background:${potentialBg[c.potential.rating]};border-left:3px solid ${potentialColors[c.potential.rating]};border-radius:var(--radius-sm);padding:0.75rem 1rem;font-size:0.85rem;line-height:1.5;">💡 <strong>${t.potentialAssessment}:</strong> ${c.potential.reason}</div></div>` : ''}
+                ${c.resumeSummary && c.resumeSummary.length ? `<div class="detail-group"><div class="detail-label">📋 ${t.resumeSummary}</div><ul style="margin:0.25rem 0 0 1.25rem;font-size:0.85rem;color:var(--text);line-height:1.7;">${c.resumeSummary.map(s => `<li>${s}</li>`).join('')}</ul></div>` : ''}
                 ${c.summary ? `<div class="detail-group"><div class="detail-summary">${c.summary}</div></div>` : ''}
                 <div class="detail-group">
-                    <div class="detail-label">Phone</div>
+                    <div class="detail-label">${t.phone}</div>
                     <div class="detail-value"><a href="tel:${c.phone.replace(/[^\d+]/g,'')}" style="color:var(--accent);font-weight:600;text-decoration:none;">${c.phone}</a></div>
                 </div>
-                ${c.experience && c.experience !== 'None' ? `<div class="detail-group"><div class="detail-label">Experience</div><div class="detail-value">${c.experience}</div></div>` : ''}
-                ${c.education ? `<div class="detail-group"><div class="detail-label">Education</div><div class="detail-value">${c.education}</div></div>` : ''}
-                ${c.skills ? `<div class="detail-group"><div class="detail-label">Skills</div><div class="detail-value">${c.skills}</div></div>` : ''}
-                <div class="detail-group"><div class="detail-label">Location</div><div class="detail-value">${c.location}</div></div>
-                <div class="detail-group"><div class="detail-label">Applied</div><div class="detail-value">${c.date}</div></div>
+                ${c.experience && c.experience !== 'None' ? `<div class="detail-group"><div class="detail-label">${t.experience}</div><div class="detail-value">${c.experience}</div></div>` : ''}
+                ${c.education ? `<div class="detail-group"><div class="detail-label">${t.education}</div><div class="detail-value">${c.education}</div></div>` : ''}
+                ${c.skills ? `<div class="detail-group"><div class="detail-label">${t.skills}</div><div class="detail-value">${c.skills}</div></div>` : ''}
+                <div class="detail-group"><div class="detail-label">${t.location}</div><div class="detail-value">${c.location}</div></div>
+                <div class="detail-group"><div class="detail-label">${t.applied}</div><div class="detail-value">${c.date}</div></div>
                 <div class="detail-group">
-                    <div class="detail-label">Resume</div>
+                    <div class="detail-label">${t.resume}</div>
                     ${c.resume ? `
                         <div style="margin-top:0.5rem;">
-                            <a href="resumes/${c.resumeFile}" target="_blank" class="btn btn-primary" style="display:inline-flex;margin-bottom:0.75rem;">📄 Open Resume</a>
+                            <a href="resumes/${c.resumeFile}" target="_blank" class="btn btn-primary" style="display:inline-flex;margin-bottom:0.75rem;">📄 ${t.openResume}</a>
                         </div>
                         <iframe src="resumes/${c.resumeFile}" style="width:100%;height:500px;border:1px solid var(--border);border-radius:var(--radius-sm);"></iframe>
-                    ` : '<div class="detail-value" style="color:var(--text-muted);">No resume on file</div>'}
+                    ` : `<div class="detail-value" style="color:var(--text-muted);">${t.noResume}</div>`}
                 </div>
             `;
             document.getElementById('modal-overlay').classList.add('active');
