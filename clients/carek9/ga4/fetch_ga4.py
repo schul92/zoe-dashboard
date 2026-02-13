@@ -66,6 +66,37 @@ def run_totals(metrics):
 print("Fetching totals...")
 totals = run_totals(['sessions', 'activeUsers', 'screenPageViews', 'bounceRate', 'averageSessionDuration', 'engagedSessions'])
 
+print("Fetching e-commerce data...")
+ecommerce_totals = run_totals([
+    'ecommercePurchases', 'purchaseRevenue', 'totalRevenue',
+    'addToCarts', 'checkouts', 'itemsViewed',
+    'itemsPurchased', 'cartToViewRate', 'purchaseToViewRate'
+])
+totals.update(ecommerce_totals)
+
+# E-commerce by product (item name)
+try:
+    ecom_products = run_report(
+        ['itemName'],
+        ['itemsPurchased', 'itemRevenue', 'itemsViewed', 'itemsAddedToCart'],
+        limit=20
+    )
+except Exception as e:
+    print(f"⚠️ E-commerce product report: {e}")
+    ecom_products = []
+
+# Purchase funnel by day
+try:
+    ecom_daily = run_report(
+        ['date'],
+        ['ecommercePurchases', 'purchaseRevenue', 'addToCarts', 'checkouts'],
+        limit=31
+    )
+    ecom_daily.sort(key=lambda x: x['date'])
+except Exception as e:
+    print(f"⚠️ E-commerce daily report: {e}")
+    ecom_daily = []
+
 print("Fetching traffic sources...")
 sources = run_report(['sessionDefaultChannelGroup'], ['sessions', 'activeUsers'], limit=10)
 
@@ -105,7 +136,22 @@ data = {
     "geography": geo,
     "dailyTrend": daily,
     "landingPages": landing,
-    "referrers": referrers
+    "referrers": referrers,
+    "ecommerce": {
+        "products": ecom_products,
+        "dailyTrend": ecom_daily,
+        "summary": {
+            "purchases": ecommerce_totals.get('ecommercePurchases', 0),
+            "revenue": ecommerce_totals.get('purchaseRevenue', 0),
+            "totalRevenue": ecommerce_totals.get('totalRevenue', 0),
+            "addToCarts": ecommerce_totals.get('addToCarts', 0),
+            "checkouts": ecommerce_totals.get('checkouts', 0),
+            "itemsViewed": ecommerce_totals.get('itemsViewed', 0),
+            "itemsPurchased": ecommerce_totals.get('itemsPurchased', 0),
+            "cartToViewRate": ecommerce_totals.get('cartToViewRate', 0),
+            "purchaseToViewRate": ecommerce_totals.get('purchaseToViewRate', 0)
+        }
+    }
 }
 
 outdir = '/Users/zoelumos/.openclaw/workspace/zoe-dashboard/clients/carek9/ga4'

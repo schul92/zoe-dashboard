@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "collectedAt": "2026-02-13T15:00:08.960781Z",
+    "collectedAt": "2026-02-13T22:55:40.545472Z",
     "property": "properties/523137923",
     "period": {
       "startDate": "2026-01-14",
@@ -14,7 +14,16 @@
     "screenPageViews": 335,
     "bounceRate": 0.6754385964912281,
     "averageSessionDuration": 283.3101406578947,
-    "engagedSessions": 37
+    "engagedSessions": 37,
+    "ecommercePurchases": 4,
+    "purchaseRevenue": 360.5,
+    "totalRevenue": 360.5,
+    "addToCarts": 11,
+    "checkouts": 3,
+    "itemsViewed": 56,
+    "itemsPurchased": 10,
+    "cartToViewRate": 0.3157894736842105,
+    "purchaseToViewRate": 0.21052631578947367
   },
   "trafficSources": [
     {
@@ -605,5 +614,211 @@
       "sessions": 1,
       "activeUsers": 1
     }
-  ]
+  ],
+  "ecommerce": {
+    "products": [
+      {
+        "itemName": "Chicken-Wrapped Pumpkin",
+        "itemsPurchased": 4,
+        "itemRevenue": 143.8,
+        "itemsViewed": 0,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Beef Wrapped Pumpkin",
+        "itemsPurchased": 3,
+        "itemRevenue": 110.85,
+        "itemsViewed": 0,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Functional Dog Food Topper Probiotic+ for Digestive Support & Immunity Health",
+        "itemsPurchased": 1,
+        "itemRevenue": 48.95,
+        "itemsViewed": 0,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Paw Balm",
+        "itemsPurchased": 1,
+        "itemRevenue": 19.95,
+        "itemsViewed": 2,
+        "itemsAddedToCart": 1
+      },
+      {
+        "itemName": "Protein Chips",
+        "itemsPurchased": 1,
+        "itemRevenue": 36.95,
+        "itemsViewed": 0,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Air-Dried Alaskan Salmon Bite",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 4,
+        "itemsAddedToCart": 1
+      },
+      {
+        "itemName": "Beef Training Treat - 18.95",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 3,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Beef Wrapped Pumpkin - 4 oz",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 1,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Beef Wrapped Pumpkin - 8 oz",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 0,
+        "itemsAddedToCart": 3
+      },
+      {
+        "itemName": "Beef Wrapped Pumpkin Super Healthy Dog Treats - 4 oz",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 5,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Chicken-Wrapped Pumpkin - 4 oz. / yellowish",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 2,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Chicken-Wrapped Pumpkin - 8 oz. / yellowish",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 0,
+        "itemsAddedToCart": 3
+      },
+      {
+        "itemName": "Chicken-Wrapped Pumpkin - 8 oz. / yellowish - 8 oz. / yellowish",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 0,
+        "itemsAddedToCart": 1
+      },
+      {
+        "itemName": "Chicken-Wrapped Pumpkin Super Healthy Dog Treats - 4 oz. / yellowish",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 28,
+        "itemsAddedToCart": 1
+      },
+      {
+        "itemName": "Clean Pawder",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 1,
+        "itemsAddedToCart": 1
+      },
+      {
+        "itemName": "Dexas Mudbuster - Light Grey / Small",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 1,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Functional Dog Food Topper for Joint - 3.6 oz",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 2,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "On/Off Switch [Shower Head Add-On]",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 2,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Pars-Mint Dental Cookies",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 3,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Protein Chips - 3oz / Beef",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 2,
+        "itemsAddedToCart": 0
+      }
+    ],
+    "dailyTrend": [
+      {
+        "date": "20260203",
+        "ecommercePurchases": 1,
+        "purchaseRevenue": 36.95,
+        "addToCarts": 1,
+        "checkouts": 0
+      },
+      {
+        "date": "20260205",
+        "ecommercePurchases": 1,
+        "purchaseRevenue": 48.95,
+        "addToCarts": 0,
+        "checkouts": 0
+      },
+      {
+        "date": "20260206",
+        "ecommercePurchases": 1,
+        "purchaseRevenue": 128.8,
+        "addToCarts": 4,
+        "checkouts": 0
+      },
+      {
+        "date": "20260207",
+        "ecommercePurchases": 0,
+        "purchaseRevenue": 0,
+        "addToCarts": 1,
+        "checkouts": 1
+      },
+      {
+        "date": "20260209",
+        "ecommercePurchases": 1,
+        "purchaseRevenue": 145.8,
+        "addToCarts": 2,
+        "checkouts": 1
+      },
+      {
+        "date": "20260210",
+        "ecommercePurchases": 0,
+        "purchaseRevenue": 0,
+        "addToCarts": 2,
+        "checkouts": 1
+      },
+      {
+        "date": "20260212",
+        "ecommercePurchases": 0,
+        "purchaseRevenue": 0,
+        "addToCarts": 1,
+        "checkouts": 0
+      }
+    ],
+    "summary": {
+      "purchases": 4,
+      "revenue": 360.5,
+      "totalRevenue": 360.5,
+      "addToCarts": 11,
+      "checkouts": 3,
+      "itemsViewed": 56,
+      "itemsPurchased": 10,
+      "cartToViewRate": 0.3157894736842105,
+      "purchaseToViewRate": 0.21052631578947367
+    }
+  }
 }
