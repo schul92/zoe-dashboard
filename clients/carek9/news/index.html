@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CareK9 | News & Trends</title>
+  <title>CareK9 | News Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; background: #09090b; }
-    .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.08); }
+    body { font-family: Inter, system-ui, sans-serif; background: #09090b; }
+    .glass { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(14px); }
   </style>
 </head>
 <body class="text-zinc-100 min-h-screen p-4 sm:p-6 max-w-6xl mx-auto">
@@ -16,60 +16,77 @@
     <div class="flex items-center gap-4">
       <a href="../../../" class="text-zinc-500 hover:text-zinc-300">← Hub</a>
       <div>
-        <h1 class="text-2xl font-extrabold">CareK9 News & Trends</h1>
-        <p class="text-sm text-zinc-400">콘텐츠/트렌드 인사이트 대시보드</p>
+        <h1 class="text-2xl font-extrabold">CareK9 News Dashboard</h1>
+        <p class="text-sm text-zinc-400">Source: clients/carek9/news/data.json</p>
       </div>
-      <span id="updated" class="ml-auto text-xs px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300">Loading...</span>
+      <button id="refresh" class="ml-auto text-xs px-3 py-1 rounded-full bg-zinc-800 border border-zinc-700">Refresh</button>
+      <span id="updated" class="text-xs px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300">Loading...</span>
     </div>
   </header>
 
   <section class="grid grid-cols-2 lg:grid-cols-5 gap-3 mb-6">
-    <div class="glass rounded-xl p-4"><p class="text-xs text-zinc-500">Total Items</p><p id="k-total" class="text-2xl font-bold">-</p></div>
-    <div class="glass rounded-xl p-4"><p class="text-xs text-zinc-500">Twitter</p><p id="k-twitter" class="text-2xl font-bold">-</p></div>
-    <div class="glass rounded-xl p-4"><p class="text-xs text-zinc-500">Reddit</p><p id="k-reddit" class="text-2xl font-bold">-</p></div>
-    <div class="glass rounded-xl p-4"><p class="text-xs text-zinc-500">Brave</p><p id="k-brave" class="text-2xl font-bold">-</p></div>
-    <div class="glass rounded-xl p-4"><p class="text-xs text-zinc-500">Google Trends</p><p id="k-trends" class="text-2xl font-bold">-</p></div>
+    <div class="glass rounded-xl p-4"><p class="text-xs text-zinc-500">Total</p><p id="k-total" class="text-2xl font-bold">0</p></div>
+    <div class="glass rounded-xl p-4"><p class="text-xs text-zinc-500">Twitter</p><p id="k-twitter" class="text-2xl font-bold">0</p></div>
+    <div class="glass rounded-xl p-4"><p class="text-xs text-zinc-500">Reddit</p><p id="k-reddit" class="text-2xl font-bold">0</p></div>
+    <div class="glass rounded-xl p-4"><p class="text-xs text-zinc-500">Hacker News</p><p id="k-hn" class="text-2xl font-bold">0</p></div>
+    <div class="glass rounded-xl p-4"><p class="text-xs text-zinc-500">Brave / Trends</p><p id="k-other" class="text-2xl font-bold">0</p></div>
   </section>
 
-  <section class="grid lg:grid-cols-2 gap-4">
-    <article class="glass rounded-xl p-5">
-      <h2 class="font-bold mb-3">Highlights</h2>
-      <div id="highlights" class="space-y-2 text-sm text-zinc-300"></div>
-    </article>
-    <article class="glass rounded-xl p-5">
-      <h2 class="font-bold mb-3">Action Items</h2>
-      <div id="actions" class="space-y-2 text-sm text-zinc-300"></div>
-    </article>
+  <section class="grid lg:grid-cols-2 gap-4 mb-4">
+    <article class="glass rounded-xl p-5"><h2 class="font-bold mb-3">Highlights</h2><div id="highlights" class="space-y-2 text-sm text-zinc-300"></div></article>
+    <article class="glass rounded-xl p-5"><h2 class="font-bold mb-3">Action Items</h2><div id="actions" class="space-y-2 text-sm text-zinc-300"></div></article>
   </section>
 
-  <script>
-    function itemHtml(list, empty) {
-      if (!list || !list.length) return `<p class="text-zinc-500">${empty}</p>`;
-      return list.map(x => `<div class="bg-zinc-900/70 border border-zinc-800 rounded-lg p-3">• ${typeof x === 'string' ? x : (x.title || JSON.stringify(x))}</div>`).join('');
-    }
+  <section class="glass rounded-xl p-5">
+    <h2 class="font-bold mb-3">By Source</h2>
+    <div id="sources" class="space-y-3 text-sm"></div>
+  </section>
 
-    async function load() {
-      try {
-        const res = await fetch('./data.json');
-        const data = await res.json();
-        const by = (data.summary && data.summary.bySource) || {};
-        document.getElementById('k-total').textContent = (data.summary && data.summary.totalItems) ?? 0;
-        document.getElementById('k-twitter').textContent = by.twitter ?? 0;
-        document.getElementById('k-reddit').textContent = by.reddit ?? 0;
-        document.getElementById('k-brave').textContent = by.brave ?? 0;
-        document.getElementById('k-trends').textContent = by.googleTrends ?? 0;
+<script>
+function itemHtml(list, empty) {
+  if (!Array.isArray(list) || list.length === 0) return `<p class="text-zinc-500">${empty}</p>`;
+  return list.map(x => {
+    const text = typeof x === 'string' ? x : (x.title || x.query || JSON.stringify(x));
+    const url = (x && typeof x === 'object') ? (x.url || x.link) : null;
+    return `<div class="bg-zinc-900/70 border border-zinc-800 rounded-lg p-3">• ${url ? `<a class="text-emerald-300 hover:underline" href="${url}" target="_blank" rel="noopener noreferrer">${escapeHtml(text)}</a>` : escapeHtml(text)}</div>`;
+  }).join('');
+}
 
-        const ts = data.metadata && data.metadata.collectedAt ? new Date(data.metadata.collectedAt) : new Date();
-        document.getElementById('updated').textContent = `Updated ${ts.toLocaleString()}`;
+function escapeHtml(text) {
+  return String(text).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
+}
 
-        document.getElementById('highlights').innerHTML = itemHtml(data.highlights, '아직 수집된 하이라이트가 없습니다.');
-        document.getElementById('actions').innerHTML = itemHtml(data.actionItems, '아직 제안된 액션 아이템이 없습니다.');
-      } catch (e) {
-        document.getElementById('updated').textContent = 'Load failed';
-        document.getElementById('highlights').innerHTML = `<p class="text-red-400">데이터 로드 실패: ${e.message}</p>`;
-      }
-    }
-    load();
-  </script>
+async function load() {
+  try {
+    const res = await fetch('./data.json?' + Date.now());
+    const data = await res.json();
+    const by = data.summary?.bySource || {};
+    document.getElementById('k-total').textContent = data.summary?.totalItems ?? 0;
+    document.getElementById('k-twitter').textContent = by.twitter ?? 0;
+    document.getElementById('k-reddit').textContent = by.reddit ?? 0;
+    document.getElementById('k-hn').textContent = by.hackernews ?? 0;
+    document.getElementById('k-other').textContent = (by.brave ?? 0) + (by.googleTrends ?? 0);
+
+    const ts = data.metadata?.collectedAt ? new Date(data.metadata.collectedAt) : new Date();
+    document.getElementById('updated').textContent = `Updated ${ts.toLocaleString()}`;
+
+    document.getElementById('highlights').innerHTML = itemHtml(data.highlights, 'No highlights yet.');
+    document.getElementById('actions').innerHTML = itemHtml(data.actionItems, 'No action items yet.');
+
+    const sources = data.sources || {};
+    const order = [['twitter','Twitter'],['reddit','Reddit'],['hackernews','Hacker News'],['brave','Brave'],['googleTrends','Google Trends']];
+    document.getElementById('sources').innerHTML = order.map(([k,label]) => {
+      const list = Array.isArray(sources[k]) ? sources[k] : [];
+      return `<div class="border border-zinc-800 rounded-lg p-3"><div class="flex justify-between mb-2"><strong>${label}</strong><span class="text-zinc-500">${list.length}</span></div>${itemHtml(list.slice(0,5), 'No items')}</div>`;
+    }).join('');
+  } catch (e) {
+    document.getElementById('updated').textContent = 'Load failed';
+    document.getElementById('highlights').innerHTML = `<p class="text-red-400">Failed to load: ${e.message}</p>`;
+  }
+}
+
+document.getElementById('refresh').addEventListener('click', load);
+load();
+</script>
 </body>
 </html>
