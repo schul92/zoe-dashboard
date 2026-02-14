@@ -26,7 +26,7 @@ from google.analytics.data_v1beta.types import (
 client = BetaAnalyticsDataClient()
 PROPERTY = 'properties/523137923'
 end = datetime.now()
-start = end - timedelta(days=30)
+start = end - timedelta(days=14)
 date_range = DateRange(start_date=start.strftime('%Y-%m-%d'), end_date=end.strftime('%Y-%m-%d'))
 
 def run_report(dimensions, metrics, limit=20):
@@ -126,7 +126,7 @@ data = {
         "period": {
             "startDate": start.strftime('%Y-%m-%d'),
             "endDate": end.strftime('%Y-%m-%d'),
-            "days": 30
+            "days": 14
         }
     },
     "totals": totals,

@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "collectedAt": "2026-02-13T22:55:40.545472Z",
+    "collectedAt": "2026-02-14T02:08:21.564943Z",
     "property": "properties/523137923",
     "period": {
-      "startDate": "2026-01-14",
+      "startDate": "2026-01-30",
       "endDate": "2026-02-13",
-      "days": 30
+      "days": 14
     }
   },
   "totals": {
-    "sessions": 114,
-    "activeUsers": 92,
-    "screenPageViews": 335,
-    "bounceRate": 0.6754385964912281,
-    "averageSessionDuration": 283.3101406578947,
+    "sessions": 115,
+    "activeUsers": 93,
+    "screenPageViews": 337,
+    "bounceRate": 0.6782608695652174,
+    "averageSessionDuration": 281.1179646260869,
     "engagedSessions": 37,
     "ecommercePurchases": 4,
     "purchaseRevenue": 360.5,
@@ -28,8 +28,8 @@
   "trafficSources": [
     {
       "sessionDefaultChannelGroup": "Direct",
-      "sessions": 89,
-      "activeUsers": 77
+      "sessions": 90,
+      "activeUsers": 78
     },
     {
       "sessionDefaultChannelGroup": "Organic Search",
@@ -38,8 +38,8 @@
     },
     {
       "sessionDefaultChannelGroup": "Unassigned",
-      "sessions": 6,
-      "activeUsers": 5
+      "sessions": 7,
+      "activeUsers": 6
     },
     {
       "sessionDefaultChannelGroup": "Organic Shopping",
@@ -77,9 +77,16 @@
     {
       "pagePath": "/pages/contact-us",
       "pageTitle": "CareK9 | Contact Us",
-      "screenPageViews": 10,
-      "activeUsers": 6,
-      "averageSessionDuration": 195.38875516666667
+      "screenPageViews": 11,
+      "activeUsers": 7,
+      "averageSessionDuration": 171.93463257142858
+    },
+    {
+      "pagePath": "/",
+      "pageTitle": "CareK9 | Premium Natural Dog Treats, Food Toppers & Paw Care",
+      "screenPageViews": 9,
+      "activeUsers": 8,
+      "averageSessionDuration": 19.841538777777778
     },
     {
       "pagePath": "/pages/carek9-x-human-canine-collaborative",
@@ -87,13 +94,6 @@
       "screenPageViews": 9,
       "activeUsers": 8,
       "averageSessionDuration": 9.784817125
-    },
-    {
-      "pagePath": "/",
-      "pageTitle": "CareK9 | Premium Natural Dog Treats, Food Toppers & Paw Care",
-      "screenPageViews": 8,
-      "activeUsers": 7,
-      "averageSessionDuration": 22.321731125
     },
     {
       "pagePath": "/cart",
@@ -267,8 +267,8 @@
   "devices": [
     {
       "deviceCategory": "desktop",
-      "sessions": 84,
-      "activeUsers": 71
+      "sessions": 85,
+      "activeUsers": 72
     },
     {
       "deviceCategory": "mobile",
@@ -286,8 +286,8 @@
     {
       "country": "United States",
       "region": "California",
-      "sessions": 24,
-      "activeUsers": 13
+      "sessions": 25,
+      "activeUsers": 14
     },
     {
       "country": "United States",
@@ -461,9 +461,9 @@
     },
     {
       "date": "20260213",
-      "sessions": 4,
-      "activeUsers": 4,
-      "screenPageViews": 4
+      "sessions": 5,
+      "activeUsers": 5,
+      "screenPageViews": 6
     }
   ],
   "landingPages": [
@@ -496,6 +496,12 @@
       "sessions": 3,
       "bounceRate": 1,
       "averageSessionDuration": 0
+    },
+    {
+      "landingPage": "/pages/contact-us",
+      "sessions": 3,
+      "bounceRate": 1,
+      "averageSessionDuration": 10.403299
     },
     {
       "landingPage": "/products/beef-training-treat",
@@ -546,12 +552,6 @@
       "averageSessionDuration": 0.851195
     },
     {
-      "landingPage": "/pages/contact-us",
-      "sessions": 2,
-      "bounceRate": 1,
-      "averageSessionDuration": 0
-    },
-    {
       "landingPage": "/products/on-off-switch",
       "sessions": 2,
       "bounceRate": 0.5,
@@ -591,8 +591,8 @@
   "referrers": [
     {
       "sessionSource": "(direct)",
-      "sessions": 89,
-      "activeUsers": 77
+      "sessions": 90,
+      "activeUsers": 78
     },
     {
       "sessionSource": "google",
@@ -601,8 +601,8 @@
     },
     {
       "sessionSource": "(not set)",
-      "sessions": 6,
-      "activeUsers": 5
+      "sessions": 7,
+      "activeUsers": 6
     },
     {
       "sessionSource": "admin.shopify.com",
