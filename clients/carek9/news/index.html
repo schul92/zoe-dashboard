@@ -14,7 +14,7 @@
 <body class="text-zinc-100 min-h-screen p-4 sm:p-6 max-w-6xl mx-auto">
   <header class="mb-8">
     <div class="flex items-center gap-4">
-      <a href="../../../" class="text-zinc-500 hover:text-zinc-300">← Hub</a>
+      <a href="../../../index.html" class="text-zinc-500 hover:text-zinc-300">← Hub</a>
       <div>
         <h1 class="text-2xl font-extrabold">CareK9 News Dashboard</h1>
         <p class="text-sm text-zinc-400">Source: clients/carek9/news/data.json</p>
@@ -58,7 +58,9 @@ function escapeHtml(text) {
 
 async function load() {
   try {
-    const res = await fetch('./data.json?' + Date.now());
+    const baseUrl = window.location.href.endsWith('/') ? window.location.href : `${window.location.href}/`;
+    const dataUrl = new URL('data.json', baseUrl);
+    const res = await fetch(`${dataUrl}?${Date.now()}`);
     const data = await res.json();
     const by = data.summary?.bySource || {};
     document.getElementById('k-total').textContent = data.summary?.totalItems ?? 0;
