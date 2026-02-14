@@ -22,6 +22,12 @@
 - Engagement tracking
 - Content calendar
 
+### 👕 **POD Operations Dashboard** (New)
+- Shopify + Etsy 병행 운영 모니터링
+- Orders / Profit / Channel Mix / Automation / Alerts
+- Mock 데이터 기반 즉시 동작 (`/pod.html`)
+- 확장 문서: `docs/POD-DASHBOARD.md`
+
 ### 🏗️ **Infrastructure Monitoring**
 - AWS architecture visualization
 - Zoe AI agent status
@@ -37,6 +43,7 @@
 ### Navigation:
 - **Hub:** `/hub.html` - Main dashboard
 - **SEO:** `/seo/` - SEO analytics
+- **POD:** `/pod.html` - POD operations
 - **AWS:** `/aws.html` - Infrastructure
 - **Workflow:** `/workflow.html` - Automation
 
