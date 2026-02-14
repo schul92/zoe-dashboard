@@ -479,7 +479,7 @@
         async function fetchData() {
             document.getElementById('refreshIcon').classList.add('animate-spin');
             try {
-                const response = await fetch('../clients/kona/seo/data.json?' + Date.now());
+                const response = await fetch('./data.json?' + Date.now());
                 seoData = await response.json();
                 await fetchSparklineTrends();
                 renderDashboard();
@@ -492,7 +492,7 @@
 
         async function fetchSparklineTrends() {
             try {
-                const response = await fetch('../clients/kona/seo/sparkline_trends.json?' + Date.now());
+                const response = await fetch('./sparkline_trends.json?' + Date.now());
                 sparklineTrends = await response.json();
             } catch (e) {
                 sparklineTrends = null;
@@ -509,7 +509,7 @@
             error.style.display = 'none';
 
             try {
-                const response = await fetch('../clients/kona/seo/recommendations.json?' + Date.now());
+                const response = await fetch('./recommendations.json?' + Date.now());
                 const data = await response.json();
                 
                 // Update timestamp
