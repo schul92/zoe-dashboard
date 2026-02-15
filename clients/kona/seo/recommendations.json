@@ -1,95 +1,117 @@
 {
+  "generatedAt": "2026-02-15T03:01:00-08:00",
+  "model": "claude-opus-4-5",
   "urgent": [
     {
-      "type": "zero_ctr_high_impressions",
-      "keyword": "/zh/about-kona-coffee",
-      "action": "Chinese about page has 204 impressions at position #1 but ZERO clicks. Improve meta title and description in Chinese to be more compelling. Add clear CTA and ensure the page renders properly for Chinese users.",
+      "type": "local_seo_ctr_crisis",
+      "keyword": "donuts near me",
+      "action": "Rewrite meta title to include 'Donuts Near Me in Waikiki' and add compelling description with opening date, location. Ensure Google Business Profile is optimized with photos and hours.",
       "impact": "high",
       "effort": "low",
-      "reasoning": "Position #1 with 204 impressions and 0 clicks indicates a severe meta tag or snippet issue. This is your highest-impression page being completely wasted."
+      "reasoning": "26 impressions at position 8.8 with 0% CTR is a critical leak. This high-intent local keyword should convert but your SERP snippet isn't compelling enough."
     },
     {
-      "type": "canonical_issue",
-      "keyword": "http://www.konacoffeedonut.com/en",
-      "action": "HTTP version of /en has 99 impressions at position #12. Ensure proper 301 redirect from http:// to https:// and set canonical tags. Submit URL removal for http version in GSC.",
+      "type": "wasted_position_3",
+      "keyword": "doughnuts near me",
+      "action": "Add schema markup for LocalBusiness, ensure NAP consistency, and add 'doughnuts' spelling variant to H1 or first paragraph of homepage.",
       "impact": "high",
       "effort": "low",
-      "reasoning": "Duplicate indexing splits ranking signals between http and https versions. 99 impressions are being wasted on a non-canonical URL."
+      "reasoning": "Position 3 with 0% CTR means you're visible but invisible. At this position you should see 5-10% CTR minimum. Fix the meta description urgently."
+    },
+    {
+      "type": "intent_mismatch",
+      "keyword": "coffee shop open now",
+      "action": "Add opening hours schema and create a dedicated 'Hours & Location' page. Update meta to mention 'Opening Feb 25, 2026' prominently.",
+      "impact": "medium",
+      "effort": "low",
+      "reasoning": "Position 6 but 0% CTR - searchers want OPEN NOW but you're pre-launch. Be transparent about opening date in snippet to set expectations."
     }
   ],
   "quickWins": [
     {
-      "type": "ctr_optimization",
-      "keyword": "donuts near me",
-      "action": "Optimize meta title/description for 'donuts near me' — currently position #9.2 with 18 impressions but 0 clicks. Add location (Waikiki), opening date, and unique value prop to snippet.",
+      "type": "plural_variant_gap",
+      "keyword": "kona coffee donuts",
+      "action": "Add plural 'Kona Coffee Donuts' to homepage H1 or create a redirect. Currently position 9 vs position 1 for singular.",
       "impact": "high",
       "effort": "low",
-      "potentialGain": 15,
-      "reasoning": "High-intent local search query with decent impressions. Better meta tags could capture 2-3 clicks/week."
+      "potentialGain": 8,
+      "reasoning": "Your brand singular ranks #1 but plural is at #9. Simple text addition could push this to top 3, capturing variant searches."
     },
     {
-      "type": "ctr_optimization",
-      "keyword": "kona coffee",
-      "action": "Position #8 with 24 impressions and 0 clicks. Enhance meta description to differentiate from generic Kona coffee results — emphasize cafe experience, Waikiki location, fresh donuts.",
-      "impact": "high",
-      "effort": "low",
-      "potentialGain": 10,
-      "reasoning": "Branded-adjacent query with strong volume. Currently lost in generic coffee results."
-    },
-    {
-      "type": "position_improvement",
+      "type": "striking_distance_keyword",
       "keyword": "donut shops",
-      "action": "Position #12 with 6 impressions. Create dedicated 'Best Donut Shop in Waikiki' content section. Add structured data for local business.",
+      "action": "Create dedicated 'About Our Donut Shop' page or section targeting this keyword. Add internal links from homepage.",
       "impact": "medium",
       "effort": "medium",
-      "potentialGain": 8,
-      "reasoning": "Moving from page 2 to page 1 could significantly increase impressions and clicks."
+      "potentialGain": 6,
+      "reasoning": "Position 12 with 6 impressions - just outside page 1. Light content optimization could push to top 10."
+    },
+    {
+      "type": "content_gap",
+      "keyword": "hawaiian coffee and donuts",
+      "action": "Create a blog post: 'Why Hawaiian Coffee & Donuts Are the Perfect Pair' - target this exact phrase in title and H1.",
+      "impact": "medium",
+      "effort": "medium",
+      "potentialGain": 15,
+      "reasoning": "Position 20.4 for a highly relevant keyword. Dedicated content could easily reach page 1 given your domain relevance."
+    },
+    {
+      "type": "near_me_cluster",
+      "keyword": "donut near me",
+      "action": "Ensure consistent local signals: embed Google Map, add 'Waikiki' and 'Honolulu' to footer, create location-specific landing page.",
+      "impact": "medium",
+      "effort": "low",
+      "potentialGain": 10,
+      "reasoning": "Position 13.7 for local intent. Strengthening local SEO signals will lift entire 'near me' keyword cluster together."
     }
   ],
   "opportunities": [
     {
-      "type": "content_gap",
-      "action": "Create dedicated landing pages for 'coffee near me' (pos #28) and 'dessert near me' (pos #26). These high-intent local queries need location-optimized content with Google Maps embed, hours, and menu highlights.",
+      "type": "japanese_market_expansion",
+      "action": "Create Japanese language landing page targeting 'ワイキキ ドーナツ' and 'ハワイ コナコーヒー'. Add hreflang tags. Japan shows 7.9% CTR - 3x higher than US.",
       "impact": "high",
       "effort": "medium",
-      "reasoning": "Local 'near me' queries are extremely high-intent. Currently ranking on page 3 — dedicated local SEO content could push to page 1."
+      "reasoning": "Japanese tourists are highly engaged (7.9% CTR vs 2.3% US). Hawaii is a top destination for Japanese travelers. Dedicated JP content could unlock significant traffic."
     },
     {
-      "type": "international_seo",
-      "action": "Japanese market showing 26 impressions and 1 click. Korean market: 25 impressions, 1 click. Optimize hreflang tags, create targeted content for Japanese tourists visiting Waikiki.",
+      "type": "korean_market_expansion",
+      "action": "Expand Korean content beyond current page. Target '와이키키 디저트', '하와이 도넛 맛집'. You already rank position 7.3 for a Korean keyword.",
       "impact": "medium",
       "effort": "medium",
-      "reasoning": "Waikiki is a top destination for Japanese and Korean tourists. Multi-language SEO has strong growth potential."
+      "reasoning": "Korean tourists are searching and clicking (33% CTR on Korean keyword). Expanding Korean SEO could capture this audience pre-visit planning."
     },
     {
-      "type": "grand_opening_content",
-      "action": "Create a dedicated grand opening page (Feb 25, 2026) with event schema markup, special offers, and social proof. Target 'new coffee shop waikiki' and 'waikiki grand opening' keywords.",
-      "impact": "high",
+      "type": "desktop_conversion_gap",
+      "action": "Review desktop user experience - CTR is lower than mobile (1.6% vs 4.3%). Check if desktop meta snippets display correctly, improve desktop site speed.",
+      "impact": "medium",
       "effort": "low",
-      "reasoning": "Grand opening is 11 days away. Time-sensitive content with event markup can capture search interest."
+      "reasoning": "Desktop gets 2x more impressions than mobile but converts worse. Potential quick win by optimizing desktop experience."
     }
   ],
   "insights": [
     {
-      "type": "device_distribution",
-      "observation": "Desktop dominates at 68% of impressions vs 30% mobile. Unusual for a local food business where mobile typically leads.",
-      "suggestion": "Investigate if mobile pages are being suppressed. Check mobile usability in GSC. Optimize for mobile-first indexing.",
+      "type": "brand_dominance",
+      "observation": "Brand keyword 'kona coffee donut' has 40% CTR at position 1, driving 37.5% of all clicks.",
+      "suggestion": "Brand is strong. Focus on non-brand keywords for growth. Consider brand + location combinations.",
+      "priority": "medium"
+    },
+    {
+      "type": "international_opportunity",
+      "observation": "Japan (7.9% CTR) and Korea (4.5% CTR) outperform USA (2.3% CTR) significantly.",
+      "suggestion": "Prioritize Japanese and Korean language content. These tourists plan Hawaii trips months ahead - capture them early.",
       "priority": "high"
     },
     {
-      "type": "brand_dominance",
-      "observation": "'kona coffee donut' is the #1 keyword with 33% CTR at position #1, accounting for 28% of all clicks. Strong brand recognition building.",
-      "suggestion": "Continue building brand awareness. The branded query performance is excellent — focus on expanding non-branded visibility.",
-      "priority": "medium"
+      "type": "local_intent_gap",
+      "observation": "Multiple 'near me' keywords rank well (positions 3-13) but have 0% CTR.",
+      "suggestion": "This is pre-launch friction. After Feb 25 opening, these should convert. For now, update meta to say 'Opening Feb 25' to manage expectations.",
+      "priority": "high"
     },
     {
-      "type": "korean_content_performance",
-      "observation": "Korean page /ko/about-kona-coffee ranks #2.2 with 31 impressions. Korean keyword '코나 커피 특징' at position #4.8. Korean content is performing well.",
-      "suggestion": "Expand Korean content — add Korean menu page, blog posts about Kona coffee culture for Korean audience.",
-      "priority": "medium"
+      "type": "mobile_first_working",
+      "observation": "Mobile CTR (4.3%) is nearly 3x desktop (1.6%). Mobile optimization is working.",
+      "suggestion": "Continue mobile-first approach. Consider AMP pages for even faster mobile experience.",
+      "priority": "low"
     }
-  ],
-  "generatedAt": "2026-02-14T03:02:00-08:00",
-  "model": "claude-opus-4-6",
-  "dataDate": "2026-02-14"
+  ]
 }
