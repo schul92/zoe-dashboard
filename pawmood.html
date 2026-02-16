@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawmood (Picomood Pets) - Business Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 2px solid #dee2e6;
+            overflow-x: auto;
+        }
+        
+        .nav-tab {
+            padding: 15px 25px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            color: #495057;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        
+        .nav-tab:hover {
+            background: #e9ecef;
+        }
+        
+        .nav-tab.active {
+            background: white;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+            font-size: 1.8em;
+        }
+        
+        .section h3 {
+            color: #495057;
+            margin: 20px 0 15px 0;
+            font-size: 1.4em;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        
+        .badge-priority {
+            background: #28a745;
+            color: white;
+        }
+        
+        .badge-secondary {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .badge-warning {
+            background: #ffc107;
+            color: #212529;
+        }
+        
+        .badge-danger {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .stat-card h4 {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        
+        .stat-card .value {
+            font-size: 2.2em;
+            font-weight: bold;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight-row {
+            background: #fff3cd !important;
+        }
+        
+        .profit-positive {
+            color: #28a745;
+            font-weight: 600;
+        }
+        
+        .profit-negative {
+            color: #dc3545;
+            font-weight: 600;
+        }
+        
+        .stars {
+            color: #ffc107;
+        }
+        
+        .info-box {
+            background: #e7f3ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .success-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .comparison-table th {
+            font-size: 0.9em;
+        }
+        
+        .comparison-table td {
+            font-size: 0.95em;
+        }
+        
+        @media (max-width: 768px) {
+            .stat-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            table {
+                font-size: 0.9em;
+            }
+            
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🐾 Pawmood Dashboard</h1>
+            <p>Picomood Pets Business Intelligence & Sourcing Guide</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Last Updated: February 16, 2026</p>
+        </div>
+        
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showTab('overview')">📊 Overview</button>
+            <button class="nav-tab" onclick="showTab('suppliers')">🏭 Suppliers</button>
+            <button class="nav-tab" onclick="showTab('pricing')">💰 Price Comparison</button>
+            <button class="nav-tab" onclick="showTab('profit')">📈 Profit Simulation</button>
+            <button class="nav-tab" onclick="showTab('strategy')">🎯 Strategy</button>
+        </div>
+        
+        <div class="content">
+            <!-- OVERVIEW TAB -->
+            <div id="overview" class="tab-content active">
+                <div class="section">
+                    <h2>Executive Summary</h2>
+                    
+                    <div class="stat-grid">
+                        <div class="stat-card">
+                            <h4>Recommended Start Path</h4>
+                            <div class="value">POD</div>
+                            <p style="font-size: 0.9em; margin-top: 10px;">Print-on-Demand for 0-6 months</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <h4>Target Monthly Profit (Month 6)</h4>
+                            <div class="value">$1,300</div>
+                            <p style="font-size: 0.9em; margin-top: 10px;">150 units/month at base case</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <h4>Top Supplier (US Wholesale)</h4>
+                            <div class="value">Parisian Pet</div>
+                            <p style="font-size: 0.9em; margin-top: 10px;">$200 MOQ, free shipping $300+</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <h4>Focus Market</h4>
+                            <div class="value">Small Dogs</div>
+                            <p style="font-size: 0.9em; margin-top: 10px;">5-25 lbs, 3 sizes (XS/S/M)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="success-box">
+                        <strong>✅ Key Recommendation:</strong> Start with POD (Printful + Printify) for months 1-3, transition to US Wholesale by month 4, evaluate Korea Import only after consistent 250+ units/month for 3 months.
+                    </div>
+                    
+                    <h3>Strategic Timeline</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Phase</th>
+                                <th>Timeline</th>
+                                <th>Sourcing</th>
+                                <th>Target Volume</th>
+                                <th>Expected Profit</th>
+                                <th>Key Milestone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td><strong>Phase 1</strong></td>
+                                <td>Months 1-3</td>
+                                <td>POD Only</td>
+                                <td>50-100 units/mo</td>
+                                <td class="profit-positive">$500-800/mo</td>
+                                <td>Validate product-market fit</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Phase 2</strong></td>
+                                <td>Months 4-9</td>
+                                <td>US Wholesale</td>
+                                <td>150-300 units/mo</td>
+                                <td class="profit-positive">$1,500-3,000/mo</td>
+                                <td>Scale proven SKUs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Phase 3</strong></td>
+                                <td>Months 10-12</td>
+                                <td>Hybrid (US + Korea)</td>
+                                <td>350-500 units/mo</td>
+                                <td class="profit-positive">$3,500-5,500/mo</td>
+                                <td>Optimize margins at scale</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- SUPPLIERS TAB -->
+            <div id="suppliers" class="tab-content">
+                <div class="section">
+                    <h2>🥇 Top 10 Recommended Suppliers</h2>
+                    
+                    <div class="info-box">
+                        <strong>Priority Tier System:</strong> Start with Priority 1 suppliers. Expand to Priority 2 once you have 2-3 months of sales data.
+                    </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Supplier</th>
+                                <th>Location</th>
+                                <th>Rating</th>
+                                <th>MOQ</th>
+                                <th>Strengths</th>
+                                <th>Website</th>
+                                <th>Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td><strong>1</strong></td>
+                                <td><strong>Parisian Pet</strong></td>
+                                <td>Miami, FL</td>
+                                <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                                <td>$200</td>
+                                <td>Free ship $300+, 24/7 support, custom options</td>
+                                <td><a href="https://wholesale.parisianpet.com" target="_blank">wholesale.parisianpet.com</a></td>
+                                <td><span class="badge badge-priority">Priority 1</span></td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>2</strong></td>
+                                <td><strong>WholesalePet.com</strong></td>
+                                <td>Online</td>
+                                <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                                <td>Varies</td>
+                                <td>9,850+ SKUs, instant ordering after approval</td>
+                                <td><a href="https://www.wholesalepet.com" target="_blank">wholesalepet.com</a></td>
+                                <td><span class="badge badge-priority">Priority 1</span></td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>3</strong></td>
+                                <td><strong>Printful</strong></td>
+                                <td>Online (POD)</td>
+                                <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                                <td>1 unit</td>
+                                <td>Zero inventory, Shopify integration, quality control</td>
+                                <td><a href="https://www.printful.com" target="_blank">printful.com</a></td>
+                                <td><span class="badge badge-priority">Priority 1</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>4</strong></td>
+                                <td><strong>Fauna Foods Corp</strong></td>
+                                <td>Elmhurst, NY</td>
+                                <td><span class="stars">⭐⭐⭐⭐</span></td>
+                                <td>Medium</td>
+                                <td>30-40 min from Fort Lee, regional specialist</td>
+                                <td><a href="https://www.faunafoods.com" target="_blank">faunafoods.com</a></td>
+                                <td><span class="badge badge-secondary">Priority 2</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>5</strong></td>
+                                <td><strong>Phillips Pet</strong></td>
+                                <td>Easton, PA</td>
+                                <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                                <td>$200-500</td>
+                                <td>PIDA member, 96%+ on-time delivery, 1.5hr from Fort Lee</td>
+                                <td><a href="https://www.phillipspet.com" target="_blank">phillipspet.com</a></td>
+                                <td><span class="badge badge-secondary">Priority 2</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>6</strong></td>
+                                <td><strong>Prestige Products East</strong></td>
+                                <td>Online</td>
+                                <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                                <td>Varies</td>
+                                <td>Premium brands: fabdog, Gold Paw, 1,059+ SKUs</td>
+                                <td><a href="https://prestigeproductseast.com" target="_blank">prestigeproductseast.com</a></td>
+                                <td><span class="badge badge-secondary">Priority 2</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>7</strong></td>
+                                <td><strong>Fitwarm</strong></td>
+                                <td>Online</td>
+                                <td><span class="stars">⭐⭐⭐⭐</span></td>
+                                <td>Low</td>
+                                <td>Est. 2009, premium fabrics, global network</td>
+                                <td><a href="https://www.fitwarm.com/pages/wholesale-dog-clothes" target="_blank">fitwarm.com</a></td>
+                                <td><span class="badge badge-secondary">Priority 2</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>8</strong></td>
+                                <td><strong>Sassy Dog Fashions</strong></td>
+                                <td>Northampton, PA</td>
+                                <td><span class="stars">⭐⭐⭐⭐</span></td>
+                                <td>None</td>
+                                <td>US handmade, custom/white label, factory tours</td>
+                                <td><a href="https://sassydogfashions.com" target="_blank">sassydogfashions.com</a></td>
+                                <td><span class="badge badge-warning">Custom</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>9</strong></td>
+                                <td><strong>Faire.com</strong></td>
+                                <td>Online B2B</td>
+                                <td><span class="stars">⭐⭐⭐⭐⭐</span></td>
+                                <td>Low</td>
+                                <td>New retailer perks, free ship/returns, multi-brand</td>
+                                <td><a href="https://www.faire.com" target="_blank">faire.com</a></td>
+                                <td><span class="badge badge-secondary">Priority 2</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>10</strong></td>
+                                <td><strong>Korea Direct (OEM)</strong></td>
+                                <td>Busan/Incheon</td>
+                                <td><span class="stars">⭐⭐⭐⭐</span></td>
+                                <td>300-1000</td>
+                                <td>Lowest cost (30-50% cheaper), full customization</td>
+                                <td><a href="https://korea.alibaba.com" target="_blank">korea.alibaba.com</a></td>
+                                <td><span class="badge badge-danger">Phase 3 Only</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Full US Wholesale Supplier Directory (20 Total)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Supplier</th>
+                                <th>Location</th>
+                                <th>Service Area</th>
+                                <th>Strengths</th>
+                                <th>Contact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bradley Caldwell Inc.</td>
+                                <td>Hazleton, PA</td>
+                                <td>NJ, NY, PA, East Coast</td>
+                                <td>PIDA member, competitive pricing</td>
+                                <td><a href="https://www.bradleycaldwell.com" target="_blank">bradleycaldwell.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Zeigler's Distributor</td>
+                                <td>Lebanon, PA</td>
+                                <td>CT, DE, NJ, NY, OH, PA, VA, WV</td>
+                                <td>East Coast specialist, regional priority</td>
+                                <td><a href="https://www.zeiglersdist.com" target="_blank">zeiglersdist.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Pet Palette Distribution</td>
+                                <td>Sykesville, MD</td>
+                                <td>National (inc. NJ)</td>
+                                <td>Dog/cat apparel focus, boutique-friendly</td>
+                                <td><a href="https://www.petpalettedistribution.com" target="_blank">petpalettedistribution.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>BossPetEdge.com</td>
+                                <td>Online</td>
+                                <td>National</td>
+                                <td>Bulk pricing, trendy designs, safety products</td>
+                                <td><a href="https://www.bosspetedge.com" target="_blank">bosspetedge.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Doggie Design</td>
+                                <td>Online</td>
+                                <td>National</td>
+                                <td>Est. 1999, exclusive designs, boutique quality</td>
+                                <td><a href="https://www.doggiedesign.com" target="_blank">doggiedesign.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>King Wholesale Inc.</td>
+                                <td>Yuba City, CA</td>
+                                <td>National (inc. NJ)</td>
+                                <td>PIDA member, dog/cat specialist</td>
+                                <td><a href="https://www.kingwholesale.com" target="_blank">kingwholesale.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Marshall Pet Products</td>
+                                <td>Wolcott, NY</td>
+                                <td>National</td>
+                                <td>NY-based, dog/cat/small animal</td>
+                                <td><a href="https://www.marshallpet.com" target="_blank">marshallpet.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Central Pet Distribution</td>
+                                <td>Santa Fe Springs, CA</td>
+                                <td>National (inc. NJ)</td>
+                                <td>Large distributor, PIDA member</td>
+                                <td><a href="https://www.centralpet.com" target="_blank">centralpet.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>RJ Matthews Company</td>
+                                <td>Massillon, OH</td>
+                                <td>National</td>
+                                <td>PIDA member, broad product range</td>
+                                <td><a href="https://www.rjmatthews.com" target="_blank">rjmatthews.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>The Gralen Company</td>
+                                <td>Huntington Beach, CA</td>
+                                <td>National</td>
+                                <td>PIDA member, dog/cat focus</td>
+                                <td><a href="https://www.gralenco.com" target="_blank">gralenco.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Pet Food Experts, Inc.</td>
+                                <td>Pawtucket, RI</td>
+                                <td>National (inc. NJ)</td>
+                                <td>PIDA member, multi-category</td>
+                                <td><a href="https://www.petfoodexperts.com" target="_blank">petfoodexperts.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Northwest Zoological</td>
+                                <td>Everett, WA</td>
+                                <td>National</td>
+                                <td>PIDA member</td>
+                                <td><a href="https://www.nwzoo.com" target="_blank">nwzoo.com</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- PRICING TAB -->
+            <div id="pricing" class="tab-content">
+                <div class="section">
+                    <h2>Multi-Vendor Price Comparison</h2>
+                    
+                    <h3>SKU 1: Pet Bandana (Triangle, Over-Collar)</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Sourcing Path</th>
+                                <th>Unit Cost</th>
+                                <th>MOQ</th>
+                                <th>Lead Time</th>
+                                <th>Retail Benchmark</th>
+                                <th>Gross Margin %</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>POD (Printful)</strong></td>
+                                <td>$8.95</td>
+                                <td>1</td>
+                                <td>3-5 days</td>
+                                <td>$22-28</td>
+                                <td class="profit-positive">64.2%</td>
+                                <td>Sublimation print, no custom tag</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>US Wholesale</strong></td>
+                                <td>$2.50-$4.00</td>
+                                <td>50</td>
+                                <td>5-10 days</td>
+                                <td>$22-28</td>
+                                <td class="profit-positive">84.1%</td>
+                                <td>Plain cotton + custom screen print</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Korea Import</strong></td>
+                                <td>$0.80-$1.50</td>
+                                <td>200</td>
+                                <td>25-35 days</td>
+                                <td>$22-28</td>
+                                <td class="profit-positive">91.0%</td>
+                                <td>Full custom, polyester blend, hang tag</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>SKU 2: Pet Sweater/Hoodie (Knit, Adjustable)</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Sourcing Path</th>
+                                <th>Unit Cost</th>
+                                <th>MOQ</th>
+                                <th>Lead Time</th>
+                                <th>Retail Benchmark</th>
+                                <th>Gross Margin %</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>POD (Printify)</strong></td>
+                                <td>$22.50</td>
+                                <td>1</td>
+                                <td>5-7 days</td>
+                                <td>$38-58</td>
+                                <td class="profit-positive">59.1%</td>
+                                <td>Limited sizes (S/M/L), basic knit</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>US Wholesale</strong></td>
+                                <td>$8.50-$12.00</td>
+                                <td>100</td>
+                                <td>7-14 days</td>
+                                <td>$38-58</td>
+                                <td class="profit-positive">77.8%</td>
+                                <td>Good quality, 5 sizes, custom label option</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Korea Import</strong></td>
+                                <td>$4.50-$7.00</td>
+                                <td>300</td>
+                                <td>30-40 days</td>
+                                <td>$38-58</td>
+                                <td class="profit-positive">84.9%</td>
+                                <td>Premium materials, full custom, branded pkg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>SKU 3: Pet Raincoat (Waterproof, Reflective)</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Sourcing Path</th>
+                                <th>Unit Cost</th>
+                                <th>MOQ</th>
+                                <th>Lead Time</th>
+                                <th>Retail Benchmark</th>
+                                <th>Gross Margin %</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>POD (Gelato)</strong></td>
+                                <td>$19.95</td>
+                                <td>1</td>
+                                <td>4-6 days</td>
+                                <td>$32-48</td>
+                                <td class="profit-positive">60.1%</td>
+                                <td>Basic waterproof nylon, no reflective</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>US Wholesale</strong></td>
+                                <td>$7.50-$10.00</td>
+                                <td>75</td>
+                                <td>7-12 days</td>
+                                <td>$32-48</td>
+                                <td class="profit-positive">78.7%</td>
+                                <td>Quality waterproof, reflective trim, 4 sizes</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Korea Import</strong></td>
+                                <td>$3.80-$5.50</td>
+                                <td>250</td>
+                                <td>30-40 days</td>
+                                <td>$32-48</td>
+                                <td class="profit-positive">86.3%</td>
+                                <td>Premium TPU fabric, reflective, adjustable</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Wholesale Price Examples (Actual Market Data)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Wholesale Range</th>
+                                <th>Retail Reference</th>
+                                <th>Source/Brand</th>
+                                <th>MOQ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Basic Dog T-Shirt</td>
+                                <td>$1.99-$4.50</td>
+                                <td>$8-15</td>
+                                <td>General wholesalers</td>
+                                <td>12-24</td>
+                            </tr>
+                            <tr>
+                                <td>Dog Sweater (Basic)</td>
+                                <td>$3.50-$7.00</td>
+                                <td>$15-25</td>
+                                <td>Parisian Pet, Fitwarm</td>
+                                <td>6-12</td>
+                            </tr>
+                            <tr>
+                                <td>Dog Sweater (Premium)</td>
+                                <td>$8.00-$15.00</td>
+                                <td>$30-50</td>
+                                <td>fabdog, Gold Paw</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Dog Dress</td>
+                                <td>$4.50-$9.00</td>
+                                <td>$18-35</td>
+                                <td>Daisy and Lucy</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Dog Hoodie</td>
+                                <td>$5.00-$10.00</td>
+                                <td>$20-40</td>
+                                <td>General brands</td>
+                                <td>6-12</td>
+                            </tr>
+                            <tr>
+                                <td>Dog Winter Coat/Jacket</td>
+                                <td>$8.00-$18.00</td>
+                                <td>$35-70</td>
+                                <td>Gold Paw, fabdog</td>
+                                <td>4-6</td>
+                            </tr>
+                            <tr>
+                                <td>Dog Raincoat</td>
+                                <td>$6.00-$12.00</td>
+                                <td>$25-45</td>
+                                <td>General brands</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Dog Pajamas</td>
+                                <td>$5.50-$11.00</td>
+                                <td>$22-40</td>
+                                <td>Fitwarm, fabdog</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Dog Bow Tie/Accessories</td>
+                                <td>$1.50-$4.00</td>
+                                <td>$6-15</td>
+                                <td>Barley's Bowties</td>
+                                <td>12-24</td>
+                            </tr>
+                            <tr>
+                                <td>Dog Harness (Apparel Type)</td>
+                                <td>$7.00-$16.00</td>
+                                <td>$28-60</td>
+                                <td>Doggie Design</td>
+                                <td>4-6</td>
+                            </tr>
+                            <tr>
+                                <td>Cat Sweater</td>
+                                <td>$3.00-$6.00</td>
+                                <td>$12-22</td>
+                                <td>General brands</td>
+                                <td>12</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Custom T-Shirt (300 pcs)</td>
+                                <td>$9.00/unit</td>
+                                <td>$25-35</td>
+                                <td>Parisian Pet Custom</td>
+                                <td>300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- PROFIT TAB -->
+            <div id="profit" class="tab-content">
+                <div class="section">
+                    <h2>Net-Profit Simulation Models</h2>
+                    
+                    <div class="warning-box">
+                        <strong>⚠️ Model Assumptions:</strong> Base case uses 8% return rate, 22% ad spend, 3% payment fees. Conservative adds +4% return rate and +8% ad spend. Optimistic reduces both by similar margins.
+                    </div>
+                    
+                    <h3>Scenario 1: Print-on-Demand (POD)</h3>
+                    
+                    <h4>POD at 50 Units/Month</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Line Item</th>
+                                <th>Conservative</th>
+                                <th>Base Case</th>
+                                <th>Optimistic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Revenue</strong></td>
+                                <td>$1,750</td>
+                                <td>$2,100</td>
+                                <td>$2,400</td>
+                            </tr>
+                            <tr>
+                                <td>COGS (product)</td>
+                                <td>-$875</td>
+                                <td>-$875</td>
+                                <td>-$875</td>
+                            </tr>
+                            <tr>
+                                <td>Returns (8-12%)</td>
+                                <td>-$210</td>
+                                <td>-$168</td>
+                                <td>-$120</td>
+                            </tr>
+                            <tr>
+                                <td>Payment Fees</td>
+                                <td>-$61</td>
+                                <td>-$63</td>
+                                <td>-$70</td>
+                            </tr>
+                            <tr>
+                                <td>Packaging</td>
+                                <td>-$60</td>
+                                <td>-$45</td>
+                                <td>-$30</td>
+                            </tr>
+                            <tr>
+                                <td>Ad Spend (15-30%)</td>
+                                <td>-$525</td>
+                                <td>-$462</td>
+                                <td>-$360</td>
+                            </tr>
+                            <tr>
+                                <td>Fixed Costs</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Net Profit</strong></td>
+                                <td class="profit-negative">-$133</td>
+                                <td class="profit-positive">$335</td>
+                                <td class="profit-positive">$793</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Profit per Unit</strong></td>
+                                <td class="profit-negative">-$2.66</td>
+                                <td class="profit-positive">$6.70</td>
+                                <td class="profit-positive">$15.86</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h4>POD at 150 Units/Month</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Line Item</th>
+                                <th>Conservative</th>
+                                <th>Base Case</th>
+                                <th>Optimistic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Revenue</strong></td>
+                                <td>$5,250</td>
+                                <td>$6,300</td>
+                                <td>$7,200</td>
+                            </tr>
+                            <tr>
+                                <td>COGS</td>
+                                <td>-$2,625</td>
+                                <td>-$2,625</td>
+                                <td>-$2,625</td>
+                            </tr>
+                            <tr>
+                                <td>Returns</td>
+                                <td>-$630</td>
+                                <td>-$504</td>
+                                <td>-$360</td>
+                            </tr>
+                            <tr>
+                                <td>Payment/Packaging</td>
+                                <td>-$318</td>
+                                <td>-$324</td>
+                                <td>-$300</td>
+                            </tr>
+                            <tr>
+                                <td>Ad Spend</td>
+                                <td>-$1,575</td>
+                                <td>-$1,386</td>
+                                <td>-$1,080</td>
+                            </tr>
+                            <tr>
+                                <td>Fixed Costs</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Net Profit</strong></td>
+                                <td class="profit-negative">-$50</td>
+                                <td class="profit-positive">$1,309</td>
+                                <td class="profit-positive">$2,683</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Profit per Unit</strong></td>
+                                <td class="profit-negative">-$0.33</td>
+                                <td class="profit-positive">$8.73</td>
+                                <td class="profit-positive">$17.89</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Scenario 2: US Wholesale</h3>
+                    
+                    <h4>US Wholesale at 50 Units/Month</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Line Item</th>
+                                <th>Conservative</th>
+                                <th>Base Case</th>
+                                <th>Optimistic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Revenue</strong></td>
+                                <td>$1,750</td>
+                                <td>$1,783</td>
+                                <td>$2,100</td>
+                            </tr>
+                            <tr>
+                                <td>COGS</td>
+                                <td>-$366</td>
+                                <td>-$366</td>
+                                <td>-$366</td>
+                            </tr>
+                            <tr>
+                                <td>Returns</td>
+                                <td>-$210</td>
+                                <td>-$143</td>
+                                <td>-$105</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping/Packaging</td>
+                                <td>-$350</td>
+                                <td>-$320</td>
+                                <td>-$275</td>
+                            </tr>
+                            <tr>
+                                <td>Ad Spend</td>
+                                <td>-$525</td>
+                                <td>-$392</td>
+                                <td>-$315</td>
+                            </tr>
+                            <tr>
+                                <td>Fixed Costs</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Net Profit</strong></td>
+                                <td class="profit-positive">$147</td>
+                                <td class="profit-positive">$356</td>
+                                <td class="profit-positive">$887</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Initial Investment</strong></td>
+                                <td colspan="3">$1,813 (one-time inventory)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Payback Period</strong></td>
+                                <td>12.3 months</td>
+                                <td>5.1 months</td>
+                                <td>2.0 months</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h4>US Wholesale at 150 Units/Month</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Line Item</th>
+                                <th>Conservative</th>
+                                <th>Base Case</th>
+                                <th>Optimistic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Revenue</strong></td>
+                                <td>$5,250</td>
+                                <td>$5,349</td>
+                                <td>$6,300</td>
+                            </tr>
+                            <tr>
+                                <td>COGS</td>
+                                <td>-$1,099</td>
+                                <td>-$1,099</td>
+                                <td>-$1,099</td>
+                            </tr>
+                            <tr>
+                                <td>Returns</td>
+                                <td>-$630</td>
+                                <td>-$428</td>
+                                <td>-$315</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping/Packaging</td>
+                                <td>-$1,020</td>
+                                <td>-$960</td>
+                                <td>-$825</td>
+                            </tr>
+                            <tr>
+                                <td>Ad Spend</td>
+                                <td>-$1,575</td>
+                                <td>-$1,177</td>
+                                <td>-$945</td>
+                            </tr>
+                            <tr>
+                                <td>Fixed Costs</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Net Profit</strong></td>
+                                <td class="profit-positive">$774</td>
+                                <td class="profit-positive">$1,372</td>
+                                <td class="profit-positive">$2,964</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Monthly ROI</strong></td>
+                                <td>42.7%</td>
+                                <td>75.7%</td>
+                                <td>163.5%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Scenario 3: Korea Import</h3>
+                    
+                    <h4>Korea Import at 150 Units/Month</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Line Item</th>
+                                <th>Conservative</th>
+                                <th>Base Case</th>
+                                <th>Optimistic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Revenue</strong></td>
+                                <td>$5,049</td>
+                                <td>$5,049</td>
+                                <td>$5,940</td>
+                            </tr>
+                            <tr>
+                                <td>COGS (landed)</td>
+                                <td>-$675</td>
+                                <td>-$675</td>
+                                <td>-$675</td>
+                            </tr>
+                            <tr>
+                                <td>Returns</td>
+                                <td>-$606</td>
+                                <td>-$404</td>
+                                <td>-$297</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping/Packaging</td>
+                                <td>-$1,050</td>
+                                <td>-$1,005</td>
+                                <td>-$900</td>
+                            </tr>
+                            <tr>
+                                <td>Ad Spend</td>
+                                <td>-$1,515</td>
+                                <td>-$1,111</td>
+                                <td>-$891</td>
+                            </tr>
+                            <tr>
+                                <td>Fixed Costs</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Net Profit</strong></td>
+                                <td class="profit-positive">$1,051</td>
+                                <td class="profit-positive">$1,551</td>
+                                <td class="profit-positive">$3,025</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Initial Investment</strong></td>
+                                <td colspan="3">$4,410 (MOQ inventory + freight)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Monthly ROI</strong></td>
+                                <td>23.8%</td>
+                                <td>35.2%</td>
+                                <td>68.6%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="warning-box">
+                        <strong>⚠️ Korea Import Warning:</strong> Not recommended below 150 units/month due to inventory risk. MOQ of 750 total units takes 5 months to sell at 150/month pace.
+                    </div>
+                    
+                    <h4>Korea Import at 300 Units/Month (Optimal)</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Line Item</th>
+                                <th>Conservative</th>
+                                <th>Base Case</th>
+                                <th>Optimistic</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Revenue</strong></td>
+                                <td>$10,098</td>
+                                <td>$10,098</td>
+                                <td>$11,880</td>
+                            </tr>
+                            <tr>
+                                <td>COGS</td>
+                                <td>-$1,350</td>
+                                <td>-$1,350</td>
+                                <td>-$1,350</td>
+                            </tr>
+                            <tr>
+                                <td>Returns</td>
+                                <td>-$1,212</td>
+                                <td>-$808</td>
+                                <td>-$594</td>
+                            </tr>
+                            <tr>
+                                <td>Shipping/Packaging</td>
+                                <td>-$2,100</td>
+                                <td>-$2,010</td>
+                                <td>-$1,800</td>
+                            </tr>
+                            <tr>
+                                <td>Ad Spend</td>
+                                <td>-$3,029</td>
+                                <td>-$2,222</td>
+                                <td>-$1,782</td>
+                            </tr>
+                            <tr>
+                                <td>Fixed Costs</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                                <td>-$152</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Net Profit</strong></td>
+                                <td class="profit-positive">$2,255</td>
+                                <td class="profit-positive">$3,254</td>
+                                <td class="profit-positive">$6,202</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Monthly ROI</strong></td>
+                                <td>51.1%</td>
+                                <td>73.8%</td>
+                                <td>140.6%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Cross-Scenario Summary: Net Profit by Volume</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Volume</th>
+                                <th>POD</th>
+                                <th>US Wholesale</th>
+                                <th>Korea Import</th>
+                                <th>Winner (Base Case)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>50 units/mo</strong></td>
+                                <td class="profit-positive">$335</td>
+                                <td class="profit-positive">$356</td>
+                                <td>N/A (too risky)</td>
+                                <td>🏆 US Wholesale</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>150 units/mo</strong></td>
+                                <td class="profit-positive">$1,309</td>
+                                <td class="profit-positive">$1,372</td>
+                                <td class="profit-positive">$1,551</td>
+                                <td>🏆 Korea Import</td>
+                            </tr>
+                            <tr>
+                                <td><strong>300 units/mo</strong></td>
+                                <td class="profit-positive">$2,770</td>
+                                <td class="profit-positive">$2,897</td>
+                                <td class="profit-positive">$3,254</td>
+                                <td>🏆 Korea Import</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="success-box">
+                        <strong>✅ Recommended Path:</strong> 
+                        <ul style="margin: 10px 0 0 20px;">
+                            <li><strong>Months 1-3:</strong> POD ($335-1,309/mo profit)</li>
+                            <li><strong>Months 4-9:</strong> US Wholesale ($1,372-2,897/mo profit)</li>
+                            <li><strong>Months 10+:</strong> Korea Import for top SKUs ($3,254+/mo profit)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- STRATEGY TAB -->
+            <div id="strategy" class="tab-content">
+                <div class="section">
+                    <h2>Strategic Decisions & Recommendations</h2>
+                    
+                    <h3>Decision 1: Size Strategy</h3>
+                    <div class="success-box">
+                        <strong>✅ Recommendation: Small Dog Focus (Phase 1: 6 months)</strong>
+                        <p>Target 5-25 lbs dogs with 3 sizes (XS/S/M). Small dogs have 70-80% apparel adoption rate vs. 30-40% for larger breeds.</p>
+                    </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Size</th>
+                                <th>Weight Range</th>
+                                <th>Chest Girth</th>
+                                <th>Back Length</th>
+                                <th>Market Coverage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>XS</strong></td>
+                                <td>3-7 lbs</td>
+                                <td>8-11"</td>
+                                <td>7-9"</td>
+                                <td>25% (Toy breeds)</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>S</strong></td>
+                                <td>7-15 lbs</td>
+                                <td>11-15"</td>
+                                <td>9-12"</td>
+                                <td><strong>50% (Main segment)</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>M</strong></td>
+                                <td>15-25 lbs</td>
+                                <td>15-19"</td>
+                                <td>12-15"</td>
+                                <td>25% (Small-medium)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p><strong>Key breeds:</strong> Chihuahua, Pomeranian, Yorkie, Maltese, Shih Tzu, Mini Poodle, French Bulldog</p>
+                    
+                    <h3>Decision 2: Quality & Pricing Strategy</h3>
+                    <div class="success-box">
+                        <strong>✅ Recommendation: Mid-Range Balance ($35-55 price point)</strong>
+                        <p>Target the largest market segment (60%) with premium fabrics at accessible pricing. Poly-cotton blend (60/40), double-stitch construction, machine washable.</p>
+                    </div>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tier</th>
+                                <th>Price Range</th>
+                                <th>Market Size</th>
+                                <th>Gross Margin</th>
+                                <th>Return Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Budget</td>
+                                <td>$15-30</td>
+                                <td>25%</td>
+                                <td>35%</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td><strong>Mid-Range</strong></td>
+                                <td><strong>$35-55</strong></td>
+                                <td><strong>60%</strong></td>
+                                <td><strong>55%</strong></td>
+                                <td><strong>18%</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Premium</td>
+                                <td>$70-100</td>
+                                <td>15%</td>
+                                <td>59%</td>
+                                <td>12%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Decision 3: Production Method</h3>
+                    <div class="success-box">
+                        <strong>✅ Recommendation: POD Start → Hybrid Transition</strong>
+                        <p>Launch with POD for zero-risk validation, transition best-sellers to wholesale by month 4.</p>
+                    </div>
+                    
+                    <h4>3-Phase Roadmap</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Phase</th>
+                                <th>Timeline</th>
+                                <th>Method</th>
+                                <th>Products</th>
+                                <th>Investment</th>
+                                <th>Goal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td><strong>1: Launch</strong></td>
+                                <td>Days 1-90</td>
+                                <td>Pure POD</td>
+                                <td>5 SKUs</td>
+                                <td>$0-500</td>
+                                <td>Find product-market fit</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2: Scale</strong></td>
+                                <td>Days 91-180</td>
+                                <td>Hybrid (70% POD, 30% wholesale)</td>
+                                <td>Best 2 SKUs bulk</td>
+                                <td>$1,500-2,000</td>
+                                <td>Improve margins on winners</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3: Optimize</strong></td>
+                                <td>Days 181-365</td>
+                                <td>Wholesale-primary (60% wholesale, 40% POD)</td>
+                                <td>Top 5 SKUs bulk</td>
+                                <td>$3,000-5,000</td>
+                                <td>Maximize profit, test new designs via POD</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Initial 5-SKU Product Line</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Product</th>
+                                <th>Retail Price</th>
+                                <th>POD Platform</th>
+                                <th>Season</th>
+                                <th>Expected Velocity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td>1</td>
+                                <td><strong>Bandana</strong></td>
+                                <td>$18-24</td>
+                                <td>Printify</td>
+                                <td>Year-round</td>
+                                <td>🔥 Fastest</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Tank Top</td>
+                                <td>$22-28</td>
+                                <td>Printify</td>
+                                <td>Spring/Summer</td>
+                                <td>High</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>3</td>
+                                <td><strong>Sweater</strong></td>
+                                <td>$38-48</td>
+                                <td>Printful</td>
+                                <td>Fall/Winter</td>
+                                <td>🔥 High margin</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Leash</td>
+                                <td>$28-35</td>
+                                <td>CustomCat</td>
+                                <td>Year-round</td>
+                                <td>Medium (accessory)</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Food Mat</td>
+                                <td>$20-28</td>
+                                <td>Printify</td>
+                                <td>Year-round</td>
+                                <td>Medium (lifestyle)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3>Risk Mitigation Strategies</h3>
+                    
+                    <h4>Returns Management</h4>
+                    <ul style="margin-left: 30px; line-height: 1.8;">
+                        <li><strong>Size guides:</strong> Breed-specific measurement charts (reduce "doesn't fit" returns)</li>
+                        <li><strong>Photo reviews:</strong> Show products on real dogs of different breeds</li>
+                        <li><strong>Exchange-first policy:</strong> Offer size exchanges before refunds</li>
+                        <li><strong>Store credit bonus:</strong> 110% credit vs. 100% cash refund</li>
+                        <li><strong>30-day quality guarantee:</strong> Free replacement for defects</li>
+                    </ul>
+                    
+                    <h4>Customer Acquisition Cost (CAC) Reduction</h4>
+                    <ul style="margin-left: 30px; line-height: 1.8;">
+                        <li><strong>Organic social:</strong> TikTok/IG Reels (3-5 posts/week) - cute dog videos</li>
+                        <li><strong>Email marketing:</strong> Capture 30% of visitors, nurture with Klaviyo</li>
+                        <li><strong>Referral program:</strong> 10% off for referrer + referee</li>
+                        <li><strong>Micro-influencers:</strong> Send free products to pet influencers (500-5K followers)</li>
+                        <li><strong>SEO content:</strong> Blog posts ("Best Sweaters for Chihuahuas," "Raincoat Sizing Guide")</li>
+                        <li><strong>Target:</strong> Reduce ad spend from 22% to 15% by month 6</li>
+                    </ul>
+                    
+                    <h3>12-Month Projection (Realistic Path)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Sourcing</th>
+                                <th>Volume</th>
+                                <th>Revenue</th>
+                                <th>Net Profit</th>
+                                <th>Cumulative Profit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>POD</td>
+                                <td>40</td>
+                                <td>$1,680</td>
+                                <td class="profit-positive">$268</td>
+                                <td class="profit-positive">$268</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>POD</td>
+                                <td>65</td>
+                                <td>$2,730</td>
+                                <td class="profit-positive">$520</td>
+                                <td class="profit-positive">$788</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>POD</td>
+                                <td>90</td>
+                                <td>$3,780</td>
+                                <td class="profit-positive">$820</td>
+                                <td class="profit-positive">$1,608</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>4</td>
+                                <td>US Wholesale</td>
+                                <td>120</td>
+                                <td>$4,279</td>
+                                <td class="profit-positive">$758*</td>
+                                <td class="profit-positive">$2,366</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>US Wholesale</td>
+                                <td>160</td>
+                                <td>$5,706</td>
+                                <td class="profit-positive">$1,485</td>
+                                <td class="profit-positive">$3,851</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>US Wholesale</td>
+                                <td>180</td>
+                                <td>$6,419</td>
+                                <td class="profit-positive">$1,652</td>
+                                <td class="profit-positive">$5,503</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>US Wholesale</td>
+                                <td>220</td>
+                                <td>$7,845</td>
+                                <td class="profit-positive">$2,115</td>
+                                <td class="profit-positive">$7,618</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>US Wholesale</td>
+                                <td>260</td>
+                                <td>$9,271</td>
+                                <td class="profit-positive">$2,578</td>
+                                <td class="profit-positive">$10,196</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>US Wholesale</td>
+                                <td>280</td>
+                                <td>$9,985</td>
+                                <td class="profit-positive">$2,783</td>
+                                <td class="profit-positive">$12,979</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>10</td>
+                                <td>Hybrid</td>
+                                <td>320</td>
+                                <td>$10,771</td>
+                                <td class="profit-positive">$3,015</td>
+                                <td class="profit-positive">$15,994</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Hybrid</td>
+                                <td>380</td>
+                                <td>$12,791</td>
+                                <td class="profit-positive">$3,850</td>
+                                <td class="profit-positive">$19,844</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Hybrid</td>
+                                <td>420</td>
+                                <td>$14,137</td>
+                                <td class="profit-positive">$4,350</td>
+                                <td class="profit-positive">$24,194</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td colspan="3"><strong>YEAR 1 TOTAL</strong></td>
+                                <td><strong>$90,394</strong></td>
+                                <td class="profit-positive"><strong>$24,194</strong></td>
+                                <td><strong>Avg: $2,016/mo</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p style="margin-top: 10px;"><em>* Month 4 profit lower due to $1,813 initial inventory investment</em></p>
+                    
+                    <div class="info-box" style="margin-top: 30px;">
+                        <strong>📌 Next Steps - Week 1 Action Plan:</strong>
+                        <ol style="margin: 10px 0 0 20px; line-height: 1.8;">
+                            <li>Set up Shopify store ($79/month Basic plan)</li>
+                            <li>Connect Printful + Printify apps</li>
+                            <li>Create 5 initial designs (bandana, tank, sweater, leash, mat)</li>
+                            <li>Apply for Parisian Pet wholesale account</li>
+                            <li>Register on Faire.com for multi-brand access</li>
+                            <li>Launch Facebook/Instagram ads ($20/day budget)</li>
+                            <li>Set up email capture (Klaviyo free tier)</li>
+                            <li>Create TikTok account, post 3-5 organic videos</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
