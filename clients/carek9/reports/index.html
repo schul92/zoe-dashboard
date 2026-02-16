@@ -85,9 +85,16 @@
 
     <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
       <article class="glass rounded-2xl p-6 card-hover">
+        <h2 class="text-lg font-bold mb-4">🌿 브랜치 반영 현황 (dev/master)</h2>
+        <div id="branchStatus" class="space-y-3"></div>
+      </article>
+      <article class="glass rounded-2xl p-6 card-hover">
         <h2 class="text-lg font-bold mb-4">⚠️ 리스크 & 블로커</h2>
         <div id="risks" class="space-y-3"></div>
       </article>
+    </section>
+
+    <section class="grid grid-cols-1 gap-6 mb-8">
       <article class="glass rounded-2xl p-6 card-hover">
         <h2 class="text-lg font-bold mb-4">✅ 다음 실행 순서</h2>
         <ol id="nextActions" class="space-y-2 text-sm list-decimal list-inside text-zinc-200"></ol>
@@ -96,7 +103,7 @@
 
     <section class="glass rounded-2xl p-6 mb-8 card-hover">
       <div class="flex items-center justify-between mb-4">
-        <h2 class="text-lg font-bold">🕒 Dev 업데이트 타임라인</h2>
+        <h2 class="text-lg font-bold">🕒 Dev + Master 업데이트 타임라인</h2>
         <span class="text-xs text-zinc-400">최근 반영 히스토리</span>
       </div>
       <div class="overflow-x-auto">
@@ -104,6 +111,7 @@
           <thead>
             <tr class="border-b border-zinc-800 text-zinc-400">
               <th class="text-left py-2 pr-3">Date</th>
+              <th class="text-left py-2 px-3">Branch</th>
               <th class="text-left py-2 px-3">Commit</th>
               <th class="text-left py-2 px-3">Update</th>
               <th class="text-left py-2 pl-3">Business Impact</th>
@@ -163,6 +171,14 @@
         </div>
       `).join('');
 
+      document.getElementById('branchStatus').innerHTML = (data.branchStatus || []).map(b => `
+        <div class="p-3 rounded-xl border border-emerald-500/30 bg-emerald-500/10">
+          <p class="text-xs uppercase text-emerald-300 font-semibold">${b.branch}</p>
+          <p class="font-semibold mt-1">${b.status} · ${b.summary}</p>
+          <p class="text-xs text-zinc-300 mt-1">Commit: ${(b.commits || []).join(', ')}</p>
+        </div>
+      `).join('');
+
       document.getElementById('risks').innerHTML = data.risks.map(r => `
         <div class="p-3 rounded-xl border ${r.level === 'High' ? 'border-red-500/40 bg-red-500/10' : 'border-yellow-500/40 bg-yellow-500/10'}">
           <p class="text-xs font-semibold uppercase ${r.level === 'High' ? 'text-red-300' : 'text-yellow-300'}">${r.level}</p>
@@ -176,6 +192,7 @@
       document.getElementById('timeline').innerHTML = data.timeline.map(t => `
         <tr class="border-b border-zinc-800/70 hover:bg-zinc-800/40">
           <td class="py-2 pr-3 text-zinc-300">${t.date}</td>
+          <td class="py-2 px-3 text-zinc-300">${t.branch || '-'}</td>
           <td class="py-2 px-3"><code class="text-emerald-300">${t.commit}</code></td>
           <td class="py-2 px-3">${t.title}</td>
           <td class="py-2 pl-3 text-zinc-300">${t.impact}</td>
@@ -183,9 +200,9 @@
       `).join('');
 
       document.getElementById('ownerSummary').textContent =
-        `지금 페이지는 dev에서 실제 고친 커밋(41df5f1, d55032e, 9f5f3ae, a25be32)을 기준으로 정리한 사장님용 보고서입니다. ` +
-        `핵심은 검색 결과에 보이는 문구 품질, 불필요 색인 리스크, 이미지 SEO를 동시에 정리했다는 점입니다. ` +
-        `GSC는 권한 이슈를 복구 중이라 현재는 GA4 실데이터 중심으로 보여드리고, 권한 복구 즉시 검색노출/클릭 지표까지 함께 붙여서 계속 업데이트하겠습니다.`;
+        `네, 이 페이지에는 carek9 dev 작업 + zoe-dashboard master 반영이 모두 포함되어 있습니다. ` +
+        `위의 브랜치 반영 현황 카드와 타임라인에서 각각 어떤 브랜치에 무엇이 반영됐는지 바로 보실 수 있게 정리했습니다. ` +
+        `다음 업데이트에서는 GSC 권한 복구 후 노출/클릭 지표를 추가해 더 직관적인 성과 화면으로 업그레이드하겠습니다.`;
     }
 
     init().catch(err => {
