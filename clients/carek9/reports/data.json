@@ -16,6 +16,38 @@
     "상품/카트/검색/블로그 핵심 이미지 ALT fallback 적용 완료",
     "메타 설명/robots/canonical SEO 규칙 정리 완료"
   ],
+  "whatImproved": [
+    {
+      "title": "검색 노출 품질 개선 기반",
+      "detail": "메타 설명 중복/누락 위험을 줄여 검색 결과 문구가 더 안정적으로 보이도록 정리했습니다."
+    },
+    {
+      "title": "불필요한 페이지 색인 리스크 감소",
+      "detail": "검색·카트·계정 등 비핵심 페이지의 색인 혼선을 줄이는 방향으로 robots 정책을 정리했습니다."
+    },
+    {
+      "title": "이미지 SEO/접근성 개선",
+      "detail": "이미지 ALT가 비는 경우 자동 대체 문구가 들어가도록 바꿔서 검색엔진 문맥 이해를 개선했습니다."
+    },
+    {
+      "title": "모바일 체감 품질 개선",
+      "detail": "모바일 전용 배너 적용으로 모바일 첫인상과 가독성을 개선했습니다."
+    }
+  ],
+  "performance": {
+    "ga4": {
+      "period": "최근 14일 (2026-02-02 ~ 2026-02-16)",
+      "sessions": 151,
+      "activeUsers": 117,
+      "organicSearchSessions": 28,
+      "purchases": 6,
+      "revenue": 729
+    },
+    "gsc": {
+      "status": "연동 이슈",
+      "note": "Search Console API 권한(403) 문제로 자동 리포트가 제한되어, 현재는 GA4 중심으로 보고 중"
+    }
+  },
   "timeline": [
     {
       "date": "2026-02-16",

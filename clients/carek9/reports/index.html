@@ -67,6 +67,24 @@
 
     <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
       <article class="glass rounded-2xl p-6 card-hover">
+        <h2 class="text-lg font-bold mb-4">📈 실제 데이터 요약 (쉬운 버전)</h2>
+        <div class="space-y-2 text-sm text-zinc-200">
+          <p><strong>기간:</strong> <span id="gaPeriod">-</span></p>
+          <p>방문: <strong id="gaSessions">-</strong> / 사용자: <strong id="gaUsers">-</strong></p>
+          <p>구글 검색 유입: <strong id="gaOrganic">-</strong></p>
+          <p>구매: <strong id="gaPurchases">-</strong> / 매출: <strong id="gaRevenue">-</strong></p>
+          <p class="text-yellow-300 mt-3">GSC 상태: <span id="gscStatus">-</span></p>
+          <p class="text-zinc-400 text-xs" id="gscNote">-</p>
+        </div>
+      </article>
+      <article class="glass rounded-2xl p-6 card-hover">
+        <h2 class="text-lg font-bold mb-4">✨ 그래서 뭐가 좋아졌나요?</h2>
+        <div id="whatImproved" class="space-y-3 text-sm"></div>
+      </article>
+    </section>
+
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+      <article class="glass rounded-2xl p-6 card-hover">
         <h2 class="text-lg font-bold mb-4">⚠️ 리스크 & 블로커</h2>
         <div id="risks" class="space-y-3"></div>
       </article>
@@ -129,6 +147,22 @@
 
       document.getElementById('highlights').innerHTML = data.highlights.map(x => `<li class="p-3 rounded-xl bg-zinc-800/50 border border-zinc-700">• ${x}</li>`).join('');
 
+      document.getElementById('gaPeriod').textContent = data.performance?.ga4?.period || '-';
+      document.getElementById('gaSessions').textContent = data.performance?.ga4?.sessions ?? '-';
+      document.getElementById('gaUsers').textContent = data.performance?.ga4?.activeUsers ?? '-';
+      document.getElementById('gaOrganic').textContent = data.performance?.ga4?.organicSearchSessions ?? '-';
+      document.getElementById('gaPurchases').textContent = data.performance?.ga4?.purchases ?? '-';
+      document.getElementById('gaRevenue').textContent = (data.performance?.ga4?.revenue ?? '-') === '-' ? '-' : `$${data.performance.ga4.revenue}`;
+      document.getElementById('gscStatus').textContent = data.performance?.gsc?.status || '-';
+      document.getElementById('gscNote').textContent = data.performance?.gsc?.note || '-';
+
+      document.getElementById('whatImproved').innerHTML = (data.whatImproved || []).map(i => `
+        <div class="p-3 rounded-xl bg-zinc-800/50 border border-zinc-700">
+          <p class="font-semibold text-emerald-300">${i.title}</p>
+          <p class="text-zinc-300 mt-1">${i.detail}</p>
+        </div>
+      `).join('');
+
       document.getElementById('risks').innerHTML = data.risks.map(r => `
         <div class="p-3 rounded-xl border ${r.level === 'High' ? 'border-red-500/40 bg-red-500/10' : 'border-yellow-500/40 bg-yellow-500/10'}">
           <p class="text-xs font-semibold uppercase ${r.level === 'High' ? 'text-red-300' : 'text-yellow-300'}">${r.level}</p>
@@ -149,9 +183,9 @@
       `).join('');
 
       document.getElementById('ownerSummary').textContent =
-        `이번 주 CareK9는 SEO/UX 핵심 작업을 dev에 안정적으로 반영했습니다. ` +
-        `현재 우선과제는 (1) 라이브 반영 일치 검증, (2) GSC 권한 복구로 성과 추적 자동화를 정상화하는 것입니다. ` +
-        `이 페이지를 기준으로 앞으로 주간/일간 업데이트를 누적 보고하겠습니다.`;
+        `지금 페이지는 dev에서 실제 고친 커밋(41df5f1, d55032e, 9f5f3ae, a25be32)을 기준으로 정리한 사장님용 보고서입니다. ` +
+        `핵심은 검색 결과에 보이는 문구 품질, 불필요 색인 리스크, 이미지 SEO를 동시에 정리했다는 점입니다. ` +
+        `GSC는 권한 이슈를 복구 중이라 현재는 GA4 실데이터 중심으로 보여드리고, 권한 복구 즉시 검색노출/클릭 지표까지 함께 붙여서 계속 업데이트하겠습니다.`;
     }
 
     init().catch(err => {
