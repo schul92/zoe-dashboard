@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-15T13:00:12.660433Z",
-  "version": "v2-2026-02-15",
+  "lastUpdated": "2026-02-16T13:00:13.835357Z",
+  "version": "v2-2026-02-16",
   "sources": {
     "brave_search": true,
     "twitter": true,
@@ -16,13 +16,6 @@
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
-      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
-      "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com",
-      "category": "hawaii",
-      "description": "Hawaiian Electric said <strong>fallen trees damaged lines, initially cutting power to more than 13,000 customers from Kaneohe to Kahuku</strong>."
-    },
-    {
       "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
       "source": "Brave Search",
       "url": "https://www.waikikigetdown.com/",
@@ -30,25 +23,32 @@
       "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
     },
     {
-      "title": "Things to Do in Honolulu, HI This Week - Events & Activities | Eventbrite",
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
       "source": "Brave Search",
-      "url": "https://www.eventbrite.com/d/hi--honolulu/events--this-week/",
+      "url": "https://www.kitv.com/",
       "category": "hawaii",
-      "description": "Share this event: <strong>Illusions The Drag Queen Show Honolulu - Drag Queen Dinner Show - Honolulu</strong>Save this event: <strong>Illusions The Drag Queen Show Honolulu - Drag Queen Dinner Show - "
+      "description": "... <strong>A man with stab wounds died Friday in Wahiawa after a vehicle he was inside crashed near Walgreens</strong>; authorities are investigating the death, a\u2026 ... Sign up to receive Island News "
     },
     {
-      "title": "Calendar",
+      "title": "Hawaii Faces Stagnant Tourism Growth as Global Competitors Gain Ground: What You Need to Know in 2026 - Travel And Tour World",
       "source": "Brave Search",
-      "url": "https://www.staradvertiser.com/calendar/",
+      "url": "https://www.travelandtourworld.com/news/article/hawaii-faces-stagnant-tourism-growth-as-global-competitors-gain-ground-what-you-need-to-know-in-2026/",
       "category": "hawaii",
-      "description": "Find out where to go for the latest community gatherings in Hawaii and fun events around town. Hosting an event? Add it to our calendar."
+      "description": "Hawaii\u2019s tourism industry, a crucial pillar of the state\u2019s economy, is <strong>facing a stagnant recovery</strong> in 2026, despite ongoing efforts to bring back visitors after the COVID\u201119 pandemic."
     },
     {
-      "title": "Events Calendar | kitv.com",
+      "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
       "source": "Brave Search",
-      "url": "https://www.kitv.com/island-style/calendar/",
+      "url": "https://www.travelweekly.com/Hawaii-Travel/hawaii-new-for-visitors-2026",
       "category": "hawaii",
-      "description": "Events Calendar \u00b7 Island Life \u00b7 Best of Hawaii \u00b7 Island Deals \u00b7 KIKU\u00ae \u00b7 Contact \u00b7 Meet the Team \u00b7 Our Apps \u00b7 Email Alerts \u00b7 About Us \u00b7 Jobs \u00b7 Advertise With Us \u00b7 Toggle navigation Menu \u00b7 80\u00b0 \u00b7 KULEANA"
+      "description": "In 2026, Hawaii will see <strong>new hotel openings, attractions, and restaurants, including direct flights from California, a new luau show on Kauai and chef Alan Wong&#x27;s restaurant on Oahu</stro"
+    },
+    {
+      "title": "A downturn for Hawaii tourism: Travel Weekly",
+      "source": "Brave Search",
+      "url": "https://www.travelweekly.com/Hawaii-Travel/Insights/downturn-for-hawaii-tourism-2026",
+      "category": "hawaii",
+      "description": "&quot;The near-term picture for Hawaii tourism remains poor,&quot; the report continued. Looking ahead, it said <strong>visitor arrivals and the average daily census are expected to decline in 2026 be"
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
@@ -65,140 +65,140 @@
       "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
-      "title": "News - World Coffee Portal",
+      "title": "The hottest new LA coffee shop is in this couple's backyard: 'People really want community'",
       "source": "Brave Search",
-      "url": "https://www.worldcoffeeportal.com/news/",
+      "url": "https://www.cnbc.com/2026/02/15/the-hottest-new-la-coffee-shop-granada-in-is-in-this-couples-backyard.html",
       "category": "coffee",
-      "description": "Breaking coffee business news and analysis"
+      "description": "The fact that the home-based cafe has been such a hit in a town with &quot;so many phenomenal coffee shops&quot; is still a shock to Wayser, who says they &quot;didn&#x27;t expect this at all.&quot; &"
     },
     {
       "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1r5bxle/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r66pc1/mod_the_daily_question_thread/",
       "category": "reddit",
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Blown away by these captions \ud83d\ude36\u200d\ud83c\udf2b\ufe0f\ud83c\udf6b\ud83d\udc96",
+      "title": "Update: WE FOUND OUR PARROT",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r4v8w6/blown_away_by_these_captions/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r616ua/update_we_found_our_parrot/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r4v8w6/blown_away_by_these_captions/\"> <img alt=\"Blown away by these captions \ud83d\ude36\u200d\ud83c\udf2b\ufe0f\ud83c\udf6b\ud83d\udc96\" src=\"https://preview.redd.it/ingtz7rztijg1.jpe"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r616ua/update_we_found_our_parrot/\"> <img alt=\"Update: WE FOUND OUR PARROT\" src=\"https://preview.redd.it/osqc93bnmsjg1.jpeg?width=64"
     },
     {
-      "title": "No more self-checkouts at Target Ala Moana",
+      "title": "Pele full on again",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r5167q/no_more_selfcheckouts_at_target_ala_moana/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r5vksj/pele_full_on_again/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>We noticed that over the past week all the self checkouts have been removed from Target Ala Moana.</p> <p>It seems like, at EACH of the 5 entrances (including down to"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r5vksj/pele_full_on_again/\"> <img alt=\"Pele full on again\" src=\"https://preview.redd.it/0n1yqrdu9rjg1.jpeg?width=640&amp;crop=smart&"
     },
     {
-      "title": "Eel coming up to land.",
+      "title": "Good times at Sandys",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r4y2q1/eel_coming_up_to_land/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r625yg/good_times_at_sandys/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r4y2q1/eel_coming_up_to_land/\"> <img alt=\"Eel coming up to land.\" src=\"https://external-preview.redd.it/aDE1M3M1bjdmampnMfCM74ed634T"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r625yg/good_times_at_sandys/\"> <img alt=\"Good times at Sandys\" src=\"https://preview.redd.it/b422bn0vvsjg1.jpg?width=140&amp;height=9"
     },
     {
-      "title": "Confused x 11 by dismissed employee",
+      "title": "I got a dump trailer and now I can\u2019t keep up with the requests, and I\u2019m not organized at all",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r4tm90/confused_x_11_by_dismissed_employee/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r5nb8q/i_got_a_dump_trailer_and_now_i_cant_keep_up_with/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>So we caught a guy lying on time sheets. Went through all the correct steps and got him dismissed, he pleaded guilty to all that he was charged with. Never a fun proc"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I started this side hustle about 6 months ago, just one dump trailer, only after work and on weekends. Now I easily get 3\u20134 jobs a day when the weather is good and I\u2019"
     },
     {
-      "title": "Employee appreciation day for remote teams, what actually works?",
+      "title": "Growing too fast and drowning in cash flow issues",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r4r67z/employee_appreciation_day_for_remote_teams_what/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r5ibeh/growing_too_fast_and_drowning_in_cash_flow_issues/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>We've got three main teams: developers, designers, and marketers scattered across the country, with about half in Europe. Fully remote setup. </p> <p>Employee Appreci"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hey everyone, this is my first Reddit post, so I apologize if it\u2019s a little rough.</p> <p>I'm 25 M and I\u2019ve learned a ton from this community and really respect the a"
     },
     {
-      "title": "Help!",
+      "title": "21M, Lost My Father, Family Business Collapsing (7Cr \u2192 2Cr). Don\u2019t Know This Industry. Relatives Involved. Need Serious Advice.",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r53jn7/help/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r61k3i/21m_lost_my_father_family_business_collapsing_7cr/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I own 50% of a retail franchise business. My partner owns the other 50%.</p> <p>We have 15 locations. Last year we did around $5M in sales, and probably $6\u20137M this ye"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi everyone,</p> <p>I\u2019m 21 years old. I lost my father last year due to a heart attack. He was running a pressure vessels fabrication business with a turnover of arou"
     },
     {
-      "title": "I love the work of the ArchWiki maintainers",
+      "title": "MessageFormat: Unicode standard for localizable message strings",
       "source": "Hacker News",
-      "url": "https://k7r.eu/i-love-the-work-of-the-archwiki-maintainers/",
+      "url": "https://github.com/unicode-org/message-format-wg",
       "category": "tech",
       "stats": {
-        "points": 557,
-        "comments": 100
+        "points": 61,
+        "comments": 26
       }
     },
     {
-      "title": "Flashpoint Archive \u2013 Over 200k web games and animations preserved",
+      "title": "I\u2019m joining OpenAI",
       "source": "Hacker News",
-      "url": "https://flashpointarchive.org",
+      "url": "https://steipete.me/posts/2026/openclaw",
       "category": "tech",
       "stats": {
-        "points": 157,
-        "comments": 36
+        "points": 1141,
+        "comments": 850
       }
     },
     {
-      "title": "I Fixed Windows Native Development",
+      "title": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
       "source": "Hacker News",
-      "url": "https://marler8997.github.io/blog/fixed-windows/",
+      "url": "https://mastodon.world/@knowmadd/116072773118828295",
       "category": "tech",
       "stats": {
-        "points": 18,
-        "comments": 4
+        "points": 702,
+        "comments": 470
       }
     },
     {
-      "title": "Two different tricks for fast LLM inference",
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
       "source": "Hacker News",
-      "url": "https://www.seangoedecke.com/fast-llm-inference/",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
       "category": "tech",
       "stats": {
-        "points": 54,
-        "comments": 28
+        "points": 50,
+        "comments": 20
       }
     },
     {
-      "title": "My smart sleep mask broadcasts users' brainwaves to an open MQTT broker",
+      "title": "Vim-pencil: Rethinking Vim as a tool for writing",
       "source": "Hacker News",
-      "url": "https://aimilios.bearblog.dev/reverse-engineering-sleep-mask/",
+      "url": "https://github.com/preservim/vim-pencil",
       "category": "tech",
       "stats": {
-        "points": 487,
-        "comments": 219
+        "points": 33,
+        "comments": 6
       }
     },
     {
-      "title": "[AI \u00b7 Entertainment] Elon Musk Shares Samwise Gamgee's Hopeful Monologue with SpaceX Rocket Video",
+      "title": "[AI \u00b7 News] Musk Accuses Epstein of Shorting Tesla After Being Blocked",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "2 hours ago | 3.3K posts",
+      "title": "2.4K posts",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "\ud83d\udd17 twitter://trending/2022998220851257755",
+      "title": "\ud83d\udd17 twitter://trending/2023371322928062704",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     }
   ],
   "trending": [
-    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
-    "Daily Coffee News by Roast Magazine - Business new",
-    "[MOD] The Daily Question Thread",
-    "News - World Coffee Portal",
-    "Calendar",
+    "The hottest new LA coffee shop is in this couple's",
     "Hawaii News, Weather, Sports, Breaking News & Live",
     "Top Coffee Shop Industry Trends and Statistics in ",
-    "Events Calendar | kitv.com",
-    "Hawaii News Now - Breaking News, Latest News, Weat",
-    "Things to Do in Honolulu, HI This Week - Events & "
+    "KITV 4 Island News | Honolulu, HI News & Weather",
+    "What's new for Hawaii visitors in 2026: Travel Wee",
+    "[MOD] The Daily Question Thread",
+    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
+    "Daily Coffee News by Roast Magazine - Business new",
+    "A downturn for Hawaii tourism: Travel Weekly",
+    "Hawaii Faces Stagnant Tourism Growth as Global Com"
   ]
 }
