@@ -1,35 +1,35 @@
 {
   "metadata": {
-    "collectedAt": "2026-02-15T15:00:14.683467Z",
+    "collectedAt": "2026-02-16T15:00:10.111306Z",
     "property": "properties/523137923",
     "period": {
-      "startDate": "2026-02-01",
-      "endDate": "2026-02-15",
+      "startDate": "2026-02-02",
+      "endDate": "2026-02-16",
       "days": 14
     }
   },
   "totals": {
-    "sessions": 147,
-    "activeUsers": 113,
-    "screenPageViews": 477,
-    "bounceRate": 0.6530612244897959,
-    "averageSessionDuration": 264.41278362585035,
-    "engagedSessions": 51,
-    "ecommercePurchases": 5,
-    "purchaseRevenue": 403.45,
-    "totalRevenue": 403.45,
-    "addToCarts": 13,
+    "sessions": 151,
+    "activeUsers": 117,
+    "screenPageViews": 499,
+    "bounceRate": 0.6291390728476821,
+    "averageSessionDuration": 290.3833489271523,
+    "engagedSessions": 56,
+    "ecommercePurchases": 6,
+    "purchaseRevenue": 729,
+    "totalRevenue": 729,
+    "addToCarts": 16,
     "checkouts": 3,
     "itemsViewed": 91,
-    "itemsPurchased": 11,
-    "cartToViewRate": 0.28,
-    "purchaseToViewRate": 0.2
+    "itemsPurchased": 20,
+    "cartToViewRate": 0.32,
+    "purchaseToViewRate": 0.24
   },
   "trafficSources": [
     {
       "sessionDefaultChannelGroup": "Direct",
-      "sessions": 107,
-      "activeUsers": 89
+      "sessions": 109,
+      "activeUsers": 91
     },
     {
       "sessionDefaultChannelGroup": "Organic Search",
@@ -42,14 +42,14 @@
       "activeUsers": 2
     },
     {
-      "sessionDefaultChannelGroup": "Unassigned",
-      "sessions": 6,
-      "activeUsers": 6
-    },
-    {
       "sessionDefaultChannelGroup": "Referral",
       "sessions": 5,
       "activeUsers": 4
+    },
+    {
+      "sessionDefaultChannelGroup": "Unassigned",
+      "sessions": 3,
+      "activeUsers": 3
     },
     {
       "sessionDefaultChannelGroup": "Organic Social",
@@ -61,30 +61,37 @@
     {
       "pagePath": "/",
       "pageTitle": "CareK9",
-      "screenPageViews": 171,
-      "activeUsers": 53,
-      "averageSessionDuration": 334.03579312676055
+      "screenPageViews": 177,
+      "activeUsers": 55,
+      "averageSessionDuration": 369.34641264383566
     },
     {
       "pagePath": "/",
       "pageTitle": "CareK9 | Premium Natural Dog Treats, Food Toppers & Paw Care",
-      "screenPageViews": 56,
-      "activeUsers": 25,
-      "averageSessionDuration": 100.72455090322582
+      "screenPageViews": 60,
+      "activeUsers": 28,
+      "averageSessionDuration": 61.471241029411765
     },
     {
       "pagePath": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
       "pageTitle": "Chicken Wrapped Pumpkin Dog Treats | High Protein Gut Health | CareK9",
       "screenPageViews": 48,
       "activeUsers": 9,
-      "averageSessionDuration": 245.71999283333335
+      "averageSessionDuration": 213.91970958333332
     },
     {
       "pagePath": "/collections/treat",
       "pageTitle": "Dog Treats | CareK9",
-      "screenPageViews": 14,
-      "activeUsers": 6,
-      "averageSessionDuration": 75.96735185714286
+      "screenPageViews": 16,
+      "activeUsers": 7,
+      "averageSessionDuration": 67.065089875
+    },
+    {
+      "pagePath": "/pages/about-us",
+      "pageTitle": "CareK9 | About Us",
+      "screenPageViews": 15,
+      "activeUsers": 8,
+      "averageSessionDuration": 166.70631269999998
     },
     {
       "pagePath": "/collections/treat",
@@ -94,32 +101,32 @@
       "averageSessionDuration": 61.7835727
     },
     {
-      "pagePath": "/pages/about-us",
-      "pageTitle": "CareK9 | About Us",
-      "screenPageViews": 14,
-      "activeUsers": 7,
-      "averageSessionDuration": 105.01089011111111
-    },
-    {
       "pagePath": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
       "pageTitle": "Healthy Dog Protein Chips | Gourmet Air-Dried Snacks | CareK9",
       "screenPageViews": 14,
       "activeUsers": 3,
-      "averageSessionDuration": 92.91748125000001
+      "averageSessionDuration": 80.71672
     },
     {
       "pagePath": "/pages/carek9-x-human-canine-collaborative",
       "pageTitle": "CareK9 x Human Canine Collaborative",
       "screenPageViews": 13,
       "activeUsers": 12,
-      "averageSessionDuration": 11.558658833333334
+      "averageSessionDuration": 6.779638833333333
     },
     {
       "pagePath": "/pages/contact-us",
       "pageTitle": "CareK9 | Contact Us",
-      "screenPageViews": 11,
-      "activeUsers": 7,
-      "averageSessionDuration": 171.22095028571428
+      "screenPageViews": 12,
+      "activeUsers": 8,
+      "averageSessionDuration": 149.8183315
+    },
+    {
+      "pagePath": "/cart",
+      "pageTitle": "Your Shopping Cart | CareK9",
+      "screenPageViews": 9,
+      "activeUsers": 2,
+      "averageSessionDuration": 738.1439306666667
     },
     {
       "pagePath": "/cart",
@@ -147,7 +154,7 @@
       "pageTitle": "Food Topper | CareK9",
       "screenPageViews": 5,
       "activeUsers": 4,
-      "averageSessionDuration": 9.110255
+      "averageSessionDuration": 8.0310788
     },
     {
       "pagePath": "/collections/food-topper",
@@ -161,7 +168,7 @@
       "pageTitle": "Paw Care | CareK9",
       "screenPageViews": 5,
       "activeUsers": 3,
-      "averageSessionDuration": 43.963738250000006
+      "averageSessionDuration": 17.13930325
     },
     {
       "pagePath": "/products/beef-training-treat",
@@ -189,14 +196,14 @@
       "pageTitle": "CareK9 | Products | Paw Balm",
       "screenPageViews": 5,
       "activeUsers": 5,
-      "averageSessionDuration": 31.7374316
+      "averageSessionDuration": 21.564208400000002
     },
     {
       "pagePath": "/products/salmon-skin-bites",
       "pageTitle": "CareK9 | Air-Dried Alaskan Salmon Bite",
       "screenPageViews": 5,
       "activeUsers": 4,
-      "averageSessionDuration": 14.9355782
+      "averageSessionDuration": 4.341888
     },
     {
       "pagePath": "/collections/accessories",
@@ -227,13 +234,6 @@
       "averageSessionDuration": 5.85466075
     },
     {
-      "pagePath": "/cart",
-      "pageTitle": "Your Shopping Cart | CareK9",
-      "screenPageViews": 3,
-      "activeUsers": 1,
-      "averageSessionDuration": 58.6450145
-    },
-    {
       "pagePath": "/products/crunch-minis-beef-liver-recipe",
       "pageTitle": "404 Not Found \u2013 CareK9",
       "screenPageViews": 3,
@@ -248,6 +248,13 @@
       "averageSessionDuration": 24.181651
     },
     {
+      "pagePath": "/collections/all",
+      "pageTitle": "Shop All | CareK9",
+      "screenPageViews": 2,
+      "activeUsers": 2,
+      "averageSessionDuration": 199.714787
+    },
+    {
       "pagePath": "/collections/bath-product",
       "pageTitle": "Bath Products \u2013 CareK9",
       "screenPageViews": 2,
@@ -260,33 +267,26 @@
       "screenPageViews": 2,
       "activeUsers": 2,
       "averageSessionDuration": 0.851195
-    },
-    {
-      "pagePath": "/products/beef-wrapped-pumpkin",
-      "pageTitle": "Beef Wrapped Pumpkin \u2013 CareK9",
-      "screenPageViews": 2,
-      "activeUsers": 1,
-      "averageSessionDuration": 12.807433
     }
   ],
   "devices": [
     {
       "deviceCategory": "desktop",
-      "sessions": 101,
-      "activeUsers": 83
+      "sessions": 103,
+      "activeUsers": 85
     },
     {
       "deviceCategory": "mobile",
-      "sessions": 48,
-      "activeUsers": 32
+      "sessions": 50,
+      "activeUsers": 34
     }
   ],
   "geography": [
     {
       "country": "United States",
       "region": "California",
-      "sessions": 38,
-      "activeUsers": 19
+      "sessions": 41,
+      "activeUsers": 22
     },
     {
       "country": "United States",
@@ -295,16 +295,16 @@
       "activeUsers": 19
     },
     {
-      "country": "United States",
-      "region": "New York",
+      "country": "China",
+      "region": "Gansu",
       "sessions": 9,
       "activeUsers": 9
     },
     {
-      "country": "China",
-      "region": "Gansu",
-      "sessions": 8,
-      "activeUsers": 8
+      "country": "United States",
+      "region": "New York",
+      "sessions": 9,
+      "activeUsers": 9
     },
     {
       "country": "United States",
@@ -313,16 +313,16 @@
       "activeUsers": 7
     },
     {
-      "country": "United States",
-      "region": "Illinois",
+      "country": "Singapore",
+      "region": "(not set)",
       "sessions": 4,
       "activeUsers": 4
     },
     {
-      "country": "Singapore",
-      "region": "(not set)",
-      "sessions": 3,
-      "activeUsers": 3
+      "country": "United States",
+      "region": "Illinois",
+      "sessions": 4,
+      "activeUsers": 4
     },
     {
       "country": "United States",
@@ -347,6 +347,12 @@
       "region": "Washington",
       "sessions": 3,
       "activeUsers": 3
+    },
+    {
+      "country": "(not set)",
+      "region": "(not set)",
+      "sessions": 2,
+      "activeUsers": 2
     },
     {
       "country": "Canada",
@@ -395,12 +401,6 @@
       "region": "Texas",
       "sessions": 2,
       "activeUsers": 2
-    },
-    {
-      "country": "",
-      "region": "",
-      "sessions": 1,
-      "activeUsers": 1
     }
   ],
   "dailyTrend": [
@@ -474,27 +474,27 @@
       "date": "20260214",
       "sessions": 18,
       "activeUsers": 15,
-      "screenPageViews": 58
+      "screenPageViews": 60
     },
     {
       "date": "20260215",
-      "sessions": 2,
-      "activeUsers": 2,
-      "screenPageViews": 2
+      "sessions": 6,
+      "activeUsers": 6,
+      "screenPageViews": 22
     }
   ],
   "landingPages": [
     {
       "landingPage": "/",
-      "sessions": 92,
-      "bounceRate": 0.5652173913043478,
-      "averageSessionDuration": 337.5411854673913
+      "sessions": 99,
+      "bounceRate": 0.5454545454545454,
+      "averageSessionDuration": 366.64865796969696
     },
     {
       "landingPage": "/collections/treat",
-      "sessions": 5,
-      "bounceRate": 0.8,
-      "averageSessionDuration": 93.4516
+      "sessions": 6,
+      "bounceRate": 0.8333333333333334,
+      "averageSessionDuration": 397.45050633333335
     },
     {
       "landingPage": "(not set)",
@@ -507,12 +507,6 @@
       "sessions": 4,
       "bounceRate": 1,
       "averageSessionDuration": 0
-    },
-    {
-      "landingPage": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "sessions": 4,
-      "bounceRate": 0.75,
-      "averageSessionDuration": 1349.06643475
     },
     {
       "landingPage": "/collections/accessories",
@@ -539,22 +533,22 @@
       "averageSessionDuration": 6.784094333333333
     },
     {
+      "landingPage": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "sessions": 3,
+      "bounceRate": 0.6666666666666666,
+      "averageSessionDuration": 811.4255036666667
+    },
+    {
       "landingPage": "/products/pars-mint-dental-cookies",
       "sessions": 3,
       "bounceRate": 0.6666666666666666,
       "averageSessionDuration": 5.791445333333333
     },
     {
-      "landingPage": "/products/salmon-skin-bites",
-      "sessions": 3,
-      "bounceRate": 1,
-      "averageSessionDuration": 40.113742333333334
-    },
-    {
-      "landingPage": "",
+      "landingPage": "/cart",
       "sessions": 2,
-      "bounceRate": 1,
-      "averageSessionDuration": 0
+      "bounceRate": 0.5,
+      "averageSessionDuration": 551.2412465
     },
     {
       "landingPage": "/collections/bath-product",
@@ -593,23 +587,29 @@
       "averageSessionDuration": 31.9007785
     },
     {
-      "landingPage": "/cart",
-      "sessions": 1,
-      "bounceRate": 0,
-      "averageSessionDuration": 25.177886
+      "landingPage": "/products/salmon-skin-bites",
+      "sessions": 2,
+      "bounceRate": 1,
+      "averageSessionDuration": 5.013842
     },
     {
-      "landingPage": "/checkouts/cn/hWN8mdV9xKnv2zol1t2AmKZU/en-us/thank-you",
+      "landingPage": "/collections/food-topper",
       "sessions": 1,
-      "bounceRate": 0,
-      "averageSessionDuration": 13.53828
+      "bounceRate": 1,
+      "averageSessionDuration": 0
+    },
+    {
+      "landingPage": "/products/chicken-wrapped-pumpkin",
+      "sessions": 1,
+      "bounceRate": 1,
+      "averageSessionDuration": 0.645341
     }
   ],
   "referrers": [
     {
       "sessionSource": "(direct)",
-      "sessions": 107,
-      "activeUsers": 89
+      "sessions": 109,
+      "activeUsers": 91
     },
     {
       "sessionSource": "google",
@@ -617,14 +617,14 @@
       "activeUsers": 21
     },
     {
-      "sessionSource": "(not set)",
-      "sessions": 6,
-      "activeUsers": 6
-    },
-    {
       "sessionSource": "admin.shopify.com",
       "sessions": 6,
       "activeUsers": 2
+    },
+    {
+      "sessionSource": "(not set)",
+      "sessions": 3,
+      "activeUsers": 3
     },
     {
       "sessionSource": "qrcodes.pro",
@@ -645,6 +645,13 @@
   "ecommerce": {
     "products": [
       {
+        "itemName": "Chicken-Wrapped Pumpkin Super Healthy Dog Treats",
+        "itemsPurchased": 7,
+        "itemRevenue": 251.65,
+        "itemsViewed": 0,
+        "itemsAddedToCart": 0
+      },
+      {
         "itemName": "Chicken-Wrapped Pumpkin",
         "itemsPurchased": 4,
         "itemRevenue": 143.8,
@@ -655,6 +662,13 @@
         "itemName": "Beef Wrapped Pumpkin",
         "itemsPurchased": 3,
         "itemRevenue": 110.85,
+        "itemsViewed": 0,
+        "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "Healthy Dog Protein Chips",
+        "itemsPurchased": 2,
+        "itemRevenue": 73.9,
         "itemsViewed": 0,
         "itemsAddedToCart": 0
       },
@@ -685,6 +699,13 @@
         "itemRevenue": 36.95,
         "itemsViewed": 0,
         "itemsAddedToCart": 0
+      },
+      {
+        "itemName": "(not set)",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 0,
+        "itemsAddedToCart": 5
       },
       {
         "itemName": "Air-Dried Alaskan Salmon Bite",
@@ -750,39 +771,18 @@
         "itemsAddedToCart": 1
       },
       {
+        "itemName": "Chicken-Wrapped Pumpkin Super Healthy Dog Treats - 8 oz. / yellowish",
+        "itemsPurchased": 0,
+        "itemRevenue": 0,
+        "itemsViewed": 0,
+        "itemsAddedToCart": 5
+      },
+      {
         "itemName": "Clean Pawder",
         "itemsPurchased": 0,
         "itemRevenue": 0,
         "itemsViewed": 2,
         "itemsAddedToCart": 1
-      },
-      {
-        "itemName": "Dexas Mudbuster - Light Grey / Small",
-        "itemsPurchased": 0,
-        "itemRevenue": 0,
-        "itemsViewed": 2,
-        "itemsAddedToCart": 0
-      },
-      {
-        "itemName": "Functional Dog Food Topper for Joint - 3.6 oz",
-        "itemsPurchased": 0,
-        "itemRevenue": 0,
-        "itemsViewed": 3,
-        "itemsAddedToCart": 1
-      },
-      {
-        "itemName": "Healthy Dog Protein Chips - 3oz / Beef",
-        "itemsPurchased": 0,
-        "itemRevenue": 0,
-        "itemsViewed": 4,
-        "itemsAddedToCart": 0
-      },
-      {
-        "itemName": "On/Off Switch [Shower Head Add-On]",
-        "itemsPurchased": 0,
-        "itemRevenue": 0,
-        "itemsViewed": 2,
-        "itemsAddedToCart": 0
       }
     ],
     "dailyTrend": [
@@ -848,18 +848,25 @@
         "purchaseRevenue": 42.95,
         "addToCarts": 1,
         "checkouts": 0
+      },
+      {
+        "date": "20260215",
+        "ecommercePurchases": 1,
+        "purchaseRevenue": 325.55,
+        "addToCarts": 3,
+        "checkouts": 0
       }
     ],
     "summary": {
-      "purchases": 5,
-      "revenue": 403.45,
-      "totalRevenue": 403.45,
-      "addToCarts": 13,
+      "purchases": 6,
+      "revenue": 729,
+      "totalRevenue": 729,
+      "addToCarts": 16,
       "checkouts": 3,
       "itemsViewed": 91,
-      "itemsPurchased": 11,
-      "cartToViewRate": 0.28,
-      "purchaseToViewRate": 0.2
+      "itemsPurchased": 20,
+      "cartToViewRate": 0.32,
+      "purchaseToViewRate": 0.24
     }
   }
 }
