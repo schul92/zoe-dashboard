@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "client": "CareK9",
+    "updatedAt": "2026-02-16",
+    "reportOwner": "ZOE STUDIO",
+    "audience": "Owner / Non-technical"
+  },
+  "snapshot": {
+    "overallStatus": "On Track",
+    "seoWorkstream": "In Progress",
+    "deployBranch": "dev",
+    "latestCommit": "a25be32"
+  },
+  "highlights": [
+    "모바일 배너를 모바일 전용 이미지로 분리해 UX 개선 완료",
+    "상품/카트/검색/블로그 핵심 이미지 ALT fallback 적용 완료",
+    "메타 설명/robots/canonical SEO 규칙 정리 완료"
+  ],
+  "timeline": [
+    {
+      "date": "2026-02-16",
+      "commit": "a25be32",
+      "title": "Search canonical 정규화 + 메타 중복 리스크 제거",
+      "impact": "중복 URL 신호 감소, 스니펫 품질 안정화",
+      "type": "seo"
+    },
+    {
+      "date": "2026-02-16",
+      "commit": "9f5f3ae",
+      "title": "Meta description + robots crawl control 보강",
+      "impact": "불필요 인덱싱 리스크 감소",
+      "type": "seo"
+    },
+    {
+      "date": "2026-02-16",
+      "commit": "d55032e",
+      "title": "이미지 ALT fallback 전면 보강",
+      "impact": "이미지 문맥 신호/접근성 개선",
+      "type": "seo"
+    },
+    {
+      "date": "2026-02-16",
+      "commit": "41df5f1",
+      "title": "모바일 배너 핫픽스",
+      "impact": "모바일 배너 표시 품질 및 CLS 안정화",
+      "type": "ux"
+    }
+  ],
+  "kpis": [
+    {
+      "label": "이번 주 완료 작업",
+      "value": "4",
+      "hint": "SEO/UX 핵심 패치"
+    },
+    {
+      "label": "배포 브랜치",
+      "value": "dev",
+      "hint": "운영 반영 전 검증 단계"
+    },
+    {
+      "label": "우선 리스크",
+      "value": "2",
+      "hint": "GSC 권한 + dev/live 일치"
+    },
+    {
+      "label": "다음 액션",
+      "value": "5",
+      "hint": "오늘 실행 체크리스트"
+    }
+  ],
+  "risks": [
+    {
+      "level": "High",
+      "title": "GSC API 403 권한 이슈",
+      "detail": "Search Console 자동 검증이 막혀 있어 성과 추적 자동화가 제한됨"
+    },
+    {
+      "level": "High",
+      "title": "dev ↔ live 반영 불일치 가능성",
+      "detail": "코드 반영이 실제 라이브 테마에 동일하게 적용됐는지 확인 필요"
+    }
+  ],
+  "nextActions": [
+    "Shopify 테마에서 dev 최신 SHA 반영 여부 확인",
+    "홈/컬렉션/상품/블로그/검색 페이지 메타 출력 QA",
+    "검색/카트/계정 noindex 동작 확인",
+    "GSC 권한 복구 후 인덱싱 상태 재측정",
+    "사장님용 주간 리포트 템플릿으로 누적 업데이트"
+  ]
+}
