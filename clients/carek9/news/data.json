@@ -1,26 +1,87 @@
 {
   "metadata": {
-    "collectedAt": "2026-02-10T00:00:00Z",
+    "collectedAt": "2026-02-16T15:30:00Z",
     "client": "carek9",
-    "status": "placeholder"
+    "status": "active",
+    "notes": "Updated from live web signals (Brave, Reddit, APPA, FDA, Google Trends)"
   },
   "sources": {
     "twitter": [],
-    "reddit": [],
+    "reddit": [
+      {
+        "title": "Dog Food Topper Recommendations (r/DogFood)",
+        "url": "https://www.reddit.com/r/DogFood/comments/1qlbweb/dog_food_topper_recommendations/",
+        "published": "3 weeks ago",
+        "insight": "Repeated mention of pumpkin and simple toppers for digestion/palatability."
+      },
+      {
+        "title": "Treats that last more than 5 minutes (r/dogs)",
+        "url": "https://www.reddit.com/r/dogs/comments/1qtg1aj/treats_that_last_more_than_5_minutes/",
+        "published": "2 weeks ago",
+        "insight": "Owners prefer long-lasting functional treats and DIY yogurt+pumpkin options."
+      },
+      {
+        "title": "Training Treats discussion (r/labrador)",
+        "url": "https://www.reddit.com/r/labrador/comments/1qh0lzb/training_treats/",
+        "published": "1 month ago",
+        "insight": "Demand for low-calorie training treats and ingredient transparency."
+      }
+    ],
     "hackernews": [],
-    "brave": [],
-    "googleTrends": []
+    "brave": [
+      {
+        "title": "APPA Industry Trends & Stats",
+        "url": "https://americanpetproducts.org/industry-trends-and-stats",
+        "published": "2026",
+        "insight": "Pet category remains resilient with premium and health-focused spend."
+      },
+      {
+        "title": "FDA Animal Food Recalls & Withdrawals",
+        "url": "https://www.fda.gov/animal-veterinary/safety-health/recalls-withdrawals",
+        "published": "Rolling",
+        "insight": "Maintain safety monitoring and rapid response messaging if recall-related terms spike."
+      },
+      {
+        "title": "7 Top Pet Industry Trends (2025 & 2026)",
+        "url": "https://explodingtopics.com/blog/pet-industry-trends",
+        "published": "2025-11-20",
+        "insight": "Functional ingredients and premium positioning continue gaining traction."
+      },
+      {
+        "title": "7 Pet Industry Trends To Watch in 2026",
+        "url": "https://etailpet.io/blog/pet-industry-trends-2026",
+        "published": "2025-11-11",
+        "insight": "Fresh/clean-label product framing aligns with CareK9 value proposition."
+      }
+    ],
+    "googleTrends": [
+      {
+        "title": "Google Trends: dog treats vs freeze dried dog treats vs dog food topper",
+        "url": "https://trends.google.com/trends/explore?geo=US&q=dog%20treats,freeze%20dried%20dog%20treats,dog%20food%20topper",
+        "insight": "Track weekly momentum and trigger content/social updates when topper terms accelerate."
+      }
+    ]
   },
   "summary": {
-    "totalItems": 0,
+    "totalItems": 8,
     "bySource": {
       "twitter": 0,
-      "reddit": 0,
+      "reddit": 3,
       "hackernews": 0,
-      "brave": 0,
-      "googleTrends": 0
+      "brave": 4,
+      "googleTrends": 1
     }
   },
-  "highlights": [],
-  "actionItems": []
+  "highlights": [
+    "Reddit demand centers on functional toppers and pumpkin-based digestive support.",
+    "Premium/clean-label positioning remains strong in 2025-2026 pet market trend coverage.",
+    "No actionable CareK9 brand-specific negative news surfaced in this sweep.",
+    "Safety-watch source (FDA recalls) linked for daily monitoring baseline."
+  ],
+  "actionItems": [
+    "Publish one CareK9 educational post: 'When to use toppers vs treats' with digestion angle.",
+    "Add product-page FAQ snippet for 'pumpkin + protein' benefits and serving guidance.",
+    "Track Google Trends query set weekly and refresh social hooks if topper interest rises.",
+    "Keep FDA recalls URL in monitoring set and auto-flag terms: recall, salmonella, contamination."
+  ]
 }
