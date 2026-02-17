@@ -277,6 +277,7 @@
             <button class="nav-tab" onclick="showTab('profit')">📈 Profit Simulation</button>
             <button class="nav-tab" onclick="showTab('strategy')">🎯 Strategy</button>
             <button class="nav-tab" onclick="showTab('economics')">🧮 Unit Economics</button>
+            <button class="nav-tab" onclick="showTab('recurring')">🔁 Recurring Engine</button>
             <button class="nav-tab" onclick="showTab('global')">🌏 Global Scout</button>
         </div>
         
@@ -1763,6 +1764,97 @@
 
                     <div class="info-box">
                         <strong>Year 1 예상 순이익:</strong> <strong>$24,194</strong> (보수 $18,000 / 공격 $36,000)
+                    </div>
+                </div>
+            </div>
+
+            <!-- RECURRING ENGINE TAB -->
+            <div id="recurring" class="tab-content">
+                <div class="section">
+                    <h2>🔁 Recurring Revenue Engine (Pet Apparel → Consumables)</h2>
+
+                    <div class="success-box">
+                        <strong>핵심 결론:</strong> 펫의류만으로 시작하는 건 맞습니다. 다만 반복매출은 간식/소모품에서 나오므로, <strong>의류(입구) + 소모품(재구매)</strong> 구조로 확장해야 LTV가 커집니다.
+                    </div>
+
+                    <h3>How Others Make Margin (Simple Model)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Layer</th>
+                                <th>역할</th>
+                                <th>예시 SKU</th>
+                                <th>마진 특성</th>
+                                <th>재구매 주기</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td><strong>Entry (브랜드 유입)</strong></td>
+                                <td>첫 구매 유도</td>
+                                <td>Bandana, Sweater, Raincoat</td>
+                                <td>중~고마진</td>
+                                <td>낮음~중간</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Recurring (반복엔진)</strong></td>
+                                <td>재구매/LTV 상승</td>
+                                <td>Treats, wipes, poop bags, toppers</td>
+                                <td>중마진</td>
+                                <td><strong>높음</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Premium Add-on</strong></td>
+                                <td>AOV 업셀</td>
+                                <td>Gift sets, personalization</td>
+                                <td>고마진</td>
+                                <td>시즌성</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Channel Expansion (No-Paid-First)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Phase</th>
+                                <th>채널</th>
+                                <th>목표</th>
+                                <th>주의점</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td><strong>0-30일</strong></td>
+                                <td>Shopify + Etsy</td>
+                                <td>상품/가격/이미지 검증</td>
+                                <td>SKU 과다 확장 금지</td>
+                            </tr>
+                            <tr>
+                                <td><strong>30-60일</strong></td>
+                                <td>Amazon <em>or</em> eBay (하나 먼저)</td>
+                                <td>검색 유입 확대</td>
+                                <td>수수료/정책 체크</td>
+                            </tr>
+                            <tr>
+                                <td><strong>60-90일</strong></td>
+                                <td>Google Shopping (Free Listings) + 나머지 채널</td>
+                                <td>멀티채널 최적화</td>
+                                <td>피드 품질/승인 이슈</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>Steve 실행 규칙 (컷오프)</h3>
+                    <ul style="margin-left:22px; line-height:1.9;">
+                        <li><strong>Rule 1:</strong> 14일 테스트 후 주문 없는 SKU는 중단</li>
+                        <li><strong>Rule 2:</strong> 히어로 SKU 1~3개만 예산 유지</li>
+                        <li><strong>Rule 3:</strong> 월 150건 전에는 대량 사입 금지</li>
+                        <li><strong>Rule 4:</strong> 의류 검증 후 소모품 라인으로 recurring 붙이기</li>
+                    </ul>
+
+                    <div class="info-box">
+                        <strong>지금 답:</strong> 펫 카테고리 집중은 매우 좋은 전략입니다. 다만 수익 최적화는 "의류만"이 아니라, 이후 소모품을 붙여 반복매출을 만드는 구조에서 완성됩니다.
                     </div>
                 </div>
             </div>
