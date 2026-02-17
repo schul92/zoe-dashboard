@@ -276,6 +276,7 @@
             <button class="nav-tab" onclick="showTab('pricing')">💰 Price Comparison</button>
             <button class="nav-tab" onclick="showTab('profit')">📈 Profit Simulation</button>
             <button class="nav-tab" onclick="showTab('strategy')">🎯 Strategy</button>
+            <button class="nav-tab" onclick="showTab('economics')">🧮 Unit Economics</button>
             <button class="nav-tab" onclick="showTab('global')">🌏 Global Scout</button>
         </div>
         
@@ -1658,6 +1659,110 @@
                             <li>Set up email capture (Klaviyo free tier)</li>
                             <li>Create TikTok account, post 3-5 organic videos</li>
                         </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIT ECONOMICS TAB -->
+            <div id="economics" class="tab-content">
+                <div class="section">
+                    <h2>🧮 SKU Unit Economics (KR/VN/Alibaba/POD 기반 의사결정)</h2>
+
+                    <div class="success-box">
+                        <strong>결론:</strong> 런칭은 POD로 검증하고, 월 150건 이상부터 US Wholesale, 월 300건 이상 안정화 시 Korea Import가 순이익 최적입니다.
+                    </div>
+
+                    <h3>Phase KPI Snapshot</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Phase</th>
+                                <th>AOV</th>
+                                <th>순이익률</th>
+                                <th>BEP (월 주문)</th>
+                                <th>기준 순이익</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlight-row">
+                                <td>Phase 1 — POD</td>
+                                <td>$42.00</td>
+                                <td class="profit-positive">20.8%</td>
+                                <td>8</td>
+                                <td class="profit-positive">$1,309 @150</td>
+                            </tr>
+                            <tr>
+                                <td>Phase 2 — US Wholesale</td>
+                                <td>$35.66</td>
+                                <td class="profit-positive">25.7%</td>
+                                <td>9</td>
+                                <td class="profit-positive">$1,372 @150</td>
+                            </tr>
+                            <tr>
+                                <td>Phase 3 — Korea Import</td>
+                                <td>$33.66</td>
+                                <td class="profit-positive">32.2%</td>
+                                <td>9</td>
+                                <td class="profit-positive">$3,254 @300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h3>핵심 3SKU 권장 판매가 (신규 브랜드 기준)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SKU</th>
+                                <th>권장 런칭가</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Bandana</td><td>$17.99 ~ $19.99</td><td>$24.99는 리뷰 없을 때 공격적</td></tr>
+                            <tr><td>Sweater</td><td>$34.99 ~ $39.99</td><td>$54.99는 과대가격 리스크</td></tr>
+                            <tr><td>Raincoat</td><td>$34.99 ~ $44.99</td><td>기능 차별화 없으면 상단가 위험</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h3>순이익 매트릭스 (Base Case)</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>월 주문량</th>
+                                <th>POD</th>
+                                <th>US Wholesale</th>
+                                <th>Korea Import</th>
+                                <th>Winner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>50</td>
+                                <td class="profit-positive">$335</td>
+                                <td class="profit-positive">$356</td>
+                                <td class="profit-positive">$416*</td>
+                                <td>US Wholesale (안정성 기준)</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>150</td>
+                                <td class="profit-positive">$1,309</td>
+                                <td class="profit-positive">$1,372</td>
+                                <td class="profit-positive">$1,551</td>
+                                <td>Korea Import (조건부)</td>
+                            </tr>
+                            <tr>
+                                <td>300</td>
+                                <td class="profit-positive">$2,770</td>
+                                <td class="profit-positive">$2,897</td>
+                                <td class="profit-positive">$3,254</td>
+                                <td>Korea Import</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p><em>* 50건 구간 Korea Import는 재고 리스크가 커서 실무에선 비권장</em></p>
+
+                    <div class="info-box">
+                        <strong>Year 1 예상 순이익:</strong> <strong>$24,194</strong> (보수 $18,000 / 공격 $36,000)
                     </div>
                 </div>
             </div>
