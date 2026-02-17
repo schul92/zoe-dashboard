@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-16T13:00:13.835357Z",
-  "version": "v2-2026-02-16",
+  "lastUpdated": "2026-02-17T13:00:12.016781Z",
+  "version": "v2-2026-02-17",
   "sources": {
     "brave_search": true,
     "twitter": true,
@@ -16,6 +16,13 @@
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com",
+      "category": "hawaii",
+      "description": "<strong>Trade winds will strengthen today into tomorrow with sustained winds of 15-25+mph with locally higher gusts of 45-55mph</strong>, then persist through much of the week."
+    },
+    {
       "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
       "source": "Brave Search",
       "url": "https://www.waikikigetdown.com/",
@@ -23,32 +30,25 @@
       "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
     },
     {
-      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
+      "title": "Things to Do in Honolulu, HI This Week - Events & Activities | Eventbrite",
       "source": "Brave Search",
-      "url": "https://www.kitv.com/",
+      "url": "https://www.eventbrite.com/d/hi--honolulu/events--this-week/",
       "category": "hawaii",
-      "description": "... <strong>A man with stab wounds died Friday in Wahiawa after a vehicle he was inside crashed near Walgreens</strong>; authorities are investigating the death, a\u2026 ... Sign up to receive Island News "
+      "description": "Share this event: <strong>Illusions The Drag Queen Show Honolulu - Drag Queen Dinner Show - Honolulu</strong>Save this event: <strong>Illusions The Drag Queen Show Honolulu - Drag Queen Dinner Show - "
     },
     {
-      "title": "Hawaii Faces Stagnant Tourism Growth as Global Competitors Gain Ground: What You Need to Know in 2026 - Travel And Tour World",
+      "title": "Calendar",
       "source": "Brave Search",
-      "url": "https://www.travelandtourworld.com/news/article/hawaii-faces-stagnant-tourism-growth-as-global-competitors-gain-ground-what-you-need-to-know-in-2026/",
+      "url": "https://www.staradvertiser.com/calendar/",
       "category": "hawaii",
-      "description": "Hawaii\u2019s tourism industry, a crucial pillar of the state\u2019s economy, is <strong>facing a stagnant recovery</strong> in 2026, despite ongoing efforts to bring back visitors after the COVID\u201119 pandemic."
+      "description": "Find out where to go for the latest community gatherings in Hawaii and fun events around town. Hosting an event? Add it to our calendar."
     },
     {
-      "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
+      "title": "Events Calendar | kitv.com",
       "source": "Brave Search",
-      "url": "https://www.travelweekly.com/Hawaii-Travel/hawaii-new-for-visitors-2026",
+      "url": "https://www.kitv.com/island-style/calendar/",
       "category": "hawaii",
-      "description": "In 2026, Hawaii will see <strong>new hotel openings, attractions, and restaurants, including direct flights from California, a new luau show on Kauai and chef Alan Wong&#x27;s restaurant on Oahu</stro"
-    },
-    {
-      "title": "A downturn for Hawaii tourism: Travel Weekly",
-      "source": "Brave Search",
-      "url": "https://www.travelweekly.com/Hawaii-Travel/Insights/downturn-for-hawaii-tourism-2026",
-      "category": "hawaii",
-      "description": "&quot;The near-term picture for Hawaii tourism remains poor,&quot; the report continued. Looking ahead, it said <strong>visitor arrivals and the average daily census are expected to decline in 2026 be"
+      "description": "Events Calendar \u00b7 Island Life \u00b7 Best of Hawaii \u00b7 Island Deals \u00b7 KIKU\u00ae \u00b7 Contact \u00b7 Meet the Team \u00b7 Our Apps \u00b7 Email Alerts \u00b7 About Us \u00b7 Jobs \u00b7 Advertise With Us \u00b7 Toggle navigation Menu \u00b7 80\u00b0 \u00b7 KULEANA"
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
@@ -65,140 +65,154 @@
       "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
-      "title": "The hottest new LA coffee shop is in this couple's backyard: 'People really want community'",
+      "title": "News - World Coffee Portal",
       "source": "Brave Search",
-      "url": "https://www.cnbc.com/2026/02/15/the-hottest-new-la-coffee-shop-granada-in-is-in-this-couples-backyard.html",
+      "url": "https://www.worldcoffeeportal.com/news/",
       "category": "coffee",
-      "description": "The fact that the home-based cafe has been such a hit in a town with &quot;so many phenomenal coffee shops&quot; is still a shock to Wayser, who says they &quot;didn&#x27;t expect this at all.&quot; &"
+      "description": "Breaking coffee business news and analysis"
+    },
+    {
+      "title": "I'm looking for a new drip brew coffee pot.",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r6puwz/im_looking_for_a_new_drip_brew_coffee_pot/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I've tried a Presto percolator (no plastic), pour over and the Mongdio stove top espresso maker (too much fuss). I've come to the conclusion I just really want a nice"
+    },
+    {
+      "title": "Help! Can't get good coffee from Baratza Virtuoso+ and Moccamaster",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r6fpbu/help_cant_get_good_coffee_from_baratza_virtuoso/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>For years, I was making what I felt was good coffee with an Oxo burr grinder and my Moccamaster. I was using all sorts of different beans, but the mainstay was Peet's"
     },
     {
       "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1r66pc1/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r731wi/mod_the_daily_question_thread/",
       "category": "reddit",
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Update: WE FOUND OUR PARROT",
+      "title": "Aloha, I am State Senator Jarrett Keohokalole and I am challenging Rep. Ed Case for Congress in HI-01! Ask me anything!",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r616ua/update_we_found_our_parrot/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r6g1jk/aloha_i_am_state_senator_jarrett_keohokalole_and/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r616ua/update_we_found_our_parrot/\"> <img alt=\"Update: WE FOUND OUR PARROT\" src=\"https://preview.redd.it/osqc93bnmsjg1.jpeg?width=64"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Edit: Thank you everyone for the questions! I will try and answer a few more later this evening!</p> <p>Aloha. My name is Jarrett Keohokalole. I am a State Senator an"
     },
     {
-      "title": "Pele full on again",
+      "title": "Happy Chinese New Year \ud83e\udde7 \u606d\u559c\u53d1\u8d22\ud83d\udc34\ud83c\udf8a",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r5vksj/pele_full_on_again/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r6suvl/happy_chinese_new_year_\u606d\u559c\u53d1\u8d22/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r5vksj/pele_full_on_again/\"> <img alt=\"Pele full on again\" src=\"https://preview.redd.it/0n1yqrdu9rjg1.jpeg?width=640&amp;crop=smart&"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r6suvl/happy_chinese_new_year_\u606d\u559c\u53d1\u8d22/\"> <img alt=\"Happy Chinese New Year \ud83e\udde7 \u606d\u559c\u53d1\u8d22\ud83d\udc34\ud83c\udf8a\" src=\"https://external-preview.redd.it/bmd3Njh4Y3Nte"
     },
     {
-      "title": "Good times at Sandys",
+      "title": "This take had me dying",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r625yg/good_times_at_sandys/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r6rf60/this_take_had_me_dying/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r625yg/good_times_at_sandys/\"> <img alt=\"Good times at Sandys\" src=\"https://preview.redd.it/b422bn0vvsjg1.jpg?width=140&amp;height=9"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r6rf60/this_take_had_me_dying/\"> <img alt=\"This take had me dying\" src=\"https://preview.redd.it/bhnj63gnbyjg1.jpeg?width=640&amp;cro"
     },
     {
-      "title": "I got a dump trailer and now I can\u2019t keep up with the requests, and I\u2019m not organized at all",
+      "title": "How do you grow a secondhand business when everything you find only exists once?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r5nb8q/i_got_a_dump_trailer_and_now_i_cant_keep_up_with/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r6ii9k/how_do_you_grow_a_secondhand_business_when/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I started this side hustle about 6 months ago, just one dump trailer, only after work and on weekends. Now I easily get 3\u20134 jobs a day when the weather is good and I\u2019"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Been selling on vinted for a bit now and things have picked up way more than i expected. My niche is pretty specific, I only list stuff that has actual character to i"
     },
     {
-      "title": "Growing too fast and drowning in cash flow issues",
+      "title": "Google Overview is crediting the wrong brand for my product. What actually moves the needle?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r5ibeh/growing_too_fast_and_drowning_in_cash_flow_issues/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r6de4t/google_overview_is_crediting_the_wrong_brand_for/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hey everyone, this is my first Reddit post, so I apologize if it\u2019s a little rough.</p> <p>I'm 25 M and I\u2019ve learned a ton from this community and really respect the a"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I run a small business and something weird is happening.</p> <p>If I search my business name, Google Overview it recommends a competitor instead of me. It\u2019s like it t"
     },
     {
-      "title": "21M, Lost My Father, Family Business Collapsing (7Cr \u2192 2Cr). Don\u2019t Know This Industry. Relatives Involved. Need Serious Advice.",
+      "title": "How do you grow a remote bookkeeping business when you're starting from zero?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r61k3i/21m_lost_my_father_family_business_collapsing_7cr/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r6orwz/how_do_you_grow_a_remote_bookkeeping_business/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi everyone,</p> <p>I\u2019m 21 years old. I lost my father last year due to a heart attack. He was running a pressure vessels fabrication business with a turnover of arou"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Started a remote bookkeeping business a few months ago and getting clients is way harder than I expected.</p> <p>I do QuickBooks bookkeeping for small businesses, mos"
     },
     {
-      "title": "MessageFormat: Unicode standard for localizable message strings",
+      "title": "GrapheneOS \u2013 Break Free from Google and Apple",
       "source": "Hacker News",
-      "url": "https://github.com/unicode-org/message-format-wg",
+      "url": "https://blog.tomaszdunia.pl/grapheneos-eng/",
       "category": "tech",
       "stats": {
-        "points": 61,
-        "comments": 26
+        "points": 278,
+        "comments": 191
       }
     },
     {
-      "title": "I\u2019m joining OpenAI",
+      "title": "Four Column ASCII (2017)",
       "source": "Hacker News",
-      "url": "https://steipete.me/posts/2026/openclaw",
+      "url": "https://garbagecollected.org/2017/01/31/four-column-ascii/",
       "category": "tech",
       "stats": {
-        "points": 1141,
-        "comments": 850
+        "points": 209,
+        "comments": 34
       }
     },
     {
-      "title": "I want to wash my car. The car wash is 50 meters away. Should I walk or drive?",
+      "title": "14-year-old Miles Wu folded origami pattern that holds 10k times its own weight",
       "source": "Hacker News",
-      "url": "https://mastodon.world/@knowmadd/116072773118828295",
+      "url": "https://www.smithsonianmag.com/innovation/this-14-year-old-is-using-origami-to-design-emergency-shelters-that-are-sturdy-cost-efficient-and-easy-to-deploy-180988179/",
       "category": "tech",
       "stats": {
-        "points": 702,
-        "comments": 470
+        "points": 746,
+        "comments": 155
       }
     },
     {
-      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "title": "How teaching molecules to think is revealing what a 'mind' is",
       "source": "Hacker News",
-      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "url": "https://www.newscientist.com/article/2513815-how-teaching-molecules-to-think-is-revealing-what-a-mind-really-is/",
       "category": "tech",
       "stats": {
-        "points": 50,
-        "comments": 20
+        "points": 23,
+        "comments": 9
       }
     },
     {
-      "title": "Vim-pencil: Rethinking Vim as a tool for writing",
+      "title": "Show HN: Glitchy camera \u2013 a circuit-bent camera simulator in the browser",
       "source": "Hacker News",
-      "url": "https://github.com/preservim/vim-pencil",
+      "url": "https://glitchycam.com",
       "category": "tech",
       "stats": {
-        "points": 33,
+        "points": 63,
         "comments": 6
       }
     },
     {
-      "title": "[AI \u00b7 News] Musk Accuses Epstein of Shorting Tesla After Being Blocked",
+      "title": "[AI \u00b7 Other] Larry Wheels Slaps Deen The Great Over Wife Flirting on Live Stream",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "2.4K posts",
+      "title": "7 hours ago | 14.0K posts",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "\ud83d\udd17 twitter://trending/2023371322928062704",
+      "title": "\ud83d\udd17 twitter://trending/2023644433468854360",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     }
   ],
   "trending": [
-    "The hottest new LA coffee shop is in this couple's",
-    "Hawaii News, Weather, Sports, Breaking News & Live",
-    "Top Coffee Shop Industry Trends and Statistics in ",
-    "KITV 4 Island News | Honolulu, HI News & Weather",
-    "What's new for Hawaii visitors in 2026: Travel Wee",
-    "[MOD] The Daily Question Thread",
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "Calendar",
     "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
+    "Hawaii News, Weather, Sports, Breaking News & Live",
+    "I'm looking for a new drip brew coffee pot.",
+    "News - World Coffee Portal",
+    "Top Coffee Shop Industry Trends and Statistics in ",
+    "Events Calendar | kitv.com",
     "Daily Coffee News by Roast Magazine - Business new",
-    "A downturn for Hawaii tourism: Travel Weekly",
-    "Hawaii Faces Stagnant Tourism Growth as Global Com"
+    "Things to Do in Honolulu, HI This Week - Events & "
   ]
 }
