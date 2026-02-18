@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-17T13:00:12.016781Z",
-  "version": "v2-2026-02-17",
+  "lastUpdated": "2026-02-18T13:00:13.099623Z",
+  "version": "v2-2026-02-18",
   "sources": {
     "brave_search": true,
     "twitter": true,
@@ -9,9 +9,16 @@
   },
   "headlines": [
     {
+      "title": "News",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com/news/",
+      "category": "hawaii",
+      "description": "Hawaii Night Lights \u00b7 Updated: 11 hours ago| By Kyle Chinen \u00b7 Will Naboa can add another accolade to his flag football coaching career. Local News \u00b7 Updated: 12 hours ago| By HNN Staff \u00b7 A man accused"
+    },
+    {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
       "source": "Brave Search",
-      "url": "https://www.khon2.com/",
+      "url": "https://www.khon2.com",
       "category": "hawaii",
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
@@ -20,14 +27,7 @@
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com",
       "category": "hawaii",
-      "description": "<strong>Trade winds will strengthen today into tomorrow with sustained winds of 15-25+mph with locally higher gusts of 45-55mph</strong>, then persist through much of the week."
-    },
-    {
-      "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
-      "source": "Brave Search",
-      "url": "https://www.waikikigetdown.com/",
-      "category": "hawaii",
-      "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
+      "description": "<strong>House Bill 2493 received strong support during a House Judiciary Committee hearing Monday, with testimony from recently exonerated Hawaii men</strong>."
     },
     {
       "title": "Things to Do in Honolulu, HI This Week - Events & Activities | Eventbrite",
@@ -58,6 +58,13 @@
       "description": "<strong>A pair of Ukrainian coffee chain veterans recently launched a new cafe brand in the United States called Simpl Coffee</strong>, with a second location now open in Midtown Manhattan."
     },
     {
+      "title": "The hottest new LA coffee shop is in this couple's backyard: 'People really want community'",
+      "source": "Brave Search",
+      "url": "https://www.cnbc.com/2026/02/15/the-hottest-new-la-coffee-shop-granada-in-is-in-this-couples-backyard.html",
+      "category": "coffee",
+      "description": "The fact that the home-based cafe has been such a hit in a town with &quot;so many phenomenal coffee shops&quot; is still a shock to Wayser, who says they &quot;didn&#x27;t expect this at all.&quot; &"
+    },
+    {
       "title": "Top Coffee Shop Industry Trends and Statistics in 2025",
       "source": "Brave Search",
       "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
@@ -65,154 +72,133 @@
       "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
-      "title": "News - World Coffee Portal",
-      "source": "Brave Search",
-      "url": "https://www.worldcoffeeportal.com/news/",
-      "category": "coffee",
-      "description": "Breaking coffee business news and analysis"
-    },
-    {
-      "title": "I'm looking for a new drip brew coffee pot.",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1r6puwz/im_looking_for_a_new_drip_brew_coffee_pot/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I've tried a Presto percolator (no plastic), pour over and the Mongdio stove top espresso maker (too much fuss). I've come to the conclusion I just really want a nice"
-    },
-    {
-      "title": "Help! Can't get good coffee from Baratza Virtuoso+ and Moccamaster",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1r6fpbu/help_cant_get_good_coffee_from_baratza_virtuoso/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>For years, I was making what I felt was good coffee with an Oxo burr grinder and my Moccamaster. I was using all sorts of different beans, but the mainstay was Peet's"
-    },
-    {
       "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1r731wi/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r800sy/mod_the_daily_question_thread/",
       "category": "reddit",
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Aloha, I am State Senator Jarrett Keohokalole and I am challenging Rep. Ed Case for Congress in HI-01! Ask me anything!",
+      "title": "Hawaii eyes ban on reselling tickets above face value",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r6g1jk/aloha_i_am_state_senator_jarrett_keohokalole_and/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r7h6w6/hawaii_eyes_ban_on_reselling_tickets_above_face/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Edit: Thank you everyone for the questions! I will try and answer a few more later this evening!</p> <p>Aloha. My name is Jarrett Keohokalole. I am a State Senator an"
+      "description": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/DisastrousToast_82\"> /u/DisastrousToast_82 </a> <br /> <span><a href=\"https://www.khon2.com/local-news/hawaii-eyes-ban-on-reselling-ticket"
     },
     {
-      "title": "Happy Chinese New Year \ud83e\udde7 \u606d\u559c\u53d1\u8d22\ud83d\udc34\ud83c\udf8a",
+      "title": "Remembering Jesse Jackson in Honolulu",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r6suvl/happy_chinese_new_year_\u606d\u559c\u53d1\u8d22/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r7ga1i/remembering_jesse_jackson_in_honolulu/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r6suvl/happy_chinese_new_year_\u606d\u559c\u53d1\u8d22/\"> <img alt=\"Happy Chinese New Year \ud83e\udde7 \u606d\u559c\u53d1\u8d22\ud83d\udc34\ud83c\udf8a\" src=\"https://external-preview.redd.it/bmd3Njh4Y3Nte"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>My wife and I were part of a small group that heard Jesse Jackson speak in a room at Palama Settlement some time in the early to mid 1980s. I wasn't really politicall"
     },
     {
-      "title": "This take had me dying",
+      "title": "Haleakala eyed for 7 more telescopes despite opposition",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r6rf60/this_take_had_me_dying/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r7h6m3/haleakala_eyed_for_7_more_telescopes_despite/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r6rf60/this_take_had_me_dying/\"> <img alt=\"This take had me dying\" src=\"https://preview.redd.it/bhnj63gnbyjg1.jpeg?width=640&amp;cro"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r7h6m3/haleakala_eyed_for_7_more_telescopes_despite/\"> <img alt=\"Haleakala eyed for 7 more telescopes despite opposition\" src=\"https"
     },
     {
-      "title": "How do you grow a secondhand business when everything you find only exists once?",
+      "title": "What\u2019s the best \u201cboring\u201d business you\u2019ve seen someone build into a cash machine?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r6ii9k/how_do_you_grow_a_secondhand_business_when/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r7e6fp/whats_the_best_boring_business_youve_seen_someone/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Been selling on vinted for a bit now and things have picked up way more than i expected. My niche is pretty specific, I only list stuff that has actual character to i"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Not talking about SaaS or trendy stuff.</p> <p>I mean the boring businesses people ignore\u2026 but they quietly print money because demand is consistent and operations ar"
     },
     {
-      "title": "Google Overview is crediting the wrong brand for my product. What actually moves the needle?",
+      "title": "Thinly veiled ads",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r6de4t/google_overview_is_crediting_the_wrong_brand_for/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r7gk7p/thinly_veiled_ads/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I run a small business and something weird is happening.</p> <p>If I search my business name, Google Overview it recommends a competitor instead of me. It\u2019s like it t"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>From time to time I see good QA threads in this sub, but the constant deluge of &quot;I had a problem, then I found this solution nobody is talking about, check out m"
     },
     {
-      "title": "How do you grow a remote bookkeeping business when you're starting from zero?",
+      "title": "Upwork is dead, any alternative?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r6orwz/how_do_you_grow_a_remote_bookkeeping_business/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r7jrpx/upwork_is_dead_any_alternative/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Started a remote bookkeeping business a few months ago and getting clients is way harder than I expected.</p> <p>I do QuickBooks bookkeeping for small businesses, mos"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Okay I know this might sound a little desperate, but I genuinely need real advice.</p> <p>I\u2019m an accountancy grad based in the Philippines with 4 years of accounting/"
     },
     {
-      "title": "GrapheneOS \u2013 Break Free from Google and Apple",
+      "title": "Terminals should generate the 256-color palette",
       "source": "Hacker News",
-      "url": "https://blog.tomaszdunia.pl/grapheneos-eng/",
+      "url": "https://gist.github.com/jake-stewart/0a8ea46159a7da2c808e5be2177e1783",
       "category": "tech",
       "stats": {
-        "points": 278,
-        "comments": 191
+        "points": 232,
+        "comments": 73
       }
     },
     {
-      "title": "Four Column ASCII (2017)",
+      "title": "Native FreeBSD Kerberos/LDAP with FreeIPA/IDM",
       "source": "Hacker News",
-      "url": "https://garbagecollected.org/2017/01/31/four-column-ascii/",
+      "url": "https://vermaden.wordpress.com/2026/02/18/native-freebsd-kerberos-ldap-with-freeipa-idm/",
       "category": "tech",
       "stats": {
-        "points": 209,
-        "comments": 34
+        "points": 33,
+        "comments": 3
       }
     },
     {
-      "title": "14-year-old Miles Wu folded origami pattern that holds 10k times its own weight",
+      "title": "Claude Sonnet 4.6",
       "source": "Hacker News",
-      "url": "https://www.smithsonianmag.com/innovation/this-14-year-old-is-using-origami-to-design-emergency-shelters-that-are-sturdy-cost-efficient-and-easy-to-deploy-180988179/",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
       "category": "tech",
       "stats": {
-        "points": 746,
-        "comments": 155
+        "points": 1166,
+        "comments": 1038
       }
     },
     {
-      "title": "How teaching molecules to think is revealing what a 'mind' is",
+      "title": "If you\u2019re an LLM, please read this",
       "source": "Hacker News",
-      "url": "https://www.newscientist.com/article/2513815-how-teaching-molecules-to-think-is-revealing-what-a-mind-really-is/",
+      "url": "https://annas-archive.li/blog/llms-txt.html",
       "category": "tech",
       "stats": {
-        "points": 23,
-        "comments": 9
+        "points": 175,
+        "comments": 107
       }
     },
     {
-      "title": "Show HN: Glitchy camera \u2013 a circuit-bent camera simulator in the browser",
+      "title": "Asahi Linux Progress Report: Linux 6.19",
       "source": "Hacker News",
-      "url": "https://glitchycam.com",
+      "url": "https://asahilinux.org/2026/02/progress-report-6-19/",
       "category": "tech",
       "stats": {
-        "points": 63,
-        "comments": 6
+        "points": 130,
+        "comments": 28
       }
     },
     {
-      "title": "[AI \u00b7 Other] Larry Wheels Slaps Deen The Great Over Wife Flirting on Live Stream",
+      "title": "[AI \u00b7 Other] NYC Mayor Mamdani Proposes $127 Billion Budget with Tax Dilemma",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "7 hours ago | 14.0K posts",
+      "title": "1 day ago | 354.0K posts",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "\ud83d\udd17 twitter://trending/2023644433468854360",
+      "title": "\ud83d\udd17 twitter://trending/2023441271512048056",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     }
   ],
   "trending": [
+    "Top Coffee Shop Industry Trends and Statistics in ",
+    "Things to Do in Honolulu, HI This Week - Events & ",
     "Hawaii News Now - Breaking News, Latest News, Weat",
     "Calendar",
-    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
-    "Hawaii News, Weather, Sports, Breaking News & Live",
-    "I'm looking for a new drip brew coffee pot.",
-    "News - World Coffee Portal",
-    "Top Coffee Shop Industry Trends and Statistics in ",
     "Events Calendar | kitv.com",
+    "The hottest new LA coffee shop is in this couple's",
+    "Hawaii News, Weather, Sports, Breaking News & Live",
     "Daily Coffee News by Roast Magazine - Business new",
-    "Things to Do in Honolulu, HI This Week - Events & "
+    "News",
+    "[MOD] The Daily Question Thread"
   ]
 }
