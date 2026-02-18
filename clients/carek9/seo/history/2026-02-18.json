@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "version": "3.0.0",
+    "collectedAt": "2026-02-12T06:51:00Z",
+    "client": "carek9",
+    "status": "active",
+    "period": {
+      "startDate": "2026-01-12",
+      "endDate": "2026-02-11",
+      "days": 30
+    },
+    "sources": {
+      "ga4": "properties/523137923",
+      "gsc": null
+    }
+  },
+  "summary": {
+    "uniqueQueries": 0,
+    "uniquePages": 10,
+    "clicks": {"total": 16, "change": 0, "trend": "stable"},
+    "impressions": {"total": 100, "change": 0, "trend": "stable"},
+    "ctr": {"average": 0, "change": 0, "trend": "neutral"}
+  },
+  "ga4": {
+    "sessions": 100,
+    "activeUsers": 80,
+    "screenPageViews": 314,
+    "bounceRate": 0.71,
+    "averageSessionDuration": 297.28,
+    "engagedSessions": 29,
+    "trafficSources": {
+      "Direct": 81,
+      "Organic Search": 16,
+      "Unassigned": 5,
+      "Organic Shopping": 2,
+      "Referral": 1
+    }
+  },
+  "queries": {
+    "total": 0,
+    "all": [],
+    "quickWins": [],
+    "byPosition": {},
+    "branded": {"count": 0, "percentage": 0}
+  },
+  "pages": {
+    "total": 10,
+    "all": [
+      {"page": "/", "title": "CareK9", "views": 165, "users": 50},
+      {"page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats", "title": "Chicken Wrapped Pumpkin Dog Treats", "views": 28, "users": 4},
+      {"page": "/collections/treat", "title": "Dog Treats", "views": 14, "users": 8},
+      {"page": "/pages/contact-us", "title": "Contact Us", "views": 10, "users": 6},
+      {"page": "/cart", "title": "Shopping Cart", "views": 8, "users": 7},
+      {"page": "/collections/all", "title": "Shop All", "views": 8, "users": 7},
+      {"page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips", "title": "OxiDog Chips", "views": 8, "users": 2},
+      {"page": "/pages/about-us", "title": "About Us", "views": 7, "users": 5}
+    ]
+  },
+  "devices": {},
+  "geography": [],
+  "searchAppearance": {}
+}
