@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-18T13:00:13.099623Z",
+  "lastUpdated": "2026-02-18T15:06:24.353633Z",
   "version": "v2-2026-02-18",
   "sources": {
     "brave_search": true,
@@ -9,11 +9,11 @@
   },
   "headlines": [
     {
-      "title": "News",
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
       "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com/news/",
+      "url": "https://www.hawaiinewsnow.com",
       "category": "hawaii",
-      "description": "Hawaii Night Lights \u00b7 Updated: 11 hours ago| By Kyle Chinen \u00b7 Will Naboa can add another accolade to his flag football coaching career. Local News \u00b7 Updated: 12 hours ago| By HNN Staff \u00b7 A man accused"
+      "description": "<strong>House Bill 2493 received strong support during a House Judiciary Committee hearing Monday, with testimony from recently exonerated Hawaii men</strong>."
     },
     {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
@@ -23,32 +23,32 @@
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
-      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "title": "News",
       "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com",
+      "url": "https://www.hawaiinewsnow.com/news/",
       "category": "hawaii",
-      "description": "<strong>House Bill 2493 received strong support during a House Judiciary Committee hearing Monday, with testimony from recently exonerated Hawaii men</strong>."
+      "description": "Hawaii Night Lights \u00b7 Updated: 11 hours ago| By Kyle Chinen \u00b7 Will Naboa can add another accolade to his flag football coaching career. Local News \u00b7 Updated: 12 hours ago| By HNN Staff \u00b7 A man accused"
     },
     {
-      "title": "Things to Do in Honolulu, HI This Week - Events & Activities | Eventbrite",
+      "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
       "source": "Brave Search",
-      "url": "https://www.eventbrite.com/d/hi--honolulu/events--this-week/",
+      "url": "https://www.travelweekly.com/Hawaii-Travel/hawaii-new-for-visitors-2026",
       "category": "hawaii",
-      "description": "Share this event: <strong>Illusions The Drag Queen Show Honolulu - Drag Queen Dinner Show - Honolulu</strong>Save this event: <strong>Illusions The Drag Queen Show Honolulu - Drag Queen Dinner Show - "
+      "description": "In 2026, Hawaii will see <strong>new hotel openings, attractions, and restaurants, including direct flights from California, a new luau show on Kauai and chef Alan Wong&#x27;s restaurant on Oahu</stro"
     },
     {
-      "title": "Calendar",
+      "title": "Hawaii Faces Stagnant Tourism Growth as Global Competitors Gain Ground: What You Need to Know in 2026 - Travel And Tour World",
       "source": "Brave Search",
-      "url": "https://www.staradvertiser.com/calendar/",
+      "url": "https://www.travelandtourworld.com/news/article/hawaii-faces-stagnant-tourism-growth-as-global-competitors-gain-ground-what-you-need-to-know-in-2026/",
       "category": "hawaii",
-      "description": "Find out where to go for the latest community gatherings in Hawaii and fun events around town. Hosting an event? Add it to our calendar."
+      "description": "Hawaii\u2019s tourism industry, a crucial pillar of the state\u2019s economy, is <strong>facing a stagnant recovery</strong> in 2026, despite ongoing efforts to bring back visitors after the COVID\u201119 pandemic."
     },
     {
-      "title": "Events Calendar | kitv.com",
+      "title": "A downturn for Hawaii tourism: Travel Weekly",
       "source": "Brave Search",
-      "url": "https://www.kitv.com/island-style/calendar/",
+      "url": "https://www.travelweekly.com/Hawaii-Travel/Insights/downturn-for-hawaii-tourism-2026",
       "category": "hawaii",
-      "description": "Events Calendar \u00b7 Island Life \u00b7 Best of Hawaii \u00b7 Island Deals \u00b7 KIKU\u00ae \u00b7 Contact \u00b7 Meet the Team \u00b7 Our Apps \u00b7 Email Alerts \u00b7 About Us \u00b7 Jobs \u00b7 Advertise With Us \u00b7 Toggle navigation Menu \u00b7 80\u00b0 \u00b7 KULEANA"
+      "description": "&quot;The near-term picture for Hawaii tourism remains poor,&quot; the report continued. Looking ahead, it said <strong>visitor arrivals and the average daily census are expected to decline in 2026 be"
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
@@ -121,33 +121,33 @@
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Okay I know this might sound a little desperate, but I genuinely need real advice.</p> <p>I\u2019m an accountancy grad based in the Philippines with 4 years of accounting/"
     },
     {
+      "title": "AVX2 is slower than SSE2-4.x under Windows ARM emulation",
+      "source": "Hacker News",
+      "url": "https://blogs.remobjects.com/2026/02/17/nerdsniped-windows-arm-emulation-performance/",
+      "category": "tech",
+      "stats": {
+        "points": 31,
+        "comments": 19
+      }
+    },
+    {
       "title": "Terminals should generate the 256-color palette",
       "source": "Hacker News",
       "url": "https://gist.github.com/jake-stewart/0a8ea46159a7da2c808e5be2177e1783",
       "category": "tech",
       "stats": {
-        "points": 232,
-        "comments": 73
+        "points": 311,
+        "comments": 109
       }
     },
     {
-      "title": "Native FreeBSD Kerberos/LDAP with FreeIPA/IDM",
+      "title": "AI has fixed my productivity",
       "source": "Hacker News",
-      "url": "https://vermaden.wordpress.com/2026/02/18/native-freebsd-kerberos-ldap-with-freeipa-idm/",
+      "url": "https://blog.dmcc.io/journal/ai-has-fixed-my-productivity/",
       "category": "tech",
       "stats": {
-        "points": 33,
-        "comments": 3
-      }
-    },
-    {
-      "title": "Claude Sonnet 4.6",
-      "source": "Hacker News",
-      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
-      "category": "tech",
-      "stats": {
-        "points": 1166,
-        "comments": 1038
+        "points": 21,
+        "comments": 29
       }
     },
     {
@@ -156,49 +156,49 @@
       "url": "https://annas-archive.li/blog/llms-txt.html",
       "category": "tech",
       "stats": {
-        "points": 175,
-        "comments": 107
+        "points": 318,
+        "comments": 178
       }
     },
     {
-      "title": "Asahi Linux Progress Report: Linux 6.19",
+      "title": "Native FreeBSD Kerberos/LDAP with FreeIPA/IDM",
       "source": "Hacker News",
-      "url": "https://asahilinux.org/2026/02/progress-report-6-19/",
+      "url": "https://vermaden.wordpress.com/2026/02/18/native-freebsd-kerberos-ldap-with-freeipa-idm/",
       "category": "tech",
       "stats": {
-        "points": 130,
-        "comments": 28
+        "points": 61,
+        "comments": 25
       }
     },
     {
-      "title": "[AI \u00b7 Other] NYC Mayor Mamdani Proposes $127 Billion Budget with Tax Dilemma",
+      "title": "[AI \u00b7 Other] Real Madrid Edge Benfica 1-0 Amid Racism Allegation Halt",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "1 day ago | 354.0K posts",
+      "title": "8.7K posts",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "\ud83d\udd17 twitter://trending/2023441271512048056",
+      "title": "\ud83d\udd17 twitter://trending/2024126424500613393",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     }
   ],
   "trending": [
-    "Top Coffee Shop Industry Trends and Statistics in ",
-    "Things to Do in Honolulu, HI This Week - Events & ",
-    "Hawaii News Now - Breaking News, Latest News, Weat",
-    "Calendar",
-    "Events Calendar | kitv.com",
-    "The hottest new LA coffee shop is in this couple's",
     "Hawaii News, Weather, Sports, Breaking News & Live",
+    "[MOD] The Daily Question Thread",
+    "A downturn for Hawaii tourism: Travel Weekly",
     "Daily Coffee News by Roast Magazine - Business new",
+    "What's new for Hawaii visitors in 2026: Travel Wee",
     "News",
-    "[MOD] The Daily Question Thread"
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "Top Coffee Shop Industry Trends and Statistics in ",
+    "Hawaii Faces Stagnant Tourism Growth as Global Com",
+    "The hottest new LA coffee shop is in this couple's"
   ]
 }

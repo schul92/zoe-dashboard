@@ -1,6 +1,50 @@
 {
   "posts": [
     {
+      "id": "2026-02-18-community-connection",
+      "date": "2026-02-18",
+      "time": "09:00",
+      "theme": "Community & Connection - The Heart of Coffee Culture",
+      "image": "https://images.pexels.com/photos/34720203/pexels-photo-34720203.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "imageDescription": "",
+      "platforms": {
+        "twitter": {
+          "text": "One week until we open our doors! ☕🌺 Proudly serving Honolulu coffee in the heart of Waikiki. Grand opening February 25, 2026 at 2142 Kalākaua Ave. Can't wait to be YOUR neighborhood coffee spot! konacoffeedonut.com @HonoluluCoffee #Waikiki #HonoluluCoffee #GrandOpening",
+          "url": "",
+          "status": "draft",
+          "postedAt": null
+        },
+        "facebook": {
+          "text": "There's something special about a neighborhood coffee shop. It's where strangers become friends over warm cups, where ideas are born, and where the day truly begins. ☕🌺\n\nWe're just ONE WEEK away from opening our doors at 2142 Kalākaua Ave in Waikiki! Proudly serving Honolulu coffee and fresh donuts made with aloha.\n\nGrand opening February 25, 2026 — mark your calendars!\n\nWhat's your favorite thing about your local coffee spot? ☕💬\n\nkonacoffeedonut.com",
+          "url": "",
+          "status": "draft",
+          "postedAt": null
+        },
+        "google": {
+          "text": "Q: Where can I find great coffee near Waikiki?\nA: Kona Coffee Donut is opening February 25, 2026 at 2142 Kalākaua Ave! Proudly serving Honolulu coffee and fresh donuts daily. Whether you're looking for 'coffee near me' or the best waikiki breakfast spot, we've got you covered. Grand opening in ONE WEEK!\n\nkonacoffeedonut.com\n\n{\"type\": \"LEARN_MORE\", \"url\": \"https://konacoffeedonut.com\"}",
+          "url": "",
+          "status": "draft",
+          "postedAt": null,
+          "cta": {
+            "type": "LEARN_MORE",
+            "url": "https://konacoffeedonut.com"
+          }
+        },
+        "threads": {
+          "text": "one week countdown ✨☕\n\nproudly serving honolulu coffee + fresh donuts in the heart of waikiki. grand opening february 25, 2026.\n\n📍 2142 kalākaua ave, honolulu\n🌐 konacoffeedonut.com\n\ncan't wait to meet you! 🌺\n\n#waikiki #honolulucoffee #coffeeshop #hawaii #grandopening #donuts #alohavibes",
+          "url": "",
+          "status": "draft",
+          "postedAt": null
+        },
+        "bluesky": {
+          "text": "One week until opening day! ☕🌺 We're bringing Honolulu coffee and fresh donuts to Waikiki. Grand opening February 25, 2026 at 2142 Kalākaua Ave. Proudly serving the community, one cup at a time. konacoffeedonut.com",
+          "url": "",
+          "status": "draft",
+          "postedAt": null
+        }
+      }
+    },
+    {
       "id": "2026-02-11-valentines-week",
       "date": "2026-02-11",
       "time": "12:00 PM EST",
@@ -27,6 +71,46 @@
           "status": "published",
           "url": "https://bsky.app/profile/konacoffeedonut.bsky.social/post/3mem6siumm72x",
           "note": "Fixed! AT Protocol working (Feb 11, 11:14 PST)"
+        }
+      }
+    },
+    {
+      "id": "2026-02-11-0900",
+      "date": "2026-02-11",
+      "time": "09:00",
+      "theme": "Valentine's Week in Waikiki — Love, Coffee & Donuts",
+      "image": "https://images.pexels.com/photos/15269528/pexels-photo-15269528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "imageDescription": "",
+      "platforms": {
+        "twitter": {
+          "text": "Valentine's week just got sweeter 💕☕ Proudly serving Honolulu coffee + fresh donuts at 2142 Kalākaua Ave! Grand opening February 25, 2026 🎉🍩\n\nBring your date. Bring your bestie. Bring yourself.\n\n@HonoluluCoffee\n🌐 konacoffeedonut.com\n#WaikikiCoffee #ValentinesDay #KonaDonut #HonoluluEats",
+          "url": "",
+          "status": "posted",
+          "postedAt": "2026-02-11T09:00:18.401461"
+        },
+        "facebook": {
+          "text": "This Valentine's week, we're counting down to something special on Kalākaua Avenue 💕\n\nKona Coffee Donut is proudly serving Honolulu coffee alongside handcrafted donuts — the perfect way to start your morning in Waikiki. Whether you're strolling the beach with someone special or treating yourself to a solo coffee date, we've got the warmth waiting for you.\n\n🗓️ Grand opening: February 25, 2026\n📍 2142 Kalākaua Ave, Honolulu, HI 96815\n🌐 konacoffeedonut.com\n\nWhat's your ideal Valentine's morning — sunrise walk then coffee, or coffee first? ☕🌅",
+          "url": "",
+          "status": "posted",
+          "postedAt": "2026-02-11T09:00:19.325615"
+        },
+        "google": {
+          "text": "Looking for the best coffee near Waikiki this Valentine's Day? ☕💕\n\nKona Coffee Donut is proudly serving Honolulu coffee and fresh donuts at 2142 Kalākaua Ave, Honolulu, HI 96815 — steps from Waikiki Beach.\n\nPerfect for a Valentine's morning date, a quick Waikiki breakfast, or your daily coffee stop.\n\n🗓️ Grand opening: February 25, 2026\n🌐 konacoffeedonut.com\n\n{\"type\": \"LEARN_MORE\", \"url\": \"https://konacoffeedonut.com\"}",
+          "url": "",
+          "status": "posted",
+          "postedAt": "2026-02-11T09:00:20.228349"
+        },
+        "threads": {
+          "text": "valentine's week vibes ☕💕 proudly serving honolulu coffee + handcrafted donuts right on kalākaua ave.\n\n14 days until our grand opening and we literally cannot wait 🍩✨\n\nfeb 25, 2026 · 2142 kalākaua ave, honolulu\nkonacoffeedonut.com\n\n#waikiki #honolulucoffee #valentinesday #konadonut #hawaiieats #waikikibreakfast #coffeelover",
+          "url": "",
+          "status": "posted",
+          "postedAt": "2026-02-11T09:00:21.163965"
+        },
+        "bluesky": {
+          "text": "Valentine's week = an excuse to eat more donuts 🍩💕\n\nProudly serving Honolulu coffee at our new Waikiki spot. Grand opening Feb 25, 2026!\n\n📍 2142 Kalākaua Ave\n🌐 konacoffeedonut.com",
+          "url": "",
+          "status": "posted",
+          "postedAt": "2026-02-11T09:00:21.993555"
         }
       }
     },
@@ -71,46 +155,6 @@
           "url": "",
           "status": "draft",
           "postedAt": null
-        }
-      }
-    },
-    {
-      "id": "2026-02-11-0900",
-      "date": "2026-02-11",
-      "time": "09:00",
-      "theme": "Valentine's Week in Waikiki — Love, Coffee & Donuts",
-      "image": "https://images.pexels.com/photos/15269528/pexels-photo-15269528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      "imageDescription": "",
-      "platforms": {
-        "twitter": {
-          "text": "Valentine's week just got sweeter 💕☕ Proudly serving Honolulu coffee + fresh donuts at 2142 Kalākaua Ave! Grand opening February 25, 2026 🎉🍩\n\nBring your date. Bring your bestie. Bring yourself.\n\n@HonoluluCoffee\n🌐 konacoffeedonut.com\n#WaikikiCoffee #ValentinesDay #KonaDonut #HonoluluEats",
-          "url": "",
-          "status": "posted",
-          "postedAt": "2026-02-11T09:00:18.401461"
-        },
-        "facebook": {
-          "text": "This Valentine's week, we're counting down to something special on Kalākaua Avenue 💕\n\nKona Coffee Donut is proudly serving Honolulu coffee alongside handcrafted donuts — the perfect way to start your morning in Waikiki. Whether you're strolling the beach with someone special or treating yourself to a solo coffee date, we've got the warmth waiting for you.\n\n🗓️ Grand opening: February 25, 2026\n📍 2142 Kalākaua Ave, Honolulu, HI 96815\n🌐 konacoffeedonut.com\n\nWhat's your ideal Valentine's morning — sunrise walk then coffee, or coffee first? ☕🌅",
-          "url": "",
-          "status": "posted",
-          "postedAt": "2026-02-11T09:00:19.325615"
-        },
-        "google": {
-          "text": "Looking for the best coffee near Waikiki this Valentine's Day? ☕💕\n\nKona Coffee Donut is proudly serving Honolulu coffee and fresh donuts at 2142 Kalākaua Ave, Honolulu, HI 96815 — steps from Waikiki Beach.\n\nPerfect for a Valentine's morning date, a quick Waikiki breakfast, or your daily coffee stop.\n\n🗓️ Grand opening: February 25, 2026\n🌐 konacoffeedonut.com\n\n{\"type\": \"LEARN_MORE\", \"url\": \"https://konacoffeedonut.com\"}",
-          "url": "",
-          "status": "posted",
-          "postedAt": "2026-02-11T09:00:20.228349"
-        },
-        "threads": {
-          "text": "valentine's week vibes ☕💕 proudly serving honolulu coffee + handcrafted donuts right on kalākaua ave.\n\n14 days until our grand opening and we literally cannot wait 🍩✨\n\nfeb 25, 2026 · 2142 kalākaua ave, honolulu\nkonacoffeedonut.com\n\n#waikiki #honolulucoffee #valentinesday #konadonut #hawaiieats #waikikibreakfast #coffeelover",
-          "url": "",
-          "status": "posted",
-          "postedAt": "2026-02-11T09:00:21.163965"
-        },
-        "bluesky": {
-          "text": "Valentine's week = an excuse to eat more donuts 🍩💕\n\nProudly serving Honolulu coffee at our new Waikiki spot. Grand opening Feb 25, 2026!\n\n📍 2142 Kalākaua Ave\n🌐 konacoffeedonut.com",
-          "url": "",
-          "status": "posted",
-          "postedAt": "2026-02-11T09:00:21.993555"
         }
       }
     }
