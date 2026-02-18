@@ -1,9 +1,9 @@
 {
-  "date": "2026-02-15",
-  "timestamp": "2026-02-15T03:03:00-08:00",
+  "date": "2026-02-18",
+  "timestamp": "2026-02-18T03:02:00-08:00",
   "tests": {
-    "passed": 17,
-    "failed": 5,
+    "passed": 0,
+    "failed": 22,
     "total": 22
   },
   "screenshots": {
@@ -11,5 +11,5 @@
     "ipad": "screenshots/kona-check-ipad.png",
     "iphone": "screenshots/kona-check-iphone.png"
   },
-  "note": "E2E tests completed. Some tests timeout - investigating Playwright performance"
+  "note": "E2E tests failing - Playwright timeout issues, needs investigation"
 }
