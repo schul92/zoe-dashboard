@@ -1,0 +1,35 @@
+{
+  "date": "2026-02-18",
+  "source": "~/Downloads",
+  "total_today_found": 23,
+  "new_added_to_resumes": 10,
+  "duplicates_already_present": 13,
+  "new_files": [
+    "ResumeALEXIAMILAM.pdf",
+    "ResumeAmberSavoia.pdf",
+    "ResumeEmeryLuu.pdf",
+    "Resumeemma-leemasonic.pdf",
+    "ResumeGiovannaVerrico.pdf",
+    "ResumeGraceBentz.pdf",
+    "ResumeKosasaAbraham.pdf",
+    "ResumeNOELESHEPARD.pdf",
+    "ResumeRose'aGipson.pdf",
+    "ResumeVanessaVasquez.pdf"
+  ],
+  "duplicate_files": [
+    "ResumeAlenaHamilton.pdf",
+    "ResumeAtalyaGonzalez.pdf",
+    "ResumeBeylaJones.pdf",
+    "ResumeCatherinePiano.pdf",
+    "ResumeChantalMarieCacpal.pdf",
+    "ResumeEmilyWillson.pdf",
+    "ResumeGaryBasuil.pdf",
+    "ResumeGiangTran.pdf",
+    "ResumeJanelleCabanit.pdf",
+    "ResumeLeilaniLoveless.pdf",
+    "ResumeMaxinePatterson.pdf",
+    "ResumeMichelleIzquierdo.pdf",
+    "ResumeTiaTaylor.pdf"
+  ],
+  "generatedAt": "2026-02-18T21:32:10.950998Z"
+}
