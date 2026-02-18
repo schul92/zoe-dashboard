@@ -2887,7 +2887,7 @@ const candidatesData = [
   },
 
   {
-    "name": "Alexiamilam",
+    "name": "Alexia Milam",
     "tier": "new",
     "score": 0,
     "phone": "",
@@ -2977,7 +2977,7 @@ const candidatesData = [
     "summary_ko": "2026-02-18 신규 이력서 수신. 상세 검토 대기."
   },
   {
-    "name": "Noeleshepard",
+    "name": "Noele Shepard",
     "tier": "new",
     "score": 0,
     "phone": "",
@@ -3022,7 +3022,7 @@ const candidatesData = [
     "summary_ko": "2026-02-18 신규 이력서 수신. 상세 검토 대기."
   },
   {
-    "name": "Emma Leemasonic",
+    "name": "Emma Lee Masonic",
     "tier": "new",
     "score": 0,
     "phone": "",
