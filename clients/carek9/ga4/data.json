@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "collectedAt": "2026-02-18T15:00:10.192663Z",
+    "collectedAt": "2026-02-18T19:08:14.525526Z",
     "property": "properties/523137923",
     "period": {
       "startDate": "2026-02-04",
@@ -9,11 +9,11 @@
     }
   },
   "totals": {
-    "sessions": 172,
-    "activeUsers": 127,
-    "screenPageViews": 577,
-    "bounceRate": 0.6511627906976745,
-    "averageSessionDuration": 322.6104340755814,
+    "sessions": 175,
+    "activeUsers": 130,
+    "screenPageViews": 578,
+    "bounceRate": 0.6571428571428571,
+    "averageSessionDuration": 317.0799694914286,
     "engagedSessions": 60,
     "ecommercePurchases": 5,
     "purchaseRevenue": 692.05,
@@ -28,8 +28,8 @@
   "trafficSources": [
     {
       "sessionDefaultChannelGroup": "Direct",
-      "sessions": 120,
-      "activeUsers": 97
+      "sessions": 121,
+      "activeUsers": 98
     },
     {
       "sessionDefaultChannelGroup": "Organic Search",
@@ -37,14 +37,14 @@
       "activeUsers": 22
     },
     {
+      "sessionDefaultChannelGroup": "Unassigned",
+      "sessions": 12,
+      "activeUsers": 12
+    },
+    {
       "sessionDefaultChannelGroup": "Organic Shopping",
       "sessions": 11,
       "activeUsers": 3
-    },
-    {
-      "sessionDefaultChannelGroup": "Unassigned",
-      "sessions": 10,
-      "activeUsers": 10
     },
     {
       "sessionDefaultChannelGroup": "Referral",
@@ -62,8 +62,8 @@
       "pagePath": "/",
       "pageTitle": "CareK9",
       "screenPageViews": 187,
-      "activeUsers": 62,
-      "averageSessionDuration": 344.03121740697674
+      "activeUsers": 63,
+      "averageSessionDuration": 340.0768355977012
     },
     {
       "pagePath": "/",
@@ -111,8 +111,8 @@
       "pagePath": "/pages/carek9-x-human-canine-collaborative",
       "pageTitle": "CareK9 x Human Canine Collaborative",
       "screenPageViews": 16,
-      "activeUsers": 14,
-      "averageSessionDuration": 38.82172907142857
+      "activeUsers": 15,
+      "averageSessionDuration": 36.23361379999999
     },
     {
       "pagePath": "/pages/contact-us",
@@ -248,6 +248,13 @@
       "averageSessionDuration": 2.5948905
     },
     {
+      "pagePath": "/products/on-off-switch",
+      "pageTitle": "CareK9 | Bath Products | Showerhead On/Off Switch",
+      "screenPageViews": 3,
+      "activeUsers": 2,
+      "averageSessionDuration": 9.911994
+    },
+    {
       "pagePath": "/account/login",
       "pageTitle": "Account \u2013 CareK9",
       "screenPageViews": 2,
@@ -260,20 +267,13 @@
       "screenPageViews": 2,
       "activeUsers": 1,
       "averageSessionDuration": 6.444466
-    },
-    {
-      "pagePath": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
-      "pageTitle": "Freshness to Your Doorstep: The Evolution of CareK9",
-      "screenPageViews": 2,
-      "activeUsers": 1,
-      "averageSessionDuration": 6.470232
     }
   ],
   "devices": [
     {
       "deviceCategory": "desktop",
-      "sessions": 119,
-      "activeUsers": 95
+      "sessions": 122,
+      "activeUsers": 98
     },
     {
       "deviceCategory": "mobile",
@@ -297,8 +297,8 @@
     {
       "country": "China",
       "region": "Gansu",
-      "sessions": 11,
-      "activeUsers": 11
+      "sessions": 13,
+      "activeUsers": 13
     },
     {
       "country": "United States",
@@ -339,6 +339,12 @@
     {
       "country": "United States",
       "region": "Colorado",
+      "sessions": 3,
+      "activeUsers": 3
+    },
+    {
+      "country": "United States",
+      "region": "Iowa",
       "sessions": 3,
       "activeUsers": 3
     },
@@ -389,12 +395,6 @@
       "region": "Indiana",
       "sessions": 2,
       "activeUsers": 1
-    },
-    {
-      "country": "United States",
-      "region": "Iowa",
-      "sessions": 2,
-      "activeUsers": 2
     },
     {
       "country": "United States",
@@ -490,9 +490,9 @@
     },
     {
       "date": "20260218",
-      "sessions": 1,
-      "activeUsers": 1,
-      "screenPageViews": 1
+      "sessions": 4,
+      "activeUsers": 4,
+      "screenPageViews": 2
     }
   ],
   "landingPages": [
@@ -504,9 +504,9 @@
     },
     {
       "landingPage": "",
-      "sessions": 7,
+      "sessions": 9,
       "bounceRate": 1,
-      "averageSessionDuration": 33.88946414285714
+      "averageSessionDuration": 26.358472111111112
     },
     {
       "landingPage": "(not set)",
@@ -557,6 +557,12 @@
       "averageSessionDuration": 811.4255036666667
     },
     {
+      "landingPage": "/products/on-off-switch",
+      "sessions": 3,
+      "bounceRate": 0.6666666666666666,
+      "averageSessionDuration": 9.911994
+    },
+    {
       "landingPage": "/products/pars-mint-dental-cookies",
       "sessions": 3,
       "bounceRate": 0.6666666666666666,
@@ -587,12 +593,6 @@
       "averageSessionDuration": 0
     },
     {
-      "landingPage": "/products/on-off-switch",
-      "sessions": 2,
-      "bounceRate": 0.5,
-      "averageSessionDuration": 14.867991
-    },
-    {
       "landingPage": "/products/paw-balm",
       "sessions": 2,
       "bounceRate": 0.5,
@@ -620,8 +620,8 @@
   "referrers": [
     {
       "sessionSource": "(direct)",
-      "sessions": 120,
-      "activeUsers": 97
+      "sessions": 121,
+      "activeUsers": 98
     },
     {
       "sessionSource": "google",
@@ -630,8 +630,8 @@
     },
     {
       "sessionSource": "(not set)",
-      "sessions": 10,
-      "activeUsers": 10
+      "sessions": 12,
+      "activeUsers": 12
     },
     {
       "sessionSource": "admin.shopify.com",
