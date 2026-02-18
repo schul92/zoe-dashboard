@@ -1,0 +1,685 @@
+{
+  "metadata": {
+    "version": "3.0.1",
+    "collectedAt": "2026-02-18T03:00:09.884971Z",
+    "period": {
+      "startDate": "2026-02-11",
+      "endDate": "2026-02-17",
+      "days": 7
+    },
+    "sources": {
+      "gsc": "sc-domain:konacoffeedonut.com",
+      "ga4": "properties/508368220",
+      "pagespeed": true
+    }
+  },
+  "summary": {
+    "clicks": {
+      "total": 16,
+      "change": 0,
+      "trend": "stable"
+    },
+    "impressions": {
+      "total": 718,
+      "change": 0,
+      "trend": "stable"
+    },
+    "ctr": {
+      "average": 0.022,
+      "change": 0,
+      "trend": "stable"
+    },
+    "position": {
+      "average": 7.2,
+      "best": 1,
+      "bestKeyword": "kona coffee donuts",
+      "change": 0,
+      "trend": "stable"
+    },
+    "uniqueQueries": 54,
+    "uniquePages": 12
+  },
+  "queries": {
+    "total": 54,
+    "all": [
+      {
+        "query": "kona coffee donut",
+        "clicks": 5,
+        "impressions": 16,
+        "ctr": 0.312,
+        "position": 1.1
+      },
+      {
+        "query": "kona coffee donuts",
+        "clicks": 1,
+        "impressions": 3,
+        "ctr": 0.333,
+        "position": 1
+      },
+      {
+        "query": "coffee and donuts",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 9
+      },
+      {
+        "query": "coffee kona",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 3
+      },
+      {
+        "query": "coffee near me",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 20.8
+      },
+      {
+        "query": "coffee places open now",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8
+      },
+      {
+        "query": "coffee shop open now",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 6
+      },
+      {
+        "query": "coffee shops near me open now",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2
+      },
+      {
+        "query": "dessert near me",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0.0,
+        "position": 35.5
+      },
+      {
+        "query": "dessert near me open now",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 5.5
+      },
+      {
+        "query": "dessert nearby",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7
+      },
+      {
+        "query": "dessert open near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8
+      },
+      {
+        "query": "donut",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8
+      },
+      {
+        "query": "donut near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 8
+      },
+      {
+        "query": "donut shop near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2
+      },
+      {
+        "query": "donut shop near me open now",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3
+      },
+      {
+        "query": "donut shops near me",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 7.5
+      },
+      {
+        "query": "donuts",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 15.3
+      },
+      {
+        "query": "donuts near me",
+        "clicks": 0,
+        "impressions": 34,
+        "ctr": 0.0,
+        "position": 9.9
+      },
+      {
+        "query": "doughnuts near me",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 3
+      },
+      {
+        "query": "hawaii kona cafe",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 28
+      },
+      {
+        "query": "hawaiian coffee and donuts",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 10.7
+      },
+      {
+        "query": "honolulu donut shop",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 22
+      },
+      {
+        "query": "kona bakery",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6
+      },
+      {
+        "query": "kona coffee",
+        "clicks": 0,
+        "impressions": 21,
+        "ctr": 0.0,
+        "position": 8.2
+      },
+      {
+        "query": "kona coffee & tea",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3
+      },
+      {
+        "query": "kona coffee and donuts",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "query": "kona coffee beans nearby",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 8
+      },
+      {
+        "query": "kona coffee locations",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 6
+      },
+      {
+        "query": "kona coffee near me",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 7
+      },
+      {
+        "query": "kona coffee oahu",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0.0,
+        "position": 8
+      },
+      {
+        "query": "kona coffee shop",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 5
+      },
+      {
+        "query": "kona coffee waikiki",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0.0,
+        "position": 8.4
+      },
+      {
+        "query": "kona donuts",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 6.5
+      },
+      {
+        "query": "konacoffeedonut.com",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 6.8
+      },
+      {
+        "query": "mochiko near me",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 52.5
+      },
+      {
+        "query": "waikiki kona coffee",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 43.5
+      },
+      {
+        "query": "\u30b3\u30ca\u30b3\u30fc\u30d2\u30fc",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "query": "\u30ef\u30a4\u30ad\u30ad\u30b3\u30fc\u30d2\u30fc \u30cf\u30ef\u30a4\u30b3\u30ca",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 19
+      },
+      {
+        "query": "\u590f\u5a01\u5937\u79d1\u7eb3\u5496\u5561 \u4ecb\u7ecd",
+        "clicks": 0,
+        "impressions": 57,
+        "ctr": 0.0,
+        "position": 8.2
+      },
+      {
+        "query": "\u590f\u5a01\u5937\u79d1\u7eb3\u5496\u5561\u98ce\u5473",
+        "clicks": 0,
+        "impressions": 181,
+        "ctr": 0.0,
+        "position": 7.6
+      },
+      {
+        "query": "\u590f\u5a01\u5937\u79d1\u7eb3\u9002\u5408\u51b2\u7f8e\u5f0f\u5417",
+        "clicks": 0,
+        "impressions": 140,
+        "ctr": 0.0,
+        "position": 5.9
+      },
+      {
+        "query": "\ub9d0\ub77c\uc0ac\ub2e4",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 11
+      },
+      {
+        "query": "\uc640\uc774\ud0a4\ud0a4 \ucf54\ub098\ucee4\ud53c",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 4
+      },
+      {
+        "query": "\ucf54\ub098 \uce74\ud398",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 2
+      },
+      {
+        "query": "\ucf54\ub098 \ucee4\ud53c",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "query": "\ucf54\ub098 \ucee4\ud53c \ud2b9\uc9d5",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "query": "\ucf54\ub098\ucee4\ud53c",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "query": "\ud558\uc640\uc774 \ucf54\ub098 \ucee4\ud53c \uac00\uaca9",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "query": "\ud558\uc640\uc774 \ucf54\ub098 \ucee4\ud53c \uc6d0\ub450",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "query": "\ud558\uc640\uc774 \ucf54\ub098 \ucee4\ud53c \ucd94\ucc9c",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "query": "\ud558\uc640\uc774\uc548 \ucee4\ud53c",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "query": "\ud558\uc640\uc774\uc548 \ucf54\ub098",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 1
+      },
+      {
+        "query": "\ud558\uc678\uc774\uc0b0",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 3
+      }
+    ],
+    "quickWins": [
+      {
+        "query": "donuts near me",
+        "position": 9.9,
+        "clicks": 0,
+        "impressions": 34,
+        "ctr": 0.0,
+        "potentialGain": 10
+      },
+      {
+        "query": "kona coffee",
+        "position": 8.2,
+        "clicks": 0,
+        "impressions": 21,
+        "ctr": 0.0,
+        "potentialGain": 6
+      },
+      {
+        "query": "kona coffee waikiki",
+        "position": 8.4,
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0.0,
+        "potentialGain": 3
+      },
+      {
+        "query": "\u590f\u5a01\u5937\u79d1\u7eb3\u5496\u5561 \u4ecb\u7ecd",
+        "position": 8.2,
+        "clicks": 0,
+        "impressions": 57,
+        "ctr": 0.0,
+        "potentialGain": 17
+      },
+      {
+        "query": "\u590f\u5a01\u5937\u79d1\u7eb3\u5496\u5561\u98ce\u5473",
+        "position": 7.6,
+        "clicks": 0,
+        "impressions": 181,
+        "ctr": 0.0,
+        "potentialGain": 54
+      },
+      {
+        "query": "\u590f\u5a01\u5937\u79d1\u7eb3\u9002\u5408\u51b2\u7f8e\u5f0f\u5417",
+        "position": 5.9,
+        "clicks": 0,
+        "impressions": 140,
+        "ctr": 0.0,
+        "potentialGain": 42
+      }
+    ]
+  },
+  "pages": {
+    "total": 12,
+    "all": [
+      {
+        "page": "https://www.konacoffeedonut.com/",
+        "clicks": 6,
+        "impressions": 43,
+        "ctr": 0.14,
+        "position": 2.8666666666666667
+      },
+      {
+        "page": "http://www.konacoffeedonut.com/en",
+        "clicks": 1,
+        "impressions": 118,
+        "ctr": 0.008,
+        "position": 9.243243243243244
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/en/about-kona-coffee",
+        "clicks": 0,
+        "impressions": 26,
+        "ctr": 0.0,
+        "position": 15
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/en/menu",
+        "clicks": 0,
+        "impressions": 16,
+        "ctr": 0.0,
+        "position": 13
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/es",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0.0,
+        "position": 28
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/faq",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 4
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/ja/faq",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0.0,
+        "position": 2.5
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/ja/menu/kona-coffee",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0.0,
+        "position": 19
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/ko/about-kona-coffee",
+        "clicks": 0,
+        "impressions": 19,
+        "ctr": 0.0,
+        "position": 2
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/ko/menu/malasada",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 13.5
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/zh/about-kona-coffee",
+        "clicks": 0,
+        "impressions": 381,
+        "ctr": 0.0,
+        "position": 84
+      },
+      {
+        "page": "https://www.konacoffeedonut.com/zh/menu",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0.0,
+        "position": 8
+      }
+    ]
+  },
+  "devices": {
+    "desktop": {
+      "clicks": 1,
+      "impressions": 445,
+      "ctr": 0.002,
+      "position": 0,
+      "percentage": 6.2
+    },
+    "mobile": {
+      "clicks": 5,
+      "impressions": 172,
+      "ctr": 0.029,
+      "position": 0,
+      "percentage": 31.2
+    },
+    "tablet": {
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1.0,
+      "position": 0,
+      "percentage": 6.2
+    }
+  },
+  "geography": [
+    {
+      "country": "usa",
+      "countryCode": "usa",
+      "clicks": 5,
+      "impressions": 560,
+      "ctr": 0.009,
+      "position": 0
+    },
+    {
+      "country": "jpn",
+      "countryCode": "jpn",
+      "clicks": 2,
+      "impressions": 32,
+      "ctr": 0.062,
+      "position": 0
+    },
+    {
+      "country": "aus",
+      "countryCode": "aus",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0.0,
+      "position": 0
+    },
+    {
+      "country": "deu",
+      "countryCode": "deu",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 0
+    },
+    {
+      "country": "nld",
+      "countryCode": "nld",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 0
+    },
+    {
+      "country": "gbr",
+      "countryCode": "gbr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 0
+    },
+    {
+      "country": "esp",
+      "countryCode": "esp",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 0
+    },
+    {
+      "country": "kor",
+      "countryCode": "kor",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0.0,
+      "position": 0
+    },
+    {
+      "country": "hkg",
+      "countryCode": "hkg",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 0
+    }
+  ],
+  "positionBrackets": {
+    "1-3": 20,
+    "4-10": 24,
+    "11-20": 4,
+    "21+": 6
+  },
+  "brandedVsNonBranded": {
+    "branded": {
+      "clicks": 6,
+      "percentage": 37.5
+    },
+    "nonBranded": {
+      "clicks": 10,
+      "percentage": 62.5
+    }
+  },
+  "ga4": {
+    "users": 0,
+    "sessions": 0,
+    "pageviews": 0,
+    "engagement": 0,
+    "bounceRate": 0,
+    "avgSessionDuration": 0
+  }
+}

@@ -1,30 +1,35 @@
 {
-  "lastUpdated": "2026-02-11T14:48:00.878013Z",
+  "lastUpdated": "2026-02-18T03:00:09.884971Z",
   "trends": [
     {
-      "term": "Valentine's Day Waikiki",
-      "score": 95,
-      "source": "events"
+      "term": "夏威夷科纳咖啡风味",
+      "score": 181,
+      "source": "gsc_query"
     },
     {
-      "term": "Hawaii tourism recovery",
-      "score": 80,
-      "source": "news"
+      "term": "夏威夷科纳适合冲美式吗",
+      "score": 140,
+      "source": "gsc_query"
     },
     {
-      "term": "coffee price relief 2026",
-      "score": 75,
-      "source": "industry"
+      "term": "夏威夷科纳咖啡 介绍",
+      "score": 57,
+      "source": "gsc_query"
     },
     {
-      "term": "mushroom coffee",
-      "score": 70,
-      "source": "trends"
+      "term": "donuts near me",
+      "score": 34,
+      "source": "gsc_query"
     },
     {
-      "term": "Hawaiian Language Month",
-      "score": 65,
-      "source": "culture"
+      "term": "kona coffee",
+      "score": 21,
+      "source": "gsc_query"
+    },
+    {
+      "term": "Create Japanese language content or bilingual elements. Japan represents 4.5% of impressions but 12.5% of clicks - 2.8x better conversion rate. Add Japanese menu descriptions, consider hreflang tags.",
+      "score": 50,
+      "source": "ai_opportunity"
     }
   ]
 }
