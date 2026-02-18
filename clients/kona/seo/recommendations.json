@@ -1,93 +1,109 @@
 {
-  "generatedAt": "2026-02-17T11:00:00Z",
+  "generatedAt": "2026-02-18T03:00:00-08:00",
   "model": "claude-opus-4-5",
   "urgent": [
     {
-      "type": "local_seo_launch_readiness",
-      "action": "Fully optimize and verify Google Business Profile before Feb 25, 2026: correct category, hours, opening date, menu/photos, Q&A, and weekly posts with 'Waikiki' + 'opening' messaging.",
+      "type": "meta_optimization",
+      "keyword": "donuts near me",
+      "action": "Rewrite title tag and meta description with compelling CTAs. Position 9.9 with 34 impressions but 0 clicks indicates poor SERP presentation. Add 'Waikiki' and 'Opening Feb 25' to create urgency.",
+      "impact": "high",
+      "effort": "low",
+      "reasoning": "34 impressions at position ~10 with 0% CTR is a critical conversion failure. This high-volume local keyword should drive clicks but isn't. Title/meta likely not enticing enough."
+    },
+    {
+      "type": "technical_seo",
+      "keyword": "all keywords",
+      "action": "Audit desktop user experience immediately. Desktop has 62% impressions but only 6% clicks vs mobile's 24%/31%. Check page speed, above-fold content, and mobile-first indexing issues affecting desktop rendering.",
       "impact": "high",
       "effort": "medium",
-      "reasoning": "The site already has visibility for local-intent terms, but launch timing is critical. A complete GBP is the fastest way to capture map-pack demand from nearby searchers."
-    },
-    {
-      "type": "keyword_page_alignment",
-      "action": "Create or refine a dedicated page targeting 'donuts near me' intent with Waikiki-specific copy, internal links, and clear CTA (directions/order/visit).",
-      "impact": "high",
-      "effort": "low",
-      "reasoning": "Keyword is averaging position ~9.8 with 28 impressions and 0 clicks, indicating visibility without engagement. Better intent-match and SERP snippet relevance can convert existing impressions quickly."
-    },
-    {
-      "type": "serp_ctr_optimization",
-      "action": "Rewrite title/meta for core pages to include high-intent modifiers like 'Waikiki', 'Opening Feb 25', and brand value proposition; test 2-3 variants over 2 weeks.",
-      "impact": "high",
-      "effort": "low",
-      "reasoning": "Overall CTR is 3.6% on 713 impressions, leaving room for gain without requiring more rankings. Snippet optimization can lift clicks immediately from current impression volume."
+      "reasoning": "Desktop CTR is 5x worse than mobile. Either desktop SERP snippets render poorly, or Google is showing different pages/snippets. This represents 445+ monthly impressions converting at ~1%."
     }
   ],
   "quickWins": [
     {
-      "type": "schema_markup",
-      "action": "Implement/validate LocalBusiness + Restaurant + FAQ schema, including opening date, address, geo, hours, and sameAs profiles.",
-      "impact": "medium",
+      "type": "content_optimization",
+      "keyword": "donuts near me",
+      "action": "Add schema markup (LocalBusiness, FoodEstablishment), optimize H1 to include 'Donuts Near Me in Waikiki', add location-rich content mentioning Kalakaua Ave, Waikiki Beach proximity.",
+      "impact": "high",
       "effort": "low",
-      "reasoning": "Structured data improves eligibility for rich results and local understanding, helping CTR and relevance with minimal implementation effort."
+      "potentialGain": 5,
+      "reasoning": "Position 9.9 → top 5 could capture 3-5 clicks/week from 34 impressions. Local intent keywords need location signals."
     },
     {
-      "type": "internal_linking",
-      "action": "Add internal links from homepage and blog/social pages to target pages using anchors like 'donuts in Waikiki' and 'Kona coffee donut shop'.",
+      "type": "content_optimization",
+      "keyword": "donut shops near me",
+      "action": "Create dedicated landing page or section specifically using 'donut shop' terminology. Currently position 7.5 with 0 clicks.",
       "impact": "medium",
       "effort": "low",
-      "reasoning": "With only 51 ranking keywords, stronger internal signals can improve crawl priority and semantic relevance for priority local terms."
+      "potentialGain": 2,
+      "reasoning": "Position 7.5 is page 1. With better title tag and 'shop' in H2, could reach top 5 and capture clicks."
     },
     {
-      "type": "on_page_localization",
-      "action": "Add neighborhood entities and landmarks (Waikiki, Honolulu, nearby hotels/beach areas) naturally in key landing pages.",
+      "type": "content_optimization",
+      "keyword": "coffee and donuts",
+      "action": "Create blog post or page section about 'Coffee and Donuts: The Perfect Pairing' featuring your Kona coffee + donut combos.",
       "impact": "medium",
       "effort": "low",
-      "reasoning": "Local context helps Google map pages to proximity-driven queries and can improve both ranking confidence and click appeal for tourists."
+      "potentialGain": 1,
+      "reasoning": "Position 9 shows relevance. Dedicated content about the combo concept could move this to top 5. Low volume but high intent."
+    },
+    {
+      "type": "local_seo",
+      "keyword": "coffee near me",
+      "action": "Strengthen Google Business Profile, add more coffee-specific content. Position 20.8 needs significant improvement.",
+      "impact": "medium",
+      "effort": "medium",
+      "potentialGain": 2,
+      "reasoning": "5 impressions at position 21 means you're barely visible. Coffee shops are highly competitive but GBP optimization could help."
     }
   ],
   "opportunities": [
     {
-      "type": "multilingual_local_growth",
-      "action": "Launch lightweight Japanese and Korean landing sections (or translated key pages) with hreflang and localized metadata.",
+      "type": "international_seo",
+      "action": "Create Japanese language content or bilingual elements. Japan represents 4.5% of impressions but 12.5% of clicks - 2.8x better conversion rate. Add Japanese menu descriptions, consider hreflang tags.",
+      "impact": "high",
+      "effort": "medium",
+      "reasoning": "Japanese tourists to Waikiki are converting at nearly 3x the rate of US visitors. Untapped market segment that's already finding you."
+    },
+    {
+      "type": "content_gap",
+      "action": "Create 'Waikiki Coffee Guide' or 'Best Donuts in Waikiki' content to capture tourist research queries. Target 'waikiki breakfast', 'waikiki coffee shops', 'hawaii donuts'.",
+      "impact": "high",
+      "effort": "medium",
+      "reasoning": "No visibility for Waikiki-specific terms in top 20. Tourists searching for local experiences are a key audience pre-opening."
+    },
+    {
+      "type": "content_gap",
+      "action": "Build 'Kona Coffee' educational content - origin story, brewing methods, why it's special. Leverage the brand name to rank for informational queries.",
       "impact": "medium",
       "effort": "medium",
-      "reasoning": "Current demand already includes Japan (5%) and Korea (2.5%). Localized pages can capture tourist intent and increase non-English conversions."
-    },
-    {
-      "type": "content_cluster_expansion",
-      "action": "Build a pre-opening and early-month content cluster: 'best donuts in Waikiki', 'coffee + donut pairings', 'near [major Waikiki landmarks]'.",
-      "impact": "high",
-      "effort": "medium",
-      "reasoning": "The domain is early-stage (51 keywords). Cluster expansion can broaden topical authority and grow impressions beyond branded demand."
-    },
-    {
-      "type": "review_generation_system",
-      "action": "Set up first-30-days review acquisition flow (QR at counter, receipt CTA, follow-up prompts) tied to Google profile.",
-      "impact": "high",
-      "effort": "medium",
-      "reasoning": "Early review velocity is a strong local ranking and CTR signal for 'near me' queries, especially in a competitive tourist market."
+      "reasoning": "Brand contains 'Kona Coffee' but limited educational content. Could capture coffee enthusiasts researching Hawaiian coffee."
     }
   ],
   "insights": [
     {
-      "type": "brand_strength_vs_generic_gap",
-      "observation": "'kona coffee donut' ranks #1 with 7 clicks, showing strong branded discoverability.",
-      "suggestion": "Protect branded leadership while reallocating optimization effort to non-branded local-intent terms.",
+      "type": "device_performance",
+      "observation": "Mobile users click 5x more than desktop despite fewer impressions. Mobile CTR ~3% vs Desktop ~0.2%.",
+      "suggestion": "Desktop SERP appearance may be problematic. Check how title/description render on desktop search. Consider desktop-specific meta optimization.",
       "priority": "high"
     },
     {
-      "type": "impression_to_click_leak",
-      "observation": "26 clicks from 713 impressions indicates leakage at snippet/page-intent level.",
-      "suggestion": "Prioritize CTR and intent-matching improvements before heavy link-building.",
+      "type": "international_opportunity",
+      "observation": "Japanese visitors have 2.8x higher CTR than US visitors (6.2% vs 0.9%).",
+      "suggestion": "Prioritize Japanese-language content, partner with Japanese travel blogs, ensure /ja/ pages are well-optimized.",
+      "priority": "high"
+    },
+    {
+      "type": "brand_strength",
+      "observation": "Brand keywords (kona coffee donut/donuts) rank #1 with 31-33% CTR - excellent brand awareness.",
+      "suggestion": "Continue brand building. Launch date (Feb 25) should drive brand search volume spike.",
       "priority": "medium"
     },
     {
-      "type": "local_market_concentration",
-      "observation": "Traffic is concentrated in the USA (81%), but Japan and Korea already represent meaningful share (7.5% combined).",
-      "suggestion": "Keep primary SEO focus on US/Waikiki while adding selective international support for Japan/Korea travelers.",
-      "priority": "medium"
+      "type": "local_intent",
+      "observation": "'Near me' queries show high impressions (34+ for donuts) but zero clicks at positions 7-10.",
+      "suggestion": "Focus on local SEO signals: NAP consistency, GBP optimization, location-specific landing pages for Waikiki/Kalakaua Ave.",
+      "priority": "high"
     }
   ]
 }
