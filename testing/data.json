@@ -1,15 +1,14 @@
 {
-  "date": "2026-02-18",
-  "timestamp": "2026-02-18T03:02:00-08:00",
+  "date": "2026-02-19",
+  "timestamp": "2026-02-19T03:00:00-08:00",
   "tests": {
-    "passed": 0,
-    "failed": 22,
-    "total": 22
+    "passed": 49,
+    "failed": 23,
+    "total": 72
   },
   "screenshots": {
-    "desktop": "screenshots/kona-check-desktop.png",
-    "ipad": "screenshots/kona-check-ipad.png",
-    "iphone": "screenshots/kona-check-iphone.png"
+    "desktop": "screenshots/desktop-homepage.png",
+    "mobile": "screenshots/mobile-homepage.png"
   },
-  "note": "E2E tests failing - Playwright timeout issues, needs investigation"
+  "note": "E2E tests with some failures - SEO dashboard element IDs changed, tests need updating"
 }
