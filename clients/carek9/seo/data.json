@@ -1,59 +1,528 @@
 {
   "metadata": {
     "version": "3.0.0",
-    "collectedAt": "2026-02-12T06:51:00Z",
+    "collectedAt": "2026-02-19T13:57:08.264928Z",
     "client": "carek9",
     "status": "active",
     "period": {
-      "startDate": "2026-01-12",
-      "endDate": "2026-02-11",
+      "startDate": "2026-01-20",
+      "endDate": "2026-02-19",
       "days": 30
     },
     "sources": {
       "ga4": "properties/523137923",
-      "gsc": null
+      "gsc": "https://carek9.com/"
     }
   },
   "summary": {
-    "uniqueQueries": 0,
+    "uniqueQueries": 25,
     "uniquePages": 10,
-    "clicks": {"total": 16, "change": 0, "trend": "stable"},
-    "impressions": {"total": 100, "change": 0, "trend": "stable"},
-    "ctr": {"average": 0, "change": 0, "trend": "neutral"}
+    "clicks": {
+      "total": 0,
+      "change": 0,
+      "trend": "stable"
+    },
+    "impressions": {
+      "total": 68,
+      "change": 0,
+      "trend": "stable"
+    },
+    "ctr": {
+      "average": 0,
+      "change": 0,
+      "trend": "neutral"
+    }
   },
   "ga4": {
-    "sessions": 100,
-    "activeUsers": 80,
-    "screenPageViews": 314,
-    "bounceRate": 0.71,
-    "averageSessionDuration": 297.28,
-    "engagedSessions": 29,
+    "sessions": 185,
+    "activeUsers": 135,
+    "screenPageViews": 615,
+    "bounceRate": 0.6,
+    "averageSessionDuration": 288.05,
+    "engagedSessions": 74,
     "trafficSources": {
-      "Direct": 81,
-      "Organic Search": 16,
-      "Unassigned": 5,
-      "Organic Shopping": 2,
-      "Referral": 1
+      "Direct": 129,
+      "Organic Search": 33,
+      "Organic Shopping": 14,
+      "Referral": 5,
+      "Unassigned": 4,
+      "Organic Social": 1
     }
   },
   "queries": {
-    "total": 0,
-    "all": [],
-    "quickWins": [],
-    "byPosition": {},
-    "branded": {"count": 0, "percentage": 0}
+    "total": 25,
+    "all": [
+      {
+        "query": "4-in-1 dog paw washer",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 10.2
+      },
+      {
+        "query": "all paws eliminator activated recharging",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 21
+      },
+      {
+        "query": "bath tablet",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 13.2
+      },
+      {
+        "query": "bathing tablets",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "query": "beef pumpkin treat for dogs",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 24.5
+      },
+      {
+        "query": "best dog paw cleaner",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 25.1
+      },
+      {
+        "query": "best paw cleaner",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 23
+      },
+      {
+        "query": "best paw cleaner for dogs",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 23.6
+      },
+      {
+        "query": "best paw washer",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 66
+      },
+      {
+        "query": "dexas mud buster",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 4.5
+      },
+      {
+        "query": "dexas mudbuster",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 9.6
+      },
+      {
+        "query": "dexas mudbuster dog paw cleaner",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 12
+      },
+      {
+        "query": "dexas mudbuster large",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "query": "dexas mudbuster medium",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 13
+      },
+      {
+        "query": "dexas mudbuster paw cleaner",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 7.1
+      },
+      {
+        "query": "dexas mudbuster portable dog paw cleaner",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 30
+      },
+      {
+        "query": "dexas mudbuster portable dog paw washer cleaner large matte black special edition pw72025-22wp",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "query": "dexas paw cleaner",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 8.7
+      },
+      {
+        "query": "disinfectant for dogs paws",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 13
+      },
+      {
+        "query": "dog foot washers",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 56.5
+      },
+      {
+        "query": "dog paw cleaner",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 33
+      },
+      {
+        "query": "dog paw cleaners",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 55
+      },
+      {
+        "query": "dog paw cleaning products",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 62
+      },
+      {
+        "query": "dog paw pad cleaner",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 43.5
+      },
+      {
+        "query": "dog paw powder",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 19.8
+      }
+    ],
+    "quickWins": [
+      {
+        "query": "4-in-1 dog paw washer",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 10.2
+      },
+      {
+        "query": "bath tablet",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 13.2
+      },
+      {
+        "query": "bathing tablets",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 9
+      },
+      {
+        "query": "dexas mud buster",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 4.5
+      },
+      {
+        "query": "dexas mudbuster",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 9.6
+      },
+      {
+        "query": "dexas mudbuster dog paw cleaner",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 12
+      },
+      {
+        "query": "dexas mudbuster large",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "query": "dexas mudbuster paw cleaner",
+        "clicks": 0,
+        "impressions": 7,
+        "ctr": 0,
+        "position": 7.1
+      },
+      {
+        "query": "dexas paw cleaner",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 8.7
+      }
+    ],
+    "byPosition": {
+      "top3": [
+        {
+          "query": "dexas mudbuster large",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "dexas mudbuster portable dog paw washer cleaner large matte black special edition pw72025-22wp",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        }
+      ],
+      "top10": [
+        {
+          "query": "bathing tablets",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "query": "dexas mud buster",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4.5
+        },
+        {
+          "query": "dexas mudbuster",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 9.6
+        },
+        {
+          "query": "dexas mudbuster large",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "dexas mudbuster paw cleaner",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 7.1
+        },
+        {
+          "query": "dexas mudbuster portable dog paw washer cleaner large matte black special edition pw72025-22wp",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "dexas paw cleaner",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 8.7
+        }
+      ],
+      "top20": [
+        {
+          "query": "4-in-1 dog paw washer",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 10.2
+        },
+        {
+          "query": "bath tablet",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 13.2
+        },
+        {
+          "query": "bathing tablets",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 9
+        },
+        {
+          "query": "dexas mud buster",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 4.5
+        },
+        {
+          "query": "dexas mudbuster",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 9.6
+        },
+        {
+          "query": "dexas mudbuster dog paw cleaner",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 12
+        },
+        {
+          "query": "dexas mudbuster large",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "dexas mudbuster medium",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 13
+        },
+        {
+          "query": "dexas mudbuster paw cleaner",
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "position": 7.1
+        },
+        {
+          "query": "dexas mudbuster portable dog paw washer cleaner large matte black special edition pw72025-22wp",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "dexas paw cleaner",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 8.7
+        },
+        {
+          "query": "disinfectant for dogs paws",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 13
+        },
+        {
+          "query": "dog paw powder",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 19.8
+        }
+      ]
+    },
+    "branded": {
+      "count": 0,
+      "percentage": 0
+    }
   },
   "pages": {
     "total": 10,
     "all": [
-      {"page": "/", "title": "CareK9", "views": 165, "users": 50},
-      {"page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats", "title": "Chicken Wrapped Pumpkin Dog Treats", "views": 28, "users": 4},
-      {"page": "/collections/treat", "title": "Dog Treats", "views": 14, "users": 8},
-      {"page": "/pages/contact-us", "title": "Contact Us", "views": 10, "users": 6},
-      {"page": "/cart", "title": "Shopping Cart", "views": 8, "users": 7},
-      {"page": "/collections/all", "title": "Shop All", "views": 8, "users": 7},
-      {"page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips", "title": "OxiDog Chips", "views": 8, "users": 2},
-      {"page": "/pages/about-us", "title": "About Us", "views": 7, "users": 5}
+      {
+        "page": "/",
+        "title": "Homepage",
+        "views": 293,
+        "users": 128
+      },
+      {
+        "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+        "title": "Products Chicken-Wrapped-Pumpkin-Healthy-Dog-Treats",
+        "views": 51,
+        "users": 14
+      },
+      {
+        "page": "/collections/treat",
+        "title": "Collections Treat",
+        "views": 36,
+        "users": 22
+      },
+      {
+        "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+        "title": "Products Protein-Chips-Chicken-Chips-Beef-Chips-Pork-Chips",
+        "views": 29,
+        "users": 9
+      },
+      {
+        "page": "/cart",
+        "title": "Cart",
+        "views": 20,
+        "users": 13
+      },
+      {
+        "page": "/pages/about-us",
+        "title": "Pages About-Us",
+        "views": 19,
+        "users": 16
+      },
+      {
+        "page": "/pages/carek9-x-human-canine-collaborative",
+        "title": "Pages Carek9-X-Human-Canine-Collaborative",
+        "views": 18,
+        "users": 16
+      },
+      {
+        "page": "/products/beef-wrapped-pumpkin",
+        "title": "Products Beef-Wrapped-Pumpkin",
+        "views": 13,
+        "users": 8
+      },
+      {
+        "page": "/collections/food-topper",
+        "title": "Collections Food-Topper",
+        "views": 12,
+        "users": 11
+      },
+      {
+        "page": "/pages/contact-us",
+        "title": "Pages Contact-Us",
+        "views": 12,
+        "users": 8
+      }
     ]
   },
   "devices": {},
