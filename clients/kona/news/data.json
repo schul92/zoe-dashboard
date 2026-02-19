@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-18T15:06:24.353633Z",
-  "version": "v2-2026-02-18",
+  "lastUpdated": "2026-02-19T13:00:17.688505Z",
+  "version": "v2-2026-02-19",
   "sources": {
     "brave_search": true,
     "twitter": true,
@@ -13,14 +13,7 @@
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com",
       "category": "hawaii",
-      "description": "<strong>House Bill 2493 received strong support during a House Judiciary Committee hearing Monday, with testimony from recently exonerated Hawaii men</strong>."
-    },
-    {
-      "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
-      "source": "Brave Search",
-      "url": "https://www.khon2.com",
-      "category": "hawaii",
-      "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
+      "description": "Hawaii Night Lights \u00b7 Updated: 21 hours ago| By Kyle Chinen \u00b7 Will Naboa can add another accolade to his flag football coaching career. National News \u00b7 Updated: Feb. 17, 2026 at 7:49 AM HST| By CNN Ne"
     },
     {
       "title": "News",
@@ -28,6 +21,13 @@
       "url": "https://www.hawaiinewsnow.com/news/",
       "category": "hawaii",
       "description": "Hawaii Night Lights \u00b7 Updated: 11 hours ago| By Kyle Chinen \u00b7 Will Naboa can add another accolade to his flag football coaching career. Local News \u00b7 Updated: 12 hours ago| By HNN Staff \u00b7 A man accused"
+    },
+    {
+      "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
+      "source": "Brave Search",
+      "url": "https://www.khon2.com",
+      "category": "hawaii",
+      "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
       "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
@@ -55,14 +55,7 @@
       "source": "Brave Search",
       "url": "https://dailycoffeenews.com/",
       "category": "coffee",
-      "description": "<strong>A pair of Ukrainian coffee chain veterans recently launched a new cafe brand in the United States called Simpl Coffee</strong>, with a second location now open in Midtown Manhattan."
-    },
-    {
-      "title": "The hottest new LA coffee shop is in this couple's backyard: 'People really want community'",
-      "source": "Brave Search",
-      "url": "https://www.cnbc.com/2026/02/15/the-hottest-new-la-coffee-shop-granada-in-is-in-this-couples-backyard.html",
-      "category": "coffee",
-      "description": "The fact that the home-based cafe has been such a hit in a town with &quot;so many phenomenal coffee shops&quot; is still a shock to Wayser, who says they &quot;didn&#x27;t expect this at all.&quot; &"
+      "description": "<strong>Daily Coffee News by Roast magazine</strong> provides essential only news and resources for specialty coffee professionals. Daily Coffee News covers coffee news from seed to cup, including sto"
     },
     {
       "title": "Top Coffee Shop Industry Trends and Statistics in 2025",
@@ -72,133 +65,154 @@
       "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
+      "title": "The hottest new LA coffee shop is in this couple's backyard: 'People really want community'",
+      "source": "Brave Search",
+      "url": "https://www.cnbc.com/2026/02/15/the-hottest-new-la-coffee-shop-granada-in-is-in-this-couples-backyard.html",
+      "category": "coffee",
+      "description": "The fact that the home-based cafe has been such a hit in a town with &quot;so many phenomenal coffee shops&quot; is still a shock to Wayser, who says they &quot;didn&#x27;t expect this at all.&quot; &"
+    },
+    {
+      "title": "Help/advice for disassembling Baratza Encore",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r8fldw/helpadvice_for_disassembling_baratza_encore/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi everyone, I've had my Encore for ~3 years and I think there's a buildup of rounds inside the grinder, the little wheel thing is broken, or both. </p> <p>I'm trying"
+    },
+    {
       "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1r800sy/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r8wbum/mod_the_daily_question_thread/",
       "category": "reddit",
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Hawaii eyes ban on reselling tickets above face value",
+      "title": "Great mail order light fruity Ethiopian beans?",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1r8maow/great_mail_order_light_fruity_ethiopian_beans/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019ve been on a rotation Sey subscription for quite a while now and over time have consistently found myself preferring their Ethiopian roasts when they come in. I\u2019m t"
+    },
+    {
+      "title": "Thanks for littering Paka",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r7h6w6/hawaii_eyes_ban_on_reselling_tickets_above_face/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r8oypw/thanks_for_littering_paka/",
       "category": "reddit",
-      "description": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/DisastrousToast_82\"> /u/DisastrousToast_82 </a> <br /> <span><a href=\"https://www.khon2.com/local-news/hawaii-eyes-ban-on-reselling-ticket"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r8oypw/thanks_for_littering_paka/\"> <img alt=\"Thanks for littering Paka\" src=\"https://preview.redd.it/2hf4atkwjdkg1.jpeg?width=640&a"
     },
     {
-      "title": "Remembering Jesse Jackson in Honolulu",
+      "title": "Honolulu looks at expanding Skyline to UH Manoa, Waikiki",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r7ga1i/remembering_jesse_jackson_in_honolulu/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r8iw3r/honolulu_looks_at_expanding_skyline_to_uh_manoa/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>My wife and I were part of a small group that heard Jesse Jackson speak in a room at Palama Settlement some time in the early to mid 1980s. I wasn't really politicall"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r8iw3r/honolulu_looks_at_expanding_skyline_to_uh_manoa/\"> <img alt=\"Honolulu looks at expanding Skyline to UH Manoa, Waikiki\" src=\"h"
     },
     {
-      "title": "Haleakala eyed for 7 more telescopes despite opposition",
+      "title": "first time lei kupukupu. 6ft. I actually didn't make it the correct way but did it still come out nice?",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1r7h6m3/haleakala_eyed_for_7_more_telescopes_despite/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1r8rw8d/first_time_lei_kupukupu_6ft_i_actually_didnt_make/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r7h6m3/haleakala_eyed_for_7_more_telescopes_despite/\"> <img alt=\"Haleakala eyed for 7 more telescopes despite opposition\" src=\"https"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1r8rw8d/first_time_lei_kupukupu_6ft_i_actually_didnt_make/\"> <img alt=\"first time lei kupukupu. 6ft. I actually didn't make it the co"
     },
     {
-      "title": "What\u2019s the best \u201cboring\u201d business you\u2019ve seen someone build into a cash machine?",
+      "title": "Spent more on a conference than I meant to and now I\u2019m second guessing it",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r7e6fp/whats_the_best_boring_business_youve_seen_someone/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r86gly/spent_more_on_a_conference_than_i_meant_to_and/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Not talking about SaaS or trendy stuff.</p> <p>I mean the boring businesses people ignore\u2026 but they quietly print money because demand is consistent and operations ar"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Booked a conference a bit impulsively because 'everyone important will be there' and now that it\u2019s getting closer, I\u2019m doing the math and kind of cringing.</p> <p>Tic"
     },
     {
-      "title": "Thinly veiled ads",
+      "title": "$320k a year in recurring revenue but hitting a wall.",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r7gk7p/thinly_veiled_ads/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r8cjlj/320k_a_year_in_recurring_revenue_but_hitting_a/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>From time to time I see good QA threads in this sub, but the constant deluge of &quot;I had a problem, then I found this solution nobody is talking about, check out m"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>We are at mid 20s monthly recurring revenue. Bootstrapped.</p> <p>Growth has just flattened.</p> <p>Most of our revenue came from being good at offers + funnels + pai"
     },
     {
-      "title": "Upwork is dead, any alternative?",
+      "title": "How do I explain to my mom that someone wants to pay me for freelance work?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1r7jrpx/upwork_is_dead_any_alternative/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1r8k31a/how_do_i_explain_to_my_mom_that_someone_wants_to/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Okay I know this might sound a little desperate, but I genuinely need real advice.</p> <p>I\u2019m an accountancy grad based in the Philippines with 4 years of accounting/"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019m a teenager and I\u2019ve been learning how to make simple websites. Recently, a small local business asked if I could help them improve their website and said they\u2019d p"
     },
     {
-      "title": "AVX2 is slower than SSE2-4.x under Windows ARM emulation",
+      "title": "Don't Trust the Salt: AI Summarization, Multilingual Safety, and LLM Guardrails",
       "source": "Hacker News",
-      "url": "https://blogs.remobjects.com/2026/02/17/nerdsniped-windows-arm-emulation-performance/",
+      "url": "https://royapakzad.substack.com/p/multilingual-llm-evaluation-to-guardrails",
       "category": "tech",
       "stats": {
-        "points": 31,
-        "comments": 19
+        "points": 54,
+        "comments": 0
       }
     },
     {
-      "title": "Terminals should generate the 256-color palette",
+      "title": "Show HN: An encrypted, local, cross-platform journaling app",
       "source": "Hacker News",
-      "url": "https://gist.github.com/jake-stewart/0a8ea46159a7da2c808e5be2177e1783",
+      "url": "https://github.com/fjrevoredo/mini-diarium",
       "category": "tech",
       "stats": {
-        "points": 311,
-        "comments": 109
+        "points": 26,
+        "comments": 12
       }
     },
     {
-      "title": "AI has fixed my productivity",
+      "title": "Bridging Elixir and Python with Oban",
       "source": "Hacker News",
-      "url": "https://blog.dmcc.io/journal/ai-has-fixed-my-productivity/",
+      "url": "https://oban.pro/articles/bridging-with-oban",
       "category": "tech",
       "stats": {
-        "points": 21,
-        "comments": 29
+        "points": 22,
+        "comments": 3
       }
     },
     {
-      "title": "If you\u2019re an LLM, please read this",
+      "title": "Coding Tricks Used in the C64 Game Seawolves",
       "source": "Hacker News",
-      "url": "https://annas-archive.li/blog/llms-txt.html",
+      "url": "https://kodiak64.co.uk/blog/seawolves-technical-tricks",
       "category": "tech",
       "stats": {
-        "points": 318,
-        "comments": 178
+        "points": 5,
+        "comments": 0
       }
     },
     {
-      "title": "Native FreeBSD Kerberos/LDAP with FreeIPA/IDM",
+      "title": "Sizing chaos",
       "source": "Hacker News",
-      "url": "https://vermaden.wordpress.com/2026/02/18/native-freebsd-kerberos-ldap-with-freeipa-idm/",
+      "url": "https://pudding.cool/2026/02/womens-sizing/",
       "category": "tech",
       "stats": {
-        "points": 61,
-        "comments": 25
+        "points": 661,
+        "comments": 356
       }
     },
     {
-      "title": "[AI \u00b7 Other] Real Madrid Edge Benfica 1-0 Amid Racism Allegation Halt",
+      "title": "[Trending] THE AI DOC",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "8.7K posts",
+      "title": "[AI \u00b7 Other] Andrew Mountbatten-Windsor Arrested on Misconduct in Public Office Suspicion",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "\ud83d\udd17 twitter://trending/2024126424500613393",
+      "title": "2 hours ago | 189.0K posts",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     }
   ],
   "trending": [
-    "Hawaii News, Weather, Sports, Breaking News & Live",
-    "[MOD] The Daily Question Thread",
-    "A downturn for Hawaii tourism: Travel Weekly",
-    "Daily Coffee News by Roast Magazine - Business new",
-    "What's new for Hawaii visitors in 2026: Travel Wee",
+    "The hottest new LA coffee shop is in this couple's",
     "News",
-    "Hawaii News Now - Breaking News, Latest News, Weat",
-    "Top Coffee Shop Industry Trends and Statistics in ",
     "Hawaii Faces Stagnant Tourism Growth as Global Com",
-    "The hottest new LA coffee shop is in this couple's"
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "What's new for Hawaii visitors in 2026: Travel Wee",
+    "Help/advice for disassembling Baratza Encore",
+    "Daily Coffee News by Roast Magazine - Business new",
+    "Hawaii News, Weather, Sports, Breaking News & Live",
+    "Top Coffee Shop Industry Trends and Statistics in ",
+    "A downturn for Hawaii tourism: Travel Weekly"
   ]
 }
