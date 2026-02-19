@@ -1,6 +1,34 @@
 {
   "posts": [
     {
+      "id": "2026-02-19-community-coffee-culture",
+      "date": "2026-02-19",
+      "time": "12:00 PM EST",
+      "theme": "Community Coffee Culture - People Crave Connection",
+      "image": "https://images.pexels.com/photos/28584802/pexels-photo-28584802.jpeg",
+      "platforms": {
+        "twitter": {
+          "status": "pending_approval"
+        },
+        "facebook": {
+          "status": "pending_approval"
+        },
+        "google": {
+          "status": "pending_approval"
+        },
+        "threads": {
+          "status": "pending_approval"
+        },
+        "bluesky": {
+          "status": "posted",
+          "url": "https://bsky.app/profile/konacoffeedonut.bsky.social/post/3mfa4ydkxi22t",
+          "postedAt": "2026-02-19T17:35:55.226327+00:00",
+          "text": "Waikiki almost ready. Proudly serving Honolulu coffee. Grand opening February 25, 2026. 2142 Kalakaua Ave, Honolulu, HI 96815. konacoffeedonut.com",
+          "mode": "approved-only"
+        }
+      }
+    },
+    {
       "id": "2026-02-18-community-connection",
       "date": "2026-02-18",
       "time": "09:00",
