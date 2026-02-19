@@ -1,175 +1,92 @@
 {
-  "updated": "2026-02-19T21:52:00.497Z",
+  "client": "CareK9",
+  "generatedAt": "2026-02-19T13:55:00.000000",
   "period": {
-    "start": "2026-01-20",
-    "end": "2026-02-19",
-    "days": 30
+    "ga4": {
+      "start": "2026-01-20",
+      "end": "2026-02-19"
+    },
+    "gsc": {
+      "start": "2026-01-17",
+      "end": "2026-02-16"
+    }
   },
-  "ga4": {
-    "traffic": {
-      "sessions": 185,
-      "activeUsers": 135,
-      "pageViews": 615,
-      "bounceRate": 0.6,
-      "avgSessionDuration": 288.05,
-      "engagedSessions": 74
+  "ga4Summary": {
+    "sessions": 185,
+    "users": 135,
+    "pageviews": 615,
+    "bounceRate": 60.0,
+    "avgSessionDuration": 288.05,
+    "engagementRate": 40.0,
+    "topTrafficSource": {
+      "channel": "Direct",
+      "sessions": 129,
+      "percentage": 69.7
     },
-    "ecommerce": {
-      "purchases": 6,
-      "revenue": 729,
-      "addToCarts": 19,
-      "checkouts": 4,
-      "itemsViewed": 105,
-      "itemsPurchased": 20,
-      "conversionRate": 0.0324,
-      "cartToViewRate": 0.355,
-      "purchaseToViewRate": 0.194
+    "organicSearchSessions": 33,
+    "topPage": {
+      "path": "/",
+      "pageviews": 293
     },
-    "topChannels": [
-      {
-        "name": "Direct",
-        "sessions": 129,
-        "users": 104
-      },
-      {
-        "name": "Organic Search",
-        "sessions": 33,
-        "users": 24
-      },
-      {
-        "name": "Organic Shopping",
-        "sessions": 14,
-        "users": 4
-      }
-    ],
-    "topProducts": [
-      {
-        "name": "Chicken-Wrapped Pumpkin Super Healthy Dog Treats",
-        "purchased": 7,
-        "revenue": 251.65
-      },
-      {
-        "name": "Chicken-Wrapped Pumpkin",
-        "purchased": 4,
-        "revenue": 143.8
-      },
-      {
-        "name": "Beef Wrapped Pumpkin",
-        "purchased": 3,
-        "revenue": 110.85
-      }
-    ],
-    "topPages": [
-      {
-        "path": "/",
-        "title": "CareK9",
-        "views": 197,
-        "users": 65
-      },
-      {
-        "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-        "title": "Chicken Wrapped Pumpkin Dog Treats",
-        "views": 51,
-        "users": 11
-      },
-      {
-        "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-        "title": "Healthy Dog Protein Chips",
-        "views": 21,
-        "users": 6
-      }
-    ],
-    "devices": {
-      "desktop": {
-        "sessions": 130,
-        "users": 101
-      },
-      "mobile": {
-        "sessions": 58,
-        "users": 37
-      }
-    },
-    "topRegions": [
-      {
-        "country": "United States",
-        "region": "California",
-        "sessions": 52,
-        "users": 26
-      },
-      {
-        "country": "United States",
-        "region": "New Jersey",
-        "sessions": 42,
-        "users": 19
-      },
-      {
-        "country": "China",
-        "region": "Gansu",
-        "sessions": 13,
-        "users": 13
-      }
-    ]
+    "topProductPage": {
+      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "pageviews": 51
+    }
   },
-  "gsc": {
-    "summary": {
-      "queries": 25,
-      "totalClicks": 0,
-      "totalImpressions": 70,
-      "avgCTR": 0,
-      "avgPosition": 23.47
-    },
+  "gscSummary": {
+    "totalQueries": 25,
+    "totalClicks": 0,
+    "totalImpressions": 68,
+    "avgCtr": 0,
+    "avgPosition": 23.1,
     "topQueries": [
       {
-        "query": "dexas mudbuster large",
-        "impressions": 5,
-        "position": 1,
-        "clicks": 0
-      },
-      {
         "query": "best dog paw cleaner",
-        "impressions": 10,
-        "position": 24.4,
-        "clicks": 0
-      },
-      {
-        "query": "dexas mudbuster paw cleaner",
         "impressions": 8,
-        "position": 7.875,
-        "clicks": 0
+        "position": 25.1
       },
       {
         "query": "dexas mudbuster",
-        "impressions": 8,
-        "position": 8.875,
-        "clicks": 0
+        "impressions": 7,
+        "position": 9.6
+      },
+      {
+        "query": "dexas mudbuster paw cleaner",
+        "impressions": 7,
+        "position": 7.1
       },
       {
         "query": "best paw cleaner for dogs",
         "impressions": 5,
-        "position": 23.6,
-        "clicks": 0
+        "position": 23.6
+      },
+      {
+        "query": "4-in-1 dog paw washer",
+        "impressions": 4,
+        "position": 10.2
+      }
+    ],
+    "bestPositionQueries": [
+      {
+        "query": "dexas mudbuster large",
+        "position": 1,
+        "impressions": 3
+      },
+      {
+        "query": "dexas mudbuster portable dog paw washer cleaner large matte black special edition pw72025-22wp",
+        "position": 1,
+        "impressions": 1
+      },
+      {
+        "query": "dexas mud buster",
+        "position": 4.5,
+        "impressions": 2
       }
     ]
   },
   "insights": {
-    "strengths": [
-      "Strong direct traffic (69.7% of sessions)",
-      "Solid conversion from engaged sessions",
-      "Pumpkin-wrapped treats are top sellers",
-      "Desktop traffic dominates (70.3%)",
-      "Good geographic spread across US states"
-    ],
-    "opportunities": [
-      "Zero clicks from GSC despite 70 impressions - needs SEO improvement",
-      "High bounce rate (60%) - consider landing page optimization",
-      "Low cart-to-view rate (35.5%) - product pages need enhancement",
-      "Limited organic search traffic (17.8% of sessions)",
-      "Mobile experience could be improved (31.4% sessions)"
-    ],
-    "topKeywordOpportunities": [
-      "dexas mudbuster large - Position 1, needs content",
-      "dexas mudbuster paw cleaner - Position 7.8, good ranking",
-      "best dog paw cleaner - Position 24.4, room for improvement"
-    ]
+    "trafficTrend": "Steady traffic with peaks on Feb 10 (187 pageviews) and Feb 13 (86 pageviews)",
+    "seoOpportunity": "Strong position for Dexas Mudbuster queries (position 1-10) but 0 clicks - needs CTR optimization",
+    "topContent": "Homepage dominates (293 pageviews), Chicken Wrapped Pumpkin treats leading product page (51 pageviews)"
   }
 }

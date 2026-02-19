@@ -1,15 +1,18 @@
 {
-  "siteUrl": "https://carek9.com/",
-  "startDate": "2026-01-20",
-  "endDate": "2026-02-18",
-  "rowCount": 25,
-  "data": [
+  "site": "https://carek9.com/",
+  "dateRange": {
+    "start": "2026-01-17",
+    "end": "2026-02-16"
+  },
+  "fetchedAt": "2026-02-19T13:54:22.607804",
+  "totalQueries": 25,
+  "queries": [
     {
       "query": "4-in-1 dog paw washer",
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
-      "position": 10.25
+      "position": 10.2
     },
     {
       "query": "all paws eliminator activated recharging",
@@ -23,14 +26,7 @@
       "clicks": 0,
       "impressions": 4,
       "ctr": 0,
-      "position": 13.25
-    },
-    {
-      "query": "bath tablets",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 15
+      "position": 13.2
     },
     {
       "query": "bathing tablets",
@@ -49,9 +45,9 @@
     {
       "query": "best dog paw cleaner",
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 8,
       "ctr": 0,
-      "position": 24.4
+      "position": 25.1
     },
     {
       "query": "best paw cleaner",
@@ -68,13 +64,6 @@
       "position": 23.6
     },
     {
-      "query": "best paw cleaners",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 54
-    },
-    {
       "query": "best paw washer",
       "clicks": 0,
       "impressions": 2,
@@ -84,16 +73,16 @@
     {
       "query": "dexas mud buster",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 2,
       "ctr": 0,
-      "position": 4
+      "position": 4.5
     },
     {
       "query": "dexas mudbuster",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 7,
       "ctr": 0,
-      "position": 8.875
+      "position": 9.6
     },
     {
       "query": "dexas mudbuster dog paw cleaner",
@@ -105,7 +94,7 @@
     {
       "query": "dexas mudbuster large",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 3,
       "ctr": 0,
       "position": 1
     },
@@ -119,9 +108,9 @@
     {
       "query": "dexas mudbuster paw cleaner",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 7,
       "ctr": 0,
-      "position": 7.875
+      "position": 7.1
     },
     {
       "query": "dexas mudbuster portable dog paw cleaner",
@@ -142,7 +131,7 @@
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 8.666666666666668
+      "position": 8.7
     },
     {
       "query": "disinfectant for dogs paws",
@@ -150,13 +139,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 13
-    },
-    {
-      "query": "dog food toppers for picky eaters",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 97
     },
     {
       "query": "dog foot washers",
@@ -178,6 +160,27 @@
       "impressions": 1,
       "ctr": 0,
       "position": 55
+    },
+    {
+      "query": "dog paw cleaning products",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "dog paw pad cleaner",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 43.5
+    },
+    {
+      "query": "dog paw powder",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 19.8
     }
   ]
 }
