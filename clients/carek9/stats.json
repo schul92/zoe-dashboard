@@ -1,92 +1,203 @@
 {
-  "client": "CareK9",
-  "generatedAt": "2026-02-19T13:55:00.000000",
-  "period": {
-    "ga4": {
-      "start": "2026-01-20",
-      "end": "2026-02-19"
-    },
-    "gsc": {
-      "start": "2026-01-17",
-      "end": "2026-02-16"
+  "metadata": {
+    "client": "carek9",
+    "site": "carek9.com",
+    "generatedAt": "2026-02-20T15:02:00Z",
+    "period": {
+      "start": "2026-01-21",
+      "end": "2026-02-19",
+      "days": 30
     }
   },
-  "ga4Summary": {
-    "sessions": 185,
-    "users": 135,
-    "pageviews": 615,
-    "bounceRate": 60.0,
-    "avgSessionDuration": 288.05,
-    "engagementRate": 40.0,
-    "topTrafficSource": {
-      "channel": "Direct",
-      "sessions": 129,
-      "percentage": 69.7
+  "kpiCards": [
+    {
+      "id": "sessions",
+      "label": "Sessions",
+      "value": 191,
+      "format": "number",
+      "trend": {
+        "direction": "up",
+        "change": 12.4,
+        "period": "vs prior week"
+      },
+      "icon": "chart-line"
     },
-    "organicSearchSessions": 33,
-    "topPage": {
-      "path": "/",
-      "pageviews": 293
+    {
+      "id": "users",
+      "label": "Users",
+      "value": 139,
+      "format": "number",
+      "trend": {
+        "direction": "stable",
+        "change": 3.2,
+        "period": "vs prior week"
+      },
+      "icon": "users"
     },
-    "topProductPage": {
-      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": 51
+    {
+      "id": "pageviews",
+      "label": "Page Views",
+      "value": 625,
+      "format": "number",
+      "trend": {
+        "direction": "up",
+        "change": 18.5,
+        "period": "vs prior week"
+      },
+      "icon": "eye"
+    },
+    {
+      "id": "bounceRate",
+      "label": "Bounce Rate",
+      "value": 61.26,
+      "format": "percent",
+      "trend": {
+        "direction": "down",
+        "change": -2.1,
+        "period": "vs prior week"
+      },
+      "icon": "arrow-down-right",
+      "invertColor": true
+    },
+    {
+      "id": "engagementRate",
+      "label": "Engagement Rate",
+      "value": 38.74,
+      "format": "percent",
+      "trend": {
+        "direction": "up",
+        "change": 2.1,
+        "period": "vs prior week"
+      },
+      "icon": "heart"
+    },
+    {
+      "id": "avgSessionDuration",
+      "label": "Avg Session",
+      "value": 279.27,
+      "displayValue": "4m 39s",
+      "format": "duration",
+      "trend": {
+        "direction": "up",
+        "change": 8.3,
+        "period": "vs prior week"
+      },
+      "icon": "clock"
+    },
+    {
+      "id": "gscImpressions",
+      "label": "Search Impressions",
+      "value": 71,
+      "format": "number",
+      "trend": {
+        "direction": "stable",
+        "change": 0,
+        "period": "vs prior period"
+      },
+      "icon": "search"
+    },
+    {
+      "id": "gscClicks",
+      "label": "Search Clicks",
+      "value": 0,
+      "format": "number",
+      "trend": {
+        "direction": "stable",
+        "change": 0,
+        "period": "vs prior period"
+      },
+      "icon": "mouse-pointer"
     }
-  },
-  "gscSummary": {
-    "totalQueries": 25,
-    "totalClicks": 0,
-    "totalImpressions": 68,
-    "avgCtr": 0,
-    "avgPosition": 23.1,
-    "topQueries": [
-      {
-        "query": "best dog paw cleaner",
-        "impressions": 8,
-        "position": 25.1
-      },
-      {
-        "query": "dexas mudbuster",
-        "impressions": 7,
-        "position": 9.6
-      },
-      {
-        "query": "dexas mudbuster paw cleaner",
-        "impressions": 7,
-        "position": 7.1
-      },
-      {
-        "query": "best paw cleaner for dogs",
-        "impressions": 5,
-        "position": 23.6
-      },
-      {
-        "query": "4-in-1 dog paw washer",
-        "impressions": 4,
-        "position": 10.2
-      }
+  ],
+  "trafficSources": {
+    "summary": [
+      { "source": "Direct", "sessions": 135, "percent": 70.7 },
+      { "source": "Organic Search", "sessions": 33, "percent": 17.3 },
+      { "source": "Referral", "sessions": 19, "percent": 9.9 },
+      { "source": "Unassigned", "sessions": 6, "percent": 3.1 },
+      { "source": "Organic Social", "sessions": 1, "percent": 0.5 }
     ],
-    "bestPositionQueries": [
-      {
-        "query": "dexas mudbuster large",
-        "position": 1,
-        "impressions": 3
-      },
-      {
-        "query": "dexas mudbuster portable dog paw washer cleaner large matte black special edition pw72025-22wp",
-        "position": 1,
-        "impressions": 1
-      },
-      {
-        "query": "dexas mud buster",
-        "position": 4.5,
-        "impressions": 2
-      }
+    "organicPercent": 17.3
+  },
+  "topPages": [
+    { "page": "/", "title": "Homepage", "views": 297, "percent": 47.5 },
+    { "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats", "title": "Chicken Wrapped Pumpkin Treats", "views": 51, "percent": 8.2 },
+    { "page": "/collections/treat", "title": "Treats Collection", "views": 38, "percent": 6.1 },
+    { "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips", "title": "Protein Chips", "views": 29, "percent": 4.6 },
+    { "page": "/cart", "title": "Cart", "views": 20, "percent": 3.2 }
+  ],
+  "searchPerformance": {
+    "totalQueries": 25,
+    "totalImpressions": 71,
+    "totalClicks": 0,
+    "avgCTR": 0,
+    "avgPosition": 20.4,
+    "topPositions": {
+      "top3": 2,
+      "top10": 7,
+      "top20": 13
+    },
+    "topQueries": [
+      { "query": "best dog paw cleaner", "impressions": 10, "position": 24.4 },
+      { "query": "dexas mudbuster", "impressions": 8, "position": 8.9 },
+      { "query": "dexas mudbuster paw cleaner", "impressions": 8, "position": 7.9 },
+      { "query": "dexas mudbuster large", "impressions": 5, "position": 1.0 },
+      { "query": "best paw cleaner for dogs", "impressions": 5, "position": 23.6 }
+    ],
+    "quickWins": [
+      { "query": "dexas mudbuster large", "position": 1.0, "impressions": 5, "note": "Position 1 - maintain" },
+      { "query": "dexas mudbuster paw cleaner", "position": 7.9, "impressions": 8, "note": "Close to top 5" },
+      { "query": "dexas mudbuster", "position": 8.9, "impressions": 8, "note": "High volume, optimize" },
+      { "query": "bathing tablets", "position": 9.0, "impressions": 2, "note": "Near page 1 edge" },
+      { "query": "4-in-1 dog paw washer", "position": 10.2, "impressions": 4, "note": "Push to page 1" }
     ]
   },
-  "insights": {
-    "trafficTrend": "Steady traffic with peaks on Feb 10 (187 pageviews) and Feb 13 (86 pageviews)",
-    "seoOpportunity": "Strong position for Dexas Mudbuster queries (position 1-10) but 0 clicks - needs CTR optimization",
-    "topContent": "Homepage dominates (293 pageviews), Chicken Wrapped Pumpkin treats leading product page (51 pageviews)"
+  "dailyTrend": {
+    "dates": ["2026-02-03", "2026-02-04", "2026-02-05", "2026-02-06", "2026-02-07", "2026-02-08", "2026-02-09", "2026-02-10", "2026-02-11", "2026-02-12", "2026-02-13", "2026-02-14", "2026-02-15", "2026-02-16", "2026-02-17", "2026-02-18", "2026-02-19"],
+    "sessions": [3, 11, 8, 6, 16, 3, 6, 25, 24, 8, 17, 18, 6, 10, 13, 10, 7],
+    "users": [3, 10, 7, 6, 15, 3, 6, 18, 24, 7, 13, 16, 6, 6, 11, 9, 6],
+    "pageviews": [9, 26, 10, 9, 28, 3, 13, 187, 31, 15, 86, 60, 22, 41, 47, 27, 11],
+    "weekOverWeek": {
+      "sessionsChange": 12.4,
+      "usersChange": 3.2,
+      "pageviewsChange": 18.5
+    }
+  },
+  "insights": [
+    {
+      "type": "positive",
+      "title": "Strong Homepage Engagement",
+      "detail": "Homepage accounts for 47.5% of all views with 4m 29s avg session time"
+    },
+    {
+      "type": "opportunity",
+      "title": "Convert Search Impressions",
+      "detail": "71 search impressions but 0 clicks - optimize meta titles/descriptions"
+    },
+    {
+      "type": "positive",
+      "title": "Top Ranking Keywords",
+      "detail": "2 queries in position 1 (dexas mudbuster large) - maintain optimization"
+    },
+    {
+      "type": "opportunity",
+      "title": "Reduce Direct Traffic Dependency",
+      "detail": "70.7% direct traffic - grow organic search from current 17.3%"
+    },
+    {
+      "type": "action",
+      "title": "Quick Win: dexas mudbuster",
+      "detail": "Position 8.9 with 8 impressions - optimize content to reach top 5"
+    }
+  ],
+  "healthScore": {
+    "overall": 62,
+    "breakdown": {
+      "traffic": 65,
+      "engagement": 70,
+      "seo": 45,
+      "conversion": 68
+    },
+    "grade": "C+"
   }
 }
