@@ -39,64 +39,83 @@
   ],
   "topPages": [
     {
-      "path": "/",
-      "pageviews": 293,
-      "sessions": 128,
-      "avgDuration": 275.05
+      "pagePath": "/",
+      "screenPageViews": 293,
+      "activeUsers": 128,
+      "averageSessionDuration": 275.05
     },
     {
-      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": 51,
-      "sessions": 14,
-      "avgDuration": 209.32
+      "pagePath": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "screenPageViews": 51,
+      "activeUsers": 14,
+      "averageSessionDuration": 209.32
     },
     {
-      "path": "/collections/treat",
-      "pageviews": 36,
-      "sessions": 22,
-      "avgDuration": 105.7
+      "pagePath": "/collections/treat",
+      "screenPageViews": 36,
+      "activeUsers": 22,
+      "averageSessionDuration": 105.7
     },
     {
-      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 29,
-      "sessions": 9,
-      "avgDuration": 239.65
+      "pagePath": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "screenPageViews": 29,
+      "activeUsers": 9,
+      "averageSessionDuration": 239.65
     },
     {
-      "path": "/cart",
-      "pageviews": 20,
-      "sessions": 13,
-      "avgDuration": 117.92
+      "pagePath": "/cart",
+      "screenPageViews": 20,
+      "activeUsers": 13,
+      "averageSessionDuration": 117.92
     },
     {
-      "path": "/pages/about-us",
-      "pageviews": 19,
-      "sessions": 16,
-      "avgDuration": 112.65
+      "pagePath": "/pages/about-us",
+      "screenPageViews": 19,
+      "activeUsers": 16,
+      "averageSessionDuration": 112.65
     },
     {
-      "path": "/pages/carek9-x-human-canine-collaborative",
-      "pageviews": 18,
-      "sessions": 16,
-      "avgDuration": 37.59
+      "pagePath": "/pages/carek9-x-human-canine-collaborative",
+      "screenPageViews": 18,
+      "activeUsers": 16,
+      "averageSessionDuration": 37.59
     },
     {
-      "path": "/products/beef-wrapped-pumpkin",
-      "pageviews": 13,
-      "sessions": 8,
-      "avgDuration": 63.52
+      "pagePath": "/products/beef-wrapped-pumpkin",
+      "screenPageViews": 13,
+      "activeUsers": 8,
+      "averageSessionDuration": 63.52
     },
     {
-      "path": "/collections/food-topper",
-      "pageviews": 12,
-      "sessions": 11,
-      "avgDuration": 8.52
+      "pagePath": "/collections/food-topper",
+      "screenPageViews": 12,
+      "activeUsers": 11,
+      "averageSessionDuration": 8.52
     },
     {
-      "path": "/pages/contact-us",
-      "pageviews": 12,
-      "sessions": 8,
-      "avgDuration": 233.52
+      "pagePath": "/pages/contact-us",
+      "screenPageViews": 12,
+      "activeUsers": 8,
+      "averageSessionDuration": 233.52
     }
+  ],
+  "devices": [
+    { "deviceCategory": "mobile", "sessions": 110 },
+    { "deviceCategory": "desktop", "sessions": 65 },
+    { "deviceCategory": "tablet", "sessions": 10 }
+  ],
+  "geography": [
+    { "country": "United States", "region": "California", "sessions": 85 },
+    { "country": "United States", "region": "Texas", "sessions": 32 },
+    { "country": "United States", "region": "Florida", "sessions": 28 },
+    { "country": "United States", "region": "New York", "sessions": 18 },
+    { "country": "Canada", "region": "Ontario", "sessions": 12 }
+  ],
+  "referrers": [
+    { "sessionSource": "(direct)", "sessions": 129 },
+    { "sessionSource": "google", "sessions": 33 },
+    { "sessionSource": "amazon", "sessions": 14 },
+    { "sessionSource": "facebook.com", "sessions": 5 },
+    { "sessionSource": "instagram.com", "sessions": 4 }
   ]
 }
