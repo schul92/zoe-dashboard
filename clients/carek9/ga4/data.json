@@ -1,121 +1,240 @@
 {
-  "metadata": {
-    "collectedAt": "2026-02-19T13:53:59.343953",
-    "property": "properties/523137923"
+  "propertyId": "523137923",
+  "collectedAt": "2026-02-20T15:00:44.344463Z",
+  "dateRange": {
+    "start": "2026-01-21",
+    "end": "2026-02-19"
   },
-  "totals": {
-    "sessions": 185,
-    "activeUsers": 135,
-    "screenPageViews": 615,
-    "bounceRate": 0.6,
-    "averageSessionDuration": 288.05
+  "overview": {
+    "sessions": 191,
+    "users": 139,
+    "pageviews": 625,
+    "bounceRate": 61.26,
+    "avgSessionDuration": 279.27,
+    "engagementRate": 38.74
   },
-  "dailyTrend": [],
-  "trafficSources": [
-    {
-      "sessionDefaultChannelGroup": "Direct",
-      "sessions": 129
-    },
-    {
-      "sessionDefaultChannelGroup": "Organic Search",
-      "sessions": 33
-    },
-    {
-      "sessionDefaultChannelGroup": "Organic Shopping",
-      "sessions": 14
-    },
-    {
-      "sessionDefaultChannelGroup": "Referral",
-      "sessions": 5
-    },
-    {
-      "sessionDefaultChannelGroup": "Unassigned",
-      "sessions": 4
-    },
-    {
-      "sessionDefaultChannelGroup": "Organic Social",
-      "sessions": 1
-    }
-  ],
   "topPages": [
     {
-      "pagePath": "/",
-      "screenPageViews": 293,
-      "activeUsers": 128,
-      "averageSessionDuration": 275.05
+      "path": "/",
+      "pageviews": 297,
+      "sessions": 131,
+      "avgDuration": 268.75
     },
     {
-      "pagePath": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "screenPageViews": 51,
-      "activeUsers": 14,
-      "averageSessionDuration": 209.32
+      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "pageviews": 51,
+      "sessions": 14,
+      "avgDuration": 209.32
     },
     {
-      "pagePath": "/collections/treat",
-      "screenPageViews": 36,
-      "activeUsers": 22,
-      "averageSessionDuration": 105.7
+      "path": "/collections/treat",
+      "pageviews": 38,
+      "sessions": 23,
+      "avgDuration": 101.32
     },
     {
-      "pagePath": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "screenPageViews": 29,
-      "activeUsers": 9,
-      "averageSessionDuration": 239.65
+      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "pageviews": 29,
+      "sessions": 9,
+      "avgDuration": 239.65
     },
     {
-      "pagePath": "/cart",
-      "screenPageViews": 20,
-      "activeUsers": 13,
-      "averageSessionDuration": 117.92
+      "path": "/cart",
+      "pageviews": 20,
+      "sessions": 13,
+      "avgDuration": 117.92
     },
     {
-      "pagePath": "/pages/about-us",
-      "screenPageViews": 19,
-      "activeUsers": 16,
-      "averageSessionDuration": 112.65
+      "path": "/pages/about-us",
+      "pageviews": 20,
+      "sessions": 17,
+      "avgDuration": 106.02
     },
     {
-      "pagePath": "/pages/carek9-x-human-canine-collaborative",
-      "screenPageViews": 18,
-      "activeUsers": 16,
-      "averageSessionDuration": 37.59
+      "path": "/pages/carek9-x-human-canine-collaborative",
+      "pageviews": 18,
+      "sessions": 16,
+      "avgDuration": 37.59
     },
     {
-      "pagePath": "/products/beef-wrapped-pumpkin",
-      "screenPageViews": 13,
-      "activeUsers": 8,
-      "averageSessionDuration": 63.52
+      "path": "/pages/contact-us",
+      "pageviews": 13,
+      "sessions": 9,
+      "avgDuration": 207.57
     },
     {
-      "pagePath": "/collections/food-topper",
-      "screenPageViews": 12,
-      "activeUsers": 11,
-      "averageSessionDuration": 8.52
+      "path": "/products/beef-wrapped-pumpkin",
+      "pageviews": 13,
+      "sessions": 8,
+      "avgDuration": 63.52
     },
     {
-      "pagePath": "/pages/contact-us",
-      "screenPageViews": 12,
-      "activeUsers": 8,
-      "averageSessionDuration": 233.52
+      "path": "/collections/food-topper",
+      "pageviews": 12,
+      "sessions": 11,
+      "avgDuration": 8.52
     }
   ],
-  "devices": [
-    { "deviceCategory": "mobile", "sessions": 110 },
-    { "deviceCategory": "desktop", "sessions": 65 },
-    { "deviceCategory": "tablet", "sessions": 10 }
+  "trafficSources": [
+    {
+      "source": "(direct)",
+      "medium": "(none)",
+      "sessions": 135,
+      "users": 108,
+      "bounceRate": 65.93
+    },
+    {
+      "source": "google",
+      "medium": "organic",
+      "sessions": 33,
+      "users": 24,
+      "bounceRate": 54.55
+    },
+    {
+      "source": "admin.shopify.com",
+      "medium": "referral",
+      "sessions": 12,
+      "users": 2,
+      "bounceRate": 33.33
+    },
+    {
+      "source": "(not set)",
+      "medium": "(not set)",
+      "sessions": 6,
+      "users": 6,
+      "bounceRate": 100.0
+    },
+    {
+      "source": "qrcodes.pro",
+      "medium": "referral",
+      "sessions": 3,
+      "users": 3,
+      "bounceRate": 33.33
+    },
+    {
+      "source": "judge.me",
+      "medium": "referral",
+      "sessions": 2,
+      "users": 1,
+      "bounceRate": 0.0
+    },
+    {
+      "source": "shopify.com",
+      "medium": "referral",
+      "sessions": 2,
+      "users": 2,
+      "bounceRate": 50.0
+    },
+    {
+      "source": "Pinterest",
+      "medium": "organic",
+      "sessions": 1,
+      "users": 1,
+      "bounceRate": 100.0
+    }
   ],
-  "geography": [
-    { "country": "United States", "region": "California", "sessions": 85 },
-    { "country": "United States", "region": "Texas", "sessions": 32 },
-    { "country": "United States", "region": "Florida", "sessions": 28 },
-    { "country": "United States", "region": "New York", "sessions": 18 },
-    { "country": "Canada", "region": "Ontario", "sessions": 12 }
-  ],
-  "referrers": [
-    { "sessionSource": "(direct)", "sessions": 129 },
-    { "sessionSource": "google", "sessions": 33 },
-    { "sessionSource": "amazon", "sessions": 14 },
-    { "sessionSource": "facebook.com", "sessions": 5 },
-    { "sessionSource": "instagram.com", "sessions": 4 }
+  "dailyTrend": [
+    {
+      "date": "2026-02-03",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 9
+    },
+    {
+      "date": "2026-02-04",
+      "sessions": 11,
+      "users": 10,
+      "pageviews": 26
+    },
+    {
+      "date": "2026-02-05",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 10
+    },
+    {
+      "date": "2026-02-06",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 9
+    },
+    {
+      "date": "2026-02-07",
+      "sessions": 16,
+      "users": 15,
+      "pageviews": 28
+    },
+    {
+      "date": "2026-02-08",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 3
+    },
+    {
+      "date": "2026-02-09",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 13
+    },
+    {
+      "date": "2026-02-10",
+      "sessions": 25,
+      "users": 18,
+      "pageviews": 187
+    },
+    {
+      "date": "2026-02-11",
+      "sessions": 24,
+      "users": 24,
+      "pageviews": 31
+    },
+    {
+      "date": "2026-02-12",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 15
+    },
+    {
+      "date": "2026-02-13",
+      "sessions": 17,
+      "users": 13,
+      "pageviews": 86
+    },
+    {
+      "date": "2026-02-14",
+      "sessions": 18,
+      "users": 16,
+      "pageviews": 60
+    },
+    {
+      "date": "2026-02-15",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 22
+    },
+    {
+      "date": "2026-02-16",
+      "sessions": 10,
+      "users": 6,
+      "pageviews": 41
+    },
+    {
+      "date": "2026-02-17",
+      "sessions": 13,
+      "users": 11,
+      "pageviews": 47
+    },
+    {
+      "date": "2026-02-18",
+      "sessions": 10,
+      "users": 9,
+      "pageviews": 27
+    },
+    {
+      "date": "2026-02-19",
+      "sessions": 7,
+      "users": 6,
+      "pageviews": 11
+    }
   ]
 }
