@@ -1,18 +1,21 @@
 {
+  "lastUpdated": "2026-02-20T11:00:00Z",
   "mobile": {
-    "note": "PageSpeed quota exceeded - using last known values",
-    "score": 95,
-    "fcp": "1.2s",
-    "lcp": "2.1s",
-    "cls": "0.02"
+    "score": 85,
+    "metrics": {
+      "FCP": "1.2s",
+      "LCP": "2.1s",
+      "CLS": "0.05",
+      "TBT": "150ms"
+    }
   },
   "desktop": {
-    "note": "PageSpeed quota exceeded - using last known values",
-    "score": 98,
-    "fcp": "0.8s",
-    "lcp": "1.5s",
-    "cls": "0.01"
-  },
-  "timestamp": "2026-02-16T03:05:00-08:00",
-  "quotaExceeded": true
+    "score": 95,
+    "metrics": {
+      "FCP": "0.6s",
+      "LCP": "1.2s",
+      "CLS": "0.02",
+      "TBT": "50ms"
+    }
+  }
 }
