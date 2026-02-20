@@ -1,117 +1,134 @@
 {
-  "generatedAt": "2026-02-19T03:00:00-08:00",
+  "generatedAt": "2026-02-20T11:00:00Z",
   "model": "claude-opus-4-5",
   "urgent": [
     {
+      "type": "canonical_redirect_issue",
+      "keyword": null,
+      "action": "Fix HTTP to HTTPS redirect - http://www.konacoffeedonut.com/en has 93 impressions with 0 clicks. Ensure 301 redirect to https version and update canonical tags",
+      "impact": "high",
+      "effort": "low",
+      "reasoning": "93 impressions wasted on non-canonical URL. Google is indexing HTTP version which splits ranking signals and confuses users."
+    },
+    {
+      "type": "zero_ctr_high_impression",
+      "keyword": "donuts near me",
+      "action": "Optimize title tag and meta description for homepage to include 'donuts near me' and add compelling call-to-action mentioning Waikiki location and opening date",
+      "impact": "high",
+      "effort": "low",
+      "reasoning": "24 impressions at position 10.3 with 0 clicks indicates poor snippet appeal. This is highest-volume local intent keyword."
+    },
+    {
       "type": "desktop_ctr_crisis",
       "keyword": null,
-      "action": "Audit desktop SERP snippets and meta descriptions immediately. Check for mobile-only structured data, missing desktop favicons, or broken desktop rendering.",
+      "action": "Audit desktop rendering - check for layout issues, slow load times, or poor above-fold content. Desktop has 602 impressions but only 2 clicks (0.33% CTR vs 3.5% mobile)",
       "impact": "high",
       "effort": "medium",
-      "reasoning": "379 desktop impressions with ZERO clicks (0% CTR) vs mobile's 3.3% CTR. Desktop traffic is being completely lost - likely a snippet/display issue."
+      "reasoning": "Desktop accounts for 74% of impressions but drastically underperforms mobile. Likely UX or rendering issue losing potential customers."
     },
     {
-      "type": "http_https_canonicalization",
+      "type": "localized_page_ctr_issue",
       "keyword": null,
-      "action": "Implement 301 redirect from http://www.konacoffeedonut.com/en to https version. Add canonical tags and submit URL removal request in GSC.",
-      "impact": "high",
+      "action": "Review Korean about-kona-coffee page meta tags - position 2 with 18 impressions but 0 clicks suggests misleading or unappealing snippet",
+      "impact": "medium",
       "effort": "low",
-      "reasoning": "HTTP version has 98 impressions (1% CTR) cannibalizing HTTPS version (14.3% CTR). Consolidating will boost overall CTR significantly."
-    },
-    {
-      "type": "position_2_zero_clicks",
-      "keyword": "donut shop near me",
-      "action": "Rewrite meta title/description for homepage. Add compelling CTA like 'Fresh Kona Coffee & Hot Donuts in Waikiki - Opening Feb 25!'",
-      "impact": "high",
-      "effort": "low",
-      "reasoning": "Position 2 with 0 clicks means your snippet is being ignored. This is a high-intent local query - fixing the snippet could capture valuable traffic."
+      "reasoning": "Ranking #2 with zero clicks means the title/description isn't resonating with Korean searchers despite excellent position."
     }
   ],
   "quickWins": [
     {
-      "type": "ranking_boost",
+      "type": "position_improvement",
       "keyword": "donuts near me",
-      "action": "Add 'donuts near me' variations to homepage H1/H2 headers and create a dedicated 'Fresh Donuts in Waikiki' landing page section",
+      "action": "Add schema markup (LocalBusiness, Restaurant) and ensure NAP consistency. Create dedicated landing page section for 'Donuts in Waikiki'",
       "impact": "high",
       "effort": "low",
-      "potentialGain": 28,
-      "reasoning": "28 impressions at position 9.8 - just outside page 1. Small optimization could push to top 5 and capture these searches."
+      "potentialGain": 8,
+      "reasoning": "Position 10.3 is close to page 1 top. Moving to top 5 could capture significant local search traffic."
+    },
+    {
+      "type": "position_improvement",
+      "keyword": "coffee near me",
+      "action": "Add 'coffee near me' and 'Waikiki coffee' to H2 headings and body content. Ensure Google My Business is optimized for coffee category",
+      "impact": "medium",
+      "effort": "low",
+      "potentialGain": 12,
+      "reasoning": "Position 19 with 6 impressions - high volume keyword worth pushing into top 10."
     },
     {
       "type": "ctr_optimization",
-      "keyword": "coffee kona",
-      "action": "Update meta description to prominently feature '100% Kona Coffee' - this is a premium search term with buying intent",
-      "impact": "medium",
-      "effort": "low",
-      "potentialGain": 3,
-      "reasoning": "Position 3 with 0 clicks indicates weak snippet. 'Coffee Kona' searchers want authentic Kona coffee - highlight origin story."
-    },
-    {
-      "type": "ranking_boost",
-      "keyword": "donut shops near me",
-      "action": "Add local business schema markup with 'donut shop' as business type. Ensure NAP consistency.",
+      "keyword": "about-kona-coffee page",
+      "action": "Rewrite meta description to be more compelling - mention '100% Kona Coffee', 'Waikiki', and opening date. Current 4.2% CTR at position 7.8 can improve",
       "impact": "medium",
       "effort": "low",
       "potentialGain": 5,
-      "reasoning": "Position 7.5 with 4 impressions. Schema markup can provide rich snippets and boost rankings for local queries."
+      "reasoning": "24 impressions but only 1 click. Better meta could double CTR without ranking changes."
     },
     {
-      "type": "ctr_optimization",
-      "keyword": "coffee shops near me open now",
-      "action": "Add business hours structured data and 'Open Daily' messaging to meta description",
+      "type": "position_improvement",
+      "keyword": "hawaiian coffee and donuts",
+      "action": "Create dedicated content block combining Hawaiian coffee culture with donut offerings. Use exact phrase in H2",
       "impact": "medium",
       "effort": "low",
-      "potentialGain": 3,
-      "reasoning": "Position 2 but 0 clicks. 'Open now' searchers need immediate reassurance about hours - surface this in snippets."
+      "potentialGain": 4,
+      "reasoning": "Position 10.7 for highly relevant query. Small content optimization could push to top 5."
+    },
+    {
+      "type": "local_seo",
+      "keyword": "donuts waikiki",
+      "action": "Add 'Waikiki' prominently to homepage title, create location-specific content section mentioning nearby landmarks",
+      "impact": "high",
+      "effort": "low",
+      "potentialGain": 40,
+      "reasoning": "Position 58 for hyper-relevant local query. Basic on-page optimization could dramatically improve ranking."
     }
   ],
   "opportunities": [
     {
       "type": "japanese_market_expansion",
-      "action": "Expand Japanese content beyond FAQ/menu. Create Japanese-language blog posts about Kona coffee culture, Waikiki attractions, and tourist tips.",
+      "action": "Expand Japanese content - Japan is second largest market with 26 impressions. Optimize Japanese FAQ and menu pages with local search terms",
+      "impact": "medium",
+      "effort": "medium",
+      "reasoning": "Strong Japanese tourist market in Waikiki. Japanese searchers showing intent - capture with localized content."
+    },
+    {
+      "type": "malasada_content_gap",
+      "action": "Create comprehensive malasada content - this Hawaiian donut specialty can capture tourist searches. Include history, ingredients, preparation",
+      "impact": "medium",
+      "effort": "medium",
+      "reasoning": "Korean malasada page getting impressions. Expand to all languages to capture 'malasada waikiki' searches."
+    },
+    {
+      "type": "grand_opening_campaign",
+      "action": "Create time-sensitive content for Feb 25 grand opening - optimize for 'new donut shop waikiki', 'opening soon' terms",
       "impact": "high",
       "effort": "medium",
-      "reasoning": "Japan shows 6.9% CTR (3x higher than US). Japanese tourists are highly engaged - capitalize with targeted content for Waikiki visitors."
-    },
-    {
-      "type": "korean_market_opportunity",
-      "action": "The Korean about-kona-coffee page ranks position 2 with 17 impressions. Create more Korean content, especially menu and location pages.",
-      "impact": "medium",
-      "effort": "medium",
-      "reasoning": "Korean page already ranks well (position 2) but has 0 clicks - optimize snippets and expand Korean content for tourist traffic."
-    },
-    {
-      "type": "about_page_optimization",
-      "action": "Optimize /en/about-kona-coffee page with better keyword targeting and internal links from homepage",
-      "impact": "medium",
-      "effort": "low",
-      "reasoning": "21 impressions at position 15 with 0 clicks. Page has visibility but needs content optimization to rank better."
+      "reasoning": "Opening in 5 days provides unique SEO opportunity. Fresh content about grand opening can capture news and local interest."
     }
   ],
   "insights": [
     {
-      "type": "mobile_dominance",
-      "observation": "Mobile generates 100% of non-tablet clicks (5/6) despite having fewer impressions than desktop",
-      "suggestion": "Prioritize mobile UX and ensure mobile snippets are optimized. Consider mobile-first indexing audit.",
+      "type": "device_performance_gap",
+      "observation": "Mobile CTR (3.5%) dramatically outperforms Desktop (0.33%) despite desktop having 4x more impressions",
+      "suggestion": "Prioritize desktop UX audit. Check for layout shifts, pop-ups, or slow rendering that may discourage clicks on desktop",
       "priority": "high"
     },
     {
-      "type": "international_tourist_opportunity",
-      "observation": "Japanese traffic has 6.9% CTR vs 0.8% US CTR - Japan tourists are highly engaged",
-      "suggestion": "Create pre-opening buzz campaign targeting Japanese travel blogs and social media",
-      "priority": "high"
-    },
-    {
-      "type": "brand_awareness_growing",
-      "observation": "Brand keywords 'kona coffee donut(s)' ranking #1 with strong CTR (33-36%)",
-      "suggestion": "Brand awareness is building pre-opening. Maintain position and prepare for increased volume post-launch.",
+      "type": "brand_keyword_dominance",
+      "observation": "Brand terms 'kona coffee donut' dominate clicks (8/16 = 50%) with excellent CTR (53.8%)",
+      "suggestion": "Brand awareness is working. Focus on capturing non-brand local intent terms to expand reach",
       "priority": "medium"
     },
     {
-      "type": "local_seo_opportunity",
-      "observation": "Many 'near me' queries showing but with low/no clicks despite good positions",
-      "suggestion": "Update Google Business Profile, add more location signals, optimize for local pack appearance",
-      "priority": "high"
+      "type": "pre_launch_metrics",
+      "observation": "Low overall engagement metrics expected for pre-opening business. 16 clicks/week is good baseline",
+      "suggestion": "Post-opening, expect 3-5x increase in branded searches. Prepare FAQ and menu pages for traffic surge",
+      "priority": "medium"
+    },
+    {
+      "type": "international_interest",
+      "observation": "Japan (26 impressions) and Korea (18 impressions on Korean page) showing strong interest",
+      "suggestion": "Waikiki tourist market responding. Ensure multi-language pages have consistent schema and opening info",
+      "priority": "medium"
     }
   ]
 }
