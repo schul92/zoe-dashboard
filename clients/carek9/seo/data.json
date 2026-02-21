@@ -1,12 +1,12 @@
 {
   "metadata": {
     "version": "3.0.0",
-    "collectedAt": "2026-02-20T15:02:44Z",
+    "collectedAt": "2026-02-21T15:00:27.181296Z",
     "client": "carek9",
     "status": "active",
     "period": {
-      "startDate": "2026-01-21",
-      "endDate": "2026-02-19",
+      "startDate": "2026-01-22",
+      "endDate": "2026-02-21",
       "days": 30
     },
     "sources": {
@@ -23,7 +23,7 @@
       "trend": "stable"
     },
     "impressions": {
-      "total": 71,
+      "total": 85,
       "change": 0,
       "trend": "stable"
     },
@@ -34,17 +34,18 @@
     }
   },
   "ga4": {
-    "sessions": 191,
-    "activeUsers": 139,
-    "screenPageViews": 625,
-    "bounceRate": 0.6126,
-    "averageSessionDuration": 279.27,
-    "engagedSessions": 74,
+    "sessions": 211,
+    "activeUsers": 158,
+    "screenPageViews": 651,
+    "bounceRate": 0.6398,
+    "averageSessionDuration": 253.63,
+    "engagedSessions": 76,
     "trafficSources": {
-      "Direct": 135,
+      "Direct": 153,
       "Organic Search": 33,
-      "Referral": 19,
-      "Unassigned": 6,
+      "Organic Shopping": 14,
+      "Unassigned": 11,
+      "Referral": 7,
       "Organic Social": 1
     }
   },
@@ -75,9 +76,9 @@
       {
         "query": "bath tablets",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 15
+        "position": 13.5
       },
       {
         "query": "bathing tablets",
@@ -96,9 +97,9 @@
       {
         "query": "best dog paw cleaner",
         "clicks": 0,
-        "impressions": 10,
+        "impressions": 14,
         "ctr": 0,
-        "position": 24.4
+        "position": 23.6
       },
       {
         "query": "best paw cleaner",
@@ -129,6 +130,13 @@
         "position": 66
       },
       {
+        "query": "canine collaborative",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 8
+      },
+      {
         "query": "dexas mud buster",
         "clicks": 0,
         "impressions": 3,
@@ -138,9 +146,9 @@
       {
         "query": "dexas mudbuster",
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 10,
         "ctr": 0,
-        "position": 8.9
+        "position": 7.3
       },
       {
         "query": "dexas mudbuster dog paw cleaner",
@@ -152,7 +160,7 @@
       {
         "query": "dexas mudbuster large",
         "clicks": 0,
-        "impressions": 5,
+        "impressions": 9,
         "ctr": 0,
         "position": 1
       },
@@ -173,9 +181,9 @@
       {
         "query": "dexas mudbuster portable dog paw cleaner",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 30
+        "position": 17.5
       },
       {
         "query": "dexas mudbuster portable dog paw washer cleaner large matte black special edition pw72025-22wp",
@@ -201,9 +209,16 @@
       {
         "query": "dog food toppers for picky eaters",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 97
+        "position": 89.5
+      },
+      {
+        "query": "dog foot powder",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 1
       },
       {
         "query": "dog foot washers",
@@ -211,20 +226,6 @@
         "impressions": 2,
         "ctr": 0,
         "position": 56.5
-      },
-      {
-        "query": "dog paw cleaner",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 33
-      },
-      {
-        "query": "dog paw cleaners",
-        "clicks": 0,
-        "impressions": 1,
-        "ctr": 0,
-        "position": 55
       }
     ],
     "quickWins": [
@@ -245,9 +246,9 @@
       {
         "query": "bath tablets",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 15
+        "position": 13.5
       },
       {
         "query": "bathing tablets",
@@ -255,6 +256,13 @@
         "impressions": 2,
         "ctr": 0,
         "position": 9
+      },
+      {
+        "query": "canine collaborative",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 8
       },
       {
         "query": "dexas mud buster",
@@ -266,9 +274,9 @@
       {
         "query": "dexas mudbuster",
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 10,
         "ctr": 0,
-        "position": 8.9
+        "position": 7.3
       },
       {
         "query": "dexas mudbuster dog paw cleaner",
@@ -280,7 +288,7 @@
       {
         "query": "dexas mudbuster large",
         "clicks": 0,
-        "impressions": 5,
+        "impressions": 9,
         "ctr": 0,
         "position": 1
       },
@@ -297,6 +305,13 @@
         "impressions": 8,
         "ctr": 0,
         "position": 7.9
+      },
+      {
+        "query": "dexas mudbuster portable dog paw cleaner",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 17.5
       },
       {
         "query": "dexas mudbuster portable dog paw washer cleaner large matte black special edition pw72025-22wp",
@@ -318,6 +333,13 @@
         "impressions": 1,
         "ctr": 0,
         "position": 13
+      },
+      {
+        "query": "dog foot powder",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 1
       }
     ],
     "byPosition": {
@@ -325,7 +347,7 @@
         {
           "query": "dexas mudbuster large",
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 9,
           "ctr": 0,
           "position": 1
         },
@@ -333,6 +355,13 @@
           "query": "dexas mudbuster portable dog paw washer cleaner large matte black special edition pw72025-22wp",
           "clicks": 0,
           "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "dog foot powder",
+          "clicks": 0,
+          "impressions": 2,
           "ctr": 0,
           "position": 1
         }
@@ -346,6 +375,13 @@
           "position": 9
         },
         {
+          "query": "canine collaborative",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
+        },
+        {
           "query": "dexas mud buster",
           "clicks": 0,
           "impressions": 3,
@@ -355,14 +391,14 @@
         {
           "query": "dexas mudbuster",
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 10,
           "ctr": 0,
-          "position": 8.9
+          "position": 7.3
         },
         {
           "query": "dexas mudbuster large",
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 9,
           "ctr": 0,
           "position": 1
         },
@@ -386,6 +422,13 @@
           "impressions": 3,
           "ctr": 0,
           "position": 8.7
+        },
+        {
+          "query": "dog foot powder",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 1
         }
       ],
       "top20": [
@@ -406,9 +449,9 @@
         {
           "query": "bath tablets",
           "clicks": 0,
-          "impressions": 1,
+          "impressions": 2,
           "ctr": 0,
-          "position": 15
+          "position": 13.5
         },
         {
           "query": "bathing tablets",
@@ -416,6 +459,13 @@
           "impressions": 2,
           "ctr": 0,
           "position": 9
+        },
+        {
+          "query": "canine collaborative",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 8
         },
         {
           "query": "dexas mud buster",
@@ -427,9 +477,9 @@
         {
           "query": "dexas mudbuster",
           "clicks": 0,
-          "impressions": 8,
+          "impressions": 10,
           "ctr": 0,
-          "position": 8.9
+          "position": 7.3
         },
         {
           "query": "dexas mudbuster dog paw cleaner",
@@ -441,7 +491,7 @@
         {
           "query": "dexas mudbuster large",
           "clicks": 0,
-          "impressions": 5,
+          "impressions": 9,
           "ctr": 0,
           "position": 1
         },
@@ -458,6 +508,13 @@
           "impressions": 8,
           "ctr": 0,
           "position": 7.9
+        },
+        {
+          "query": "dexas mudbuster portable dog paw cleaner",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 17.5
         },
         {
           "query": "dexas mudbuster portable dog paw washer cleaner large matte black special edition pw72025-22wp",
@@ -479,6 +536,13 @@
           "impressions": 1,
           "ctr": 0,
           "position": 13
+        },
+        {
+          "query": "dog foot powder",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 1
         }
       ]
     },
@@ -492,67 +556,128 @@
     "all": [
       {
         "page": "/",
-        "title": "Homepage",
-        "views": 297,
-        "users": 131
+        "title": "CareK9",
+        "views": 212,
+        "users": 79
+      },
+      {
+        "page": "/",
+        "title": "CareK9",
+        "views": 96,
+        "users": 28
       },
       {
         "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-        "title": "Products Chicken Wrapped Pumpkin Healthy Dog Treats",
+        "title": "Chicken Wrapped Pumpkin Dog Treats",
         "views": 51,
-        "users": 14
-      },
-      {
-        "page": "/collections/treat",
-        "title": "Collections Treat",
-        "views": 38,
-        "users": 23
+        "users": 11
       },
       {
         "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-        "title": "Products Protein Chips Chicken Chips Beef Chips Pork Chips",
-        "views": 29,
-        "users": 9
-      },
-      {
-        "page": "/cart",
-        "title": "Cart",
-        "views": 20,
-        "users": 13
-      },
-      {
-        "page": "/pages/about-us",
-        "title": "Pages About Us",
-        "views": 20,
-        "users": 17
-      },
-      {
-        "page": "/pages/carek9-x-human-canine-collaborative",
-        "title": "Pages Carek9 X Human Canine Collaborative",
-        "views": 18,
-        "users": 16
-      },
-      {
-        "page": "/pages/contact-us",
-        "title": "Pages Contact Us",
-        "views": 13,
-        "users": 9
-      },
-      {
-        "page": "/products/beef-wrapped-pumpkin",
-        "title": "Products Beef Wrapped Pumpkin",
-        "views": 13,
+        "title": "Healthy Dog Protein Chips",
+        "views": 23,
         "users": 8
       },
       {
-        "page": "/collections/food-topper",
-        "title": "Collections Food Topper",
-        "views": 12,
-        "users": 11
+        "page": "/collections/treat",
+        "title": "Dog Treats \u2013 CareK9",
+        "views": 21,
+        "users": 12
+      },
+      {
+        "page": "/pages/about-us",
+        "title": "CareK9",
+        "views": 20,
+        "users": 12
+      },
+      {
+        "page": "/pages/carek9-x-human-canine-collaborative",
+        "title": "CareK9 x Human Canine Collaborative",
+        "views": 19,
+        "users": 17
+      },
+      {
+        "page": "/collections/treat",
+        "title": "Dog Treats",
+        "views": 17,
+        "users": 7
+      },
+      {
+        "page": "/cart",
+        "title": "Your Shopping Cart \u2013 CareK9",
+        "views": 14,
+        "users": 13
+      },
+      {
+        "page": "/pages/contact-us",
+        "title": "CareK9",
+        "views": 13,
+        "users": 9
       }
     ]
   },
   "devices": {},
-  "geography": [],
+  "geography": [
+    {
+      "country": "United States",
+      "region": "California",
+      "sessions": 53,
+      "activeUsers": 26
+    },
+    {
+      "country": "United States",
+      "region": "New Jersey",
+      "sessions": 44,
+      "activeUsers": 19
+    },
+    {
+      "country": "China",
+      "region": "Gansu",
+      "sessions": 16,
+      "activeUsers": 16
+    },
+    {
+      "country": "United States",
+      "region": "New York",
+      "sessions": 9,
+      "activeUsers": 9
+    },
+    {
+      "country": "United States",
+      "region": "Florida",
+      "sessions": 7,
+      "activeUsers": 7
+    },
+    {
+      "country": "United States",
+      "region": "Washington",
+      "sessions": 7,
+      "activeUsers": 7
+    },
+    {
+      "country": "Singapore",
+      "region": "(not set)",
+      "sessions": 5,
+      "activeUsers": 5
+    },
+    {
+      "country": "United States",
+      "region": "Illinois",
+      "sessions": 5,
+      "activeUsers": 5
+    },
+    {
+      "country": "Canada",
+      "region": "Quebec",
+      "sessions": 4,
+      "activeUsers": 4
+    },
+    {
+      "country": "Singapore",
+      "region": "",
+      "sessions": 4,
+      "activeUsers": 4
+    }
+  ],
   "searchAppearance": {}
 }
