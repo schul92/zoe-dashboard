@@ -1,203 +1,146 @@
 {
-  "metadata": {
-    "client": "carek9",
-    "site": "carek9.com",
-    "generatedAt": "2026-02-20T15:02:00Z",
-    "period": {
-      "start": "2026-01-21",
-      "end": "2026-02-19",
+  "generatedAt": "2026-02-21T07:04:00Z",
+  "client": "CareK9",
+  "website": "https://carek9.com/",
+  "reportPeriod": {
+    "ga4": {
+      "start": "2026-01-22",
+      "end": "2026-02-21",
       "days": 30
+    },
+    "gsc": {
+      "start": "2026-01-21",
+      "end": "2026-02-18",
+      "days": 28
     }
   },
-  "kpiCards": [
-    {
-      "id": "sessions",
-      "label": "Sessions",
-      "value": 191,
-      "format": "number",
-      "trend": {
-        "direction": "up",
-        "change": 12.4,
-        "period": "vs prior week"
-      },
-      "icon": "chart-line"
+  "summary": {
+    "traffic": {
+      "sessions": 211,
+      "activeUsers": 158,
+      "pageViews": 651,
+      "pagesPerSession": 3.09,
+      "avgSessionDuration": 253.63,
+      "avgSessionDurationFormatted": "4m 14s",
+      "bounceRate": 63.98,
+      "engagedSessions": 76,
+      "engagementRate": 36.02
     },
-    {
-      "id": "users",
-      "label": "Users",
-      "value": 139,
-      "format": "number",
-      "trend": {
-        "direction": "stable",
-        "change": 3.2,
-        "period": "vs prior week"
-      },
-      "icon": "users"
+    "ecommerce": {
+      "purchases": 6,
+      "revenue": 729.00,
+      "avgOrderValue": 121.50,
+      "addToCarts": 19,
+      "checkouts": 4,
+      "itemsViewed": 110,
+      "itemsPurchased": 20,
+      "cartToViewRate": 31.43,
+      "purchaseToViewRate": 17.14,
+      "checkoutConversionRate": 150.0
     },
-    {
-      "id": "pageviews",
-      "label": "Page Views",
-      "value": 625,
-      "format": "number",
-      "trend": {
-        "direction": "up",
-        "change": 18.5,
-        "period": "vs prior week"
-      },
-      "icon": "eye"
-    },
-    {
-      "id": "bounceRate",
-      "label": "Bounce Rate",
-      "value": 61.26,
-      "format": "percent",
-      "trend": {
-        "direction": "down",
-        "change": -2.1,
-        "period": "vs prior week"
-      },
-      "icon": "arrow-down-right",
-      "invertColor": true
-    },
-    {
-      "id": "engagementRate",
-      "label": "Engagement Rate",
-      "value": 38.74,
-      "format": "percent",
-      "trend": {
-        "direction": "up",
-        "change": 2.1,
-        "period": "vs prior week"
-      },
-      "icon": "heart"
-    },
-    {
-      "id": "avgSessionDuration",
-      "label": "Avg Session",
-      "value": 279.27,
-      "displayValue": "4m 39s",
-      "format": "duration",
-      "trend": {
-        "direction": "up",
-        "change": 8.3,
-        "period": "vs prior week"
-      },
-      "icon": "clock"
-    },
-    {
-      "id": "gscImpressions",
-      "label": "Search Impressions",
-      "value": 71,
-      "format": "number",
-      "trend": {
-        "direction": "stable",
-        "change": 0,
-        "period": "vs prior period"
-      },
-      "icon": "search"
-    },
-    {
-      "id": "gscClicks",
-      "label": "Search Clicks",
-      "value": 0,
-      "format": "number",
-      "trend": {
-        "direction": "stable",
-        "change": 0,
-        "period": "vs prior period"
-      },
-      "icon": "mouse-pointer"
+    "search": {
+      "totalQueries": 25,
+      "totalImpressions": 85,
+      "totalClicks": 0,
+      "avgCTR": 0,
+      "avgPosition": 20.1,
+      "queriesInTop10": 10
     }
-  ],
+  },
   "trafficSources": {
-    "summary": [
-      { "source": "Direct", "sessions": 135, "percent": 70.7 },
-      { "source": "Organic Search", "sessions": 33, "percent": 17.3 },
-      { "source": "Referral", "sessions": 19, "percent": 9.9 },
-      { "source": "Unassigned", "sessions": 6, "percent": 3.1 },
-      { "source": "Organic Social", "sessions": 1, "percent": 0.5 }
-    ],
-    "organicPercent": 17.3
+    "direct": { "sessions": 153, "percentage": 72.51 },
+    "organicSearch": { "sessions": 33, "percentage": 15.64 },
+    "organicShopping": { "sessions": 14, "percentage": 6.64 },
+    "referral": { "sessions": 7, "percentage": 3.32 },
+    "unassigned": { "sessions": 11, "percentage": 5.21 },
+    "organicSocial": { "sessions": 1, "percentage": 0.47 }
   },
-  "topPages": [
-    { "page": "/", "title": "Homepage", "views": 297, "percent": 47.5 },
-    { "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats", "title": "Chicken Wrapped Pumpkin Treats", "views": 51, "percent": 8.2 },
-    { "page": "/collections/treat", "title": "Treats Collection", "views": 38, "percent": 6.1 },
-    { "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips", "title": "Protein Chips", "views": 29, "percent": 4.6 },
-    { "page": "/cart", "title": "Cart", "views": 20, "percent": 3.2 }
+  "devices": {
+    "desktop": { "sessions": 152, "percentage": 70.37, "users": 120 },
+    "mobile": { "sessions": 64, "percentage": 29.63, "users": 43 }
+  },
+  "topRegions": [
+    { "region": "California, US", "sessions": 53 },
+    { "region": "New Jersey, US", "sessions": 44 },
+    { "region": "Gansu, China", "sessions": 16 },
+    { "region": "New York, US", "sessions": 9 },
+    { "region": "Florida, US", "sessions": 7 }
   ],
-  "searchPerformance": {
-    "totalQueries": 25,
-    "totalImpressions": 71,
-    "totalClicks": 0,
-    "avgCTR": 0,
-    "avgPosition": 20.4,
-    "topPositions": {
-      "top3": 2,
-      "top10": 7,
-      "top20": 13
-    },
-    "topQueries": [
-      { "query": "best dog paw cleaner", "impressions": 10, "position": 24.4 },
-      { "query": "dexas mudbuster", "impressions": 8, "position": 8.9 },
-      { "query": "dexas mudbuster paw cleaner", "impressions": 8, "position": 7.9 },
-      { "query": "dexas mudbuster large", "impressions": 5, "position": 1.0 },
-      { "query": "best paw cleaner for dogs", "impressions": 5, "position": 23.6 }
-    ],
-    "quickWins": [
-      { "query": "dexas mudbuster large", "position": 1.0, "impressions": 5, "note": "Position 1 - maintain" },
-      { "query": "dexas mudbuster paw cleaner", "position": 7.9, "impressions": 8, "note": "Close to top 5" },
-      { "query": "dexas mudbuster", "position": 8.9, "impressions": 8, "note": "High volume, optimize" },
-      { "query": "bathing tablets", "position": 9.0, "impressions": 2, "note": "Near page 1 edge" },
-      { "query": "4-in-1 dog paw washer", "position": 10.2, "impressions": 4, "note": "Push to page 1" }
-    ]
-  },
-  "dailyTrend": {
-    "dates": ["2026-02-03", "2026-02-04", "2026-02-05", "2026-02-06", "2026-02-07", "2026-02-08", "2026-02-09", "2026-02-10", "2026-02-11", "2026-02-12", "2026-02-13", "2026-02-14", "2026-02-15", "2026-02-16", "2026-02-17", "2026-02-18", "2026-02-19"],
-    "sessions": [3, 11, 8, 6, 16, 3, 6, 25, 24, 8, 17, 18, 6, 10, 13, 10, 7],
-    "users": [3, 10, 7, 6, 15, 3, 6, 18, 24, 7, 13, 16, 6, 6, 11, 9, 6],
-    "pageviews": [9, 26, 10, 9, 28, 3, 13, 187, 31, 15, 86, 60, 22, 41, 47, 27, 11],
-    "weekOverWeek": {
-      "sessionsChange": 12.4,
-      "usersChange": 3.2,
-      "pageviewsChange": 18.5
-    }
-  },
+  "topProducts": [
+    { "name": "Chicken-Wrapped Pumpkin Super Healthy Dog Treats", "revenue": 251.65, "units": 7 },
+    { "name": "Chicken-Wrapped Pumpkin", "revenue": 143.80, "units": 4 },
+    { "name": "Beef Wrapped Pumpkin", "revenue": 110.85, "units": 3 },
+    { "name": "Healthy Dog Protein Chips", "revenue": 73.90, "units": 2 },
+    { "name": "Functional Dog Food Topper Probiotic+", "revenue": 48.95, "units": 1 }
+  ],
+  "topPages": [
+    { "path": "/", "views": 308, "title": "Homepage" },
+    { "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats", "views": 51, "title": "Chicken Wrapped Pumpkin" },
+    { "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips", "views": 31, "title": "Protein Chips" },
+    { "path": "/collections/treat", "views": 38, "title": "Dog Treats Collection" },
+    { "path": "/pages/about-us", "views": 20, "title": "About Us" }
+  ],
+  "topSearchQueries": [
+    { "query": "best dog paw cleaner", "impressions": 14, "position": 23.6 },
+    { "query": "dexas mudbuster", "impressions": 10, "position": 7.3 },
+    { "query": "dexas mudbuster large", "impressions": 9, "position": 1.0 },
+    { "query": "dexas mudbuster paw cleaner", "impressions": 8, "position": 7.9 },
+    { "query": "best paw cleaner for dogs", "impressions": 5, "position": 23.6 }
+  ],
   "insights": [
     {
       "type": "positive",
-      "title": "Strong Homepage Engagement",
-      "detail": "Homepage accounts for 47.5% of all views with 4m 29s avg session time"
-    },
-    {
-      "type": "opportunity",
-      "title": "Convert Search Impressions",
-      "detail": "71 search impressions but 0 clicks - optimize meta titles/descriptions"
+      "category": "ecommerce",
+      "title": "Strong Revenue Performance",
+      "detail": "Generated $729 from 6 orders (AOV: $121.50). Chicken-Wrapped Pumpkin treats dominate sales at 54% of revenue."
     },
     {
       "type": "positive",
-      "title": "Top Ranking Keywords",
-      "detail": "2 queries in position 1 (dexas mudbuster large) - maintain optimization"
+      "category": "engagement",
+      "title": "Decent Session Duration",
+      "detail": "Average session duration of 4+ minutes indicates users are engaging with product content."
     },
     {
       "type": "opportunity",
-      "title": "Reduce Direct Traffic Dependency",
-      "detail": "70.7% direct traffic - grow organic search from current 17.3%"
+      "category": "seo",
+      "title": "Search Rankings Need Attention",
+      "detail": "0 clicks from GSC despite 85 impressions. Several queries rank well (position 1-10) but aren't converting to clicks."
+    },
+    {
+      "type": "opportunity",
+      "category": "traffic",
+      "title": "Heavy Direct Traffic Dependence",
+      "detail": "72.5% direct traffic suggests brand awareness but limited organic discovery. Diversify acquisition channels."
+    },
+    {
+      "type": "warning",
+      "category": "conversion",
+      "title": "High Bounce Rate",
+      "detail": "64% bounce rate. Consider improving landing page UX and calls-to-action to retain visitors."
     },
     {
       "type": "action",
-      "title": "Quick Win: dexas mudbuster",
-      "detail": "Position 8.9 with 8 impressions - optimize content to reach top 5"
+      "category": "seo",
+      "title": "Optimize Title Tags for CTR",
+      "detail": "Ranking position 1 for 'dexas mudbuster large' with 9 impressions but 0 clicks. Improve meta titles to increase CTR."
+    },
+    {
+      "type": "action",
+      "category": "products",
+      "title": "Focus Marketing on Top Sellers",
+      "detail": "Pumpkin-based treats (chicken + beef wrapped) account for 69% of revenue. Double down on this product line."
+    },
+    {
+      "type": "action",
+      "category": "mobile",
+      "title": "Mobile Experience Optimization",
+      "detail": "30% of traffic is mobile but desktop dominates conversions. Audit mobile checkout experience."
     }
   ],
-  "healthScore": {
-    "overall": 62,
-    "breakdown": {
-      "traffic": 65,
-      "engagement": 70,
-      "seo": 45,
-      "conversion": 68
-    },
-    "grade": "C+"
+  "weekOverWeek": {
+    "trend": "stable",
+    "avgDailySessions": 11.1,
+    "peakDay": { "date": "2026-02-10", "sessions": 25, "pageViews": 187 },
+    "bestRevenueDay": { "date": "2026-02-15", "revenue": 325.55 }
   }
 }
