@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareK9 | SEO Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 500: '#10b981', 600: '#059669' },
+                        surface: { 50: '#18181b', 100: '#1f1f23', 200: '#27272a', 300: '#3f3f46' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #09090b; }
+        .glass { background: rgba(255,255,255,0.02); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.05); }
+        .stat-card { transition: all 0.3s; }
+        .stat-card:hover { transform: translateY(-2px); }
+        .trend-up { color: #22c55e; }
+        .trend-down { color: #ef4444; }
+        .sparkline { height: 40px; }
+    </style>
+</head>
+<body class="min-h-screen text-zinc-100">
+    <!-- Header -->
+    <header class="glass border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl">🐕</span>
+                <div>
+                    <h1 class="text-xl font-bold text-emerald-400">CareK9</h1>
+                    <p class="text-xs text-zinc-500">SEO & Analytics Dashboard</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <span id="lastUpdate" class="text-xs text-zinc-500"></span>
+                <a href="https://carek9.com" target="_blank" class="text-sm text-emerald-400 hover:text-emerald-300">Visit Site →</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <!-- KPI Cards -->
+        <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+            <div class="glass stat-card rounded-xl p-4">
+                <p class="text-xs text-zinc-500 mb-1">Sessions</p>
+                <p id="sessions" class="text-2xl font-bold text-white">-</p>
+                <p id="sessionsChange" class="text-xs mt-1">-</p>
+            </div>
+            <div class="glass stat-card rounded-xl p-4">
+                <p class="text-xs text-zinc-500 mb-1">Users</p>
+                <p id="users" class="text-2xl font-bold text-white">-</p>
+                <p id="usersChange" class="text-xs mt-1">-</p>
+            </div>
+            <div class="glass stat-card rounded-xl p-4">
+                <p class="text-xs text-zinc-500 mb-1">Page Views</p>
+                <p id="pageViews" class="text-2xl font-bold text-white">-</p>
+                <p id="pageViewsChange" class="text-xs mt-1">-</p>
+            </div>
+            <div class="glass stat-card rounded-xl p-4">
+                <p class="text-xs text-zinc-500 mb-1">Bounce Rate</p>
+                <p id="bounceRate" class="text-2xl font-bold text-white">-</p>
+                <p id="bounceRateChange" class="text-xs mt-1">-</p>
+            </div>
+            <div class="glass stat-card rounded-xl p-4">
+                <p class="text-xs text-zinc-500 mb-1">GSC Impressions</p>
+                <p id="impressions" class="text-2xl font-bold text-white">-</p>
+                <p id="impressionsChange" class="text-xs mt-1">-</p>
+            </div>
+            <div class="glass stat-card rounded-xl p-4">
+                <p class="text-xs text-zinc-500 mb-1">Top 10 Keywords</p>
+                <p id="topKeywords" class="text-2xl font-bold text-white">-</p>
+                <p class="text-xs text-zinc-500 mt-1">in position</p>
+            </div>
+        </section>
+
+        <!-- Charts Row -->
+        <section class="grid lg:grid-cols-2 gap-6 mb-8">
+            <!-- Traffic Chart -->
+            <div class="glass rounded-xl p-6">
+                <h3 class="text-sm font-semibold text-zinc-300 mb-4">📈 Daily Sessions (Last 20 Days)</h3>
+                <div id="trafficChart" class="h-64"></div>
+            </div>
+            
+            <!-- Traffic Sources -->
+            <div class="glass rounded-xl p-6">
+                <h3 class="text-sm font-semibold text-zinc-300 mb-4">🎯 Traffic Sources</h3>
+                <div id="sourcesChart" class="h-64"></div>
+            </div>
+        </section>
+
+        <!-- Tables Row -->
+        <section class="grid lg:grid-cols-2 gap-6 mb-8">
+            <!-- Top Pages -->
+            <div class="glass rounded-xl p-6">
+                <h3 class="text-sm font-semibold text-zinc-300 mb-4">📄 Top Pages</h3>
+                <div id="topPagesTable" class="space-y-2 max-h-80 overflow-y-auto"></div>
+            </div>
+            
+            <!-- Top Search Queries -->
+            <div class="glass rounded-xl p-6">
+                <h3 class="text-sm font-semibold text-zinc-300 mb-4">🔍 Top Search Queries</h3>
+                <div id="topQueriesTable" class="space-y-2 max-h-80 overflow-y-auto"></div>
+            </div>
+        </section>
+
+        <!-- Insights -->
+        <section class="glass rounded-xl p-6">
+            <h3 class="text-sm font-semibold text-zinc-300 mb-4">💡 Insights & Recommendations</h3>
+            <div id="insights" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 text-xs text-zinc-600">
+        CareK9 SEO Dashboard • Data from GA4 & GSC • Auto-updated every 6 hours
+    </footer>
+
+    <script>
+        // Load stats.json
+        async function loadDashboard() {
+            try {
+                const statsRes = await fetch('./stats.json');
+                const stats = await statsRes.json();
+                
+                // Update timestamp
+                const updateTime = new Date(stats.generatedAt);
+                document.getElementById('lastUpdate').textContent = `Updated: ${updateTime.toLocaleString()}`;
+                
+                // KPI Cards
+                document.getElementById('sessions').textContent = stats.summary.traffic.sessions.toLocaleString();
+                document.getElementById('sessionsChange').innerHTML = formatChange(stats.comparison.changes.sessions);
+                
+                document.getElementById('users').textContent = stats.summary.traffic.activeUsers.toLocaleString();
+                document.getElementById('usersChange').innerHTML = formatChange(stats.comparison.changes.users);
+                
+                document.getElementById('pageViews').textContent = stats.summary.traffic.pageViews.toLocaleString();
+                document.getElementById('pageViewsChange').innerHTML = formatChange(stats.comparison.changes.pageViews);
+                
+                document.getElementById('bounceRate').textContent = stats.summary.traffic.bounceRate + '%';
+                document.getElementById('bounceRateChange').innerHTML = `<span class="text-zinc-500">vs prev period</span>`;
+                
+                document.getElementById('impressions').textContent = stats.summary.search.totalImpressions.toLocaleString();
+                document.getElementById('impressionsChange').innerHTML = formatChange(stats.comparison.changes.impressions);
+                
+                document.getElementById('topKeywords').textContent = stats.summary.search.queriesInTop10;
+                
+                // Traffic Chart
+                renderTrafficChart(stats.dailyTrend);
+                
+                // Sources Chart
+                renderSourcesChart(stats.trafficSources);
+                
+                // Top Pages
+                renderTopPages(stats.topPages);
+                
+                // Top Queries
+                renderTopQueries(stats.topSearchQueries);
+                
+                // Insights
+                renderInsights(stats.insights);
+                
+            } catch (e) {
+                console.error('Failed to load dashboard:', e);
+            }
+        }
+        
+        function formatChange(change) {
+            if (!change) return '<span class="text-zinc-500">-</span>';
+            const isPositive = change.startsWith('+');
+            const cls = isPositive ? 'trend-up' : 'trend-down';
+            return `<span class="${cls}">${change}</span>`;
+        }
+        
+        function renderTrafficChart(data) {
+            new ApexCharts(document.getElementById('trafficChart'), {
+                chart: { type: 'area', height: 256, toolbar: { show: false }, background: 'transparent' },
+                series: [
+                    { name: 'Sessions', data: data.map(d => d.sessions) },
+                    { name: 'Users', data: data.map(d => d.users) }
+                ],
+                xaxis: { categories: data.map(d => d.date.slice(5)), labels: { style: { colors: '#71717a' } } },
+                yaxis: { labels: { style: { colors: '#71717a' } } },
+                colors: ['#10b981', '#3b82f6'],
+                stroke: { curve: 'smooth', width: 2 },
+                fill: { type: 'gradient', gradient: { opacityFrom: 0.4, opacityTo: 0 } },
+                grid: { borderColor: '#27272a' },
+                legend: { labels: { colors: '#a1a1aa' } },
+                theme: { mode: 'dark' }
+            }).render();
+        }
+        
+        function renderSourcesChart(sources) {
+            const data = [
+                { name: 'Direct', value: sources.direct.sessions },
+                { name: 'Organic', value: sources.organicSearch.sessions },
+                { name: 'Shopping', value: sources.organicShopping?.sessions || 0 },
+                { name: 'Referral', value: sources.referral.sessions },
+                { name: 'Social', value: sources.organicSocial?.sessions || 0 }
+            ];
+            
+            new ApexCharts(document.getElementById('sourcesChart'), {
+                chart: { type: 'donut', height: 256, background: 'transparent' },
+                series: data.map(d => d.value),
+                labels: data.map(d => d.name),
+                colors: ['#10b981', '#3b82f6', '#f59e0b', '#8b5cf6', '#ec4899'],
+                legend: { position: 'bottom', labels: { colors: '#a1a1aa' } },
+                dataLabels: { enabled: false },
+                plotOptions: { pie: { donut: { size: '65%' } } },
+                theme: { mode: 'dark' }
+            }).render();
+        }
+        
+        function renderTopPages(pages) {
+            const container = document.getElementById('topPagesTable');
+            container.innerHTML = pages.slice(0, 10).map((p, i) => `
+                <div class="flex items-center justify-between p-2 rounded hover:bg-zinc-800/50 transition">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-zinc-500 w-4">${i + 1}</span>
+                        <span class="text-sm text-zinc-300 truncate max-w-[200px]" title="${p.path}">${p.title || p.path}</span>
+                    </div>
+                    <span class="text-sm font-medium text-emerald-400">${p.views}</span>
+                </div>
+            `).join('');
+        }
+        
+        function renderTopQueries(queries) {
+            const container = document.getElementById('topQueriesTable');
+            container.innerHTML = queries.slice(0, 10).map((q, i) => `
+                <div class="flex items-center justify-between p-2 rounded hover:bg-zinc-800/50 transition">
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-zinc-500 w-4">${i + 1}</span>
+                        <span class="text-sm text-zinc-300 truncate max-w-[180px]" title="${q.query}">${q.query}</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-xs">
+                        <span class="text-zinc-400">${q.impressions} imp</span>
+                        <span class="text-emerald-400 font-medium">pos ${q.position.toFixed(1)}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function renderInsights(insights) {
+            const container = document.getElementById('insights');
+            const icons = { positive: '✅', opportunity: '🎯', warning: '⚠️', action: '🚀' };
+            const colors = { positive: 'border-green-500/30', opportunity: 'border-blue-500/30', warning: 'border-amber-500/30', action: 'border-purple-500/30' };
+            
+            container.innerHTML = insights.slice(0, 6).map(i => `
+                <div class="p-4 rounded-lg border ${colors[i.type]} bg-zinc-900/50">
+                    <div class="flex items-start gap-2">
+                        <span>${icons[i.type]}</span>
+                        <div>
+                            <p class="text-sm font-medium text-zinc-200">${i.title}</p>
+                            <p class="text-xs text-zinc-500 mt-1">${i.detail}</p>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        loadDashboard();
+    </script>
+</body>
+</html>
