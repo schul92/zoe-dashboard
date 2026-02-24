@@ -1,224 +1,201 @@
 {
-  "generatedAt": "2026-02-23T07:02:00Z",
+  "generatedAt": "2026-02-24T07:02:00Z",
   "client": "CareK9",
   "website": "https://carek9.com/",
   "reportPeriod": {
     "ga4": {
-      "start": "2026-01-24",
-      "end": "2026-02-23",
+      "start": "2026-01-25",
+      "end": "2026-02-24",
       "days": 30
     },
     "gsc": {
-      "start": "2026-01-23",
-      "end": "2026-02-20",
-      "days": 28
+      "start": "2026-01-22",
+      "end": "2026-02-21",
+      "days": 30
     }
   },
   "summary": {
     "traffic": {
-      "sessions": 227,
-      "activeUsers": 173,
-      "pageViews": 697,
-      "pagesPerSession": 3.07,
-      "avgSessionDuration": 257.8,
-      "avgSessionDurationFormatted": "4m 18s",
-      "bounceRate": 63.0,
-      "engagedSessions": 84,
-      "engagementRate": 37.0,
-      "newUsers": 172
+      "sessions": 268,
+      "activeUsers": 184,
+      "pageViews": 928,
+      "pagesPerSession": 3.46,
+      "avgSessionDuration": 265.2,
+      "avgSessionDurationFormatted": "4m 25s",
+      "bounceRate": 67.16,
+      "engagedSessions": 88,
+      "engagementRate": 32.84,
+      "newUsers": 182
     },
     "search": {
       "totalQueries": 25,
-      "totalImpressions": 102,
-      "totalClicks": 0,
-      "avgCTR": 0,
-      "avgPosition": 17.6,
-      "queriesInTop10": 10
+      "totalImpressions": 119,
+      "totalClicks": 1,
+      "avgCTR": 0.84,
+      "avgPosition": 15.2,
+      "queriesInTop10": 9
     }
   },
   "trafficSources": {
-    "direct": { "sessions": 164, "percentage": 72.25, "bounceRate": 67.68 },
-    "organicSearch": { "sessions": 36, "percentage": 15.86, "bounceRate": 55.56 },
-    "organicShopping": { "sessions": 14, "percentage": 6.17, "bounceRate": 35.71 },
-    "referral": { "sessions": 7, "percentage": 3.08, "bounceRate": 28.57 },
-    "unassigned": { "sessions": 7, "percentage": 3.08, "bounceRate": 100.0 },
-    "organicSocial": { "sessions": 2, "percentage": 0.88, "bounceRate": 50.0 }
+    "direct": { "sessions": 189, "percentage": 70.52, "bounceRate": 68.0 },
+    "organicSearch": { "sessions": 40, "percentage": 14.93, "bounceRate": 55.0 },
+    "unassigned": { "sessions": 26, "percentage": 9.70, "bounceRate": 70.0 },
+    "referral": { "sessions": 9, "percentage": 3.36, "bounceRate": 30.0 },
+    "organicSocial": { "sessions": 4, "percentage": 1.49, "bounceRate": 50.0 }
   },
   "topPages": [
-    { "path": "/", "views": 318, "title": "Homepage" },
-    { "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats", "views": 52, "title": "Chicken Wrapped Pumpkin" },
-    { "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips", "views": 51, "title": "Protein Chips" },
-    { "path": "/collections/treat", "views": 42, "title": "Dog Treats Collection" },
-    { "path": "/cart", "views": 27, "title": "Shopping Cart" },
-    { "path": "/pages/about-us", "views": 21, "title": "About Us" },
-    { "path": "/pages/carek9-x-human-canine-collaborative", "views": 19, "title": "Human Canine Collaborative" },
-    { "path": "/collections/all", "views": 15, "title": "All Products" },
-    { "path": "/pages/contact-us", "views": 14, "title": "Contact Us" },
-    { "path": "/products/beef-wrapped-pumpkin", "views": 13, "title": "Beef Wrapped Pumpkin" }
+    { "path": "/", "views": 454, "title": "Homepage" },
+    { "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips", "views": 66, "title": "Protein Chips" },
+    { "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats", "views": 57, "title": "Chicken Wrapped Pumpkin" },
+    { "path": "/collections/treat", "views": 55, "title": "Dog Treats Collection" },
+    { "path": "/cart", "views": 28, "title": "Shopping Cart" },
+    { "path": "/pages/about-us", "views": 25, "title": "About Us" },
+    { "path": "/blogs/news", "views": 22, "title": "News Blog" },
+    { "path": "/collections/all", "views": 21, "title": "All Products" },
+    { "path": "/pages/carek9-x-human-canine-collaborative", "views": 20, "title": "Human Canine Collaborative" },
+    { "path": "/pages/contact-us", "views": 17, "title": "Contact Us" }
   ],
   "topSearchQueries": [
-    { "query": "best dog paw cleaner", "impressions": 18, "position": 21.1 },
-    { "query": "dexas mudbuster", "impressions": 14, "position": 6.8 },
-    { "query": "dexas mudbuster paw cleaner", "impressions": 11, "position": 6.0 },
-    { "query": "dexas mudbuster large", "impressions": 9, "position": 1.0 },
-    { "query": "best paw cleaner for dogs", "impressions": 6, "position": 21.7 },
-    { "query": "dexas paw cleaner", "impressions": 5, "position": 5.6 },
-    { "query": "4-in-1 dog paw washer", "impressions": 4, "position": 10.2 },
-    { "query": "dexas mud buster", "impressions": 4, "position": 4.0 }
+    { "query": "best dog paw cleaner", "impressions": 21, "clicks": 0, "position": 20.6 },
+    { "query": "groom bathing tablets", "impressions": 14, "clicks": 1, "position": 4.2 },
+    { "query": "dexas mudbuster", "impressions": 14, "clicks": 0, "position": 6.8 },
+    { "query": "dexas mudbuster paw cleaner", "impressions": 11, "clicks": 0, "position": 6.0 },
+    { "query": "dexas mudbuster large", "impressions": 9, "clicks": 0, "position": 1.0 },
+    { "query": "best paw cleaner for dogs", "impressions": 6, "clicks": 0, "position": 21.7 },
+    { "query": "dexas mud buster", "impressions": 5, "clicks": 0, "position": 12.2 },
+    { "query": "dexas paw cleaner", "impressions": 5, "clicks": 0, "position": 5.6 }
   ],
   "insights": [
     {
       "type": "positive",
       "category": "traffic",
-      "title": "Traffic Growing",
-      "detail": "Sessions up 2.7% (227 vs 221) with users up 3.6% (173 vs 167). Steady month-over-month growth."
+      "title": "Strong Traffic Growth",
+      "detail": "Sessions up 18.1% (268 vs 227) with users up 6.4% (184 vs 173). Significant month-over-month acceleration."
     },
     {
       "type": "positive",
-      "category": "engagement",
-      "title": "Improved Bounce Rate",
-      "detail": "Bounce rate dropped from 63.8% to 63.0%. Users are engaging more with content."
+      "category": "traffic",
+      "title": "Pageviews Surge",
+      "detail": "Pageviews jumped 33.1% (928 vs 697). Users viewing 3.46 pages per session, up from 3.07."
+    },
+    {
+      "type": "positive",
+      "category": "seo",
+      "title": "First GSC Click!",
+      "detail": "Got 1 click from 'groom bathing tablets' (position 4.2). First organic click recorded this period."
+    },
+    {
+      "type": "positive",
+      "category": "seo",
+      "title": "Search Visibility Growing",
+      "detail": "GSC impressions up 16.7% (119 vs 102). More potential customers discovering CareK9 in search."
     },
     {
       "type": "positive",
       "category": "seo",
       "title": "Top Position Rankings",
-      "detail": "Ranking #1 for 'dexas mudbuster large' (9 impressions). 10 queries now in top 10 positions."
-    },
-    {
-      "type": "positive",
-      "category": "seo",
-      "title": "Increased Search Visibility",
-      "detail": "GSC impressions up 10.9% (102 vs 92). More people seeing CareK9 in search results."
+      "detail": "Ranking #1 for 'dexas mudbuster large'. 9 queries now ranking in top 10 positions."
     },
     {
       "type": "opportunity",
       "category": "seo",
-      "title": "Zero Click-Through Rate",
-      "detail": "0 clicks from 102 impressions. Meta titles/descriptions urgently need optimization to convert visibility to traffic."
+      "title": "Low Click-Through Rate",
+      "detail": "Only 0.84% CTR (1 click from 119 impressions). Meta titles/descriptions need optimization."
     },
     {
       "type": "opportunity",
       "category": "traffic",
-      "title": "Heavy Direct Traffic Dependence",
-      "detail": "72.3% direct traffic. Organic Search only 15.9%. SEO and content marketing can diversify acquisition."
+      "title": "Direct Traffic Dominant",
+      "detail": "70.5% direct traffic. SEO and content marketing can help diversify acquisition channels."
     },
     {
       "type": "warning",
-      "category": "conversion",
-      "title": "High Bounce Rate on Direct",
-      "detail": "67.7% bounce rate from direct traffic. Landing pages may not meet visitor expectations."
+      "category": "engagement",
+      "title": "Bounce Rate Increased",
+      "detail": "Bounce rate rose to 67.16% from 63.0%. Review landing page experience and content relevance."
     },
     {
       "type": "action",
       "category": "seo",
-      "title": "Optimize Title Tags for CTR",
-      "detail": "Dexas mudbuster keywords ranking well but getting 0 clicks. Add compelling CTAs to meta titles."
-    },
-    {
-      "type": "action",
-      "category": "traffic",
-      "title": "Leverage Organic Shopping",
-      "detail": "Organic Shopping has best bounce rate (35.7%). Optimize Google Merchant Center listings."
+      "title": "Optimize High-Impression Keywords",
+      "detail": "'Best dog paw cleaner' has 21 impressions but ranks position 20.6. Target with dedicated content."
     },
     {
       "type": "action",
       "category": "content",
-      "title": "Boost Protein Chips Visibility",
-      "detail": "Protein Chips page jumped to #3 with 51 views (up from #4). Create more content around this product."
+      "title": "Protein Chips Momentum",
+      "detail": "Protein Chips page jumped to #2 (66 views, up from 51). Double down on this product's visibility."
     }
   ],
   "weekOverWeek": {
     "trend": "growing",
-    "avgDailySessions": 11.35,
-    "sessionsChange": "+6.36%",
-    "usersChange": "+3.59%",
-    "pageviewsChange": "+10.57%"
+    "avgDailySessions": 8.93,
+    "sessionsChange": "+18.06%",
+    "usersChange": "+6.36%",
+    "pageviewsChange": "+33.14%"
   },
   "comparison": {
     "previousPeriod": {
-      "sessions": 221,
-      "users": 167,
-      "pageViews": 678,
-      "impressions": 92
-    },
-    "currentPeriod": {
       "sessions": 227,
       "users": 173,
       "pageViews": 697,
       "impressions": 102
     },
+    "currentPeriod": {
+      "sessions": 268,
+      "users": 184,
+      "pageViews": 928,
+      "impressions": 119
+    },
     "changes": {
-      "sessions": "+2.71%",
-      "users": "+3.59%",
-      "pageViews": "+2.80%",
-      "impressions": "+10.87%"
+      "sessions": "+18.06%",
+      "users": "+6.36%",
+      "pageViews": "+33.14%",
+      "impressions": "+16.67%"
     }
   },
   "kpiCards": [
     {
       "label": "Sessions",
-      "value": 227,
-      "change": "+2.7%",
+      "value": 268,
+      "change": "+18.1%",
       "trend": "up",
       "icon": "users"
     },
     {
       "label": "Page Views",
-      "value": 697,
-      "change": "+2.8%",
+      "value": 928,
+      "change": "+33.1%",
       "trend": "up",
       "icon": "eye"
     },
     {
       "label": "Bounce Rate",
-      "value": "63.0%",
-      "change": "-0.8%",
-      "trend": "up",
-      "icon": "arrow-down"
+      "value": "67.2%",
+      "change": "+4.2%",
+      "trend": "down",
+      "icon": "arrow-up"
     },
     {
-      "label": "Avg Session",
-      "value": "4m 18s",
-      "change": "+1.0%",
+      "label": "Pages/Session",
+      "value": "3.46",
+      "change": "+12.7%",
       "trend": "up",
-      "icon": "clock"
+      "icon": "layers"
     },
     {
       "label": "GSC Impressions",
-      "value": 102,
-      "change": "+10.9%",
+      "value": 119,
+      "change": "+16.7%",
       "trend": "up",
       "icon": "search"
     },
     {
       "label": "Top 10 Keywords",
-      "value": 10,
+      "value": 9,
       "change": "-1",
       "trend": "down",
       "icon": "trending-up"
     }
-  ],
-  "dailyTrend": [
-    { "date": "2026-02-03", "sessions": 3, "users": 3, "pageviews": 9 },
-    { "date": "2026-02-04", "sessions": 11, "users": 10, "pageviews": 26 },
-    { "date": "2026-02-05", "sessions": 8, "users": 7, "pageviews": 10 },
-    { "date": "2026-02-06", "sessions": 6, "users": 6, "pageviews": 9 },
-    { "date": "2026-02-07", "sessions": 16, "users": 15, "pageviews": 28 },
-    { "date": "2026-02-08", "sessions": 3, "users": 3, "pageviews": 3 },
-    { "date": "2026-02-09", "sessions": 6, "users": 6, "pageviews": 13 },
-    { "date": "2026-02-10", "sessions": 25, "users": 18, "pageviews": 187 },
-    { "date": "2026-02-11", "sessions": 24, "users": 24, "pageviews": 31 },
-    { "date": "2026-02-12", "sessions": 8, "users": 7, "pageviews": 15 },
-    { "date": "2026-02-13", "sessions": 17, "users": 13, "pageviews": 86 },
-    { "date": "2026-02-14", "sessions": 18, "users": 16, "pageviews": 60 },
-    { "date": "2026-02-15", "sessions": 6, "users": 6, "pageviews": 22 },
-    { "date": "2026-02-16", "sessions": 10, "users": 6, "pageviews": 41 },
-    { "date": "2026-02-17", "sessions": 13, "users": 11, "pageviews": 47 },
-    { "date": "2026-02-18", "sessions": 10, "users": 9, "pageviews": 27 },
-    { "date": "2026-02-19", "sessions": 8, "users": 7, "pageviews": 11 },
-    { "date": "2026-02-20", "sessions": 9, "users": 9, "pageviews": 9 },
-    { "date": "2026-02-21", "sessions": 16, "users": 16, "pageviews": 32 },
-    { "date": "2026-02-22", "sessions": 10, "users": 10, "pageviews": 31 }
   ]
 }
