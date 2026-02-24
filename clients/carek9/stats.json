@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-24T07:02:00Z",
+  "generatedAt": "2026-02-24T22:36:14Z",
   "client": "CareK9",
   "website": "https://carek9.com/",
   "reportPeriod": {
@@ -16,15 +16,15 @@
   },
   "summary": {
     "traffic": {
-      "sessions": 268,
-      "activeUsers": 184,
-      "pageViews": 928,
-      "pagesPerSession": 3.46,
+      "sessions": 271,
+      "activeUsers": 186,
+      "pageViews": 931,
+      "pagesPerSession": 3.44,
       "avgSessionDuration": 265.2,
       "avgSessionDurationFormatted": "4m 25s",
-      "bounceRate": 67.16,
+      "bounceRate": 67.53,
       "engagedSessions": 88,
-      "engagementRate": 32.84,
+      "engagementRate": 32.47,
       "newUsers": 182
     },
     "search": {
@@ -37,33 +37,128 @@
     }
   },
   "trafficSources": {
-    "direct": { "sessions": 189, "percentage": 70.52, "bounceRate": 68.0 },
-    "organicSearch": { "sessions": 40, "percentage": 14.93, "bounceRate": 55.0 },
-    "unassigned": { "sessions": 26, "percentage": 9.70, "bounceRate": 70.0 },
-    "referral": { "sessions": 9, "percentage": 3.36, "bounceRate": 30.0 },
-    "organicSocial": { "sessions": 4, "percentage": 1.49, "bounceRate": 50.0 }
+    "direct": {
+      "sessions": 192,
+      "percentage": 70.85
+    },
+    "organicSearch": {
+      "sessions": 40,
+      "percentage": 14.76
+    },
+    "unassigned": {
+      "sessions": 26,
+      "percentage": 9.59
+    },
+    "referral": {
+      "sessions": 29,
+      "percentage": 10.7
+    },
+    "organicSocial": {
+      "sessions": 4,
+      "percentage": 1.48
+    }
   },
   "topPages": [
-    { "path": "/", "views": 454, "title": "Homepage" },
-    { "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips", "views": 66, "title": "Protein Chips" },
-    { "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats", "views": 57, "title": "Chicken Wrapped Pumpkin" },
-    { "path": "/collections/treat", "views": 55, "title": "Dog Treats Collection" },
-    { "path": "/cart", "views": 28, "title": "Shopping Cart" },
-    { "path": "/pages/about-us", "views": 25, "title": "About Us" },
-    { "path": "/blogs/news", "views": 22, "title": "News Blog" },
-    { "path": "/collections/all", "views": 21, "title": "All Products" },
-    { "path": "/pages/carek9-x-human-canine-collaborative", "views": 20, "title": "Human Canine Collaborative" },
-    { "path": "/pages/contact-us", "views": 17, "title": "Contact Us" }
+    {
+      "path": "/",
+      "views": 456,
+      "title": "Homepage"
+    },
+    {
+      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "views": 66,
+      "title": "Protein Chips Chicken Chips Beef Chips Pork Chips"
+    },
+    {
+      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "views": 57,
+      "title": "Chicken Wrapped Pumpkin Healthy Dog Treats"
+    },
+    {
+      "path": "/collections/treat",
+      "views": 55,
+      "title": "Treat"
+    },
+    {
+      "path": "/cart",
+      "views": 28,
+      "title": "Cart"
+    },
+    {
+      "path": "/pages/about-us",
+      "views": 25,
+      "title": "About Us"
+    },
+    {
+      "path": "/blogs/news",
+      "views": 22,
+      "title": "News"
+    },
+    {
+      "path": "/collections/all",
+      "views": 21,
+      "title": "All"
+    },
+    {
+      "path": "/pages/carek9-x-human-canine-collaborative",
+      "views": 21,
+      "title": "Carek9 X Human Canine Collaborative"
+    },
+    {
+      "path": "/pages/contact-us",
+      "views": 17,
+      "title": "Contact Us"
+    }
   ],
   "topSearchQueries": [
-    { "query": "best dog paw cleaner", "impressions": 21, "clicks": 0, "position": 20.6 },
-    { "query": "groom bathing tablets", "impressions": 14, "clicks": 1, "position": 4.2 },
-    { "query": "dexas mudbuster", "impressions": 14, "clicks": 0, "position": 6.8 },
-    { "query": "dexas mudbuster paw cleaner", "impressions": 11, "clicks": 0, "position": 6.0 },
-    { "query": "dexas mudbuster large", "impressions": 9, "clicks": 0, "position": 1.0 },
-    { "query": "best paw cleaner for dogs", "impressions": 6, "clicks": 0, "position": 21.7 },
-    { "query": "dexas mud buster", "impressions": 5, "clicks": 0, "position": 12.2 },
-    { "query": "dexas paw cleaner", "impressions": 5, "clicks": 0, "position": 5.6 }
+    {
+      "query": "best dog paw cleaner",
+      "impressions": 21,
+      "clicks": 0,
+      "position": 20.6
+    },
+    {
+      "query": "groom bathing tablets",
+      "impressions": 14,
+      "clicks": 1,
+      "position": 4.2
+    },
+    {
+      "query": "dexas mudbuster",
+      "impressions": 14,
+      "clicks": 0,
+      "position": 6.8
+    },
+    {
+      "query": "dexas mudbuster paw cleaner",
+      "impressions": 11,
+      "clicks": 0,
+      "position": 6.0
+    },
+    {
+      "query": "dexas mudbuster large",
+      "impressions": 9,
+      "clicks": 0,
+      "position": 1.0
+    },
+    {
+      "query": "best paw cleaner for dogs",
+      "impressions": 6,
+      "clicks": 0,
+      "position": 21.7
+    },
+    {
+      "query": "dexas mud buster",
+      "impressions": 5,
+      "clicks": 0,
+      "position": 12.2
+    },
+    {
+      "query": "dexas paw cleaner",
+      "impressions": 5,
+      "clicks": 0,
+      "position": 5.6
+    }
   ],
   "insights": [
     {
@@ -129,10 +224,10 @@
   ],
   "weekOverWeek": {
     "trend": "growing",
-    "avgDailySessions": 8.93,
-    "sessionsChange": "+18.06%",
-    "usersChange": "+6.36%",
-    "pageviewsChange": "+33.14%"
+    "avgDailySessions": 9.03,
+    "sessionsChange": "+19.4%",
+    "usersChange": "+7.5%",
+    "pageviewsChange": "+33.6%"
   },
   "comparison": {
     "previousPeriod": {
@@ -142,43 +237,43 @@
       "impressions": 102
     },
     "currentPeriod": {
-      "sessions": 268,
-      "users": 184,
-      "pageViews": 928,
+      "sessions": 271,
+      "users": 186,
+      "pageViews": 931,
       "impressions": 119
     },
     "changes": {
-      "sessions": "+18.06%",
-      "users": "+6.36%",
-      "pageViews": "+33.14%",
+      "sessions": "+19.4%",
+      "users": "+7.5%",
+      "pageViews": "+33.6%",
       "impressions": "+16.67%"
     }
   },
   "kpiCards": [
     {
       "label": "Sessions",
-      "value": 268,
-      "change": "+18.1%",
+      "value": 271,
+      "change": "+19.4%",
       "trend": "up",
       "icon": "users"
     },
     {
       "label": "Page Views",
-      "value": 928,
-      "change": "+33.1%",
+      "value": 931,
+      "change": "+33.6%",
       "trend": "up",
       "icon": "eye"
     },
     {
       "label": "Bounce Rate",
-      "value": "67.2%",
+      "value": "67.53%",
       "change": "+4.2%",
       "trend": "down",
       "icon": "arrow-up"
     },
     {
       "label": "Pages/Session",
-      "value": "3.46",
+      "value": "3.44",
       "change": "+12.7%",
       "trend": "up",
       "icon": "layers"

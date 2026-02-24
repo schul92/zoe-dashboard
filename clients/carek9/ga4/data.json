@@ -4,18 +4,18 @@
     "start": "2026-01-25",
     "end": "2026-02-24"
   },
-  "fetched_at": "2026-02-24T07:01:25.145085",
+  "fetched_at": "2026-02-24T14:35:58.202980",
   "metrics": {
-    "sessions": 268,
-    "users": 184,
-    "pageviews": 928,
-    "bounce_rate": 67.16
+    "sessions": 271,
+    "users": 186,
+    "pageviews": 931,
+    "bounce_rate": 67.53
   },
   "top_pages": [
     {
       "pagePath": "/",
-      "screenPageViews": 454,
-      "sessions": 186
+      "screenPageViews": 456,
+      "sessions": 188
     },
     {
       "pagePath": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
@@ -54,8 +54,8 @@
     },
     {
       "pagePath": "/pages/carek9-x-human-canine-collaborative",
-      "screenPageViews": 20,
-      "sessions": 18
+      "screenPageViews": 21,
+      "sessions": 19
     },
     {
       "pagePath": "/pages/contact-us",
@@ -66,8 +66,8 @@
   "traffic_sources": [
     {
       "sessionSource": "(direct)",
-      "sessions": 189,
-      "totalUsers": 145
+      "sessions": 192,
+      "totalUsers": 147
     },
     {
       "sessionSource": "google",
