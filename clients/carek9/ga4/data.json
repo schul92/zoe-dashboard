@@ -1,298 +1,118 @@
 {
-  "propertyId": "523137923",
-  "dateRange": {
-    "startDate": "2026-01-24",
-    "endDate": "2026-02-23"
+  "property_id": "523137923",
+  "date_range": {
+    "start": "2026-01-25",
+    "end": "2026-02-24"
   },
-  "fetchedAt": "2026-02-23T15:01:07.037923Z",
-  "summary": {
-    "sessions": 227,
-    "totalUsers": 173,
-    "screenPageViews": 697,
-    "bounceRate": 63.0,
-    "averageSessionDuration": 257.8,
-    "newUsers": 172
+  "fetched_at": "2026-02-24T07:01:25.145085",
+  "metrics": {
+    "sessions": 268,
+    "users": 184,
+    "pageviews": 928,
+    "bounce_rate": 67.16
   },
-  "topPages": [
+  "top_pages": [
     {
-      "path": "/",
-      "pageviews": 318,
-      "sessions": 152,
-      "users": 113
+      "pagePath": "/",
+      "screenPageViews": 454,
+      "sessions": 186
     },
     {
-      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": 52,
-      "sessions": 15,
-      "users": 12
+      "pagePath": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "screenPageViews": 66,
+      "sessions": 21
     },
     {
-      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 51,
-      "sessions": 18,
-      "users": 16
+      "pagePath": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "screenPageViews": 57,
+      "sessions": 19
     },
     {
-      "path": "/collections/treat",
-      "pageviews": 42,
-      "sessions": 28,
-      "users": 23
+      "pagePath": "/collections/treat",
+      "screenPageViews": 55,
+      "sessions": 37
     },
     {
-      "path": "/cart",
-      "pageviews": 27,
-      "sessions": 19,
-      "users": 17
+      "pagePath": "/cart",
+      "screenPageViews": 28,
+      "sessions": 20
     },
     {
-      "path": "/pages/about-us",
-      "pageviews": 21,
-      "sessions": 19,
-      "users": 13
+      "pagePath": "/pages/about-us",
+      "screenPageViews": 25,
+      "sessions": 23
     },
     {
-      "path": "/pages/carek9-x-human-canine-collaborative",
-      "pageviews": 19,
-      "sessions": 17,
-      "users": 17
+      "pagePath": "/blogs/news",
+      "screenPageViews": 22,
+      "sessions": 13
     },
     {
-      "path": "/collections/all",
-      "pageviews": 15,
-      "sessions": 13,
-      "users": 12
+      "pagePath": "/collections/all",
+      "screenPageViews": 21,
+      "sessions": 18
     },
     {
-      "path": "/pages/contact-us",
-      "pageviews": 14,
-      "sessions": 10,
-      "users": 10
+      "pagePath": "/pages/carek9-x-human-canine-collaborative",
+      "screenPageViews": 20,
+      "sessions": 18
     },
     {
-      "path": "/products/beef-wrapped-pumpkin",
-      "pageviews": 13,
-      "sessions": 8,
-      "users": 7
-    },
-    {
-      "path": "/collections/food-topper",
-      "pageviews": 12,
-      "sessions": 11,
-      "users": 9
-    },
-    {
-      "path": "/collections/paw-care",
-      "pageviews": 11,
-      "sessions": 10,
-      "users": 8
-    },
-    {
-      "path": "/blogs/news",
-      "pageviews": 9,
-      "sessions": 2,
-      "users": 2
-    },
-    {
-      "path": "/products/pars-mint-dental-cookies",
-      "pageviews": 8,
-      "sessions": 8,
-      "users": 8
-    },
-    {
-      "path": "/products/beef-training-treat",
-      "pageviews": 7,
-      "sessions": 7,
-      "users": 7
-    },
-    {
-      "path": "/products/salmon-skin-bites",
-      "pageviews": 7,
-      "sessions": 7,
-      "users": 6
-    },
-    {
-      "path": "/products/paw-balm",
-      "pageviews": 5,
-      "sessions": 5,
-      "users": 5
-    },
-    {
-      "path": "/account/login",
-      "pageviews": 4,
-      "sessions": 3,
-      "users": 3
-    },
-    {
-      "path": "/collections/accessories",
-      "pageviews": 4,
-      "sessions": 4,
-      "users": 1
-    },
-    {
-      "path": "/collections/bath-product",
-      "pageviews": 4,
-      "sessions": 4,
-      "users": 4
+      "pagePath": "/pages/contact-us",
+      "screenPageViews": 17,
+      "sessions": 12
     }
   ],
-  "trafficSources": [
+  "traffic_sources": [
     {
-      "channel": "Direct",
-      "sessions": 164,
-      "users": 136,
-      "bounceRate": 67.68
+      "sessionSource": "(direct)",
+      "sessions": 189,
+      "totalUsers": 145
     },
     {
-      "channel": "Organic Search",
-      "sessions": 36,
-      "users": 26,
-      "bounceRate": 55.56
+      "sessionSource": "google",
+      "sessions": 40,
+      "totalUsers": 27
     },
     {
-      "channel": "Organic Shopping",
-      "sessions": 14,
-      "users": 4,
-      "bounceRate": 35.71
+      "sessionSource": "(not set)",
+      "sessions": 26,
+      "totalUsers": 17
     },
     {
-      "channel": "Referral",
-      "sessions": 7,
-      "users": 6,
-      "bounceRate": 28.57
+      "sessionSource": "admin.shopify.com",
+      "sessions": 21,
+      "totalUsers": 3
     },
     {
-      "channel": "Unassigned",
-      "sessions": 7,
-      "users": 7,
-      "bounceRate": 100.0
+      "sessionSource": "qrcodes.pro",
+      "sessions": 4,
+      "totalUsers": 4
     },
     {
-      "channel": "Organic Social",
+      "sessionSource": "judge.me",
       "sessions": 2,
-      "users": 2,
-      "bounceRate": 50.0
-    }
-  ],
-  "dailyTrend": [
-    {
-      "date": "2026-02-03",
-      "sessions": 3,
-      "users": 3,
-      "pageviews": 9
+      "totalUsers": 1
     },
     {
-      "date": "2026-02-04",
-      "sessions": 11,
-      "users": 10,
-      "pageviews": 26
+      "sessionSource": "l.instagram.com",
+      "sessions": 2,
+      "totalUsers": 2
     },
     {
-      "date": "2026-02-05",
-      "sessions": 8,
-      "users": 7,
-      "pageviews": 10
+      "sessionSource": "shopify.com",
+      "sessions": 2,
+      "totalUsers": 2
     },
     {
-      "date": "2026-02-06",
-      "sessions": 6,
-      "users": 6,
-      "pageviews": 9
+      "sessionSource": "Pinterest",
+      "sessions": 1,
+      "totalUsers": 1
     },
     {
-      "date": "2026-02-07",
-      "sessions": 16,
-      "users": 15,
-      "pageviews": 28
-    },
-    {
-      "date": "2026-02-08",
-      "sessions": 3,
-      "users": 3,
-      "pageviews": 3
-    },
-    {
-      "date": "2026-02-09",
-      "sessions": 6,
-      "users": 6,
-      "pageviews": 13
-    },
-    {
-      "date": "2026-02-10",
-      "sessions": 25,
-      "users": 18,
-      "pageviews": 187
-    },
-    {
-      "date": "2026-02-11",
-      "sessions": 24,
-      "users": 24,
-      "pageviews": 31
-    },
-    {
-      "date": "2026-02-12",
-      "sessions": 8,
-      "users": 7,
-      "pageviews": 15
-    },
-    {
-      "date": "2026-02-13",
-      "sessions": 17,
-      "users": 13,
-      "pageviews": 86
-    },
-    {
-      "date": "2026-02-14",
-      "sessions": 18,
-      "users": 16,
-      "pageviews": 60
-    },
-    {
-      "date": "2026-02-15",
-      "sessions": 6,
-      "users": 6,
-      "pageviews": 22
-    },
-    {
-      "date": "2026-02-16",
-      "sessions": 10,
-      "users": 6,
-      "pageviews": 41
-    },
-    {
-      "date": "2026-02-17",
-      "sessions": 13,
-      "users": 11,
-      "pageviews": 47
-    },
-    {
-      "date": "2026-02-18",
-      "sessions": 10,
-      "users": 9,
-      "pageviews": 27
-    },
-    {
-      "date": "2026-02-19",
-      "sessions": 8,
-      "users": 7,
-      "pageviews": 11
-    },
-    {
-      "date": "2026-02-20",
-      "sessions": 9,
-      "users": 9,
-      "pageviews": 9
-    },
-    {
-      "date": "2026-02-21",
-      "sessions": 16,
-      "users": 16,
-      "pageviews": 32
-    },
-    {
-      "date": "2026-02-22",
-      "sessions": 10,
-      "users": 10,
-      "pageviews": 31
+      "sessionSource": "ig",
+      "sessions": 1,
+      "totalUsers": 1
     }
   ]
 }

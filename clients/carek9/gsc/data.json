@@ -1,12 +1,18 @@
 {
-  "site": "carek9.com",
+  "site": "https://carek9.com/",
   "dateRange": {
-    "startDate": "2026-01-23",
-    "endDate": "2026-02-20"
+    "start": "2026-01-22",
+    "end": "2026-02-21"
   },
-  "fetchedAt": "2026-02-23T07:00:51.330800",
-  "totalQueries": 25,
-  "queries": [
+  "fetchedAt": "2026-02-24T07:00:45.066604",
+  "topQueries": [
+    {
+      "query": "groom bathing tablets",
+      "clicks": 1,
+      "impressions": 14,
+      "ctr": 7.14,
+      "position": 4.2
+    },
     {
       "query": "4-in-1 dog paw washer",
       "clicks": 0,
@@ -52,9 +58,9 @@
     {
       "query": "best dog paw cleaner",
       "clicks": 0,
-      "impressions": 18,
+      "impressions": 21,
       "ctr": 0,
-      "position": 21.1
+      "position": 20.6
     },
     {
       "query": "best paw cleaner",
@@ -108,9 +114,9 @@
     {
       "query": "dexas mud buster",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 5,
       "ctr": 0,
-      "position": 4
+      "position": 12.2
     },
     {
       "query": "dexas mudbuster",
@@ -174,13 +180,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 13
-    },
-    {
-      "query": "dog food toppers for picky eaters",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 89.5
     }
   ]
 }
