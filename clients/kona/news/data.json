@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-23T13:00:12.817738Z",
-  "version": "v2-2026-02-23",
+  "lastUpdated": "2026-02-24T13:00:11.794936Z",
+  "version": "v2-2026-02-24",
   "sources": {
     "brave_search": true,
     "twitter": true,
@@ -8,13 +8,6 @@
     "reddit": true
   },
   "headlines": [
-    {
-      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
-      "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com/",
-      "category": "hawaii",
-      "description": "County of Hawaii officials said <strong>the road will be closed from 8:30 a.m.</strong>"
-    },
     {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
       "source": "Brave Search",
@@ -30,32 +23,39 @@
       "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
     },
     {
-      "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
       "source": "Brave Search",
-      "url": "https://www.travelweekly.com/Hawaii-Travel/hawaii-new-for-visitors-2026",
+      "url": "https://www.kitv.com/",
       "category": "hawaii",
-      "description": "In 2026, Hawaii will see <strong>new hotel openings, attractions, and restaurants, including direct flights from California, a new luau show on Kauai and chef Alan Wong&#x27;s restaurant on Oahu</stro"
+      "description": "<strong>Sexually transmitted infections more common in Hawaii than the flu</strong> \u00b7 Woman arrested, two suspects sought after Waianae armed robbery ... Former State Rep. Jon Karamatsu arrested for a"
     },
     {
-      "title": "A downturn for Hawaii tourism: Travel Weekly",
+      "title": "Things to Do in Honolulu, HI This Week - Events & Activities | Eventbrite",
       "source": "Brave Search",
-      "url": "https://www.travelweekly.com/Hawaii-Travel/Insights/downturn-for-hawaii-tourism-2026",
+      "url": "https://www.eventbrite.com/d/hi--honolulu/events--this-week/",
       "category": "hawaii",
-      "description": "&quot;The near-term picture for Hawaii tourism remains poor,&quot; the report continued. Looking ahead, it said <strong>visitor arrivals and the average daily census are expected to decline in 2026 be"
+      "description": "Share this event: <strong>Illusions The Drag Queen Show Honolulu - Drag Queen Dinner Show - Honolulu</strong>Save this event: <strong>Illusions The Drag Queen Show Honolulu - Drag Queen Dinner Show - "
     },
     {
-      "title": "Hawaii Faces Stagnant Tourism Growth as Global Competitors Gain Ground: What You Need to Know in 2026 - Travel And Tour World",
+      "title": "Calendar",
       "source": "Brave Search",
-      "url": "https://www.travelandtourworld.com/news/article/hawaii-faces-stagnant-tourism-growth-as-global-competitors-gain-ground-what-you-need-to-know-in-2026/",
+      "url": "https://www.staradvertiser.com/calendar/",
       "category": "hawaii",
-      "description": "Hawaii\u2019s tourism industry, a crucial pillar of the state\u2019s economy, is <strong>facing a stagnant recovery</strong> in 2026, despite ongoing efforts to bring back visitors after the COVID\u201119 pandemic."
+      "description": "Find out where to go for the latest community gatherings in Hawaii and fun events around town. Hosting an event? Add it to our calendar."
+    },
+    {
+      "title": "Oahu Events Calendar: Shows, Exhibits, Festivals & More | Go Hawaii",
+      "source": "Brave Search",
+      "url": "https://www.gohawaii.com/islands/oahu/events",
+      "category": "hawaii",
+      "description": "Find recommendations for some of O\u02bbahu&#x27;s most popular annual festivals and signature events."
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
       "source": "Brave Search",
       "url": "https://dailycoffeenews.com/",
       "category": "coffee",
-      "description": "<strong>Daily Coffee News by Roast magazine</strong> provides essential only news and resources for specialty coffee professionals. Daily Coffee News covers coffee news from seed to cup, including sto"
+      "description": "Like an expertly prepared pourover, Coffee Project NY is continuing a slow fill of its home city with its most recent coffee shop opening in Hell\u2019s Kitchen."
     },
     {
       "title": "News - World Coffee Portal",
@@ -72,140 +72,147 @@
       "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
+      "title": "Finally understand why people care about coffee",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rcnzem/finally_understand_why_people_care_about_coffee/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Been a &quot;coffee is just caffeine delivery&quot; person my whole life. Instant nescafe, whatever, didn't care. My gf got me a french press last month and i actuall"
+    },
+    {
+      "title": "$800 budget for single dose grinder for pourovers",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rcx79x/800_budget_for_single_dose_grinder_for_pourovers/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Looking to upgrade from Niche Zero as I drink exclusively pourovers and the NZ leans more towards espressos (sometimes I get too much fines in the grounds). Single-do"
+    },
+    {
       "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rcei1m/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rdd7qu/mod_the_daily_question_thread/",
       "category": "reddit",
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Chat gpt told me this but I am not for sure if it is true.",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rc0sth/chat_gpt_told_me_this_but_i_am_not_for_sure_if_it/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Chat gpt told me It's better to get a glass or metal french press because plastic has micropores that can trap bitter oils. Chat gpt also told me the bitter oils trap"
-    },
-    {
-      "title": "Waimea Bay recently",
+      "title": "Is Target trying to go out of business?",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rc1wgv/waimea_bay_recently/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rd48na/is_target_trying_to_go_out_of_business/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rc1wgv/waimea_bay_recently/\"> <img alt=\"Waimea Bay recently\" src=\"https://preview.redd.it/7yz203xvw4lg1.jpeg?width=640&amp;crop=smar"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I hate that they removed all the self-checkouts, but whatever. I can go back to cashiers like we all used to... Except they replaced about 20 self-checkouts with 3 ma"
     },
     {
-      "title": "Any regular Vegas visitors remember a newsletter called \u201cLetters from the Cal\u201d?",
+      "title": "Kupuna Eaton \u2764\ufe0f\u2764\ufe0f\u2764\ufe0f",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rbw36k/any_regular_vegas_visitors_remember_a_newsletter/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rconfw/kupuna_eaton/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>My grandparents used to go to Vegas 3-4 times a year before they passed away. That was their happy place after they both retired. They always stayed at either the Cal"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rconfw/kupuna_eaton/\"> <img alt=\"Kupuna Eaton \u2764\ufe0f\u2764\ufe0f\u2764\ufe0f\" src=\"https://preview.redd.it/ij6hhlcu9alg1.jpeg?width=640&amp;crop=smart&amp;a"
     },
     {
-      "title": "Does Aliexpress even ship anything to us anymore or",
+      "title": "Free truck, but no title",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rc7lhf/does_aliexpress_even_ship_anything_to_us_anymore/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rd48ze/free_truck_but_no_title/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Less and less stuff was allowed to be &quot;shipped to our location&quot; but now I can barely find ANYTHING that ships to Hawaii at all-- But my family on the mainla"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Acquired a dodge ram 3500 5.9 diesel, but it has no title. It was shipped out here to hawaii a 6 years ago. obtaining a title is gonna be a little difficult because i"
     },
     {
-      "title": "Does Google actually READ the text in your reviews? I think I just found a major loophole.",
+      "title": "My free walking tour side gig suddenly getting too many people how to not crash it.",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rbo6lg/does_google_actually_read_the_text_in_your/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rd7m6o/my_free_walking_tour_side_gig_suddenly_getting/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hey guys, I was looking at a roofing contractor\u2019s setup the other day and noticed something that felt a bit weird, so I wanted to see if anyone here has seen this hap"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Started doing free walking tours in Washington D.C as a side thing couple months back. Tip based, post on local facebook groups and eventbrite, nothing fancy. First m"
     },
     {
-      "title": "I finally raised my prices by 40% after 3 years of undercharging. Lost 30% of my clients. Revenue went UP. Anyone else been through this?",
+      "title": "Laid off at 35, 6 months unemployed, tried Amazon FBA (zero sales), can't sleep \u2014 I'm a frontend dev who keeps running in circles. What would you actually do?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rcbykx/i_finally_raised_my_prices_by_40_after_3_years_of/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rd4mhy/laid_off_at_35_6_months_unemployed_tried_amazon/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I run a small service business (digital marketing/social media management). For 3 years I was charging rates that I set when I had zero experience and was desperate f"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I'll keep it honest because I'm tired of sugarcoating my situation.</p> <p>6 months ago I got laid off. I'm 35, frontend engineer with real experience, and I have a f"
     },
     {
-      "title": "Make sure your books are *always* in order.",
+      "title": "Is a phone necessary?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rbtsns/make_sure_your_books_are_always_in_order/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rczcwv/is_a_phone_necessary/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I am going to throw this out from spending a lot of time advising a lot of small businesses:</p> <p><strong>Make sure your books are always in order.</strong></p> <p>"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Folks I and my employees are at our wits end. Our store (tackle / beach retail) phone (same number we\u2019ve had for 30 years) is ringing off the hook with spam. It\u2019s dam"
     },
     {
-      "title": "Ladybird Browser adopts Rust",
+      "title": "Diode \u2013 Build, program, and simulate hardware",
       "source": "Hacker News",
-      "url": "https://ladybird.org/posts/adopting-rust/",
+      "url": "https://www.withdiode.com/",
       "category": "tech",
       "stats": {
-        "points": 250,
-        "comments": 100
+        "points": 169,
+        "comments": 33
       }
     },
     {
-      "title": "Elsevier shuts down its finance journal citation cartel",
+      "title": "\u03bbProlog: Logic programming in higher-order logic",
       "source": "Hacker News",
-      "url": "https://www.chrisbrunet.com/p/elsevier-shuts-down-its-finance-journal",
+      "url": "https://www.lix.polytechnique.fr/Labo/Dale.Miller/lProlog/",
       "category": "tech",
       "stats": {
-        "points": 213,
-        "comments": 37
+        "points": 42,
+        "comments": 3
       }
     },
     {
-      "title": "Sub-$200 Lidar could reshuffle auto sensor economics",
+      "title": "Terence Tao, at 8 years old (1984) [pdf]",
       "source": "Hacker News",
-      "url": "https://spectrum.ieee.org/solid-state-lidar-microvision-adas",
+      "url": "https://gwern.net/doc/iq/high/smpy/1984-clements.pdf",
       "category": "tech",
       "stats": {
-        "points": 164,
-        "comments": 196
+        "points": 330,
+        "comments": 177
       }
     },
     {
-      "title": "Hetzner (European hosting provider) to increase prices by up to 38%",
+      "title": "A distributed queue in a single JSON file on object storage",
       "source": "Hacker News",
-      "url": "https://old.reddit.com/r/BuyFromEU/comments/1rce0lf/hetzner_european_hosting_provider_to_increase/",
+      "url": "https://turbopuffer.com/blog/object-storage-queue",
       "category": "tech",
       "stats": {
-        "points": 102,
-        "comments": 45
+        "points": 40,
+        "comments": 14
       }
     },
     {
-      "title": "I built Timeframe, our family e-paper dashboard",
+      "title": "Show HN: enveil \u2013 hide your .env secrets from prAIng eyes",
       "source": "Hacker News",
-      "url": "https://hawksley.org/2026/02/17/timeframe.html",
+      "url": "https://github.com/GreatScott/enveil",
       "category": "tech",
       "stats": {
-        "points": 1226,
-        "comments": 303
+        "points": 113,
+        "comments": 65
       }
     },
     {
-      "title": "[Trending] Paradise Season 2",
+      "title": "[Trending] READY OR NOT 2: HERE I COME",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "[AI \u00b7 Other] Mexico Kills Cartel Leader El Mencho, Sparks Retaliation and Online Backlash Against Sheinbaum",
+      "title": "[AI \u00b7 Other] Elon Musk Defines Mars Success as Self-Sustaining City",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "8 hours ago | 19.0K posts",
+      "title": "6 hours ago | 8.6K posts",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     }
   ],
   "trending": [
-    "A downturn for Hawaii tourism: Travel Weekly",
-    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
-    "Top Coffee Shop Industry Trends and Statistics in ",
-    "What's new for Hawaii visitors in 2026: Travel Wee",
-    "[MOD] The Daily Question Thread",
-    "Hawaii Faces Stagnant Tourism Growth as Global Com",
-    "News - World Coffee Portal",
-    "Daily Coffee News by Roast Magazine - Business new",
     "Hawaii News, Weather, Sports, Breaking News & Live",
-    "Hawaii News Now - Breaking News, Latest News, Weat"
+    "News - World Coffee Portal",
+    "Things to Do in Honolulu, HI This Week - Events & ",
+    "Calendar",
+    "Top Coffee Shop Industry Trends and Statistics in ",
+    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
+    "Daily Coffee News by Roast Magazine - Business new",
+    "Finally understand why people care about coffee",
+    "KITV 4 Island News | Honolulu, HI News & Weather",
+    "Oahu Events Calendar: Shows, Exhibits, Festivals &"
   ]
 }
