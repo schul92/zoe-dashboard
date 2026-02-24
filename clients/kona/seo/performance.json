@@ -1,21 +1,18 @@
 {
-  "lastUpdated": "2026-02-20T11:00:00Z",
+  "generatedAt": "2026-02-24T03:06:57.289888-08:00",
+  "url": "https://www.konacoffeedonut.com/",
   "mobile": {
-    "score": 85,
-    "metrics": {
-      "FCP": "1.2s",
-      "LCP": "2.1s",
-      "CLS": "0.05",
-      "TBT": "150ms"
-    }
+    "score": 60,
+    "fcp": "3.8 s",
+    "lcp": "8.9 s",
+    "cls": "0",
+    "tti": "5.1 s"
   },
   "desktop": {
-    "score": 95,
-    "metrics": {
-      "FCP": "0.6s",
-      "LCP": "1.2s",
-      "CLS": "0.02",
-      "TBT": "50ms"
-    }
+    "score": 55,
+    "fcp": "3.8 s",
+    "lcp": "8.7 s",
+    "cls": "0",
+    "tti": "3.8 s"
   }
 }
