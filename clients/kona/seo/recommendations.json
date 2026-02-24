@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-24T03:01:00-08:00",
-  "model": "opus",
+  "generatedAt": "2026-02-24T03:03:00-08:00",
+  "model": "claude-opus-4-5",
   "urgent": [
     {
       "type": "mobile_experience_critical",
@@ -68,63 +68,50 @@
   "opportunities": [
     {
       "type": "chinese_market_expansion",
-      "action": "Build out full Chinese language section (/zh/) with localized content about Kona coffee origins, menu in Chinese, and tourist-friendly info (location from hotels, payment methods)",
+      "action": "Build out full Chinese language section (/zh/) with localized content about Kona coffee origins, menu in Chinese, and tourist-friendly info",
       "impact": "high",
       "effort": "high",
       "reasoning": "3,731 impressions from Chinese queries (96% of total!) signals massive demand from Chinese tourists. Full localization could 10x traffic."
     },
     {
       "type": "opening_day_content",
-      "action": "Publish 'Grand Opening Feb 25, 2026' landing page and press release - target 'new coffee shop Waikiki' and 'Waikiki grand opening' keywords",
+      "action": "Publish 'Grand Opening Feb 25, 2026' landing page and press release - target 'new coffee shop Waikiki' keywords",
       "impact": "high",
       "effort": "low",
-      "reasoning": "Opening is TOMORROW. Time-sensitive content can capture local news searches and social buzz."
+      "reasoning": "Opening is TOMORROW. Time-sensitive content can capture local buzz and social shares."
     },
     {
-      "type": "tourist_keyword_gap",
-      "action": "Create content targeting 'best coffee Waikiki', 'Waikiki breakfast spots', 'coffee near Waikiki Beach' - currently not ranking for any tourist intent queries",
-      "impact": "high",
-      "effort": "medium",
-      "reasoning": "Zero visibility for high-intent tourist queries. These keywords drive walk-in traffic from the 6M annual Waikiki visitors."
-    },
-    {
-      "type": "japanese_market",
-      "action": "Create Japanese language section - Japan shows 36 impressions with 0 clicks, indicating search demand from Japanese tourists",
+      "type": "japanese_market_nurture",
+      "action": "Expand Japanese content section - 36 impressions from Japan shows interest, create tourist-friendly guides",
       "impact": "medium",
       "effort": "medium",
-      "reasoning": "Japanese tourists are huge in Hawaii. Even small Japanese SEO effort could capture this underserved segment."
+      "reasoning": "Japanese tourists are a major Waikiki demographic. Building Japanese content now positions for long-term traffic."
     }
   ],
   "insights": [
     {
-      "type": "traffic_source_mismatch",
-      "observation": "96% of impressions come from Chinese language queries, but the site appears primarily English-focused",
-      "suggestion": "Pivot content strategy to prioritize Chinese market - they're actively searching for Kona coffee information",
+      "type": "device_distribution_alarm",
+      "observation": "Desktop (40%) vastly outperforms Mobile (20%) - inverted from typical local business pattern",
+      "suggestion": "Prioritize mobile-first redesign and ensure Google My Business listing appears prominently in mobile search",
       "priority": "high"
     },
     {
-      "type": "brand_strength",
-      "observation": "Brand keywords ('kona coffee donut') have 50% CTR at position 1 - excellent brand recognition building",
-      "suggestion": "Protect and expand brand presence - consider 'kona coffee donut menu', 'kona coffee donut hours' content",
+      "type": "brand_keyword_strength",
+      "observation": "Brand terms 'kona coffee donut/donuts' converting at 33-50% CTR with #1 position - excellent brand recognition",
+      "suggestion": "Protect brand by bidding on brand terms in Google Ads and monitoring for competitors",
       "priority": "medium"
     },
     {
-      "type": "device_crisis",
-      "observation": "Desktop 40%, Mobile 20% split is inverted from typical local business (should be 70%+ mobile)",
-      "suggestion": "Suspect mobile UX issues or slow load times driving users away - prioritize mobile-first redesign",
+      "type": "chinese_search_dominance",
+      "observation": "Chinese queries represent 3,731 of 3,244 total impressions (~115%) - this market is driving visibility",
+      "suggestion": "Consider Chinese social media presence (WeChat, Xiaohongshu) to complement organic search",
       "priority": "high"
     },
     {
-      "type": "informational_vs_transactional",
-      "observation": "Chinese queries are informational ('what is Kona coffee flavor', 'good for Americano?') not transactional",
-      "suggestion": "Create educational content funnel: info content → menu/location pages → visit conversion",
-      "priority": "medium"
-    },
-    {
-      "type": "pre_opening_baseline",
-      "observation": "20 clicks/week before opening is solid awareness building - mostly brand and Chinese educational queries",
-      "suggestion": "Track week-over-week after Feb 25 opening to measure local SEO and foot traffic correlation",
-      "priority": "low"
+      "type": "grand_opening_timing",
+      "observation": "Opening Feb 25, 2026 (D-1) - critical 48-hour window for launch content",
+      "suggestion": "Push social content, update GBP with opening announcement, and prepare day-1 review collection strategy",
+      "priority": "high"
     }
   ]
 }
