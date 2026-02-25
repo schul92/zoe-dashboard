@@ -1,118 +1,290 @@
 {
-  "property_id": "523137923",
-  "date_range": {
-    "start": "2026-01-25",
-    "end": "2026-02-24"
+  "propertyId": "523137923",
+  "fetchedAt": "2026-02-25T07:01:17.181583",
+  "dateRange": {
+    "startDate": "2026-01-26",
+    "endDate": "2026-02-25"
   },
-  "fetched_at": "2026-02-24T14:35:58.202980",
-  "metrics": {
-    "sessions": 271,
-    "users": 186,
-    "pageviews": 931,
-    "bounce_rate": 67.53
+  "overview": {
+    "sessions": 281,
+    "totalUsers": 190,
+    "pageviews": 993,
+    "bounceRate": 59.79,
+    "avgSessionDuration": 316.34,
+    "newUsers": 190
   },
-  "top_pages": [
+  "topPages": [
     {
       "pagePath": "/",
-      "screenPageViews": 456,
-      "sessions": 188
+      "pageviews": 468,
+      "sessions": 193,
+      "avgDuration": 269.36
     },
     {
       "pagePath": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "screenPageViews": 66,
-      "sessions": 21
-    },
-    {
-      "pagePath": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "screenPageViews": 57,
-      "sessions": 19
+      "pageviews": 82,
+      "sessions": 24,
+      "avgDuration": 170.5
     },
     {
       "pagePath": "/collections/treat",
-      "screenPageViews": 55,
-      "sessions": 37
+      "pageviews": 61,
+      "sessions": 38,
+      "avgDuration": 92.97
     },
     {
-      "pagePath": "/cart",
-      "screenPageViews": 28,
-      "sessions": 20
-    },
-    {
-      "pagePath": "/pages/about-us",
-      "screenPageViews": 25,
-      "sessions": 23
+      "pagePath": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "pageviews": 60,
+      "sessions": 20,
+      "avgDuration": 162.05
     },
     {
       "pagePath": "/blogs/news",
-      "screenPageViews": 22,
-      "sessions": 13
+      "pageviews": 31,
+      "sessions": 15,
+      "avgDuration": 307.34
     },
     {
-      "pagePath": "/collections/all",
-      "screenPageViews": 21,
-      "sessions": 18
+      "pagePath": "/cart",
+      "pageviews": 28,
+      "sessions": 20,
+      "avgDuration": 85.84
+    },
+    {
+      "pagePath": "/pages/about-us",
+      "pageviews": 27,
+      "sessions": 24,
+      "avgDuration": 114.42
     },
     {
       "pagePath": "/pages/carek9-x-human-canine-collaborative",
-      "screenPageViews": 21,
-      "sessions": 19
+      "pageviews": 22,
+      "sessions": 20,
+      "avgDuration": 31.45
     },
     {
-      "pagePath": "/pages/contact-us",
-      "screenPageViews": 17,
-      "sessions": 12
+      "pagePath": "/collections/all",
+      "pageviews": 21,
+      "sessions": 18,
+      "avgDuration": 36.1
+    },
+    {
+      "pagePath": "/collections/paw-care",
+      "pageviews": 18,
+      "sessions": 14,
+      "avgDuration": 208.82
     }
   ],
-  "traffic_sources": [
+  "trafficSources": [
     {
-      "sessionSource": "(direct)",
-      "sessions": 192,
-      "totalUsers": 147
+      "source": "(direct)",
+      "medium": "(none)",
+      "sessions": 199,
+      "users": 151,
+      "bounceRate": 66.83
     },
     {
-      "sessionSource": "google",
-      "sessions": 40,
-      "totalUsers": 27
+      "source": "google",
+      "medium": "organic",
+      "sessions": 42,
+      "users": 27,
+      "bounceRate": 45.24
     },
     {
-      "sessionSource": "(not set)",
-      "sessions": 26,
-      "totalUsers": 17
+      "source": "admin.shopify.com",
+      "medium": "referral",
+      "sessions": 23,
+      "users": 3,
+      "bounceRate": 26.09
     },
     {
-      "sessionSource": "admin.shopify.com",
-      "sessions": 21,
-      "totalUsers": 3
+      "source": "(not set)",
+      "medium": "(not set)",
+      "sessions": 7,
+      "users": 7,
+      "bounceRate": 100.0
     },
     {
-      "sessionSource": "qrcodes.pro",
+      "source": "qrcodes.pro",
+      "medium": "referral",
       "sessions": 4,
-      "totalUsers": 4
+      "users": 4,
+      "bounceRate": 50.0
     },
     {
-      "sessionSource": "judge.me",
+      "source": "judge.me",
+      "medium": "referral",
       "sessions": 2,
-      "totalUsers": 1
+      "users": 1,
+      "bounceRate": 0.0
     },
     {
-      "sessionSource": "l.instagram.com",
+      "source": "l.instagram.com",
+      "medium": "referral",
       "sessions": 2,
-      "totalUsers": 2
+      "users": 2,
+      "bounceRate": 100.0
     },
     {
-      "sessionSource": "shopify.com",
+      "source": "shopify.com",
+      "medium": "referral",
       "sessions": 2,
-      "totalUsers": 2
+      "users": 2,
+      "bounceRate": 50.0
     },
     {
-      "sessionSource": "Pinterest",
+      "source": "Pinterest",
+      "medium": "organic",
       "sessions": 1,
-      "totalUsers": 1
+      "users": 1,
+      "bounceRate": 100.0
     },
     {
-      "sessionSource": "ig",
+      "source": "ig",
+      "medium": "social",
       "sessions": 1,
-      "totalUsers": 1
+      "users": 1,
+      "bounceRate": 0.0
+    }
+  ],
+  "dailyTrend": [
+    {
+      "date": "2026-02-03",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 9
+    },
+    {
+      "date": "2026-02-04",
+      "sessions": 11,
+      "users": 10,
+      "pageviews": 26
+    },
+    {
+      "date": "2026-02-05",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 10
+    },
+    {
+      "date": "2026-02-06",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 9
+    },
+    {
+      "date": "2026-02-07",
+      "sessions": 16,
+      "users": 15,
+      "pageviews": 28
+    },
+    {
+      "date": "2026-02-08",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 3
+    },
+    {
+      "date": "2026-02-09",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 13
+    },
+    {
+      "date": "2026-02-10",
+      "sessions": 25,
+      "users": 18,
+      "pageviews": 187
+    },
+    {
+      "date": "2026-02-11",
+      "sessions": 24,
+      "users": 24,
+      "pageviews": 31
+    },
+    {
+      "date": "2026-02-12",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 15
+    },
+    {
+      "date": "2026-02-13",
+      "sessions": 17,
+      "users": 13,
+      "pageviews": 86
+    },
+    {
+      "date": "2026-02-14",
+      "sessions": 18,
+      "users": 16,
+      "pageviews": 60
+    },
+    {
+      "date": "2026-02-15",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 22
+    },
+    {
+      "date": "2026-02-16",
+      "sessions": 10,
+      "users": 6,
+      "pageviews": 41
+    },
+    {
+      "date": "2026-02-17",
+      "sessions": 13,
+      "users": 11,
+      "pageviews": 47
+    },
+    {
+      "date": "2026-02-18",
+      "sessions": 10,
+      "users": 9,
+      "pageviews": 27
+    },
+    {
+      "date": "2026-02-19",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 11
+    },
+    {
+      "date": "2026-02-20",
+      "sessions": 9,
+      "users": 9,
+      "pageviews": 9
+    },
+    {
+      "date": "2026-02-21",
+      "sessions": 16,
+      "users": 16,
+      "pageviews": 32
+    },
+    {
+      "date": "2026-02-22",
+      "sessions": 10,
+      "users": 10,
+      "pageviews": 32
+    },
+    {
+      "date": "2026-02-23",
+      "sessions": 37,
+      "users": 16,
+      "pageviews": 217
+    },
+    {
+      "date": "2026-02-24",
+      "sessions": 14,
+      "users": 10,
+      "pageviews": 75
+    },
+    {
+      "date": "2026-02-25",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 3
     }
   ]
 }
