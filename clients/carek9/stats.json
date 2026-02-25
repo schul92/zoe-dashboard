@@ -1,83 +1,88 @@
 {
-  "generatedAt": "2026-02-24T22:36:14Z",
+  "generatedAt": "2026-02-25T07:02:30Z",
   "client": "CareK9",
   "website": "https://carek9.com/",
   "reportPeriod": {
     "ga4": {
-      "start": "2026-01-25",
-      "end": "2026-02-24",
+      "start": "2026-01-26",
+      "end": "2026-02-25",
       "days": 30
     },
     "gsc": {
-      "start": "2026-01-22",
-      "end": "2026-02-21",
+      "start": "2026-01-23",
+      "end": "2026-02-22",
       "days": 30
     }
   },
   "summary": {
     "traffic": {
-      "sessions": 271,
-      "activeUsers": 186,
-      "pageViews": 931,
-      "pagesPerSession": 3.44,
-      "avgSessionDuration": 265.2,
-      "avgSessionDurationFormatted": "4m 25s",
-      "bounceRate": 67.53,
-      "engagedSessions": 88,
-      "engagementRate": 32.47,
-      "newUsers": 182
+      "sessions": 281,
+      "activeUsers": 190,
+      "pageViews": 993,
+      "pagesPerSession": 3.53,
+      "avgSessionDuration": 316.34,
+      "avgSessionDurationFormatted": "5m 16s",
+      "bounceRate": 59.79,
+      "engagedSessions": 113,
+      "engagementRate": 40.21,
+      "newUsers": 190
     },
     "search": {
       "totalQueries": 25,
-      "totalImpressions": 119,
+      "totalImpressions": 129,
       "totalClicks": 1,
-      "avgCTR": 0.84,
-      "avgPosition": 15.2,
-      "queriesInTop10": 9
+      "avgCTR": 0.78,
+      "avgPosition": 14.7,
+      "queriesInTop10": 10
     }
   },
   "trafficSources": {
     "direct": {
-      "sessions": 192,
-      "percentage": 70.85
+      "sessions": 199,
+      "percentage": 70.82
     },
     "organicSearch": {
-      "sessions": 40,
-      "percentage": 14.76
-    },
-    "unassigned": {
-      "sessions": 26,
-      "percentage": 9.59
+      "sessions": 42,
+      "percentage": 14.95
     },
     "referral": {
-      "sessions": 29,
-      "percentage": 10.7
+      "sessions": 33,
+      "percentage": 11.74
+    },
+    "unassigned": {
+      "sessions": 7,
+      "percentage": 2.49
     },
     "organicSocial": {
       "sessions": 4,
-      "percentage": 1.48
+      "percentage": 1.42
     }
   },
   "topPages": [
     {
       "path": "/",
-      "views": 456,
+      "views": 468,
       "title": "Homepage"
     },
     {
       "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "views": 66,
-      "title": "Protein Chips Chicken Chips Beef Chips Pork Chips"
-    },
-    {
-      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "views": 57,
-      "title": "Chicken Wrapped Pumpkin Healthy Dog Treats"
+      "views": 82,
+      "title": "Protein Chips"
     },
     {
       "path": "/collections/treat",
-      "views": 55,
-      "title": "Treat"
+      "views": 61,
+      "title": "Treats Collection"
+    },
+    {
+      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "views": 60,
+      "title": "Chicken Wrapped Pumpkin Treats"
+    },
+    {
+      "path": "/blogs/news",
+      "views": 31,
+      "title": "News Blog"
     },
     {
       "path": "/cart",
@@ -86,48 +91,43 @@
     },
     {
       "path": "/pages/about-us",
-      "views": 25,
+      "views": 27,
       "title": "About Us"
     },
     {
-      "path": "/blogs/news",
+      "path": "/pages/carek9-x-human-canine-collaborative",
       "views": 22,
-      "title": "News"
+      "title": "CareK9 X Human Canine Collaborative"
     },
     {
       "path": "/collections/all",
       "views": 21,
-      "title": "All"
+      "title": "All Products"
     },
     {
-      "path": "/pages/carek9-x-human-canine-collaborative",
-      "views": 21,
-      "title": "Carek9 X Human Canine Collaborative"
-    },
-    {
-      "path": "/pages/contact-us",
-      "views": 17,
-      "title": "Contact Us"
+      "path": "/collections/paw-care",
+      "views": 18,
+      "title": "Paw Care Collection"
     }
   ],
   "topSearchQueries": [
     {
       "query": "best dog paw cleaner",
-      "impressions": 21,
+      "impressions": 27,
       "clicks": 0,
-      "position": 20.6
+      "position": 20.0
     },
     {
       "query": "groom bathing tablets",
-      "impressions": 14,
+      "impressions": 15,
       "clicks": 1,
       "position": 4.2
     },
     {
       "query": "dexas mudbuster",
-      "impressions": 14,
+      "impressions": 15,
       "clicks": 0,
-      "position": 6.8
+      "position": 8.2
     },
     {
       "query": "dexas mudbuster paw cleaner",
@@ -148,148 +148,151 @@
       "position": 21.7
     },
     {
-      "query": "dexas mud buster",
-      "impressions": 5,
-      "clicks": 0,
-      "position": 12.2
-    },
-    {
       "query": "dexas paw cleaner",
       "impressions": 5,
       "clicks": 0,
       "position": 5.6
+    },
+    {
+      "query": "dexas mud buster",
+      "impressions": 5,
+      "clicks": 0,
+      "position": 12.2
     }
   ],
   "insights": [
     {
       "type": "positive",
-      "category": "traffic",
-      "title": "Strong Traffic Growth",
-      "detail": "Sessions up 18.1% (268 vs 227) with users up 6.4% (184 vs 173). Significant month-over-month acceleration."
+      "category": "engagement",
+      "title": "Bounce Rate Improved Significantly",
+      "detail": "Bounce rate dropped from 67.53% to 59.79% — a 7.7 point improvement! Users are engaging more with the site."
     },
     {
       "type": "positive",
       "category": "traffic",
-      "title": "Pageviews Surge",
-      "detail": "Pageviews jumped 33.1% (928 vs 697). Users viewing 3.46 pages per session, up from 3.07."
+      "title": "Continued Traffic Growth",
+      "detail": "Sessions up 3.7% (281 vs 271) with pageviews up 6.7% (993 vs 931). Steady upward momentum."
+    },
+    {
+      "type": "positive",
+      "category": "traffic",
+      "title": "Session Duration Up",
+      "detail": "Average session duration increased to 5m 16s (up from 4m 25s). Users spending 19% more time on site."
     },
     {
       "type": "positive",
       "category": "seo",
-      "title": "First GSC Click!",
-      "detail": "Got 1 click from 'groom bathing tablets' (position 4.2). First organic click recorded this period."
+      "title": "GSC Impressions Growing",
+      "detail": "Search impressions up 8.4% (129 vs 119). More keywords gaining visibility."
     },
     {
       "type": "positive",
       "category": "seo",
-      "title": "Search Visibility Growing",
-      "detail": "GSC impressions up 16.7% (119 vs 102). More potential customers discovering CareK9 in search."
+      "title": "More Top 10 Rankings",
+      "detail": "Now 10 keywords ranking in top 10 (up from 9). 'Chips for dogs' now ranking #1!"
     },
     {
       "type": "positive",
-      "category": "seo",
-      "title": "Top Position Rankings",
-      "detail": "Ranking #1 for 'dexas mudbuster large'. 9 queries now ranking in top 10 positions."
+      "category": "content",
+      "title": "Protein Chips Product Momentum",
+      "detail": "Protein Chips page views jumped 24% (82 vs 66). Second most viewed page after homepage."
     },
     {
       "type": "opportunity",
       "category": "seo",
       "title": "Low Click-Through Rate",
-      "detail": "Only 0.84% CTR (1 click from 119 impressions). Meta titles/descriptions need optimization."
+      "detail": "CTR at 0.78% (1 click from 129 impressions). Optimize meta titles and descriptions for higher CTR."
     },
     {
       "type": "opportunity",
       "category": "traffic",
-      "title": "Direct Traffic Dominant",
-      "detail": "70.5% direct traffic. SEO and content marketing can help diversify acquisition channels."
-    },
-    {
-      "type": "warning",
-      "category": "engagement",
-      "title": "Bounce Rate Increased",
-      "detail": "Bounce rate rose to 67.16% from 63.0%. Review landing page experience and content relevance."
+      "title": "Direct Traffic Still Dominant",
+      "detail": "70.8% direct traffic. Expanding SEO and content marketing will diversify acquisition channels."
     },
     {
       "type": "action",
       "category": "seo",
-      "title": "Optimize High-Impression Keywords",
-      "detail": "'Best dog paw cleaner' has 21 impressions but ranks position 20.6. Target with dedicated content."
+      "title": "Target High-Impression Keywords",
+      "detail": "'Best dog paw cleaner' has 27 impressions but ranks position 20. Dedicated content could boost rankings."
     },
     {
       "type": "action",
       "category": "content",
-      "title": "Protein Chips Momentum",
-      "detail": "Protein Chips page jumped to #2 (66 views, up from 51). Double down on this product's visibility."
+      "title": "Blog Traffic Growing",
+      "detail": "News blog jumped to 31 views (from 22). Consistent blogging is paying off — keep publishing!"
     }
   ],
   "weekOverWeek": {
     "trend": "growing",
-    "avgDailySessions": 9.03,
-    "sessionsChange": "+19.4%",
-    "usersChange": "+7.5%",
-    "pageviewsChange": "+33.6%"
+    "avgDailySessions": 9.37,
+    "sessionsChange": "+3.7%",
+    "usersChange": "+2.2%",
+    "pageviewsChange": "+6.7%"
   },
   "comparison": {
     "previousPeriod": {
-      "sessions": 227,
-      "users": 173,
-      "pageViews": 697,
-      "impressions": 102
-    },
-    "currentPeriod": {
       "sessions": 271,
       "users": 186,
       "pageViews": 931,
-      "impressions": 119
+      "impressions": 119,
+      "bounceRate": 67.53
+    },
+    "currentPeriod": {
+      "sessions": 281,
+      "users": 190,
+      "pageViews": 993,
+      "impressions": 129,
+      "bounceRate": 59.79
     },
     "changes": {
-      "sessions": "+19.4%",
-      "users": "+7.5%",
-      "pageViews": "+33.6%",
-      "impressions": "+16.67%"
+      "sessions": "+3.7%",
+      "users": "+2.2%",
+      "pageViews": "+6.7%",
+      "impressions": "+8.4%",
+      "bounceRate": "-7.7pts"
     }
   },
   "kpiCards": [
     {
       "label": "Sessions",
-      "value": 271,
-      "change": "+19.4%",
+      "value": 281,
+      "change": "+3.7%",
       "trend": "up",
       "icon": "users"
     },
     {
       "label": "Page Views",
-      "value": 931,
-      "change": "+33.6%",
+      "value": 993,
+      "change": "+6.7%",
       "trend": "up",
       "icon": "eye"
     },
     {
       "label": "Bounce Rate",
-      "value": "67.53%",
-      "change": "+4.2%",
-      "trend": "down",
-      "icon": "arrow-up"
+      "value": "59.79%",
+      "change": "-7.7pts",
+      "trend": "up",
+      "icon": "arrow-down"
     },
     {
-      "label": "Pages/Session",
-      "value": "3.44",
-      "change": "+12.7%",
+      "label": "Avg Duration",
+      "value": "5m 16s",
+      "change": "+19%",
       "trend": "up",
-      "icon": "layers"
+      "icon": "clock"
     },
     {
       "label": "GSC Impressions",
-      "value": 119,
-      "change": "+16.7%",
+      "value": 129,
+      "change": "+8.4%",
       "trend": "up",
       "icon": "search"
     },
     {
       "label": "Top 10 Keywords",
-      "value": 9,
-      "change": "-1",
-      "trend": "down",
+      "value": 10,
+      "change": "+1",
+      "trend": "up",
       "icon": "trending-up"
     }
   ]
