@@ -1,10 +1,10 @@
 {
-  "site": "carek9.com",
+  "timestamp": "2026-02-26T07:01:02.661509",
+  "site": "https://carek9.com/",
   "dateRange": {
-    "start": "2026-01-23",
-    "end": "2026-02-22"
+    "start": "2026-01-24",
+    "end": "2026-02-23"
   },
-  "fetchedAt": "2026-02-25T07:01:46.584213",
   "queries": [
     {
       "query": "groom bathing tablets",
@@ -58,9 +58,9 @@
     {
       "query": "best dog paw cleaner",
       "clicks": 0,
-      "impressions": 27,
+      "impressions": 29,
       "ctr": 0,
-      "position": 20.0
+      "position": 20.3
     },
     {
       "query": "best paw cleaner",
@@ -86,9 +86,9 @@
     {
       "query": "best paw cleaning products for sensitive dogs",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 29
+      "position": 28
     },
     {
       "query": "best paw washer",
