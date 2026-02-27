@@ -1,105 +1,282 @@
 {
-  "propertyId": "properties/523137923",
-  "dateRange": {
-    "startDate": "2026-01-27",
-    "endDate": "2026-02-26"
+  "property_id": "523137923",
+  "date_range": {
+    "start": "2026-01-28",
+    "end": "2026-02-27"
   },
-  "fetchedAt": "2026-02-26T07:00:43.785190",
-  "metrics": {
-    "sessions": 297,
-    "totalUsers": 196,
-    "pageviews": 1015,
-    "bounceRate": 60.27,
-    "avgSessionDuration": 275.26,
-    "newUsers": 195
+  "fetched_at": "2026-02-27T07:00:54.157553",
+  "overview": {
+    "sessions": 305,
+    "totalUsers": 202,
+    "pageviews": 1024,
+    "bounceRate": 59.67,
+    "avgSessionDuration": 268.9,
+    "newUsers": 202
   },
-  "topPages": [
+  "top_pages": [
     {
-      "page": "/",
-      "pageviews": 478,
-      "users": 130
+      "path": "/",
+      "pageviews": 483,
+      "sessions": 207
     },
     {
-      "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
       "pageviews": 89,
-      "users": 19
+      "sessions": 30
     },
     {
-      "page": "/collections/treat",
+      "path": "/collections/treat",
       "pageviews": 61,
-      "users": 26
+      "sessions": 38
     },
     {
-      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
       "pageviews": 60,
-      "users": 15
+      "sessions": 20
     },
     {
-      "page": "/blogs/news",
+      "path": "/blogs/news",
       "pageviews": 32,
-      "users": 8
+      "sessions": 16
     },
     {
-      "page": "/cart",
+      "path": "/cart",
       "pageviews": 28,
-      "users": 18
+      "sessions": 20
     },
     {
-      "page": "/pages/about-us",
+      "path": "/pages/about-us",
       "pageviews": 27,
-      "users": 16
+      "sessions": 24
     },
     {
-      "page": "/pages/carek9-x-human-canine-collaborative",
-      "pageviews": 22,
-      "users": 20
+      "path": "/pages/carek9-x-human-canine-collaborative",
+      "pageviews": 23,
+      "sessions": 21
     },
     {
-      "page": "/collections/all",
+      "path": "/collections/all",
       "pageviews": 21,
-      "users": 15
+      "sessions": 18
     },
     {
-      "page": "/collections/paw-care",
+      "path": "/collections/paw-care",
       "pageviews": 18,
-      "users": 10
+      "sessions": 14
     }
   ],
-  "trafficSources": [
+  "traffic_sources": [
     {
-      "source": "Direct",
-      "sessions": 211,
-      "users": 155
+      "source": "(direct)",
+      "medium": "(none)",
+      "sessions": 216,
+      "users": 158
     },
     {
-      "source": "Organic Search",
-      "sessions": 44,
-      "users": 28
+      "source": "google",
+      "medium": "organic",
+      "sessions": 48,
+      "users": 31
     },
     {
-      "source": "Organic Shopping",
-      "sessions": 25,
-      "users": 5
+      "source": "admin.shopify.com",
+      "medium": "referral",
+      "sessions": 23,
+      "users": 3
     },
     {
-      "source": "Unassigned",
-      "sessions": 13,
-      "users": 9
+      "source": "(not set)",
+      "medium": "(not set)",
+      "sessions": 10,
+      "users": 10
     },
     {
-      "source": "Referral",
-      "sessions": 7,
-      "users": 6
-    },
-    {
-      "source": "Organic Social",
+      "source": "qrcodes.pro",
+      "medium": "referral",
       "sessions": 4,
       "users": 4
     },
     {
-      "source": "Cross-network",
+      "source": "judge.me",
+      "medium": "referral",
+      "sessions": 2,
+      "users": 1
+    },
+    {
+      "source": "l.instagram.com",
+      "medium": "referral",
+      "sessions": 2,
+      "users": 2
+    },
+    {
+      "source": "shopify.com",
+      "medium": "referral",
+      "sessions": 2,
+      "users": 2
+    },
+    {
+      "source": "Pinterest",
+      "medium": "organic",
       "sessions": 1,
       "users": 1
+    },
+    {
+      "source": "ig",
+      "medium": "social",
+      "sessions": 1,
+      "users": 1
+    }
+  ],
+  "daily_trend": [
+    {
+      "date": "20260203",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 9
+    },
+    {
+      "date": "20260204",
+      "sessions": 11,
+      "users": 10,
+      "pageviews": 26
+    },
+    {
+      "date": "20260205",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 10
+    },
+    {
+      "date": "20260206",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 9
+    },
+    {
+      "date": "20260207",
+      "sessions": 16,
+      "users": 15,
+      "pageviews": 28
+    },
+    {
+      "date": "20260208",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 3
+    },
+    {
+      "date": "20260209",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 13
+    },
+    {
+      "date": "20260210",
+      "sessions": 25,
+      "users": 18,
+      "pageviews": 187
+    },
+    {
+      "date": "20260211",
+      "sessions": 24,
+      "users": 24,
+      "pageviews": 31
+    },
+    {
+      "date": "20260212",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 15
+    },
+    {
+      "date": "20260213",
+      "sessions": 17,
+      "users": 13,
+      "pageviews": 86
+    },
+    {
+      "date": "20260214",
+      "sessions": 18,
+      "users": 16,
+      "pageviews": 60
+    },
+    {
+      "date": "20260215",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 22
+    },
+    {
+      "date": "20260216",
+      "sessions": 10,
+      "users": 6,
+      "pageviews": 41
+    },
+    {
+      "date": "20260217",
+      "sessions": 13,
+      "users": 11,
+      "pageviews": 47
+    },
+    {
+      "date": "20260218",
+      "sessions": 10,
+      "users": 9,
+      "pageviews": 27
+    },
+    {
+      "date": "20260219",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 11
+    },
+    {
+      "date": "20260220",
+      "sessions": 9,
+      "users": 9,
+      "pageviews": 9
+    },
+    {
+      "date": "20260221",
+      "sessions": 16,
+      "users": 16,
+      "pageviews": 32
+    },
+    {
+      "date": "20260222",
+      "sessions": 10,
+      "users": 10,
+      "pageviews": 32
+    },
+    {
+      "date": "20260223",
+      "sessions": 37,
+      "users": 16,
+      "pageviews": 217
+    },
+    {
+      "date": "20260224",
+      "sessions": 14,
+      "users": 10,
+      "pageviews": 77
+    },
+    {
+      "date": "20260225",
+      "sessions": 18,
+      "users": 10,
+      "pageviews": 23
+    },
+    {
+      "date": "20260226",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 8
+    },
+    {
+      "date": "20260227",
+      "sessions": 1,
+      "users": 1,
+      "pageviews": 1
     }
   ]
 }
