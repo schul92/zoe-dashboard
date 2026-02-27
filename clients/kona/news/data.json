@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-25T13:00:12.880258Z",
-  "version": "v2-2026-02-25",
+  "lastUpdated": "2026-02-26T13:00:12.357146Z",
+  "version": "v2-2026-02-26",
   "sources": {
     "brave_search": true,
     "twitter": true,
@@ -9,18 +9,18 @@
   },
   "headlines": [
     {
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com",
+      "category": "hawaii",
+      "description": "Nadine Tenn Salle weigh in on the proposed HMSA-Hawaii Pacific Health partnership."
+    },
+    {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
       "source": "Brave Search",
       "url": "https://www.khon2.com",
       "category": "hawaii",
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
-    },
-    {
-      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
-      "source": "Brave Search",
-      "url": "https://www.kitv.com/",
-      "category": "hawaii",
-      "description": "Sexually transmitted infections more common in Hawaii than the flu \u00b7 Woman arrested, two suspects sought after Waianae armed robbery ... Former State Rep. Jon Karamatsu arrested for allegedly driving "
     },
     {
       "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
@@ -58,6 +58,13 @@
       "description": "Like an expertly prepared pourover, Coffee Project NY is continuing a slow fill of its home city with its most recent coffee shop opening in Hell\u2019s Kitchen."
     },
     {
+      "title": "Barista Magazine Hosting Camp Coffee Shop in Napa",
+      "source": "Brave Search",
+      "url": "https://dailycoffeenews.com/2026/02/25/barista-magazine-hosting-camp-coffee-shop-in-napa/",
+      "category": "coffee",
+      "description": "Registration opened today (Feb. 25) for the inaugural Camp Coffee Shop, a four-day business education event in Napa Valley, California, for current and aspiring coffee shop owners and other coffee pro"
+    },
+    {
       "title": "News - World Coffee Portal",
       "source": "Brave Search",
       "url": "https://www.worldcoffeeportal.com/news/",
@@ -65,147 +72,147 @@
       "description": "Breaking coffee business news and analysis"
     },
     {
-      "title": "Top Coffee Shop Industry Trends and Statistics in 2025",
-      "source": "Brave Search",
-      "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
-      "category": "coffee",
-      "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
+      "title": "Coffee is officially more expensive because of climate change: Study",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1reim65/coffee_is_officially_more_expensive_because_of/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><ul> <li>Extreme weather in global coffee-growing regions has likely contributed to coffee price spikes in recent years.</li> <li>New analysis from Climate Central shows"
+    },
+    {
+      "title": "Changing brew-variables based on tasting notes?",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1reka83/changing_brewvariables_based_on_tasting_notes/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I've been wondering about this for a while, but i've never really managed to come to a mental conclusion, so i wanted to ask in here.</p> <p>If i have a coffee, like "
     },
     {
       "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rea8ae/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rf78qy/mod_the_daily_question_thread/",
       "category": "reddit",
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "[MOD] Inside Scoop - Ask the coffee industry",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rdp4z2/mod_inside_scoop_ask_the_coffee_industry/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>This is a thread for the enthusiasts of <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> to connect with the industry insiders who post in this sub!</p> <p>Do "
-    },
-    {
-      "title": "Oahu, Not What I Remember",
+      "title": "Council approves studies on possible Skyline expansion, including to UH M\u0101noa",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rdv2ok/oahu_not_what_i_remember/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rewff0/council_approves_studies_on_possible_skyline/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I left Oahu for the service in early 2010\u2019s. Perhaps most of Gen Z and younger don\u2019t remember or weren\u2019t alive, but the islands were very different in the late 90\u2019s a"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rewff0/council_approves_studies_on_possible_skyline/\"> <img alt=\"Council approves studies on possible Skyline expansion, including t"
     },
     {
-      "title": "Family Suing Kamehameha Schools Over Admissions Policy Are Getting Threats, Seek Anonymity",
+      "title": "COVID-19 Update for 2/25/26",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rdqwul/family_suing_kamehameha_schools_over_admissions/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1repo27/covid19_update_for_22526/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rdqwul/family_suing_kamehameha_schools_over_admissions/\"> <img alt=\"Family Suing Kamehameha Schools Over Admissions Policy Are Getti"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>45 cases this week. 33 on Oahu, 4 in Maui County, 3 on Hawaii Island, 5 on Kauai.</p> <p>7-day positivity is 0.7%</p> <p>5 in the hospital and 0 in ICU</p> <p>Looks l"
     },
     {
-      "title": "Meat Jun is Hawai\u02bbi\u2019s Favorite Korean Comfort Food | \u02bbONO! Hawai\u02bbi's Food Culture",
+      "title": "Palaka makers?",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rdtgcs/meat_jun_is_hawai\u02bbis_favorite_korean_comfort_food/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rej7je/palaka_makers/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rdtgcs/meat_jun_is_hawai\u02bbis_favorite_korean_comfort_food/\"> <img alt=\"Meat Jun is Hawai\u02bbi\u2019s Favorite Korean Comfort Food | \u02bbONO! Haw"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Curious if anybody has a good source for a Palaka shirt manufacturer that keeps the money local or supporting a small business. I\u2019m in the mainland, but feel weird bu"
     },
     {
-      "title": "How a Simple Rewards System Kept Our Small Shop Alive for 20+ Years",
+      "title": "What do you guys do for health insurance being self employed?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1re3l8l/how_a_simple_rewards_system_kept_our_small_shop/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rep4jv/what_do_you_guys_do_for_health_insurance_being/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>This post really resonates with me because I\u2019ve seen the \u201cactivation &gt; retention\u201d problem play out in real life for over 20 years.</p> <p>My wife and I run a small"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>My marketplace rates went up to $2500 monthly for my family of 4 in January. I just can't fathom paying for this much longer, we rarely go to doctor and really only n"
     },
     {
-      "title": "How do you not forget to follow up with people?",
+      "title": "i found out why our international sales dropped and our translation plugin is just stealing from us",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rdo7xs/how_do_you_not_forget_to_follow_up_with_people/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rf0sv7/i_found_out_why_our_international_sales_dropped/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I feel like I\u2019m constantly losing track of follow-ups with potential clients. I talk to people over email or linkedin\u2026 and after a few days of multitasking at work, I"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>i was looking at our analytics last night to prep for a regional meeting. i think we installed this dynamic ai translation widget on our site in late november? our tr"
     },
     {
-      "title": "we finally stopped doing the commission-only trap and it changed my shop",
+      "title": "I need to vent !!! As a small business owner",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rdmkbn/we_finally_stopped_doing_the_commissiononly_trap/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1repdxq/i_need_to_vent_as_a_small_business_owner/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>yall i gotta share something. for years i ran my dallas shop on straight commission because that's just 'how it's done.' we had huge turnover and everyone was stresse"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Man, seriously!!! I really need to vent.</p> <p>Food cost gone up, labor gone up, rent gone up! </p> <p>I really don\u2019t wanna raise the menu price since I am in a coll"
     },
     {
-      "title": "Danish government agency to ditch Microsoft software (2025)",
+      "title": "Show HN: Terminal Phone \u2013 E2EE Walkie Talkie from the Command Line",
       "source": "Hacker News",
-      "url": "https://therecord.media/denmark-digital-agency-microsoft-digital-independence",
+      "url": "https://gitlab.com/here_forawhile/terminalphone",
       "category": "tech",
       "stats": {
-        "points": 256,
-        "comments": 133
+        "points": 86,
+        "comments": 19
       }
     },
     {
-      "title": "Show HN: A real-time strategy game that AI agents can play",
+      "title": "Google API keys weren't secrets, but then Gemini changed the rules",
       "source": "Hacker News",
-      "url": "https://llmskirmish.com/",
+      "url": "https://trufflesecurity.com/blog/google-api-keys-werent-secrets-but-then-gemini-changed-the-rules",
       "category": "tech",
       "stats": {
-        "points": 78,
-        "comments": 26
+        "points": 815,
+        "comments": 171
       }
     },
     {
-      "title": "I'm helping my dog vibe code games",
+      "title": "Show HN: Agent Swarm \u2013 Multi-agent self-learning teams (OSS)",
       "source": "Hacker News",
-      "url": "https://www.calebleak.com/posts/dog-game/",
+      "url": "https://github.com/desplega-ai/agent-swarm",
       "category": "tech",
       "stats": {
-        "points": 966,
-        "comments": 308
+        "points": 8,
+        "comments": 3
       }
     },
     {
-      "title": "Read Locks Are Not Your Friends",
+      "title": "Fentanyl makeover: Core structural redesign could lead to safer pain medications",
       "source": "Hacker News",
-      "url": "https://eventual-consistency.vercel.app/posts/write-locks-faster",
+      "url": "https://www.scripps.edu/news-and-events/press-room/2026/20260211-janda-molecule.html",
       "category": "tech",
       "stats": {
-        "points": 14,
-        "comments": 12
+        "points": 5,
+        "comments": 0
       }
     },
     {
-      "title": "LLM=True",
+      "title": "The Physics and Economics of Moving 44 Tonnes at 56mph",
       "source": "Hacker News",
-      "url": "https://blog.codemine.be/posts/2026/20260222-be-quiet/",
+      "url": "https://www.mikeayles.com/blog/heavy-haulage-basics/",
       "category": "tech",
       "stats": {
-        "points": 132,
-        "comments": 90
+        "points": 34,
+        "comments": 20
       }
     },
     {
-      "title": "[AI \u00b7 Other] Trump's State of the Union Sparks Clashes Over Fraud and Borders",
+      "title": "[Trending] GalaxyS26",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "1 day ago | 151.0K posts",
+      "title": "[AI \u00b7 News] Nigeria's Local Models Policy Misread as Race Ban",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     },
     {
-      "title": "\ud83d\udd17 twitter://trending/2025999694711734312",
+      "title": "1 day ago | 44.0K posts",
       "source": "Twitter/X",
       "url": "https://twitter.com/explore",
       "category": "trending"
     }
   ],
   "trending": [
-    "KITV 4 Island News | Honolulu, HI News & Weather",
-    "News - World Coffee Portal",
-    "Daily Coffee News by Roast Magazine - Business new",
-    "Hawaii News, Weather, Sports, Breaking News & Live",
     "Oahu Events | This Week Hawaii",
+    "Barista Magazine Hosting Camp Coffee Shop in Napa",
     "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
-    "[MOD] The Daily Question Thread",
+    "Daily Coffee News by Roast Magazine - Business new",
+    "News - World Coffee Portal",
+    "Coffee is officially more expensive because of cli",
+    "On at HoMA | Honolulu Museum of Art",
     "TOP 10 BEST Events This Weekend in Honolulu, HI - ",
-    "Top Coffee Shop Industry Trends and Statistics in ",
-    "On at HoMA | Honolulu Museum of Art"
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "Hawaii News, Weather, Sports, Breaking News & Live"
   ]
 }
