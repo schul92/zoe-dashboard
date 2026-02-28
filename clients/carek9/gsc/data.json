@@ -1,11 +1,10 @@
 {
   "site": "https://carek9.com/",
   "dateRange": {
-    "start": "2026-01-28",
-    "end": "2026-02-26"
+    "start": "2026-01-26",
+    "end": "2026-02-25"
   },
-  "fetchedAt": "2026-02-27T07:01:03.982770",
-  "totalQueries": 25,
+  "timestamp": "2026-02-28T07:01:26.067306",
   "queries": [
     {
       "query": "groom bathing tablets",
