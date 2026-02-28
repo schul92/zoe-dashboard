@@ -1,15 +1,23 @@
 #!/usr/bin/env python3
-"""Fetch GA4 data for CareK9 using service account authentication."""
+"""Fetch CareK9 GA4 data for the last 30 days."""
 
 import json
-import time
-import jwt
-import requests
+import os
 from datetime import datetime, timedelta
+from google.oauth2 import service_account
+from google.analytics.data_v1beta import BetaAnalyticsDataClient
+from google.analytics.data_v1beta.types import (
+    RunReportRequest,
+    DateRange,
+    Dimension,
+    Metric,
+)
 
-# Service account credentials
-SERVICE_ACCOUNT = {
-    "client_email": "carek9-ga4-reader@maximal-backup-487205-h8.iam.gserviceaccount.com",
+# Service account credentials from AWS Secrets Manager
+SERVICE_ACCOUNT_INFO = {
+    "type": "service_account",
+    "project_id": "maximal-backup-487205-h8",
+    "private_key_id": "5adbcda094ac6f91a706ba049fdc187fd8201a06",
     "private_key": """-----BEGIN PRIVATE KEY-----
 MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1+i0jTGo3jAf1
 Unmmhb0lUk60+KP6oyMeDsTwRuIdXmVcQjnvUZX/3trwNF5j33In49X29lFklZC3
@@ -39,136 +47,152 @@ sT2wVihqdYPgMHA6f5zWNuD2UEx5jL6A7YYezNSt8ifAtTGq6Hss2U9H4EHekAKA
 purak4uL7f4eoMkQc/7xfzM=
 -----END PRIVATE KEY-----
 """,
-    "token_uri": "https://oauth2.googleapis.com/token"
+    "client_email": "carek9-ga4-reader@maximal-backup-487205-h8.iam.gserviceaccount.com",
+    "client_id": "109008951093395668202",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/carek9-ga4-reader%40maximal-backup-487205-h8.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
 }
 
 PROPERTY_ID = "523137923"
-GA4_API_BASE = "https://analyticsdata.googleapis.com/v1beta"
 
-
-def get_access_token():
-    """Generate JWT and exchange for access token."""
-    now = int(time.time())
-    payload = {
-        "iss": SERVICE_ACCOUNT["client_email"],
-        "sub": SERVICE_ACCOUNT["client_email"],
-        "aud": SERVICE_ACCOUNT["token_uri"],
-        "iat": now,
-        "exp": now + 3600,
-        "scope": "https://www.googleapis.com/auth/analytics.readonly"
-    }
-    
-    signed_jwt = jwt.encode(payload, SERVICE_ACCOUNT["private_key"], algorithm="RS256")
-    
-    response = requests.post(
-        SERVICE_ACCOUNT["token_uri"],
-        data={
-            "grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer",
-            "assertion": signed_jwt
-        }
+def get_client():
+    """Create authenticated GA4 client."""
+    credentials = service_account.Credentials.from_service_account_info(
+        SERVICE_ACCOUNT_INFO,
+        scopes=["https://www.googleapis.com/auth/analytics.readonly"]
     )
-    response.raise_for_status()
-    return response.json()["access_token"]
+    return BetaAnalyticsDataClient(credentials=credentials)
 
+def get_date_range():
+    """Get date range for last 30 days."""
+    end_date = datetime.now().date()
+    start_date = end_date - timedelta(days=30)
+    return start_date.strftime("%Y-%m-%d"), end_date.strftime("%Y-%m-%d")
 
-def run_report(access_token, dimensions, metrics, limit=10):
-    """Run a GA4 report."""
-    url = f"{GA4_API_BASE}/properties/{PROPERTY_ID}:runReport"
-    headers = {"Authorization": f"Bearer {access_token}"}
+def fetch_overview_metrics(client, start_date, end_date):
+    """Fetch main metrics: sessions, users, pageviews, bounce rate."""
+    request = RunReportRequest(
+        property=f"properties/{PROPERTY_ID}",
+        date_ranges=[DateRange(start_date=start_date, end_date=end_date)],
+        metrics=[
+            Metric(name="sessions"),
+            Metric(name="totalUsers"),
+            Metric(name="screenPageViews"),
+            Metric(name="bounceRate"),
+            Metric(name="averageSessionDuration"),
+            Metric(name="newUsers"),
+        ]
+    )
+    response = client.run_report(request)
     
-    # Last 30 days
-    end_date = datetime.now().strftime("%Y-%m-%d")
-    start_date = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
+    if response.rows:
+        row = response.rows[0]
+        return {
+            "sessions": int(row.metric_values[0].value),
+            "totalUsers": int(row.metric_values[1].value),
+            "pageviews": int(row.metric_values[2].value),
+            "bounceRate": round(float(row.metric_values[3].value) * 100, 2),
+            "avgSessionDuration": round(float(row.metric_values[4].value), 1),
+            "newUsers": int(row.metric_values[5].value),
+        }
+    return {}
+
+def fetch_top_pages(client, start_date, end_date, limit=10):
+    """Fetch top pages by pageviews."""
+    request = RunReportRequest(
+        property=f"properties/{PROPERTY_ID}",
+        date_ranges=[DateRange(start_date=start_date, end_date=end_date)],
+        dimensions=[Dimension(name="pagePath")],
+        metrics=[
+            Metric(name="screenPageViews"),
+            Metric(name="sessions"),
+        ],
+        limit=limit
+    )
+    response = client.run_report(request)
     
-    body = {
-        "dateRanges": [{"startDate": start_date, "endDate": end_date}],
-        "dimensions": [{"name": d} for d in dimensions] if dimensions else [],
-        "metrics": [{"name": m} for m in metrics],
-        "limit": limit
-    }
+    pages = []
+    for row in response.rows:
+        pages.append({
+            "path": row.dimension_values[0].value,
+            "pageviews": int(row.metric_values[0].value),
+            "sessions": int(row.metric_values[1].value),
+        })
+    return pages
+
+def fetch_traffic_sources(client, start_date, end_date, limit=10):
+    """Fetch traffic sources by session source/medium."""
+    request = RunReportRequest(
+        property=f"properties/{PROPERTY_ID}",
+        date_ranges=[DateRange(start_date=start_date, end_date=end_date)],
+        dimensions=[
+            Dimension(name="sessionSource"),
+            Dimension(name="sessionMedium"),
+        ],
+        metrics=[
+            Metric(name="sessions"),
+            Metric(name="totalUsers"),
+        ],
+        limit=limit
+    )
+    response = client.run_report(request)
     
-    response = requests.post(url, headers=headers, json=body)
-    response.raise_for_status()
-    return response.json()
+    sources = []
+    for row in response.rows:
+        sources.append({
+            "source": row.dimension_values[0].value,
+            "medium": row.dimension_values[1].value,
+            "sessions": int(row.metric_values[0].value),
+            "users": int(row.metric_values[1].value),
+        })
+    return sources
 
-
-def extract_totals(report):
-    """Extract metric totals from a report."""
-    totals = {}
-    if "rows" in report and report["rows"]:
-        for i, metric in enumerate(report.get("metricHeaders", [])):
-            name = metric["name"]
-            value = report["rows"][0]["metricValues"][i]["value"]
-            totals[name] = float(value) if "." in value else int(value)
-    return totals
-
-
-def extract_dimension_data(report, dim_name):
-    """Extract dimension breakdown from a report."""
-    results = []
-    if "rows" in report:
-        for row in report["rows"]:
-            item = {dim_name: row["dimensionValues"][0]["value"]}
-            for i, metric in enumerate(report.get("metricHeaders", [])):
-                value = row["metricValues"][i]["value"]
-                item[metric["name"]] = float(value) if "." in value else int(value)
-            results.append(item)
-    return results
-
+def fetch_daily_trend(client, start_date, end_date):
+    """Fetch daily sessions/users trend."""
+    request = RunReportRequest(
+        property=f"properties/{PROPERTY_ID}",
+        date_ranges=[DateRange(start_date=start_date, end_date=end_date)],
+        dimensions=[Dimension(name="date")],
+        metrics=[
+            Metric(name="sessions"),
+            Metric(name="totalUsers"),
+            Metric(name="screenPageViews"),
+        ],
+    )
+    response = client.run_report(request)
+    
+    daily = []
+    for row in response.rows:
+        daily.append({
+            "date": row.dimension_values[0].value,
+            "sessions": int(row.metric_values[0].value),
+            "users": int(row.metric_values[1].value),
+            "pageviews": int(row.metric_values[2].value),
+        })
+    # Sort by date
+    daily.sort(key=lambda x: x["date"])
+    return daily
 
 def main():
-    print("Authenticating with GA4...")
-    access_token = get_access_token()
-    print("✓ Authenticated")
+    client = get_client()
+    start_date, end_date = get_date_range()
     
-    # Fetch overall metrics
-    print("Fetching overall metrics...")
-    overall_report = run_report(
-        access_token,
-        dimensions=[],
-        metrics=["sessions", "totalUsers", "screenPageViews", "bounceRate"]
-    )
-    overall = extract_totals(overall_report)
-    
-    # Fetch top pages
-    print("Fetching top pages...")
-    pages_report = run_report(
-        access_token,
-        dimensions=["pagePath"],
-        metrics=["screenPageViews", "sessions"],
-        limit=10
-    )
-    top_pages = extract_dimension_data(pages_report, "pagePath")
-    
-    # Fetch traffic sources
-    print("Fetching traffic sources...")
-    sources_report = run_report(
-        access_token,
-        dimensions=["sessionSource"],
-        metrics=["sessions", "totalUsers"],
-        limit=10
-    )
-    traffic_sources = extract_dimension_data(sources_report, "sessionSource")
-    
-    # Compile results
-    end_date = datetime.now().strftime("%Y-%m-%d")
-    start_date = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
+    print(f"Fetching CareK9 GA4 data for {start_date} to {end_date}...")
     
     data = {
         "property_id": PROPERTY_ID,
         "date_range": {
             "start": start_date,
-            "end": end_date
+            "end": end_date,
         },
         "fetched_at": datetime.now().isoformat(),
-        "metrics": {
-            "sessions": overall.get("sessions", 0),
-            "users": overall.get("totalUsers", 0),
-            "pageviews": overall.get("screenPageViews", 0),
-            "bounce_rate": round(overall.get("bounceRate", 0) * 100, 2)
-        },
-        "top_pages": top_pages,
-        "traffic_sources": traffic_sources
+        "overview": fetch_overview_metrics(client, start_date, end_date),
+        "top_pages": fetch_top_pages(client, start_date, end_date),
+        "traffic_sources": fetch_traffic_sources(client, start_date, end_date),
+        "daily_trend": fetch_daily_trend(client, start_date, end_date),
     }
     
     # Save to JSON
@@ -176,9 +200,23 @@ def main():
     with open(output_path, "w") as f:
         json.dump(data, f, indent=2)
     
-    print(f"✓ Data saved to {output_path}")
-    print(json.dumps(data, indent=2))
-
+    print(f"\nData saved to {output_path}")
+    print("\n=== CareK9 GA4 Summary ===")
+    print(f"Period: {start_date} to {end_date}")
+    print(f"Sessions: {data['overview'].get('sessions', 'N/A'):,}")
+    print(f"Users: {data['overview'].get('totalUsers', 'N/A'):,}")
+    print(f"New Users: {data['overview'].get('newUsers', 'N/A'):,}")
+    print(f"Pageviews: {data['overview'].get('pageviews', 'N/A'):,}")
+    print(f"Bounce Rate: {data['overview'].get('bounceRate', 'N/A')}%")
+    print(f"Avg Session Duration: {data['overview'].get('avgSessionDuration', 'N/A')}s")
+    
+    print("\nTop 5 Pages:")
+    for i, page in enumerate(data['top_pages'][:5], 1):
+        print(f"  {i}. {page['path']} - {page['pageviews']:,} views")
+    
+    print("\nTop 5 Traffic Sources:")
+    for i, src in enumerate(data['traffic_sources'][:5], 1):
+        print(f"  {i}. {src['source']}/{src['medium']} - {src['sessions']:,} sessions")
 
 if __name__ == "__main__":
     main()
