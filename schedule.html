@@ -102,7 +102,6 @@ a:hover{text-decoration:underline}
   <div class="legend-item"><div class="legend-dot" style="background:#FF6B35"></div>KONA</div>
   <div class="legend-item"><div class="legend-dot" style="background:#8B5CF6"></div>ZOE</div>
   <div class="legend-item"><div class="legend-dot" style="background:#10B981"></div>CAREK9</div>
-  <div class="legend-item"><div class="legend-dot" style="background:#3B82F6"></div>POD</div>
 </div>
 
 <div id="calendar-wrap"><div id="calendar"></div></div>
@@ -134,10 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // CAREK9
     {title:'🐕 Daily SEO Pipeline',startTime:'07:00',endTime:'08:30',daysOfWeek:[0,1,2,3,4,5,6],color:'#10B981',extendedProps:{client:'CAREK9',desc:'일일 SEO 파이프라인'}},
     {title:'📋 Weekly Performance',startTime:'09:00',endTime:'09:15',daysOfWeek:[1],color:'#059669',extendedProps:{client:'CAREK9',desc:'주간 성과 보고서 (월요일)'}},
-    // POD
-    {title:'🔭 Daily Scout',startTime:'06:30',endTime:'07:00',daysOfWeek:[0,1,2,3,4,5,6],color:'#3B82F6',extendedProps:{client:'POD',desc:'일일 스카우트 및 기회 탐색'}},
-    {title:'💰 Daily KPI Report',startTime:'19:00',endTime:'19:15',daysOfWeek:[0,1,2,3,4,5,6],color:'#3B82F6',extendedProps:{client:'POD',desc:'일일 KPI 및 수익 보고서'}},
-    {title:'🗓️ Weekly Strategy',startTime:'09:00',endTime:'09:15',daysOfWeek:[1],color:'#2563EB',extendedProps:{client:'POD',desc:'주간 전략 리뷰 (월요일)'}},
+    // POD 크론 삭제됨 (Feb 28, 2026)
   ];
 
   const calendarEl = document.getElementById('calendar');
@@ -214,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextStr = nextMinutes === Infinity ? '없음' : Math.round(nextMinutes) + '분 후';
     document.getElementById('stats-bar').innerHTML =
       `<div class="stat">오늘 실행 예정: <strong>${todayCount}개</strong></div>` +
-      `<div class="stat">활성 클라이언트: <strong>4</strong></div>` +
+      `<div class="stat">활성 클라이언트: <strong>3</strong></div>` +
       `<div class="stat">다음 실행: <strong>${nextStr}</strong></div>`;
   }
   updateStats();
