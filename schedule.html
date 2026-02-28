@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZOE AI Schedule | 크론 작업 타임라인</title>
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.11/index.global.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#e5e5e5;font-family:'Inter',system-ui,-apple-system,sans-serif;min-height:100vh}
+a{color:#8B5CF6;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.header{padding:20px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #222;flex-wrap:wrap;gap:12px}
+.header-left{display:flex;align-items:center;gap:16px}
+.header-left h1{font-size:22px;font-weight:800;background:linear-gradient(135deg,#8B5CF6,#3B82F6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.back-link{font-size:13px;color:#888;padding:6px 12px;border:1px solid #333;border-radius:6px;transition:all .2s}
+.back-link:hover{color:#fff;border-color:#555;text-decoration:none}
+
+.live-banner{background:linear-gradient(90deg,rgba(255,107,53,.12),rgba(255,140,66,.08));border:1px solid rgba(255,107,53,.25);border-radius:10px;padding:14px 20px;margin:16px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.live-dot{width:10px;height:10px;background:#ef4444;border-radius:50%;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(239,68,68,.5)}50%{opacity:.8;box-shadow:0 0 0 6px rgba(239,68,68,0)}}
+.live-banner span{font-size:13px;color:#ccc}
+.live-banner strong{color:#FF6B35}
+
+.stats-bar{display:flex;gap:20px;padding:12px 24px;flex-wrap:wrap}
+.stat{background:#161616;border:1px solid #262626;border-radius:8px;padding:10px 16px;font-size:13px;color:#aaa}
+.stat strong{color:#fff;font-weight:700}
+
+.legend{display:flex;gap:16px;padding:8px 24px 16px;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#ccc}
+.legend-dot{width:12px;height:12px;border-radius:4px}
+
+#calendar-wrap{padding:0 24px 40px}
+
+/* FullCalendar dark theme */
+.fc{--fc-border-color:#2a2a2a;--fc-today-bg-color:rgba(139,92,246,.06);--fc-now-indicator-color:#ef4444;--fc-page-bg-color:#111;--fc-neutral-bg-color:#161616;--fc-list-event-hover-bg-color:#222;--fc-button-bg-color:#222;--fc-button-border-color:#333;--fc-button-text-color:#ccc;--fc-button-hover-bg-color:#333;--fc-button-hover-border-color:#444;--fc-button-active-bg-color:#8B5CF6;--fc-button-active-border-color:#8B5CF6;font-family:'Inter',system-ui,sans-serif;font-size:12px}
+.fc .fc-toolbar-title{font-size:16px!important;font-weight:700;color:#fff}
+.fc-col-header-cell{background:#161616!important}
+.fc-col-header-cell-cushion{color:#999!important;font-weight:600;font-size:11px}
+.fc-timegrid-slot{background:#111!important;border-color:#1e1e1e!important}
+.fc-timegrid-slot-label-cushion{color:#555!important;font-size:10px}
+.fc-event{border-radius:5px!important;border:none!important;font-weight:600;font-size:11px!important;cursor:pointer;transition:transform .1s,box-shadow .1s}
+.fc-event:hover{transform:scale(1.02);box-shadow:0 4px 12px rgba(0,0,0,.4);z-index:10!important}
+.fc-timegrid-now-indicator-line{border-color:#ef4444!important;border-width:2px!important}
+.fc-timegrid-now-indicator-arrow{border-color:#ef4444!important}
+.fc-scrollgrid{border-color:#2a2a2a!important}
+.fc-day-today .fc-col-header-cell-cushion{color:#8B5CF6!important}
+.fc th,.fc td{border-color:#2a2a2a!important}
+.fc-timegrid-event .fc-event-main{padding:3px 6px}
+.fc .fc-button{font-size:12px;font-weight:600;border-radius:6px;text-transform:capitalize}
+.fc-toolbar.fc-header-toolbar{margin-bottom:16px!important}
+
+/* Tooltip */
+.tooltip{position:fixed;background:#1a1a1a;border:1px solid #333;border-radius:8px;padding:12px 16px;font-size:12px;color:#ddd;max-width:280px;pointer-events:none;z-index:9999;box-shadow:0 8px 24px rgba(0,0,0,.6);opacity:0;transition:opacity .15s}
+.tooltip.show{opacity:1}
+.tooltip .tt-title{font-weight:700;font-size:13px;margin-bottom:4px}
+.tooltip .tt-client{font-size:11px;color:#888;margin-bottom:6px}
+.tooltip .tt-time{font-size:11px;color:#aaa}
+.tooltip .tt-badge{display:inline-block;background:#ef4444;color:#fff;font-size:10px;font-weight:700;padding:2px 6px;border-radius:4px;margin-top:6px}
+
+@media(max-width:640px){
+  .header{padding:14px 16px}
+  .header-left h1{font-size:18px}
+  .stats-bar,.legend,.live-banner{padding-left:16px;padding-right:16px}
+  #calendar-wrap{padding:0 8px 24px}
+  .fc-toolbar.fc-header-toolbar{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <h1>⏰ ZOE AI Schedule</h1>
+  </div>
+  <a href="/" class="back-link">← Hub</a>
+</div>
+
+<div class="live-banner">
+  <div class="live-dot"></div>
+  <span>🐦 <strong>X/Twitter Bot</strong> — 매시간 실행 (±30분) · ~10분</span>
+  <span>🌺 <strong>Bluesky Bot</strong> — 매시간 실행 · ~5분</span>
+  <span style="margin-left:auto;font-size:11px;color:#666">LIVE 24/7</span>
+</div>
+
+<div id="stats-bar" class="stats-bar"></div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#FF6B35"></div>KONA</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#8B5CF6"></div>ZOE</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#10B981"></div>CAREK9</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#3B82F6"></div>POD</div>
+</div>
+
+<div id="calendar-wrap"><div id="calendar"></div></div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const events = [
+    // KONA
+    {title:'☕ Website SEO & Performance',startTime:'03:00',endTime:'03:45',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF6B35',extendedProps:{client:'KONA',desc:'웹사이트 SEO 및 성능 최적화',est:'6 AM EST'}},
+    {title:'📰 Daily News + Content',startTime:'05:00',endTime:'05:30',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF6B35',extendedProps:{client:'KONA',desc:'일일 뉴스 수집 및 콘텐츠 생성',est:'8 AM EST'}},
+    {title:'📱 Social Media Post',startTime:'06:00',endTime:'06:30',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF8C42',extendedProps:{client:'KONA',desc:'X + Bluesky 소셜 미디어 게시 (±6hr window)',est:'9 AM EST'}},
+    {title:'📊 Executive Report',startTime:'15:00',endTime:'15:15',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF6B35',extendedProps:{client:'KONA',desc:'경영진 보고서 생성',est:'6 PM EST'}},
+    // Kona IG Bot - every 3 hours
+    {title:'📸 IG Bot @kona',startTime:'00:00',endTime:'00:45',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF6B35',extendedProps:{client:'KONA',desc:'인스타그램 봇 (3시간마다 ±30분)'}},
+    {title:'📸 IG Bot @kona',startTime:'03:00',endTime:'03:45',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF6B35',extendedProps:{client:'KONA',desc:'인스타그램 봇 (3시간마다 ±30분)'}},
+    {title:'📸 IG Bot @kona',startTime:'06:00',endTime:'06:45',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF6B35',extendedProps:{client:'KONA',desc:'인스타그램 봇 (3시간마다 ±30분)'}},
+    {title:'📸 IG Bot @kona',startTime:'09:00',endTime:'09:45',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF6B35',extendedProps:{client:'KONA',desc:'인스타그램 봇 (3시간마다 ±30분)'}},
+    {title:'📸 IG Bot @kona',startTime:'12:00',endTime:'12:45',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF6B35',extendedProps:{client:'KONA',desc:'인스타그램 봇 (3시간마다 ±30분)'}},
+    {title:'📸 IG Bot @kona',startTime:'15:00',endTime:'15:45',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF6B35',extendedProps:{client:'KONA',desc:'인스타그램 봇 (3시간마다 ±30분)'}},
+    {title:'📸 IG Bot @kona',startTime:'18:00',endTime:'18:45',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF6B35',extendedProps:{client:'KONA',desc:'인스타그램 봇 (3시간마다 ±30분)'}},
+    {title:'📸 IG Bot @kona',startTime:'21:00',endTime:'21:45',daysOfWeek:[0,1,2,3,4,5,6],color:'#FF6B35',extendedProps:{client:'KONA',desc:'인스타그램 봇 (3시간마다 ±30분)'}},
+    // ZOE
+    {title:'🔍 Daily SEO Intelligence',startTime:'04:00',endTime:'05:00',daysOfWeek:[0,1,2,3,4,5,6],color:'#8B5CF6',extendedProps:{client:'ZOE',desc:'일일 SEO 인텔리전스 분석',est:'7 AM EST'}},
+    {title:'📸 IG Midday @zoelumos',startTime:'13:00',endTime:'14:15',daysOfWeek:[0,1,2,3,4,5,6],color:'#8B5CF6',extendedProps:{client:'ZOE',desc:'인스타그램 점심 세션 (±90분)'}},
+    {title:'📸 IG Evening @zoelumos',startTime:'19:00',endTime:'20:15',daysOfWeek:[0,1,2,3,4,5,6],color:'#7C3AED',extendedProps:{client:'ZOE',desc:'인스타그램 저녁 세션 (±90분)'}},
+    {title:'🎯 Daily Dashboard Update',startTime:'20:00',endTime:'20:45',daysOfWeek:[0,1,2,3,4,5,6],color:'#8B5CF6',extendedProps:{client:'ZOE',desc:'일일 대시보드 업데이트',est:'11 PM EST'}},
+    // CAREK9
+    {title:'🐕 Daily SEO Pipeline',startTime:'07:00',endTime:'08:30',daysOfWeek:[0,1,2,3,4,5,6],color:'#10B981',extendedProps:{client:'CAREK9',desc:'일일 SEO 파이프라인'}},
+    {title:'📋 Weekly Performance',startTime:'09:00',endTime:'09:15',daysOfWeek:[1],color:'#059669',extendedProps:{client:'CAREK9',desc:'주간 성과 보고서 (월요일)'}},
+    // POD
+    {title:'🔭 Daily Scout',startTime:'06:30',endTime:'07:00',daysOfWeek:[0,1,2,3,4,5,6],color:'#3B82F6',extendedProps:{client:'POD',desc:'일일 스카우트 및 기회 탐색'}},
+    {title:'💰 Daily KPI Report',startTime:'19:00',endTime:'19:15',daysOfWeek:[0,1,2,3,4,5,6],color:'#3B82F6',extendedProps:{client:'POD',desc:'일일 KPI 및 수익 보고서'}},
+    {title:'🗓️ Weekly Strategy',startTime:'09:00',endTime:'09:15',daysOfWeek:[1],color:'#2563EB',extendedProps:{client:'POD',desc:'주간 전략 리뷰 (월요일)'}},
+  ];
+
+  const calendarEl = document.getElementById('calendar');
+  const calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'timeGridDay',
+    headerToolbar: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'timeGridDay,timeGridWeek'
+    },
+    buttonText: { today: '오늘', day: 'Day', week: 'Week' },
+    nowIndicator: true,
+    allDaySlot: false,
+    slotMinTime: '00:00:00',
+    slotMaxTime: '24:00:00',
+    slotDuration: '00:30:00',
+    slotLabelInterval: '01:00:00',
+    height: 'auto',
+    expandRows: true,
+    timeZone: 'America/Los_Angeles',
+    events: events,
+    eventDidMount: function(info) {
+      const el = info.el;
+      const props = info.event.extendedProps;
+      const now = new Date();
+      const start = info.event.start;
+      const end = info.event.end;
+      if (start && end && now >= start && now <= end) {
+        const badge = document.createElement('span');
+        badge.textContent = '실행 중';
+        badge.style.cssText = 'background:#ef4444;color:#fff;font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;margin-left:4px;';
+        el.querySelector('.fc-event-title')?.appendChild(badge);
+      }
+      el.addEventListener('mouseenter', function(e) {
+        const tt = document.getElementById('tooltip');
+        tt.innerHTML = `<div class="tt-title">${info.event.title}</div><div class="tt-client">${props.client}</div><div class="tt-time">${props.desc}${props.est ? ' · ' + props.est : ''}</div>${start && end && now >= start && now <= end ? '<div class="tt-badge">🟢 지금 실행 중</div>' : ''}`;
+        tt.classList.add('show');
+        tt.style.left = Math.min(e.clientX + 12, window.innerWidth - 300) + 'px';
+        tt.style.top = (e.clientY + 12) + 'px';
+      });
+      el.addEventListener('mouseleave', function() {
+        document.getElementById('tooltip').classList.remove('show');
+      });
+    }
+  });
+  calendar.render();
+
+  // Stats bar
+  function updateStats() {
+    const now = new Date();
+    const day = now.getDay();
+    let todayCount = 0;
+    let nextMinutes = Infinity;
+    events.forEach(ev => {
+      if (ev.daysOfWeek.includes(day)) {
+        todayCount++;
+        const [h, m] = ev.startTime.split(':').map(Number);
+        const evTime = new Date(now);
+        evTime.setHours(h, m, 0, 0);
+        const diff = (evTime - now) / 60000;
+        if (diff > 0 && diff < nextMinutes) nextMinutes = diff;
+      }
+    });
+    todayCount += 48; // hourly bots (24 X + 24 Bluesky)
+    const nextStr = nextMinutes === Infinity ? '없음' : Math.round(nextMinutes) + '분 후';
+    document.getElementById('stats-bar').innerHTML =
+      `<div class="stat">오늘 실행 예정: <strong>${todayCount}개</strong></div>` +
+      `<div class="stat">활성 클라이언트: <strong>4</strong></div>` +
+      `<div class="stat">다음 실행: <strong>${nextStr}</strong></div>`;
+  }
+  updateStats();
+  setInterval(updateStats, 60000);
+});
+</script>
+</body>
+</html>
