@@ -1,131 +1,50 @@
 {
   "client": "carek9",
-  "generated_at": "2026-02-27T07:01:00Z",
-  "date_range": {
-    "start": "2026-01-28",
-    "end": "2026-02-27"
+  "updatedAt": "2026-02-28T07:02:00Z",
+  "period": {
+    "start": "2026-01-29",
+    "end": "2026-02-28",
+    "days": 30
   },
-  "traffic": {
-    "sessions": 305,
-    "users": 202,
-    "new_users": 202,
-    "pageviews": 1024,
-    "bounce_rate": 59.67,
-    "avg_session_duration_sec": 268.9,
-    "pages_per_session": 3.36
+  "overview": {
+    "sessions": 310,
+    "users": 207,
+    "pageviews": 1029,
+    "bounceRate": 59.68,
+    "avgSessionDuration": 264.68
   },
-  "search": {
-    "total_queries": 25,
-    "total_clicks": 1,
-    "total_impressions": 135,
-    "avg_ctr": 0.74,
-    "avg_position": 21.8
-  },
-  "traffic_breakdown": {
-    "direct": {
-      "sessions": 216,
-      "percent": 70.8
-    },
-    "organic_google": {
-      "sessions": 48,
-      "percent": 15.7
-    },
-    "referral": {
-      "sessions": 31,
-      "percent": 10.2
-    },
-    "social": {
-      "sessions": 4,
-      "percent": 1.3
-    },
-    "other": {
-      "sessions": 6,
-      "percent": 2.0
-    }
-  },
-  "top_pages": [
-    {
-      "path": "/",
-      "title": "Homepage",
-      "pageviews": 483,
-      "sessions": 207
-    },
-    {
-      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "title": "Protein Chips",
-      "pageviews": 89,
-      "sessions": 30
-    },
-    {
-      "path": "/collections/treat",
-      "title": "Treats Collection",
-      "pageviews": 61,
-      "sessions": 38
-    },
-    {
-      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "title": "Chicken Wrapped Pumpkin Treats",
-      "pageviews": 60,
-      "sessions": 20
-    },
-    {
-      "path": "/blogs/news",
-      "title": "Blog",
-      "pageviews": 32,
-      "sessions": 16
-    }
+  "topChannels": [
+    { "channel": "Direct", "sessions": 221, "share": 71.3 },
+    { "channel": "Organic Search", "sessions": 48, "share": 15.5 },
+    { "channel": "Organic Shopping", "sessions": 25, "share": 8.1 },
+    { "channel": "Referral", "sessions": 7, "share": 2.3 },
+    { "channel": "Organic Social", "sessions": 4, "share": 1.3 }
   ],
-  "top_queries": [
-    {
-      "query": "best dog paw cleaner",
-      "clicks": 0,
-      "impressions": 33,
-      "ctr": 0,
-      "position": 20.8
-    },
-    {
-      "query": "dexas mudbuster",
-      "clicks": 0,
-      "impressions": 16,
-      "ctr": 0,
-      "position": 10.3
-    },
-    {
-      "query": "groom bathing tablets",
-      "clicks": 1,
-      "impressions": 15,
-      "ctr": 6.67,
-      "position": 4.2
-    },
-    {
-      "query": "dexas mudbuster paw cleaner",
-      "clicks": 0,
-      "impressions": 12,
-      "ctr": 0,
-      "position": 7.3
-    },
-    {
-      "query": "dexas mudbuster large",
-      "clicks": 0,
-      "impressions": 9,
-      "ctr": 0,
-      "position": 1.0
-    }
+  "topPages": [
+    { "page": "/", "views": 485, "sessions": 209 },
+    { "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips", "views": 89, "sessions": 30 },
+    { "page": "/collections/treat", "views": 61, "sessions": 38 },
+    { "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats", "views": 60, "sessions": 20 },
+    { "page": "/blogs/news", "views": 32, "sessions": 16 }
   ],
-  "insights": [
-    "🎯 Strong engagement: 4.5 min avg session duration with 3.4 pages/session",
-    "📈 Paw cleaner opportunity: 'best dog paw cleaner' gets 33 impressions but 0 clicks - optimize meta titles/descriptions",
-    "🥇 Position 1 for 'dexas mudbuster large' but no clicks - need more compelling SERP snippet",
-    "🔍 Only 1 organic click total - major CTR improvement opportunity across all keywords",
-    "👥 100% new users (202/202) - consider retention/email marketing strategies",
-    "🏠 Homepage dominates (47% of pageviews) - strong brand traffic but product pages need more visibility",
-    "🛒 Cart page has 28 views with 20 sessions - monitor conversion funnel"
+  "topQueries": [
+    { "query": "best dog paw cleaner", "impressions": 33, "clicks": 0, "position": 20.8 },
+    { "query": "dexas mudbuster", "impressions": 16, "clicks": 0, "position": 10.3 },
+    { "query": "groom bathing tablets", "impressions": 15, "clicks": 1, "position": 4.2 },
+    { "query": "dexas mudbuster paw cleaner", "impressions": 12, "clicks": 0, "position": 7.3 },
+    { "query": "dexas mudbuster large", "impressions": 9, "clicks": 0, "position": 1.0 }
   ],
-  "recommendations": [
-    "Improve meta descriptions for paw cleaner products to boost CTR",
-    "Add structured data markup for product rich snippets",
-    "Create content targeting 'best dog paw cleaner' keyword cluster",
-    "Implement email capture for new user retention",
-    "Consider internal linking from homepage to top products"
-  ]
+  "quickWins": [
+    { "query": "dexas mudbuster large", "impressions": 9, "position": 1.0, "action": "Optimize meta title/description for CTR" },
+    { "query": "groom bathing tablets", "impressions": 15, "position": 4.2, "action": "Already converting - expand content" },
+    { "query": "bathing tablets", "impressions": 3, "position": 6.3, "action": "Target with dedicated content" },
+    { "query": "dexas mudbuster paw cleaner", "impressions": 12, "position": 7.3, "action": "Improve page relevance for CTR" },
+    { "query": "best dog paw cleaner", "impressions": 33, "position": 20.8, "action": "High volume - create comparison content" }
+  ],
+  "gsc": {
+    "totalClicks": 1,
+    "totalImpressions": 135,
+    "avgCTR": 0.74,
+    "avgPosition": 18.5
+  }
 }
