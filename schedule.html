@@ -63,10 +63,20 @@ a:hover{text-decoration:underline}
 
 @media(max-width:640px){
   .header{padding:14px 16px}
-  .header-left h1{font-size:18px}
-  .stats-bar,.legend,.live-banner{padding-left:16px;padding-right:16px}
-  #calendar-wrap{padding:0 8px 24px}
-  .fc-toolbar.fc-header-toolbar{flex-direction:column;gap:8px}
+  .header-left h1{font-size:17px}
+  .stats-bar,.legend,.live-banner{padding-left:12px;padding-right:12px}
+  .stat{padding:8px 12px;font-size:12px}
+  .live-banner{flex-direction:column;gap:6px;padding:10px 14px}
+  .live-banner span{font-size:12px}
+  #calendar-wrap{padding:0 4px 24px}
+  .fc{font-size:11px}
+  .fc-event{font-size:10px!important}
+  .fc .fc-toolbar-title{font-size:14px!important}
+  .fc-toolbar.fc-header-toolbar{flex-direction:row;gap:6px;flex-wrap:wrap}
+  .fc .fc-button{font-size:11px;padding:4px 8px}
+  /* 모바일: Week 버튼 숨기기 */
+  .fc-timeGridWeek-button{display:none!important}
+  .tooltip{max-width:240px;font-size:11px}
 }
 </style>
 </head>
@@ -161,16 +171,25 @@ document.addEventListener('DOMContentLoaded', function() {
         badge.style.cssText = 'background:#ef4444;color:#fff;font-size:9px;font-weight:700;padding:1px 5px;border-radius:3px;margin-left:4px;';
         el.querySelector('.fc-event-title')?.appendChild(badge);
       }
-      el.addEventListener('mouseenter', function(e) {
+      function showTip(e) {
         const tt = document.getElementById('tooltip');
-        tt.innerHTML = `<div class="tt-title">${info.event.title}</div><div class="tt-client">${props.client}</div><div class="tt-time">${props.desc}${props.est ? ' · ' + props.est : ''}</div>${start && end && now >= start && now <= end ? '<div class="tt-badge">🟢 지금 실행 중</div>' : ''}`;
+        const isRunning = start && end && now >= start && now <= end;
+        tt.innerHTML = `<div class="tt-title">${info.event.title}</div><div class="tt-client">${props.client}</div><div class="tt-time">${props.desc}${props.est ? ' · ' + props.est : ''}</div>${isRunning ? '<div class="tt-badge">🟢 지금 실행 중</div>' : ''}`;
         tt.classList.add('show');
-        tt.style.left = Math.min(e.clientX + 12, window.innerWidth - 300) + 'px';
-        tt.style.top = (e.clientY + 12) + 'px';
-      });
+        const x = e.touches ? e.touches[0].clientX : e.clientX;
+        const y = e.touches ? e.touches[0].clientY : e.clientY;
+        tt.style.left = Math.min(x + 12, window.innerWidth - 260) + 'px';
+        tt.style.top = Math.min(y + 12, window.innerHeight - 120) + 'px';
+      }
+      el.addEventListener('mouseenter', showTip);
       el.addEventListener('mouseleave', function() {
         document.getElementById('tooltip').classList.remove('show');
       });
+      el.addEventListener('touchstart', function(e) {
+        e.preventDefault();
+        showTip(e);
+        setTimeout(() => document.getElementById('tooltip').classList.remove('show'), 2500);
+      }, {passive:false});
     }
   });
   calendar.render();
