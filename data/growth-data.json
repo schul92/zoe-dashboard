@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-01T03:30:32Z",
+  "lastUpdated": "2026-03-01T17:00:24Z",
   "accounts": {
     "kona_instagram": {
       "handle": "@konacoffeedonut",
@@ -9,6 +9,10 @@
       "history": [
         {
           "date": "2026-02-28",
+          "count": 112
+        },
+        {
+          "date": "2026-03-01",
           "count": 112
         }
       ]
@@ -22,6 +26,10 @@
         {
           "date": "2026-02-28",
           "count": 5
+        },
+        {
+          "date": "2026-03-01",
+          "count": 5
         }
       ]
     },
@@ -29,11 +37,15 @@
       "handle": "konacoffeedonut.bsky.social",
       "client": "KONA",
       "platform": "Bluesky",
-      "current": 18,
+      "current": 20,
       "history": [
         {
           "date": "2026-02-28",
           "count": 18
+        },
+        {
+          "date": "2026-03-01",
+          "count": 20
         }
       ]
     },
@@ -45,6 +57,10 @@
       "history": [
         {
           "date": "2026-02-28",
+          "count": 23
+        },
+        {
+          "date": "2026-03-01",
           "count": 23
         }
       ]
