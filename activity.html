@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZOE AI Activity | Bot Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#e5e5e5;font-family:'Inter',system-ui,-apple-system,sans-serif;min-height:100vh}
+a{color:#8B5CF6;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.header{padding:20px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #222;flex-wrap:wrap;gap:12px}
+.header-left{display:flex;align-items:center;gap:16px}
+.header-left h1{font-size:22px;font-weight:800;background:linear-gradient(135deg,#E1306C,#8B5CF6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.back-link{font-size:13px;color:#888;padding:6px 12px;border:1px solid #333;border-radius:6px;transition:all .2s}
+.back-link:hover{color:#fff;border-color:#555;text-decoration:none}
+
+.live-banner{background:linear-gradient(90deg,rgba(139,92,246,.12),rgba(225,48,108,.08));border:1px solid rgba(139,92,246,.25);border-radius:10px;padding:14px 20px;margin:16px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.live-dot{width:10px;height:10px;background:#22c55e;border-radius:50%;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(34,197,94,.5)}50%{opacity:.8;box-shadow:0 0 0 6px rgba(34,197,94,0)}}
+.live-banner span{font-size:13px;color:#ccc}
+.live-banner strong{color:#8B5CF6}
+#banner-summary{margin-left:auto;font-size:11px;color:#666}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;padding:16px 24px}
+.card{background:#161616;border:1px solid #262626;border-radius:10px;padding:16px;transition:border-color .2s}
+.card:hover{border-color:#444}
+.card-header{display:flex;align-items:center;gap:8px;margin-bottom:12px;font-size:13px;font-weight:600}
+.card-platform{font-size:11px;color:#888;font-weight:400}
+.card .big-num{font-size:28px;font-weight:800;line-height:1}
+.card .label{font-size:11px;color:#888;margin-top:2px}
+.card-stats{display:flex;gap:16px;margin-top:10px}
+.card-stat{text-align:center}
+.card-stat .val{font-size:16px;font-weight:700}
+.card-stat .lbl{font-size:10px;color:#666}
+
+.section{padding:16px 24px}
+.section h2{font-size:16px;font-weight:700;margin-bottom:12px;color:#fff}
+
+/* Timeline */
+.timeline{display:flex;flex-direction:column;gap:8px}
+.tl-item{display:flex;align-items:center;gap:12px;background:#161616;border:1px solid #262626;border-radius:8px;padding:10px 14px}
+.tl-color{width:4px;height:36px;border-radius:2px;flex-shrink:0}
+.tl-time{font-size:12px;color:#888;min-width:90px;font-weight:600}
+.tl-info{font-size:12px;color:#ccc;flex:1}
+.tl-info strong{color:#fff}
+.tl-badges{display:flex;gap:6px;flex-wrap:wrap}
+.tl-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;color:#fff}
+.no-data{color:#555;font-size:13px;padding:20px;text-align:center;background:#161616;border:1px solid #262626;border-radius:8px}
+
+/* Chart tabs */
+.tabs{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.tab{font-size:12px;font-weight:600;padding:6px 14px;border-radius:6px;background:#222;color:#888;border:1px solid #333;cursor:pointer;transition:all .2s}
+.tab.active{background:#8B5CF6;color:#fff;border-color:#8B5CF6}
+.chart-wrap{background:#161616;border:1px solid #262626;border-radius:10px;padding:16px;max-height:300px}
+.chart-wrap canvas{max-height:260px}
+
+/* Ban risk */
+.risk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.risk-card{background:#161616;border:1px solid #262626;border-radius:10px;padding:16px}
+.risk-card h3{font-size:14px;font-weight:700;margin-bottom:10px}
+.risk-row{margin-bottom:8px}
+.risk-label{display:flex;justify-content:space-between;font-size:11px;color:#aaa;margin-bottom:3px}
+.risk-bar{height:8px;background:#262626;border-radius:4px;overflow:hidden}
+.risk-fill{height:100%;border-radius:4px;transition:width .5s}
+
+/* Sessions accordion */
+.session-item{background:#161616;border:1px solid #262626;border-radius:8px;margin-bottom:6px;overflow:hidden}
+.session-header{padding:10px 14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600}
+.session-header:hover{background:#1a1a1a}
+.session-body{padding:0 14px 12px;font-size:12px;color:#aaa;display:none}
+.session-body.open{display:block}
+.session-tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}
+.session-tag{background:#262626;padding:2px 8px;border-radius:4px;font-size:10px;color:#8B5CF6}
+
+@media(max-width:640px){
+  .header{padding:14px 16px}
+  .header-left h1{font-size:17px}
+  .cards,.section{padding-left:12px;padding-right:12px}
+  .live-banner{margin:12px;padding:10px 14px;flex-direction:column;gap:6px}
+  .card .big-num{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <h1>🤖 Bot Activity</h1>
+  </div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <a href="/" class="back-link">← Hub</a>
+    <a href="schedule.html" class="back-link">⏰ Schedule</a>
+    <a href="growth.html" class="back-link">📈 Growth</a>
+  </div>
+</div>
+
+<div class="live-banner">
+  <div class="live-dot"></div>
+  <span>Last updated: <strong id="last-updated">loading...</strong></span>
+  <span id="banner-summary"></span>
+</div>
+
+<div class="cards" id="summary-cards"></div>
+
+<div class="section">
+  <h2>📅 Today's Sessions</h2>
+  <div id="timeline" class="timeline"><div class="no-data">Loading...</div></div>
+</div>
+
+<div class="section">
+  <h2>📊 30-Day Activity</h2>
+  <div class="tabs" id="chart-tabs"></div>
+  <div class="chart-wrap"><canvas id="activityChart"></canvas></div>
+</div>
+
+<div class="section">
+  <h2>📋 Session Details</h2>
+  <div id="session-log"><div class="no-data">Loading...</div></div>
+</div>
+
+<div class="section">
+  <h2>⚠️ Ban Risk Monitor</h2>
+  <div class="risk-grid" id="risk-grid"></div>
+</div>
+
+<script>
+const LIMITS = {
+  kona_instagram: {likes:80,comments:40,follows:50},
+  zoe_instagram: {likes:400,comments:80,follows:120},
+  kona_x: {replies:50},
+  kona_bluesky: {replies:50}
+};
+const EMOJIS = {kona_instagram:'🌺',zoe_instagram:'💜',kona_x:'🐦',kona_bluesky:'🦋'};
+
+let chart = null;
+let DATA = null;
+
+async function init(){
+  try{
+    const r = await fetch('data/activity-data.json?t='+Date.now());
+    DATA = await r.json();
+  }catch(e){
+    document.getElementById('summary-cards').innerHTML='<div class="no-data">No activity data yet. Run a bot session first!</div>';
+    return;
+  }
+  renderBanner();
+  renderCards();
+  renderTimeline();
+  renderChartTabs();
+  renderChart('kona_instagram');
+  renderSessions();
+  renderRisk();
+}
+
+function renderBanner(){
+  const d = new Date(DATA.lastUpdated);
+  const mins = Math.round((Date.now()-d.getTime())/60000);
+  document.getElementById('last-updated').textContent = mins<1?'just now':mins+'m ago';
+  let total=0;
+  Object.values(DATA.accounts).forEach(a=>{
+    const t=a.today||{};
+    total+=(t.likes||0)+(t.comments||0)+(t.follows||0)+(t.replies||0);
+  });
+  document.getElementById('banner-summary').textContent='Today: '+total+' actions across '+Object.keys(DATA.accounts).length+' bots';
+}
+
+function renderCards(){
+  const el=document.getElementById('summary-cards');
+  el.innerHTML='';
+  Object.entries(DATA.accounts).forEach(([k,a])=>{
+    const t=a.today||{};
+    const isIG=a.platform==='Instagram';
+    const total=(t.likes||0)+(t.comments||0)+(t.follows||0)+(t.replies||0);
+    el.innerHTML+=`<div class="card">
+      <div class="card-header">${EMOJIS[k]||'🤖'} ${a.label} <span class="card-platform">${a.platform}</span></div>
+      <div class="big-num" style="color:${a.color}">${total}</div>
+      <div class="label">actions today · ${t.sessions||0} sessions</div>
+      <div class="card-stats">
+        ${isIG?`<div class="card-stat"><div class="val">${t.likes||0}</div><div class="lbl">likes</div></div>
+        <div class="card-stat"><div class="val">${t.comments||0}</div><div class="lbl">comments</div></div>
+        <div class="card-stat"><div class="val">${t.follows||0}</div><div class="lbl">follows</div></div>`
+        :`<div class="card-stat"><div class="val">${t.replies||0}</div><div class="lbl">replies</div></div>`}
+      </div>
+    </div>`;
+  });
+}
+
+function renderTimeline(){
+  const el=document.getElementById('timeline');
+  if(!DATA.todaySessions||!DATA.todaySessions.length){el.innerHTML='<div class="no-data">No sessions today yet</div>';return;}
+  el.innerHTML='';
+  DATA.todaySessions.forEach(s=>{
+    const a=DATA.accounts[s.account]||{};
+    const badges=[];
+    if(s.likes)badges.push(`<span class="tl-badge" style="background:#f97316">${s.likes} likes</span>`);
+    if(s.comments)badges.push(`<span class="tl-badge" style="background:#3b82f6">${s.comments} comments</span>`);
+    if(s.follows)badges.push(`<span class="tl-badge" style="background:#22c55e">${s.follows} follows</span>`);
+    if(s.replies)badges.push(`<span class="tl-badge" style="background:#1DA1F2">${s.replies} replies</span>`);
+    el.innerHTML+=`<div class="tl-item">
+      <div class="tl-color" style="background:${a.color||'#555'}"></div>
+      <div class="tl-time">${s.start_time||'?'} → ${s.end_time||'?'}</div>
+      <div class="tl-info"><strong>${a.label||s.account}</strong> · ${Math.round(s.duration_min||0)}min</div>
+      <div class="tl-badges">${badges.join('')}</div>
+    </div>`;
+  });
+}
+
+function renderChartTabs(){
+  const el=document.getElementById('chart-tabs');
+  el.innerHTML='';
+  Object.entries(DATA.accounts).forEach(([k,a],i)=>{
+    const btn=document.createElement('div');
+    btn.className='tab'+(i===0?' active':'');
+    btn.textContent=EMOJIS[k]+' '+a.client+' '+a.platform;
+    btn.onclick=()=>{document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));btn.classList.add('active');renderChart(k);};
+    el.appendChild(btn);
+  });
+}
+
+function renderChart(accountKey){
+  const a=DATA.accounts[accountKey];
+  if(!a)return;
+  const labels=DATA.dates.map(d=>d.slice(5));
+  const datasets=[];
+  const colors={likes:'#f97316',comments:'#3b82f6',follows:'#22c55e',replies:'#1DA1F2'};
+  Object.entries(a.metrics).forEach(([m,vals])=>{
+    datasets.push({label:m,data:vals,backgroundColor:colors[m]||'#888',borderRadius:3,barPercentage:.7});
+  });
+  if(chart)chart.destroy();
+  chart=new Chart(document.getElementById('activityChart'),{
+    type:'bar',
+    data:{labels,datasets},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#888',font:{size:11}}}},
+      scales:{x:{stacked:true,ticks:{color:'#555',font:{size:10}},grid:{color:'#1e1e1e'}},
+              y:{stacked:true,ticks:{color:'#555',font:{size:10}},grid:{color:'#1e1e1e'}}}}
+  });
+}
+
+function renderSessions(){
+  const el=document.getElementById('session-log');
+  if(!DATA.todaySessions||!DATA.todaySessions.length){el.innerHTML='<div class="no-data">No session details yet</div>';return;}
+  el.innerHTML='';
+  DATA.todaySessions.forEach((s,i)=>{
+    const a=DATA.accounts[s.account]||{};
+    const tags=(s.hashtags_used||[]).map(h=>`<span class="session-tag">${h}</span>`).join('');
+    el.innerHTML+=`<div class="session-item">
+      <div class="session-header" onclick="this.nextElementSibling.classList.toggle('open')">
+        <span style="color:${a.color||'#fff'}">${EMOJIS[s.account]||''} ${a.label||s.account} · ${s.start_time}-${s.end_time}</span>
+        <span style="color:#555">▼</span>
+      </div>
+      <div class="session-body">
+        <p>Duration: ${s.duration_min||0}min · Posts viewed: ${s.posts_viewed||'N/A'}</p>
+        <p>Likes: ${s.likes||0} · Comments: ${s.comments||0} · Follows: ${s.follows||0} · Replies: ${s.replies||0}</p>
+        ${tags?'<div class="session-tags">'+tags+'</div>':''}
+      </div>
+    </div>`;
+  });
+}
+
+function renderRisk(){
+  const el=document.getElementById('risk-grid');
+  el.innerHTML='';
+  const riskAccounts=[
+    {key:'kona_instagram',name:'@konacoffeedonut IG'},
+    {key:'zoe_instagram',name:'@zoelumos IG'},
+    {key:'kona_x',name:'@konacoffeedonut X'},
+    {key:'kona_bluesky',name:'Kona Bluesky'}
+  ];
+  riskAccounts.forEach(ra=>{
+    const limits=LIMITS[ra.key]||{};
+    const today=(DATA.accounts[ra.key]||{}).today||{};
+    let rows='';
+    Object.entries(limits).forEach(([m,max])=>{
+      const val=today[m]||0;
+      const pct=Math.min(100,Math.round(val/max*100));
+      const color=pct<60?'#22c55e':pct<85?'#eab308':'#ef4444';
+      rows+=`<div class="risk-row"><div class="risk-label"><span>${m}</span><span>${val}/${max}</span></div><div class="risk-bar"><div class="risk-fill" style="width:${pct}%;background:${color}"></div></div></div>`;
+    });
+    el.innerHTML+=`<div class="risk-card"><h3>${EMOJIS[ra.key]||''} ${ra.name}</h3>${rows}</div>`;
+  });
+}
+
+init();
+</script>
+</body>
+</html>
