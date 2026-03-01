@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZOE Studio | Follower Growth</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#e5e5e5;font-family:'Inter',system-ui,-apple-system,sans-serif;min-height:100vh}
+a{color:#8B5CF6;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.header{padding:20px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #222;flex-wrap:wrap;gap:12px}
+.header-left{display:flex;align-items:center;gap:16px}
+.header-left h1{font-size:22px;font-weight:800;background:linear-gradient(135deg,#8B5CF6,#3B82F6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav{display:flex;gap:8px;align-items:center}
+.nav a{font-size:13px;color:#888;padding:6px 12px;border:1px solid #333;border-radius:6px;transition:all .2s}
+.nav a:hover,.nav a.active{color:#fff;border-color:#555;text-decoration:none}
+.nav a.active{background:#8B5CF6;border-color:#8B5CF6;color:#fff}
+
+.container{max-width:1200px;margin:0 auto;padding:16px 24px}
+
+.stats-bar{display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.stat-card{background:#161616;border:1px solid #262626;border-radius:10px;padding:14px 18px;flex:1;min-width:140px}
+.stat-card .label{font-size:11px;color:#888;text-transform:uppercase;font-weight:600;letter-spacing:.5px}
+.stat-card .value{font-size:24px;font-weight:800;margin-top:4px}
+.stat-card .delta{font-size:12px;margin-top:2px;font-weight:600}
+.delta.positive{color:#10B981}
+.delta.negative{color:#ef4444}
+.delta.neutral{color:#666}
+
+.section-title{font-size:18px;font-weight:700;margin:24px 0 12px;display:flex;align-items:center;gap:8px}
+.section-title .dot{width:12px;height:12px;border-radius:4px}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-bottom:24px}
+.card{background:#161616;border:1px solid #262626;border-radius:12px;padding:18px;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.card.instagram::before{background:#E1306C}
+.card.twitter::before{background:#1DA1F2}
+.card.bluesky::before{background:#0085FF}
+
+.card .platform{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
+.card.instagram .platform{color:#E1306C}
+.card.twitter .platform{color:#1DA1F2}
+.card.bluesky .platform{color:#0085FF}
+.card .handle{font-size:13px;color:#888;margin-bottom:10px}
+.card .followers{font-size:28px;font-weight:800;color:#fff}
+.card .card-deltas{display:flex;gap:16px;margin-top:6px}
+.card .card-delta{font-size:12px;color:#888}
+.card .card-delta span{font-weight:700}
+.card .chart-wrap{margin-top:12px;height:80px}
+
+/* Bot Activity */
+.activity-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:24px}
+.activity-card{background:#161616;border:1px solid #262626;border-radius:10px;padding:16px}
+.activity-card .act-title{font-size:12px;font-weight:700;color:#888;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
+.activity-row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;font-size:13px}
+.activity-row .act-label{color:#aaa}
+.activity-row .act-value{font-weight:700;color:#fff}
+
+/* Ban Risk */
+.risk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:32px}
+.risk-card{background:#161616;border:1px solid #262626;border-radius:12px;padding:18px;position:relative}
+.risk-card .risk-handle{font-size:14px;font-weight:700;color:#fff;margin-bottom:10px}
+.risk-badge{display:inline-block;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.risk-badge.green{background:rgba(16,185,129,.15);color:#10B981;border:1px solid rgba(16,185,129,.3)}
+.risk-badge.yellow{background:rgba(245,158,11,.15);color:#F59E0B;border:1px solid rgba(245,158,11,.3)}
+.risk-badge.red{background:rgba(239,68,68,.15);color:#ef4444;border:1px solid rgba(239,68,68,.3)}
+.risk-bars{margin-top:12px}
+.risk-bar-row{margin-bottom:8px}
+.risk-bar-label{font-size:11px;color:#888;display:flex;justify-content:space-between;margin-bottom:3px}
+.risk-bar-track{height:6px;background:#262626;border-radius:3px;overflow:hidden}
+.risk-bar-fill{height:100%;border-radius:3px;transition:width .5s}
+
+.updated{text-align:center;font-size:11px;color:#555;padding:20px 0}
+
+@media(max-width:640px){
+  .header{padding:14px 16px}
+  .header-left h1{font-size:17px}
+  .container{padding:12px 12px}
+  .cards{grid-template-columns:1fr}
+  .stat-card .value{font-size:20px}
+  .card .followers{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <h1>📈 Growth Tracker</h1>
+  </div>
+  <div class="nav">
+    <a href="/">← Hub</a>
+    <a href="schedule.html">📅 Schedule</a>
+    <a href="growth.html" class="active">📈 Growth</a>
+  </div>
+</div>
+
+<div class="container">
+  <div id="stats-bar" class="stats-bar"></div>
+
+  <div class="section-title"><div class="dot" style="background:#FF6B35"></div> KONA</div>
+  <div id="kona-cards" class="cards"></div>
+
+  <div class="section-title"><div class="dot" style="background:#8B5CF6"></div> ZOE</div>
+  <div id="zoe-cards" class="cards"></div>
+
+  <div class="section-title">🤖 Bot Activity</div>
+  <div id="activity-grid" class="activity-grid"></div>
+
+  <div class="section-title">⚠️ Ban Risk</div>
+  <div id="risk-grid" class="risk-grid"></div>
+
+  <div id="updated" class="updated"></div>
+</div>
+
+<script>
+const PLATFORM_COLORS = {Instagram:'#E1306C','X/Twitter':'#1DA1F2',Bluesky:'#0085FF'};
+const PLATFORM_CLASS = {Instagram:'instagram','X/Twitter':'twitter',Bluesky:'bluesky'};
+const CLIENT_COLORS = {KONA:'#FF6B35',ZOE:'#8B5CF6'};
+const LIMITS = {
+  kona_instagram: {likes:80,comments:40,follows:50},
+  zoe_instagram: {likes:400,comments:80,follows:120}
+};
+
+fetch('data/growth-data.json').then(r=>r.json()).then(data=>{
+  renderStats(data);
+  renderCards(data,'KONA','kona-cards');
+  renderCards(data,'ZOE','zoe-cards');
+  renderActivity(data);
+  renderRisk(data);
+  document.getElementById('updated').textContent = 'Last updated: ' + new Date(data.lastUpdated).toLocaleString();
+}).catch(e=>{
+  document.getElementById('updated').textContent = 'No data yet — run follower-check.py';
+});
+
+function getDelta(history, days) {
+  if (!history || history.length < 2) return 0;
+  const latest = history[history.length - 1];
+  const cutoff = new Date(latest.date);
+  cutoff.setDate(cutoff.getDate() - days);
+  const cutoffStr = cutoff.toISOString().slice(0,10);
+  // Find closest entry to cutoff
+  let older = history[0];
+  for (const h of history) {
+    if (h.date <= cutoffStr) older = h;
+  }
+  return latest.count - older.count;
+}
+
+function renderStats(data) {
+  const bar = document.getElementById('stats-bar');
+  const clients = {};
+  for (const [id, acc] of Object.entries(data.accounts)) {
+    if (!clients[acc.client]) clients[acc.client] = {total:0, weekDelta:0};
+    clients[acc.client].total += acc.current;
+    clients[acc.client].weekDelta += getDelta(acc.history, 7);
+  }
+  let html = '';
+  for (const [client, info] of Object.entries(clients)) {
+    const color = CLIENT_COLORS[client] || '#888';
+    const sign = info.weekDelta >= 0 ? '+' : '';
+    const cls = info.weekDelta > 0 ? 'positive' : info.weekDelta < 0 ? 'negative' : 'neutral';
+    html += `<div class="stat-card"><div class="label" style="color:${color}">${client}</div><div class="value" style="color:${color}">${info.total.toLocaleString()}</div><div class="delta ${cls}">${sign}${info.weekDelta} this week</div></div>`;
+  }
+  // Total
+  const totalFollowers = Object.values(data.accounts).reduce((s,a)=>s+a.current,0);
+  html += `<div class="stat-card"><div class="label">TOTAL</div><div class="value">${totalFollowers.toLocaleString()}</div><div class="delta neutral">all platforms</div></div>`;
+  bar.innerHTML = html;
+}
+
+function renderCards(data, client, containerId) {
+  const container = document.getElementById(containerId);
+  let html = '';
+  for (const [id, acc] of Object.entries(data.accounts)) {
+    if (acc.client !== client) continue;
+    const pClass = PLATFORM_CLASS[acc.platform] || '';
+    const todayDelta = getDelta(acc.history, 1);
+    const weekDelta = getDelta(acc.history, 7);
+    const sign1 = todayDelta >= 0 ? '+' : '';
+    const sign7 = weekDelta >= 0 ? '+' : '';
+    const cls1 = todayDelta > 0 ? 'positive' : todayDelta < 0 ? 'negative' : 'neutral';
+    const cls7 = weekDelta > 0 ? 'positive' : weekDelta < 0 ? 'negative' : 'neutral';
+    html += `<div class="card ${pClass}">
+      <div class="platform">${acc.platform}</div>
+      <div class="handle">${acc.handle}</div>
+      <div class="followers">${acc.current.toLocaleString()}</div>
+      <div class="card-deltas">
+        <div class="card-delta">Today: <span class="delta ${cls1}">${sign1}${todayDelta}</span></div>
+        <div class="card-delta">7d: <span class="delta ${cls7}">${sign7}${weekDelta}</span></div>
+      </div>
+      <div class="chart-wrap"><canvas id="chart-${id}"></canvas></div>
+    </div>`;
+  }
+  container.innerHTML = html;
+  // Render charts
+  for (const [id, acc] of Object.entries(data.accounts)) {
+    if (acc.client !== client) continue;
+    const canvas = document.getElementById('chart-'+id);
+    if (!canvas || acc.history.length < 1) continue;
+    const last30 = acc.history.slice(-30);
+    new Chart(canvas, {
+      type: 'line',
+      data: {
+        labels: last30.map(h=>h.date.slice(5)),
+        datasets: [{
+          data: last30.map(h=>h.count),
+          borderColor: PLATFORM_COLORS[acc.platform] || '#888',
+          backgroundColor: (PLATFORM_COLORS[acc.platform] || '#888') + '22',
+          fill: true,
+          tension: 0.3,
+          pointRadius: last30.length > 15 ? 0 : 3,
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: {legend:{display:false}},
+        scales: {
+          x: {display:false},
+          y: {display:false, beginAtZero: false}
+        }
+      }
+    });
+  }
+}
+
+function renderActivity(data) {
+  const grid = document.getElementById('activity-grid');
+  if (!data.botActivity) { grid.innerHTML = '<p style="color:#666">No bot activity data</p>'; return; }
+  let html = '';
+  const labels = {kona_instagram:'☕ Kona IG', zoe_instagram:'🎯 Zoe IG'};
+  for (const [id, act] of Object.entries(data.botActivity)) {
+    html += `<div class="activity-card">
+      <div class="act-title">${labels[id]||id} · ${act.date||'—'}</div>
+      <div class="activity-row"><span class="act-label">❤️ Likes</span><span class="act-value">${act.likes}</span></div>
+      <div class="activity-row"><span class="act-label">💬 Comments</span><span class="act-value">${act.comments}</span></div>
+      <div class="activity-row"><span class="act-label">👥 Follows</span><span class="act-value">${act.follows}</span></div>
+    </div>`;
+  }
+  grid.innerHTML = html;
+}
+
+function renderRisk(data) {
+  const grid = document.getElementById('risk-grid');
+  if (!data.botActivity) { grid.innerHTML = '<p style="color:#666">No data</p>'; return; }
+  let html = '';
+  const handles = {kona_instagram:'@konacoffeedonut', zoe_instagram:'@zoelumos'};
+  for (const [id, limits] of Object.entries(LIMITS)) {
+    const act = data.botActivity[id] || {likes:0,comments:0,follows:0};
+    // Determine overall risk
+    let maxPct = 0;
+    const metrics = ['likes','comments','follows'];
+    const bars = metrics.map(m => {
+      const pct = limits[m] > 0 ? (act[m] / limits[m]) * 100 : 0;
+      if (pct > maxPct) maxPct = pct;
+      const color = pct >= 100 ? '#ef4444' : pct >= 80 ? '#F59E0B' : '#10B981';
+      return `<div class="risk-bar-row">
+        <div class="risk-bar-label"><span>${m}</span><span>${act[m]}/${limits[m]}</span></div>
+        <div class="risk-bar-track"><div class="risk-bar-fill" style="width:${Math.min(pct,100)}%;background:${color}"></div></div>
+      </div>`;
+    }).join('');
+    const riskLevel = maxPct >= 100 ? 'red' : maxPct >= 80 ? 'yellow' : 'green';
+    const riskLabel = maxPct >= 100 ? '🔴 HIGH RISK' : maxPct >= 80 ? '🟡 MEDIUM' : '🟢 LOW RISK';
+    html += `<div class="risk-card">
+      <div class="risk-handle">${handles[id]||id}</div>
+      <span class="risk-badge ${riskLevel}">${riskLabel}</span>
+      <div class="risk-bars">${bars}</div>
+    </div>`;
+  }
+  grid.innerHTML = html;
+}
+</script>
+</body>
+</html>

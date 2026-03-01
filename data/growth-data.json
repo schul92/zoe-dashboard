@@ -1,0 +1,67 @@
+{
+  "lastUpdated": "2026-03-01T03:30:32Z",
+  "accounts": {
+    "kona_instagram": {
+      "handle": "@konacoffeedonut",
+      "client": "KONA",
+      "platform": "Instagram",
+      "current": 112,
+      "history": [
+        {
+          "date": "2026-02-28",
+          "count": 112
+        }
+      ]
+    },
+    "kona_twitter": {
+      "handle": "@konacoffeedonut",
+      "client": "KONA",
+      "platform": "X/Twitter",
+      "current": 5,
+      "history": [
+        {
+          "date": "2026-02-28",
+          "count": 5
+        }
+      ]
+    },
+    "kona_bluesky": {
+      "handle": "konacoffeedonut.bsky.social",
+      "client": "KONA",
+      "platform": "Bluesky",
+      "current": 18,
+      "history": [
+        {
+          "date": "2026-02-28",
+          "count": 18
+        }
+      ]
+    },
+    "zoe_instagram": {
+      "handle": "@zoelumos",
+      "client": "ZOE",
+      "platform": "Instagram",
+      "current": 23,
+      "history": [
+        {
+          "date": "2026-02-28",
+          "count": 23
+        }
+      ]
+    }
+  },
+  "botActivity": {
+    "kona_instagram": {
+      "likes": 0,
+      "comments": 0,
+      "follows": 0,
+      "date": "2026-02-28"
+    },
+    "zoe_instagram": {
+      "likes": 0,
+      "comments": 0,
+      "follows": 0,
+      "date": "2026-02-28"
+    }
+  }
+}

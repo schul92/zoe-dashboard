@@ -1,20 +1,13 @@
 {
-  "lastUpdated": "2026-02-27T13:00:14.396491Z",
-  "version": "v2-2026-02-27",
+  "lastUpdated": "2026-02-28T13:02:33.432917Z",
+  "version": "v2-2026-02-28",
   "sources": {
     "brave_search": true,
-    "twitter": true,
+    "twitter": false,
     "hackernews": true,
     "reddit": true
   },
   "headlines": [
-    {
-      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
-      "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com",
-      "category": "hawaii",
-      "description": "<strong>Keanu Wallace, 19, was indicted on multiple charges in connection with the shooting of two male visitors who were in Hawaii for contract work</strong>."
-    },
     {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
       "source": "Brave Search",
@@ -23,11 +16,25 @@
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com",
+      "category": "hawaii",
+      "description": "U.S. Sen. Mazie Hirono, D-Hawaii, says <strong>federal funding cuts affect more than 5 million students, including Native Hawaiians and Pacific Islanders</strong>."
+    },
+    {
       "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
       "source": "Brave Search",
       "url": "https://www.waikikigetdown.com/",
       "category": "hawaii",
       "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
+    },
+    {
+      "title": "Hawaii Tourism Trends 2026 Revealed: Where to Go, When to Visit, and How to Plan the Perfect Island Getaway - Travel And Tour World",
+      "source": "Brave Search",
+      "url": "https://www.travelandtourworld.com/news/article/hawaii-tourism-trends-2026-revealed-where-to-go-when-to-visit-and-how-to-plan-the-perfect-island-getaway/",
+      "category": "hawaii",
+      "description": "<strong>The first month of 2026 revealed a notable increase in tourism across the Hawaiian islands</strong>. More travellers arrived by air than in previous years, reflecting the continued appeal of H"
     },
     {
       "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
@@ -44,13 +51,6 @@
       "description": "Hawaii\u2019s tourism industry, a crucial pillar of the state\u2019s economy, is <strong>facing a stagnant recovery</strong> in 2026, despite ongoing efforts to bring back visitors after the COVID\u201119 pandemic."
     },
     {
-      "title": "Hawai\u2018i Tourism Soars: More Than Two Billion USD January Windfall as US Travel Boom Ignites Islands - Travel And Tour World",
-      "source": "Brave Search",
-      "url": "https://www.travelandtourworld.com/news/article/hawaii-tourism-soars-more-than-two-billion-usd-january-windfall-as-us-travel-boom-ignites-islands/",
-      "category": "hawaii",
-      "description": "In January 2026 alone, <strong>total visitor spending reached $2.26 billion in nominal terms \u2014 a powerful 19.0 per cent rise compared to January 2025. This sharp uplift was driven by a 10.4 per cent i"
-    },
-    {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
       "source": "Brave Search",
       "url": "https://dailycoffeenews.com/",
@@ -58,11 +58,11 @@
       "description": "&gt; Industry | Daily Coffee News Staff | February 25, 2026 \u00b7 Registration opened today (Feb. 25) for the inaugural Camp Coffee Shop, a four-day business education event in Napa Valley, California, fo"
     },
     {
-      "title": "Black Sheep Plans 20 More North Texas Stores as Chain Landscape Heats Up",
+      "title": "Top Coffee Shop Industry Trends and Statistics in 2025",
       "source": "Brave Search",
-      "url": "https://dailycoffeenews.com/2026/02/25/black-sheep-plans-20-more-north-texas-stores-as-chain-landscape-heats-up/",
+      "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
       "category": "coffee",
-      "description": "The North Texas deal adds to an ... 7 Brew have added scores of units in recent years. <strong>Dutch Bros has opened more than 220 Texas locations since entering the state in 2021</strong>, while Blac"
+      "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
       "title": "News - World Coffee Portal",
@@ -72,168 +72,115 @@
       "description": "Breaking coffee business news and analysis"
     },
     {
-      "title": "Specialty Coffee Market Size, Share & Growth Report, 2030",
-      "source": "Brave Search",
-      "url": "https://www.grandviewresearch.com/industry-analysis/specialty-coffee-market-report",
-      "category": "coffee",
-      "description": "The global specialty coffee market size was estimated at <strong>USD 101.6 billion in 2024 and is projected to reach USD 183.0 billion by 2030</strong>, growing at a CAGR of 10.4% from 2025 to 2030"
-    },
-    {
-      "title": "Reasons why the demand for specialty coffee is growing this year \u2013 Groundwork Coffee",
-      "source": "Brave Search",
-      "url": "https://www.groundworkcoffee.com/blogs/learn/top-reasons-why-the-demand-for-specialty-coffee-is-growing-this-year",
-      "category": "coffee",
-      "description": "Despite the decreased demand in the US for coffee as a whole, the specialty coffee market is <strong>thriving in relation to conventional coffee</strong>. In 2022, specialty coffee consumption hit a f"
-    },
-    {
-      "title": "Specialty coffee consumption hits 14-year high",
-      "source": "Brave Search",
-      "url": "https://www.ncausa.org/Newsroom/Specialty-coffee-consumption-hits-14-year-high",
-      "category": "coffee",
-      "description": "June 17, 2025 | NEW YORK \u2013 <strong>46% of American adults had specialty coffee in the past day</strong>, up 84% since 2011 and surpassing past-day traditional coffee consumption (42%), according to th"
-    },
-    {
-      "title": "Over-extracting coffee?",
+      "title": "[MOD] What have you been brewing this week?/ Coffee bean recommendations",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rfqimb/overextracting_coffee/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rgd8ic/mod_what_have_you_been_brewing_this_week_coffee/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Okay so I\u2019m new to this so please excuse my cluelessness. I\u2019ve recently bought the KitchenAid Semi Automatic espresso machine along with the Iberital MC2 grinder. I\u2019v"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hey everyone!</p> <p>Welcome back to the weekly <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> thread where you can share what you are brewing or ask for bea"
     },
     {
-      "title": "Why do old coffee beans affect pressure in my espresso machine?",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rffg5j/why_do_old_coffee_beans_affect_pressure_in_my/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I recently started using some beans from a Starbucks bag I got on sale and I have had pressure issues while using these beans. Someone mentioned older beans could be "
-    },
-    {
-      "title": "Has anyone overextracted coffee using OXO Rapid Brewer for Cold Brew?",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rfyrwl/has_anyone_overextracted_coffee_using_oxo_rapid/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Anyone experienced something like that? </p> <p>Seems insane but I recently tried to brew a cold brew using the OXO Rapid Brewer with a naturally washed Uganda Omuhwe"
-    },
-    {
-      "title": "I wrote an essay about Maui County corruption",
+      "title": "Grandpa at Jollibee Ala Moana 10:21am",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rfdy9g/i_wrote_an_essay_about_maui_county_corruption/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rgjeav/grandpa_at_jollibee_ala_moana_1021am/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rfdy9g/i_wrote_an_essay_about_maui_county_corruption/\"> <img alt=\"I wrote an essay about Maui County corruption\" src=\"https://previe"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rgjeav/grandpa_at_jollibee_ala_moana_1021am/\"> <img alt=\"Grandpa at Jollibee Ala Moana 10:21am\" src=\"https://preview.redd.it/z0bavtg"
     },
     {
-      "title": "Iolani School disciplines seniors over sexual list targeting female students, staff, sources say",
+      "title": "Sad that Times is getting rid of their plate lunch \"deal\"",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rfk9p6/iolani_school_disciplines_seniors_over_sexual/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rgw84c/sad_that_times_is_getting_rid_of_their_plate/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p><a href=\"https://www.hawaiinewsnow.com/2026/02/26/iolani-school-disciplines-seniors-over-sexual-list-targeting-female-students-staff-sources-say/\">https://www.hawaiin"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rgw84c/sad_that_times_is_getting_rid_of_their_plate/\"> <img alt=\"Sad that Times is getting rid of their plate lunch &quot;deal&quot;"
     },
     {
-      "title": "Fire near Washington Middle School (Honolulu)",
+      "title": "Hawai\u02bbi Quality of Life Survey 2026 - UH M\u0101noa",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rfi2y0/fire_near_washington_middle_school_honolulu/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rgh2jm/hawai\u02bbi_quality_of_life_survey_2026_uh_m\u0101noa/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rfi2y0/fire_near_washington_middle_school_honolulu/\"> <img alt=\"Fire near Washington Middle School (Honolulu)\" src=\"https://preview."
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>UH M\u0101noa has a team that has been doing a study year-over-year about the quality of life for folks who live in Hawai\u02bbi. You can see the 2024 study data and dashboard "
     },
     {
-      "title": "Toxic client yelled at my team at 11 PM over a minor mistake, we let him go",
+      "title": "Can\u2019t figure out what works at conferences anymore",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rfjnr2/toxic_client_yelled_at_my_team_at_11_pm_over_a/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rgfhwt/cant_figure_out_what_works_at_conferences_anymore/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I run a small dev and marketing agency with three people, and we recently signed a client for a full content and growth package across multiple platforms.</p> <p>At f"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Yo!</p> <p>Had the luck to attend some bigger shows lately and I've gotten so confused about what helps people sell more, I've seen some companies drop a lot of cash "
     },
     {
-      "title": "Unpopular opinion: Starting a business is easier than getting a job right now",
+      "title": "META: Can we make this sub a \"moderated approval by default\" sub?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rfiacv/unpopular_opinion_starting_a_business_is_easier/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rgcixu/meta_can_we_make_this_sub_a_moderated_approval_by/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>It's never been so hard to find a job before - you apply to 300+ roles just to get rejected one after the other with no sign of hope. What's worse is you don't even g"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I know, you're all seen it... &quot;what are your pain points?&quot; posts glossed over so they look like like legitimate posts, or ones that have a poster with a hid"
     },
     {
-      "title": "Vintage Ralph Lauren Resellers",
+      "title": "More revenue somehow means less actual money and I can't figure out where it's all going",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rfh3u1/vintage_ralph_lauren_resellers/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rgbado/more_revenue_somehow_means_less_actual_money_and/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I'm trying to build up my vintage Ralph Lauren shop and I cannot figure out the sourcing side of it. I've been thrifting but it's slow and inconsistent and I can't sc"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>$2M last year which should've felt like winning but instead I'm sitting here looking at my bank account thinking where the hell did it all go. Three years ago we did "
     },
     {
-      "title": "Statement from Dario Amodei on our discussions with the Department of War",
+      "title": "OpenAI \u2013 How to delete your account",
       "source": "Hacker News",
-      "url": "https://www.anthropic.com/news/statement-department-of-war",
+      "url": "https://help.openai.com/en/articles/6378407-how-to-delete-your-account",
       "category": "tech",
       "stats": {
-        "points": 2137,
-        "comments": 1156
+        "points": 475,
+        "comments": 76
       }
     },
     {
-      "title": "Can you reverse engineer our neural network?",
+      "title": "Unsloth Dynamic 2.0 GGUFs",
       "source": "Hacker News",
-      "url": "https://blog.janestreet.com/can-you-reverse-engineer-our-neural-network/",
+      "url": "https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs",
       "category": "tech",
       "stats": {
-        "points": 77,
-        "comments": 15
+        "points": 62,
+        "comments": 26
       }
     },
     {
-      "title": "F-Droid Board of Directors nominations 2026",
+      "title": "We Will Not Be Divided",
       "source": "Hacker News",
-      "url": "https://f-droid.org/2026/02/26/board-of-directors-nominations.html",
+      "url": "https://notdivided.org",
       "category": "tech",
       "stats": {
-        "points": 48,
-        "comments": 14
+        "points": 1881,
+        "comments": 597
       }
     },
     {
-      "title": "The normalization of corruption in organizations (2003) [pdf]",
+      "title": "OpenAI agrees with Dept. of War to deploy models in their classified network",
       "source": "Hacker News",
-      "url": "https://gwern.net/doc/sociology/2003-ashforth.pdf",
+      "url": "https://twitter.com/sama/status/2027578652477821175",
       "category": "tech",
       "stats": {
-        "points": 116,
-        "comments": 41
+        "points": 869,
+        "comments": 414
       }
     },
     {
-      "title": "The Hunt for Dark\u00a0Breakfast",
+      "title": "A new California law says all operating systems need to have age verification",
       "source": "Hacker News",
-      "url": "https://moultano.wordpress.com/2026/02/22/the-hunt-for-dark-breakfast/",
+      "url": "https://www.pcgamer.com/software/operating-systems/a-new-california-law-says-all-operating-systems-including-linux-need-to-have-some-form-of-age-verification-at-account-setup/",
       "category": "tech",
       "stats": {
-        "points": 291,
-        "comments": 109
+        "points": 617,
+        "comments": 564
       }
-    },
-    {
-      "title": "[AI \u00b7 Other] California Parents Claim CPS Takes Kids Over Transgender Refusals",
-      "source": "Twitter/X",
-      "url": "https://twitter.com/explore",
-      "category": "trending"
-    },
-    {
-      "title": "14 hours ago | 38.0K posts",
-      "source": "Twitter/X",
-      "url": "https://twitter.com/explore",
-      "category": "trending"
-    },
-    {
-      "title": "\ud83d\udd17 twitter://trending/2027169278202450418",
-      "source": "Twitter/X",
-      "url": "https://twitter.com/explore",
-      "category": "trending"
     }
   ],
   "trending": [
-    "Hawaii News Now - Breaking News, Latest News, Weat",
-    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
-    "Black Sheep Plans 20 More North Texas Stores as Ch",
-    "What's new for Hawaii visitors in 2026: Travel Wee",
+    "[MOD] What have you been brewing this week?/ Coffe",
     "Hawaii News, Weather, Sports, Breaking News & Live",
     "Daily Coffee News by Roast Magazine - Business new",
+    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
+    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
+    "Hawaii News Now - Breaking News, Latest News, Weat",
     "News - World Coffee Portal",
-    "Hawai\u2018i Tourism Soars: More Than Two Billion USD J",
-    "Specialty Coffee Market Size, Share & Growth Repor",
-    "Hawaii Faces Stagnant Tourism Growth as Global Com"
+    "Hawaii Faces Stagnant Tourism Growth as Global Com",
+    "Top Coffee Shop Industry Trends and Statistics in ",
+    "What's new for Hawaii visitors in 2026: Travel Wee"
   ]
 }
