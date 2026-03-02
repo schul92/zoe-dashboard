@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-28T13:02:33.432917Z",
-  "version": "v2-2026-02-28",
+  "lastUpdated": "2026-03-01T13:01:13.586428Z",
+  "version": "v2-2026-03-01",
   "sources": {
     "brave_search": true,
     "twitter": false,
@@ -9,6 +9,13 @@
   },
   "headlines": [
     {
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com",
+      "category": "hawaii",
+      "description": "EMS responded to the scene on Friday around 4:15 a.m., on Hawaii Kai Dr."
+    },
+    {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
       "source": "Brave Search",
       "url": "https://www.khon2.com",
@@ -16,18 +23,11 @@
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
-      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "title": "Man arrested for allegedly fighting man and police officer in Waikiki | News | kitv.com",
       "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com",
+      "url": "https://www.kitv.com/news/man-arrested-for-allegedly-fighting-man-and-police-officer-in-waikiki/article_dcb67e74-b506-4c03-a064-876c31e4cb43.html",
       "category": "hawaii",
-      "description": "U.S. Sen. Mazie Hirono, D-Hawaii, says <strong>federal funding cuts affect more than 5 million students, including Native Hawaiians and Pacific Islanders</strong>."
-    },
-    {
-      "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
-      "source": "Brave Search",
-      "url": "https://www.waikikigetdown.com/",
-      "category": "hawaii",
-      "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
+      "description": "WAIKIKI, Hawaii (Island News) -- <strong>Police arrested a man for allegedly fighting a man and a police officer, leaving the officer seriously harmed</strong>, in Waikiki Saturday afternoon."
     },
     {
       "title": "Hawaii Tourism Trends 2026 Revealed: Where to Go, When to Visit, and How to Plan the Perfect Island Getaway - Travel And Tour World",
@@ -44,11 +44,11 @@
       "description": "In 2026, Hawaii will see <strong>new hotel openings, attractions, and restaurants, including direct flights from California, a new luau show on Kauai and chef Alan Wong&#x27;s restaurant on Oahu</stro"
     },
     {
-      "title": "Hawaii Faces Stagnant Tourism Growth as Global Competitors Gain Ground: What You Need to Know in 2026 - Travel And Tour World",
+      "title": "A downturn for Hawaii tourism: Travel Weekly",
       "source": "Brave Search",
-      "url": "https://www.travelandtourworld.com/news/article/hawaii-faces-stagnant-tourism-growth-as-global-competitors-gain-ground-what-you-need-to-know-in-2026/",
+      "url": "https://www.travelweekly.com/Hawaii-Travel/Insights/downturn-for-hawaii-tourism-2026",
       "category": "hawaii",
-      "description": "Hawaii\u2019s tourism industry, a crucial pillar of the state\u2019s economy, is <strong>facing a stagnant recovery</strong> in 2026, despite ongoing efforts to bring back visitors after the COVID\u201119 pandemic."
+      "description": "&quot;The near-term picture for Hawaii tourism remains poor,&quot; the report continued. Looking ahead, it said <strong>visitor arrivals and the average daily census are expected to decline in 2026 be"
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
@@ -72,115 +72,115 @@
       "description": "Breaking coffee business news and analysis"
     },
     {
-      "title": "[MOD] What have you been brewing this week?/ Coffee bean recommendations",
+      "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rgd8ic/mod_what_have_you_been_brewing_this_week_coffee/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rhukwa/mod_the_daily_question_thread/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hey everyone!</p> <p>Welcome back to the weekly <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> thread where you can share what you are brewing or ask for bea"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Grandpa at Jollibee Ala Moana 10:21am",
+      "title": "After a dry spell, three film and television productions underway in Hawaii",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rgjeav/grandpa_at_jollibee_ala_moana_1021am/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rh7jao/after_a_dry_spell_three_film_and_television/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rgjeav/grandpa_at_jollibee_ala_moana_1021am/\"> <img alt=\"Grandpa at Jollibee Ala Moana 10:21am\" src=\"https://preview.redd.it/z0bavtg"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rh7jao/after_a_dry_spell_three_film_and_television/\"> <img alt=\"After a dry spell, three film and television productions underway in"
     },
     {
-      "title": "Sad that Times is getting rid of their plate lunch \"deal\"",
+      "title": "Apply now: Wastewater Treatment Plant Operator Trainee positions open at City & County of Honolulu",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rgw84c/sad_that_times_is_getting_rid_of_their_plate/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rh76ev/apply_now_wastewater_treatment_plant_operator/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rgw84c/sad_that_times_is_getting_rid_of_their_plate/\"> <img alt=\"Sad that Times is getting rid of their plate lunch &quot;deal&quot;"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rh76ev/apply_now_wastewater_treatment_plant_operator/\"> <img alt=\"Apply now: Wastewater Treatment Plant Operator Trainee positions o"
     },
     {
-      "title": "Hawai\u02bbi Quality of Life Survey 2026 - UH M\u0101noa",
+      "title": "Hawaii man copes with gambling addiction by offering free surf lessons to strangers",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rgh2jm/hawai\u02bbi_quality_of_life_survey_2026_uh_m\u0101noa/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rh6kv2/hawaii_man_copes_with_gambling_addiction_by/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>UH M\u0101noa has a team that has been doing a study year-over-year about the quality of life for folks who live in Hawai\u02bbi. You can see the 2024 study data and dashboard "
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rh6kv2/hawaii_man_copes_with_gambling_addiction_by/\"> <img alt=\"Hawaii man copes with gambling addiction by offering free surf lesso"
     },
     {
-      "title": "Can\u2019t figure out what works at conferences anymore",
+      "title": "Why are people allergic to voicemail?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rgfhwt/cant_figure_out_what_works_at_conferences_anymore/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rhfzxn/why_are_people_allergic_to_voicemail/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Yo!</p> <p>Had the luck to attend some bigger shows lately and I've gotten so confused about what helps people sell more, I've seen some companies drop a lot of cash "
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I'll get a bunch of calls over the weekend, then Monday when I have time to answer the phone, &quot;oh I called you over the weekend&quot;.</p> <p>I have voicemail on"
     },
     {
-      "title": "META: Can we make this sub a \"moderated approval by default\" sub?",
+      "title": "Small Business Health Insurance for 3 employees went up 25%",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rgcixu/meta_can_we_make_this_sub_a_moderated_approval_by/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rh83sy/small_business_health_insurance_for_3_employees/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I know, you're all seen it... &quot;what are your pain points?&quot; posts glossed over so they look like like legitimate posts, or ones that have a poster with a hid"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>My Gusto Health Plan with my payroll company went up 25% this year. My family of 3 for example is now $2200 monthly. There has to be some other option besides just do"
     },
     {
-      "title": "More revenue somehow means less actual money and I can't figure out where it's all going",
+      "title": "How do you actually find the best network cabling service for a small office?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rgbado/more_revenue_somehow_means_less_actual_money_and/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rh4wne/how_do_you_actually_find_the_best_network_cabling/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>$2M last year which should've felt like winning but instead I'm sitting here looking at my bank account thinking where the hell did it all go. Three years ago we did "
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>So I'm helping set up a tiny coworking space in Charleston, like, 8 desks max lol) and I have no clue about network cabling. There are so many companies online claimi"
     },
     {
-      "title": "OpenAI \u2013 How to delete your account",
+      "title": "Microgpt",
       "source": "Hacker News",
-      "url": "https://help.openai.com/en/articles/6378407-how-to-delete-your-account",
+      "url": "http://karpathy.github.io/2026/02/12/microgpt/",
       "category": "tech",
       "stats": {
-        "points": 475,
-        "comments": 76
+        "points": 1063,
+        "comments": 198
       }
     },
     {
-      "title": "Unsloth Dynamic 2.0 GGUFs",
+      "title": "I built a demo of what AI chat will look like when it's \"free\" and ad-supported",
       "source": "Hacker News",
-      "url": "https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs",
+      "url": "https://99helpers.com/tools/ad-supported-chat",
       "category": "tech",
       "stats": {
-        "points": 62,
-        "comments": 26
+        "points": 20,
+        "comments": 3
       }
     },
     {
-      "title": "We Will Not Be Divided",
+      "title": "Decision trees \u2013 the unreasonable power of nested decision rules",
       "source": "Hacker News",
-      "url": "https://notdivided.org",
+      "url": "https://mlu-explain.github.io/decision-tree/",
       "category": "tech",
       "stats": {
-        "points": 1881,
-        "comments": 597
+        "points": 143,
+        "comments": 15
       }
     },
     {
-      "title": "OpenAI agrees with Dept. of War to deploy models in their classified network",
+      "title": "We do not think Anthropic should be designated as a supply chain risk",
       "source": "Hacker News",
-      "url": "https://twitter.com/sama/status/2027578652477821175",
+      "url": "https://twitter.com/OpenAI/status/2027846016423321831",
       "category": "tech",
       "stats": {
-        "points": 869,
-        "comments": 414
+        "points": 602,
+        "comments": 310
       }
     },
     {
-      "title": "A new California law says all operating systems need to have age verification",
+      "title": "10-202: Introduction to Modern AI (CMU)",
       "source": "Hacker News",
-      "url": "https://www.pcgamer.com/software/operating-systems/a-new-california-law-says-all-operating-systems-including-linux-need-to-have-some-form-of-age-verification-at-account-setup/",
+      "url": "https://modernaicourse.org",
       "category": "tech",
       "stats": {
-        "points": 617,
-        "comments": 564
+        "points": 93,
+        "comments": 18
       }
     }
   ],
   "trending": [
-    "[MOD] What have you been brewing this week?/ Coffe",
-    "Hawaii News, Weather, Sports, Breaking News & Live",
     "Daily Coffee News by Roast Magazine - Business new",
-    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
-    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
-    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "A downturn for Hawaii tourism: Travel Weekly",
+    "Hawaii News, Weather, Sports, Breaking News & Live",
+    "What's new for Hawaii visitors in 2026: Travel Wee",
+    "Man arrested for allegedly fighting man and police",
     "News - World Coffee Portal",
-    "Hawaii Faces Stagnant Tourism Growth as Global Com",
     "Top Coffee Shop Industry Trends and Statistics in ",
-    "What's new for Hawaii visitors in 2026: Travel Wee"
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
+    "[MOD] The Daily Question Thread"
   ]
 }

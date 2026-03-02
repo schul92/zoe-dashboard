@@ -1,17 +1,17 @@
 {
-  "site": "https://carek9.com/",
+  "property": "https://carek9.com/",
   "dateRange": {
-    "start": "2026-01-26",
-    "end": "2026-02-25"
+    "startDate": "2026-01-27",
+    "endDate": "2026-02-26"
   },
-  "timestamp": "2026-02-28T07:01:26.067306",
+  "fetchedAt": "2026-03-01T07:01:27.937209",
   "queries": [
     {
       "query": "groom bathing tablets",
       "clicks": 1,
-      "impressions": 15,
-      "ctr": 6.67,
-      "position": 4.2
+      "impressions": 16,
+      "ctr": 6.25,
+      "position": 4.5
     },
     {
       "query": "4-in-1 dog paw washer",
@@ -70,25 +70,39 @@
       "position": 23.5
     },
     {
+      "query": "beef training treats",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
       "query": "best dog paw cleaner",
       "clicks": 0,
-      "impressions": 33,
+      "impressions": 43,
       "ctr": 0,
-      "position": 20.8
+      "position": 17.4
+    },
+    {
+      "query": "best paw claener for dogs",
+      "clicks": 0,
+      "impressions": 54,
+      "ctr": 0,
+      "position": 1
     },
     {
       "query": "best paw cleaner",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 23
+      "position": 22
     },
     {
       "query": "best paw cleaner for dogs",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 8,
       "ctr": 0,
-      "position": 21.7
+      "position": 16.5
     },
     {
       "query": "best paw cleaners",
@@ -166,20 +180,6 @@
       "impressions": 9,
       "ctr": 0,
       "position": 1
-    },
-    {
-      "query": "dexas mudbuster medium",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 13
-    },
-    {
-      "query": "dexas mudbuster paw cleaner",
-      "clicks": 0,
-      "impressions": 12,
-      "ctr": 0,
-      "position": 7.3
     }
   ]
 }
