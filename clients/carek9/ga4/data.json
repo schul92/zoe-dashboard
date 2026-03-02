@@ -1,217 +1,314 @@
 {
-  "property_id": "523137923",
-  "date_range": {
-    "start": "2026-01-30",
+  "propertyId": "523137923",
+  "dateRange": {
+    "start": "2026-01-31",
     "end": "2026-03-01"
   },
-  "fetched_at": "2026-03-01T07:01:24.976621",
+  "fetchedAt": "2026-03-02T07:02:12.832922",
   "overview": {
-    "sessions": 318,
-    "users": 212,
-    "pageviews": 1073,
-    "bounce_rate": 60.38,
-    "avg_session_duration": 275.84,
-    "new_users": 212
+    "sessions": 320,
+    "users": 214,
+    "pageviews": 1080,
+    "bounceRate": 59.38,
+    "avgSessionDuration": 266.92,
+    "newUsers": 214
   },
-  "top_pages": [
+  "topPages": [
     {
-      "page": "/",
-      "pageviews": 493,
-      "sessions": 216,
-      "avg_duration": 250.64
+      "path": "/",
+      "pageviews": 495,
+      "sessions": 218,
+      "avgDuration": 248.94
     },
     {
-      "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
       "pageviews": 93,
       "sessions": 33,
-      "avg_duration": 128.83
+      "avgDuration": 119.49
     },
     {
-      "page": "/collections/treat",
-      "pageviews": 66,
-      "sessions": 40,
-      "avg_duration": 119.23
+      "path": "/collections/treat",
+      "pageviews": 67,
+      "sessions": 41,
+      "avgDuration": 114.56
     },
     {
-      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
       "pageviews": 64,
       "sessions": 22,
-      "avg_duration": 152.04
+      "avgDuration": 147.63
     },
     {
-      "page": "/blogs/news",
+      "path": "/blogs/news",
       "pageviews": 36,
       "sessions": 18,
-      "avg_duration": 145.28
+      "avgDuration": 126.11
     },
     {
-      "page": "/cart",
+      "path": "/cart",
       "pageviews": 28,
       "sessions": 20,
-      "avg_duration": 85.84
+      "avgDuration": 85.84
     },
     {
-      "page": "/pages/about-us",
+      "path": "/pages/about-us",
       "pageviews": 28,
       "sessions": 25,
-      "avg_duration": 78.9
+      "avgDuration": 77.36
     },
     {
-      "page": "/pages/carek9-x-human-canine-collaborative",
+      "path": "/pages/carek9-x-human-canine-collaborative",
       "pageviews": 25,
       "sessions": 23,
-      "avg_duration": 27.79
+      "avgDuration": 27.79
     },
     {
-      "page": "/collections/all",
+      "path": "/collections/all",
       "pageviews": 23,
       "sessions": 19,
-      "avg_duration": 50.81
+      "avgDuration": 37.59
     },
     {
-      "page": "/collections/paw-care",
-      "pageviews": 21,
-      "sessions": 16,
-      "avg_duration": 82.42
-    },
-    {
-      "page": "/collections/food-topper",
-      "pageviews": 20,
-      "sessions": 18,
-      "avg_duration": 25.12
-    },
-    {
-      "page": "/products/beef-wrapped-pumpkin",
-      "pageviews": 18,
-      "sessions": 12,
-      "avg_duration": 176.75
-    },
-    {
-      "page": "/pages/contact-us",
-      "pageviews": 17,
-      "sessions": 12,
-      "avg_duration": 160.24
-    },
-    {
-      "page": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
-      "pageviews": 15,
-      "sessions": 10,
-      "avg_duration": 243.21
-    },
-    {
-      "page": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
-      "pageviews": 10,
-      "sessions": 6,
-      "avg_duration": 135.78
-    },
-    {
-      "page": "/collections/bath-product",
-      "pageviews": 9,
-      "sessions": 8,
-      "avg_duration": 28.26
-    },
-    {
-      "page": "/products/beef-training-treat",
-      "pageviews": 9,
-      "sessions": 9,
-      "avg_duration": 37.89
-    },
-    {
-      "page": "/products/pars-mint-dental-cookies",
-      "pageviews": 9,
-      "sessions": 9,
-      "avg_duration": 9.92
-    },
-    {
-      "page": "/products/functional-dog-food-topper-for-joint",
-      "pageviews": 8,
-      "sessions": 9,
-      "avg_duration": 42.11
-    },
-    {
-      "page": "/products/salmon-skin-bites",
-      "pageviews": 8,
-      "sessions": 8,
-      "avg_duration": 6.21
+      "path": "/collections/food-topper",
+      "pageviews": 22,
+      "sessions": 19,
+      "avgDuration": 13.75
     }
   ],
-  "traffic_sources": [
+  "trafficSources": [
     {
-      "channel": "Direct",
       "source": "(direct)",
+      "medium": "(none)",
       "sessions": 225,
       "users": 167,
-      "bounce_rate": 66.67
+      "bounceRate": 66.22
     },
     {
-      "channel": "Organic Search",
       "source": "google",
-      "sessions": 51,
+      "medium": "organic",
+      "sessions": 52,
       "users": 33,
-      "bounce_rate": 49.02
+      "bounceRate": 46.15
     },
     {
-      "channel": "Organic Shopping",
       "source": "admin.shopify.com",
+      "medium": "referral",
       "sessions": 24,
       "users": 3,
-      "bounce_rate": 29.17
+      "bounceRate": 25.0
     },
     {
-      "channel": "Unassigned",
       "source": "(not set)",
+      "medium": "(not set)",
+      "sessions": 6,
+      "users": 6,
+      "bounceRate": 100.0
+    },
+    {
+      "source": "qrcodes.pro",
+      "medium": "referral",
+      "sessions": 5,
+      "users": 5,
+      "bounceRate": 60.0
+    },
+    {
+      "source": "judge.me",
+      "medium": "referral",
+      "sessions": 2,
+      "users": 1,
+      "bounceRate": 0.0
+    },
+    {
+      "source": "l.instagram.com",
+      "medium": "referral",
+      "sessions": 2,
+      "users": 2,
+      "bounceRate": 50.0
+    },
+    {
+      "source": "shopify.com",
+      "medium": "referral",
+      "sessions": 2,
+      "users": 2,
+      "bounceRate": 50.0
+    },
+    {
+      "source": "Pinterest",
+      "medium": "organic",
+      "sessions": 1,
+      "users": 1,
+      "bounceRate": 100.0
+    },
+    {
+      "source": "ig",
+      "medium": "social",
+      "sessions": 1,
+      "users": 1,
+      "bounceRate": 0.0
+    }
+  ],
+  "dailyTrend": [
+    {
+      "date": "2026-02-03",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 9
+    },
+    {
+      "date": "2026-02-04",
+      "sessions": 11,
+      "users": 10,
+      "pageviews": 26
+    },
+    {
+      "date": "2026-02-05",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 10
+    },
+    {
+      "date": "2026-02-06",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 9
+    },
+    {
+      "date": "2026-02-07",
+      "sessions": 16,
+      "users": 15,
+      "pageviews": 28
+    },
+    {
+      "date": "2026-02-08",
+      "sessions": 3,
+      "users": 3,
+      "pageviews": 3
+    },
+    {
+      "date": "2026-02-09",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 13
+    },
+    {
+      "date": "2026-02-10",
+      "sessions": 25,
+      "users": 18,
+      "pageviews": 187
+    },
+    {
+      "date": "2026-02-11",
+      "sessions": 24,
+      "users": 24,
+      "pageviews": 31
+    },
+    {
+      "date": "2026-02-12",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 15
+    },
+    {
+      "date": "2026-02-13",
+      "sessions": 17,
+      "users": 13,
+      "pageviews": 86
+    },
+    {
+      "date": "2026-02-14",
+      "sessions": 18,
+      "users": 16,
+      "pageviews": 60
+    },
+    {
+      "date": "2026-02-15",
+      "sessions": 6,
+      "users": 6,
+      "pageviews": 22
+    },
+    {
+      "date": "2026-02-16",
+      "sessions": 10,
+      "users": 6,
+      "pageviews": 41
+    },
+    {
+      "date": "2026-02-17",
+      "sessions": 13,
+      "users": 11,
+      "pageviews": 47
+    },
+    {
+      "date": "2026-02-18",
+      "sessions": 10,
+      "users": 9,
+      "pageviews": 27
+    },
+    {
+      "date": "2026-02-19",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 11
+    },
+    {
+      "date": "2026-02-20",
+      "sessions": 9,
+      "users": 9,
+      "pageviews": 9
+    },
+    {
+      "date": "2026-02-21",
+      "sessions": 16,
+      "users": 16,
+      "pageviews": 32
+    },
+    {
+      "date": "2026-02-22",
       "sessions": 10,
       "users": 10,
-      "bounce_rate": 100.0
+      "pageviews": 32
     },
     {
-      "channel": "Referral",
-      "source": "qrcodes.pro",
+      "date": "2026-02-23",
+      "sessions": 37,
+      "users": 16,
+      "pageviews": 217
+    },
+    {
+      "date": "2026-02-24",
+      "sessions": 14,
+      "users": 10,
+      "pageviews": 77
+    },
+    {
+      "date": "2026-02-25",
+      "sessions": 18,
+      "users": 10,
+      "pageviews": 23
+    },
+    {
+      "date": "2026-02-26",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 8
+    },
+    {
+      "date": "2026-02-27",
       "sessions": 4,
       "users": 4,
-      "bounce_rate": 50.0
+      "pageviews": 4
     },
     {
-      "channel": "Organic Shopping",
-      "source": "shopify.com",
-      "sessions": 2,
-      "users": 2,
-      "bounce_rate": 50.0
+      "date": "2026-02-28",
+      "sessions": 8,
+      "users": 7,
+      "pageviews": 45
     },
     {
-      "channel": "Organic Social",
-      "source": "l.instagram.com",
-      "sessions": 2,
-      "users": 2,
-      "bounce_rate": 50.0
-    },
-    {
-      "channel": "Referral",
-      "source": "judge.me",
-      "sessions": 2,
-      "users": 1,
-      "bounce_rate": 0.0
-    },
-    {
-      "channel": "Organic Social",
-      "source": "Pinterest",
-      "sessions": 1,
-      "users": 1,
-      "bounce_rate": 100.0
-    },
-    {
-      "channel": "Organic Social",
-      "source": "ig",
-      "sessions": 1,
-      "users": 1,
-      "bounce_rate": 0.0
-    },
-    {
-      "channel": "Referral",
-      "source": "productregistry.org",
-      "sessions": 1,
-      "users": 1,
-      "bounce_rate": 0.0
+      "date": "2026-03-01",
+      "sessions": 4,
+      "users": 4,
+      "pageviews": 8
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "metadata": {
     "version": "3.0.0",
-    "collectedAt": "2026-03-01T15:02:13Z",
+    "collectedAt": "2026-03-02T15:03:58Z",
     "client": "carek9",
     "status": "active",
     "period": {
-      "startDate": "2026-01-30",
+      "startDate": "2026-01-28",
       "endDate": "2026-03-01",
       "days": 30
     },
@@ -16,38 +16,37 @@
   },
   "summary": {
     "uniqueQueries": 25,
-    "uniquePages": 20,
+    "uniquePages": 10,
     "clicks": {
       "total": 1,
       "change": 0,
       "trend": "stable"
     },
     "impressions": {
-      "total": 191,
+      "total": 219,
       "change": 0,
       "trend": "stable"
     },
     "ctr": {
-      "average": 0.52,
+      "average": 0.46,
       "change": 0,
       "trend": "neutral"
     }
   },
   "ga4": {
-    "sessions": 318,
-    "activeUsers": 212,
-    "screenPageViews": 1073,
-    "bounceRate": 0.6038,
-    "averageSessionDuration": 275.84,
+    "sessions": 320,
+    "activeUsers": 214,
+    "screenPageViews": 1080,
+    "bounceRate": 0.5938,
+    "averageSessionDuration": 266.92,
     "engagedSessions": null,
     "engagementRate": null,
     "trafficSources": {
       "Direct": 225,
-      "Organic Search": 51,
-      "Organic Shopping": 26,
-      "Unassigned": 10,
-      "Referral": 7,
-      "Organic Social": 4
+      "Organic Search": 52,
+      "Referral": 35,
+      "Unassigned": 6,
+      "Organic Social": 2
     }
   },
   "queries": {
@@ -56,16 +55,23 @@
       {
         "query": "best paw claener for dogs",
         "clicks": 0,
-        "impressions": 54,
+        "impressions": 68,
         "ctr": 0,
         "position": 1
       },
       {
         "query": "best dog paw cleaner",
         "clicks": 0,
-        "impressions": 43,
+        "impressions": 59,
         "ctr": 0,
-        "position": 17.4
+        "position": 13.8
+      },
+      {
+        "query": "dexas mudbuster",
+        "clicks": 0,
+        "impressions": 18,
+        "ctr": 0,
+        "position": 11.6
       },
       {
         "query": "groom bathing tablets",
@@ -75,25 +81,11 @@
         "position": 4.5
       },
       {
-        "query": "dexas mudbuster",
-        "clicks": 0,
-        "impressions": 16,
-        "ctr": 0,
-        "position": 10.3
-      },
-      {
-        "query": "dexas mudbuster large",
-        "clicks": 0,
-        "impressions": 9,
-        "ctr": 0,
-        "position": 1
-      },
-      {
         "query": "best paw cleaner for dogs",
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 12,
         "ctr": 0,
-        "position": 16.5
+        "position": 11.3
       },
       {
         "query": "4-in-1 dog paw washer",
@@ -112,9 +104,9 @@
       {
         "query": "bath tablet",
         "clicks": 0,
-        "impressions": 4,
+        "impressions": 5,
         "ctr": 0,
-        "position": 13.2
+        "position": 14
       },
       {
         "query": "beef pumpkin treat for dogs",
@@ -124,11 +116,11 @@
         "position": 23.5
       },
       {
-        "query": "bath tablets",
+        "query": "best paw washer",
         "clicks": 0,
-        "impressions": 3,
+        "impressions": 4,
         "ctr": 0,
-        "position": 9.3
+        "position": 59.2
       },
       {
         "query": "bathing tablets",
@@ -138,39 +130,11 @@
         "position": 6.3
       },
       {
-        "query": "best paw washer",
+        "query": "bath tablets",
         "clicks": 0,
         "impressions": 3,
         "ctr": 0,
-        "position": 62
-      },
-      {
-        "query": "dexas mudbuster dog paw cleaner",
-        "clicks": 0,
-        "impressions": 3,
-        "ctr": 0,
-        "position": 17.7
-      },
-      {
-        "query": "best paw cleaner",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 22
-      },
-      {
-        "query": "best paw cleaners",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 51.5
-      },
-      {
-        "query": "best paw cleaning products for sensitive dogs",
-        "clicks": 0,
-        "impressions": 2,
-        "ctr": 0,
-        "position": 28
+        "position": 9.3
       },
       {
         "query": "canine collaborative",
@@ -180,28 +144,35 @@
         "position": 8
       },
       {
-        "query": "all paws eliminator activated recharging",
+        "query": "best paw cleaner",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 21
+        "position": 22
       },
       {
-        "query": "beef dog training treats",
+        "query": "best paw cleaning products for sensitive dogs",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 71
+        "position": 28
       },
       {
-        "query": "beef flavored training dog treats",
+        "query": "best paw cleaners",
         "clicks": 0,
-        "impressions": 1,
+        "impressions": 2,
         "ctr": 0,
-        "position": 54
+        "position": 51.5
       },
       {
         "query": "beef training treats",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "query": "best dog paw cleaners",
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
@@ -215,6 +186,13 @@
         "position": 1
       },
       {
+        "query": "chips para perros",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 1
+      },
+      {
         "query": "corek9",
         "clicks": 0,
         "impressions": 1,
@@ -222,48 +200,62 @@
         "position": 10
       },
       {
+        "query": "all paws eliminator activated recharging",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 21
+      },
+      {
+        "query": "beef flavored training dog treats",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 54
+      },
+      {
         "query": "dehydrated salmon skin",
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 69
+      },
+      {
+        "query": "beef dog training treats",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 71
       }
     ],
     "quickWins": [
       {
         "query": "best paw claener for dogs",
         "clicks": 0,
-        "impressions": 54,
+        "impressions": 68,
         "ctr": 0,
         "position": 1
       },
       {
         "query": "best dog paw cleaner",
         "clicks": 0,
-        "impressions": 43,
+        "impressions": 59,
         "ctr": 0,
-        "position": 17.4
+        "position": 13.8
       },
       {
         "query": "dexas mudbuster",
         "clicks": 0,
-        "impressions": 16,
+        "impressions": 18,
         "ctr": 0,
-        "position": 10.3
-      },
-      {
-        "query": "dexas mudbuster large",
-        "clicks": 0,
-        "impressions": 9,
-        "ctr": 0,
-        "position": 1
+        "position": 11.6
       },
       {
         "query": "best paw cleaner for dogs",
         "clicks": 0,
-        "impressions": 8,
+        "impressions": 12,
         "ctr": 0,
-        "position": 16.5
+        "position": 11.3
       },
       {
         "query": "4-in-1 dog paw washer",
@@ -282,9 +274,9 @@
       {
         "query": "bath tablet",
         "clicks": 0,
-        "impressions": 4,
+        "impressions": 5,
         "ctr": 0,
-        "position": 13.2
+        "position": 14
       },
       {
         "query": "beef pumpkin treat for dogs",
@@ -294,33 +286,40 @@
         "position": 23.5
       },
       {
-        "query": "bath tablets",
+        "query": "best paw washer",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 59.2
+      },
+      {
+        "query": "bathing tablets",
         "clicks": 0,
         "impressions": 3,
         "ctr": 0,
-        "position": 9.3
+        "position": 6.3
       }
     ],
     "byPosition": {
       "top3": [
         {
-          "query": "best paw claener for dogs",
-          "clicks": 0,
-          "impressions": 54,
-          "ctr": 0,
-          "position": 1
-        },
-        {
-          "query": "dexas mudbuster large",
-          "clicks": 0,
-          "impressions": 9,
-          "ctr": 0,
-          "position": 1
-        },
-        {
           "query": "beef training treats",
           "clicks": 0,
           "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "best dog paw cleaners",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "best paw claener for dogs",
+          "clicks": 0,
+          "impressions": 68,
           "ctr": 0,
           "position": 1
         },
@@ -330,29 +329,22 @@
           "impressions": 1,
           "ctr": 0,
           "position": 1
+        },
+        {
+          "query": "chips para perros",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
         }
       ],
       "top10": [
-        {
-          "query": "best paw claener for dogs",
-          "clicks": 0,
-          "impressions": 54,
-          "ctr": 0,
-          "position": 1
-        },
         {
           "query": "groom bathing tablets",
           "clicks": 1,
           "impressions": 16,
           "ctr": 6.25,
           "position": 4.5
-        },
-        {
-          "query": "dexas mudbuster large",
-          "clicks": 0,
-          "impressions": 9,
-          "ctr": 0,
-          "position": 1
         },
         {
           "query": "bath tablets",
@@ -369,13 +361,6 @@
           "position": 6.3
         },
         {
-          "query": "canine collaborative",
-          "clicks": 0,
-          "impressions": 2,
-          "ctr": 0,
-          "position": 8
-        },
-        {
           "query": "beef training treats",
           "clicks": 0,
           "impressions": 1,
@@ -383,7 +368,35 @@
           "position": 1
         },
         {
+          "query": "best dog paw cleaners",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "best paw claener for dogs",
+          "clicks": 0,
+          "impressions": 68,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "canine collaborative",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 8
+        },
+        {
           "query": "chips for dogs",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "chips para perros",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -399,46 +412,11 @@
       ],
       "top20": [
         {
-          "query": "best paw claener for dogs",
-          "clicks": 0,
-          "impressions": 54,
-          "ctr": 0,
-          "position": 1
-        },
-        {
-          "query": "best dog paw cleaner",
-          "clicks": 0,
-          "impressions": 43,
-          "ctr": 0,
-          "position": 17.4
-        },
-        {
           "query": "groom bathing tablets",
           "clicks": 1,
           "impressions": 16,
           "ctr": 6.25,
           "position": 4.5
-        },
-        {
-          "query": "dexas mudbuster",
-          "clicks": 0,
-          "impressions": 16,
-          "ctr": 0,
-          "position": 10.3
-        },
-        {
-          "query": "dexas mudbuster large",
-          "clicks": 0,
-          "impressions": 9,
-          "ctr": 0,
-          "position": 1
-        },
-        {
-          "query": "best paw cleaner for dogs",
-          "clicks": 0,
-          "impressions": 8,
-          "ctr": 0,
-          "position": 16.5
         },
         {
           "query": "4-in-1 dog paw washer",
@@ -448,18 +426,11 @@
           "position": 10.2
         },
         {
-          "query": "dexas mud buster",
+          "query": "bath tablet",
           "clicks": 0,
           "impressions": 5,
           "ctr": 0,
-          "position": 12.2
-        },
-        {
-          "query": "bath tablet",
-          "clicks": 0,
-          "impressions": 4,
-          "ctr": 0,
-          "position": 13.2
+          "position": 14
         },
         {
           "query": "bath tablets",
@@ -476,11 +447,39 @@
           "position": 6.3
         },
         {
-          "query": "dexas mudbuster dog paw cleaner",
+          "query": "beef training treats",
           "clicks": 0,
-          "impressions": 3,
+          "impressions": 1,
           "ctr": 0,
-          "position": 17.7
+          "position": 1
+        },
+        {
+          "query": "best dog paw cleaner",
+          "clicks": 0,
+          "impressions": 59,
+          "ctr": 0,
+          "position": 13.8
+        },
+        {
+          "query": "best dog paw cleaners",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "best paw claener for dogs",
+          "clicks": 0,
+          "impressions": 68,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "best paw cleaner for dogs",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 11.3
         },
         {
           "query": "canine collaborative",
@@ -490,14 +489,14 @@
           "position": 8
         },
         {
-          "query": "beef training treats",
+          "query": "chips for dogs",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
           "position": 1
         },
         {
-          "query": "chips for dogs",
+          "query": "chips para perros",
           "clicks": 0,
           "impressions": 1,
           "ctr": 0,
@@ -509,6 +508,20 @@
           "impressions": 1,
           "ctr": 0,
           "position": 10
+        },
+        {
+          "query": "dexas mud buster",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 12.2
+        },
+        {
+          "query": "dexas mudbuster",
+          "clicks": 0,
+          "impressions": 18,
+          "ctr": 0,
+          "position": 11.6
         }
       ]
     },
@@ -523,8 +536,8 @@
       {
         "page": "/",
         "title": "CareK9",
-        "views": 493,
-        "sessions": 216
+        "views": 495,
+        "sessions": 218
       },
       {
         "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
@@ -535,8 +548,8 @@
       {
         "page": "/collections/treat",
         "title": "CareK9",
-        "views": 66,
-        "sessions": 40
+        "views": 67,
+        "sessions": 41
       },
       {
         "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
@@ -575,10 +588,10 @@
         "sessions": 19
       },
       {
-        "page": "/collections/paw-care",
+        "page": "/collections/food-topper",
         "title": "CareK9",
-        "views": 21,
-        "sessions": 16
+        "views": 22,
+        "sessions": 19
       }
     ]
   },
