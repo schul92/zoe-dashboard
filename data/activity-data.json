@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-02T04:59:32.591956Z",
+  "lastUpdated": "2026-03-02T05:51:22.764762Z",
   "dates": [
     "2026-01-31",
     "2026-02-01",
@@ -219,7 +219,7 @@
           0,
           0,
           0,
-          127
+          173
         ],
         "comments": [
           0,
@@ -251,7 +251,7 @@
           0,
           0,
           0,
-          28
+          49
         ],
         "follows": [
           0,
@@ -287,12 +287,12 @@
         ]
       },
       "today": {
-        "likes": 127,
-        "comments": 28,
+        "likes": 173,
+        "comments": 49,
         "follows": 0,
         "unfollows": 0,
         "replies": 0,
-        "sessions": 2
+        "sessions": 3
       },
       "sessions_today": [
         {
@@ -318,6 +318,18 @@
           "duration_min": 93.0,
           "hashtags_used": [],
           "session_id": "zoe_instagram_20260301_2059"
+        },
+        {
+          "likes": 46,
+          "comments": 21,
+          "follows": 0,
+          "unfollows": 0,
+          "replies": 0,
+          "start_time": "20:09",
+          "end_time": "21:51",
+          "duration_min": 55.0,
+          "hashtags_used": [],
+          "session_id": "zoe_instagram_20260301_2151"
         }
       ]
     },
@@ -948,6 +960,19 @@
       "duration_min": 93.0,
       "hashtags_used": [],
       "session_id": "zoe_instagram_20260301_2059",
+      "account": "zoe_instagram"
+    },
+    {
+      "likes": 46,
+      "comments": 21,
+      "follows": 0,
+      "unfollows": 0,
+      "replies": 0,
+      "start_time": "20:09",
+      "end_time": "21:51",
+      "duration_min": 55.0,
+      "hashtags_used": [],
+      "session_id": "zoe_instagram_20260301_2151",
       "account": "zoe_instagram"
     },
     {
