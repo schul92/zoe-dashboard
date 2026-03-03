@@ -1,117 +1,92 @@
 {
-  "generatedAt": "2026-02-24T03:03:00-08:00",
-  "model": "claude-opus-4-5",
   "urgent": [
     {
-      "type": "mobile_experience_critical",
-      "keyword": null,
-      "action": "Audit mobile site speed and UX immediately - run PageSpeed Insights, fix Core Web Vitals, ensure tap targets are 48px+, and test checkout/menu on mobile",
+      "type": "opening_date_mismatch",
+      "keyword": "grand opening date",
+      "action": "Replace all public-facing mentions of 'Feb 25, 2026' with 'Early March 2026' in metadata, manifest, localized message bundles, and landing-page CTA copy before next deploy.",
       "impact": "high",
       "effort": "medium",
-      "reasoning": "Mobile is only 20% of clicks for a LOCAL coffee shop in Waikiki where tourists browse on phones. This is catastrophically low - should be 60-70%."
+      "reasoning": "Date mismatch creates trust risk and can hurt CTR from branded queries. Search snippets and social previews may continue showing the wrong date if metadata is not corrected immediately."
     },
     {
-      "type": "chinese_ctr_crisis",
-      "keyword": "夏威夷科纳咖啡风味",
-      "action": "Create dedicated Chinese landing page with compelling meta title/description targeting '夏威夷科纳咖啡' - current 0.3% CTR at position 5.5 is losing ~100 potential clicks/week",
-      "impact": "high",
-      "effort": "medium",
-      "reasoning": "2955 impressions with only 8 clicks (0.27% CTR) at position 5.5. Chinese tourists searching for Kona coffee info - massive untapped market."
-    },
-    {
-      "type": "http_redirect_issue",
-      "keyword": null,
-      "action": "Fix http://www.konacoffeedonut.com/en showing separately from https version - implement proper 301 redirects to consolidate ranking signals",
+      "type": "high_impression_low_ctr_queries",
+      "keyword": "donuts near me",
+      "action": "Update homepage/en meta title + description to include high-intent local terms ('donuts near me in Waikiki', 'coffee near me Waikiki') and opening timing, then request reindex in GSC.",
       "impact": "high",
       "effort": "low",
-      "reasoning": "HTTP and HTTPS versions appearing as separate pages in GSC splits authority and confuses Google. 112 impressions going to non-canonical URL."
+      "reasoning": "CTR is ~1.1% despite average position 7.2 and 2,603 impressions. Better SERP copy can lift clicks without ranking changes."
     }
   ],
   "quickWins": [
     {
-      "type": "korean_page_ctr_fix",
-      "keyword": "코나 커피",
-      "action": "Rewrite Korean about-kona-coffee page meta title and description to be more compelling - currently position 4 with 0% CTR",
+      "type": "meta_snippet_optimization",
+      "keyword": "donuts near me",
+      "action": "Rewrite meta description to include clear USP + location + opening window + CTA in 140-155 chars.",
       "impact": "high",
-      "effort": "low",
-      "potentialGain": 10,
-      "reasoning": "Position 4 with 40 impressions but 0 clicks means terrible meta snippet. 15-minute fix could capture 10+ clicks/week from Korean tourists."
-    },
-    {
-      "type": "chinese_americano_content",
-      "keyword": "夏威夷科纳适合冲美式吗",
-      "action": "Create Chinese blog post answering 'Is Hawaiian Kona good for Americano?' - directly target this 776-impression query",
-      "impact": "medium",
       "effort": "low",
       "potentialGain": 20,
-      "reasoning": "776 impressions at position 7.2 with 0 clicks. Creating targeted content could push to top 3 and capture informational searchers."
+      "reasoning": "Query is already around position 9.4 with 20 impressions and 0 clicks; snippet improvements can quickly increase click share."
     },
     {
-      "type": "local_seo_gmb",
-      "keyword": "coffee near me",
-      "action": "Verify and fully optimize Google Business Profile - add all hours, photos, menu items, and ensure NAP consistency across web",
-      "impact": "high",
-      "effort": "low",
-      "potentialGain": 15,
-      "reasoning": "Position 8.6 for 'coffee near me' with 0 clicks means GBP isn't optimized. Critical for Waikiki foot traffic."
+      "type": "localized_page_snippets",
+      "keyword": "kona coffee",
+      "action": "Align title/description on /ko, /ja, /es pages with local-language intent and include Waikiki + Kona Coffee modifiers.",
+      "impact": "medium",
+      "effort": "medium",
+      "potentialGain": 12,
+      "reasoning": "Non-English pages show impressions (e.g., /ko/about-kona-coffee at 40 impressions) but no clicks, indicating snippet/message mismatch."
     },
     {
-      "type": "donut_keyword_expansion",
-      "keyword": "donut",
-      "action": "Add 'donuts in Waikiki' and 'best donuts Honolulu' to homepage H1/H2 tags and create dedicated donut menu page",
+      "type": "faq_schema_expansion",
+      "keyword": "coffee near me open now",
+      "action": "Add/expand FAQ schema for opening date, hours, parking, and location landmarks to improve rich result eligibility.",
       "impact": "medium",
       "effort": "low",
-      "potentialGain": 8,
-      "reasoning": "Position 3 for 'donut' with only 2 impressions shows potential - need more donut-focused content to increase visibility."
+      "potentialGain": 10,
+      "reasoning": "Current signals indicate informational/local intent; richer SERP features can improve CTR for near-me queries in positions 5-16."
     }
   ],
   "opportunities": [
     {
-      "type": "chinese_market_expansion",
-      "action": "Build out full Chinese language section (/zh/) with localized content about Kona coffee origins, menu in Chinese, and tourist-friendly info",
+      "type": "mobile_conversion_focus",
+      "action": "Prioritize mobile landing UX and map/call CTAs; mobile has materially better CTR than desktop and should be primary conversion surface.",
       "impact": "high",
-      "effort": "high",
-      "reasoning": "3,731 impressions from Chinese queries (96% of total!) signals massive demand from Chinese tourists. Full localization could 10x traffic."
+      "effort": "medium",
+      "reasoning": "Mobile CTR (~3.1%) far exceeds desktop (~0.1%), suggesting desktop snippet relevance or SERP intent mismatch while mobile demand is stronger."
     },
     {
-      "type": "opening_day_content",
-      "action": "Publish 'Grand Opening Feb 25, 2026' landing page and press release - target 'new coffee shop Waikiki' keywords",
+      "type": "local_pack_reinforcement",
+      "action": "Strengthen Google Business Profile signals (opening update, categories, fresh photos, weekly posts, Q&A) and embed consistent NAP/hours across site pages.",
       "impact": "high",
-      "effort": "low",
-      "reasoning": "Opening is TOMORROW. Time-sensitive content can capture local buzz and social shares."
+      "effort": "medium",
+      "reasoning": "Most demand is local-intent ('near me', Waikiki, donut/coffee terms). Local pack optimization can outperform organic blue links for discovery traffic."
     },
     {
-      "type": "japanese_market_nurture",
-      "action": "Expand Japanese content section - 36 impressions from Japan shows interest, create tourist-friendly guides",
+      "type": "opening_window_content_cluster",
+      "action": "Publish short pages/posts around 'best breakfast in Waikiki', 'Kona coffee Waikiki', 'mochi donuts Waikiki' tied to early-March opening campaign.",
       "impact": "medium",
       "effort": "medium",
-      "reasoning": "Japanese tourists are a major Waikiki demographic. Building Japanese content now positions for long-term traffic."
+      "reasoning": "Current keyword spread is broad but shallow; focused local content can capture mid-tail terms and support internal linking to core conversion pages."
     }
   ],
   "insights": [
     {
-      "type": "device_distribution_alarm",
-      "observation": "Desktop (40%) vastly outperforms Mobile (20%) - inverted from typical local business pattern",
-      "suggestion": "Prioritize mobile-first redesign and ensure Google My Business listing appears prominently in mobile search",
-      "priority": "high"
-    },
-    {
-      "type": "brand_keyword_strength",
-      "observation": "Brand terms 'kona coffee donut/donuts' converting at 33-50% CTR with #1 position - excellent brand recognition",
-      "suggestion": "Protect brand by bidding on brand terms in Google Ads and monitoring for competitors",
+      "type": "brand_strength",
+      "observation": "Branded query 'kona coffee donut' ranks #1 with strong CTR, indicating solid brand match for navigational intent.",
+      "suggestion": "Preserve branded dominance while shifting optimization effort toward non-branded local-intent queries.",
       "priority": "medium"
     },
     {
-      "type": "chinese_search_dominance",
-      "observation": "Chinese queries represent 3,731 of 3,244 total impressions (~115%) - this market is driving visibility",
-      "suggestion": "Consider Chinese social media presence (WeChat, Xiaohongshu) to complement organic search",
+      "type": "ctr_gap",
+      "observation": "Several keywords in positions 4-10 have 0 clicks, signaling SERP copy and intent alignment issues.",
+      "suggestion": "Run weekly title/description tests for top impression pages and monitor CTR deltas in GSC.",
       "priority": "high"
     },
     {
-      "type": "grand_opening_timing",
-      "observation": "Opening Feb 25, 2026 (D-1) - critical 48-hour window for launch content",
-      "suggestion": "Push social content, update GBP with opening announcement, and prepare day-1 review collection strategy",
-      "priority": "high"
+      "type": "technical_risk",
+      "observation": "Monitoring found 71 HTML errors and missing key security headers; while not all directly impact rankings, trust and crawl quality may degrade.",
+      "suggestion": "Schedule a technical cleanup sprint for markup validity and baseline security headers (HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy).",
+      "priority": "medium"
     }
   ]
 }
