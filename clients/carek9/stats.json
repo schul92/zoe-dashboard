@@ -134,21 +134,18 @@
     "users": 16,
     "pageviews": 217
   },
-  "lastUpdated": "2026-03-03T10:02:42Z",
+  "lastUpdated": "2026-03-03",
   "seo": {
     "sessions": 0,
     "users": 0,
     "pageviews": 0,
     "bounceRate": 59.38,
-    "topQueries": [
-      "best dog paw cleaner",
-      "best paw claener for dogs",
-      "groom bathing tablets"
-    ]
+    "updatedAt": "2026-03-03"
   },
   "gsc": {
     "totalClicks": 1,
     "totalImpressions": 224,
     "avgCtr": 0.45
-  }
+  },
+  "dailyCrons": 1
 }
