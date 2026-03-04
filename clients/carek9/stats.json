@@ -1,84 +1,90 @@
 {
   "client": "carek9",
   "site": "https://carek9.com/",
-  "generatedAt": "2026-03-02T15:04:00Z",
+  "generatedAt": "2026-03-04T10:01:00Z",
   "period": {
     "ga4": {
-      "start": "2026-01-31",
-      "end": "2026-03-01"
+      "start": "2026-02-02",
+      "end": "2026-03-04"
     },
     "gsc": {
-      "start": "2026-01-28",
-      "end": "2026-02-27"
+      "start": "2026-02-01",
+      "end": "2026-03-01"
     }
   },
   "overview": {
-    "sessions": 320,
-    "users": 214,
-    "newUsers": 214,
-    "pageviews": 1080,
-    "bounceRate": 59.38,
-    "avgSessionDuration": 266.92,
+    "sessions": 337,
+    "users": 227,
+    "newUsers": 227,
+    "pageviews": 1112,
+    "bounceRate": 60.83,
+    "avgSessionDuration": 257.83,
     "gscClicks": 1,
-    "gscImpressions": 219,
-    "avgCtr": 0.46,
-    "avgPosition": 18.4
+    "gscImpressions": 224,
+    "avgCtr": 0.21,
+    "avgPosition": 22.9
   },
   "trafficBreakdown": {
     "direct": {
-      "sessions": 225,
-      "percentage": 70.3
+      "sessions": 236,
+      "percentage": 70.0
     },
     "organicSearch": {
-      "sessions": 52,
-      "percentage": 16.3
+      "sessions": 54,
+      "percentage": 16.0
     },
     "referral": {
-      "sessions": 35,
-      "percentage": 10.9
+      "sessions": 37,
+      "percentage": 11.0
     },
     "organicSocial": {
-      "sessions": 2,
-      "percentage": 0.6
+      "sessions": 4,
+      "percentage": 1.2
     },
     "other": {
-      "sessions": 6,
-      "percentage": 1.9
+      "sessions": 11,
+      "percentage": 3.3
     }
   },
   "topPages": [
     {
       "path": "/",
-      "pageviews": 495,
-      "sessions": 218,
-      "avgDuration": 248.94
+      "pageviews": 505,
+      "sessions": 229,
+      "avgDuration": 237.6
     },
     {
       "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 93,
-      "sessions": 33,
-      "avgDuration": 119.49
+      "pageviews": 97,
+      "sessions": 34,
+      "avgDuration": 118.46
     },
     {
       "path": "/collections/treat",
-      "pageviews": 67,
-      "sessions": 41,
-      "avgDuration": 114.56
+      "pageviews": 71,
+      "sessions": 43,
+      "avgDuration": 112.34
     },
     {
       "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": 64,
-      "sessions": 22,
-      "avgDuration": 147.63
+      "pageviews": 65,
+      "sessions": 23,
+      "avgDuration": 142.97
     },
     {
       "path": "/blogs/news",
-      "pageviews": 36,
-      "sessions": 18,
-      "avgDuration": 126.11
+      "pageviews": 37,
+      "sessions": 19,
+      "avgDuration": 119.47
     }
   ],
   "topQueries": [
+    {
+      "query": "best dog paw cleaner",
+      "clicks": 0,
+      "impressions": 74,
+      "position": 11.3
+    },
     {
       "query": "best paw claener for dogs",
       "clicks": 0,
@@ -86,47 +92,41 @@
       "position": 1
     },
     {
-      "query": "best dog paw cleaner",
-      "clicks": 0,
-      "impressions": 59,
-      "position": 13.8
-    },
-    {
-      "query": "dexas mudbuster",
-      "clicks": 0,
-      "impressions": 18,
-      "position": 11.6
-    },
-    {
       "query": "groom bathing tablets",
       "clicks": 1,
-      "impressions": 16,
-      "position": 4.5
+      "impressions": 19,
+      "position": 4.7
     },
     {
       "query": "best paw cleaner for dogs",
       "clicks": 0,
-      "impressions": 12,
-      "position": 11.3
+      "impressions": 18,
+      "position": 7.9
+    },
+    {
+      "query": "bath tablet",
+      "clicks": 0,
+      "impressions": 6,
+      "position": 11.8
     }
   ],
   "seoInsights": {
     "totalQueries": 25,
     "queriesInTop3": 5,
-    "queriesInTop10": 10,
-    "queriesInTop20": 16,
+    "queriesInTop10": 12,
+    "queriesInTop20": 18,
     "quickWinOpportunities": [
-      "best paw claener for dogs (position 1, 68 impressions, 0 clicks)",
-      "best dog paw cleaner (position 13.8, 59 impressions)",
-      "dexas mudbuster (position 11.6, 18 impressions)",
-      "groom bathing tablets (position 4.5, 16 impressions, 1 click)"
+      "best paw claener for dogs (position 1, 68 impressions, 0 clicks - needs CTR optimization)",
+      "best dog paw cleaner (position 11.3, 74 impressions - push to top 10)",
+      "groom bathing tablets (position 4.7, 19 impressions, 1 click)",
+      "best paw cleaner for dogs (position 7.9, 18 impressions)"
     ],
     "brandedQueryPercentage": 0
   },
   "dailyAverage": {
-    "sessions": 11.9,
-    "users": 7.9,
-    "pageviews": 40.0
+    "sessions": 11.2,
+    "users": 7.6,
+    "pageviews": 37.1
   },
   "peakDay": {
     "date": "2026-02-23",
@@ -134,18 +134,18 @@
     "users": 16,
     "pageviews": 217
   },
-  "lastUpdated": "2026-03-03",
+  "lastUpdated": "2026-03-04",
   "seo": {
-    "sessions": 0,
-    "users": 0,
+    "sessions": 54,
+    "users": 35,
     "pageviews": 0,
-    "bounceRate": 59.38,
-    "updatedAt": "2026-03-03"
+    "bounceRate": 48.15,
+    "updatedAt": "2026-03-04"
   },
   "gsc": {
     "totalClicks": 1,
     "totalImpressions": 224,
-    "avgCtr": 0.45
+    "avgCtr": 0.21
   },
   "dailyCrons": 1
 }
