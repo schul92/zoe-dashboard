@@ -1,92 +1,36 @@
 {
-  "urgent": [
-    {
-      "type": "opening_date_mismatch",
-      "keyword": "grand opening date",
-      "action": "Replace all public-facing mentions of 'Feb 25, 2026' with 'Early March 2026' in metadata, manifest, localized message bundles, and landing-page CTA copy before next deploy.",
-      "impact": "high",
-      "effort": "medium",
-      "reasoning": "Date mismatch creates trust risk and can hurt CTR from branded queries. Search snippets and social previews may continue showing the wrong date if metadata is not corrected immediately."
-    },
-    {
-      "type": "high_impression_low_ctr_queries",
-      "keyword": "donuts near me",
-      "action": "Update homepage/en meta title + description to include high-intent local terms ('donuts near me in Waikiki', 'coffee near me Waikiki') and opening timing, then request reindex in GSC.",
-      "impact": "high",
-      "effort": "low",
-      "reasoning": "CTR is ~1.1% despite average position 7.2 and 2,603 impressions. Better SERP copy can lift clicks without ranking changes."
-    }
+  "summary": "Last 7 days: 23 clicks / 1,891 impressions / 1.2% CTR / avg position 7.4 across 56 queries. Brand demand exists, but non-branded discovery is under-converting. Highest-volume opportunity is Chinese-language Kona coffee informational demand with strong ranking (positions ~6-9) but 0% CTR.",
+  "top_opportunities": [
+    "Improve CTR for high-impression Chinese queries currently at positions 6-9 with zero clicks (e.g., 夏威夷科纳咖啡风味: 890 impressions; 夏威夷科纳适合冲美式吗: 497; 夏威夷科纳咖啡 介绍: 170).",
+    "Boost local-intent conversion for 'donuts near me' (18 impressions, position 9.3, 0 clicks) and related 'near me' coffee terms.",
+    "Strengthen /en/about-kona-coffee (position 23.1) with clearer search-intent headings, internal links, and FAQ schema.",
+    "Consolidate duplicate home URL variants (http://www.../en and https://www.../en) to reduce signal dilution and improve canonical consistency."
   ],
-  "quickWins": [
-    {
-      "type": "meta_snippet_optimization",
-      "keyword": "donuts near me",
-      "action": "Rewrite meta description to include clear USP + location + opening window + CTA in 140-155 chars.",
-      "impact": "high",
-      "effort": "low",
-      "potentialGain": 20,
-      "reasoning": "Query is already around position 9.4 with 20 impressions and 0 clicks; snippet improvements can quickly increase click share."
-    },
-    {
-      "type": "localized_page_snippets",
-      "keyword": "kona coffee",
-      "action": "Align title/description on /ko, /ja, /es pages with local-language intent and include Waikiki + Kona Coffee modifiers.",
-      "impact": "medium",
-      "effort": "medium",
-      "potentialGain": 12,
-      "reasoning": "Non-English pages show impressions (e.g., /ko/about-kona-coffee at 40 impressions) but no clicks, indicating snippet/message mismatch."
-    },
-    {
-      "type": "faq_schema_expansion",
-      "keyword": "coffee near me open now",
-      "action": "Add/expand FAQ schema for opening date, hours, parking, and location landmarks to improve rich result eligibility.",
-      "impact": "medium",
-      "effort": "low",
-      "potentialGain": 10,
-      "reasoning": "Current signals indicate informational/local intent; richer SERP features can improve CTR for near-me queries in positions 5-16."
-    }
+  "technical_fixes": [
+    "URGENT: Replace all live metadata/text mentioning 'Grand Opening Feb 25' with 'Grand Opening: Early March 2026' (live meta description still says Feb 25).",
+    "Fix GSC device/country position pipeline fields showing 0 to ensure accurate segmentation reporting.",
+    "Reduce 71 HTML validation errors and 106 warnings from automated validator output.",
+    "Add missing security headers: HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy.",
+    "Ensure schema markup is valid JSON-LD blocks in rendered HTML (validator detected types but JSON-LD script count returned 0)."
   ],
-  "opportunities": [
-    {
-      "type": "mobile_conversion_focus",
-      "action": "Prioritize mobile landing UX and map/call CTAs; mobile has materially better CTR than desktop and should be primary conversion surface.",
-      "impact": "high",
-      "effort": "medium",
-      "reasoning": "Mobile CTR (~3.1%) far exceeds desktop (~0.1%), suggesting desktop snippet relevance or SERP intent mismatch while mobile demand is stronger."
-    },
-    {
-      "type": "local_pack_reinforcement",
-      "action": "Strengthen Google Business Profile signals (opening update, categories, fresh photos, weekly posts, Q&A) and embed consistent NAP/hours across site pages.",
-      "impact": "high",
-      "effort": "medium",
-      "reasoning": "Most demand is local-intent ('near me', Waikiki, donut/coffee terms). Local pack optimization can outperform organic blue links for discovery traffic."
-    },
-    {
-      "type": "opening_window_content_cluster",
-      "action": "Publish short pages/posts around 'best breakfast in Waikiki', 'Kona coffee Waikiki', 'mochi donuts Waikiki' tied to early-March opening campaign.",
-      "impact": "medium",
-      "effort": "medium",
-      "reasoning": "Current keyword spread is broad but shallow; focused local content can capture mid-tail terms and support internal linking to core conversion pages."
-    }
+  "content_actions": [
+    "Create Chinese and Korean FAQ snippets targeting current high-impression informational queries; include concise answer boxes and internal links to menu/location.",
+    "Add local landing copy for Waikiki intent: 'donuts near Waikiki Beach', 'Kona coffee near me in Waikiki', and walking-distance/location modifiers.",
+    "Refresh homepage and key pages with opening status language aligned to early March 2026 and clear CTA for opening updates.",
+    "Expand /en/menu and /en/about-kona-coffee with structured FAQ sections to capture long-tail question queries."
   ],
-  "insights": [
-    {
-      "type": "brand_strength",
-      "observation": "Branded query 'kona coffee donut' ranks #1 with strong CTR, indicating solid brand match for navigational intent.",
-      "suggestion": "Preserve branded dominance while shifting optimization effort toward non-branded local-intent queries.",
-      "priority": "medium"
-    },
-    {
-      "type": "ctr_gap",
-      "observation": "Several keywords in positions 4-10 have 0 clicks, signaling SERP copy and intent alignment issues.",
-      "suggestion": "Run weekly title/description tests for top impression pages and monitor CTR deltas in GSC.",
-      "priority": "high"
-    },
-    {
-      "type": "technical_risk",
-      "observation": "Monitoring found 71 HTML errors and missing key security headers; while not all directly impact rankings, trust and crawl quality may degrade.",
-      "suggestion": "Schedule a technical cleanup sprint for markup validity and baseline security headers (HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy).",
-      "priority": "medium"
-    }
+  "local_seo_actions": [
+    "Align NAP + opening date across website metadata, Google Business Profile, and social bios to avoid trust/relevance conflicts.",
+    "Publish 3-5 localized posts before opening focused on Waikiki foot traffic, beach proximity, and morning coffee/donut intent.",
+    "Add multilingual location snippets (EN/KO/ZH/JA) with map/parking/walking-time details.",
+    "Track and prioritize US, KR, and JP query clusters since impressions indicate multilingual demand beyond branded terms."
+  ],
+  "priority_next_7_days": [
+    "Day 1: Ship urgent metadata fix for Feb 25 references on live site and redeploy.",
+    "Day 1-2: Add canonical normalization (force https + preferred www/non-www strategy) and verify in GSC URL Inspection.",
+    "Day 2-3: Publish multilingual FAQ updates for top Chinese/Korean informational queries.",
+    "Day 3-4: Improve /en/about-kona-coffee on-page structure (H2s, intent match, internal links, FAQ schema).",
+    "Day 4-5: Implement security headers and re-run observatory check.",
+    "Day 5-7: Re-run PageSpeed and GSC snapshot; compare CTR lift on targeted query set."
   ]
 }
