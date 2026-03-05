@@ -1,36 +1,120 @@
 {
-  "summary": "Last 7 days: 23 clicks / 1,891 impressions / 1.2% CTR / avg position 7.4 across 56 queries. Brand demand exists, but non-branded discovery is under-converting. Highest-volume opportunity is Chinese-language Kona coffee informational demand with strong ranking (positions ~6-9) but 0% CTR.",
-  "top_opportunities": [
-    "Improve CTR for high-impression Chinese queries currently at positions 6-9 with zero clicks (e.g., 夏威夷科纳咖啡风味: 890 impressions; 夏威夷科纳适合冲美式吗: 497; 夏威夷科纳咖啡 介绍: 170).",
-    "Boost local-intent conversion for 'donuts near me' (18 impressions, position 9.3, 0 clicks) and related 'near me' coffee terms.",
-    "Strengthen /en/about-kona-coffee (position 23.1) with clearer search-intent headings, internal links, and FAQ schema.",
-    "Consolidate duplicate home URL variants (http://www.../en and https://www.../en) to reduce signal dilution and improve canonical consistency."
+  "generatedAt": "2026-03-05T00:47:00Z",
+  "storeOpeningDate": "Early March 2026",
+  "urgent": [
+    {
+      "id": "U1",
+      "title": "⚠️ Fix incorrect opening date across all content — 'February 25' → 'Early March 2026'",
+      "description": "Multiple social media posts, dashboard stats, and news insights still reference 'Grand opening February 25, 2026'. The correct opening date is EARLY MARCH 2026. This outdated date appears in: (1) 13+ social posts in posts.json, (2) stats.json dashboard header, (3) news/insights.json tie-in copy. Leaving wrong dates live damages credibility and confuses customers.",
+      "affectedFiles": [
+        "social/posts.json",
+        "stats.json",
+        "news/insights.json"
+      ],
+      "action": "Search-and-replace all instances of 'February 25, 2026' and 'Feb 25' with the correct early March 2026 date. Also check the live website (konacoffeedonut.com) for any hardcoded Feb 25 references.",
+      "priority": "CRITICAL"
+    },
+    {
+      "id": "U2",
+      "title": "⚠️ Check live website for Feb 25 references",
+      "description": "If konacoffeedonut.com or its meta tags, structured data, or Google Business Profile mention February 25 as the opening date, update immediately. Search engines may have cached the old date.",
+      "action": "Audit konacoffeedonut.com pages, GBP listing, and any Google Ads for outdated date references. Update and request re-indexing via GSC.",
+      "priority": "CRITICAL"
+    }
   ],
-  "technical_fixes": [
-    "URGENT: Replace all live metadata/text mentioning 'Grand Opening Feb 25' with 'Grand Opening: Early March 2026' (live meta description still says Feb 25).",
-    "Fix GSC device/country position pipeline fields showing 0 to ensure accurate segmentation reporting.",
-    "Reduce 71 HTML validation errors and 106 warnings from automated validator output.",
-    "Add missing security headers: HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy.",
-    "Ensure schema markup is valid JSON-LD blocks in rendered HTML (validator detected types but JSON-LD script count returned 0)."
+  "quickWins": [
+    {
+      "id": "QW1",
+      "title": "Optimize Chinese (zh) about-kona-coffee page — 1,350 impressions, 0 clicks",
+      "description": "The zh/about-kona-coffee page has massive impressions (1,350/week) from Chinese queries like '夏威夷科纳咖啡风味' (877 imp, pos 7.6) and '夏威夷科纳咖啡 介绍' (315 imp, pos 7.8). Zero clicks means the title/description aren't compelling enough in SERPs.",
+      "action": "Rewrite the zh page's meta title and description to be more click-worthy. Include '科纳咖啡' prominently. Target moving from position ~7.5 to top 3 for potential 263+ weekly clicks.",
+      "potentialClicks": 400,
+      "effort": "low"
+    },
+    {
+      "id": "QW2",
+      "title": "Fix HTTP vs HTTPS canonical — http://www.konacoffeedonut.com/en getting separate clicks",
+      "description": "GSC shows both 'http://www.konacoffeedonut.com/en' (5 clicks, 102 imp) and 'https://www.konacoffeedonut.com/en' (0 clicks, 2 imp) as separate pages. The HTTP version is getting more traffic, suggesting a redirect or canonical issue.",
+      "action": "Ensure all HTTP URLs 301 redirect to HTTPS. Set canonical tags properly. This consolidates ranking signals.",
+      "effort": "low"
+    },
+    {
+      "id": "QW3",
+      "title": "Improve 'donuts near me' ranking — 20 impressions at position 8.8",
+      "description": "High-intent local query with 20 weekly impressions but 0 clicks at position 8.8. Moving to top 5 could yield 6+ clicks/week.",
+      "action": "Add 'donuts near me' and 'donut shop near me' phrasing naturally to the homepage and menu page. Ensure Google Business Profile is optimized with 'donuts' as a category.",
+      "effort": "low"
+    },
+    {
+      "id": "QW4",
+      "title": "Boost Korean about-kona-coffee page — 46 impressions at position 4, 0 clicks",
+      "description": "The ko/about-kona-coffee page ranks position 4 with 46 impressions but gets zero clicks. Queries like '하와이 코나 커피' (9 imp, pos 1) should be converting.",
+      "action": "Improve Korean meta title/description to be more enticing. Add a clear CTA and store location info in the SERP snippet.",
+      "effort": "low"
+    }
   ],
-  "content_actions": [
-    "Create Chinese and Korean FAQ snippets targeting current high-impression informational queries; include concise answer boxes and internal links to menu/location.",
-    "Add local landing copy for Waikiki intent: 'donuts near Waikiki Beach', 'Kona coffee near me in Waikiki', and walking-distance/location modifiers.",
-    "Refresh homepage and key pages with opening status language aligned to early March 2026 and clear CTA for opening updates.",
-    "Expand /en/menu and /en/about-kona-coffee with structured FAQ sections to capture long-tail question queries."
+  "opportunities": [
+    {
+      "id": "O1",
+      "title": "GA4 shows 0 users/sessions — tracking may be broken",
+      "description": "GA4 reports 0 users, 0 sessions, 0 pageviews for the entire 7-day period while GSC shows 23 clicks. Either GA4 tracking code is missing/broken on the site, or there's a configuration issue.",
+      "action": "Verify GA4 tag is installed on all pages (check with Google Tag Assistant). This is blocking all behavioral analytics.",
+      "priority": "high"
+    },
+    {
+      "id": "O2",
+      "title": "Target 'kona coffee' — 28 impressions at position 3.6 with 0 clicks",
+      "description": "High-value branded term with strong position but no clicks. The SERP snippet likely isn't compelling or the page doesn't match search intent (people may want to buy beans, not visit a donut shop).",
+      "action": "Create or optimize a dedicated 'Kona Coffee' landing page that addresses both coffee enthusiasts and local visitors. Differentiate from bean retailers.",
+      "effort": "medium"
+    },
+    {
+      "id": "O3",
+      "title": "Create content for 'malasada' queries — ko/menu/malasada has 16 impressions",
+      "description": "The Korean malasada page gets 16 impressions. Related queries '말라사다' (4 imp) and '말라사다 도넛' (7 imp) show demand. No English malasada page exists in the data.",
+      "action": "Create dedicated English and multi-language malasada pages with rich content about this Hawaiian specialty. Target 'malasada near me', 'best malasada waikiki'.",
+      "effort": "medium"
+    },
+    {
+      "id": "O4",
+      "title": "Capitalize on international/tourist traffic — Japanese and Korean audiences",
+      "description": "Japan (22 imp), Korea (49 imp) show real tourist search interest. Japanese queries like 'ハワイコナコーヒー' rank position 1. These tourists are planning Waikiki visits.",
+      "action": "Ensure ja/ and ko/ pages have complete, high-quality translations. Add tourist-friendly info: location relative to hotels, hours, what to try first. Consider Japanese/Korean travel blog outreach.",
+      "effort": "medium"
+    },
+    {
+      "id": "O5",
+      "title": "Build local 'near me' content cluster",
+      "description": "Multiple 'near me' queries appearing: 'coffee near me' (6 imp, pos 29.5), 'donut near me' (3 imp, pos 8.3), 'coffee shop near me' (1 imp, pos 10), 'dessert near me' (2 imp, pos 31.5). These are high-intent local searches.",
+      "action": "Optimize Google Business Profile aggressively. Add location-rich content to the site. Build local citations (Yelp, TripAdvisor, Google Maps). Get early customer reviews.",
+      "effort": "medium"
+    }
   ],
-  "local_seo_actions": [
-    "Align NAP + opening date across website metadata, Google Business Profile, and social bios to avoid trust/relevance conflicts.",
-    "Publish 3-5 localized posts before opening focused on Waikiki foot traffic, beach proximity, and morning coffee/donut intent.",
-    "Add multilingual location snippets (EN/KO/ZH/JA) with map/parking/walking-time details.",
-    "Track and prioritize US, KR, and JP query clusters since impressions indicate multilingual demand beyond branded terms."
-  ],
-  "priority_next_7_days": [
-    "Day 1: Ship urgent metadata fix for Feb 25 references on live site and redeploy.",
-    "Day 1-2: Add canonical normalization (force https + preferred www/non-www strategy) and verify in GSC URL Inspection.",
-    "Day 2-3: Publish multilingual FAQ updates for top Chinese/Korean informational queries.",
-    "Day 3-4: Improve /en/about-kona-coffee on-page structure (H2s, intent match, internal links, FAQ schema).",
-    "Day 4-5: Implement security headers and re-run observatory check.",
-    "Day 5-7: Re-run PageSpeed and GSC snapshot; compare CTR lift on targeted query set."
+  "insights": [
+    {
+      "id": "I1",
+      "title": "Brand awareness is building — 39% branded clicks",
+      "description": "9 of 23 clicks (39.1%) come from branded queries ('kona coffee donut'). Position 1 for brand name with 42% CTR is strong. The remaining 60.9% non-branded clicks show organic discovery is working."
+    },
+    {
+      "id": "I2",
+      "title": "Chinese search traffic is the biggest untapped opportunity",
+      "description": "Chinese queries account for ~1,342 of 1,695 total impressions (79%). Three Chinese queries alone have 1,342 impressions but 0 clicks. Even a 1% CTR improvement would mean 13+ new weekly visitors."
+    },
+    {
+      "id": "I3",
+      "title": "Mobile CTR (2.8%) is 9x higher than desktop (0.3%)",
+      "description": "Mobile users click much more often, which aligns with local/tourist 'near me' search behavior. Desktop's low CTR is dragged down by Chinese informational queries that don't convert to clicks."
+    },
+    {
+      "id": "I4",
+      "title": "Site has 11 indexed pages across 5 languages — good multilingual foundation",
+      "description": "Pages indexed in en, ko, ja, zh, es. This multilingual approach is generating diverse international impressions. Focus on quality over quantity for each language."
+    },
+    {
+      "id": "I5",
+      "title": "49 of 60 queries (82%) have position ≤10 — strong baseline rankings",
+      "description": "Most queries already rank on page 1. The challenge isn't ranking — it's converting impressions to clicks through better meta titles/descriptions and SERP presentation."
+    }
   ]
 }
