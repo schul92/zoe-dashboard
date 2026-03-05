@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T13:41:54.387378Z",
+  "lastUpdated": "2026-03-05T15:05:29.550675Z",
   "dates": [
     "2026-02-04",
     "2026-02-05",
@@ -175,7 +175,7 @@
           0,
           48,
           270,
-          58
+          121
         ],
         "comments": [
           0,
@@ -207,7 +207,7 @@
           0,
           15,
           100,
-          20
+          47
         ],
         "follows": [
           0,
@@ -243,12 +243,12 @@
         ]
       },
       "today": {
-        "likes": 58,
-        "comments": 20,
+        "likes": 121,
+        "comments": 47,
         "follows": 0,
         "unfollows": 0,
         "replies": 0,
-        "sessions": 1
+        "sessions": 2
       },
       "sessions_today": [
         {
@@ -262,6 +262,29 @@
           "duration_min": 61.1,
           "hashtags_used": [],
           "session_id": "zoe_instagram_20260305_0409"
+        },
+        {
+          "likes": 63,
+          "comments": 27,
+          "follows": 0,
+          "unfollows": 0,
+          "replies": 0,
+          "start_time": "2026-03-05T06:04:13.320674",
+          "end_time": "2026-03-05T07:04:59.141200",
+          "duration_min": 60.8,
+          "hashtags_used": [
+            "nzsmallbusiness",
+            "smallbusinessmarketing",
+            "salonowner",
+            "supportsmallbusiness",
+            "womanownedbusiness",
+            "hawaiilocal",
+            "koreanbusiness",
+            "njsmallbusiness",
+            "한인비즈니스",
+            "localbusiness"
+          ],
+          "session_id": "zoe_instagram_20260305_0705"
         }
       ]
     },
@@ -647,6 +670,30 @@
       "duration_min": 61.1,
       "hashtags_used": [],
       "session_id": "zoe_instagram_20260305_0409",
+      "account": "zoe_instagram"
+    },
+    {
+      "likes": 63,
+      "comments": 27,
+      "follows": 0,
+      "unfollows": 0,
+      "replies": 0,
+      "start_time": "2026-03-05T06:04:13.320674",
+      "end_time": "2026-03-05T07:04:59.141200",
+      "duration_min": 60.8,
+      "hashtags_used": [
+        "nzsmallbusiness",
+        "smallbusinessmarketing",
+        "salonowner",
+        "supportsmallbusiness",
+        "womanownedbusiness",
+        "hawaiilocal",
+        "koreanbusiness",
+        "njsmallbusiness",
+        "한인비즈니스",
+        "localbusiness"
+      ],
+      "session_id": "zoe_instagram_20260305_0705",
       "account": "zoe_instagram"
     }
   ]
