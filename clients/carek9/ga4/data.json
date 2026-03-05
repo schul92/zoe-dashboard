@@ -1,332 +1,95 @@
 {
-  "propertyId": "523137923",
-  "dateRange": {
-    "start": "2026-02-02",
-    "end": "2026-03-04"
-  },
-  "fetchedAt": "2026-03-04T02:01:43.050597",
-  "overview": {
-    "sessions": 337,
-    "users": 227,
-    "pageviews": 1112,
-    "bounceRate": 60.83,
-    "avgSessionDuration": 257.83,
-    "newUsers": 227
+  "period": "last_30_days",
+  "collected": "2026-03-04",
+  "summary": {
+    "sessions": 345,
+    "users": 233,
+    "pageviews": 1122,
+    "bounceRate": 61.7,
+    "avgSessionDuration": 256.8
   },
   "topPages": [
     {
       "path": "/",
-      "pageviews": 505,
-      "sessions": 229,
-      "avgDuration": 237.6
+      "pageviews": 508,
+      "sessions": 232
     },
     {
       "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
       "pageviews": 97,
-      "sessions": 34,
-      "avgDuration": 118.46
+      "sessions": 34
     },
     {
       "path": "/collections/treat",
       "pageviews": 71,
-      "sessions": 43,
-      "avgDuration": 112.34
+      "sessions": 43
     },
     {
       "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
       "pageviews": 65,
-      "sessions": 23,
-      "avgDuration": 142.97
+      "sessions": 23
     },
     {
       "path": "/blogs/news",
       "pageviews": 37,
-      "sessions": 19,
-      "avgDuration": 119.47
+      "sessions": 19
     },
     {
       "path": "/cart",
       "pageviews": 29,
-      "sessions": 21,
-      "avgDuration": 104.02
+      "sessions": 21
     },
     {
       "path": "/pages/about-us",
       "pageviews": 29,
-      "sessions": 26,
-      "avgDuration": 84.59
+      "sessions": 26
     },
     {
       "path": "/pages/carek9-x-human-canine-collaborative",
-      "pageviews": 27,
-      "sessions": 25,
-      "avgDuration": 25.84
+      "pageviews": 28,
+      "sessions": 26
     },
     {
       "path": "/collections/all",
       "pageviews": 23,
-      "sessions": 19,
-      "avgDuration": 37.59
+      "sessions": 19
     },
     {
       "path": "/collections/food-topper",
       "pageviews": 22,
-      "sessions": 19,
-      "avgDuration": 14.0
+      "sessions": 19
     }
   ],
   "trafficSources": [
     {
-      "source": "(direct)",
-      "medium": "(none)",
-      "sessions": 236,
-      "users": 177,
-      "bounceRate": 67.37
+      "channel": "Direct",
+      "sessions": 242,
+      "users": 183
     },
     {
-      "source": "google",
-      "medium": "organic",
+      "channel": "Organic Search",
       "sessions": 54,
-      "users": 35,
-      "bounceRate": 48.15
+      "users": 35
     },
     {
-      "source": "admin.shopify.com",
-      "medium": "referral",
-      "sessions": 26,
-      "users": 3,
-      "bounceRate": 30.77
+      "channel": "Organic Shopping",
+      "sessions": 30,
+      "users": 5
     },
     {
-      "source": "(not set)",
-      "medium": "(not set)",
-      "sessions": 11,
-      "users": 10,
-      "bounceRate": 100.0
-    },
-    {
-      "source": "qrcodes.pro",
-      "medium": "referral",
-      "sessions": 7,
-      "users": 6,
-      "bounceRate": 57.14
-    },
-    {
-      "source": "judge.me",
-      "medium": "referral",
-      "sessions": 2,
-      "users": 1,
-      "bounceRate": 0.0
-    },
-    {
-      "source": "l.instagram.com",
-      "medium": "referral",
-      "sessions": 2,
-      "users": 2,
-      "bounceRate": 50.0
-    },
-    {
-      "source": "shopify.com",
-      "medium": "referral",
-      "sessions": 2,
-      "users": 2,
-      "bounceRate": 50.0
-    },
-    {
-      "source": "Pinterest",
-      "medium": "organic",
-      "sessions": 1,
-      "users": 1,
-      "bounceRate": 100.0
-    },
-    {
-      "source": "ig",
-      "medium": "social",
-      "sessions": 1,
-      "users": 1,
-      "bounceRate": 0.0
-    }
-  ],
-  "dailyTrend": [
-    {
-      "date": "2026-02-03",
-      "sessions": 3,
-      "users": 3,
-      "pageviews": 9
-    },
-    {
-      "date": "2026-02-04",
-      "sessions": 11,
-      "users": 10,
-      "pageviews": 26
-    },
-    {
-      "date": "2026-02-05",
-      "sessions": 8,
-      "users": 7,
-      "pageviews": 10
-    },
-    {
-      "date": "2026-02-06",
-      "sessions": 6,
-      "users": 6,
-      "pageviews": 9
-    },
-    {
-      "date": "2026-02-07",
-      "sessions": 16,
-      "users": 15,
-      "pageviews": 28
-    },
-    {
-      "date": "2026-02-08",
-      "sessions": 3,
-      "users": 3,
-      "pageviews": 3
-    },
-    {
-      "date": "2026-02-09",
-      "sessions": 6,
-      "users": 6,
-      "pageviews": 13
-    },
-    {
-      "date": "2026-02-10",
-      "sessions": 25,
-      "users": 18,
-      "pageviews": 187
-    },
-    {
-      "date": "2026-02-11",
-      "sessions": 24,
-      "users": 24,
-      "pageviews": 31
-    },
-    {
-      "date": "2026-02-12",
-      "sessions": 8,
-      "users": 7,
-      "pageviews": 15
-    },
-    {
-      "date": "2026-02-13",
-      "sessions": 17,
-      "users": 13,
-      "pageviews": 86
-    },
-    {
-      "date": "2026-02-14",
-      "sessions": 18,
-      "users": 16,
-      "pageviews": 60
-    },
-    {
-      "date": "2026-02-15",
-      "sessions": 6,
-      "users": 6,
-      "pageviews": 22
-    },
-    {
-      "date": "2026-02-16",
-      "sessions": 10,
-      "users": 6,
-      "pageviews": 41
-    },
-    {
-      "date": "2026-02-17",
+      "channel": "Unassigned",
       "sessions": 13,
-      "users": 11,
-      "pageviews": 47
+      "users": 11
     },
     {
-      "date": "2026-02-18",
+      "channel": "Referral",
       "sessions": 10,
-      "users": 9,
-      "pageviews": 27
+      "users": 8
     },
     {
-      "date": "2026-02-19",
-      "sessions": 8,
-      "users": 7,
-      "pageviews": 11
-    },
-    {
-      "date": "2026-02-20",
-      "sessions": 9,
-      "users": 9,
-      "pageviews": 9
-    },
-    {
-      "date": "2026-02-21",
-      "sessions": 16,
-      "users": 16,
-      "pageviews": 32
-    },
-    {
-      "date": "2026-02-22",
-      "sessions": 10,
-      "users": 10,
-      "pageviews": 32
-    },
-    {
-      "date": "2026-02-23",
-      "sessions": 37,
-      "users": 16,
-      "pageviews": 217
-    },
-    {
-      "date": "2026-02-24",
-      "sessions": 14,
-      "users": 10,
-      "pageviews": 77
-    },
-    {
-      "date": "2026-02-25",
-      "sessions": 18,
-      "users": 10,
-      "pageviews": 23
-    },
-    {
-      "date": "2026-02-26",
-      "sessions": 8,
-      "users": 7,
-      "pageviews": 8
-    },
-    {
-      "date": "2026-02-27",
+      "channel": "Organic Social",
       "sessions": 4,
-      "users": 4,
-      "pageviews": 4
-    },
-    {
-      "date": "2026-02-28",
-      "sessions": 8,
-      "users": 7,
-      "pageviews": 45
-    },
-    {
-      "date": "2026-03-01",
-      "sessions": 4,
-      "users": 4,
-      "pageviews": 9
-    },
-    {
-      "date": "2026-03-02",
-      "sessions": 7,
-      "users": 6,
-      "pageviews": 8
-    },
-    {
-      "date": "2026-03-03",
-      "sessions": 9,
-      "users": 8,
-      "pageviews": 22
-    },
-    {
-      "date": "2026-03-04",
-      "sessions": 1,
-      "users": 1,
-      "pageviews": 1
+      "users": 4
     }
   ]
 }

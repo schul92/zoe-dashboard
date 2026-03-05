@@ -1,11 +1,7 @@
 {
-  "site": "carek9.com",
-  "dateRange": {
-    "start": "2026-02-01",
-    "end": "2026-03-01"
-  },
-  "fetchedAt": "2026-03-04T02:00:52.672936",
-  "topQueries": [
+  "period": "2026-01-30 to 2026-03-01",
+  "collected": "2026-03-04",
+  "queries": [
     {
       "query": "groom bathing tablets",
       "clicks": 1,
@@ -181,11 +177,5 @@
       "ctr": 0,
       "position": 69
     }
-  ],
-  "summary": {
-    "totalClicks": 1,
-    "totalImpressions": 224,
-    "avgCtr": 0.21,
-    "avgPosition": 22.9
-  }
+  ]
 }

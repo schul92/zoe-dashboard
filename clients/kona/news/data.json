@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-02T13:00:14.329940Z",
-  "version": "v2-2026-03-02",
+  "lastUpdated": "2026-03-04T13:00:13.850614Z",
+  "version": "v2-2026-03-04",
   "sources": {
     "brave_search": true,
     "twitter": false,
@@ -9,11 +9,18 @@
   },
   "headlines": [
     {
+      "title": "News",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com/news/",
+      "category": "hawaii",
+      "description": "<strong>Honolulu police have opened a robbery in the first degree investigation following a situation near Waikiki</strong>."
+    },
+    {
       "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com",
       "category": "hawaii",
-      "description": "The Hawaii Police Department said that <strong>James Fonseca, 25, was found in Hilo and in good health</strong>."
+      "description": "On today\u2019s episode of Spotlight Now, we catch up with Gov. Josh Green, who\u2019s been fielding a lot of questions about his lieutenant governor. ... The City &amp; County of Honolulu&#x27;s ENV is hiring "
     },
     {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
@@ -21,13 +28,6 @@
       "url": "https://www.khon2.com",
       "category": "hawaii",
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
-    },
-    {
-      "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
-      "source": "Brave Search",
-      "url": "https://www.waikikigetdown.com/",
-      "category": "hawaii",
-      "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
     },
     {
       "title": "Hawaii Tourism Trends 2026 Revealed: Where to Go, When to Visit, and How to Plan the Perfect Island Getaway - Travel And Tour World",
@@ -44,157 +44,178 @@
       "description": "In 2026, Hawaii will see <strong>new hotel openings, attractions, and restaurants, including direct flights from California, a new luau show on Kauai and chef Alan Wong&#x27;s restaurant on Oahu</stro"
     },
     {
-      "title": "A downturn for Hawaii tourism: Travel Weekly",
+      "title": "Hawaii Faces Stagnant Tourism Growth as Global Competitors Gain Ground: What You Need to Know in 2026 - Travel And Tour World",
       "source": "Brave Search",
-      "url": "https://www.travelweekly.com/Hawaii-Travel/Insights/downturn-for-hawaii-tourism-2026",
+      "url": "https://www.travelandtourworld.com/news/article/hawaii-faces-stagnant-tourism-growth-as-global-competitors-gain-ground-what-you-need-to-know-in-2026/",
       "category": "hawaii",
-      "description": "&quot;The near-term picture for Hawaii tourism remains poor,&quot; the report continued. Looking ahead, it said <strong>visitor arrivals and the average daily census are expected to decline in 2026 be"
+      "description": "Hawaii\u2019s tourism industry, a crucial pillar of the state\u2019s economy, is <strong>facing a stagnant recovery</strong> in 2026, despite ongoing efforts to bring back visitors after the COVID\u201119 pandemic."
     },
     {
-      "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
+      "title": "Coffee Industry Trends 2026 | Data from 64,000+ Independent Coffee Shops | Joe",
       "source": "Brave Search",
-      "url": "https://dailycoffeenews.com/",
+      "url": "https://joe.coffee/coffee-industry-trends/",
       "category": "coffee",
-      "description": "&gt; Industry | Daily Coffee News Staff | February 25, 2026 \u00b7 Registration opened today (Feb. 25) for the inaugural Camp Coffee Shop, a four-day business education event in Napa Valley, California, fo"
+      "description": "Coffee industry trends and insights from the largest network of independent coffee shops. Real data from 64,697 shops: average ticket sizes, peak hours, loyalty program ROI, and what&#x27;s working in"
     },
     {
-      "title": "Top Coffee Shop Industry Trends and Statistics in 2025",
+      "title": "Coffee Trends 2026 - weaverscoffee.com",
       "source": "Brave Search",
-      "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
+      "url": "https://weaverscoffee.com/blogs/blog/coffee-trends-2026",
       "category": "coffee",
-      "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
+      "description": "Explore coffee trends 2026 from pricing and climate change to Specialty Coffee, sustainability, and AI. A founder\u2019s forecast for the future of coffee."
     },
     {
-      "title": "News - World Coffee Portal",
+      "title": "Hottest Coffee Trends for 2026 and Beyond",
       "source": "Brave Search",
-      "url": "https://www.worldcoffeeportal.com/news/",
+      "url": "https://courtsidecoffee.substack.com/p/hottest-coffee-trends-for-2026-and",
       "category": "coffee",
-      "description": "Breaking coffee business news and analysis"
+      "description": "<strong>Premium ready\u2011to\u2011drink cold coffees, protein\u2011fortified \u201cfunctional\u201d lattes, and AI\u2011assisted home espresso machines</strong> are set to define the way people drink coffee in 2026 and ..."
     },
     {
-      "title": "Coffee maker recomendation",
+      "title": "Specialty Coffee Market Size, Share & Growth Report, 2030",
+      "source": "Brave Search",
+      "url": "https://www.grandviewresearch.com/industry-analysis/specialty-coffee-market-report",
+      "category": "coffee",
+      "description": "The global specialty coffee market size was estimated at <strong>USD 101.6 billion in 2024 and is projected to reach USD 183.0 billion by 2030</strong>, growing at a CAGR of 10.4% from 2025 to 2030"
+    },
+    {
+      "title": "Specialty coffee consumption hits 14-year high",
+      "source": "Brave Search",
+      "url": "https://www.ncausa.org/Newsroom/Specialty-coffee-consumption-hits-14-year-high",
+      "category": "coffee",
+      "description": "June 17, 2025 | NEW YORK \u2013 <strong>46% of American adults had specialty coffee in the past day</strong>, up 84% since 2011 and surpassing past-day traditional coffee consumption (42%), according to th"
+    },
+    {
+      "title": "Special Markets - International Coffee Organization",
+      "source": "Brave Search",
+      "url": "https://ico.org/market-development-toolkit/page/index/2",
+      "category": "coffee",
+      "description": "Specialty coffee is a term for <strong>the highest grade of coffee available, typically relating to the entire supply chain, using single origin or single estate coffee</strong>. The term was first us"
+    },
+    {
+      "title": "Best budget mechanical conical burr grinder on amazon?",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rigze3/coffee_maker_recomendation/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rk54d8/best_budget_mechanical_conical_burr_grinder_on/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Not sure if this is allowed here, but I typically either do pour over or French press for my morning coffee. I've heard good things about the Moccamaster (other than "
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>My coffee grinder is going and I want to replace it with something solid that will last. I just want something with a relatively consistent grind, will last, can grin"
     },
     {
-      "title": "percolator vs French press",
+      "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rik8v1/percolator_vs_french_press/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rkijhe/mod_the_daily_question_thread/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hey so I\u2019m fairly new to coffee. Hated it for years until I worked night shift few years ago. I love lattes and cappuccinos from local small cafes but don\u2019t know how "
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "I only have ground coffee, bowl-shaped paper filters, paper coffee/tea cups, and an electric kettle. Can I make some decent coffee? Or even mediocre coffee?",
+      "title": "[MOD] Inside Scoop - Ask the coffee industry",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rik80r/i_only_have_ground_coffee_bowlshaped_paper/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rjw4zj/mod_inside_scoop_ask_the_coffee_industry/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I should preface this by saying that I've never made coffee before without using a machine (pods or an espresso machine). I've never used filters, and never really st"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>This is a thread for the enthusiasts of <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> to connect with the industry insiders who post in this sub!</p> <p>Do "
     },
     {
-      "title": "Bioluminescent mushroom, possibly M. manipularis, found on Windward side of Kaua'i, growing on decaying Strawberry Guava branches.",
+      "title": "Last Night\u2019s Eclipse",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1riaulw/bioluminescent_mushroom_possibly_m_manipularis/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rk59xp/last_nights_eclipse/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1riaulw/bioluminescent_mushroom_possibly_m_manipularis/\"> <img alt=\"Bioluminescent mushroom, possibly M. manipularis, found on Windwa"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rk59xp/last_nights_eclipse/\"> <img alt=\"Last Night\u2019s Eclipse\" src=\"https://preview.redd.it/a5sjv16f0xmg1.jpg?width=140&amp;height=14"
     },
     {
-      "title": "Are you staying up for the lunar eclipse?",
+      "title": "Inspectors Let Infested Goods Into State. Lawmakers Want It To End",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1ri9824/are_you_staying_up_for_the_lunar_eclipse/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rjvmpy/inspectors_let_infested_goods_into_state/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Looks like we are right in the center of it. Begins tomorrow 10pm ish and totality is 1-2am. Exact times in the link below along with an animation.</p> <p><a href=\"ht"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rjvmpy/inspectors_let_infested_goods_into_state/\"> <img alt=\"Inspectors Let Infested Goods Into State. Lawmakers Want It To End\" src"
     },
     {
-      "title": "Is this for real food?",
+      "title": "Spectrum Internet etc $$$",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1riblzm/is_this_for_real_food/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rkdv89/spectrum_internet_etc/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1riblzm/is_this_for_real_food/\"> <img alt=\"Is this for real food?\" src=\"https://preview.redd.it/qf1jzmaciimg1.jpg?width=140&amp;heigh"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I realize many of you already know this so this will serve only as a reminder, but for those who don\u2019t know or simply don\u2019t pay attention, be sure to examine your cab"
     },
     {
-      "title": "Has anyone successfully transitioned away from unlimited PTO without destroying morale?",
+      "title": "Quit my job to start my own agency and now I am jobless and in debt",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rib2w1/has_anyone_successfully_transitioned_away_from/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rkc0fw/quit_my_job_to_start_my_own_agency_and_now_i_am/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019ve run unlimited PTO for 6 years. Small business, peaked at 18 employees and before last year I only had one person try to abuse it and she did not last long.</p> <"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>So I have been working for the past 10 years. 8 years into marketing. I have been approached by few business owners while I was working a job. Just like most people I"
     },
     {
-      "title": "I have caused more damage trying to be kind to a sick employee than I would have if I just let her go.",
+      "title": "liquor store owners- how are you dooing.",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1ri7wk9/i_have_caused_more_damage_trying_to_be_kind_to_a/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rkate5/liquor_store_owners_how_are_you_dooing/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Story. I run kids birthday parties. I hire out people to also run kids parties. My staff members are all excellent and get consistent great reviews. However one of my"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I own a small 1700 sq foot liquor store. I did the build out myself and bought about 120k in inventory. we just hit a little over a year. </p> <p>I have learned a lot"
     },
     {
-      "title": "Booking system recommendations for equipment rental?",
+      "title": "What actually builds trust faster in fintech: fast payouts or flashy promos?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1ri49dl/booking_system_recommendations_for_equipment/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rjwkpm/what_actually_builds_trust_faster_in_fintech_fast/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi,</p> <p>I run a small equipment rental business, and I\u2019m trying to move away from manual booking.</p> <p>Right now most requests come through messages and email, a"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>If youre building any kind of fintech product, Im curious what actually builds user trust the fastest, because from what Ive seen its not flashy design, its transpare"
     },
     {
-      "title": "Motorola announces a partnership with GrapheneOS Foundation",
+      "title": "Motorola GrapheneOS devices will be bootloader unlockable/relockable",
       "source": "Hacker News",
-      "url": "https://motorolanews.com/motorola-three-new-b2b-solutions-at-mwc-2026/",
+      "url": "https://grapheneos.social/@GrapheneOS/116160393783585567",
       "category": "tech",
       "stats": {
-        "points": 887,
-        "comments": 322
+        "points": 872,
+        "comments": 311
       }
     },
     {
-      "title": "/e/OS is a complete \"deGoogled\", mobile ecosystem",
+      "title": "RFC 9849. TLS Encrypted Client Hello",
       "source": "Hacker News",
-      "url": "https://e.foundation/e-os/",
+      "url": "https://www.rfc-editor.org/rfc/rfc9849.html",
       "category": "tech",
       "stats": {
-        "points": 265,
-        "comments": 141
+        "points": 129,
+        "comments": 64
       }
     },
     {
-      "title": "Claude Code LSP",
+      "title": "Agentic Engineering Patterns",
       "source": "Hacker News",
-      "url": "https://karanbansal.in/blog/claude-code-lsp/",
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/",
       "category": "tech",
       "stats": {
-        "points": 51,
-        "comments": 16
+        "points": 229,
+        "comments": 109
       }
     },
     {
-      "title": "U.S. science agency moves to restrict foreign scientists from its labs",
+      "title": "RE#: how we built the fastest regex engine in F#",
       "source": "Hacker News",
-      "url": "https://www.science.org/content/article/nist-moves-restrict-foreign-scientists-its-labs",
+      "url": "https://iev.ee/blog/resharp-how-we-built-the-fastest-regex-in-fsharp/",
       "category": "tech",
       "stats": {
-        "points": 85,
-        "comments": 46
+        "points": 57,
+        "comments": 17
       }
     },
     {
-      "title": "Making Video Games in 2025 (without an engine)",
+      "title": "Nobody Gets Promoted for Simplicity",
       "source": "Hacker News",
-      "url": "https://www.noelberry.ca/posts/making_games_in_2025/",
+      "url": "https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/",
       "category": "tech",
       "stats": {
-        "points": 210,
-        "comments": 89
+        "points": 13,
+        "comments": 4
       }
     }
   ],
   "trending": [
-    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
-    "Daily Coffee News by Roast Magazine - Business new",
-    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
     "Hawaii News Now - Breaking News, Latest News, Weat",
-    "Top Coffee Shop Industry Trends and Statistics in ",
-    "News - World Coffee Portal",
-    "Hawaii News, Weather, Sports, Breaking News & Live",
+    "Hawaii Faces Stagnant Tourism Growth as Global Com",
+    "Coffee Trends 2026 - weaverscoffee.com",
+    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
     "What's new for Hawaii visitors in 2026: Travel Wee",
-    "A downturn for Hawaii tourism: Travel Weekly",
-    "Coffee maker recomendation"
+    "Hawaii News, Weather, Sports, Breaking News & Live",
+    "Coffee Industry Trends 2026 | Data from 64,000+ In",
+    "News",
+    "Hottest Coffee Trends for 2026 and Beyond",
+    "Specialty Coffee Market Size, Share & Growth Repor"
   ]
 }
