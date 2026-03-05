@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T09:41:33.606761Z",
+  "lastUpdated": "2026-03-05T09:42:47.693488Z",
   "dates": [
     "2026-02-04",
     "2026-02-05",
@@ -323,7 +323,7 @@
           16,
           82,
           60,
-          10
+          5
         ]
       },
       "today": {
@@ -331,7 +331,7 @@
         "comments": 0,
         "follows": 0,
         "unfollows": 0,
-        "replies": 10,
+        "replies": 5,
         "sessions": 4
       },
       "sessions_today": [
@@ -376,7 +376,7 @@
           "comments": 0,
           "follows": 0,
           "unfollows": 0,
-          "replies": 5,
+          "replies": 0,
           "start_time": "01:41",
           "end_time": "01:41",
           "duration_min": 1.0,
@@ -444,7 +444,7 @@
       "comments": 0,
       "follows": 0,
       "unfollows": 0,
-      "replies": 5,
+      "replies": 0,
       "start_time": "01:41",
       "end_time": "01:41",
       "duration_min": 1.0,
