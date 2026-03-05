@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T15:12:35.825734Z",
+  "lastUpdated": "2026-03-05T15:41:12.825782Z",
   "dates": [
     "2026-02-04",
     "2026-02-05",
@@ -375,7 +375,7 @@
         "follows": 0,
         "unfollows": 0,
         "replies": 12,
-        "sessions": 11
+        "sessions": 12
       },
       "sessions_today": [
         {
@@ -509,6 +509,18 @@
           "duration_min": 8.0,
           "hashtags_used": [],
           "session_id": "kona_bluesky_20260305_0710"
+        },
+        {
+          "likes": 0,
+          "comments": 0,
+          "follows": 0,
+          "unfollows": 0,
+          "replies": 0,
+          "start_time": "07:40",
+          "end_time": "07:41",
+          "duration_min": 1.0,
+          "hashtags_used": [],
+          "session_id": "kona_bluesky_20260305_0741"
         }
       ]
     }
@@ -721,6 +733,19 @@
       "hashtags_used": [],
       "session_id": "kona_twitter_20260305_0712",
       "account": "kona_twitter"
+    },
+    {
+      "likes": 0,
+      "comments": 0,
+      "follows": 0,
+      "unfollows": 0,
+      "replies": 0,
+      "start_time": "07:40",
+      "end_time": "07:41",
+      "duration_min": 1.0,
+      "hashtags_used": [],
+      "session_id": "kona_bluesky_20260305_0741",
+      "account": "kona_bluesky"
     },
     {
       "likes": 58,
