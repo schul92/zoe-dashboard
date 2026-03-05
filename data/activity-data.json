@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T01:21:14.348989Z",
+  "lastUpdated": "2026-03-05T01:21:36.891660Z",
   "dates": [
     "2026-02-03",
     "2026-02-04",
@@ -1075,6 +1075,19 @@
       "hashtags_used": [],
       "session_id": "kona_instagram_20260304_0009",
       "account": "kona_instagram"
+    },
+    {
+      "likes": 0,
+      "comments": 0,
+      "follows": 0,
+      "unfollows": 0,
+      "replies": 1,
+      "start_time": "2026-03-04 15:20",
+      "end_time": "2026-03-04 17:35",
+      "duration_min": 135.0,
+      "hashtags_used": [],
+      "session_id": "kona_threads_20260304_1721",
+      "account": "kona_threads"
     },
     {
       "likes": 61,
