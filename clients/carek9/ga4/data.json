@@ -1,95 +1,146 @@
 {
-  "period": "last_30_days",
-  "collected": "2026-03-04",
-  "summary": {
-    "sessions": 345,
-    "users": 233,
-    "pageviews": 1122,
-    "bounceRate": 61.7,
-    "avgSessionDuration": 256.8
+  "collected": "2026-03-05T02:00:23.718989",
+  "period": "2026-02-03 to 2026-03-05",
+  "overview": {
+    "sessions": "349",
+    "totalUsers": "236",
+    "screenPageViews": "1132",
+    "bounceRate": "0.61604584527220629",
+    "averageSessionDuration": "256.56622710888252",
+    "engagedSessions": "134"
   },
   "topPages": [
     {
       "path": "/",
-      "pageviews": 508,
-      "sessions": 232
+      "views": "512",
+      "sessions": "234"
     },
     {
       "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 97,
-      "sessions": 34
+      "views": "97",
+      "sessions": "34"
     },
     {
       "path": "/collections/treat",
-      "pageviews": 71,
-      "sessions": 43
+      "views": "71",
+      "sessions": "43"
     },
     {
       "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": 65,
-      "sessions": 23
+      "views": "65",
+      "sessions": "23"
     },
     {
       "path": "/blogs/news",
-      "pageviews": 37,
-      "sessions": 19
-    },
-    {
-      "path": "/cart",
-      "pageviews": 29,
-      "sessions": 21
+      "views": "38",
+      "sessions": "20"
     },
     {
       "path": "/pages/about-us",
-      "pageviews": 29,
-      "sessions": 26
+      "views": "30",
+      "sessions": "27"
+    },
+    {
+      "path": "/cart",
+      "views": "29",
+      "sessions": "21"
     },
     {
       "path": "/pages/carek9-x-human-canine-collaborative",
-      "pageviews": 28,
-      "sessions": 26
+      "views": "28",
+      "sessions": "26"
     },
     {
       "path": "/collections/all",
-      "pageviews": 23,
-      "sessions": 19
+      "views": "23",
+      "sessions": "19"
     },
     {
       "path": "/collections/food-topper",
-      "pageviews": 22,
-      "sessions": 19
+      "views": "22",
+      "sessions": "19"
+    },
+    {
+      "path": "/collections/paw-care",
+      "views": "22",
+      "sessions": "18"
+    },
+    {
+      "path": "/pages/contact-us",
+      "views": "18",
+      "sessions": "13"
+    },
+    {
+      "path": "/products/beef-wrapped-pumpkin",
+      "views": "18",
+      "sessions": "12"
+    },
+    {
+      "path": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
+      "views": "15",
+      "sessions": "10"
+    },
+    {
+      "path": "/products/beef-training-treat",
+      "views": "12",
+      "sessions": "12"
+    },
+    {
+      "path": "/collections/bath-product",
+      "views": "11",
+      "sessions": "10"
+    },
+    {
+      "path": "/products/pars-mint-dental-cookies",
+      "views": "11",
+      "sessions": "11"
+    },
+    {
+      "path": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
+      "views": "10",
+      "sessions": "6"
+    },
+    {
+      "path": "/products/functional-dog-food-topper-for-joint",
+      "views": "9",
+      "sessions": "9"
+    },
+    {
+      "path": "/products/salmon-skin-bites",
+      "views": "8",
+      "sessions": "8"
     }
   ],
   "trafficSources": [
     {
       "channel": "Direct",
-      "sessions": 242,
-      "users": 183
+      "sessions": "245",
+      "users": "186"
     },
     {
       "channel": "Organic Search",
-      "sessions": 54,
-      "users": 35
+      "sessions": "54",
+      "users": "35"
     },
     {
       "channel": "Organic Shopping",
-      "sessions": 30,
-      "users": 5
+      "sessions": "31",
+      "users": "5"
     },
     {
       "channel": "Unassigned",
-      "sessions": 13,
-      "users": 11
+      "sessions": "12",
+      "users": "11"
     },
     {
       "channel": "Referral",
-      "sessions": 10,
-      "users": 8
+      "sessions": "10",
+      "users": "8"
     },
     {
       "channel": "Organic Social",
-      "sessions": 4,
-      "users": 4
+      "sessions": "4",
+      "users": "4"
     }
   ]
 }
