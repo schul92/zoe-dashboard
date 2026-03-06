@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-06T02:37:44.722952Z",
+  "lastUpdated": "2026-03-06T04:02:22.365782Z",
   "dates": [
     "2026-02-04",
     "2026-02-05",
@@ -207,7 +207,7 @@
           0,
           48,
           270,
-          320
+          384
         ],
         "comments": [
           0,
@@ -239,7 +239,7 @@
           0,
           15,
           100,
-          103
+          129
         ],
         "follows": [
           0,
@@ -275,12 +275,12 @@
         ]
       },
       "today": {
-        "likes": 320,
-        "comments": 103,
+        "likes": 384,
+        "comments": 129,
         "follows": 0,
         "unfollows": 0,
         "replies": 0,
-        "sessions": 7
+        "sessions": 8
       },
       "sessions_today": [
         {
@@ -377,6 +377,18 @@
           "duration_min": 15.0,
           "hashtags_used": [],
           "session_id": "zoe_instagram_20260305_1828"
+        },
+        {
+          "likes": 64,
+          "comments": 26,
+          "follows": 0,
+          "unfollows": 0,
+          "replies": 0,
+          "start_time": "19:00",
+          "end_time": "20:00",
+          "duration_min": 62.0,
+          "hashtags_used": [],
+          "session_id": "zoe_instagram_20260305_2002"
         }
       ]
     },
@@ -1051,6 +1063,19 @@
       "hashtags_used": [],
       "session_id": "kona_instagram_20260305_1750",
       "account": "kona_instagram"
+    },
+    {
+      "likes": 64,
+      "comments": 26,
+      "follows": 0,
+      "unfollows": 0,
+      "replies": 0,
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "duration_min": 62.0,
+      "hashtags_used": [],
+      "session_id": "zoe_instagram_20260305_2002",
+      "account": "zoe_instagram"
     },
     {
       "likes": 0,
