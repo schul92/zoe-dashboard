@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T16:00:30Z",
+  "lastUpdated": "2026-03-06T16:00:06Z",
   "accounts": {
     "kona_instagram": {
       "handle": "@konacoffeedonut",
@@ -69,7 +69,7 @@
       "handle": "konacoffeedonut.bsky.social",
       "client": "KONA",
       "platform": "Bluesky",
-      "current": 25,
+      "current": 27,
       "history": [
         {
           "date": "2026-02-28",
@@ -94,6 +94,10 @@
         {
           "date": "2026-03-05",
           "count": 25
+        },
+        {
+          "date": "2026-03-06",
+          "count": 27
         }
       ]
     },
