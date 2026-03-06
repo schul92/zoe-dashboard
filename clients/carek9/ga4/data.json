@@ -1,146 +1,145 @@
 {
-  "collected": "2026-03-05T02:00:23.718989",
-  "period": "2026-02-03 to 2026-03-05",
+  "collected": "2026-03-06T02:00:00-08:00",
+  "period": "last_30_days",
   "overview": {
-    "sessions": "349",
-    "totalUsers": "236",
-    "screenPageViews": "1132",
-    "bounceRate": "0.61604584527220629",
-    "averageSessionDuration": "256.56622710888252",
-    "engagedSessions": "134"
+    "sessions": "368",
+    "totalUsers": "248",
+    "screenPageViews": "1176",
+    "bounceRate": "0.64402173913043481",
+    "averageSessionDuration": "263.0789847826087"
   },
-  "topPages": [
+  "top_pages": [
     {
-      "path": "/",
-      "views": "512",
-      "sessions": "234"
+      "page": "/",
+      "views": "524",
+      "sessions": "243"
     },
     {
-      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "views": "97",
-      "sessions": "34"
+      "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "views": "93",
+      "sessions": "33"
     },
     {
-      "path": "/collections/treat",
-      "views": "71",
-      "sessions": "43"
+      "page": "/collections/treat",
+      "views": "79",
+      "sessions": "46"
     },
     {
-      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "views": "65",
-      "sessions": "23"
-    },
-    {
-      "path": "/blogs/news",
-      "views": "38",
-      "sessions": "20"
-    },
-    {
-      "path": "/pages/about-us",
-      "views": "30",
-      "sessions": "27"
-    },
-    {
-      "path": "/cart",
-      "views": "29",
-      "sessions": "21"
-    },
-    {
-      "path": "/pages/carek9-x-human-canine-collaborative",
-      "views": "28",
+      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "views": "73",
       "sessions": "26"
     },
     {
-      "path": "/collections/all",
-      "views": "23",
+      "page": "/blogs/news",
+      "views": "41",
+      "sessions": "22"
+    },
+    {
+      "page": "/pages/about-us",
+      "views": "32",
+      "sessions": "30"
+    },
+    {
+      "page": "/cart",
+      "views": "27",
       "sessions": "19"
     },
     {
-      "path": "/collections/food-topper",
-      "views": "22",
-      "sessions": "19"
+      "page": "/pages/carek9-x-human-canine-collaborative",
+      "views": "27",
+      "sessions": "25"
     },
     {
-      "path": "/collections/paw-care",
+      "page": "/collections/paw-care",
+      "views": "26",
+      "sessions": "20"
+    },
+    {
+      "page": "/collections/food-topper",
+      "views": "24",
+      "sessions": "20"
+    },
+    {
+      "page": "/collections/all",
       "views": "22",
       "sessions": "18"
     },
     {
-      "path": "/pages/contact-us",
-      "views": "18",
+      "page": "/products/beef-wrapped-pumpkin",
+      "views": "20",
       "sessions": "13"
     },
     {
-      "path": "/products/beef-wrapped-pumpkin",
-      "views": "18",
+      "page": "/pages/contact-us",
+      "views": "17",
       "sessions": "12"
     },
     {
-      "path": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
-      "views": "15",
-      "sessions": "10"
+      "page": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
+      "views": "16",
+      "sessions": "11"
     },
     {
-      "path": "/products/beef-training-treat",
+      "page": "/collections/bath-product",
+      "views": "15",
+      "sessions": "13"
+    },
+    {
+      "page": "/products/beef-training-treat",
+      "views": "15",
+      "sessions": "15"
+    },
+    {
+      "page": "/products/pars-mint-dental-cookies",
       "views": "12",
       "sessions": "12"
     },
     {
-      "path": "/collections/bath-product",
-      "views": "11",
-      "sessions": "10"
-    },
-    {
-      "path": "/products/pars-mint-dental-cookies",
-      "views": "11",
-      "sessions": "11"
-    },
-    {
-      "path": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
+      "page": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
       "views": "10",
       "sessions": "6"
     },
     {
-      "path": "/products/functional-dog-food-topper-for-joint",
-      "views": "9",
-      "sessions": "9"
+      "page": "/products/salmon-skin-bites",
+      "views": "10",
+      "sessions": "10"
     },
     {
-      "path": "/products/salmon-skin-bites",
-      "views": "8",
-      "sessions": "8"
+      "page": "/products/functional-dog-food-topper-for-joint",
+      "views": "9",
+      "sessions": "9"
     }
   ],
-  "trafficSources": [
+  "traffic_sources": [
     {
       "channel": "Direct",
-      "sessions": "245",
-      "users": "186"
+      "sessions": "257",
+      "users": "197"
     },
     {
       "channel": "Organic Search",
-      "sessions": "54",
-      "users": "35"
+      "sessions": "52",
+      "users": "33"
     },
     {
       "channel": "Organic Shopping",
-      "sessions": "31",
+      "sessions": "33",
       "users": "5"
     },
     {
       "channel": "Unassigned",
-      "sessions": "12",
-      "users": "11"
+      "sessions": "18",
+      "users": "15"
     },
     {
       "channel": "Referral",
-      "sessions": "10",
+      "sessions": "13",
       "users": "8"
     },
     {
       "channel": "Organic Social",
-      "sessions": "4",
-      "users": "4"
+      "sessions": "5",
+      "users": "5"
     }
   ]
 }

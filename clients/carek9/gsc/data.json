@@ -1,6 +1,6 @@
 {
-  "collected": "2026-03-05T02:00:36.109638",
-  "period": "2026-02-03 to 2026-03-05",
+  "collected": "2026-03-06T02:00:00-08:00",
+  "period": "2026-02-04 to 2026-03-06",
   "queries": [
     {
       "query": "groom bathing tablets",
@@ -176,113 +176,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 1
-    }
-  ],
-  "pages": [
-    {
-      "page": "https://carek9.com/",
-      "clicks": 15,
-      "impressions": 123,
-      "ctr": 0.122,
-      "position": 15.1
-    },
-    {
-      "page": "https://carek9.com/products/the-tab-bath-tablet",
-      "clicks": 4,
-      "impressions": 144,
-      "ctr": 0.0278,
-      "position": 5.7
-    },
-    {
-      "page": "https://carek9.com/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
-      "clicks": 2,
-      "impressions": 6,
-      "ctr": 0.3333,
-      "position": 3.3
-    },
-    {
-      "page": "https://carek9.com/pages/about-us",
-      "clicks": 2,
-      "impressions": 31,
-      "ctr": 0.0645,
-      "position": 2.1
-    },
-    {
-      "page": "https://carek9.com/collections/all",
-      "clicks": 1,
-      "impressions": 26,
-      "ctr": 0.0385,
-      "position": 3.6
-    },
-    {
-      "page": "https://carek9.com/pages/carek9-x-human-canine-collaborative",
-      "clicks": 1,
-      "impressions": 17,
-      "ctr": 0.0588,
-      "position": 7.2
-    },
-    {
-      "page": "https://carek9.com/products/beef-training-treat",
-      "clicks": 1,
-      "impressions": 16,
-      "ctr": 0.0625,
-      "position": 18.4
-    },
-    {
-      "page": "https://carek9.com/products/functional-dog-food-topper-for-joint",
-      "clicks": 1,
-      "impressions": 33,
-      "ctr": 0.0303,
-      "position": 6.4
-    },
-    {
-      "page": "https://carek9.com/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "clicks": 1,
-      "impressions": 59,
-      "ctr": 0.0169,
-      "position": 11.6
-    },
-    {
-      "page": "https://carek9.com/products/salmon-skin-bites",
-      "clicks": 1,
-      "impressions": 52,
-      "ctr": 0.0192,
-      "position": 11.5
-    },
-    {
-      "page": "https://carek9.com/cdn/shop/files/logo-small-copy.png?v=1676832239",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 27
-    },
-    {
-      "page": "https://carek9.com/collections/bath-product",
-      "clicks": 0,
-      "impressions": 20,
-      "ctr": 0,
-      "position": 2.1
-    },
-    {
-      "page": "https://carek9.com/collections/food-topper",
-      "clicks": 0,
-      "impressions": 37,
-      "ctr": 0,
-      "position": 32.1
-    },
-    {
-      "page": "https://carek9.com/collections/paw-care",
-      "clicks": 0,
-      "impressions": 16,
-      "ctr": 0,
-      "position": 11.6
-    },
-    {
-      "page": "https://carek9.com/collections/treat",
-      "clicks": 0,
-      "impressions": 49,
-      "ctr": 0,
-      "position": 7.3
     }
   ]
 }

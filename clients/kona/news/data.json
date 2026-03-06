@@ -1,26 +1,26 @@
 {
-  "lastUpdated": "2026-03-04T13:00:13.850614Z",
-  "version": "v2-2026-03-04",
+  "lastUpdated": "2026-03-05T13:00:11.695718Z",
+  "version": "v2-2026-03-05",
   "sources": {
     "brave_search": true,
     "twitter": false,
     "hackernews": true,
-    "reddit": true
+    "reddit": false
   },
   "headlines": [
+    {
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com/",
+      "category": "hawaii",
+      "description": "Annalisa Burgos talks with energy policy expert Henry Curtis about why Hawaii residents pay the highest residential electricity costs in the country -- more than double the national average. ... Updat"
+    },
     {
       "title": "News",
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com/news/",
       "category": "hawaii",
       "description": "<strong>Honolulu police have opened a robbery in the first degree investigation following a situation near Waikiki</strong>."
-    },
-    {
-      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
-      "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com",
-      "category": "hawaii",
-      "description": "On today\u2019s episode of Spotlight Now, we catch up with Gov. Josh Green, who\u2019s been fielding a lot of questions about his lieutenant governor. ... The City &amp; County of Honolulu&#x27;s ENV is hiring "
     },
     {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
@@ -51,171 +51,87 @@
       "description": "Hawaii\u2019s tourism industry, a crucial pillar of the state\u2019s economy, is <strong>facing a stagnant recovery</strong> in 2026, despite ongoing efforts to bring back visitors after the COVID\u201119 pandemic."
     },
     {
-      "title": "Coffee Industry Trends 2026 | Data from 64,000+ Independent Coffee Shops | Joe",
+      "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
       "source": "Brave Search",
-      "url": "https://joe.coffee/coffee-industry-trends/",
+      "url": "https://dailycoffeenews.com/",
       "category": "coffee",
-      "description": "Coffee industry trends and insights from the largest network of independent coffee shops. Real data from 64,697 shops: average ticket sizes, peak hours, loyalty program ROI, and what&#x27;s working in"
+      "description": "<strong>Daily Coffee News by Roast magazine</strong> provides essential only news and resources for specialty coffee professionals. Daily Coffee News covers coffee news from seed to cup, including sto"
     },
     {
-      "title": "Coffee Trends 2026 - weaverscoffee.com",
+      "title": "Luckin Shareholder Centurium Reportedly Ready to Acquire Blue Bottle",
       "source": "Brave Search",
-      "url": "https://weaverscoffee.com/blogs/blog/coffee-trends-2026",
+      "url": "https://dailycoffeenews.com/2026/03/04/luckin-shareholder-centurium-reportedly-ready-to-acquire-blue-bottle/",
       "category": "coffee",
-      "description": "Explore coffee trends 2026 from pricing and climate change to Specialty Coffee, sustainability, and AI. A founder\u2019s forecast for the future of coffee."
+      "description": "Bloomberg reported on March 4 that the Chinese investment firm was in \u201cadvanced talks\u201d to acquire the chain, citing \u201cpeople familiar with the situation.\u201d In what it described as an \u201cexclusive,\u201d Chines"
     },
     {
-      "title": "Hottest Coffee Trends for 2026 and Beyond",
+      "title": "Top Coffee Shop Industry Trends and Statistics in 2025",
       "source": "Brave Search",
-      "url": "https://courtsidecoffee.substack.com/p/hottest-coffee-trends-for-2026-and",
+      "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
       "category": "coffee",
-      "description": "<strong>Premium ready\u2011to\u2011drink cold coffees, protein\u2011fortified \u201cfunctional\u201d lattes, and AI\u2011assisted home espresso machines</strong> are set to define the way people drink coffee in 2026 and ..."
+      "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
-      "title": "Specialty Coffee Market Size, Share & Growth Report, 2030",
-      "source": "Brave Search",
-      "url": "https://www.grandviewresearch.com/industry-analysis/specialty-coffee-market-report",
-      "category": "coffee",
-      "description": "The global specialty coffee market size was estimated at <strong>USD 101.6 billion in 2024 and is projected to reach USD 183.0 billion by 2030</strong>, growing at a CAGR of 10.4% from 2025 to 2030"
-    },
-    {
-      "title": "Specialty coffee consumption hits 14-year high",
-      "source": "Brave Search",
-      "url": "https://www.ncausa.org/Newsroom/Specialty-coffee-consumption-hits-14-year-high",
-      "category": "coffee",
-      "description": "June 17, 2025 | NEW YORK \u2013 <strong>46% of American adults had specialty coffee in the past day</strong>, up 84% since 2011 and surpassing past-day traditional coffee consumption (42%), according to th"
-    },
-    {
-      "title": "Special Markets - International Coffee Organization",
-      "source": "Brave Search",
-      "url": "https://ico.org/market-development-toolkit/page/index/2",
-      "category": "coffee",
-      "description": "Specialty coffee is a term for <strong>the highest grade of coffee available, typically relating to the entire supply chain, using single origin or single estate coffee</strong>. The term was first us"
-    },
-    {
-      "title": "Best budget mechanical conical burr grinder on amazon?",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rk54d8/best_budget_mechanical_conical_burr_grinder_on/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>My coffee grinder is going and I want to replace it with something solid that will last. I just want something with a relatively consistent grind, will last, can grin"
-    },
-    {
-      "title": "[MOD] The Daily Question Thread",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rkijhe/mod_the_daily_question_thread/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
-    },
-    {
-      "title": "[MOD] Inside Scoop - Ask the coffee industry",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rjw4zj/mod_inside_scoop_ask_the_coffee_industry/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>This is a thread for the enthusiasts of <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> to connect with the industry insiders who post in this sub!</p> <p>Do "
-    },
-    {
-      "title": "Last Night\u2019s Eclipse",
-      "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rk59xp/last_nights_eclipse/",
-      "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rk59xp/last_nights_eclipse/\"> <img alt=\"Last Night\u2019s Eclipse\" src=\"https://preview.redd.it/a5sjv16f0xmg1.jpg?width=140&amp;height=14"
-    },
-    {
-      "title": "Inspectors Let Infested Goods Into State. Lawmakers Want It To End",
-      "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rjvmpy/inspectors_let_infested_goods_into_state/",
-      "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rjvmpy/inspectors_let_infested_goods_into_state/\"> <img alt=\"Inspectors Let Infested Goods Into State. Lawmakers Want It To End\" src"
-    },
-    {
-      "title": "Spectrum Internet etc $$$",
-      "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rkdv89/spectrum_internet_etc/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I realize many of you already know this so this will serve only as a reminder, but for those who don\u2019t know or simply don\u2019t pay attention, be sure to examine your cab"
-    },
-    {
-      "title": "Quit my job to start my own agency and now I am jobless and in debt",
-      "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rkc0fw/quit_my_job_to_start_my_own_agency_and_now_i_am/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>So I have been working for the past 10 years. 8 years into marketing. I have been approached by few business owners while I was working a job. Just like most people I"
-    },
-    {
-      "title": "liquor store owners- how are you dooing.",
-      "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rkate5/liquor_store_owners_how_are_you_dooing/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I own a small 1700 sq foot liquor store. I did the build out myself and bought about 120k in inventory. we just hit a little over a year. </p> <p>I have learned a lot"
-    },
-    {
-      "title": "What actually builds trust faster in fintech: fast payouts or flashy promos?",
-      "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rjwkpm/what_actually_builds_trust_faster_in_fintech_fast/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>If youre building any kind of fintech product, Im curious what actually builds user trust the fastest, because from what Ive seen its not flashy design, its transpare"
-    },
-    {
-      "title": "Motorola GrapheneOS devices will be bootloader unlockable/relockable",
+      "title": "Nvidia PersonaPlex 7B on Apple Silicon: Full-Duplex Speech-to-Speech in Swift",
       "source": "Hacker News",
-      "url": "https://grapheneos.social/@GrapheneOS/116160393783585567",
+      "url": "https://blog.ivan.digital/nvidia-personaplex-7b-on-apple-silicon-full-duplex-speech-to-speech-in-native-swift-with-mlx-0aa5276f2e23",
       "category": "tech",
       "stats": {
-        "points": 872,
-        "comments": 311
+        "points": 171,
+        "comments": 54
       }
     },
     {
-      "title": "RFC 9849. TLS Encrypted Client Hello",
+      "title": "Google Workspace CLI",
       "source": "Hacker News",
-      "url": "https://www.rfc-editor.org/rfc/rfc9849.html",
+      "url": "https://github.com/googleworkspace/cli",
       "category": "tech",
       "stats": {
-        "points": 129,
-        "comments": 64
+        "points": 675,
+        "comments": 221
       }
     },
     {
-      "title": "Agentic Engineering Patterns",
+      "title": "The L in \"LLM\" Stands for Lying",
       "source": "Hacker News",
-      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/",
+      "url": "https://acko.net/blog/the-l-in-llm-stands-for-lying/",
       "category": "tech",
       "stats": {
-        "points": 229,
-        "comments": 109
+        "points": 301,
+        "comments": 175
       }
     },
     {
-      "title": "RE#: how we built the fastest regex engine in F#",
+      "title": "Relicensing with AI-Assisted Rewrite",
       "source": "Hacker News",
-      "url": "https://iev.ee/blog/resharp-how-we-built-the-fastest-regex-in-fsharp/",
+      "url": "https://tuananh.net/2026/03/05/relicensing-with-ai-assisted-rewrite/",
       "category": "tech",
       "stats": {
-        "points": 57,
-        "comments": 17
+        "points": 194,
+        "comments": 176
       }
     },
     {
-      "title": "Nobody Gets Promoted for Simplicity",
+      "title": "Poor Man's Polaroid",
       "source": "Hacker News",
-      "url": "https://terriblesoftware.org/2026/03/03/nobody-gets-promoted-for-simplicity/",
+      "url": "https://boxart.lt/blog/poor_mans_polaroid",
       "category": "tech",
       "stats": {
-        "points": 13,
-        "comments": 4
+        "points": 64,
+        "comments": 12
       }
     }
   ],
   "trending": [
-    "Hawaii News Now - Breaking News, Latest News, Weat",
-    "Hawaii Faces Stagnant Tourism Growth as Global Com",
-    "Coffee Trends 2026 - weaverscoffee.com",
-    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
-    "What's new for Hawaii visitors in 2026: Travel Wee",
     "Hawaii News, Weather, Sports, Breaking News & Live",
-    "Coffee Industry Trends 2026 | Data from 64,000+ In",
+    "Nvidia PersonaPlex 7B on Apple Silicon: Full-Duple",
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "What's new for Hawaii visitors in 2026: Travel Wee",
     "News",
-    "Hottest Coffee Trends for 2026 and Beyond",
-    "Specialty Coffee Market Size, Share & Growth Repor"
+    "Daily Coffee News by Roast Magazine - Business new",
+    "Luckin Shareholder Centurium Reportedly Ready to A",
+    "Hawaii Faces Stagnant Tourism Growth as Global Com",
+    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
+    "Top Coffee Shop Industry Trends and Statistics in "
   ]
 }
