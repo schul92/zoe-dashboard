@@ -1,12 +1,12 @@
 {
-  "collected": "2026-03-06T02:00:00-08:00",
-  "period": "2026-02-04 to 2026-03-06",
+  "period": "2026-02-05 to 2026-03-07",
+  "collected": "2026-03-07T02:00:30.937937",
   "queries": [
     {
       "query": "groom bathing tablets",
       "clicks": 1,
       "impressions": 20,
-      "ctr": 0.05,
+      "ctr": 5.0,
       "position": 4.7
     },
     {
@@ -89,16 +89,16 @@
     {
       "query": "best dog paw cleaner",
       "clicks": 0,
-      "impressions": 89,
+      "impressions": 99,
       "ctr": 0,
-      "position": 9.6
+      "position": 9
     },
     {
       "query": "best dog paw cleaners",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 4,
       "ctr": 0,
-      "position": 1.5
+      "position": 1.2
     },
     {
       "query": "best paw claener for dogs",
@@ -117,9 +117,9 @@
     {
       "query": "best paw cleaner for dogs",
       "clicks": 0,
-      "impressions": 23,
+      "impressions": 27,
       "ctr": 0,
-      "position": 6.4
+      "position": 5.6
     },
     {
       "query": "best paw cleaner for large dogs",

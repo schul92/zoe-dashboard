@@ -1,159 +1,133 @@
 {
-  "updated": "2026-03-06T02:00:00-08:00",
+  "lastUpdated": "2026-03-07T02:01:05.757514",
   "ga4": {
-    "collected": "2026-03-06T02:00:00-08:00",
     "period": "last_30_days",
+    "collected": "2026-03-07T02:00:21.620000",
     "overview": {
-      "sessions": "368",
-      "totalUsers": "248",
-      "screenPageViews": "1176",
-      "bounceRate": "0.64402173913043481",
-      "averageSessionDuration": "263.0789847826087"
+      "sessions": 377,
+      "users": 255,
+      "pageviews": 1196,
+      "bounceRate": 64.5
     },
-    "top_pages": [
+    "topPages": [
       {
         "page": "/",
-        "views": "524",
-        "sessions": "243"
+        "views": 520,
+        "sessions": 247
       },
       {
         "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-        "views": "93",
-        "sessions": "33"
+        "views": 99,
+        "sessions": 35
       },
       {
         "page": "/collections/treat",
-        "views": "79",
-        "sessions": "46"
+        "views": 83,
+        "sessions": 48
       },
       {
         "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-        "views": "73",
-        "sessions": "26"
+        "views": 76,
+        "sessions": 29
       },
       {
         "page": "/blogs/news",
-        "views": "41",
-        "sessions": "22"
+        "views": 42,
+        "sessions": 23
       },
       {
         "page": "/pages/about-us",
-        "views": "32",
-        "sessions": "30"
+        "views": 34,
+        "sessions": 32
       },
       {
         "page": "/cart",
-        "views": "27",
-        "sessions": "19"
-      },
-      {
-        "page": "/pages/carek9-x-human-canine-collaborative",
-        "views": "27",
-        "sessions": "25"
+        "views": 28,
+        "sessions": 20
       },
       {
         "page": "/collections/paw-care",
-        "views": "26",
-        "sessions": "20"
+        "views": 28,
+        "sessions": 22
+      },
+      {
+        "page": "/pages/carek9-x-human-canine-collaborative",
+        "views": 28,
+        "sessions": 26
       },
       {
         "page": "/collections/food-topper",
-        "views": "24",
-        "sessions": "20"
+        "views": 24,
+        "sessions": 20
       },
       {
         "page": "/collections/all",
-        "views": "22",
-        "sessions": "18"
+        "views": 21,
+        "sessions": 17
       },
       {
         "page": "/products/beef-wrapped-pumpkin",
-        "views": "20",
-        "sessions": "13"
-      },
-      {
-        "page": "/pages/contact-us",
-        "views": "17",
-        "sessions": "12"
+        "views": 20,
+        "sessions": 13
       },
       {
         "page": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
-        "views": "16",
-        "sessions": "11"
+        "views": 16,
+        "sessions": 11
       },
       {
         "page": "/collections/bath-product",
-        "views": "15",
-        "sessions": "13"
+        "views": 16,
+        "sessions": 14
       },
       {
-        "page": "/products/beef-training-treat",
-        "views": "15",
-        "sessions": "15"
-      },
-      {
-        "page": "/products/pars-mint-dental-cookies",
-        "views": "12",
-        "sessions": "12"
-      },
-      {
-        "page": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
-        "views": "10",
-        "sessions": "6"
-      },
-      {
-        "page": "/products/salmon-skin-bites",
-        "views": "10",
-        "sessions": "10"
-      },
-      {
-        "page": "/products/functional-dog-food-topper-for-joint",
-        "views": "9",
-        "sessions": "9"
+        "page": "/pages/contact-us",
+        "views": 16,
+        "sessions": 13
       }
     ],
-    "traffic_sources": [
+    "trafficSources": [
       {
         "channel": "Direct",
-        "sessions": "257",
-        "users": "197"
+        "sessions": 258,
+        "users": 200
       },
       {
         "channel": "Organic Search",
-        "sessions": "52",
-        "users": "33"
+        "sessions": 53,
+        "users": 35
       },
       {
         "channel": "Organic Shopping",
-        "sessions": "33",
-        "users": "5"
+        "sessions": 36,
+        "users": 5
       },
       {
         "channel": "Unassigned",
-        "sessions": "18",
-        "users": "15"
+        "sessions": 21,
+        "users": 17
       },
       {
         "channel": "Referral",
-        "sessions": "13",
-        "users": "8"
+        "sessions": 14,
+        "users": 8
       },
       {
         "channel": "Organic Social",
-        "sessions": "5",
-        "users": "5"
+        "sessions": 6,
+        "users": 5
       }
     ]
   },
   "gsc": {
-    "collected": "2026-03-06T02:00:00-08:00",
-    "period": "2026-02-04 to 2026-03-06",
+    "period": "2026-02-05 to 2026-03-07",
+    "collected": "2026-03-07T02:00:30.937937",
     "queries": [
       {
         "query": "groom bathing tablets",
         "clicks": 1,
         "impressions": 20,
-        "ctr": 0.05,
+        "ctr": 5.0,
         "position": 4.7
       },
       {
@@ -236,16 +210,16 @@
       {
         "query": "best dog paw cleaner",
         "clicks": 0,
-        "impressions": 89,
+        "impressions": 99,
         "ctr": 0,
-        "position": 9.6
+        "position": 9
       },
       {
         "query": "best dog paw cleaners",
         "clicks": 0,
-        "impressions": 2,
+        "impressions": 4,
         "ctr": 0,
-        "position": 1.5
+        "position": 1.2
       },
       {
         "query": "best paw claener for dogs",
@@ -264,9 +238,9 @@
       {
         "query": "best paw cleaner for dogs",
         "clicks": 0,
-        "impressions": 23,
+        "impressions": 27,
         "ctr": 0,
-        "position": 6.4
+        "position": 5.6
       },
       {
         "query": "best paw cleaner for large dogs",
