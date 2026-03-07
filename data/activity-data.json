@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07T00:47:43.567102Z",
+  "lastUpdated": "2026-03-07T00:50:45.629559Z",
   "dates": [
     "2026-02-05",
     "2026-02-06",
@@ -859,6 +859,19 @@
       "hashtags_used": [],
       "session_id": "zoe_instagram_20260306_1621",
       "account": "zoe_instagram"
+    },
+    {
+      "likes": 0,
+      "comments": 0,
+      "follows": 0,
+      "unfollows": 0,
+      "replies": 2,
+      "start_time": "16:47",
+      "end_time": "16:50",
+      "duration_min": 3.0,
+      "hashtags_used": [],
+      "session_id": "kona_twitter_20260306_1650",
+      "account": "kona_twitter"
     },
     {
       "likes": 0,
