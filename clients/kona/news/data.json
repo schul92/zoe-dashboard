@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-05T13:00:11.695718Z",
-  "version": "v2-2026-03-05",
+  "lastUpdated": "2026-03-06T13:00:18.441170Z",
+  "version": "v2-2026-03-06",
   "sources": {
     "brave_search": true,
     "twitter": false,
     "hackernews": true,
-    "reddit": false
+    "reddit": true
   },
   "headlines": [
     {
@@ -20,14 +20,14 @@
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com/news/",
       "category": "hawaii",
-      "description": "<strong>Honolulu police have opened a robbery in the first degree investigation following a situation near Waikiki</strong>."
+      "description": "<strong>The mother of 33-year-old Braxton Rabago, who is accused of attacking two men in Waikiki over the weekend, said he has been struggling with mental health his entire life.</strong>"
     },
     {
-      "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
       "source": "Brave Search",
-      "url": "https://www.khon2.com",
+      "url": "https://www.kitv.com/",
       "category": "hawaii",
-      "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
+      "description": "... <strong>Breezy east to southeast winds will continue across the islands today</strong>. Most areas will see a mix of sun and clouds, with a few brief showers possible this afternoon, especially al"
     },
     {
       "title": "Hawaii Tourism Trends 2026 Revealed: Where to Go, When to Visit, and How to Plan the Perfect Island Getaway - Travel And Tour World",
@@ -58,13 +58,6 @@
       "description": "<strong>Daily Coffee News by Roast magazine</strong> provides essential only news and resources for specialty coffee professionals. Daily Coffee News covers coffee news from seed to cup, including sto"
     },
     {
-      "title": "Luckin Shareholder Centurium Reportedly Ready to Acquire Blue Bottle",
-      "source": "Brave Search",
-      "url": "https://dailycoffeenews.com/2026/03/04/luckin-shareholder-centurium-reportedly-ready-to-acquire-blue-bottle/",
-      "category": "coffee",
-      "description": "Bloomberg reported on March 4 that the Chinese investment firm was in \u201cadvanced talks\u201d to acquire the chain, citing \u201cpeople familiar with the situation.\u201d In what it described as an \u201cexclusive,\u201d Chines"
-    },
-    {
       "title": "Top Coffee Shop Industry Trends and Statistics in 2025",
       "source": "Brave Search",
       "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
@@ -72,66 +65,136 @@
       "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
-      "title": "Nvidia PersonaPlex 7B on Apple Silicon: Full-Duplex Speech-to-Speech in Swift",
+      "title": "News - World Coffee Portal",
+      "source": "Brave Search",
+      "url": "https://www.worldcoffeeportal.com/news/",
+      "category": "coffee",
+      "description": "Breaking coffee business news and analysis"
+    },
+    {
+      "title": "London coffee fest ? What should I expect",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rlh85o/london_coffee_fest_what_should_i_expect/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>First time going ! Please let me know</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/East_Dig_1291\"> /u/East_Dig_1291 </a> <br"
+    },
+    {
+      "title": "Sight glass blue boon PDX alternative",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rm1h6w/sight_glass_blue_boon_pdx_alternative/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>A co worker from the bay brought us some sight glass blue boon and I really like it. It's a medium roast with notes of milk chocolate, mandarin, and honeysuckle. Can "
+    },
+    {
+      "title": "[MOD] The Daily Question Thread",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rmb18d/mod_the_daily_question_thread/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
+    },
+    {
+      "title": "Record ridership on the Honolulu Skyline in Feb 2026\u2013 first time averaging over 10k daily",
+      "source": "r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rls68s/record_ridership_on_the_honolulu_skyline_in_feb/",
+      "category": "reddit",
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rls68s/record_ridership_on_the_honolulu_skyline_in_feb/\"> <img alt=\"Record ridership on the Honolulu Skyline in Feb 2026\u2013 first time"
+    },
+    {
+      "title": "COVID-19 Update for 3/5/26",
+      "source": "r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rlpt4c/covid19_update_for_3526/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>24(-21) cases this week. 20 on Oahu, 0 in Maui County, 4 on Hawaii Island, and 0 on Kauai.</p> <p>7-day positivity rate is 0.4%(-0.3%)</p> <p>3(-2) in the hospital an"
+    },
+    {
+      "title": "Unpaid ticket threat",
+      "source": "r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rlqosy/unpaid_ticket_threat/",
+      "category": "reddit",
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rlqosy/unpaid_ticket_threat/\"> <img alt=\"Unpaid ticket threat\" src=\"https://preview.redd.it/2n3jmvba0ang1.jpeg?width=640&amp;crop=sm"
+    },
+    {
+      "title": "hypothetically if someone forgot to collect sales tax for 18 months and their state sent them a letter what's the move",
+      "source": "r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rlygow/hypothetically_if_someone_forgot_to_collect_sales/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>hypothetically speaking and this is purely a thought experiment for educational purposes only, let's say a person started a candle business from a garage. this person"
+    },
+    {
+      "title": "Our dental clinic cut no-shows by like half after we stopped relying on phone calls",
+      "source": "r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rm6jq3/our_dental_clinic_cut_noshows_by_like_half_after/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Okay so this is probably super specific but maybe some of you in healthcare admin are dealing with the same thing</p> <p>We run a small dental practice and no-shows w"
+    },
+    {
+      "title": "Hit my best week so far and needed to share it",
+      "source": "r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rlorhk/hit_my_best_week_so_far_and_needed_to_share_it/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Made about $1.3k this last week and I\u2019m honestly still riding that winner\u2019s high. I know that\u2019s not crazy compared to what some people here are doing but for me it fe"
+    },
+    {
+      "title": "LibreSprite \u2013 open-source pixel art editor",
       "source": "Hacker News",
-      "url": "https://blog.ivan.digital/nvidia-personaplex-7b-on-apple-silicon-full-duplex-speech-to-speech-in-native-swift-with-mlx-0aa5276f2e23",
+      "url": "https://libresprite.github.io/",
       "category": "tech",
       "stats": {
-        "points": 171,
-        "comments": 54
+        "points": 74,
+        "comments": 28
       }
     },
     {
-      "title": "Google Workspace CLI",
+      "title": "System76 on Age Verification Laws",
       "source": "Hacker News",
-      "url": "https://github.com/googleworkspace/cli",
+      "url": "https://blog.system76.com/post/system76-on-age-verification/",
       "category": "tech",
       "stats": {
-        "points": 675,
-        "comments": 221
+        "points": 504,
+        "comments": 332
       }
     },
     {
-      "title": "The L in \"LLM\" Stands for Lying",
+      "title": "GPL upgrades via section 14 proxy delegation",
       "source": "Hacker News",
-      "url": "https://acko.net/blog/the-l-in-llm-stands-for-lying/",
+      "url": "https://runxiyu.org/comp/gplproxy/",
       "category": "tech",
       "stats": {
-        "points": 301,
-        "comments": 175
+        "points": 68,
+        "comments": 26
       }
     },
     {
-      "title": "Relicensing with AI-Assisted Rewrite",
+      "title": "GPT-5.4",
       "source": "Hacker News",
-      "url": "https://tuananh.net/2026/03/05/relicensing-with-ai-assisted-rewrite/",
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
       "category": "tech",
       "stats": {
-        "points": 194,
-        "comments": 176
+        "points": 882,
+        "comments": 695
       }
     },
     {
-      "title": "Poor Man's Polaroid",
+      "title": "Async Programming Is Just Inject Time",
       "source": "Hacker News",
-      "url": "https://boxart.lt/blog/poor_mans_polaroid",
+      "url": "https://willhbr.net/2026/03/02/async-inject-and-effects/",
       "category": "tech",
       "stats": {
-        "points": 64,
-        "comments": 12
+        "points": 5,
+        "comments": 0
       }
     }
   ],
   "trending": [
-    "Hawaii News, Weather, Sports, Breaking News & Live",
-    "Nvidia PersonaPlex 7B on Apple Silicon: Full-Duple",
-    "Hawaii News Now - Breaking News, Latest News, Weat",
-    "What's new for Hawaii visitors in 2026: Travel Wee",
-    "News",
+    "Top Coffee Shop Industry Trends and Statistics in ",
     "Daily Coffee News by Roast Magazine - Business new",
-    "Luckin Shareholder Centurium Reportedly Ready to A",
-    "Hawaii Faces Stagnant Tourism Growth as Global Com",
+    "What's new for Hawaii visitors in 2026: Travel Wee",
+    "London coffee fest ? What should I expect",
+    "News - World Coffee Portal",
+    "News",
     "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
-    "Top Coffee Shop Industry Trends and Statistics in "
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "KITV 4 Island News | Honolulu, HI News & Weather",
+    "Hawaii Faces Stagnant Tourism Growth as Global Com"
   ]
 }

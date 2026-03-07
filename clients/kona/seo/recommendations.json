@@ -1,154 +1,102 @@
 {
-  "generated_at": "2026-03-06T01:20:00Z",
-  "summary": "Kona Coffee Donut has 1,778 weekly impressions but only 25 clicks (1.4% CTR). The biggest opportunity is the Chinese-language about-kona-coffee page which gets 1,397 impressions and 0 clicks. Korean queries rank well (position 1-6) but also get 0 clicks. The site has a critical HTTP/HTTPS split issue and GA4 is returning zero data. Fixing CTR on high-impression pages and resolving technical issues could 10x traffic.",
-  "priorities": [
+  "generatedAt": "2026-03-07T01:58:00-08:00",
+  "model": "opus46-requested (fallback manual due sub-agent tool-call stall)",
+  "urgent": [
     {
-      "id": "P1",
-      "category": "technical",
-      "title": "Fix HTTP to HTTPS canonical/redirect issue",
-      "description": "http://www.konacoffeedonut.com/en and https://www.konacoffeedonut.com/en both appear in GSC as separate pages. The HTTP version gets 107 impressions (4 clicks) while HTTPS gets only 2. This splits ranking signals. Ensure all HTTP URLs 301-redirect to HTTPS and set canonical tags to HTTPS versions.",
+      "type": "opening_date_consistency",
+      "keyword": "brand + opening queries",
+      "action": "Replace all 'February 25, 2026' mentions with 'Early March 2026' across metadata and localized content.",
       "impact": "high",
       "effort": "low",
-      "expected_result": "Consolidate ~109 impressions into single URL, improve position and CTR"
+      "reasoning": "Date mismatch can reduce trust and hurt click-through when users see conflicting launch information."
     },
     {
-      "id": "P2",
-      "category": "content",
-      "title": "Optimize Chinese (zh) about-kona-coffee page for CTR",
-      "description": "The /zh/about-kona-coffee page has 1,397 impressions but 0 clicks, ranking at position 13 for queries like '夏威夷科纳咖啡风味' (889 imp) and '夏威夷科纳咖啡 介绍' (435 imp). Improve title tag and meta description in Chinese to be more compelling and click-worthy. Add structured data.",
-      "impact": "critical",
+      "type": "zero_ctr_high_impression",
+      "keyword": "夏威夷科纳咖啡风味",
+      "action": "Add/optimize Chinese title + meta description on /zh/about-kona-coffee with stronger intent match and CTA.",
+      "impact": "high",
       "effort": "medium",
-      "expected_result": "Even 2% CTR = ~28 clicks/week (more than current total site traffic)"
+      "reasoning": "885 impressions at avg position 6.7 with 0 CTR indicates snippet mismatch, not discoverability."
     },
     {
-      "id": "P3",
-      "category": "technical",
-      "title": "Fix GA4 tracking — all metrics showing zero",
-      "description": "GA4 reports 0 users, 0 sessions, 0 pageviews. Either the tracking code is missing, misconfigured, or blocked. Without GA4 data, we cannot measure on-site behavior or conversions.",
+      "type": "analytics_gap",
+      "keyword": "all",
+      "action": "Fix GA4 tracking pipeline (users/sessions/pageviews currently zero) and validate gtag firing on all locale pages.",
+      "impact": "high",
+      "effort": "medium",
+      "reasoning": "Without GA4 behavioral data, optimization decisions are blind and conversion diagnostics are blocked."
+    }
+  ],
+  "quickWins": [
+    {
+      "type": "snippet_optimization",
+      "keyword": "kona coffee",
+      "action": "Rewrite homepage title/meta to target 'Kona Coffee Waikiki' + opening update + location intent.",
       "impact": "high",
       "effort": "low",
-      "expected_result": "Restore visibility into user behavior, bounce rate, conversion paths"
+      "potentialGain": 9,
+      "reasoning": "Position 4.8 with 31 impressions and 0 clicks is a classic low-CTR quick win."
     },
     {
-      "id": "P4",
-      "category": "content",
-      "title": "Improve Korean content pages for click-through",
-      "description": "Korean queries ('하와이 코나 커피', '코나커피', '말라사다 도넛') show 58+ impressions on /ko/about-kona-coffee at position 4 with 0 clicks. Korean visitors from Korea (61 impressions) aren't clicking. Optimize Korean meta titles/descriptions with compelling CTAs.",
+      "type": "local_intent_page",
+      "keyword": "donuts near me",
+      "action": "Create or optimize a local landing section with 'near me' language, hours, map, and schema-enhanced address details.",
       "impact": "medium",
       "effort": "medium",
-      "expected_result": "Capture clicks from Korean tourist audience researching Hawaii trips"
+      "potentialGain": 6,
+      "reasoning": "Page already ranks around 8.9 with 21 impressions; stronger local relevance can lift CTR and rank."
     },
     {
-      "id": "P5",
-      "category": "local_seo",
-      "title": "Improve local 'near me' rankings",
-      "description": "'donuts near me' has 23 impressions at position 9 with 0 clicks. 'coffee near me' has 6 impressions at position 29.5. These high-intent local queries need Google Business Profile optimization, more local citations, and on-page local signals.",
+      "type": "korean_snippet_boost",
+      "keyword": "코나 커피",
+      "action": "Improve /ko/about-kona-coffee title/meta and first paragraph with Korean commercial/local intent terms.",
+      "impact": "medium",
+      "effort": "low",
+      "potentialGain": 4,
+      "reasoning": "Position 4.4 with 14 impressions and 0 clicks suggests metadata-language mismatch."
+    }
+  ],
+  "opportunities": [
+    {
+      "type": "multilingual_content_cluster",
+      "action": "Build supporting zh/ko/en content cluster around Kona flavor, brewing, and Waikiki shop experience with internal linking to menu/location pages.",
       "impact": "high",
+      "effort": "high",
+      "reasoning": "Multilingual informational demand is present, especially Chinese queries, but clicks are not captured yet."
+    },
+    {
+      "type": "schema_enrichment",
+      "action": "Expand LocalBusiness/Restaurant schema with openingDate text update, geo, openingHours, menu URL, and sameAs profiles.",
+      "impact": "medium",
+      "effort": "low",
+      "reasoning": "Improved structured data increases rich result eligibility and local confidence signals."
+    },
+    {
+      "type": "authority_building",
+      "action": "Acquire local citations/backlinks from Waikiki travel/food directories and Korean community media in HI/US.",
+      "impact": "medium",
       "effort": "medium",
-      "expected_result": "Moving 'donuts near me' from pos 9 to top 3 could yield 5-10 clicks/week"
+      "reasoning": "Non-branded growth depends on stronger local authority for competitive 'near me' terms."
     }
   ],
-  "quick_wins": [
+  "insights": [
     {
-      "action": "Rewrite meta title/description for /zh/about-kona-coffee",
-      "query_target": "夏威夷科纳咖啡风味, 夏威夷科纳咖啡 介绍",
-      "current_impressions": 1324,
-      "current_clicks": 0,
-      "potential_clicks_per_week": 40,
-      "effort": "1-2 hours"
-    },
-    {
-      "action": "Add 301 redirect from HTTP to HTTPS for all pages",
-      "issue": "http://www.konacoffeedonut.com/en splitting signals with https version",
-      "effort": "30 minutes"
-    },
-    {
-      "action": "Verify and fix GA4 tracking code installation",
-      "issue": "All GA4 metrics returning 0",
-      "effort": "30 minutes"
-    },
-    {
-      "action": "Optimize meta description for 'kona coffee' query",
-      "current_position": 4.6,
-      "impressions": 31,
-      "effort": "30 minutes",
-      "note": "Position 4.6 with 31 impressions and 0 clicks means the snippet isn't compelling"
-    },
-    {
-      "action": "Add LocalBusiness structured data (JSON-LD) to homepage",
-      "effort": "1 hour",
-      "benefit": "Improve local search visibility and enable rich results"
-    }
-  ],
-  "risks": [
-    {
-      "risk": "GA4 blindspot",
-      "severity": "critical",
-      "description": "Zero GA4 data means no visibility into actual site visitors, behavior, or conversions. We're flying blind on everything beyond search impressions/clicks."
-    },
-    {
-      "risk": "HTTP/HTTPS split diluting rankings",
-      "severity": "high",
-      "description": "Google is indexing both HTTP and HTTPS versions, splitting link equity and confusing crawlers."
-    },
-    {
-      "risk": "Massive impression-to-click gap on Chinese pages",
-      "severity": "high",
-      "description": "1,397 impressions on /zh/about-kona-coffee with 0 clicks. Google may eventually demote pages with consistently 0% CTR."
-    },
-    {
-      "risk": "Over-reliance on branded traffic",
-      "severity": "medium",
-      "description": "36% of clicks are branded ('kona coffee donut'). Non-branded queries generate impressions but almost no clicks, limiting growth."
-    },
-    {
-      "risk": "Desktop CTR extremely low",
-      "severity": "medium",
-      "description": "Desktop: 1,454 impressions but only 0.3% CTR (5 clicks). Most desktop impressions come from Chinese queries — if those pages don't convert to clicks, overall performance suffers."
-    }
-  ],
-  "next_7_days": [
-    {
-      "day": "1-2",
-      "task": "Fix GA4 tracking — verify tag installation on all pages, test with GA4 DebugView",
-      "owner": "developer",
-      "priority": "critical"
-    },
-    {
-      "day": "1-2",
-      "task": "Implement 301 redirects from all HTTP URLs to HTTPS equivalents",
-      "owner": "developer",
+      "type": "ctr_problem_not_ranking_problem",
+      "observation": "Average position is strong (7.0) but CTR is only 1.2%, with many page-1 queries at 0 clicks.",
+      "suggestion": "Prioritize SERP snippet optimization before publishing large new content batches.",
       "priority": "high"
     },
     {
-      "day": "2-3",
-      "task": "Rewrite Chinese meta title and description for /zh/about-kona-coffee targeting '夏威夷科纳咖啡风味' and '夏威夷科纳咖啡 介绍'",
-      "owner": "content/marketing",
-      "priority": "critical"
-    },
-    {
-      "day": "3-4",
-      "task": "Optimize Korean meta tags for /ko/about-kona-coffee and /ko/menu/malasada pages",
-      "owner": "content/marketing",
-      "priority": "medium"
-    },
-    {
-      "day": "4-5",
-      "task": "Add LocalBusiness JSON-LD structured data to homepage and location pages",
-      "owner": "developer",
+      "type": "china_language_demand",
+      "observation": "Chinese queries drive the largest impression volume with near-zero engagement.",
+      "suggestion": "Tune Chinese metadata and intent alignment immediately, then add localized FAQ sections.",
       "priority": "high"
     },
     {
-      "day": "5-6",
-      "task": "Audit and optimize Google Business Profile — ensure hours, photos, categories, and attributes are complete",
-      "owner": "marketing",
+      "type": "measurement_risk",
+      "observation": "GA4 metrics are zero despite active impressions/clicks in GSC.",
+      "suggestion": "Treat analytics instrumentation as a blocker for reliable optimization scoring.",
       "priority": "high"
-    },
-    {
-      "day": "7",
-      "task": "Review GSC data for early signals from changes; document baseline metrics for next week comparison",
-      "owner": "marketing",
-      "priority": "medium"
     }
   ]
 }
