@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-09T14:45:36.800357Z",
+  "lastUpdated": "2026-03-09T16:14:51.823949Z",
   "dates": [
     "2026-02-08",
     "2026-02-09",
@@ -69,7 +69,7 @@
           98,
           142,
           181,
-          0
+          30
         ],
         "comments": [
           0,
@@ -101,7 +101,7 @@
           22,
           27,
           38,
-          0
+          12
         ],
         "follows": [
           0,
@@ -133,11 +133,31 @@
           0,
           0,
           18,
-          0
+          1
         ]
       },
-      "today": {},
-      "sessions_today": []
+      "today": {
+        "likes": 30,
+        "comments": 12,
+        "follows": 1,
+        "unfollows": 0,
+        "replies": 0,
+        "sessions": 1
+      },
+      "sessions_today": [
+        {
+          "likes": 30,
+          "comments": 12,
+          "follows": 1,
+          "unfollows": 0,
+          "replies": 0,
+          "start_time": "08:27",
+          "end_time": "09:45",
+          "duration_min": 78.0,
+          "hashtags_used": [],
+          "session_id": "kona_instagram_20260309_0914"
+        }
+      ]
     },
     "zoe_instagram": {
       "label": "Zoe IG @zoelumos",
@@ -376,6 +396,19 @@
       "hashtags_used": [],
       "session_id": "kona_twitter_20260309_0725",
       "account": "kona_twitter"
+    },
+    {
+      "likes": 30,
+      "comments": 12,
+      "follows": 1,
+      "unfollows": 0,
+      "replies": 0,
+      "start_time": "08:27",
+      "end_time": "09:45",
+      "duration_min": 78.0,
+      "hashtags_used": [],
+      "session_id": "kona_instagram_20260309_0914",
+      "account": "kona_instagram"
     }
   ]
 }
