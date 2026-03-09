@@ -1,12 +1,11 @@
 {
-  "period": "last_30_days",
-  "collected": "2026-03-08",
-  "overall": {
-    "sessions": "381",
-    "totalUsers": "257",
-    "screenPageViews": "1220",
-    "bounceRate": "0.61417322834645671",
-    "averageSessionDuration": "249.7544528503937"
+  "collected": "2026-03-09T02:00:00-08:00",
+  "overview": {
+    "sessions": "389",
+    "totalUsers": "267",
+    "screenPageViews": "1234",
+    "bounceRate": "0.61439588688946012",
+    "averageSessionDuration": "245.87452733419022"
   },
   "topPages": [
     {
@@ -21,13 +20,13 @@
     },
     {
       "page": "/collections/treat",
-      "views": "89",
-      "sessions": "51"
+      "views": "91",
+      "sessions": "53"
     },
     {
       "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "views": "76",
-      "sessions": "29"
+      "views": "77",
+      "sessions": "30"
     },
     {
       "page": "/blogs/news",
@@ -36,18 +35,13 @@
     },
     {
       "page": "/pages/about-us",
-      "views": "37",
-      "sessions": "33"
-    },
-    {
-      "page": "/cart",
-      "views": "28",
-      "sessions": "20"
+      "views": "39",
+      "sessions": "34"
     },
     {
       "page": "/collections/paw-care",
-      "views": "28",
-      "sessions": "22"
+      "views": "29",
+      "sessions": "23"
     },
     {
       "page": "/pages/carek9-x-human-canine-collaborative",
@@ -55,33 +49,38 @@
       "sessions": "26"
     },
     {
-      "page": "/collections/food-topper",
-      "views": "24",
-      "sessions": "20"
+      "page": "/cart",
+      "views": "27",
+      "sessions": "19"
     },
     {
-      "page": "/collections/all",
-      "views": "21",
-      "sessions": "17"
+      "page": "/collections/food-topper",
+      "views": "25",
+      "sessions": "21"
     },
     {
       "page": "/products/beef-wrapped-pumpkin",
-      "views": "21",
-      "sessions": "14"
+      "views": "22",
+      "sessions": "15"
+    },
+    {
+      "page": "/collections/all",
+      "views": "20",
+      "sessions": "16"
     },
     {
       "page": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
-      "views": "16",
-      "sessions": "11"
-    },
-    {
-      "page": "/pages/contact-us",
-      "views": "16",
+      "views": "18",
       "sessions": "13"
     },
     {
       "page": "/collections/bath-product",
-      "views": "15",
+      "views": "16",
+      "sessions": "14"
+    },
+    {
+      "page": "/pages/contact-us",
+      "views": "16",
       "sessions": "13"
     },
     {
@@ -91,8 +90,8 @@
     },
     {
       "page": "/products/the-tab-bath-tablet",
-      "views": "11",
-      "sessions": "9"
+      "views": "13",
+      "sessions": "11"
     },
     {
       "page": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
@@ -113,13 +112,13 @@
   "trafficSources": [
     {
       "channel": "Direct",
-      "sessions": "259",
-      "users": "202"
+      "sessions": "266",
+      "users": "210"
     },
     {
       "channel": "Organic Search",
-      "sessions": "59",
-      "users": "38"
+      "sessions": "60",
+      "users": "40"
     },
     {
       "channel": "Organic Shopping",
@@ -127,14 +126,14 @@
       "users": "5"
     },
     {
+      "channel": "Unassigned",
+      "sessions": "17",
+      "users": "17"
+    },
+    {
       "channel": "Referral",
       "sessions": "14",
       "users": "7"
-    },
-    {
-      "channel": "Unassigned",
-      "sessions": "10",
-      "users": "10"
     },
     {
       "channel": "Organic Social",

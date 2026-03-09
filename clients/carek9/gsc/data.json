@@ -1,13 +1,12 @@
 {
-  "period": "2026-02-06 to 2026-03-07",
-  "collected": "2026-03-08",
+  "collected": "2026-03-09T02:00:00-08:00",
   "queries": [
     {
       "query": "groom bathing tablets",
       "clicks": 2,
-      "impressions": 21,
-      "ctr": 0.0952,
-      "position": 4.7
+      "impressions": 22,
+      "ctr": 0.0909,
+      "position": 4.6
     },
     {
       "query": "4-in-1 dog paw washer",
@@ -33,9 +32,9 @@
     {
       "query": "bath tablet",
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 8,
       "ctr": 0,
-      "position": 10.3
+      "position": 9.1
     },
     {
       "query": "bath tablets",
@@ -89,9 +88,9 @@
     {
       "query": "best dog paw cleaner",
       "clicks": 0,
-      "impressions": 116,
+      "impressions": 131,
       "ctr": 0,
-      "position": 8.4
+      "position": 7.8
     },
     {
       "query": "best dog paw cleaners",
@@ -117,9 +116,9 @@
     {
       "query": "best paw cleaner for dogs",
       "clicks": 0,
-      "impressions": 31,
+      "impressions": 37,
       "ctr": 0,
-      "position": 5.5
+      "position": 4.8
     },
     {
       "query": "best paw cleaner for large dogs",
@@ -164,18 +163,18 @@
       "position": 8
     },
     {
+      "query": "care 9",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8
+    },
+    {
       "query": "chicken wrapped biscuits for dogs",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
       "position": 82
-    },
-    {
-      "query": "chicken wrapped dog treats",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 26
     }
   ]
 }
