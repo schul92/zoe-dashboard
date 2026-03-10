@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-08T12:00:12.145479Z",
-  "version": "v2-2026-03-08",
+  "lastUpdated": "2026-03-09T21:29:49.829048Z",
+  "version": "v2-2026-03-09",
   "sources": {
     "brave_search": true,
     "twitter": false,
@@ -13,14 +13,14 @@
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com/",
       "category": "hawaii",
-      "description": "Reed Mahuna was sworn in as the Hawaii Police Department\u2019s police chief during a public ceremony held in Hilo. ... Local entertainment legend Kimo Kahoano joins Guy Hagi to talk story about his decade"
+      "description": "Reed Mahuna was sworn in as the Hawaii Police Department\u2019s police chief during a public ceremony held in Hilo. ... Updated: Mar. 6, 2026 at 5:23 PM HST| ... Local entertainment legend Kimo Kahoano joi"
     },
     {
-      "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
+      "title": "News",
       "source": "Brave Search",
-      "url": "https://www.waikikigetdown.com/",
+      "url": "https://www.hawaiinewsnow.com/news/",
       "category": "hawaii",
-      "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
+      "description": "Local entertainment legend Kimo Kahoano joins Guy Hagi to talk story about his decades-long career, from fire knife dancing in Waikiki to his iconic role as the voice of the Merrie Monarch Festival."
     },
     {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
@@ -30,164 +30,171 @@
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
-      "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
+      "title": "Coffee Industry Trends 2026 | Data from 64,000+ Independent Coffee Shops | Joe",
       "source": "Brave Search",
-      "url": "https://www.travelweekly.com/Hawaii-Travel/hawaii-new-for-visitors-2026",
-      "category": "hawaii",
-      "description": "In 2026, Hawaii will see <strong>new hotel openings, attractions, and restaurants, including direct flights from California, a new luau show on Kauai and chef Alan Wong&#x27;s restaurant on Oahu</stro"
-    },
-    {
-      "title": "Hawaii Tourism Trends 2026 Revealed: Where to Go, When to Visit, and How to Plan the Perfect Island Getaway - Travel And Tour World",
-      "source": "Brave Search",
-      "url": "https://www.travelandtourworld.com/news/article/hawaii-tourism-trends-2026-revealed-where-to-go-when-to-visit-and-how-to-plan-the-perfect-island-getaway/",
-      "category": "hawaii",
-      "description": "<strong>The first month of 2026 revealed a notable increase in tourism across the Hawaiian islands</strong>. More travellers arrived by air than in previous years, reflecting the continued appeal of H"
-    },
-    {
-      "title": "Currency crisis and competition erode Hawaii's once-dominant Japanese tourism market - Pacific Business News",
-      "source": "Brave Search",
-      "url": "https://www.bizjournals.com/pacific/news/2026/03/05/japan-hawaii-tourism-recovery.html",
-      "category": "hawaii",
-      "description": "Japanese tourism to Hawaii has declined sharply since the pandemic, but new data shows slow recovery as the market adapts to higher costs and changing traveler preferences."
-    },
-    {
-      "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
-      "source": "Brave Search",
-      "url": "https://dailycoffeenews.com/",
+      "url": "https://joe.coffee/coffee-industry-trends/",
       "category": "coffee",
-      "description": "<strong>Daily Coffee News by Roast magazine</strong> provides essential only news and resources for specialty coffee professionals. Daily Coffee News covers coffee news from seed to cup, including sto"
+      "description": "Coffee industry trends and insights from the largest network of independent coffee shops. Real data from 64,697 shops: average ticket sizes, peak hours, loyalty program ROI, and what&#x27;s working in"
     },
     {
-      "title": "Tribute Coffee opens as a 'no tip, living-wage' business | News | cbs19news.com",
+      "title": "Coffee Trends 2026 - weaverscoffee.com",
       "source": "Brave Search",
-      "url": "https://www.cbs19news.com/news/tribute-coffee-opens-as-a-no-tip-living-wage-business/article_9cbcbf73-8249-4941-adc3-446c7eb67077.html",
+      "url": "https://weaverscoffee.com/blogs/blog/coffee-trends-2026",
       "category": "coffee",
-      "description": "He wants his employees to have a different experience. He calls Tribute Coffee a &quot;no-tip, living-wage&quot; business. &quot;I take care of my employees, and you don&#x27;t have to tip to do that "
+      "description": "Explore coffee trends 2026 from pricing and climate change to Specialty Coffee, sustainability, and AI. A founder\u2019s forecast for the future of coffee."
     },
     {
-      "title": "Fresh Cup: Coffee Industry Stories and Insights",
+      "title": "Coffee Shop Trends and Industry Insights 2025 \u2013 Pro Coffee Gear",
       "source": "Brave Search",
-      "url": "https://freshcup.com/",
+      "url": "https://procoffeegear.com/blogs/articles/coffee-shop-trends-insights",
       "category": "coffee",
-      "description": "Roaster and communicator Kat Melheim ... shaped its roasting business. ... Last year, <strong>dozens of coffee shops decided to jump in on a bizarre trend: serving coffee in literal buckets</strong>.."
+      "description": "In 2026, trends such as <strong>tech-enabled ordering, sustainability as a baseline expectation, diversified menus, and curated caf\u00e9 experiences</strong> are influencing purchase decisions more strong"
+    },
+    {
+      "title": "Specialty Coffee Market Size, Share & Growth Report, 2030",
+      "source": "Brave Search",
+      "url": "https://www.grandviewresearch.com/industry-analysis/specialty-coffee-market-report",
+      "category": "coffee",
+      "description": "The global specialty coffee market size was estimated at <strong>USD 101.6 billion in 2024 and is projected to reach USD 183.0 billion by 2030</strong>, growing at a CAGR of 10.4% from 2025 to 2030"
+    },
+    {
+      "title": "Specialty coffee consumption hits 14-year high",
+      "source": "Brave Search",
+      "url": "https://www.ncausa.org/Newsroom/Specialty-coffee-consumption-hits-14-year-high",
+      "category": "coffee",
+      "description": "June 17, 2025 | NEW YORK \u2013 <strong>46% of American adults had specialty coffee in the past day</strong>, up 84% since 2011 and surpassing past-day traditional coffee consumption (42%), according to th"
+    },
+    {
+      "title": "Special Markets - International Coffee Organization",
+      "source": "Brave Search",
+      "url": "https://ico.org/market-development-toolkit/page/index/2",
+      "category": "coffee",
+      "description": "Specialty coffee is a term for <strong>the highest grade of coffee available, typically relating to the entire supply chain, using single origin or single estate coffee</strong>. The term was first us"
+    },
+    {
+      "title": "Which brewing method should I go for now?",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rot2qy/which_brewing_method_should_i_go_for_now/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019m very new to the specialty coffee world and slowly buying all the tools needed to make good coffee. Until now, I always did espresso on my coffee machine, but I re"
+    },
+    {
+      "title": "Fast extraction with Normcore bottomless portafilter on DeLonghi La Specialista",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1romcdw/fast_extraction_with_normcore_bottomless/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi everyone,</p> <p>I switched to a Normcore 51mm non-pressurized/bottomless portafilter on my DeLonghi La Specialista, but the extraction is still too fast.</p> <p>D"
     },
     {
       "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1ro12au/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1row3fz/mod_the_daily_question_thread/",
       "category": "reddit",
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Brewing coffee with alkaline water",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rniub3/brewing_coffee_with_alkaline_water/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Forgive me if this has been discussed at length, I hit the search bar and didn't really find anything that satisfied my desire for conversation.</p> <p>I recently got"
-    },
-    {
-      "title": "Seen at the beach",
+      "title": "WEATHER UPDATE: Kona storm to bring major wind and rainfall impacts to the islands this week",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rnj2n2/seen_at_the_beach/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rp705w/weather_update_kona_storm_to_bring_major_wind_and/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rnj2n2/seen_at_the_beach/\"> <img alt=\"Seen at the beach\" src=\"https://preview.redd.it/vvo30ejsdong1.jpeg?width=640&amp;crop=smart&am"
+      "description": "<!-- SC_OFF --><div class=\"md\"><h1>Overview</h1> <ul> <li><p>A powerful Kona storm is developing to the west of the islands.</p></li> <li><p>This system is expected to stall just northwest of Kauai fo"
     },
     {
-      "title": "As visitors to Hawaii decline, risks abound",
+      "title": "Chicken skin--I just serenaded my granddaughter to sleep playing Bros Caz's Hawaiian Lullaby on my Kamaka for the first time ever.",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rnf91c/as_visitors_to_hawaii_decline_risks_abound/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rp9gxv/chicken_skini_just_serenaded_my_granddaughter_to/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rnf91c/as_visitors_to_hawaii_decline_risks_abound/\"> <img alt=\"As visitors to Hawaii decline, risks abound\" src=\"https://external-pr"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>That's all. Just wanted to share with people who'd understand.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/keikioaina\"> /u/"
     },
     {
-      "title": "UH Maui College FREE Dental Cleanings",
+      "title": "Is there a subreddit for Hawaiian Quilting?",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rnndhy/uh_maui_college_free_dental_cleanings/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rooyt1/is_there_a_subreddit_for_hawaiian_quilting/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Aloha everyone, I am a dental hygiene student at UHMC. I am currently looking for patients who are interested in FREE dental cleanings.</p> <p>Clinic hours as of righ"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I apologize if this isn't allowed, but I've been searching around, and I can't seem to find one. I was just hoping. Thank you very much.</p> </div><!-- SC_ON --> &#32"
     },
     {
-      "title": "just got back from an industry conference and genuinely feel like i lit $4k on fire",
+      "title": "Wholesale sourcing is killing my motivation",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rnlf9p/just_got_back_from_an_industry_conference_and/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rpbrsx/wholesale_sourcing_is_killing_my_motivation/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>ok so rant incoming lol. we sell B2B software to mid-market retailers and i convinced myself that one of the big retail tech conferences in Vegas was worth attending "
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I have been running a small home goods and decor shop for about 2 years, i started this online and just opened a tiny brick and mortar in Columbus last spring, things"
     },
     {
-      "title": "Taught how to fish and he stole my pond",
+      "title": "Business owner might as well be a W2 employee\u2026..",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rnhpnh/taught_how_to_fish_and_he_stole_my_pond/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rozqzu/business_owner_might_as_well_be_a_w2_employee/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I honestly dont know if im angry, dissapointed or just feeling stupid for trusting him that much. maybe all three.</p> <p>About 2 years ago my family asked me to help"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I own a metal fabrication business with a partner, I started it 15 years ago, he joined shortly thereafter. Today, I own 51% , and he owns 49%. Fast forward to today,"
     },
     {
-      "title": "anyone else notice US manufacturing clients drying up fast?",
+      "title": "Customer wants to order an array of sweets for 30 people, but won't state how many sweets she wants or her budget. What to do?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rncksi/anyone_else_notice_us_manufacturing_clients/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1romh8i/customer_wants_to_order_an_array_of_sweets_for_30/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Run a small B2B supply business, been at it 7 years. Last 18 months I lost 4 manufacturing clients in the midwest. Not slow decline, just gone. Two moved ops, one shu"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hey y'all! I'm back again lol.</p> <p>I have a sweets business, and a customer would like to order sweets for 30 people for a small at-home baby shower. She wants an "
     },
     {
-      "title": "SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via CI",
+      "title": "Building a Procedural Hex Map with Wave Function Collapse",
       "source": "Hacker News",
-      "url": "https://arxiv.org/abs/2603.03823",
+      "url": "https://felixturner.github.io/hex-map-wfc/article/",
       "category": "tech",
       "stats": {
-        "points": 59,
-        "comments": 9
+        "points": 266,
+        "comments": 38
       }
     },
     {
-      "title": "Notes on Writing WASM",
+      "title": "JSLinux Now Supports x86_64",
       "source": "Hacker News",
-      "url": "https://notes.brooklynzelenka.com/Blog/Notes-on-Writing-Wasm",
+      "url": "https://bellard.org/jslinux/",
       "category": "tech",
       "stats": {
-        "points": 31,
-        "comments": 11
+        "points": 148,
+        "comments": 33
       }
     },
     {
-      "title": "The Collective Ambition Behind Odysseus, a Game-Changing Sci-Fi Larp",
+      "title": "Thomas Selfridge: The First Airplane Fatality",
       "source": "Hacker News",
-      "url": "https://mssv.net/2025/03/19/the-collective-ambition-behind-odysseus/",
+      "url": "https://www.amusingplanet.com/2026/03/thomas-selfridge-first-airplane-fatality.html",
       "category": "tech",
       "stats": {
-        "points": 11,
-        "comments": 0
+        "points": 13,
+        "comments": 2
       }
     },
     {
-      "title": "Rijksmuseum researchers discover new painting by Rembrandt van Rijn",
+      "title": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft",
       "source": "Hacker News",
-      "url": "https://www.rijksmuseum.nl/en/press/press-releases/rijksmuseum-researchers-discover-new-painting-by-rembrandt-van-rijn",
+      "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/",
       "category": "tech",
       "stats": {
-        "points": 43,
-        "comments": 7
+        "points": 196,
+        "comments": 191
       }
     },
     {
-      "title": "Cloud VM benchmarks 2026",
+      "title": "Show HN: The Mog Programming Language",
       "source": "Hacker News",
-      "url": "https://devblog.ecuadors.net/cloud-vm-benchmarks-2026-performance-price-1i1m.html",
+      "url": "https://moglang.org",
       "category": "tech",
       "stats": {
-        "points": 261,
-        "comments": 119
+        "points": 77,
+        "comments": 34
       }
     }
   ],
   "trending": [
-    "Tribute Coffee opens as a 'no tip, living-wage' bu",
-    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
-    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
-    "Daily Coffee News by Roast Magazine - Business new",
     "Hawaii News, Weather, Sports, Breaking News & Live",
-    "What's new for Hawaii visitors in 2026: Travel Wee",
-    "Currency crisis and competition erode Hawaii's onc",
-    "[MOD] The Daily Question Thread",
-    "Hawaii News Now - Breaking News, Latest News, Weat",
-    "Fresh Cup: Coffee Industry Stories and Insights"
+    "Coffee Industry Trends 2026 | Data from 64,000+ In",
+    "Coffee Trends 2026 - weaverscoffee.com",
+    "Coffee Shop Trends and Industry Insights 2025 \u2013 Pr",
+    "News",
+    "Specialty coffee consumption hits 14-year high",
+    "Special Markets - International Coffee Organizatio",
+    "Specialty Coffee Market Size, Share & Growth Repor",
+    "Which brewing method should I go for now?",
+    "Hawaii News Now - Breaking News, Latest News, Weat"
   ]
 }
