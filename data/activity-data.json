@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-10T14:41:39.301208Z",
+  "lastUpdated": "2026-03-10T15:20:36.549451Z",
   "dates": [
     "2026-02-09",
     "2026-02-10",
@@ -363,6 +363,22 @@
       "hashtags_used": [],
       "session_id": "kona_bluesky_20260310_0741",
       "account": "kona_bluesky"
+    },
+    {
+      "likes": 10,
+      "comments": 4,
+      "follows": 4,
+      "unfollows": 0,
+      "replies": 0,
+      "start_time": "",
+      "end_time": "",
+      "duration_min": 45.0,
+      "hashtags_used": [
+        "smallbusinessowner",
+        "digitalmarketing"
+      ],
+      "session_id": "zoelumos_20260310_0820",
+      "account": "zoelumos"
     },
     {
       "likes": 12,
