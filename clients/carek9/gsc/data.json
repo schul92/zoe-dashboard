@@ -1,12 +1,13 @@
 {
-  "collected": "2026-03-09T02:00:00-08:00",
+  "collected": "2026-03-10",
+  "period": "2026-02-08 to 2026-03-09",
   "queries": [
     {
       "query": "groom bathing tablets",
       "clicks": 2,
-      "impressions": 22,
-      "ctr": 0.0909,
-      "position": 4.6
+      "impressions": 27,
+      "ctr": 0.0741,
+      "position": 5.0
     },
     {
       "query": "4-in-1 dog paw washer",
@@ -74,9 +75,9 @@
     {
       "query": "beef pumpkin treat for dogs",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 5,
       "ctr": 0,
-      "position": 23.5
+      "position": 22.8
     },
     {
       "query": "beef training treats",
@@ -88,9 +89,9 @@
     {
       "query": "best dog paw cleaner",
       "clicks": 0,
-      "impressions": 131,
+      "impressions": 145,
       "ctr": 0,
-      "position": 7.8
+      "position": 7.4
     },
     {
       "query": "best dog paw cleaners",
@@ -116,9 +117,9 @@
     {
       "query": "best paw cleaner for dogs",
       "clicks": 0,
-      "impressions": 37,
+      "impressions": 42,
       "ctr": 0,
-      "position": 4.8
+      "position": 4.3
     },
     {
       "query": "best paw cleaner for large dogs",
@@ -137,7 +138,7 @@
     {
       "query": "best paw cleaners for dogs",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
       "position": 1
     },
@@ -170,11 +171,11 @@
       "position": 8
     },
     {
-      "query": "chicken wrapped biscuits for dogs",
+      "query": "carek9",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 82
+      "position": 28.3
     }
   ]
 }
