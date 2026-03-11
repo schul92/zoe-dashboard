@@ -1,144 +1,73 @@
 {
-  "collected": "2026-03-10",
-  "period": "last_30_days",
   "overview": {
-    "sessions": "383",
-    "totalUsers": "261",
-    "screenPageViews": "1229",
-    "bounceRate": "0.608355091383812"
+    "sessions": "391",
+    "users": "268",
+    "pageviews": "1237",
+    "bounceRate": "61.13%"
   },
-  "topPages": [
+  "top_pages": [
     {
-      "page": "/",
-      "views": "519",
-      "sessions": "246"
+      "path": "/",
+      "views": "523"
     },
     {
-      "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "views": "103",
-      "sessions": "40"
+      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "views": "103"
     },
     {
-      "page": "/collections/treat",
-      "views": "92",
-      "sessions": "53"
+      "path": "/collections/treat",
+      "views": "92"
     },
     {
-      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "views": "78",
-      "sessions": "31"
+      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "views": "78"
     },
     {
-      "page": "/blogs/news",
-      "views": "42",
-      "sessions": "23"
+      "path": "/blogs/news",
+      "views": "42"
     },
     {
-      "page": "/pages/about-us",
-      "views": "36",
-      "sessions": "31"
+      "path": "/pages/about-us",
+      "views": "36"
     },
     {
-      "page": "/collections/paw-care",
-      "views": "29",
-      "sessions": "23"
+      "path": "/collections/paw-care",
+      "views": "30"
     },
     {
-      "page": "/pages/carek9-x-human-canine-collaborative",
-      "views": "28",
-      "sessions": "26"
+      "path": "/pages/carek9-x-human-canine-collaborative",
+      "views": "28"
     },
     {
-      "page": "/cart",
-      "views": "26",
-      "sessions": "18"
+      "path": "/cart",
+      "views": "26"
     },
     {
-      "page": "/collections/food-topper",
-      "views": "24",
-      "sessions": "20"
+      "path": "/collections/food-topper",
+      "views": "24"
+    }
+  ],
+  "sources": [
+    {
+      "source": "(direct) / (none)",
+      "sessions": "268"
     },
     {
-      "page": "/products/beef-wrapped-pumpkin",
-      "views": "24",
-      "sessions": "17"
+      "source": "google / organic",
+      "sessions": "58"
     },
     {
-      "page": "/collections/all",
-      "views": "19",
-      "sessions": "15"
+      "source": "admin.shopify.com / referral",
+      "sessions": "35"
     },
     {
-      "page": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
-      "views": "18",
-      "sessions": "13"
-    },
-    {
-      "page": "/collections/bath-product",
-      "views": "16",
-      "sessions": "14"
-    },
-    {
-      "page": "/products/beef-training-treat",
-      "views": "15",
-      "sessions": "15"
-    },
-    {
-      "page": "/pages/contact-us",
-      "views": "14",
+      "source": "qrcodes.pro / referral",
       "sessions": "11"
     },
     {
-      "page": "/products/the-tab-bath-tablet",
-      "views": "14",
-      "sessions": "12"
-    },
-    {
-      "page": "/products/salmon-skin-bites",
-      "views": "11",
-      "sessions": "10"
-    },
-    {
-      "page": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
-      "views": "10",
-      "sessions": "6"
-    },
-    {
-      "page": "/products/functional-dog-food-topper-for-joint",
-      "views": "10",
+      "source": "(not set)",
       "sessions": "10"
     }
   ],
-  "trafficSources": [
-    {
-      "channel": "Direct",
-      "sessions": "262",
-      "users": "206"
-    },
-    {
-      "channel": "Organic Search",
-      "sessions": "57",
-      "users": "38"
-    },
-    {
-      "channel": "Organic Shopping",
-      "sessions": "37",
-      "users": "5"
-    },
-    {
-      "channel": "Referral",
-      "sessions": "14",
-      "users": "7"
-    },
-    {
-      "channel": "Unassigned",
-      "sessions": "9",
-      "users": "9"
-    },
-    {
-      "channel": "Organic Social",
-      "sessions": "6",
-      "users": "5"
-    }
-  ]
+  "updated_at": "2026-03-11"
 }

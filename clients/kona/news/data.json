@@ -1,200 +1,137 @@
 {
-  "lastUpdated": "2026-03-09T21:29:49.829048Z",
-  "version": "v2-2026-03-09",
+  "lastUpdated": "2026-03-10T12:00:12.913212Z",
+  "version": "v2-2026-03-10",
   "sources": {
     "brave_search": true,
     "twitter": false,
     "hackernews": true,
-    "reddit": true
+    "reddit": false
   },
   "headlines": [
+    {
+      "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
+      "source": "Brave Search",
+      "url": "https://www.khon2.com/",
+      "category": "hawaii",
+      "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
+    },
     {
       "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com/",
       "category": "hawaii",
-      "description": "Reed Mahuna was sworn in as the Hawaii Police Department\u2019s police chief during a public ceremony held in Hilo. ... Updated: Mar. 6, 2026 at 5:23 PM HST| ... Local entertainment legend Kimo Kahoano joi"
+      "description": "On March 8, the Nurturing Wahine Fund hosted the Mentoring Walk Hawaii at Kakaako Waterfront Park."
     },
     {
-      "title": "News",
+      "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
       "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com/news/",
+      "url": "https://www.waikikigetdown.com/",
       "category": "hawaii",
-      "description": "Local entertainment legend Kimo Kahoano joins Guy Hagi to talk story about his decades-long career, from fire knife dancing in Waikiki to his iconic role as the voice of the Merrie Monarch Festival."
+      "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
     },
     {
-      "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
+      "title": "On at HoMA | Honolulu Museum of Art",
       "source": "Brave Search",
-      "url": "https://www.khon2.com",
+      "url": "https://honolulumuseum.org/events",
       "category": "hawaii",
-      "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
+      "description": "Narrated by Hugh Dancy and featuring Claire Danes as the voice of Georgia O&#x27;Keeffe, this captivating new documentary delves into the life and legacy of the pioneering artist."
     },
     {
-      "title": "Coffee Industry Trends 2026 | Data from 64,000+ Independent Coffee Shops | Joe",
+      "title": "Oahu Events | This Week Hawaii",
       "source": "Brave Search",
-      "url": "https://joe.coffee/coffee-industry-trends/",
-      "category": "coffee",
-      "description": "Coffee industry trends and insights from the largest network of independent coffee shops. Real data from 64,697 shops: average ticket sizes, peak hours, loyalty program ROI, and what&#x27;s working in"
+      "url": "https://www.thisweekhawaii.com/event-calendar/oahu",
+      "category": "hawaii",
+      "description": "Discover the best places to eat, drink, and stay on Oahu, Maui, Kauai, and Big Island. Plan your Hawaii adventure now!"
     },
     {
-      "title": "Coffee Trends 2026 - weaverscoffee.com",
+      "title": "TOP 10 BEST Events This Weekend in Honolulu, HI - Updated 2026 - Yelp",
       "source": "Brave Search",
-      "url": "https://weaverscoffee.com/blogs/blog/coffee-trends-2026",
-      "category": "coffee",
-      "description": "Explore coffee trends 2026 from pricing and climate change to Specialty Coffee, sustainability, and AI. A founder\u2019s forecast for the future of coffee."
+      "url": "https://www.yelp.com/search?find_desc=Events+This+Weekend&find_loc=Honolulu,+HI",
+      "category": "hawaii",
+      "description": "&quot;I love to support local events like the Honolulu Night Market (HNM)! It is once a month, on...&quot; more ... Neal S. Blaisdell Exhibition Hall, WaikikiClosed until Friday \u00b7 &quot;Not as crowded"
     },
     {
-      "title": "Coffee Shop Trends and Industry Insights 2025 \u2013 Pro Coffee Gear",
+      "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
       "source": "Brave Search",
-      "url": "https://procoffeegear.com/blogs/articles/coffee-shop-trends-insights",
+      "url": "https://dailycoffeenews.com/",
       "category": "coffee",
-      "description": "In 2026, trends such as <strong>tech-enabled ordering, sustainability as a baseline expectation, diversified menus, and curated caf\u00e9 experiences</strong> are influencing purchase decisions more strong"
+      "description": "<strong>Daily Coffee News by Roast magazine</strong> provides essential only news and resources for specialty coffee professionals. Daily Coffee News covers coffee news from seed to cup, including sto"
     },
     {
-      "title": "Specialty Coffee Market Size, Share & Growth Report, 2030",
+      "title": "Tribute Coffee opens as a 'no tip, living-wage' business | News | cbs19news.com",
       "source": "Brave Search",
-      "url": "https://www.grandviewresearch.com/industry-analysis/specialty-coffee-market-report",
+      "url": "https://www.cbs19news.com/news/tribute-coffee-opens-as-a-no-tip-living-wage-business/article_9cbcbf73-8249-4941-adc3-446c7eb67077.html",
       "category": "coffee",
-      "description": "The global specialty coffee market size was estimated at <strong>USD 101.6 billion in 2024 and is projected to reach USD 183.0 billion by 2030</strong>, growing at a CAGR of 10.4% from 2025 to 2030"
+      "description": "He wants his employees to have a different experience. He calls Tribute Coffee a &quot;no-tip, living-wage&quot; business. &quot;I take care of my employees, and you don&#x27;t have to tip to do that "
     },
     {
-      "title": "Specialty coffee consumption hits 14-year high",
+      "title": "Mobile coffee shop business owners to bring business to established co...",
       "source": "Brave Search",
-      "url": "https://www.ncausa.org/Newsroom/Specialty-coffee-consumption-hits-14-year-high",
+      "url": "https://www.albertleatribune.com/news/mobile-coffee-shop-business-owners-to-bring-business-to-established-coffee-shop-location-d657b543",
       "category": "coffee",
-      "description": "June 17, 2025 | NEW YORK \u2013 <strong>46% of American adults had specialty coffee in the past day</strong>, up 84% since 2011 and surpassing past-day traditional coffee consumption (42%), according to th"
+      "description": "Megan Fjelstad said she is most excited for the community of Lake Mills to have a space to gather once she and her wife, Laura Fjelstad, open their new coffee shop, Royce&#x27;s Brew. Ayanna Eckblad/A"
     },
     {
-      "title": "Special Markets - International Coffee Organization",
-      "source": "Brave Search",
-      "url": "https://ico.org/market-development-toolkit/page/index/2",
-      "category": "coffee",
-      "description": "Specialty coffee is a term for <strong>the highest grade of coffee available, typically relating to the entire supply chain, using single origin or single estate coffee</strong>. The term was first us"
-    },
-    {
-      "title": "Which brewing method should I go for now?",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rot2qy/which_brewing_method_should_i_go_for_now/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019m very new to the specialty coffee world and slowly buying all the tools needed to make good coffee. Until now, I always did espresso on my coffee machine, but I re"
-    },
-    {
-      "title": "Fast extraction with Normcore bottomless portafilter on DeLonghi La Specialista",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1romcdw/fast_extraction_with_normcore_bottomless/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi everyone,</p> <p>I switched to a Normcore 51mm non-pressurized/bottomless portafilter on my DeLonghi La Specialista, but the extraction is still too fast.</p> <p>D"
-    },
-    {
-      "title": "[MOD] The Daily Question Thread",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1row3fz/mod_the_daily_question_thread/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
-    },
-    {
-      "title": "WEATHER UPDATE: Kona storm to bring major wind and rainfall impacts to the islands this week",
-      "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rp705w/weather_update_kona_storm_to_bring_major_wind_and/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><h1>Overview</h1> <ul> <li><p>A powerful Kona storm is developing to the west of the islands.</p></li> <li><p>This system is expected to stall just northwest of Kauai fo"
-    },
-    {
-      "title": "Chicken skin--I just serenaded my granddaughter to sleep playing Bros Caz's Hawaiian Lullaby on my Kamaka for the first time ever.",
-      "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rp9gxv/chicken_skini_just_serenaded_my_granddaughter_to/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>That's all. Just wanted to share with people who'd understand.</p> </div><!-- SC_ON --> &#32; submitted by &#32; <a href=\"https://www.reddit.com/user/keikioaina\"> /u/"
-    },
-    {
-      "title": "Is there a subreddit for Hawaiian Quilting?",
-      "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rooyt1/is_there_a_subreddit_for_hawaiian_quilting/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I apologize if this isn't allowed, but I've been searching around, and I can't seem to find one. I was just hoping. Thank you very much.</p> </div><!-- SC_ON --> &#32"
-    },
-    {
-      "title": "Wholesale sourcing is killing my motivation",
-      "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rpbrsx/wholesale_sourcing_is_killing_my_motivation/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I have been running a small home goods and decor shop for about 2 years, i started this online and just opened a tiny brick and mortar in Columbus last spring, things"
-    },
-    {
-      "title": "Business owner might as well be a W2 employee\u2026..",
-      "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rozqzu/business_owner_might_as_well_be_a_w2_employee/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I own a metal fabrication business with a partner, I started it 15 years ago, he joined shortly thereafter. Today, I own 51% , and he owns 49%. Fast forward to today,"
-    },
-    {
-      "title": "Customer wants to order an array of sweets for 30 people, but won't state how many sweets she wants or her budget. What to do?",
-      "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1romh8i/customer_wants_to_order_an_array_of_sweets_for_30/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hey y'all! I'm back again lol.</p> <p>I have a sweets business, and a customer would like to order sweets for 30 people for a small at-home baby shower. She wants an "
-    },
-    {
-      "title": "Building a Procedural Hex Map with Wave Function Collapse",
+      "title": "I put my whole life into a single database",
       "source": "Hacker News",
-      "url": "https://felixturner.github.io/hex-map-wfc/article/",
+      "url": "https://howisfelix.today/",
       "category": "tech",
       "stats": {
-        "points": 266,
+        "points": 64,
+        "comments": 17
+      }
+    },
+    {
+      "title": "Redox OS has adopted a Certificate of Origin policy and a strict no-LLM policy",
+      "source": "Hacker News",
+      "url": "https://gitlab.redox-os.org/redox-os/redox/-/blob/master/CONTRIBUTING.md",
+      "category": "tech",
+      "stats": {
+        "points": 174,
+        "comments": 144
+      }
+    },
+    {
+      "title": "The Gervais Principle, or the Office According to \"The Office\"",
+      "source": "Hacker News",
+      "url": "https://www.ribbonfarm.com/2009/10/07/the-gervais-principle-or-the-office-according-to-the-office/",
+      "category": "tech",
+      "stats": {
+        "points": 64,
+        "comments": 12
+      }
+    },
+    {
+      "title": "Two Years of Emacs Solo",
+      "source": "Hacker News",
+      "url": "https://www.rahuljuliato.com/posts/emacs-solo-two-years",
+      "category": "tech",
+      "stats": {
+        "points": 275,
+        "comments": 84
+      }
+    },
+    {
+      "title": "Lotus 1-2-3 on the PC with DOS",
+      "source": "Hacker News",
+      "url": "https://stonetools.ghost.io/lotus123-dos/",
+      "category": "tech",
+      "stats": {
+        "points": 113,
         "comments": 38
-      }
-    },
-    {
-      "title": "JSLinux Now Supports x86_64",
-      "source": "Hacker News",
-      "url": "https://bellard.org/jslinux/",
-      "category": "tech",
-      "stats": {
-        "points": 148,
-        "comments": 33
-      }
-    },
-    {
-      "title": "Thomas Selfridge: The First Airplane Fatality",
-      "source": "Hacker News",
-      "url": "https://www.amusingplanet.com/2026/03/thomas-selfridge-first-airplane-fatality.html",
-      "category": "tech",
-      "stats": {
-        "points": 13,
-        "comments": 2
-      }
-    },
-    {
-      "title": "Is legal the same as legitimate: AI reimplementation and the erosion of copyleft",
-      "source": "Hacker News",
-      "url": "https://writings.hongminhee.org/2026/03/legal-vs-legitimate/",
-      "category": "tech",
-      "stats": {
-        "points": 196,
-        "comments": 191
-      }
-    },
-    {
-      "title": "Show HN: The Mog Programming Language",
-      "source": "Hacker News",
-      "url": "https://moglang.org",
-      "category": "tech",
-      "stats": {
-        "points": 77,
-        "comments": 34
       }
     }
   ],
   "trending": [
+    "Daily Coffee News by Roast Magazine - Business new",
+    "TOP 10 BEST Events This Weekend in Honolulu, HI - ",
+    "Tribute Coffee opens as a 'no tip, living-wage' bu",
+    "On at HoMA | Honolulu Museum of Art",
+    "Mobile coffee shop business owners to bring busine",
+    "I put my whole life into a single database",
     "Hawaii News, Weather, Sports, Breaking News & Live",
-    "Coffee Industry Trends 2026 | Data from 64,000+ In",
-    "Coffee Trends 2026 - weaverscoffee.com",
-    "Coffee Shop Trends and Industry Insights 2025 \u2013 Pr",
-    "News",
-    "Specialty coffee consumption hits 14-year high",
-    "Special Markets - International Coffee Organizatio",
-    "Specialty Coffee Market Size, Share & Growth Repor",
-    "Which brewing method should I go for now?",
-    "Hawaii News Now - Breaking News, Latest News, Weat"
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
+    "Oahu Events | This Week Hawaii"
   ]
 }
