@@ -85,7 +85,7 @@
         <div class="max-w-[1600px] mx-auto px-4 sm:px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center gap-3 sm:gap-5">
-                    <a href="./index.html" class="flex items-center gap-2 px-2 sm:px-3 py-2 -ml-2 sm:-ml-3 rounded-lg hover:bg-zinc-800/50 transition-colors text-zinc-400 hover:text-zinc-200">
+                    <a href="/zoe-dashboard/hub.html" class="flex items-center gap-2 px-2 sm:px-3 py-2 -ml-2 sm:-ml-3 rounded-lg hover:bg-zinc-800/50 transition-colors text-zinc-400 hover:text-zinc-200">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
                         <span class="text-sm font-medium hidden sm:inline">Hub</span>
                     </a>
@@ -234,13 +234,12 @@
         async function fetchData() {
             document.getElementById('refreshIcon').classList.add('animate-spin');
             try {
-                const response = await fetch('./clients/kona/news/data.json?' + Date.now());
+                const response = await fetch('/zoe-dashboard/news/data.json?' + Date.now());
                 newsData = await response.json();
                 renderNews();
             } catch (e) {
                 console.error('Error:', e);
                 document.getElementById('lastUpdated').textContent = 'Error loading';
-                document.getElementById('highlightsList').innerHTML = '<div class="text-red-400 text-sm">⚠️ Failed to load news data. Error: ' + e.message + '</div>';
             }
             document.getElementById('refreshIcon').classList.remove('animate-spin');
         }
@@ -285,7 +284,7 @@
             if (!newsData) return;
 
             // Update timestamp
-            const dt = new Date(newsData.lastUpdated || newsData.collectedAt);
+            const dt = new Date(newsData.collectedAt);
             document.getElementById('lastUpdated').textContent = dt.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 
             // Big Date Display
@@ -312,49 +311,47 @@
             // Generate Highlights
             generateHighlights();
 
-            // Get headlines from either new format (headlines array) or old format (separate arrays)
-            const headlines = newsData.headlines || [];
-            
-            // Calculate counts by category
+            // Calculate counts
             const counts = {
-                twitter: headlines.filter(h => h.category === 'twitter' || h.source === 'twitter').length,
-                reddit: headlines.filter(h => h.category === 'reddit' || h.source === 'reddit').length,
-                hn: headlines.filter(h => h.category === 'hn' || h.source === 'hn').length,
-                news: headlines.filter(h => h.category === 'news' || h.source === 'news').length,
-                google: headlines.filter(h => h.category === 'google' || h.source === 'google').length,
-                hawaii: headlines.filter(h => h.category === 'hawaii' || h.source === 'hawaii').length,
-                coffee: headlines.filter(h => h.category === 'coffee' || h.source === 'coffee').length,
-                business: headlines.filter(h => h.category === 'business' || h.source === 'business').length
+                twitter: newsData.twitter?.length || 0,
+                reddit: newsData.reddit?.length || 0,
+                hn: newsData.hackerNews?.length || 0,
+                news: newsData.news?.length || 0,
+                google: newsData.googleTrends?.length || 0,
+                hawaii: newsData.hawaii?.length || 0
             };
-            const totalCount = headlines.length;
+            const totalCount = Object.values(counts).reduce((a, b) => a + b, 0);
 
             // Update source counts
             document.getElementById('all-count').textContent = totalCount;
             document.getElementById('twitter-count').textContent = counts.twitter;
             document.getElementById('reddit-count').textContent = counts.reddit;
             document.getElementById('hn-count').textContent = counts.hn;
-            document.getElementById('news-count').textContent = counts.news + counts.coffee + counts.business;
+            document.getElementById('news-count').textContent = counts.news;
             document.getElementById('google-count').textContent = counts.google;
             document.getElementById('hawaii-count').textContent = counts.hawaii;
 
-            // Map headlines to include source field
-            const allNews = headlines.map(item => ({
-                ...item,
-                source: item.source || item.category || 'news'
-            }));
+            // Combine and render all news
+            const allNews = [
+                ...(newsData.twitter || []).map(item => ({ ...item, source: 'twitter' })),
+                ...(newsData.reddit || []).map(item => ({ ...item, source: 'reddit' })),
+                ...(newsData.hackerNews || []).map(item => ({ ...item, source: 'hn' })),
+                ...(newsData.news || []).map(item => ({ ...item, source: 'news' })),
+                ...(newsData.googleTrends || []).map(item => ({ ...item, source: 'google' })),
+                ...(newsData.hawaii || []).map(item => ({ ...item, source: 'hawaii' }))
+            ];
 
             const newsGrid = document.getElementById('newsGrid');
             newsGrid.innerHTML = allNews.map((item, index) => `
-                <div class="news-card glass rounded-2xl p-6 animate-slide-in" data-source="${item.source}" style="animation-delay: ${index * 0.05}s; opacity: 0;" ${item.url ? `onclick="window.open('${item.url}', '_blank')"` : ''}>
+                <div class="news-card glass rounded-2xl p-6 animate-slide-in" data-source="${item.source}" style="animation-delay: ${index * 0.05}s; opacity: 0;" onclick="window.open('${item.url}', '_blank')">
                     <div class="flex items-start justify-between mb-3">
                         <span class="badge badge-${item.source}">${getBadgeLabel(item.source)}</span>
-                        ${item.timestamp ? `<span class="text-xs text-zinc-500">${formatTime(item.timestamp)}</span>` : ''}
+                        <span class="text-xs text-zinc-500">${formatTime(item.timestamp)}</span>
                     </div>
                     <h3 class="text-lg font-semibold mb-2 text-zinc-100 leading-snug">${item.title}</h3>
                     ${item.description ? `<p class="text-sm text-zinc-400 mb-3">${item.description}</p>` : ''}
-                    ${item.source ? `<p class="text-xs text-zinc-500 mt-2">📰 ${item.source}</p>` : ''}
                     ${item.stats ? `
-                        <div class="flex items-center gap-4 text-xs text-zinc-500 mt-3">
+                        <div class="flex items-center gap-4 text-xs text-zinc-500">
                             ${item.stats.points ? `<span>⬆️ ${item.stats.points}</span>` : ''}
                             ${item.stats.comments ? `<span>💬 ${item.stats.comments}</span>` : ''}
                             ${item.stats.mentions ? `<span>📊 ${item.stats.mentions}</span>` : ''}
@@ -399,12 +396,23 @@
             if (!newsData) return;
 
             const highlights = [];
-            const allItems = newsData.headlines || [];
+            const allItems = [
+                ...(newsData.twitter || []),
+                ...(newsData.reddit || []),
+                ...(newsData.hackerNews || []),
+                ...(newsData.news || []),
+                ...(newsData.hawaii || [])
+            ];
 
-            // Get top items (by engagement/points if available, or just first 4)
+            // Get top items (by engagement/points if available)
             const topItems = allItems
                 .filter(item => item.title)
-                .slice(0, 5);
+                .sort((a, b) => {
+                    const scoreA = (a.stats?.points || 0) + (a.stats?.comments || 0) * 2;
+                    const scoreB = (b.stats?.points || 0) + (b.stats?.comments || 0) * 2;
+                    return scoreB - scoreA;
+                })
+                .slice(0, 4);
 
             // Generate highlight bullets
             const highlightsList = document.getElementById('highlightsList');

@@ -24,8 +24,8 @@
     "reportEmail": "zoestudiollc@gmail.com"
   },
   "seo": {
-    "gscProperty": "sc-domain:carek9.com",
-    "ga4Property": "properties/523137923"
+    "gscProperty": "",
+    "ga4Property": ""
   },
   "secrets": {
     "awsSecretId": "carek9/api-keys"
