@@ -1,101 +1,81 @@
 {
-  "generatedAt": "2026-03-07T01:58:00-08:00",
-  "model": "opus46-requested (fallback manual due sub-agent tool-call stall)",
+  "generatedAt": "2026-03-11T00:00:00-08:00",
+  "analysisModel": "fallback-manual (Opus 4.6 rate-limited)",
+  "opus46Attempts": 2,
   "urgent": [
     {
-      "type": "opening_date_consistency",
-      "keyword": "brand + opening queries",
-      "action": "Replace all 'February 25, 2026' mentions with 'Early March 2026' across metadata and localized content.",
+      "type": "opening_date_mismatch",
+      "keyword": "grand opening",
+      "action": "Replace all public references of 'Feb 25' with 'Early March 2026' across metadata, OG tags, and on-page copy, then redeploy and reindex critical pages.",
       "impact": "high",
       "effort": "low",
-      "reasoning": "Date mismatch can reduce trust and hurt click-through when users see conflicting launch information."
+      "reasoning": "Live /en page HTML still contains 'Grand Opening Feb 25', which creates trust and relevance issues for branded searches."
     },
     {
-      "type": "zero_ctr_high_impression",
-      "keyword": "夏威夷科纳咖啡风味",
-      "action": "Add/optimize Chinese title + meta description on /zh/about-kona-coffee with stronger intent match and CTA.",
+      "type": "low_ctr_on_ranked_queries",
+      "keyword": "branded + menu terms",
+      "action": "Rewrite title/meta for top impression pages with intent-matched copy (menu, Waikiki, mochi donuts, bingsu) and clear CTA.",
       "impact": "high",
       "effort": "medium",
-      "reasoning": "885 impressions at avg position 6.7 with 0 CTR indicates snippet mismatch, not discoverability."
-    },
-    {
-      "type": "analytics_gap",
-      "keyword": "all",
-      "action": "Fix GA4 tracking pipeline (users/sessions/pageviews currently zero) and validate gtag firing on all locale pages.",
-      "impact": "high",
-      "effort": "medium",
-      "reasoning": "Without GA4 behavioral data, optimization decisions are blind and conversion diagnostics are blocked."
+      "reasoning": "CTR is ~1.0% with avg position 6.6, indicating snippet mismatch despite usable rankings."
     }
   ],
   "quickWins": [
     {
-      "type": "snippet_optimization",
-      "keyword": "kona coffee",
-      "action": "Rewrite homepage title/meta to target 'Kona Coffee Waikiki' + opening update + location intent.",
+      "type": "meta_description_refresh",
+      "keyword": "kona coffee donut waikiki",
+      "action": "Update homepage and /en meta descriptions to include 'Proudly serving Honolulu coffee', address, and current opening language.",
       "impact": "high",
       "effort": "low",
-      "potentialGain": 9,
-      "reasoning": "Position 4.8 with 31 impressions and 0 clicks is a classic low-CTR quick win."
+      "potentialGain": 25,
+      "reasoning": "Branded traffic already exists; better SERP messaging can increase clicks quickly."
     },
     {
-      "type": "local_intent_page",
-      "keyword": "donuts near me",
-      "action": "Create or optimize a local landing section with 'near me' language, hours, map, and schema-enhanced address details.",
-      "impact": "medium",
-      "effort": "medium",
-      "potentialGain": 6,
-      "reasoning": "Page already ranks around 8.9 with 21 impressions; stronger local relevance can lift CTR and rank."
-    },
-    {
-      "type": "korean_snippet_boost",
-      "keyword": "코나 커피",
-      "action": "Improve /ko/about-kona-coffee title/meta and first paragraph with Korean commercial/local intent terms.",
+      "type": "internal_link_boost",
+      "keyword": "menu pages",
+      "action": "Add keyword-specific internal links from homepage hero/sections to top menu pages with descriptive anchor text.",
       "impact": "medium",
       "effort": "low",
-      "potentialGain": 4,
-      "reasoning": "Position 4.4 with 14 impressions and 0 clicks suggests metadata-language mismatch."
+      "potentialGain": 15,
+      "reasoning": "15 indexed pages and low clicks suggest authority distribution can be improved fast."
+    },
+    {
+      "type": "image_alt_and_compression",
+      "keyword": "waikiki donuts photos",
+      "action": "Add descriptive alt text and compress largest hero/menu images on /en.",
+      "impact": "medium",
+      "effort": "low",
+      "potentialGain": 12,
+      "reasoning": "Mobile Lighthouse LCP is 8.1s, pointing to above-the-fold asset opportunity."
     }
   ],
   "opportunities": [
     {
-      "type": "multilingual_content_cluster",
-      "action": "Build supporting zh/ko/en content cluster around Kona flavor, brewing, and Waikiki shop experience with internal linking to menu/location pages.",
+      "type": "localized_landing_pages",
+      "action": "Create/expand English/Japanese/Korean local-intent pages for Waikiki breakfast, late-night desserts, and nearby landmarks.",
       "impact": "high",
-      "effort": "high",
-      "reasoning": "Multilingual informational demand is present, especially Chinese queries, but clicks are not captured yet."
+      "effort": "medium",
+      "reasoning": "Tourist-intent demand is likely under-captured; multilingual long-tail can scale impressions."
     },
     {
-      "type": "schema_enrichment",
-      "action": "Expand LocalBusiness/Restaurant schema with openingDate text update, geo, openingHours, menu URL, and sameAs profiles.",
+      "type": "faq_schema_expansion",
+      "action": "Expand FAQ with opening timeline, parking, halal/vegetarian notes, and menu highlights; validate structured data.",
       "impact": "medium",
       "effort": "low",
-      "reasoning": "Improved structured data increases rich result eligibility and local confidence signals."
-    },
-    {
-      "type": "authority_building",
-      "action": "Acquire local citations/backlinks from Waikiki travel/food directories and Korean community media in HI/US.",
-      "impact": "medium",
-      "effort": "medium",
-      "reasoning": "Non-branded growth depends on stronger local authority for competitive 'near me' terms."
+      "reasoning": "Rich result eligibility can raise CTR without waiting for rank changes."
     }
   ],
   "insights": [
     {
-      "type": "ctr_problem_not_ranking_problem",
-      "observation": "Average position is strong (7.0) but CTR is only 1.2%, with many page-1 queries at 0 clicks.",
-      "suggestion": "Prioritize SERP snippet optimization before publishing large new content batches.",
+      "type": "ranking_vs_ctr_gap",
+      "observation": "Average position is strong (6.6) but CTR is low (1.0%).",
+      "suggestion": "Prioritize snippet optimization before large content expansion.",
       "priority": "high"
     },
     {
-      "type": "china_language_demand",
-      "observation": "Chinese queries drive the largest impression volume with near-zero engagement.",
-      "suggestion": "Tune Chinese metadata and intent alignment immediately, then add localized FAQ sections.",
-      "priority": "high"
-    },
-    {
-      "type": "measurement_risk",
-      "observation": "GA4 metrics are zero despite active impressions/clicks in GSC.",
-      "suggestion": "Treat analytics instrumentation as a blocker for reliable optimization scoring.",
+      "type": "mobile_performance_constraint",
+      "observation": "Desktop performance is strong (94) while mobile is moderate (62) with high LCP.",
+      "suggestion": "Focus first on mobile hero payload and render path simplification.",
       "priority": "high"
     }
   ]
