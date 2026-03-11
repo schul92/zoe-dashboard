@@ -1,82 +1,71 @@
 {
-  "generatedAt": "2026-03-11T00:00:00-08:00",
-  "analysisModel": "fallback-manual (Opus 4.6 rate-limited)",
-  "opus46Attempts": 2,
+  "generatedAt": "2026-03-11T00:45:00-08:00",
+  "requestedModel": "opus46",
+  "actualModel": "gpt-5.3-codex fallback",
+  "note": "Opus 4.6 repeatedly rate-limited (429).",
   "urgent": [
     {
-      "type": "opening_date_mismatch",
-      "keyword": "grand opening",
-      "action": "Replace all public references of 'Feb 25' with 'Early March 2026' across metadata, OG tags, and on-page copy, then redeploy and reindex critical pages.",
-      "impact": "high",
-      "effort": "low",
-      "reasoning": "Live /en page HTML still contains 'Grand Opening Feb 25', which creates trust and relevance issues for branded searches."
+      "issue": "Opening date inconsistency",
+      "data": "Brand policy is early March 2026, but prior public messaging included Feb 25.",
+      "action": "Standardize all pages/metadata/schema/GBP to 'Opening Early March 2026'."
     },
     {
-      "type": "low_ctr_on_ranked_queries",
-      "keyword": "branded + menu terms",
-      "action": "Rewrite title/meta for top impression pages with intent-matched copy (menu, Waikiki, mochi donuts, bingsu) and clear CTA.",
-      "impact": "high",
-      "effort": "medium",
-      "reasoning": "CTR is ~1.0% with avg position 6.6, indicating snippet mismatch despite usable rankings."
+      "issue": "High impressions, low clicks",
+      "data": "1507 impressions, 15 clicks, CTR 1.0%, avg position 6.6.",
+      "action": "Rewrite title/meta on top pages for local intent (Waikiki, menu, address, opening timing)."
+    },
+    {
+      "issue": "Protocol/canonical fragmentation",
+      "data": "HTTP and HTTPS variants both appearing in search data.",
+      "action": "Force 301 HTTP→HTTPS and unify canonical/hreflang to HTTPS only."
     }
   ],
   "quickWins": [
     {
-      "type": "meta_description_refresh",
-      "keyword": "kona coffee donut waikiki",
-      "action": "Update homepage and /en meta descriptions to include 'Proudly serving Honolulu coffee', address, and current opening language.",
-      "impact": "high",
-      "effort": "low",
-      "potentialGain": 25,
-      "reasoning": "Branded traffic already exists; better SERP messaging can increase clicks quickly."
+      "target": "Homepage + /en snippets",
+      "data": "Homepage CTR is relatively strong; subpages underperform.",
+      "action": "Replicate homepage value proposition in subpage titles/meta.",
+      "potentialGain": 20
     },
     {
-      "type": "internal_link_boost",
-      "keyword": "menu pages",
-      "action": "Add keyword-specific internal links from homepage hero/sections to top menu pages with descriptive anchor text.",
-      "impact": "medium",
-      "effort": "low",
-      "potentialGain": 15,
-      "reasoning": "15 indexed pages and low clicks suggest authority distribution can be improved fast."
+      "target": "Menu page CTR",
+      "data": "/en/menu has impressions but weak click conversion.",
+      "action": "Add clearer menu-specific SERP copy + FAQ/menu schema.",
+      "potentialGain": 15
     },
     {
-      "type": "image_alt_and_compression",
-      "keyword": "waikiki donuts photos",
-      "action": "Add descriptive alt text and compress largest hero/menu images on /en.",
-      "impact": "medium",
-      "effort": "low",
-      "potentialGain": 12,
-      "reasoning": "Mobile Lighthouse LCP is 8.1s, pointing to above-the-fold asset opportunity."
+      "target": "Mobile LCP",
+      "data": "Lighthouse mobile score ~62 with LCP ~8.1s on /en.",
+      "action": "Compress hero assets, prioritize above-the-fold render, lazy-load non-critical media.",
+      "potentialGain": 18
     }
   ],
   "opportunities": [
     {
-      "type": "localized_landing_pages",
-      "action": "Create/expand English/Japanese/Korean local-intent pages for Waikiki breakfast, late-night desserts, and nearby landmarks.",
-      "impact": "high",
-      "effort": "medium",
-      "reasoning": "Tourist-intent demand is likely under-captured; multilingual long-tail can scale impressions."
+      "opportunity": "Multilingual local-intent pages",
+      "action": "Expand KR/JP/EN pages around Waikiki breakfast/dessert intent with map + address + opening language."
     },
     {
-      "type": "faq_schema_expansion",
-      "action": "Expand FAQ with opening timeline, parking, halal/vegetarian notes, and menu highlights; validate structured data.",
-      "impact": "medium",
-      "effort": "low",
-      "reasoning": "Rich result eligibility can raise CTR without waiting for rank changes."
+      "opportunity": "Near-me demand capture",
+      "action": "Build stronger local landing sections for donut/coffee near me with structured FAQ and transport cues."
+    },
+    {
+      "opportunity": "Internal linking hub",
+      "action": "Improve links from homepage to top menu/category pages using intent-rich anchors."
     }
   ],
   "insights": [
     {
-      "type": "ranking_vs_ctr_gap",
-      "observation": "Average position is strong (6.6) but CTR is low (1.0%).",
-      "suggestion": "Prioritize snippet optimization before large content expansion.",
-      "priority": "high"
+      "insight": "Ranking is acceptable; conversion is weak",
+      "evidence": "Avg position 6.6 with low CTR indicates snippet-intent mismatch."
     },
     {
-      "type": "mobile_performance_constraint",
-      "observation": "Desktop performance is strong (94) while mobile is moderate (62) with high LCP.",
-      "suggestion": "Focus first on mobile hero payload and render path simplification.",
-      "priority": "high"
+      "insight": "Desktop is healthy, mobile is bottleneck",
+      "evidence": "Desktop performance ~94 vs mobile ~62."
+    },
+    {
+      "insight": "Brand terms convert better than generic terms",
+      "evidence": "Branded queries produce most clicks; non-branded/local terms need stronger messaging."
     }
   ]
 }
