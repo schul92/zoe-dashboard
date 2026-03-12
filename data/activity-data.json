@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-12T17:32:07.175423Z",
+  "lastUpdated": "2026-03-12T18:21:45.411617Z",
   "dates": [
     "2026-02-11",
     "2026-02-12",
@@ -388,6 +388,19 @@
       "duration_min": 21.0,
       "hashtags_used": [],
       "session_id": "kona_twitter_20260312_0921",
+      "account": "kona_twitter"
+    },
+    {
+      "likes": 0,
+      "comments": 0,
+      "follows": 0,
+      "unfollows": 0,
+      "replies": 1,
+      "start_time": "11:18",
+      "end_time": "11:28",
+      "duration_min": 10.0,
+      "hashtags_used": [],
+      "session_id": "kona_twitter_20260312_1121",
       "account": "kona_twitter"
     }
   ]
