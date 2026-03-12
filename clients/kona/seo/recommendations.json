@@ -1,0 +1,77 @@
+{
+  "generatedAt": "2026-03-12T00:36:00-08:00",
+  "modelRequested": "opus46",
+  "modelUsed": "fallback-manual-from-data",
+  "notes": [
+    "Opus 4.6 sub-agent attempts were rate-limited (429).",
+    "Recommendations below are data-driven fallback from current GSC+GA4 dataset."
+  ],
+  "urgent": [
+    {
+      "type": "high-impression-zero-click",
+      "keyword": "夏威夷科纳咖啡风味",
+      "action": "Rewrite zh/about-kona-coffee title/meta description to match this exact intent and add an FAQ block targeting flavor profile questions.",
+      "impact": "high",
+      "effort": "low",
+      "reasoning": "500 impressions at avg position 5.2 with 0 clicks indicates a CTR/intent mismatch on a query already ranking on page 1."
+    },
+    {
+      "type": "high-impression-zero-click",
+      "keyword": "夏威夷科纳适合冲美式吗",
+      "action": "Add a dedicated Chinese subsection answering whether Kona coffee suits Americano brewing, with concise answer + internal links to menu and about pages.",
+      "impact": "high",
+      "effort": "low",
+      "reasoning": "378 impressions at position 6.1 with 0 clicks is an immediate conversion opportunity from informational search demand."
+    }
+  ],
+  "quickWins": [
+    {
+      "type": "position-4-10-snippet-optimization",
+      "keyword": "夏威夷科纳咖啡 介绍",
+      "action": "Add stronger first-paragraph summary and localized meta description in Simplified Chinese to improve SERP snippet relevance.",
+      "impact": "high",
+      "effort": "low",
+      "potentialGain": 18,
+      "reasoning": "314 impressions at position 8.1 can gain clicks quickly with snippet and intent alignment improvements."
+    },
+    {
+      "type": "position-4-10-brand-keyword",
+      "keyword": "kona coffee",
+      "action": "Tune EN homepage metadata and H1/H2 copy to include Waikiki + donut context to disambiguate from generic coffee queries.",
+      "impact": "medium",
+      "effort": "low",
+      "potentialGain": 8,
+      "reasoning": "31 impressions at position 5.6 with 0 clicks suggests SERP messaging is too generic and not compelling for local intent."
+    }
+  ],
+  "opportunities": [
+    {
+      "type": "multilingual-content-expansion",
+      "action": "Expand Chinese and Korean long-tail coffee education pages and cross-link to product/menu pages with language-specific CTAs.",
+      "impact": "high",
+      "effort": "medium",
+      "reasoning": "Most impressions are concentrated in zh/ko informational intents, but clicks are near zero; stronger journey design can convert this demand."
+    },
+    {
+      "type": "opening-date-consistency",
+      "action": "Ensure all public copy states grand opening as early March 2026 and avoid Feb 25 references in any SEO-visible content.",
+      "impact": "high",
+      "effort": "low",
+      "reasoning": "Date mismatch can reduce trust, create stale snippets, and hurt engagement from users checking opening status."
+    }
+  ],
+  "insights": [
+    {
+      "type": "impression-concentration",
+      "observation": "https://www.konacoffeedonut.com/zh/about-kona-coffee generated 1,205 impressions but 0 clicks.",
+      "suggestion": "Prioritize this page as the primary CTR recovery target before broad site-wide changes.",
+      "priority": "high"
+    },
+    {
+      "type": "brand-query-strength",
+      "observation": "Branded query 'kona coffee donut' shows strong performance (5 clicks, avg position 1.1).",
+      "suggestion": "Protect branded SERP assets and replicate the same clear value proposition on non-branded pages.",
+      "priority": "medium"
+    }
+  ]
+}
