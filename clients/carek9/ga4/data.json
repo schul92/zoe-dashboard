@@ -1,0 +1,93 @@
+{
+  "summary": {
+    "sessions": "400",
+    "users": "270",
+    "pageviews": "1242",
+    "bounceRate": "0.6175"
+  },
+  "top_pages": [
+    {
+      "path": "/",
+      "views": "524"
+    },
+    {
+      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "views": "105"
+    },
+    {
+      "path": "/collections/treat",
+      "views": "93"
+    },
+    {
+      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "views": "78"
+    },
+    {
+      "path": "/blogs/news",
+      "views": "42"
+    },
+    {
+      "path": "/pages/about-us",
+      "views": "36"
+    },
+    {
+      "path": "/collections/paw-care",
+      "views": "30"
+    },
+    {
+      "path": "/pages/carek9-x-human-canine-collaborative",
+      "views": "29"
+    },
+    {
+      "path": "/cart",
+      "views": "25"
+    },
+    {
+      "path": "/collections/food-topper",
+      "views": "24"
+    }
+  ],
+  "sources": [
+    {
+      "source": "(direct)",
+      "sessions": "276"
+    },
+    {
+      "source": "google",
+      "sessions": "58"
+    },
+    {
+      "source": "admin.shopify.com",
+      "sessions": "35"
+    },
+    {
+      "source": "(not set)",
+      "sessions": "11"
+    },
+    {
+      "source": "qrcodes.pro",
+      "sessions": "11"
+    },
+    {
+      "source": "eventsmanager.facebook.com",
+      "sessions": "2"
+    },
+    {
+      "source": "judge.me",
+      "sessions": "2"
+    },
+    {
+      "source": "l.instagram.com",
+      "sessions": "2"
+    },
+    {
+      "source": "shopify.com",
+      "sessions": "2"
+    },
+    {
+      "source": "Pinterest",
+      "sessions": "1"
+    }
+  ],
+  "updated_at": "2026-03-12"
+}
