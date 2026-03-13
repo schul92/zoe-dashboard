@@ -1,0 +1,137 @@
+{
+  "lastUpdated": "2026-03-12T12:00:36.931607Z",
+  "version": "v2-2026-03-12",
+  "sources": {
+    "brave_search": true,
+    "twitter": false,
+    "hackernews": true,
+    "reddit": false
+  },
+  "headlines": [
+    {
+      "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
+      "source": "Brave Search",
+      "url": "https://www.khon2.com/",
+      "category": "hawaii",
+      "description": "HONOLULU (KHON2) -- The National Weather Service is urging residents and visitors in the islands of Hawaii to prepare for a Kona storm expected to bring several days of heavy rains and thunderstorms. "
+    },
+    {
+      "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
+      "source": "Brave Search",
+      "url": "https://www.waikikigetdown.com/",
+      "category": "hawaii",
+      "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
+    },
+    {
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com/",
+      "category": "hawaii",
+      "description": "<strong>Multiple facilities, parks, and services are set to temporarily close as Hawaii prepares for stormy conditions</strong>."
+    },
+    {
+      "title": "On at HoMA | Honolulu Museum of Art",
+      "source": "Brave Search",
+      "url": "https://honolulumuseum.org/events",
+      "category": "hawaii",
+      "description": "Narrated by Hugh Dancy and featuring Claire Danes as the voice of Georgia O&#x27;Keeffe, this captivating new documentary delves into the life and legacy of the pioneering artist."
+    },
+    {
+      "title": "Oahu Events | This Week Hawaii",
+      "source": "Brave Search",
+      "url": "https://www.thisweekhawaii.com/event-calendar/oahu",
+      "category": "hawaii",
+      "description": "Discover the best places to eat, drink, and stay on Oahu, Maui, Kauai, and Big Island. Plan your Hawaii adventure now!"
+    },
+    {
+      "title": "TOP 10 BEST Events This Weekend in Honolulu, HI - Updated 2026 - Yelp",
+      "source": "Brave Search",
+      "url": "https://www.yelp.com/search?find_desc=Events+This+Weekend&find_loc=Honolulu,+HI",
+      "category": "hawaii",
+      "description": "&quot;I love to support local events like the Honolulu Night Market (HNM)! It is once a month, on...&quot; more ... Neal S. Blaisdell Exhibition Hall, WaikikiClosed until Friday \u00b7 &quot;Not as crowded"
+    },
+    {
+      "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
+      "source": "Brave Search",
+      "url": "https://dailycoffeenews.com/",
+      "category": "coffee",
+      "description": "E-News Subscribe \u00b7 Three Questions with Carolina Peralta of Florencia y Fortunata in Cusco, Peru \u00b7 Bentwood Explores a New Angle with the Grind-By-Weight H75 Grinder \u00b7 Cold Brew Research: Temperature "
+    },
+    {
+      "title": "Top Coffee Shop Industry Trends and Statistics in 2025",
+      "source": "Brave Search",
+      "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
+      "category": "coffee",
+      "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
+    },
+    {
+      "title": "News - World Coffee Portal",
+      "source": "Brave Search",
+      "url": "https://www.worldcoffeeportal.com/news/",
+      "category": "coffee",
+      "description": "Breaking coffee business news and analysis"
+    },
+    {
+      "title": "3D-Knitting: The Ultimate Guide",
+      "source": "Hacker News",
+      "url": "https://www.oliver-charles.com/pages/3d-knitting",
+      "category": "tech",
+      "stats": {
+        "points": 96,
+        "comments": 33
+      }
+    },
+    {
+      "title": "Dolphin Progress Release 2603",
+      "source": "Hacker News",
+      "url": "https://dolphin-emu.org/blog/2026/03/12/dolphin-progress-report-release-2603/",
+      "category": "tech",
+      "stats": {
+        "points": 31,
+        "comments": 0
+      }
+    },
+    {
+      "title": "Avoiding Trigonometry (2013)",
+      "source": "Hacker News",
+      "url": "https://iquilezles.org/articles/noacos/",
+      "category": "tech",
+      "stats": {
+        "points": 52,
+        "comments": 11
+      }
+    },
+    {
+      "title": "Show HN: s@: decentralized social networking over static sites",
+      "source": "Hacker News",
+      "url": "http://satproto.org/",
+      "category": "tech",
+      "stats": {
+        "points": 311,
+        "comments": 133
+      }
+    },
+    {
+      "title": "SBCL: A Sanely-Bootstrappable Common Lisp (2008) [pdf]",
+      "source": "Hacker News",
+      "url": "https://research.gold.ac.uk/id/eprint/2336/1/sbcl.pdf",
+      "category": "tech",
+      "stats": {
+        "points": 64,
+        "comments": 33
+      }
+    }
+  ],
+  "trending": [
+    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
+    "Top Coffee Shop Industry Trends and Statistics in ",
+    "Oahu Events | This Week Hawaii",
+    "On at HoMA | Honolulu Museum of Art",
+    "TOP 10 BEST Events This Weekend in Honolulu, HI - ",
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "Daily Coffee News by Roast Magazine - Business new",
+    "3D-Knitting: The Ultimate Guide",
+    "Hawaii News, Weather, Sports, Breaking News & Live",
+    "News - World Coffee Portal"
+  ]
+}
