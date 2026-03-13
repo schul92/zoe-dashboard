@@ -1,93 +1,144 @@
 {
-  "summary": {
-    "sessions": "400",
-    "users": "270",
-    "pageviews": "1242",
-    "bounceRate": "0.6175"
+  "collected": "2026-03-13T02:00:26.315608",
+  "period": "last_30_days",
+  "overall": {
+    "sessions": 384,
+    "users": 263,
+    "pageviews": 1081,
+    "bounceRate": 0.6328
   },
-  "top_pages": [
+  "topPages": [
     {
-      "path": "/",
-      "views": "524"
+      "page": "/",
+      "pageviews": 425,
+      "sessions": 239
     },
     {
-      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "views": "105"
+      "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "pageviews": 113,
+      "sessions": 43
     },
     {
-      "path": "/collections/treat",
-      "views": "93"
+      "page": "/collections/treat",
+      "pageviews": 85,
+      "sessions": 50
     },
     {
-      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "views": "78"
+      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "pageviews": 51,
+      "sessions": 28
     },
     {
-      "path": "/blogs/news",
-      "views": "42"
+      "page": "/blogs/news",
+      "pageviews": 42,
+      "sessions": 23
     },
     {
-      "path": "/pages/about-us",
-      "views": "36"
+      "page": "/pages/about-us",
+      "pageviews": 34,
+      "sessions": 30
     },
     {
-      "path": "/collections/paw-care",
-      "views": "30"
+      "page": "/collections/paw-care",
+      "pageviews": 30,
+      "sessions": 24
     },
     {
-      "path": "/pages/carek9-x-human-canine-collaborative",
-      "views": "29"
+      "page": "/pages/carek9-x-human-canine-collaborative",
+      "pageviews": 27,
+      "sessions": 26
     },
     {
-      "path": "/cart",
-      "views": "25"
+      "page": "/cart",
+      "pageviews": 23,
+      "sessions": 16
     },
     {
-      "path": "/collections/food-topper",
-      "views": "24"
+      "page": "/collections/food-topper",
+      "pageviews": 23,
+      "sessions": 20
+    },
+    {
+      "page": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
+      "pageviews": 18,
+      "sessions": 13
+    },
+    {
+      "page": "/collections/all",
+      "pageviews": 18,
+      "sessions": 14
+    },
+    {
+      "page": "/products/beef-wrapped-pumpkin",
+      "pageviews": 18,
+      "sessions": 16
+    },
+    {
+      "page": "/products/the-tab-bath-tablet",
+      "pageviews": 17,
+      "sessions": 14
+    },
+    {
+      "page": "/collections/bath-product",
+      "pageviews": 16,
+      "sessions": 14
+    },
+    {
+      "page": "/products/beef-training-treat",
+      "pageviews": 13,
+      "sessions": 13
+    },
+    {
+      "page": "/pages/contact-us",
+      "pageviews": 12,
+      "sessions": 10
+    },
+    {
+      "page": "/products/pars-mint-dental-cookies",
+      "pageviews": 11,
+      "sessions": 11
+    },
+    {
+      "page": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
+      "pageviews": 10,
+      "sessions": 6
+    },
+    {
+      "page": "/products/functional-dog-food-topper-for-digestive-support-immunity-health",
+      "pageviews": 9,
+      "sessions": 7
     }
   ],
-  "sources": [
+  "trafficSources": [
     {
-      "source": "(direct)",
-      "sessions": "276"
+      "channel": "Direct",
+      "sessions": 265,
+      "users": 205
     },
     {
-      "source": "google",
-      "sessions": "58"
+      "channel": "Organic Search",
+      "sessions": 54,
+      "users": 38
     },
     {
-      "source": "admin.shopify.com",
-      "sessions": "35"
+      "channel": "Organic Shopping",
+      "sessions": 35,
+      "users": 5
     },
     {
-      "source": "(not set)",
-      "sessions": "11"
+      "channel": "Referral",
+      "sessions": 15,
+      "users": 8
     },
     {
-      "source": "qrcodes.pro",
-      "sessions": "11"
+      "channel": "Unassigned",
+      "sessions": 12,
+      "users": 12
     },
     {
-      "source": "eventsmanager.facebook.com",
-      "sessions": "2"
-    },
-    {
-      "source": "judge.me",
-      "sessions": "2"
-    },
-    {
-      "source": "l.instagram.com",
-      "sessions": "2"
-    },
-    {
-      "source": "shopify.com",
-      "sessions": "2"
-    },
-    {
-      "source": "Pinterest",
-      "sessions": "1"
+      "channel": "Organic Social",
+      "sessions": 6,
+      "users": 5
     }
-  ],
-  "updated_at": "2026-03-12"
+  ]
 }
