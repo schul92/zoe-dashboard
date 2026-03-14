@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-12T12:00:36.931607Z",
-  "version": "v2-2026-03-12",
+  "lastUpdated": "2026-03-13T12:00:11.869613Z",
+  "version": "v2-2026-03-13",
   "sources": {
     "brave_search": true,
     "twitter": false,
@@ -9,11 +9,18 @@
   },
   "headlines": [
     {
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com/",
+      "category": "hawaii",
+      "description": "<strong>A magnitude 4.3 earthquake occurred Thursday afternoon off the P\u0101hala coast of the Hawaii Island</strong>."
+    },
+    {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
       "source": "Brave Search",
       "url": "https://www.khon2.com/",
       "category": "hawaii",
-      "description": "HONOLULU (KHON2) -- The National Weather Service is urging residents and visitors in the islands of Hawaii to prepare for a Kona storm expected to bring several days of heavy rains and thunderstorms. "
+      "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
       "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
@@ -21,13 +28,6 @@
       "url": "https://www.waikikigetdown.com/",
       "category": "hawaii",
       "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
-    },
-    {
-      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
-      "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com/",
-      "category": "hawaii",
-      "description": "<strong>Multiple facilities, parks, and services are set to temporarily close as Hawaii prepares for stormy conditions</strong>."
     },
     {
       "title": "On at HoMA | Honolulu Museum of Art",
@@ -65,73 +65,73 @@
       "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
-      "title": "News - World Coffee Portal",
+      "title": "Fresh Cup: Coffee Industry Stories and Insights",
       "source": "Brave Search",
-      "url": "https://www.worldcoffeeportal.com/news/",
+      "url": "https://freshcup.com/",
       "category": "coffee",
-      "description": "Breaking coffee business news and analysis"
+      "description": "Roaster and communicator Kat Melheim ... shaped its roasting business. ... Last year, <strong>dozens of coffee shops decided to jump in on a bizarre trend: serving coffee in literal buckets</strong>.."
     },
     {
-      "title": "3D-Knitting: The Ultimate Guide",
+      "title": "Bucketsquatting is (finally) dead",
       "source": "Hacker News",
-      "url": "https://www.oliver-charles.com/pages/3d-knitting",
+      "url": "https://onecloudplease.com/blog/bucketsquatting-is-finally-dead",
       "category": "tech",
       "stats": {
-        "points": 96,
-        "comments": 33
+        "points": 121,
+        "comments": 50
       }
     },
     {
-      "title": "Dolphin Progress Release 2603",
+      "title": "Willingness to look stupid",
       "source": "Hacker News",
-      "url": "https://dolphin-emu.org/blog/2026/03/12/dolphin-progress-report-release-2603/",
+      "url": "https://sharif.io/looking-stupid",
       "category": "tech",
       "stats": {
-        "points": 31,
-        "comments": 0
-      }
-    },
-    {
-      "title": "Avoiding Trigonometry (2013)",
-      "source": "Hacker News",
-      "url": "https://iquilezles.org/articles/noacos/",
-      "category": "tech",
-      "stats": {
-        "points": 52,
-        "comments": 11
-      }
-    },
-    {
-      "title": "Show HN: s@: decentralized social networking over static sites",
-      "source": "Hacker News",
-      "url": "http://satproto.org/",
-      "category": "tech",
-      "stats": {
-        "points": 311,
+        "points": 406,
         "comments": 133
       }
     },
     {
-      "title": "SBCL: A Sanely-Bootstrappable Common Lisp (2008) [pdf]",
+      "title": "I traced $2B in grants and 45 states' lobbying behind age\u2011verification bills",
       "source": "Hacker News",
-      "url": "https://research.gold.ac.uk/id/eprint/2336/1/sbcl.pdf",
+      "url": "https://old.reddit.com/r/linux/comments/1rshc1f/i_traced_2_billion_in_nonprofit_grants_and_45/",
       "category": "tech",
       "stats": {
-        "points": 64,
-        "comments": 33
+        "points": 153,
+        "comments": 34
+      }
+    },
+    {
+      "title": "Executing programs inside transformers with exponentially faster inference",
+      "source": "Hacker News",
+      "url": "https://www.percepta.ai/blog/can-llms-be-computers",
+      "category": "tech",
+      "stats": {
+        "points": 145,
+        "comments": 34
+      }
+    },
+    {
+      "title": "Malus \u2013 Clean Room as a Service",
+      "source": "Hacker News",
+      "url": "https://malus.sh",
+      "category": "tech",
+      "stats": {
+        "points": 1307,
+        "comments": 475
       }
     }
   ],
   "trending": [
-    "Waikiki Get Down.com - Honolulu, Hawaii Businesses",
-    "Top Coffee Shop Industry Trends and Statistics in ",
-    "Oahu Events | This Week Hawaii",
-    "On at HoMA | Honolulu Museum of Art",
     "TOP 10 BEST Events This Weekend in Honolulu, HI - ",
-    "Hawaii News Now - Breaking News, Latest News, Weat",
-    "Daily Coffee News by Roast Magazine - Business new",
-    "3D-Knitting: The Ultimate Guide",
+    "Fresh Cup: Coffee Industry Stories and Insights",
+    "Oahu Events | This Week Hawaii",
     "Hawaii News, Weather, Sports, Breaking News & Live",
-    "News - World Coffee Portal"
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "Bucketsquatting is (finally) dead",
+    "On at HoMA | Honolulu Museum of Art",
+    "Daily Coffee News by Roast Magazine - Business new",
+    "Top Coffee Shop Industry Trends and Statistics in ",
+    "Waikiki Get Down.com - Honolulu, Hawaii Businesses"
   ]
 }
