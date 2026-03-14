@@ -1,144 +1,120 @@
 {
-  "collected": "2026-03-13T02:00:26.315608",
   "period": "last_30_days",
+  "collected": "2026-03-14",
   "overall": {
-    "sessions": 384,
-    "users": 263,
-    "pageviews": 1081,
-    "bounceRate": 0.6328
+    "sessions": "366",
+    "totalUsers": "244",
+    "screenPageViews": "1056",
+    "bounceRate": "0.62295081967213117",
+    "averageSessionDuration": "193.64117346721309"
   },
   "topPages": [
     {
       "page": "/",
-      "pageviews": 425,
-      "sessions": 239
+      "views": "412",
+      "sessions": "229"
     },
     {
       "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 113,
-      "sessions": 43
+      "views": "113",
+      "sessions": "43"
     },
     {
       "page": "/collections/treat",
-      "pageviews": 85,
-      "sessions": 50
+      "views": "85",
+      "sessions": "49"
     },
     {
       "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": 51,
-      "sessions": 28
+      "views": "51",
+      "sessions": "28"
     },
     {
       "page": "/blogs/news",
-      "pageviews": 42,
-      "sessions": 23
+      "views": "42",
+      "sessions": "23"
     },
     {
       "page": "/pages/about-us",
-      "pageviews": 34,
-      "sessions": 30
+      "views": "33",
+      "sessions": "29"
     },
     {
       "page": "/collections/paw-care",
-      "pageviews": 30,
-      "sessions": 24
+      "views": "29",
+      "sessions": "23"
     },
     {
       "page": "/pages/carek9-x-human-canine-collaborative",
-      "pageviews": 27,
-      "sessions": 26
+      "views": "26",
+      "sessions": "25"
     },
     {
       "page": "/cart",
-      "pageviews": 23,
-      "sessions": 16
+      "views": "22",
+      "sessions": "15"
     },
     {
       "page": "/collections/food-topper",
-      "pageviews": 23,
-      "sessions": 20
+      "views": "22",
+      "sessions": "19"
     },
     {
       "page": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
-      "pageviews": 18,
-      "sessions": 13
-    },
-    {
-      "page": "/collections/all",
-      "pageviews": 18,
-      "sessions": 14
+      "views": "18",
+      "sessions": "13"
     },
     {
       "page": "/products/beef-wrapped-pumpkin",
-      "pageviews": 18,
-      "sessions": 16
+      "views": "18",
+      "sessions": "16"
     },
     {
       "page": "/products/the-tab-bath-tablet",
-      "pageviews": 17,
-      "sessions": 14
+      "views": "17",
+      "sessions": "14"
     },
     {
       "page": "/collections/bath-product",
-      "pageviews": 16,
-      "sessions": 14
+      "views": "16",
+      "sessions": "14"
     },
     {
-      "page": "/products/beef-training-treat",
-      "pageviews": 13,
-      "sessions": 13
-    },
-    {
-      "page": "/pages/contact-us",
-      "pageviews": 12,
-      "sessions": 10
-    },
-    {
-      "page": "/products/pars-mint-dental-cookies",
-      "pageviews": 11,
-      "sessions": 11
-    },
-    {
-      "page": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
-      "pageviews": 10,
-      "sessions": 6
-    },
-    {
-      "page": "/products/functional-dog-food-topper-for-digestive-support-immunity-health",
-      "pageviews": 9,
-      "sessions": 7
+      "page": "/collections/all",
+      "views": "15",
+      "sessions": "11"
     }
   ],
   "trafficSources": [
     {
       "channel": "Direct",
-      "sessions": 265,
-      "users": 205
+      "sessions": "249",
+      "users": "190"
     },
     {
       "channel": "Organic Search",
-      "sessions": 54,
-      "users": 38
+      "sessions": "52",
+      "users": "35"
     },
     {
       "channel": "Organic Shopping",
-      "sessions": 35,
-      "users": 5
+      "sessions": "35",
+      "users": "5"
     },
     {
       "channel": "Referral",
-      "sessions": 15,
-      "users": 8
+      "sessions": "16",
+      "users": "8"
     },
     {
       "channel": "Unassigned",
-      "sessions": 12,
-      "users": 12
+      "sessions": "7",
+      "users": "7"
     },
     {
       "channel": "Organic Social",
-      "sessions": 6,
-      "users": 5
+      "sessions": "6",
+      "users": "5"
     }
   ]
 }
