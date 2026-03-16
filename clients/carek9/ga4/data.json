@@ -1,120 +1,145 @@
 {
+  "collected": "2026-03-16T07:19:00-07:00",
   "period": "last_30_days",
-  "collected": "2026-03-14",
-  "overall": {
-    "sessions": "366",
+  "overview": {
+    "sessions": "356",
     "totalUsers": "244",
-    "screenPageViews": "1056",
-    "bounceRate": "0.62295081967213117",
-    "averageSessionDuration": "193.64117346721309"
+    "screenPageViews": "1005",
+    "bounceRate": "0.63764044943820219",
+    "averageSessionDuration": "191.48966729494379"
   },
   "topPages": [
     {
       "page": "/",
-      "views": "412",
-      "sessions": "229"
+      "pageviews": "383",
+      "sessions": "216"
     },
     {
       "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "views": "113",
-      "sessions": "43"
+      "pageviews": "103",
+      "sessions": "42"
     },
     {
       "page": "/collections/treat",
-      "views": "85",
-      "sessions": "49"
-    },
-    {
-      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "views": "51",
-      "sessions": "28"
+      "pageviews": "79",
+      "sessions": "47"
     },
     {
       "page": "/blogs/news",
-      "views": "42",
-      "sessions": "23"
+      "pageviews": "44",
+      "sessions": "25"
+    },
+    {
+      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "pageviews": "38",
+      "sessions": "24"
     },
     {
       "page": "/pages/about-us",
-      "views": "33",
+      "pageviews": "33",
       "sessions": "29"
     },
     {
       "page": "/collections/paw-care",
-      "views": "29",
-      "sessions": "23"
+      "pageviews": "26",
+      "sessions": "21"
+    },
+    {
+      "page": "/products/the-tab-bath-tablet",
+      "pageviews": "25",
+      "sessions": "20"
     },
     {
       "page": "/pages/carek9-x-human-canine-collaborative",
-      "views": "26",
-      "sessions": "25"
+      "pageviews": "24",
+      "sessions": "23"
+    },
+    {
+      "page": "/collections/bath-product",
+      "pageviews": "22",
+      "sessions": "16"
     },
     {
       "page": "/cart",
-      "views": "22",
+      "pageviews": "21",
       "sessions": "15"
     },
     {
       "page": "/collections/food-topper",
-      "views": "22",
-      "sessions": "19"
+      "pageviews": "21",
+      "sessions": "18"
     },
     {
       "page": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
-      "views": "18",
+      "pageviews": "18",
       "sessions": "13"
     },
     {
-      "page": "/products/beef-wrapped-pumpkin",
-      "views": "18",
-      "sessions": "16"
-    },
-    {
-      "page": "/products/the-tab-bath-tablet",
-      "views": "17",
-      "sessions": "14"
-    },
-    {
-      "page": "/collections/bath-product",
-      "views": "16",
-      "sessions": "14"
-    },
-    {
       "page": "/collections/all",
-      "views": "15",
+      "pageviews": "15",
       "sessions": "11"
+    },
+    {
+      "page": "/products/beef-wrapped-pumpkin",
+      "pageviews": "13",
+      "sessions": "13"
+    },
+    {
+      "page": "/pages/contact-us",
+      "pageviews": "11",
+      "sessions": "9"
+    },
+    {
+      "page": "/products/beef-training-treat",
+      "pageviews": "11",
+      "sessions": "11"
+    },
+    {
+      "page": "/products/pars-mint-dental-cookies",
+      "pageviews": "11",
+      "sessions": "11"
+    },
+    {
+      "page": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
+      "pageviews": "10",
+      "sessions": "6"
+    },
+    {
+      "page": "/products/functional-dog-food-topper-for-joint",
+      "pageviews": "10",
+      "sessions": "9"
     }
   ],
   "trafficSources": [
     {
       "channel": "Direct",
-      "sessions": "249",
-      "users": "190"
+      "sessions": "246",
+      "users": "189"
     },
     {
       "channel": "Organic Search",
-      "sessions": "52",
-      "users": "35"
+      "sessions": "48",
+      "users": "34"
     },
     {
       "channel": "Organic Shopping",
-      "sessions": "35",
+      "sessions": "33",
       "users": "5"
     },
     {
       "channel": "Referral",
-      "sessions": "16",
+      "sessions": "15",
       "users": "8"
     },
     {
       "channel": "Unassigned",
-      "sessions": "7",
-      "users": "7"
+      "sessions": "12",
+      "users": "12"
     },
     {
       "channel": "Organic Social",
-      "sessions": "6",
-      "users": "5"
+      "sessions": "5",
+      "users": "4"
     }
   ]
 }

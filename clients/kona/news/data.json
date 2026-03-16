@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-13T12:00:11.869613Z",
-  "version": "v2-2026-03-13",
+  "lastUpdated": "2026-03-16T14:16:23.607548Z",
+  "version": "v2-2026-03-16",
   "sources": {
     "brave_search": true,
     "twitter": false,
     "hackernews": true,
-    "reddit": false
+    "reddit": true
   },
   "headlines": [
     {
@@ -13,7 +13,14 @@
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com/",
       "category": "hawaii",
-      "description": "<strong>A magnitude 4.3 earthquake occurred Thursday afternoon off the P\u0101hala coast of the Hawaii Island</strong>."
+      "description": "13, 2026 at 5:11 PM HST| ... Cash ... Mar. 13, 2026 at 4:42 PM HST| ... <strong>Kalia Road in Waik\u012bk\u012b near the Outrigger Reef and Halekulani hotels flooded Friday amid relentless rain</strong>...."
+    },
+    {
+      "title": "News",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com/news/",
+      "category": "hawaii",
+      "description": "<strong>Kalia Road in Waik\u012bk\u012b near the Outrigger Reef and Halekulani hotels flooded Friday amid relentless rain</strong>."
     },
     {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
@@ -23,115 +30,164 @@
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
-      "title": "Waikiki Get Down.com - Honolulu, Hawaii Businesses, Restaurants, Events, News, Jobs",
+      "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
       "source": "Brave Search",
-      "url": "https://www.waikikigetdown.com/",
+      "url": "https://www.travelweekly.com/Hawaii-Travel/hawaii-new-for-visitors-2026",
       "category": "hawaii",
-      "description": "WHAT&#x27;S NEW - click on arrows to view our new news. Back to Top ... Read Waikiki Get Down - Honolulu, Hawaii Newsletter December 2025. Community website by MBC/Ernest Abrams. Call 808-739-9797 for"
+      "description": "In 2026, Hawaii will see <strong>new hotel openings, attractions, and restaurants, including direct flights from California, a new luau show on Kauai and chef Alan Wong&#x27;s restaurant on Oahu</stro"
     },
     {
-      "title": "On at HoMA | Honolulu Museum of Art",
+      "title": "Hawaii Tourism Trends 2026 Revealed: Where to Go, When to Visit, and How to Plan the Perfect Island Getaway - Travel And Tour World",
       "source": "Brave Search",
-      "url": "https://honolulumuseum.org/events",
+      "url": "https://www.travelandtourworld.com/news/article/hawaii-tourism-trends-2026-revealed-where-to-go-when-to-visit-and-how-to-plan-the-perfect-island-getaway/",
       "category": "hawaii",
-      "description": "Narrated by Hugh Dancy and featuring Claire Danes as the voice of Georgia O&#x27;Keeffe, this captivating new documentary delves into the life and legacy of the pioneering artist."
+      "description": "<strong>The first month of 2026 revealed a notable increase in tourism across the Hawaiian islands</strong>. More travellers arrived by air than in previous years, reflecting the continued appeal of H"
     },
     {
-      "title": "Oahu Events | This Week Hawaii",
+      "title": "Visitor Spending and Visitor Arrivals Increased in January 2026 | Department of Business, Economic Development & Tourism",
       "source": "Brave Search",
-      "url": "https://www.thisweekhawaii.com/event-calendar/oahu",
+      "url": "https://dbedt.hawaii.gov/blog/26-06/",
       "category": "hawaii",
-      "description": "Discover the best places to eat, drink, and stay on Oahu, Maui, Kauai, and Big Island. Plan your Hawaii adventure now!"
-    },
-    {
-      "title": "TOP 10 BEST Events This Weekend in Honolulu, HI - Updated 2026 - Yelp",
-      "source": "Brave Search",
-      "url": "https://www.yelp.com/search?find_desc=Events+This+Weekend&find_loc=Honolulu,+HI",
-      "category": "hawaii",
-      "description": "&quot;I love to support local events like the Honolulu Night Market (HNM)! It is once a month, on...&quot; more ... Neal S. Blaisdell Exhibition Hall, WaikikiClosed until Friday \u00b7 &quot;Not as crowded"
+      "description": "For January 2026, <strong>total arrivals (236,180 visitors, +16.7%) and total visitor spending ($664.7 million, +24.3%) increased compared to January 2025</strong>. Increased arrivals due to the Maui "
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
       "source": "Brave Search",
       "url": "https://dailycoffeenews.com/",
       "category": "coffee",
-      "description": "E-News Subscribe \u00b7 Three Questions with Carolina Peralta of Florencia y Fortunata in Cusco, Peru \u00b7 Bentwood Explores a New Angle with the Grind-By-Weight H75 Grinder \u00b7 Cold Brew Research: Temperature "
+      "description": "<strong>Daily Coffee News by Roast magazine</strong> provides essential only news and resources for specialty coffee professionals. Daily Coffee News covers coffee news from seed to cup, including sto"
     },
     {
-      "title": "Top Coffee Shop Industry Trends and Statistics in 2025",
+      "title": "News - World Coffee Portal",
+      "source": "Brave Search",
+      "url": "https://www.worldcoffeeportal.com/news/",
+      "category": "coffee",
+      "description": "Breaking coffee business news and analysis"
+    },
+    {
+      "title": "Top Coffee Shop Industry Trends and Statistics in 2026",
       "source": "Brave Search",
       "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
       "category": "coffee",
       "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
-      "title": "Fresh Cup: Coffee Industry Stories and Insights",
-      "source": "Brave Search",
-      "url": "https://freshcup.com/",
-      "category": "coffee",
-      "description": "Roaster and communicator Kat Melheim ... shaped its roasting business. ... Last year, <strong>dozens of coffee shops decided to jump in on a bizarre trend: serving coffee in literal buckets</strong>.."
+      "title": "[MOD] The Daily Question Thread",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rv5beq/mod_the_daily_question_thread/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Bucketsquatting is (finally) dead",
+      "title": "Why are good Capps at a restaurant so hard to come by?",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rundt4/why_are_good_capps_at_a_restaurant_so_hard_to/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I just don\u2019t learn my lesson. From the SF Bay Area but honestly this applies to lots of places across the country. </p> <p>I go to breakfast or brunch\u2014 I order a capp"
+    },
+    {
+      "title": "PSA: Don't be that person with the Costco return",
+      "source": "r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rujvbl/psa_dont_be_that_person_with_the_costco_return/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>If you bought supplies for the storm then you should hold on to them. Water, toilet paper, and that generator. Keep it. Don't be a dick and return it. While the emplo"
+    },
+    {
+      "title": "Storm took out all the dairy!",
+      "source": "r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1ruxu9d/storm_took_out_all_the_dairy/",
+      "category": "reddit",
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1ruxu9d/storm_took_out_all_the_dairy/\"> <img alt=\"Storm took out all the dairy!\" src=\"https://preview.redd.it/arzrxp5tmbpg1.jpeg?widt"
+    },
+    {
+      "title": "Short-Lived: Alaska Airlines Removes Hawaiian\u2019s Livery From All 4 Boeing 787-9s",
+      "source": "r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rupt33/shortlived_alaska_airlines_removes_hawaiians/",
+      "category": "reddit",
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rupt33/shortlived_alaska_airlines_removes_hawaiians/\"> <img alt=\"Short-Lived: Alaska Airlines Removes Hawaiian\u2019s Livery From All 4 B"
+    },
+    {
+      "title": "Getting hit by accessibility lawsuit sharks again - need advice on fighting back",
+      "source": "r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rufzw7/getting_hit_by_accessibility_lawsuit_sharks_again/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Running a small operation and dealing with these ambulance chasers for the second round now. Could really use some guidance from anyone who's managed to beat these pa"
+    },
+    {
+      "title": "Being an accountant for a small business in Europe sucks",
+      "source": "r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1ruvq5j/being_an_accountant_for_a_small_business_in/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019m an accountant for a small tech startup business in the UK where the accounting work for this is 40% of the job if not even less and the remainder is chasing down "
+    },
+    {
+      "title": "How do people get into the position to be able to build a 100+ person company in less than 10 years, and then sell it for $100+ million?",
+      "source": "r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1ruttcl/how_do_people_get_into_the_position_to_be_able_to/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Whenever I hear these stories it makes me think like there\u2019s something I don\u2019t know, and if I DID know it I\u2019d be able to do the same as these people\u2026from my perspecti"
+    },
+    {
+      "title": "Corruption erodes social trust more in democracies than in autocracies",
       "source": "Hacker News",
-      "url": "https://onecloudplease.com/blog/bucketsquatting-is-finally-dead",
+      "url": "https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2026.1779810/full",
       "category": "tech",
       "stats": {
-        "points": 121,
-        "comments": 50
+        "points": 94,
+        "comments": 30
       }
     },
     {
-      "title": "Willingness to look stupid",
+      "title": "Polymarket gamblers threaten to kill me over Iran missile story",
       "source": "Hacker News",
-      "url": "https://sharif.io/looking-stupid",
+      "url": "https://www.timesofisrael.com/gamblers-trying-to-win-a-bet-on-polymarket-are-vowing-to-kill-me-if-i-dont-rewrite-an-iran-missile-story/",
       "category": "tech",
       "stats": {
-        "points": 406,
-        "comments": 133
+        "points": 242,
+        "comments": 134
       }
     },
     {
-      "title": "I traced $2B in grants and 45 states' lobbying behind age\u2011verification bills",
+      "title": "Canada's bill C-22 mandates mass metadata surveillance",
       "source": "Hacker News",
-      "url": "https://old.reddit.com/r/linux/comments/1rshc1f/i_traced_2_billion_in_nonprofit_grants_and_45/",
+      "url": "https://www.michaelgeist.ca/2026/03/a-tale-of-two-bills-lawful-access-returns-with-changes-to-warrantless-access-but-dangerous-backdoor-surveillance-risks-remains/",
       "category": "tech",
       "stats": {
-        "points": 153,
-        "comments": 34
+        "points": 814,
+        "comments": 240
       }
     },
     {
-      "title": "Executing programs inside transformers with exponentially faster inference",
+      "title": "The \"are you sure?\" Problem: Why AI keeps changing its mind",
       "source": "Hacker News",
-      "url": "https://www.percepta.ai/blog/can-llms-be-computers",
+      "url": "https://www.randalolson.com/2026/02/07/the-are-you-sure-problem-why-your-ai-keeps-changing-its-mind/",
       "category": "tech",
       "stats": {
-        "points": 145,
-        "comments": 34
+        "points": 13,
+        "comments": 14
       }
     },
     {
-      "title": "Malus \u2013 Clean Room as a Service",
+      "title": "How I write software with LLMs",
       "source": "Hacker News",
-      "url": "https://malus.sh",
+      "url": "https://www.stavros.io/posts/how-i-write-software-with-llms/",
       "category": "tech",
       "stats": {
-        "points": 1307,
-        "comments": 475
+        "points": 299,
+        "comments": 243
       }
     }
   ],
   "trending": [
-    "TOP 10 BEST Events This Weekend in Honolulu, HI - ",
-    "Fresh Cup: Coffee Industry Stories and Insights",
-    "Oahu Events | This Week Hawaii",
-    "Hawaii News, Weather, Sports, Breaking News & Live",
-    "Hawaii News Now - Breaking News, Latest News, Weat",
-    "Bucketsquatting is (finally) dead",
-    "On at HoMA | Honolulu Museum of Art",
-    "Daily Coffee News by Roast Magazine - Business new",
+    "What's new for Hawaii visitors in 2026: Travel Wee",
+    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
+    "News - World Coffee Portal",
     "Top Coffee Shop Industry Trends and Statistics in ",
-    "Waikiki Get Down.com - Honolulu, Hawaii Businesses"
+    "Visitor Spending and Visitor Arrivals Increased in",
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "News",
+    "[MOD] The Daily Question Thread",
+    "Hawaii News, Weather, Sports, Breaking News & Live",
+    "Daily Coffee News by Roast Magazine - Business new"
   ]
 }
