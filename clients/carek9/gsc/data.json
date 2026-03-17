@@ -1,19 +1,19 @@
 {
-  "collected": "2026-03-16T07:19:00-07:00",
-  "period": "2026-02-14_to_2026-03-15",
+  "lastUpdated": "2026-03-17T09:00:00Z",
+  "period": "2026-02-15 to 2026-03-16",
   "queries": [
     {
       "query": "groom bathing tablets",
       "clicks": 3,
-      "impressions": 24,
-      "ctr": 0.125,
-      "position": 4.9
+      "impressions": 23,
+      "ctr": 13.04,
+      "position": 5.0
     },
     {
       "query": "foot powder for dogs",
       "clicks": 1,
       "impressions": 6,
-      "ctr": 0.1667,
+      "ctr": 16.67,
       "position": 3.5
     },
     {
@@ -61,9 +61,9 @@
     {
       "query": "bath tablet",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 4,
       "ctr": 0,
-      "position": 9.8
+      "position": 5
     },
     {
       "query": "bath tablets",

@@ -1,145 +1,120 @@
 {
-  "collected": "2026-03-16T07:19:00-07:00",
-  "period": "last_30_days",
+  "lastUpdated": "2026-03-17T09:00:00Z",
+  "period": "last30days",
   "overview": {
-    "sessions": "356",
-    "totalUsers": "244",
-    "screenPageViews": "1005",
-    "bounceRate": "0.63764044943820219",
-    "averageSessionDuration": "191.48966729494379"
+    "sessions": 352,
+    "users": 239,
+    "pageviews": 1000,
+    "bounceRate": 63.6,
+    "avgSessionDuration": 206.7
   },
   "topPages": [
     {
-      "page": "/",
-      "pageviews": "383",
-      "sessions": "216"
+      "path": "/",
+      "pageviews": 371,
+      "users": 136
     },
     {
-      "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": "103",
-      "sessions": "42"
+      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "pageviews": 107,
+      "users": 31
     },
     {
-      "page": "/collections/treat",
-      "pageviews": "79",
-      "sessions": "47"
+      "path": "/collections/treat",
+      "pageviews": 82,
+      "users": 34
     },
     {
-      "page": "/blogs/news",
-      "pageviews": "44",
-      "sessions": "25"
+      "path": "/blogs/news",
+      "pageviews": 45,
+      "users": 14
     },
     {
-      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": "38",
-      "sessions": "24"
+      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "pageviews": 38,
+      "users": 19
     },
     {
-      "page": "/pages/about-us",
-      "pageviews": "33",
-      "sessions": "29"
+      "path": "/pages/about-us",
+      "pageviews": 30,
+      "users": 18
     },
     {
-      "page": "/collections/paw-care",
-      "pageviews": "26",
-      "sessions": "21"
+      "path": "/collections/paw-care",
+      "pageviews": 26,
+      "users": 14
     },
     {
-      "page": "/products/the-tab-bath-tablet",
-      "pageviews": "25",
-      "sessions": "20"
+      "path": "/products/the-tab-bath-tablet",
+      "pageviews": 26,
+      "users": 20
     },
     {
-      "page": "/pages/carek9-x-human-canine-collaborative",
-      "pageviews": "24",
-      "sessions": "23"
+      "path": "/collections/bath-product",
+      "pageviews": 23,
+      "users": 13
     },
     {
-      "page": "/collections/bath-product",
-      "pageviews": "22",
-      "sessions": "16"
+      "path": "/cart",
+      "pageviews": 21,
+      "users": 15
     },
     {
-      "page": "/cart",
-      "pageviews": "21",
-      "sessions": "15"
+      "path": "/pages/carek9-x-human-canine-collaborative",
+      "pageviews": 21,
+      "users": 20
     },
     {
-      "page": "/collections/food-topper",
-      "pageviews": "21",
-      "sessions": "18"
+      "path": "/collections/food-topper",
+      "pageviews": 20,
+      "users": 14
     },
     {
-      "page": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
-      "pageviews": "18",
-      "sessions": "13"
+      "path": "/products/beef-wrapped-pumpkin",
+      "pageviews": 19,
+      "users": 10
     },
     {
-      "page": "/collections/all",
-      "pageviews": "15",
-      "sessions": "11"
+      "path": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
+      "pageviews": 18,
+      "users": 9
     },
     {
-      "page": "/products/beef-wrapped-pumpkin",
-      "pageviews": "13",
-      "sessions": "13"
-    },
-    {
-      "page": "/pages/contact-us",
-      "pageviews": "11",
-      "sessions": "9"
-    },
-    {
-      "page": "/products/beef-training-treat",
-      "pageviews": "11",
-      "sessions": "11"
-    },
-    {
-      "page": "/products/pars-mint-dental-cookies",
-      "pageviews": "11",
-      "sessions": "11"
-    },
-    {
-      "page": "/blogs/news/freshness-to-your-doorstep-the-evolution-of-carek9",
-      "pageviews": "10",
-      "sessions": "6"
-    },
-    {
-      "page": "/products/functional-dog-food-topper-for-joint",
-      "pageviews": "10",
-      "sessions": "9"
+      "path": "/collections/all",
+      "pageviews": 14,
+      "users": 8
     }
   ],
   "trafficSources": [
     {
       "channel": "Direct",
-      "sessions": "246",
-      "users": "189"
+      "sessions": 243,
+      "users": 187
     },
     {
       "channel": "Organic Search",
-      "sessions": "48",
-      "users": "34"
+      "sessions": 49,
+      "users": 34
     },
     {
       "channel": "Organic Shopping",
-      "sessions": "33",
-      "users": "5"
+      "sessions": 34,
+      "users": 5
     },
     {
       "channel": "Referral",
-      "sessions": "15",
-      "users": "8"
+      "sessions": 14,
+      "users": 7
     },
     {
       "channel": "Unassigned",
-      "sessions": "12",
-      "users": "12"
+      "sessions": 14,
+      "users": 14
     },
     {
       "channel": "Organic Social",
-      "sessions": "5",
-      "users": "4"
+      "sessions": 5,
+      "users": 4
     }
   ]
 }
