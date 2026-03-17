@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-17T01:23:24.990172Z",
+  "lastUpdated": "2026-03-17T02:25:20.303317Z",
   "dates": [
     "2026-02-15",
     "2026-02-16",
@@ -497,6 +497,19 @@
       "hashtags_used": [],
       "session_id": "kona_bluesky_20260316_1823",
       "account": "kona_bluesky"
+    },
+    {
+      "likes": 13,
+      "comments": 0,
+      "follows": 9,
+      "unfollows": 0,
+      "replies": 6,
+      "start_time": "19:15",
+      "end_time": "20:05",
+      "duration_min": 50.0,
+      "hashtags_used": [],
+      "session_id": "kona_twitter_20260316_1925",
+      "account": "kona_twitter"
     }
   ]
 }
