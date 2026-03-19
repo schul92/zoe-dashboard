@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-16T14:16:23.607548Z",
-  "version": "v2-2026-03-16",
+  "lastUpdated": "2026-03-18T12:00:12.713712Z",
+  "version": "v2-2026-03-18",
   "sources": {
     "brave_search": true,
     "twitter": false,
@@ -9,25 +9,25 @@
   },
   "headlines": [
     {
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
+      "source": "Brave Search",
+      "url": "https://www.kitv.com/",
+      "category": "hawaii",
+      "description": "Honolulu Festival parade and Waikiki fireworks cancelled due to storm, several changes to festival events"
+    },
+    {
+      "title": "Teen arrested as suspect in fatal Waikiki stabbing, Makiki attack | Honolulu Star-Advertiser",
+      "source": "Brave Search",
+      "url": "https://www.staradvertiser.com/2026/03/17/breaking-news/teen-arrested-in-fatal-waikiki-stabbing-makiki-attack/",
+      "category": "hawaii",
+      "description": "<strong>A 40-year-old man was killed in a stabbing at a Waikiki apartment Monday evening, and a 16-year-old suspect has been arrested on a murder charge</strong>, according to police."
+    },
+    {
       "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com/",
       "category": "hawaii",
-      "description": "13, 2026 at 5:11 PM HST| ... Cash ... Mar. 13, 2026 at 4:42 PM HST| ... <strong>Kalia Road in Waik\u012bk\u012b near the Outrigger Reef and Halekulani hotels flooded Friday amid relentless rain</strong>...."
-    },
-    {
-      "title": "News",
-      "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com/news/",
-      "category": "hawaii",
-      "description": "<strong>Kalia Road in Waik\u012bk\u012b near the Outrigger Reef and Halekulani hotels flooded Friday amid relentless rain</strong>."
-    },
-    {
-      "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
-      "source": "Brave Search",
-      "url": "https://www.khon2.com/",
-      "category": "hawaii",
-      "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
+      "description": "Hawaii News Now (KGMB/KHNL) is Hawaii&#x27;s source for breaking news, severe weather forecasts and traffic updates."
     },
     {
       "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
@@ -44,11 +44,11 @@
       "description": "<strong>The first month of 2026 revealed a notable increase in tourism across the Hawaiian islands</strong>. More travellers arrived by air than in previous years, reflecting the continued appeal of H"
     },
     {
-      "title": "Visitor Spending and Visitor Arrivals Increased in January 2026 | Department of Business, Economic Development & Tourism",
+      "title": "Hawaii climate cruise ship tax temporarily halted, but hotel levies go ahead | Euronews",
       "source": "Brave Search",
-      "url": "https://dbedt.hawaii.gov/blog/26-06/",
+      "url": "https://www.euronews.com/travel/2026/01/02/hawaii-climate-cruise-ship-tax-temporarily-halted-but-hotel-levies-go-ahead",
       "category": "hawaii",
-      "description": "For January 2026, <strong>total arrivals (236,180 visitors, +16.7%) and total visitor spending ($664.7 million, +24.3%) increased compared to January 2025</strong>. Increased arrivals due to the Maui "
+      "description": "<strong>A federal appeals court ruling on New Year&#x27;s Eve blocked Hawaii from enforcing a climate change tourist tax on cruise ship passengers</strong>, a levy that was set to go into effect at th"
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
@@ -72,122 +72,129 @@
       "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
+      "title": "[MOD] Inside Scoop - Ask the coffee industry",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rwaf12/mod_inside_scoop_ask_the_coffee_industry/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>This is a thread for the enthusiasts of <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> to connect with the industry insiders who post in this sub!</p> <p>Do "
+    },
+    {
       "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rv5beq/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rwznuv/mod_the_daily_question_thread/",
       "category": "reddit",
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Why are good Capps at a restaurant so hard to come by?",
+      "title": "Is it just me or is \"fermentation\" becoming a bigger buzzword than \"organic\"?",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rundt4/why_are_good_capps_at_a_restaurant_so_hard_to/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rwg5lx/is_it_just_me_or_is_fermentation_becoming_a/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I just don\u2019t learn my lesson. From the SF Bay Area but honestly this applies to lots of places across the country. </p> <p>I go to breakfast or brunch\u2014 I order a capp"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019ve officially reached the stage of coffee snobbery where I don\u2019t just ask about the roast date; I\u2019m out here investigating the specific strain of yeast used during "
     },
     {
-      "title": "PSA: Don't be that person with the Costco return",
+      "title": "You're Right, Hawai\u02bbi, It Has Been Raining Way More Than Usual",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rujvbl/psa_dont_be_that_person_with_the_costco_return/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rwgvmm/youre_right_hawai\u02bbi_it_has_been_raining_way_more/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>If you bought supplies for the storm then you should hold on to them. Water, toilet paper, and that generator. Keep it. Don't be a dick and return it. While the emplo"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rwgvmm/youre_right_hawai\u02bbi_it_has_been_raining_way_more/\"> <img alt=\"You're Right, Hawai\u02bbi, It Has Been Raining Way More Than Usual\""
     },
     {
-      "title": "Storm took out all the dairy!",
+      "title": "WEATHER UPDATE: Minor flooding impacts are possible from Thursday through the upcoming weekend as a second Kona storm rolls through",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1ruxu9d/storm_took_out_all_the_dairy/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rwqbjh/weather_update_minor_flooding_impacts_are/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1ruxu9d/storm_took_out_all_the_dairy/\"> <img alt=\"Storm took out all the dairy!\" src=\"https://preview.redd.it/arzrxp5tmbpg1.jpeg?widt"
+      "description": "<!-- SC_OFF --><div class=\"md\"><h1>Updates</h1> <hr /> <p><strong>As of 3:00 PM HST on Tuesday:</strong> </p> <ul> <li>Scattered light to moderate rain showers will continue through the end of the wee"
     },
     {
-      "title": "Short-Lived: Alaska Airlines Removes Hawaiian\u2019s Livery From All 4 Boeing 787-9s",
+      "title": "Hawaii DOH reports detection of Measles in wastewater samples on Kauai",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rupt33/shortlived_alaska_airlines_removes_hawaiians/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rwok39/hawaii_doh_reports_detection_of_measles_in/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rupt33/shortlived_alaska_airlines_removes_hawaiians/\"> <img alt=\"Short-Lived: Alaska Airlines Removes Hawaiian\u2019s Livery From All 4 B"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rwok39/hawaii_doh_reports_detection_of_measles_in/\"> <img alt=\"Hawaii DOH reports detection of Measles in wastewater samples on Kaua"
     },
     {
-      "title": "Getting hit by accessibility lawsuit sharks again - need advice on fighting back",
+      "title": "What do you do for health insurance being self employed?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rufzw7/getting_hit_by_accessibility_lawsuit_sharks_again/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rwk3cu/what_do_you_do_for_health_insurance_being_self/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Running a small operation and dealing with these ambulance chasers for the second round now. Could really use some guidance from anyone who's managed to beat these pa"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>My wife and I are both small business owners and we have been paying for a small group health insurance plan with our payroll company. We have 2 employees as well now"
     },
     {
-      "title": "Being an accountant for a small business in Europe sucks",
+      "title": "PSA: Bot bouncer installed and testing",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1ruvq5j/being_an_accountant_for_a_small_business_in/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rw90hf/psa_bot_bouncer_installed_and_testing/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019m an accountant for a small tech startup business in the UK where the accounting work for this is 40% of the job if not even less and the remainder is chasing down "
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi all</p> <p>As part of the ever continuing war on spam we're examining Botbouncer, a cross sub bot detection, reporting, and banning system. There are plusses and m"
     },
     {
-      "title": "How do people get into the position to be able to build a 100+ person company in less than 10 years, and then sell it for $100+ million?",
+      "title": "Tried to take things more seriously and now im just stuck",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1ruttcl/how_do_people_get_into_the_position_to_be_able_to/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rwgazz/tried_to_take_things_more_seriously_and_now_im/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Whenever I hear these stories it makes me think like there\u2019s something I don\u2019t know, and if I DID know it I\u2019d be able to do the same as these people\u2026from my perspecti"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>When I first started I would just pick up pieces here and they sold well without too much effort, recently I tried to be more serious doing things like tracking what "
     },
     {
-      "title": "Corruption erodes social trust more in democracies than in autocracies",
+      "title": "Rob Pike's 5 Rules of Programming",
       "source": "Hacker News",
-      "url": "https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2026.1779810/full",
+      "url": "https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html",
       "category": "tech",
       "stats": {
-        "points": 94,
-        "comments": 30
+        "points": 127,
+        "comments": 59
       }
     },
     {
-      "title": "Polymarket gamblers threaten to kill me over Iran missile story",
+      "title": "JPEG Compression",
       "source": "Hacker News",
-      "url": "https://www.timesofisrael.com/gamblers-trying-to-win-a-bet-on-polymarket-are-vowing-to-kill-me-if-i-dont-rewrite-an-iran-missile-story/",
+      "url": "https://www.sophielwang.com/blog/jpeg",
       "category": "tech",
       "stats": {
-        "points": 242,
-        "comments": 134
+        "points": 245,
+        "comments": 49
       }
     },
     {
-      "title": "Canada's bill C-22 mandates mass metadata surveillance",
+      "title": "Write up of my homebrew CPU build",
       "source": "Hacker News",
-      "url": "https://www.michaelgeist.ca/2026/03/a-tale-of-two-bills-lawful-access-returns-with-changes-to-warrantless-access-but-dangerous-backdoor-surveillance-risks-remains/",
+      "url": "https://willwarren.com/2026/03/12/building-my-own-cpu-part-3-from-simulation-to-hardware/",
       "category": "tech",
       "stats": {
-        "points": 814,
-        "comments": 240
+        "points": 92,
+        "comments": 13
       }
     },
     {
-      "title": "The \"are you sure?\" Problem: Why AI keeps changing its mind",
+      "title": "Nightingale \u2013 open-source karaoke app that works with any song on your computer",
       "source": "Hacker News",
-      "url": "https://www.randalolson.com/2026/02/07/the-are-you-sure-problem-why-your-ai-keeps-changing-its-mind/",
+      "url": "https://nightingale.cafe/",
       "category": "tech",
       "stats": {
-        "points": 13,
-        "comments": 14
+        "points": 80,
+        "comments": 11
       }
     },
     {
-      "title": "How I write software with LLMs",
+      "title": "Mistral AI Releases Forge",
       "source": "Hacker News",
-      "url": "https://www.stavros.io/posts/how-i-write-software-with-llms/",
+      "url": "https://mistral.ai/news/forge",
       "category": "tech",
       "stats": {
-        "points": 299,
-        "comments": 243
+        "points": 526,
+        "comments": 120
       }
     }
   ],
   "trending": [
-    "What's new for Hawaii visitors in 2026: Travel Wee",
-    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
-    "News - World Coffee Portal",
-    "Top Coffee Shop Industry Trends and Statistics in ",
-    "Visitor Spending and Visitor Arrivals Increased in",
     "Hawaii News Now - Breaking News, Latest News, Weat",
-    "News",
-    "[MOD] The Daily Question Thread",
-    "Hawaii News, Weather, Sports, Breaking News & Live",
-    "Daily Coffee News by Roast Magazine - Business new"
+    "KITV 4 Island News | Honolulu, HI News & Weather",
+    "Daily Coffee News by Roast Magazine - Business new",
+    "Teen arrested as suspect in fatal Waikiki stabbing",
+    "Top Coffee Shop Industry Trends and Statistics in ",
+    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
+    "What's new for Hawaii visitors in 2026: Travel Wee",
+    "[MOD] Inside Scoop - Ask the coffee industry",
+    "Hawaii climate cruise ship tax temporarily halted,",
+    "News - World Coffee Portal"
   ]
 }
