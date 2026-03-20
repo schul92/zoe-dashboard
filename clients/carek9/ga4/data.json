@@ -1,120 +1,90 @@
 {
-  "lastUpdated": "2026-03-17T09:00:00Z",
-  "period": "last30days",
   "overview": {
-    "sessions": 352,
-    "users": 239,
-    "pageviews": 1000,
-    "bounceRate": 63.6,
-    "avgSessionDuration": 206.7
+    "sessions": 357,
+    "users": 248,
+    "pageviews": 950,
+    "bounceRate": 0.6218487394957983,
+    "period": {
+      "start": "2026-02-18",
+      "end": "2026-03-20"
+    }
   },
-  "topPages": [
+  "top_pages": [
     {
-      "path": "/",
-      "pageviews": 371,
-      "users": 136
+      "page": "/",
+      "pageviews": 346,
+      "sessions": 215
     },
     {
-      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 107,
-      "users": 31
+      "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "pageviews": 103,
+      "sessions": 43
     },
     {
-      "path": "/collections/treat",
-      "pageviews": 82,
-      "users": 34
+      "page": "/collections/treat",
+      "pageviews": 77,
+      "sessions": 45
     },
     {
-      "path": "/blogs/news",
-      "pageviews": 45,
-      "users": 14
+      "page": "/blogs/news",
+      "pageviews": 36,
+      "sessions": 24
     },
     {
-      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": 38,
-      "users": 19
+      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "pageviews": 36,
+      "sessions": 23
     },
     {
-      "path": "/pages/about-us",
+      "page": "/pages/about-us",
       "pageviews": 30,
-      "users": 18
+      "sessions": 28
     },
     {
-      "path": "/collections/paw-care",
+      "page": "/products/the-tab-bath-tablet",
       "pageviews": 26,
-      "users": 14
+      "sessions": 21
     },
     {
-      "path": "/products/the-tab-bath-tablet",
-      "pageviews": 26,
-      "users": 20
+      "page": "/collections/paw-care",
+      "pageviews": 25,
+      "sessions": 20
     },
     {
-      "path": "/collections/bath-product",
+      "page": "/collections/bath-product",
       "pageviews": 23,
-      "users": 13
+      "sessions": 16
     },
     {
-      "path": "/cart",
-      "pageviews": 21,
-      "users": 15
-    },
-    {
-      "path": "/pages/carek9-x-human-canine-collaborative",
-      "pageviews": 21,
-      "users": 20
-    },
-    {
-      "path": "/collections/food-topper",
-      "pageviews": 20,
-      "users": 14
-    },
-    {
-      "path": "/products/beef-wrapped-pumpkin",
-      "pageviews": 19,
-      "users": 10
-    },
-    {
-      "path": "/blogs/news/best-hygiene-solution-dog-bath-tablet",
-      "pageviews": 18,
-      "users": 9
-    },
-    {
-      "path": "/collections/all",
-      "pageviews": 14,
-      "users": 8
+      "page": "/products/beef-wrapped-pumpkin",
+      "pageviews": 22,
+      "sessions": 18
     }
   ],
-  "trafficSources": [
+  "traffic_sources": [
     {
-      "channel": "Direct",
-      "sessions": 243,
-      "users": 187
+      "source": "Direct",
+      "sessions": 253
     },
     {
-      "channel": "Organic Search",
-      "sessions": 49,
-      "users": 34
+      "source": "Organic Search",
+      "sessions": 45
     },
     {
-      "channel": "Organic Shopping",
-      "sessions": 34,
-      "users": 5
+      "source": "Organic Shopping",
+      "sessions": 32
     },
     {
-      "channel": "Referral",
-      "sessions": 14,
-      "users": 7
+      "source": "Referral",
+      "sessions": 15
     },
     {
-      "channel": "Unassigned",
-      "sessions": 14,
-      "users": 14
+      "source": "Unassigned",
+      "sessions": 8
     },
     {
-      "channel": "Organic Social",
-      "sessions": 5,
-      "users": 4
+      "source": "Organic Social",
+      "sessions": 7
     }
   ]
 }
