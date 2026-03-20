@@ -1,55 +1,32 @@
 {
-  "generatedAt": "2026-03-14T00:30:00Z",
+  "generatedAt": "2026-03-20T00:30:00Z",
   "analyst": "sonnet-46",
-  "period": "2026-03-07 to 2026-03-13",
-  "urgentIssues": [],
-  "highlights": [
-    "Brand query 'kona coffee donut' at position 1 with 16.7% CTR — strong branded presence",
-    "67 unique queries discovered — search footprint growing",
-    "Chinese-language queries driving massive impressions (1,479 from zh/about-kona-coffee page alone)",
-    "Korean queries 'コナコーヒー' and '하와이 코나커피' ranking position 1 — excellent multilingual SEO",
-    "No Feb 25 references found on live site ✅"
+  "period": "2026-03-13 to 2026-03-19",
+  "urgentIssues": [
+    "🇨🇳 중국어 쿼리 3개 합계 1,466 impressions, 0 clicks — 즉시 meta tag 개선 필요",
+    "kona coffee (30 imps, pos 5.9, 0 clicks) — 브랜드 핵심 키워드 CTR 0%",
+    "코나커피/코나 커피 (49 imps, 0 clicks) — 한국어 유입 전환 실패"
   ],
-  "recommendations": [
-    {
-      "priority": "HIGH",
-      "category": "CTR Optimization",
-      "action": "Chinese about-kona-coffee page has 1,479 impressions but 0 clicks. Improve meta title/description for zh/about-kona-coffee to convert impressions to clicks. Current avg position 7 — add compelling CTAs in Chinese meta tags.",
-      "impact": "Even 1% CTR = ~15 new clicks/week from this single page"
-    },
-    {
-      "priority": "HIGH",
-      "category": "CTR Optimization",
-      "action": "夏威夷科纳咖啡风味 (494 impressions, pos 4.9, 0 clicks) and 夏威夷科纳适合冲美式吗 (578 impressions, pos 6.6, 0 clicks) — these Chinese queries are high-volume. Create targeted content or optimize existing pages for these exact queries.",
-      "impact": "1,072 combined impressions with 0 clicks — huge untapped opportunity"
-    },
-    {
-      "priority": "MEDIUM",
-      "category": "Content Gap",
-      "action": "High-intent local queries like 'donuts near me' (15 impressions, pos 8.1), 'coffee near me' (8 impressions, pos 28) ranking poorly. Strengthen local SEO with Google Business Profile optimization and local schema markup.",
-      "impact": "Improve 'near me' rankings before grand opening"
-    },
-    {
-      "priority": "MEDIUM",
-      "category": "Grand Opening",
-      "action": "Create dedicated grand opening landing page targeting 'new cafe waikiki 2026', 'waikiki donut shop opening' — no pages currently rank for opening-related queries.",
-      "impact": "Capture pre-opening search interest"
-    },
-    {
-      "priority": "MEDIUM",
-      "category": "Mobile",
-      "action": "Mobile drives 30.8% of clicks but only 12.9% of impressions — mobile users convert better. Ensure mobile experience is flawless for grand opening.",
-      "impact": "Mobile visitors are 5x more likely to click"
-    },
-    {
-      "priority": "LOW",
-      "category": "Menu Page",
-      "action": "Menu page at position 11.5 with 25 impressions, 0 clicks. Improve meta description to include specific items (mochi donuts, malasadas, Hawaiian bingsu).",
-      "impact": "Menu page is a key conversion page for food searches"
-    }
+  "highlights": [
+    "kona coffee donut: pos #1, CTR 42.9% — 브랜드 쿼리 최강",
+    "총 74개 unique queries, 1,937 impressions",
+    "중국/한국어 멀티링구얼 SEO 작동 중 (but 전환률 0%)",
+    "그랜드 오프닝 Early March 2026 — 현재 오픈 완료 또는 임박!"
+  ],
+  "quickWins": [
+    "kona coffee waikiki (pos 11.3, 12 imps) — meta desc 개선으로 top 5 목표",
+    "donuts near me (pos 8.2, 29 imps, 1 click) — local schema 강화",
+    "말라사다/말라사다 도넛 (9+4 imps) — 한국어 meta 개선",
+    "중국어 3대 쿼리 — /zh/about-kona-coffee 페이지 CTR 개선 시급"
+  ],
+  "opportunities": [
+    "grand opening waikiki 2026 — 전용 랜딩 페이지 없음, 생성 권장",
+    "Google Business Profile 완성도 체크 — near me 쿼리 순위 개선 핵심",
+    "모바일 CTR이 데스크탑 대비 4x — 모바일 UX 최우선"
   ],
   "febCheck": {
     "status": "CLEAR",
-    "details": "No Feb 25 references found on any live page"
-  }
+    "details": "라이브 사이트에서 Feb 25 언급 없음 ✅ — 개선됨!"
+  },
+  "openingStatus": "오픈 후 SEO 데이터 수집 중 — 실 방문객 데이터 곧 유입 예상"
 }
