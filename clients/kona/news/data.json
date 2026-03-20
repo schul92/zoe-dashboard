@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-18T12:00:12.713712Z",
-  "version": "v2-2026-03-18",
+  "lastUpdated": "2026-03-19T12:00:15.026442Z",
+  "version": "v2-2026-03-19",
   "sources": {
     "brave_search": true,
     "twitter": false,
@@ -9,25 +9,25 @@
   },
   "headlines": [
     {
-      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
-      "source": "Brave Search",
-      "url": "https://www.kitv.com/",
-      "category": "hawaii",
-      "description": "Honolulu Festival parade and Waikiki fireworks cancelled due to storm, several changes to festival events"
-    },
-    {
-      "title": "Teen arrested as suspect in fatal Waikiki stabbing, Makiki attack | Honolulu Star-Advertiser",
-      "source": "Brave Search",
-      "url": "https://www.staradvertiser.com/2026/03/17/breaking-news/teen-arrested-in-fatal-waikiki-stabbing-makiki-attack/",
-      "category": "hawaii",
-      "description": "<strong>A 40-year-old man was killed in a stabbing at a Waikiki apartment Monday evening, and a 16-year-old suspect has been arrested on a murder charge</strong>, according to police."
-    },
-    {
       "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com/",
       "category": "hawaii",
-      "description": "Hawaii News Now (KGMB/KHNL) is Hawaii&#x27;s source for breaking news, severe weather forecasts and traffic updates."
+      "description": "Hawaii\u2019s Plantation Village said the 65-year-old Bodhi tree was a gift from Waipahu High School\u2019s class of 1959. ... In Waikiki, <strong>some high-rise residents have been stuck with no elevator servi"
+    },
+    {
+      "title": "News",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com/news/",
+      "category": "hawaii",
+      "description": "... The heaviest rain is expected to favor leeward areas, and flash flooding remains a concern because the ground is already saturated. ... In Waikiki, <strong>some high-rise residents have been stuck"
+    },
+    {
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
+      "source": "Brave Search",
+      "url": "https://www.kitv.com/",
+      "category": "hawaii",
+      "description": "<strong>Honolulu Festival parade and Waikiki fireworks cancelled due to storm</strong>, several changes to festival events \u00b7 Kailua homes flooded with sewage after heavy storm \u00b7 Evacuation warning for"
     },
     {
       "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
@@ -44,11 +44,11 @@
       "description": "<strong>The first month of 2026 revealed a notable increase in tourism across the Hawaiian islands</strong>. More travellers arrived by air than in previous years, reflecting the continued appeal of H"
     },
     {
-      "title": "Hawaii climate cruise ship tax temporarily halted, but hotel levies go ahead | Euronews",
+      "title": "Visitor Spending and Visitor Arrivals Increased in January 2026 | Department of Business, Economic Development & Tourism",
       "source": "Brave Search",
-      "url": "https://www.euronews.com/travel/2026/01/02/hawaii-climate-cruise-ship-tax-temporarily-halted-but-hotel-levies-go-ahead",
+      "url": "https://dbedt.hawaii.gov/blog/26-06/",
       "category": "hawaii",
-      "description": "<strong>A federal appeals court ruling on New Year&#x27;s Eve blocked Hawaii from enforcing a climate change tourist tax on cruise ship passengers</strong>, a levy that was set to go into effect at th"
+      "description": "For January 2026, <strong>total arrivals (236,180 visitors, +16.7%) and total visitor spending ($664.7 million, +24.3%) increased compared to January 2025</strong>. Increased arrivals due to the Maui "
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
@@ -69,132 +69,118 @@
       "source": "Brave Search",
       "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
       "category": "coffee",
-      "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
-    },
-    {
-      "title": "[MOD] Inside Scoop - Ask the coffee industry",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rwaf12/mod_inside_scoop_ask_the_coffee_industry/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>This is a thread for the enthusiasts of <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> to connect with the industry insiders who post in this sub!</p> <p>Do "
+      "description": "It\u2019s two sides of the same coin: ... \u2014 so coffee shops have experimented with increasing their pay and benefits, which leads to higher labor costs. However, making peace with higher labor costs is wor"
     },
     {
       "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rwznuv/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rxwb88/mod_the_daily_question_thread/",
       "category": "reddit",
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Is it just me or is \"fermentation\" becoming a bigger buzzword than \"organic\"?",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rwg5lx/is_it_just_me_or_is_fermentation_becoming_a/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019ve officially reached the stage of coffee snobbery where I don\u2019t just ask about the roast date; I\u2019m out here investigating the specific strain of yeast used during "
-    },
-    {
-      "title": "You're Right, Hawai\u02bbi, It Has Been Raining Way More Than Usual",
+      "title": "The detail of Hawaiian featherwork from the British Museum- everything from the cordage, netting, to tying the bundles was done and crafted by hand. every feather was collected from birds that were caught and released. every item shown is over over 200 years old",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rwgvmm/youre_right_hawai\u02bbi_it_has_been_raining_way_more/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rxr6wn/the_detail_of_hawaiian_featherwork_from_the/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rwgvmm/youre_right_hawai\u02bbi_it_has_been_raining_way_more/\"> <img alt=\"You're Right, Hawai\u02bbi, It Has Been Raining Way More Than Usual\""
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rxr6wn/the_detail_of_hawaiian_featherwork_from_the/\"> <img alt=\"The detail of Hawaiian featherwork from the British Museum- everythi"
     },
     {
-      "title": "WEATHER UPDATE: Minor flooding impacts are possible from Thursday through the upcoming weekend as a second Kona storm rolls through",
+      "title": "Trump waives Jones Act for 60 days in effort to ease energy prices",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rwqbjh/weather_update_minor_flooding_impacts_are/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rx9f2p/trump_waives_jones_act_for_60_days_in_effort_to/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><h1>Updates</h1> <hr /> <p><strong>As of 3:00 PM HST on Tuesday:</strong> </p> <ul> <li>Scattered light to moderate rain showers will continue through the end of the wee"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rx9f2p/trump_waives_jones_act_for_60_days_in_effort_to/\"> <img alt=\"Trump waives Jones Act for 60 days in effort to ease energy pric"
     },
     {
-      "title": "Hawaii DOH reports detection of Measles in wastewater samples on Kauai",
+      "title": "I\u2019m 57, living in Korea, and I lost my dad today back in Hawaii. I never got to say goodbye, so I\u2019m sending him this...",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1rwok39/hawaii_doh_reports_detection_of_measles_in/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rx5vop/im_57_living_in_korea_and_i_lost_my_dad_today/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rwok39/hawaii_doh_reports_detection_of_measles_in/\"> <img alt=\"Hawaii DOH reports detection of Measles in wastewater samples on Kaua"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rx5vop/im_57_living_in_korea_and_i_lost_my_dad_today/\"> <img alt=\"I\u2019m 57, living in Korea, and I lost my dad today back in Hawaii. I"
     },
     {
-      "title": "What do you do for health insurance being self employed?",
+      "title": "Instagram boost likes vanish when I paused, feeling like cheated \ud83d\ude2d\ud83d\ude20\ud83d\ude29\ud83e\udd79\ud83e\udd14",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rwk3cu/what_do_you_do_for_health_insurance_being_self/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rxax7j/instagram_boost_likes_vanish_when_i_paused/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>My wife and I are both small business owners and we have been paying for a small group health insurance plan with our payroll company. We have 2 employees as well now"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>so I boosted a post. saw 438 likes. felt good.</p> <p>then opened the same post from my profile. &quot;be the first to like this.&quot;</p> <p>same post. zero likes.<"
     },
     {
-      "title": "PSA: Bot bouncer installed and testing",
+      "title": "Starting a Business \u2013 What\u2019s the Biggest Challenge You Faced?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rw90hf/psa_bot_bouncer_installed_and_testing/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rx2smf/starting_a_business_whats_the_biggest_challenge/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi all</p> <p>As part of the ever continuing war on spam we're examining Botbouncer, a cross sub bot detection, reporting, and banning system. There are plusses and m"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi everyone,</p> <p>I\u2019m curious to learn from real experiences here. For those who have started their own business what was the biggest problem you faced in the begin"
     },
     {
-      "title": "Tried to take things more seriously and now im just stuck",
+      "title": "Best business awards for local small businesses? Are there any that aren't just scams?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1rwgazz/tried_to_take_things_more_seriously_and_now_im/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rx2hwz/best_business_awards_for_local_small_businesses/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>When I first started I would just pick up pieces here and they sold well without too much effort, recently I tried to be more serious doing things like tracking what "
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>My wife and I own and operate a small HVAC company that we started a few years back. Recently, I've started getting emails for &quot;best of&quot; awards, stating tha"
     },
     {
-      "title": "Rob Pike's 5 Rules of Programming",
+      "title": "2% of ICML papers desk rejected because the authors used LLM in their reviews",
       "source": "Hacker News",
-      "url": "https://www.cs.unc.edu/~stotts/COMP590-059-f24/robsrules.html",
-      "category": "tech",
-      "stats": {
-        "points": 127,
-        "comments": 59
-      }
-    },
-    {
-      "title": "JPEG Compression",
-      "source": "Hacker News",
-      "url": "https://www.sophielwang.com/blog/jpeg",
-      "category": "tech",
-      "stats": {
-        "points": 245,
-        "comments": 49
-      }
-    },
-    {
-      "title": "Write up of my homebrew CPU build",
-      "source": "Hacker News",
-      "url": "https://willwarren.com/2026/03/12/building-my-own-cpu-part-3-from-simulation-to-hardware/",
+      "url": "https://blog.icml.cc/2026/03/18/on-violations-of-llm-review-policies/",
       "category": "tech",
       "stats": {
         "points": 92,
-        "comments": 13
+        "comments": 63
       }
     },
     {
-      "title": "Nightingale \u2013 open-source karaoke app that works with any song on your computer",
+      "title": "Conway's Game of Life, in real life",
       "source": "Hacker News",
-      "url": "https://nightingale.cafe/",
+      "url": "https://lcamtuf.substack.com/p/conways-game-of-life-in-real-life",
       "category": "tech",
       "stats": {
-        "points": 80,
-        "comments": 11
+        "points": 173,
+        "comments": 42
       }
     },
     {
-      "title": "Mistral AI Releases Forge",
+      "title": "Nvidia greenboost: transparently extend GPU VRAM using system RAM/NVMe",
       "source": "Hacker News",
-      "url": "https://mistral.ai/news/forge",
+      "url": "https://gitlab.com/IsolatedOctopi/nvidia_greenboost",
       "category": "tech",
       "stats": {
-        "points": 526,
-        "comments": 120
+        "points": 369,
+        "comments": 83
+      }
+    },
+    {
+      "title": "Denmark was reportedly preparing for full-scale war with the US over Greenland",
+      "source": "Hacker News",
+      "url": "https://bsky.app/profile/chriso-wiki.bsky.social/post/3mhfsau25uk2f",
+      "category": "tech",
+      "stats": {
+        "points": 13,
+        "comments": 3
+      }
+    },
+    {
+      "title": "Warranty Void If Regenerated",
+      "source": "Hacker News",
+      "url": "https://nearzero.software/p/warranty-void-if-regenerated",
+      "category": "tech",
+      "stats": {
+        "points": 379,
+        "comments": 230
       }
     }
   ],
   "trending": [
+    "News",
     "Hawaii News Now - Breaking News, Latest News, Weat",
+    "[MOD] The Daily Question Thread",
     "KITV 4 Island News | Honolulu, HI News & Weather",
-    "Daily Coffee News by Roast Magazine - Business new",
-    "Teen arrested as suspect in fatal Waikiki stabbing",
     "Top Coffee Shop Industry Trends and Statistics in ",
-    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
     "What's new for Hawaii visitors in 2026: Travel Wee",
-    "[MOD] Inside Scoop - Ask the coffee industry",
-    "Hawaii climate cruise ship tax temporarily halted,",
-    "News - World Coffee Portal"
+    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
+    "News - World Coffee Portal",
+    "Visitor Spending and Visitor Arrivals Increased in",
+    "Daily Coffee News by Roast Magazine - Business new"
   ]
 }
