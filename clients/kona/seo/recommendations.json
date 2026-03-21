@@ -1,32 +1,52 @@
 {
-  "generatedAt": "2026-03-20T00:30:00Z",
-  "analyst": "sonnet-46",
-  "period": "2026-03-13 to 2026-03-19",
-  "urgentIssues": [
-    "🇨🇳 중국어 쿼리 3개 합계 1,466 impressions, 0 clicks — 즉시 meta tag 개선 필요",
-    "kona coffee (30 imps, pos 5.9, 0 clicks) — 브랜드 핵심 키워드 CTR 0%",
-    "코나커피/코나 커피 (49 imps, 0 clicks) — 한국어 유입 전환 실패"
-  ],
-  "highlights": [
-    "kona coffee donut: pos #1, CTR 42.9% — 브랜드 쿼리 최강",
-    "총 74개 unique queries, 1,937 impressions",
-    "중국/한국어 멀티링구얼 SEO 작동 중 (but 전환률 0%)",
-    "그랜드 오프닝 Early March 2026 — 현재 오픈 완료 또는 임박!"
-  ],
-  "quickWins": [
-    "kona coffee waikiki (pos 11.3, 12 imps) — meta desc 개선으로 top 5 목표",
-    "donuts near me (pos 8.2, 29 imps, 1 click) — local schema 강화",
-    "말라사다/말라사다 도넛 (9+4 imps) — 한국어 meta 개선",
-    "중국어 3대 쿼리 — /zh/about-kona-coffee 페이지 CTR 개선 시급"
-  ],
-  "opportunities": [
-    "grand opening waikiki 2026 — 전용 랜딩 페이지 없음, 생성 권장",
-    "Google Business Profile 완성도 체크 — near me 쿼리 순위 개선 핵심",
-    "모바일 CTR이 데스크탑 대비 4x — 모바일 UX 최우선"
-  ],
-  "febCheck": {
-    "status": "CLEAR",
-    "details": "라이브 사이트에서 Feb 25 언급 없음 ✅ — 개선됨!"
+  "date": "2026-03-21",
+  "model": "claude-sonnet-4-6",
+  "summary": {
+    "totalClicks": 10,
+    "totalImpressions": 2223,
+    "avgPosition": 5.8,
+    "uniqueQueries": 79,
+    "ctr": "0.45%"
   },
-  "openingStatus": "오픈 후 SEO 데이터 수집 중 — 실 방문객 데이터 곧 유입 예상"
+  "keyFindings": [
+    {
+      "priority": "HIGH",
+      "finding": "Chinese-language queries dominate impressions (1,641 of 2,223 = 73.8%) with 0 clicks",
+      "queries": ["夏威夷科纳咖啡风味 (558 impr, pos 4.3)", "夏威夷科纳咖啡 介绍 (550 impr, pos 6.7)", "夏威夷科纳适合冲美式吗 (533 impr, pos 6.4)"],
+      "action": "These are informational coffee education queries from China/HK. CTR is 0% because content doesn't match intent. Consider: (1) adding Chinese landing page optimized for actual visitors, (2) or de-prioritize if traffic is non-converting."
+    },
+    {
+      "priority": "HIGH",
+      "finding": "Korean queries performing strongly — high positions, 0 clicks",
+      "queries": ["하와이 코나 커피 (pos 1.4, 21 impr)", "하와이 코나커피 (pos 1.7, 14 impr)", "코나커피 (pos 5.1, 34 impr)"],
+      "action": "Position 1-2 for Korean queries is excellent! CTR is 0% — check if /ko/ pages have proper meta titles and compelling descriptions. Korean tourists are key target — prioritize this."
+    },
+    {
+      "priority": "HIGH",
+      "finding": "Quick win: 'donuts near me' at pos 8.0 with 31 impressions, 1 click",
+      "action": "Push this to top 5. Optimize local SEO: ensure Google Business Profile is complete with 'donuts' category, add more donut-related content to homepage."
+    },
+    {
+      "priority": "MEDIUM",
+      "finding": "'kona coffee' at pos 6.0, 43 impressions, 0 clicks",
+      "action": "Should be top 3. This is a high-intent branded-adjacent term. Improve homepage H1 and meta description to include 'Kona Coffee' prominently."
+    },
+    {
+      "priority": "MEDIUM",
+      "finding": "GA4 shows 0 users/sessions — tracking may be broken",
+      "action": "Verify GA4 tag is firing correctly on konacoffeedonut.com. Check GTM or direct tag implementation."
+    }
+  ],
+  "openingDateCheck": "No 'Feb 25' or 'February' opening date found on website pages checked. Grand opening date appears clear.",
+  "topOpportunities": [
+    "Korean market: already ranking #1-2, fix CTR with better meta descriptions on /ko/ pages",
+    "'donuts near me' local intent: pos 8 → target pos 3-5 via Google Business optimization",
+    "'kona coffee waikiki' at pos 11.6: just outside top 10, one content push could move it in",
+    "Chinese informational traffic: 73% of impressions, 0% CTR — evaluate if worth converting"
+  ],
+  "geography": {
+    "USA": "4 clicks, 1841 impressions (82.8%)",
+    "Japan": "0 clicks, 51 impressions (2.3%)",
+    "Korea": "strong positions, included in USA/non-tracked?"
+  }
 }
