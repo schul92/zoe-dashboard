@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-21T11:12:35Z",
+  "lastUpdated": "2026-03-22T11:13:48Z",
   "accounts": {
     "kona_instagram": {
       "handle": "@konacoffeedonut",
       "client": "KONA",
       "platform": "Instagram",
-      "current": 161,
+      "current": 173,
       "history": [
         {
           "date": "2026-02-28",
@@ -74,6 +74,10 @@
         {
           "date": "2026-03-21",
           "count": 161
+        },
+        {
+          "date": "2026-03-22",
+          "count": 173
         }
       ]
     },
@@ -81,7 +85,7 @@
       "handle": "@konacoffeedonut",
       "client": "KONA",
       "platform": "X/Twitter",
-      "current": 103,
+      "current": 117,
       "history": [
         {
           "date": "2026-02-28",
@@ -146,6 +150,10 @@
         {
           "date": "2026-03-21",
           "count": 103
+        },
+        {
+          "date": "2026-03-22",
+          "count": 117
         }
       ]
     },
@@ -153,7 +161,7 @@
       "handle": "konacoffeedonut.bsky.social",
       "client": "KONA",
       "platform": "Bluesky",
-      "current": 73,
+      "current": 77,
       "history": [
         {
           "date": "2026-02-28",
@@ -234,6 +242,10 @@
         {
           "date": "2026-03-21",
           "count": 73
+        },
+        {
+          "date": "2026-03-22",
+          "count": 77
         }
       ]
     },
@@ -241,7 +253,7 @@
       "handle": "@zoelumos",
       "client": "ZOE",
       "platform": "Instagram",
-      "current": 33,
+      "current": 36,
       "history": [
         {
           "date": "2026-02-28",
@@ -310,6 +322,10 @@
         {
           "date": "2026-03-21",
           "count": 33
+        },
+        {
+          "date": "2026-03-22",
+          "count": 36
         }
       ]
     }
