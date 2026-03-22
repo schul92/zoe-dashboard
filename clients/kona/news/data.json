@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-20T12:00:12.495699Z",
-  "version": "v2-2026-03-20",
+  "lastUpdated": "2026-03-21T12:00:13.459555Z",
+  "version": "v2-2026-03-21",
   "sources": {
     "brave_search": true,
     "twitter": false,
@@ -9,18 +9,11 @@
   },
   "headlines": [
     {
-      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
       "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com/",
+      "url": "https://www.kitv.com/",
       "category": "hawaii",
-      "description": "The Hawaii Department of Transportation said the makai/southbound lane will be closed for about 600 feet halfway between the Waimea Bay parking lot and \u2018Iliohu Way starting 4 a.m."
-    },
-    {
-      "title": "News",
-      "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com/news/",
-      "category": "hawaii",
-      "description": "Hawaii\u2019s Plantation Village said ... Mar. 17, 2026 at 5:17 PM HST| ... In Waikiki, <strong>some high-rise residents have been stuck with no elevator service for four days</strong>...."
+      "description": "Severe Kona low storm impacts Hawaii with school closures, shelters, and more \u00b7 Friday Weather Alert Day | Catastrophic flooding hits northern Oahu today \u00b7 Flash Flood evacuation order for Waialua and"
     },
     {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
@@ -28,6 +21,13 @@
       "url": "https://www.khon2.com/",
       "category": "hawaii",
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
+    },
+    {
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com/",
+      "category": "hawaii",
+      "description": "For safety reasons, <strong>Hawaiian Electric has turned off power to about 4,100 customers on the North Shore of Oahu</strong>."
     },
     {
       "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
@@ -44,18 +44,25 @@
       "description": "<strong>The first month of 2026 revealed a notable increase in tourism across the Hawaiian islands</strong>. More travellers arrived by air than in previous years, reflecting the continued appeal of H"
     },
     {
-      "title": "Visitor Spending and Visitor Arrivals Increased in January 2026 | Department of Business, Economic Development & Tourism",
+      "title": "A downturn for Hawaii tourism: Travel Weekly",
       "source": "Brave Search",
-      "url": "https://dbedt.hawaii.gov/blog/26-06/",
+      "url": "https://www.travelweekly.com/Hawaii-Travel/Insights/downturn-for-hawaii-tourism-2026",
       "category": "hawaii",
-      "description": "For January 2026, <strong>total arrivals (236,180 visitors, +16.7%) and total visitor spending ($664.7 million, +24.3%) increased compared to January 2025</strong>. Increased arrivals due to the Maui "
+      "description": "&quot;The near-term picture for Hawaii tourism remains poor,&quot; the report continued. Looking ahead, it said <strong>visitor arrivals and the average daily census are expected to decline in 2026 be"
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
       "source": "Brave Search",
       "url": "https://dailycoffeenews.com/",
       "category": "coffee",
-      "description": "<strong>Daily Coffee News by Roast magazine</strong> provides essential only news and resources for specialty coffee professionals. Daily Coffee News covers coffee news from seed to cup, including sto"
+      "description": "With one shop newly relocated and a second cafe now open, Necessity Coffee is asserting itself as a must-visit brand north of San Diego. In January the company reopened in\u2026 \u00b7 &gt; Industry | Daily Cof"
+    },
+    {
+      "title": "Coffee News Recap, 20 Mar: ICO reports a 10% drop in coffee prices for Feb, BUNN acquired by Ali Group & other stories - Perfect Daily Grind",
+      "source": "Brave Search",
+      "url": "https://perfectdailygrind.com/2026/03/coffee-news-recap-20-march-2026/",
+      "category": "coffee",
+      "description": "(Orange, Massachusetts, US) Fri, 20 Mar \u2013 <strong>Cocatrel reaches 9,000 members after 8% growth in 2025</strong>. Despite a 9.7% drop in the regional arabica harvest, the cooperative achieved its thi"
     },
     {
       "title": "News - World Coffee Portal",
@@ -65,122 +72,122 @@
       "description": "Breaking coffee business news and analysis"
     },
     {
-      "title": "Top Coffee Shop Industry Trends and Statistics in 2026",
-      "source": "Brave Search",
-      "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
-      "category": "coffee",
-      "description": "It\u2019s two sides of the same coin: ... \u2014 so coffee shops have experimented with increasing their pay and benefits, which leads to higher labor costs. However, making peace with higher labor costs is wor"
+      "title": "[MOD] What have you been brewing this week?/ Coffee bean recommendations",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rz29pv/mod_what_have_you_been_brewing_this_week_coffee/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hey everyone!</p> <p>Welcome back to the weekly <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> thread where you can share what you are brewing or ask for bea"
     },
     {
       "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1rys6j3/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1rzno57/mod_the_daily_question_thread/",
       "category": "reddit",
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Costco advances $82M plans for future Hawaii distribution center - Pacific Business News",
+      "title": "Didn\u2019t wanna sleep anyway",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1ry9paj/costco_advances_82m_plans_for_future_hawaii/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1ryyur1/didnt_wanna_sleep_anyway/",
       "category": "reddit",
-      "description": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/SugarDaddyDelight\"> /u/SugarDaddyDelight </a> <br /> <span><a href=\"https://www.bizjournals.com/pacific/news/2026/03/18/costco-hoopili-dis"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1ryyur1/didnt_wanna_sleep_anyway/\"> <img alt=\"Didn\u2019t wanna sleep anyway\" src=\"https://preview.redd.it/qhrhqmggu7qg1.jpeg?width=640&am"
     },
     {
-      "title": "Chuck Norris hospitalized in Hawaii: report",
+      "title": "Wahiawa Dam and Haleiwa / Waialua evacuation 3/20",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1ryfsnj/chuck_norris_hospitalized_in_hawaii_report/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rz6esa/wahiawa_dam_and_haleiwa_waialua_evacuation_320/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1ryfsnj/chuck_norris_hospitalized_in_hawaii_report/\"> <img alt=\"Chuck Norris hospitalized in Hawaii: report\" src=\"https://external-pr"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>As per emergency news, Wahiawa Dam on the island of Oahu is at imminent risk of breach.</p> <p>All areas in Haleiwa and Wailaua are to evacuate. The evacuation zone i"
     },
     {
-      "title": "Home was damaged during the Kona low storm but it doesn\u2019t look like it can be covered by insurance. What would be the next best option?",
+      "title": "\u2018We\u2019re Screwed\u2019: Dole Did Little To Fix Dangerous Wahiaw\u0101 Dam",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1ryg6ce/home_was_damaged_during_the_kona_low_storm_but_it/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1rz2nzz/were_screwed_dole_did_little_to_fix_dangerous/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Sorry if this is the wrong place but figured since we\u2019re in Hawaii (obviously) this wouldn\u2019t be too off either.</p> <p>So we had some flooding that made its way into "
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1rz2nzz/were_screwed_dole_did_little_to_fix_dangerous/\"> <img alt=\"\u2018We\u2019re Screwed\u2019: Dole Did Little To Fix Dangerous Wahiaw\u0101 Dam\" src"
     },
     {
-      "title": "Got a legal threat letter for my bakery website last month. Want to share what I learned in case it helps anyone.",
+      "title": "Anyone else deliberately staying small and not chasing scale?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1ryt49l/got_a_legal_threat_letter_for_my_bakery_website/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rz1ykh/anyone_else_deliberately_staying_small_and_not/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>So this was a rough month.</p> <p>I got a letter from a law firm saying my bakery website violated the Americans with Disabilities Act and they were preparing to file"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Met up with a mate last week. He raised funding, hired 30 people, got the office, the whole thing, which is really good for him and I\u2019m glad for him! </p> <p>But he w"
     },
     {
-      "title": "Anyone else sick of these Family Office Emails?",
+      "title": "Partner failed to get funding after signing a contract to buy me out. Best way to proceed?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1ry33r9/anyone_else_sick_of_these_family_office_emails/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1rz62qk/partner_failed_to_get_funding_after_signing_a/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Dear Whoever, </p> <p>I thought I'd touch base regarding my previous message about the 2 to 35 million-dollar capital injection into your business alongside our famil"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>We have a 50/50 partnership, and have been in business for about five years. For the last three, we have not grown. It\u2019s primarily an e-commerce business with an emph"
     },
     {
-      "title": "What\u2019s the most underrated skill for entrepreneurs?",
+      "title": "Buy the small town Inn?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1ry8b71/whats_the_most_underrated_skill_for_entrepreneurs/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1ryykz7/buy_the_small_town_inn/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>People often talk about skills like:</p> <p>\u2022 marketing<br /> \u2022 sales<br /> \u2022 networking<br /> \u2022 leadership</p> <p>But sometimes the most powerful skills are the ones"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>My husband and I have been presented with an opportunity to buy a small town Inn! The building itself is registered with the National Register of Historic Places. The"
     },
     {
-      "title": "ArXiv Declares Independence from Cornell",
+      "title": "OpenCode \u2013 Open source AI coding agent",
       "source": "Hacker News",
-      "url": "https://www.science.org/content/article/arxiv-pioneering-preprint-server-declares-independence-cornell",
+      "url": "https://opencode.ai/",
       "category": "tech",
       "stats": {
-        "points": 372,
-        "comments": 110
+        "points": 873,
+        "comments": 400
       }
     },
     {
-      "title": "AI (2014)",
+      "title": "Mamba-3",
       "source": "Hacker News",
-      "url": "https://blog.samaltman.com/ai",
+      "url": "https://www.together.ai/blog/mamba-3",
       "category": "tech",
       "stats": {
-        "points": 41,
-        "comments": 23
+        "points": 145,
+        "comments": 21
       }
     },
     {
-      "title": "3M's PFAS exit killed the supply chain for two-phase immersion cooling in DCs",
+      "title": "Atuin v18.13 \u2013 better search, a PTY proxy, and AI for your shell",
       "source": "Hacker News",
-      "url": "https://thecoolingreport.com/intel.html",
+      "url": "https://blog.atuin.sh/atuin-v18-13/",
       "category": "tech",
       "stats": {
-        "points": 15,
-        "comments": 4
+        "points": 26,
+        "comments": 2
       }
     },
     {
-      "title": "Flash-KMeans: Fast and Memory-Efficient Exact K-Means",
+      "title": "FFmpeg 101 (2024)",
       "source": "Hacker News",
-      "url": "https://arxiv.org/abs/2603.09229",
+      "url": "https://blogs.igalia.com/llepage/ffmpeg-101/",
       "category": "tech",
       "stats": {
-        "points": 41,
-        "comments": 3
+        "points": 105,
+        "comments": 1
       }
     },
     {
-      "title": "Google details new 24-hour process to sideload unverified Android apps",
+      "title": "A Japanese glossary of chopsticks faux pas (2022)",
       "source": "Hacker News",
-      "url": "https://arstechnica.com/gadgets/2026/03/google-details-new-24-hour-process-to-sideload-unverified-android-apps/",
+      "url": "https://www.nippon.com/en/japan-data/h01362/",
       "category": "tech",
       "stats": {
-        "points": 902,
-        "comments": 971
+        "points": 291,
+        "comments": 235
       }
     }
   ],
   "trending": [
-    "Daily Coffee News by Roast Magazine - Business new",
-    "Hawaii News Now - Breaking News, Latest News, Weat",
-    "News",
-    "Hawaii News, Weather, Sports, Breaking News & Live",
-    "What's new for Hawaii visitors in 2026: Travel Wee",
-    "Top Coffee Shop Industry Trends and Statistics in ",
-    "News - World Coffee Portal",
     "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
-    "Visitor Spending and Visitor Arrivals Increased in",
-    "[MOD] The Daily Question Thread"
+    "Hawaii News, Weather, Sports, Breaking News & Live",
+    "A downturn for Hawaii tourism: Travel Weekly",
+    "Coffee News Recap, 20 Mar: ICO reports a 10% drop ",
+    "What's new for Hawaii visitors in 2026: Travel Wee",
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "Daily Coffee News by Roast Magazine - Business new",
+    "KITV 4 Island News | Honolulu, HI News & Weather",
+    "[MOD] What have you been brewing this week?/ Coffe",
+    "News - World Coffee Portal"
   ]
 }

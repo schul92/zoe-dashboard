@@ -1,25 +1,30 @@
 {
+  "period": {
+    "start": "2026-02-19",
+    "end": "2026-03-21"
+  },
+  "site": "https://carek9.com/",
   "queries": [
     {
       "query": "carek9",
       "clicks": 3,
       "impressions": 7,
-      "ctr": 0.42857142857142855,
-      "position": 12.714285714285714
+      "ctr": 42.86,
+      "position": 12.7
     },
     {
       "query": "groom bathing tablets",
       "clicks": 3,
-      "impressions": 22,
-      "ctr": 0.13636363636363635,
-      "position": 5.409090909090909
+      "impressions": 21,
+      "ctr": 14.29,
+      "position": 5.5
     },
     {
       "query": "foot powder for dogs",
       "clicks": 1,
-      "impressions": 7,
-      "ctr": 0.14285714285714285,
-      "position": 3.142857142857143
+      "impressions": 6,
+      "ctr": 16.67,
+      "position": 3.5
     },
     {
       "query": "4-in-1 dog paw washer",
@@ -31,9 +36,9 @@
     {
       "query": "all natural beef dog treats",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 5,
       "ctr": 0,
-      "position": 61.25
+      "position": 60.4
     },
     {
       "query": "antibacterial wash for dog paws",
@@ -66,9 +71,9 @@
     {
       "query": "bath tablets",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 6.5
+      "position": 1
     },
     {
       "query": "bathing tablet",
@@ -87,9 +92,9 @@
     {
       "query": "beef dog training treats",
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 9,
       "ctr": 0,
-      "position": 35.57142857142857
+      "position": 34.6
     },
     {
       "query": "beef flavored training dog treats",
@@ -108,23 +113,23 @@
     {
       "query": "beef training treats",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 11
+      "position": 13
     },
     {
       "query": "best dog paw cleaner",
       "clicks": 0,
-      "impressions": 228,
+      "impressions": 233,
       "ctr": 0,
-      "position": 5.144736842105263
+      "position": 4.8
     },
     {
       "query": "best dog paw cleaners",
       "clicks": 0,
       "impressions": 13,
       "ctr": 0,
-      "position": 3.1538461538461537
+      "position": 3.2
     },
     {
       "query": "best dog wipes for paws",
@@ -150,14 +155,14 @@
     {
       "query": "best paw cleaner",
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 11,
       "ctr": 0,
-      "position": 4.2
+      "position": 3.9
     },
     {
       "query": "best paw cleaner for dogs",
       "clicks": 0,
-      "impressions": 75,
+      "impressions": 76,
       "ctr": 0,
       "position": 1.4
     },
@@ -173,11 +178,7 @@
       "clicks": 0,
       "impressions": 6,
       "ctr": 0,
-      "position": 16.833333333333336
+      "position": 16.8
     }
-  ],
-  "period": {
-    "start": "2026-02-18",
-    "end": "2026-03-20"
-  }
+  ]
 }

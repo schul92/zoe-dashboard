@@ -1,89 +1,87 @@
 {
-  "overview": {
-    "sessions": 357,
-    "users": 248,
-    "pageviews": 950,
-    "bounceRate": 0.6218487394957983,
-    "period": {
-      "start": "2026-02-18",
-      "end": "2026-03-20"
-    }
+  "period": {
+    "start": "2026-02-19",
+    "end": "2026-03-21"
   },
-  "top_pages": [
+  "sessions": 355,
+  "users": 248,
+  "pageviews": 971,
+  "bounceRate": 61.97,
+  "topPages": [
     {
       "page": "/",
-      "pageviews": 346,
-      "sessions": 215
-    },
-    {
-      "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 103,
-      "sessions": 43
+      "sessions": 211,
+      "pageviews": 344
     },
     {
       "page": "/collections/treat",
-      "pageviews": 77,
-      "sessions": 45
+      "sessions": 46,
+      "pageviews": 78
     },
     {
-      "page": "/blogs/news",
-      "pageviews": 36,
-      "sessions": 24
-    },
-    {
-      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": 36,
-      "sessions": 23
+      "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+      "sessions": 43,
+      "pageviews": 110
     },
     {
       "page": "/pages/about-us",
-      "pageviews": 30,
-      "sessions": 28
+      "sessions": 27,
+      "pageviews": 30
+    },
+    {
+      "page": "/blogs/news",
+      "sessions": 25,
+      "pageviews": 37
     },
     {
       "page": "/products/the-tab-bath-tablet",
-      "pageviews": 26,
-      "sessions": 21
+      "sessions": 23,
+      "pageviews": 32
+    },
+    {
+      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "sessions": 22,
+      "pageviews": 35
     },
     {
       "page": "/collections/paw-care",
-      "pageviews": 25,
-      "sessions": 20
-    },
-    {
-      "page": "/collections/bath-product",
-      "pageviews": 23,
-      "sessions": 16
+      "sessions": 19,
+      "pageviews": 25
     },
     {
       "page": "/products/beef-wrapped-pumpkin",
-      "pageviews": 22,
-      "sessions": 18
+      "sessions": 19,
+      "pageviews": 22
+    },
+    {
+      "page": "/collections/bath-product",
+      "sessions": 17,
+      "pageviews": 24
     }
   ],
-  "traffic_sources": [
+  "trafficSources": [
     {
-      "source": "Direct",
-      "sessions": 253
+      "channel": "Direct",
+      "sessions": 252
     },
     {
-      "source": "Organic Search",
-      "sessions": 45
+      "channel": "Organic Search",
+      "sessions": 46
     },
     {
-      "source": "Organic Shopping",
-      "sessions": 32
+      "channel": "Organic Shopping",
+      "sessions": 30
     },
     {
-      "source": "Referral",
+      "channel": "Referral",
       "sessions": 15
     },
     {
-      "source": "Unassigned",
+      "channel": "Unassigned",
       "sessions": 8
     },
     {
-      "source": "Organic Social",
+      "channel": "Organic Social",
       "sessions": 7
     }
   ]
