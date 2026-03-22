@@ -1,76 +1,77 @@
 {
-  "period": {
-    "start": "2026-02-19",
-    "end": "2026-03-21"
+  "collected_at": "2026-03-22T02:00:34.843531",
+  "summary": {
+    "period": "2026-02-20 to 2026-03-22",
+    "sessions": 359,
+    "users": 253,
+    "pageviews": 995,
+    "bounce_rate": 61.28,
+    "avg_session_duration": 180.9
   },
-  "sessions": 355,
-  "users": 248,
-  "pageviews": 971,
-  "bounceRate": 61.97,
-  "topPages": [
+  "top_pages": [
     {
       "page": "/",
-      "sessions": 211,
-      "pageviews": 344
-    },
-    {
-      "page": "/collections/treat",
-      "sessions": 46,
-      "pageviews": 78
+      "pageviews": 347,
+      "sessions": 216
     },
     {
       "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "sessions": 43,
-      "pageviews": 110
+      "pageviews": 113,
+      "sessions": 45
     },
     {
-      "page": "/pages/about-us",
-      "sessions": 27,
-      "pageviews": 30
+      "page": "/collections/treat",
+      "pageviews": 76,
+      "sessions": 45
     },
     {
       "page": "/blogs/news",
-      "sessions": 25,
-      "pageviews": 37
-    },
-    {
-      "page": "/products/the-tab-bath-tablet",
-      "sessions": 23,
-      "pageviews": 32
+      "pageviews": 37,
+      "sessions": 25
     },
     {
       "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "sessions": 22,
-      "pageviews": 35
+      "pageviews": 36,
+      "sessions": 23
+    },
+    {
+      "page": "/products/the-tab-bath-tablet",
+      "pageviews": 33,
+      "sessions": 24
+    },
+    {
+      "page": "/pages/about-us",
+      "pageviews": 29,
+      "sessions": 25
     },
     {
       "page": "/collections/paw-care",
-      "sessions": 19,
-      "pageviews": 25
-    },
-    {
-      "page": "/products/beef-wrapped-pumpkin",
-      "sessions": 19,
-      "pageviews": 22
+      "pageviews": 25,
+      "sessions": 19
     },
     {
       "page": "/collections/bath-product",
-      "sessions": 17,
-      "pageviews": 24
+      "pageviews": 24,
+      "sessions": 17
+    },
+    {
+      "page": "/products/beef-wrapped-pumpkin",
+      "pageviews": 23,
+      "sessions": 20
     }
   ],
-  "trafficSources": [
+  "traffic_sources": [
     {
       "channel": "Direct",
-      "sessions": 252
+      "sessions": 255
     },
     {
       "channel": "Organic Search",
-      "sessions": 46
+      "sessions": 47
     },
     {
       "channel": "Organic Shopping",
-      "sessions": 30
+      "sessions": 29
     },
     {
       "channel": "Referral",

@@ -1,9 +1,6 @@
 {
-  "period": {
-    "start": "2026-02-19",
-    "end": "2026-03-21"
-  },
-  "site": "https://carek9.com/",
+  "collected_at": "2026-03-22T02:00:35.458576",
+  "period": "2026-02-20 to 2026-03-22",
   "queries": [
     {
       "query": "carek9",
@@ -69,13 +66,6 @@
       "position": 5
     },
     {
-      "query": "bath tablets",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
-    },
-    {
       "query": "bathing tablet",
       "clicks": 0,
       "impressions": 12,
@@ -88,6 +78,13 @@
       "impressions": 2,
       "ctr": 0,
       "position": 1.5
+    },
+    {
+      "query": "beef and pumpkin dog treats",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
     },
     {
       "query": "beef dog training treats",
@@ -120,7 +117,7 @@
     {
       "query": "best dog paw cleaner",
       "clicks": 0,
-      "impressions": 233,
+      "impressions": 232,
       "ctr": 0,
       "position": 4.8
     },
