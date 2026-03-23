@@ -1,52 +1,35 @@
 {
-  "date": "2026-03-21",
-  "model": "claude-sonnet-4-6",
+  "generated": "2026-03-23",
   "summary": {
-    "totalClicks": 10,
-    "totalImpressions": 2223,
-    "avgPosition": 5.8,
-    "uniqueQueries": 79,
-    "ctr": "0.45%"
+    "clicks": 9,
+    "impressions": 1874,
+    "avgPosition": 5.7,
+    "uniqueQueries": 70
   },
-  "keyFindings": [
+  "critical": [
     {
+      "issue": "/contact page returns 404",
+      "url": "https://www.konacoffeedonut.com/en/contact",
       "priority": "HIGH",
-      "finding": "Chinese-language queries dominate impressions (1,641 of 2,223 = 73.8%) with 0 clicks",
-      "queries": ["夏威夷科纳咖啡风味 (558 impr, pos 4.3)", "夏威夷科纳咖啡 介绍 (550 impr, pos 6.7)", "夏威夷科纳适合冲美式吗 (533 impr, pos 6.4)"],
-      "action": "These are informational coffee education queries from China/HK. CTR is 0% because content doesn't match intent. Consider: (1) adding Chinese landing page optimized for actual visitors, (2) or de-prioritize if traffic is non-converting."
-    },
-    {
-      "priority": "HIGH",
-      "finding": "Korean queries performing strongly — high positions, 0 clicks",
-      "queries": ["하와이 코나 커피 (pos 1.4, 21 impr)", "하와이 코나커피 (pos 1.7, 14 impr)", "코나커피 (pos 5.1, 34 impr)"],
-      "action": "Position 1-2 for Korean queries is excellent! CTR is 0% — check if /ko/ pages have proper meta titles and compelling descriptions. Korean tourists are key target — prioritize this."
-    },
-    {
-      "priority": "HIGH",
-      "finding": "Quick win: 'donuts near me' at pos 8.0 with 31 impressions, 1 click",
-      "action": "Push this to top 5. Optimize local SEO: ensure Google Business Profile is complete with 'donuts' category, add more donut-related content to homepage."
-    },
-    {
-      "priority": "MEDIUM",
-      "finding": "'kona coffee' at pos 6.0, 43 impressions, 0 clicks",
-      "action": "Should be top 3. This is a high-intent branded-adjacent term. Improve homepage H1 and meta description to include 'Kona Coffee' prominently."
-    },
-    {
-      "priority": "MEDIUM",
-      "finding": "GA4 shows 0 users/sessions — tracking may be broken",
-      "action": "Verify GA4 tag is firing correctly on konacoffeedonut.com. Check GTM or direct tag implementation."
+      "action": "Add contact page or redirect to homepage"
     }
   ],
-  "openingDateCheck": "No 'Feb 25' or 'February' opening date found on website pages checked. Grand opening date appears clear.",
-  "topOpportunities": [
-    "Korean market: already ranking #1-2, fix CTR with better meta descriptions on /ko/ pages",
-    "'donuts near me' local intent: pos 8 → target pos 3-5 via Google Business optimization",
-    "'kona coffee waikiki' at pos 11.6: just outside top 10, one content push could move it in",
-    "Chinese informational traffic: 73% of impressions, 0% CTR — evaluate if worth converting"
+  "opportunities": [
+    {
+      "type": "Chinese market - huge impression volume, zero clicks",
+      "queries": ["夏威夷科纳咖啡风味 (466 impr, pos 4.3)", "夏威夷科纳咖啡介绍 (446 impr, pos 7.0)", "夏威夷科纳适合冲美式吗 (434 impr, pos 6.4)"],
+      "action": "Improve Chinese page title/meta description CTR - currently getting top positions but no clicks. Add compelling Chinese meta descriptions."
+    },
+    {
+      "type": "Korean branded queries high position, no clicks",
+      "queries": ["코나 커피 (35 impr, pos 2.4)", "하와이 코나 커피 (22 impr, pos 1.5)", "하와이 코나커피 (11 impr, pos 1)"],
+      "action": "Korean pages ranking #1-2 but no clicks. Review Korean page meta title/description for click appeal."
+    },
+    {
+      "type": "Near-me queries need position improvement",
+      "queries": ["donuts near me (32 impr, pos 8.1)", "coffee near me (8 impr, pos 19.5)", "kona coffee near me (5 impr, pos 4.2)"],
+      "action": "Optimize Google Business Profile. Add structured data for 'near me' intent."
+    }
   ],
-  "geography": {
-    "USA": "4 clicks, 1841 impressions (82.8%)",
-    "Japan": "0 clicks, 51 impressions (2.3%)",
-    "Korea": "strong positions, included in USA/non-tracked?"
-  }
+  "openingDate": "CORRECT - site says Late March ~ Early April 2026. No Feb 25 issue found."
 }
