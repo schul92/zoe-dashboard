@@ -1,23 +1,23 @@
 {
-  "collected_at": "2026-03-22T02:00:34.843531",
-  "summary": {
-    "period": "2026-02-20 to 2026-03-22",
-    "sessions": 359,
-    "users": 253,
-    "pageviews": 995,
-    "bounce_rate": 61.28,
-    "avg_session_duration": 180.9
+  "collected_at": "2026-03-23T09:15:53.698392Z",
+  "period": "last_30_days",
+  "metrics": {
+    "sessions": 354,
+    "users": 248,
+    "pageviews": 991,
+    "bounce_rate": 60.17,
+    "avg_session_duration": 180.8
   },
   "top_pages": [
     {
       "page": "/",
-      "pageviews": 347,
-      "sessions": 216
+      "pageviews": 345,
+      "sessions": 213
     },
     {
       "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 113,
-      "sessions": 45
+      "pageviews": 111,
+      "sessions": 43
     },
     {
       "page": "/collections/treat",
@@ -56,14 +56,14 @@
     },
     {
       "page": "/products/beef-wrapped-pumpkin",
-      "pageviews": 23,
-      "sessions": 20
+      "pageviews": 24,
+      "sessions": 21
     }
   ],
   "traffic_sources": [
     {
       "channel": "Direct",
-      "sessions": 255
+      "sessions": 251
     },
     {
       "channel": "Organic Search",
@@ -71,19 +71,19 @@
     },
     {
       "channel": "Organic Shopping",
-      "sessions": 29
+      "sessions": 30
     },
     {
       "channel": "Referral",
-      "sessions": 15
-    },
-    {
-      "channel": "Unassigned",
-      "sessions": 8
+      "sessions": 14
     },
     {
       "channel": "Organic Social",
       "sessions": 7
+    },
+    {
+      "channel": "Unassigned",
+      "sessions": 5
     }
   ]
 }

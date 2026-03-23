@@ -1,269 +1,610 @@
-{"ga4": {
-  "summary": {
-    "sessions": "400",
-    "users": "270",
-    "pageviews": "1242",
-    "bounceRate": "0.6175"
+{
+  "ga4": {
+    "summary": {
+      "sessions": "400",
+      "users": "270",
+      "pageviews": "1242",
+      "bounceRate": "0.6175"
+    },
+    "top_pages": [
+      {
+        "path": "/",
+        "views": "524"
+      },
+      {
+        "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+        "views": "105"
+      },
+      {
+        "path": "/collections/treat",
+        "views": "93"
+      },
+      {
+        "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+        "views": "78"
+      },
+      {
+        "path": "/blogs/news",
+        "views": "42"
+      },
+      {
+        "path": "/pages/about-us",
+        "views": "36"
+      },
+      {
+        "path": "/collections/paw-care",
+        "views": "30"
+      },
+      {
+        "path": "/pages/carek9-x-human-canine-collaborative",
+        "views": "29"
+      },
+      {
+        "path": "/cart",
+        "views": "25"
+      },
+      {
+        "path": "/collections/food-topper",
+        "views": "24"
+      }
+    ],
+    "sources": [
+      {
+        "source": "(direct)",
+        "sessions": "276"
+      },
+      {
+        "source": "google",
+        "sessions": "58"
+      },
+      {
+        "source": "admin.shopify.com",
+        "sessions": "35"
+      },
+      {
+        "source": "(not set)",
+        "sessions": "11"
+      },
+      {
+        "source": "qrcodes.pro",
+        "sessions": "11"
+      },
+      {
+        "source": "eventsmanager.facebook.com",
+        "sessions": "2"
+      },
+      {
+        "source": "judge.me",
+        "sessions": "2"
+      },
+      {
+        "source": "l.instagram.com",
+        "sessions": "2"
+      },
+      {
+        "source": "shopify.com",
+        "sessions": "2"
+      },
+      {
+        "source": "Pinterest",
+        "sessions": "1"
+      }
+    ],
+    "updated_at": "2026-03-12"
   },
-  "top_pages": [
+  "gsc": [
     {
-      "path": "/",
-      "views": "524"
+      "query": "groom bathing tablets",
+      "clicks": 2,
+      "impressions": 28,
+      "ctr": 0.07142857142857142,
+      "position": 4.821428571428571
     },
     {
-      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "views": "105"
+      "query": "4-in-1 dog paw washer",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 10.2
     },
     {
-      "path": "/collections/treat",
-      "views": "93"
+      "query": "all paws eliminator activated recharging",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 21
     },
     {
-      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "views": "78"
+      "query": "antibacterial wash for dog paws",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 65.5
     },
     {
-      "path": "/blogs/news",
-      "views": "42"
+      "query": "arcadia trail paw cleaner",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
     },
     {
-      "path": "/pages/about-us",
-      "views": "36"
+      "query": "baby wipes for dog paws",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
     },
     {
-      "path": "/collections/paw-care",
-      "views": "30"
+      "query": "bath tablet",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 9.125
     },
     {
-      "path": "/pages/carek9-x-human-canine-collaborative",
-      "views": "29"
+      "query": "bath tablets",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.333333333333334
     },
     {
-      "path": "/cart",
-      "views": "25"
+      "query": "bathing tablet",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 1
     },
     {
-      "path": "/collections/food-topper",
-      "views": "24"
+      "query": "bathing tablets",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.333333333333333
+    },
+    {
+      "query": "beef dog training treats",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 50.5
+    },
+    {
+      "query": "beef flavored training dog treats",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "query": "beef pumpkin treat for dogs",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 22.8
+    },
+    {
+      "query": "beef training treats",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "best dog paw cleaner",
+      "clicks": 0,
+      "impressions": 172,
+      "ctr": 0,
+      "position": 6.9476744186046515
+    },
+    {
+      "query": "best dog paw cleaners",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 1.1666666666666667
+    },
+    {
+      "query": "best paw claener for dogs",
+      "clicks": 0,
+      "impressions": 68,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "best paw cleaner",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "query": "best paw cleaner for dogs",
+      "clicks": 0,
+      "impressions": 50,
+      "ctr": 0,
+      "position": 3.86
+    },
+    {
+      "query": "best paw cleaner for large dogs",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
+    },
+    {
+      "query": "best paw cleaners",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 25.666666666666668
+    },
+    {
+      "query": "best paw cleaners for dogs",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "best paw cleaning products for sensitive dogs",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 28
+    },
+    {
+      "query": "best paw washer",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 55.4
+    },
+    {
+      "query": "canine collaborative",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8
     }
   ],
-  "sources": [
-    {
-      "source": "(direct)",
-      "sessions": "276"
+  "carek9": {
+    "updated_at": "2026-03-23T09:17:23.698998Z",
+    "ga4": {
+      "collected_at": "2026-03-23T09:15:53.698392Z",
+      "period": "last_30_days",
+      "metrics": {
+        "sessions": 354,
+        "users": 248,
+        "pageviews": 991,
+        "bounce_rate": 60.17,
+        "avg_session_duration": 180.8
+      },
+      "top_pages": [
+        {
+          "page": "/",
+          "pageviews": 345,
+          "sessions": 213
+        },
+        {
+          "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
+          "pageviews": 111,
+          "sessions": 43
+        },
+        {
+          "page": "/collections/treat",
+          "pageviews": 76,
+          "sessions": 45
+        },
+        {
+          "page": "/blogs/news",
+          "pageviews": 37,
+          "sessions": 25
+        },
+        {
+          "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+          "pageviews": 36,
+          "sessions": 23
+        },
+        {
+          "page": "/products/the-tab-bath-tablet",
+          "pageviews": 33,
+          "sessions": 24
+        },
+        {
+          "page": "/pages/about-us",
+          "pageviews": 29,
+          "sessions": 25
+        },
+        {
+          "page": "/collections/paw-care",
+          "pageviews": 25,
+          "sessions": 19
+        },
+        {
+          "page": "/collections/bath-product",
+          "pageviews": 24,
+          "sessions": 17
+        },
+        {
+          "page": "/products/beef-wrapped-pumpkin",
+          "pageviews": 24,
+          "sessions": 21
+        }
+      ],
+      "traffic_sources": [
+        {
+          "channel": "Direct",
+          "sessions": 251
+        },
+        {
+          "channel": "Organic Search",
+          "sessions": 47
+        },
+        {
+          "channel": "Organic Shopping",
+          "sessions": 30
+        },
+        {
+          "channel": "Referral",
+          "sessions": 14
+        },
+        {
+          "channel": "Organic Social",
+          "sessions": 7
+        },
+        {
+          "channel": "Unassigned",
+          "sessions": 5
+        }
+      ]
     },
-    {
-      "source": "google",
-      "sessions": "58"
+    "gsc": {
+      "collected_at": "2026-03-23T09:16:02.655048Z",
+      "period": "2026-02-18 to 2026-03-20",
+      "top_queries": [
+        {
+          "query": "carek9",
+          "clicks": 3,
+          "impressions": 7,
+          "ctr": 42.86,
+          "position": 12.7
+        },
+        {
+          "query": "groom bathing tablets",
+          "clicks": 3,
+          "impressions": 22,
+          "ctr": 13.64,
+          "position": 5.4
+        },
+        {
+          "query": "foot powder for dogs",
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 14.29,
+          "position": 3.1
+        },
+        {
+          "query": "4-in-1 dog paw washer",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 10
+        },
+        {
+          "query": "all natural beef dog treats",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 60.4
+        },
+        {
+          "query": "antibacterial wash for dog paws",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 65.5
+        },
+        {
+          "query": "arcadia trail paw cleaner",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 25
+        },
+        {
+          "query": "baby wipes for dog paws",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3
+        },
+        {
+          "query": "bath tablet",
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "position": 5
+        },
+        {
+          "query": "bath tablets",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 6.5
+        },
+        {
+          "query": "bathing tablet",
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "bathing tablets",
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "position": 1.5
+        },
+        {
+          "query": "beef and pumpkin dog treats",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "beef dog training treats",
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "position": 34.6
+        },
+        {
+          "query": "beef flavored training dog treats",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 54
+        },
+        {
+          "query": "beef pumpkin treat for dogs",
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "position": 22.8
+        },
+        {
+          "query": "beef training treats",
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "position": 13
+        },
+        {
+          "query": "best dog paw cleaner",
+          "clicks": 0,
+          "impressions": 237,
+          "ctr": 0,
+          "position": 5.1
+        },
+        {
+          "query": "best dog paw cleaners",
+          "clicks": 0,
+          "impressions": 13,
+          "ctr": 0,
+          "position": 3.2
+        },
+        {
+          "query": "best dog wipes for paws",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 3
+        },
+        {
+          "query": "best handheld shower head for dogs",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 50
+        },
+        {
+          "query": "best paw claener for dogs",
+          "clicks": 0,
+          "impressions": 68,
+          "ctr": 0,
+          "position": 1
+        },
+        {
+          "query": "best paw cleaner",
+          "clicks": 0,
+          "impressions": 11,
+          "ctr": 0,
+          "position": 3.9
+        },
+        {
+          "query": "best paw cleaner for dogs",
+          "clicks": 0,
+          "impressions": 76,
+          "ctr": 0,
+          "position": 1.4
+        },
+        {
+          "query": "best paw cleaner for large dogs",
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "position": 6
+        }
+      ]
     },
-    {
-      "source": "admin.shopify.com",
-      "sessions": "35"
-    },
-    {
-      "source": "(not set)",
-      "sessions": "11"
-    },
-    {
-      "source": "qrcodes.pro",
-      "sessions": "11"
-    },
-    {
-      "source": "eventsmanager.facebook.com",
-      "sessions": "2"
-    },
-    {
-      "source": "judge.me",
-      "sessions": "2"
-    },
-    {
-      "source": "l.instagram.com",
-      "sessions": "2"
-    },
-    {
-      "source": "shopify.com",
-      "sessions": "2"
-    },
-    {
-      "source": "Pinterest",
-      "sessions": "1"
-    }
-  ],
-  "updated_at": "2026-03-12"
-}, "gsc": [
-  {
-    "query": "groom bathing tablets",
-    "clicks": 2,
-    "impressions": 28,
-    "ctr": 0.07142857142857142,
-    "position": 4.821428571428571
-  },
-  {
-    "query": "4-in-1 dog paw washer",
-    "clicks": 0,
-    "impressions": 5,
-    "ctr": 0,
-    "position": 10.2
-  },
-  {
-    "query": "all paws eliminator activated recharging",
-    "clicks": 0,
-    "impressions": 1,
-    "ctr": 0,
-    "position": 21
-  },
-  {
-    "query": "antibacterial wash for dog paws",
-    "clicks": 0,
-    "impressions": 2,
-    "ctr": 0,
-    "position": 65.5
-  },
-  {
-    "query": "arcadia trail paw cleaner",
-    "clicks": 0,
-    "impressions": 1,
-    "ctr": 0,
-    "position": 25
-  },
-  {
-    "query": "baby wipes for dog paws",
-    "clicks": 0,
-    "impressions": 1,
-    "ctr": 0,
-    "position": 3
-  },
-  {
-    "query": "bath tablet",
-    "clicks": 0,
-    "impressions": 8,
-    "ctr": 0,
-    "position": 9.125
-  },
-  {
-    "query": "bath tablets",
-    "clicks": 0,
-    "impressions": 3,
-    "ctr": 0,
-    "position": 9.333333333333334
-  },
-  {
-    "query": "bathing tablet",
-    "clicks": 0,
-    "impressions": 5,
-    "ctr": 0,
-    "position": 1
-  },
-  {
-    "query": "bathing tablets",
-    "clicks": 0,
-    "impressions": 3,
-    "ctr": 0,
-    "position": 6.333333333333333
-  },
-  {
-    "query": "beef dog training treats",
-    "clicks": 0,
-    "impressions": 2,
-    "ctr": 0,
-    "position": 50.5
-  },
-  {
-    "query": "beef flavored training dog treats",
-    "clicks": 0,
-    "impressions": 1,
-    "ctr": 0,
-    "position": 54
-  },
-  {
-    "query": "beef pumpkin treat for dogs",
-    "clicks": 0,
-    "impressions": 5,
-    "ctr": 0,
-    "position": 22.8
-  },
-  {
-    "query": "beef training treats",
-    "clicks": 0,
-    "impressions": 1,
-    "ctr": 0,
-    "position": 1
-  },
-  {
-    "query": "best dog paw cleaner",
-    "clicks": 0,
-    "impressions": 172,
-    "ctr": 0,
-    "position": 6.9476744186046515
-  },
-  {
-    "query": "best dog paw cleaners",
-    "clicks": 0,
-    "impressions": 6,
-    "ctr": 0,
-    "position": 1.1666666666666667
-  },
-  {
-    "query": "best paw claener for dogs",
-    "clicks": 0,
-    "impressions": 68,
-    "ctr": 0,
-    "position": 1
-  },
-  {
-    "query": "best paw cleaner",
-    "clicks": 0,
-    "impressions": 3,
-    "ctr": 0,
-    "position": 15
-  },
-  {
-    "query": "best paw cleaner for dogs",
-    "clicks": 0,
-    "impressions": 50,
-    "ctr": 0,
-    "position": 3.86
-  },
-  {
-    "query": "best paw cleaner for large dogs",
-    "clicks": 0,
-    "impressions": 1,
-    "ctr": 0,
-    "position": 6
-  },
-  {
-    "query": "best paw cleaners",
-    "clicks": 0,
-    "impressions": 6,
-    "ctr": 0,
-    "position": 25.666666666666668
-  },
-  {
-    "query": "best paw cleaners for dogs",
-    "clicks": 0,
-    "impressions": 2,
-    "ctr": 0,
-    "position": 1
-  },
-  {
-    "query": "best paw cleaning products for sensitive dogs",
-    "clicks": 0,
-    "impressions": 2,
-    "ctr": 0,
-    "position": 28
-  },
-  {
-    "query": "best paw washer",
-    "clicks": 0,
-    "impressions": 5,
-    "ctr": 0,
-    "position": 55.4
-  },
-  {
-    "query": "canine collaborative",
-    "clicks": 0,
-    "impressions": 2,
-    "ctr": 0,
-    "position": 8
+    "seo_opportunities": [
+      {
+        "query": "all natural beef dog treats",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 60.4
+      },
+      {
+        "query": "bathing tablet",
+        "clicks": 0,
+        "impressions": 12,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "query": "beef dog training treats",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 34.6
+      },
+      {
+        "query": "beef pumpkin treat for dogs",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 22.8
+      },
+      {
+        "query": "best dog paw cleaner",
+        "clicks": 0,
+        "impressions": 237,
+        "ctr": 0,
+        "position": 5.1
+      },
+      {
+        "query": "best dog paw cleaners",
+        "clicks": 0,
+        "impressions": 13,
+        "ctr": 0,
+        "position": 3.2
+      },
+      {
+        "query": "best paw claener for dogs",
+        "clicks": 0,
+        "impressions": 68,
+        "ctr": 0,
+        "position": 1
+      },
+      {
+        "query": "best paw cleaner",
+        "clicks": 0,
+        "impressions": 11,
+        "ctr": 0,
+        "position": 3.9
+      },
+      {
+        "query": "best paw cleaner for dogs",
+        "clicks": 0,
+        "impressions": 76,
+        "ctr": 0,
+        "position": 1.4
+      }
+    ]
   }
-]}
+}

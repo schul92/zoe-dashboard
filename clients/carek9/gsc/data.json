@@ -1,7 +1,7 @@
 {
-  "collected_at": "2026-03-22T02:00:35.458576",
-  "period": "2026-02-20 to 2026-03-22",
-  "queries": [
+  "collected_at": "2026-03-23T09:16:02.655048Z",
+  "period": "2026-02-18 to 2026-03-20",
+  "top_queries": [
     {
       "query": "carek9",
       "clicks": 3,
@@ -12,16 +12,16 @@
     {
       "query": "groom bathing tablets",
       "clicks": 3,
-      "impressions": 21,
-      "ctr": 14.29,
-      "position": 5.5
+      "impressions": 22,
+      "ctr": 13.64,
+      "position": 5.4
     },
     {
       "query": "foot powder for dogs",
       "clicks": 1,
-      "impressions": 6,
-      "ctr": 16.67,
-      "position": 3.5
+      "impressions": 7,
+      "ctr": 14.29,
+      "position": 3.1
     },
     {
       "query": "4-in-1 dog paw washer",
@@ -64,6 +64,13 @@
       "impressions": 4,
       "ctr": 0,
       "position": 5
+    },
+    {
+      "query": "bath tablets",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6.5
     },
     {
       "query": "bathing tablet",
@@ -117,9 +124,9 @@
     {
       "query": "best dog paw cleaner",
       "clicks": 0,
-      "impressions": 232,
+      "impressions": 237,
       "ctr": 0,
-      "position": 4.8
+      "position": 5.1
     },
     {
       "query": "best dog paw cleaners",
@@ -169,13 +176,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 6
-    },
-    {
-      "query": "best paw cleaners",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 16.8
     }
   ]
 }
