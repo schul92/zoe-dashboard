@@ -1,38 +1,40 @@
 {
-  "collected_at": "2026-03-23T09:15:53.698392Z",
-  "period": "last_30_days",
-  "metrics": {
-    "sessions": 354,
-    "users": 248,
-    "pageviews": 991,
-    "bounce_rate": 60.17,
-    "avg_session_duration": 180.8
+  "updated": "2026-03-24",
+  "dateRange": {
+    "start": "2026-02-22",
+    "end": "2026-03-23"
   },
-  "top_pages": [
+  "summary": {
+    "sessions": 340,
+    "users": 232,
+    "pageviews": 979,
+    "bounceRate": 59.71
+  },
+  "topPages": [
     {
       "page": "/",
-      "pageviews": 345,
-      "sessions": 213
+      "pageviews": 336,
+      "sessions": 204
     },
     {
       "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 111,
-      "sessions": 43
+      "pageviews": 113,
+      "sessions": 42
     },
     {
       "page": "/collections/treat",
-      "pageviews": 76,
-      "sessions": 45
+      "pageviews": 74,
+      "sessions": 43
+    },
+    {
+      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "pageviews": 40,
+      "sessions": 24
     },
     {
       "page": "/blogs/news",
       "pageviews": 37,
       "sessions": 25
-    },
-    {
-      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": 36,
-      "sessions": 23
     },
     {
       "page": "/products/the-tab-bath-tablet",
@@ -60,14 +62,14 @@
       "sessions": 21
     }
   ],
-  "traffic_sources": [
+  "trafficSources": [
     {
       "channel": "Direct",
-      "sessions": 251
+      "sessions": 237
     },
     {
       "channel": "Organic Search",
-      "sessions": 47
+      "sessions": 48
     },
     {
       "channel": "Organic Shopping",
@@ -75,7 +77,7 @@
     },
     {
       "channel": "Referral",
-      "sessions": 14
+      "sessions": 13
     },
     {
       "channel": "Organic Social",
@@ -83,7 +85,7 @@
     },
     {
       "channel": "Unassigned",
-      "sessions": 5
+      "sessions": 7
     }
   ]
 }
