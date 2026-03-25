@@ -1,91 +1,89 @@
 {
-  "updated": "2026-03-24",
-  "dateRange": {
-    "start": "2026-02-22",
-    "end": "2026-03-23"
-  },
-  "summary": {
-    "sessions": 340,
-    "users": 232,
-    "pageviews": 979,
-    "bounceRate": 59.71
+  "metrics": {
+    "sessions": 338,
+    "users": 229,
+    "pageviews": 975,
+    "bounceRate": 60.7,
+    "avgSessionDuration": 185.2
   },
   "topPages": [
     {
       "page": "/",
-      "pageviews": 336,
-      "sessions": 204
+      "views": 348,
+      "sessions": 205
     },
     {
       "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 113,
-      "sessions": 42
+      "views": 96,
+      "sessions": 37
     },
     {
       "page": "/collections/treat",
-      "pageviews": 74,
-      "sessions": 43
+      "views": 71,
+      "sessions": 40
     },
     {
       "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": 40,
+      "views": 40,
       "sessions": 24
     },
     {
       "page": "/blogs/news",
-      "pageviews": 37,
+      "views": 37,
       "sessions": 25
     },
     {
       "page": "/products/the-tab-bath-tablet",
-      "pageviews": 33,
-      "sessions": 24
-    },
-    {
-      "page": "/pages/about-us",
-      "pageviews": 29,
+      "views": 35,
       "sessions": 25
     },
     {
-      "page": "/collections/paw-care",
-      "pageviews": 25,
-      "sessions": 19
+      "page": "/pages/about-us",
+      "views": 30,
+      "sessions": 25
     },
     {
       "page": "/collections/bath-product",
-      "pageviews": 24,
-      "sessions": 17
+      "views": 25,
+      "sessions": 18
+    },
+    {
+      "page": "/collections/paw-care",
+      "views": 25,
+      "sessions": 19
     },
     {
       "page": "/products/beef-wrapped-pumpkin",
-      "pageviews": 24,
+      "views": 24,
       "sessions": 21
     }
   ],
   "trafficSources": [
     {
-      "channel": "Direct",
-      "sessions": 237
+      "source": "Direct",
+      "sessions": 235
     },
     {
-      "channel": "Organic Search",
-      "sessions": 48
+      "source": "Organic Search",
+      "sessions": 47
     },
     {
-      "channel": "Organic Shopping",
-      "sessions": 30
+      "source": "Organic Shopping",
+      "sessions": 32
     },
     {
-      "channel": "Referral",
+      "source": "Referral",
       "sessions": 13
     },
     {
-      "channel": "Organic Social",
-      "sessions": 7
+      "source": "Unassigned",
+      "sessions": 8
     },
     {
-      "channel": "Unassigned",
+      "source": "Organic Social",
       "sessions": 7
     }
-  ]
+  ],
+  "period": "last30days",
+  "collectedAt": "2026-03-25"
 }

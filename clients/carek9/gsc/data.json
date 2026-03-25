@@ -1,10 +1,4 @@
 {
-  "updated": "2026-03-24",
-  "dateRange": {
-    "start": "2026-02-19",
-    "end": "2026-03-21"
-  },
-  "site": "https://carek9.com/",
   "queries": [
     {
       "query": "carek9",
@@ -16,9 +10,9 @@
     {
       "query": "groom bathing tablets",
       "clicks": 3,
-      "impressions": 24,
-      "ctr": 12.5,
-      "position": 5.0
+      "impressions": 26,
+      "ctr": 11.54,
+      "position": 5.4
     },
     {
       "query": "foot powder for dogs",
@@ -70,13 +64,6 @@
       "position": 5
     },
     {
-      "query": "bath tablets",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 1
-    },
-    {
       "query": "bathing tablet",
       "clicks": 0,
       "impressions": 12,
@@ -114,9 +101,9 @@
     {
       "query": "beef pumpkin treat for dogs",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 7,
       "ctr": 0,
-      "position": 21.2
+      "position": 20.6
     },
     {
       "query": "beef training treats",
@@ -128,7 +115,7 @@
     {
       "query": "best dog paw cleaner",
       "clicks": 0,
-      "impressions": 233,
+      "impressions": 232,
       "ctr": 0,
       "position": 4.8
     },
@@ -180,6 +167,18 @@
       "impressions": 1,
       "ctr": 0,
       "position": 6
+    },
+    {
+      "query": "best paw cleaners",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 16.8
     }
-  ]
+  ],
+  "period": {
+    "start": "2026-02-20",
+    "end": "2026-03-22"
+  },
+  "collectedAt": "2026-03-25"
 }
