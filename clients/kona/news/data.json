@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-23T12:00:11.149085Z",
-  "version": "v2-2026-03-23",
+  "lastUpdated": "2026-03-24T12:04:44.094611Z",
+  "version": "v2-2026-03-24",
   "sources": {
     "brave_search": true,
     "twitter": false,
@@ -9,25 +9,25 @@
   },
   "headlines": [
     {
+      "title": "Storm didn\u2019t stop tourists, locals from enjoying Waikiki despite ponding, flooding in Ala Wai Canal | Hawaii News Now",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com/2026/03/21/storm-didnt-stop-tourists-locals-enjoying-waikiki-despite-ponding/",
+      "category": "hawaii",
+      "description": "<strong>Heavy rain brought flooding to parts of Waikiki, with the Ala Wai Canal reaching higher water levels than usual after a storm</strong>. ... Published: Mar. 20, 2026 at 7:51 PM HST \u00b7 HONOLULU ("
+    },
+    {
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
+      "source": "Brave Search",
+      "url": "https://www.kitv.com/",
+      "category": "hawaii",
+      "description": "<strong>The kona low is leaving the islands, bringing back breezy trade winds and cooler, drier air</strong>. Some heavy rain may still impact the Big Island today, but overall conditions are improvin"
+    },
+    {
       "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com/",
       "category": "hawaii",
-      "description": "With Hawaii\u2019s regulated dams tested by back-to-back storms, officials said Friday they continue to function as intended though some came close to overtopping. ... Some Waikiki hotels are offering kama"
-    },
-    {
-      "title": "MEMA issues evacuation warnings for parts of Molokai as heavy rain hits island | Honolulu Star-Advertiser",
-      "source": "Brave Search",
-      "url": "https://www.staradvertiser.com/2026/03/21/breaking-news/after-devastating-floods-hawaii-braces-for-more-rain/",
-      "category": "hawaii",
-      "description": "A cyclist and motorist ride through receding floodwater near Kapiolani Park today in Waikiki. The flash flood warning for Oahu and the North Shore evacuation order have been lifted as the Kona-low rai"
-    },
-    {
-      "title": "News",
-      "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com/news/",
-      "category": "hawaii",
-      "description": "Hawaii National Guard members walked through the mud to check on residents in this area off of Farrington Highway in the outskirts of Waialua. ... Updated: Mar. 21, 2026 at 3:35 PM HST| ... Some Waiki"
+      "description": "<strong>Monday&#x27;s closures will affect three schools on Hawaii Island, four on Oahu, and six on Molokai</strong>."
     },
     {
       "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
@@ -58,6 +58,13 @@
       "description": "With one shop newly relocated and a second cafe now open, Necessity Coffee is asserting itself as a must-visit brand north of San Diego. In January the company reopened in\u2026 \u00b7 &gt; Industry | Daily Cof"
     },
     {
+      "title": "Square Report Says Coffee Shops Are the Leading Local Business Connectors",
+      "source": "Brave Search",
+      "url": "https://dailycoffeenews.com/2026/03/23/square-report-says-coffee-shops-are-the-leading-local-business-connectors/",
+      "category": "coffee",
+      "description": "In a new \u201cLocal Economy Report,\u201d Square said coffee shops and casual dining businesses serve as the most common \u201cneighborhood connectors,\u201d sharing more \u201cregular\u201d customers with nearby businesses."
+    },
+    {
       "title": "News - World Coffee Portal",
       "source": "Brave Search",
       "url": "https://www.worldcoffeeportal.com/news/",
@@ -65,136 +72,129 @@
       "description": "Breaking coffee business news and analysis"
     },
     {
-      "title": "Top Coffee Shop Industry Trends and Statistics in 2026",
-      "source": "Brave Search",
-      "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
-      "category": "coffee",
-      "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
-    },
-    {
-      "title": "Green Coffee Beans COL -> UK",
+      "title": "Is cream in coffee literally just thickened cream?",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1s0kp63/green_coffee_beans_col_uk/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1s1z7dv/is_cream_in_coffee_literally_just_thickened_cream/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi all, UK based here. I've spent a pretty long time trying to research the process of importing green beans and I've found time and time again hitting conflicting in"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019m Australian and we, as far as I know, don\u2019t put cream in our coffee, but I know you Americans do, or you have something called half and half? </p> <p>So is that ju"
     },
     {
-      "title": "Anyone else feel like their brews are inconsistent even with similar recipes?",
+      "title": "Grinder dilemma",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1s1bpeu/anyone_else_feel_like_their_brews_are/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1s23xqi/grinder_dilemma/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019ve been trying to dial in my Aeropress brews over the past few months and kept running into the same problem.</p> <p>I would change multiple variables at once, grin"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>So I am a little stuck and would like some advice!</p> <p>I need a grinder and some guidance. I would like to do pourovers in the morning and espresso in the afternoo"
     },
     {
-      "title": "Brazil\u2019s 2026 coffee harvest is forecast to be a record. Farmers aren\u2019t so sure. Is the market wrong? We checked the data and built a dashboard.",
+      "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1s1cdql/brazils_2026_coffee_harvest_is_forecast_to_be_a/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1s29ivq/mod_the_daily_question_thread/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Brazil is expected to produce a record coffee harvest in 2026 (around 66.2 million bags), but there\u2019s a growing disconnect between forecasts and what producers are se"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "Drive safe folks",
+      "title": "This is some BS\u2026",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1s0yk05/drive_safe_folks/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1s20oil/this_is_some_bs/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1s0yk05/drive_safe_folks/\"> <img alt=\"Drive safe folks\" src=\"https://preview.redd.it/px6426zk3oqg1.png?width=640&amp;crop=smart&amp;a"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1s20oil/this_is_some_bs/\"> <img alt=\"This is some BS\u2026\" src=\"https://preview.redd.it/u0hrh627fwqg1.jpeg?width=640&amp;crop=smart&amp;a"
     },
     {
-      "title": "Taco Bell Kapahulu commercial",
+      "title": "WEATHER UPDATE: A normal trade wind pattern will settle in today and favorable conditions should continue through the upcoming weekend",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1s18mvz/taco_bell_kapahulu_commercial/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1s1poc4/weather_update_a_normal_trade_wind_pattern_will/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1s18mvz/taco_bell_kapahulu_commercial/\"> <img alt=\"Taco Bell Kapahulu commercial\" src=\"https://external-preview.redd.it/a3hlc2Q1cjBoc"
+      "description": "<!-- SC_OFF --><div class=\"md\"><h1>Overview</h1> <hr /> <p>I don't normally talk about <em>good</em> weather on here, but I think after the past couple of weeks, we kind of need it.</p> <p>Now that th"
     },
     {
-      "title": "If a gta game was set in Hawaii what would it be like?",
+      "title": "declining HPU offer",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1s0uo5n/if_a_gta_game_was_set_in_hawaii_what_would_it_be/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1s1zsij/declining_hpu_offer/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>GTA is a parody of The USA and im surprised it hasn't been set in Hawaii if it was what would the city be called instead of Hawaii and what missions will there be and"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>hi guys, i come on here to ask how to decline the acceptance letter from HPU? i tried looking all over the portals and couldn't find a button or specific link to decl"
     },
     {
-      "title": "How do you tell a client their $5k app idea costs $50k without losing them?",
+      "title": "Totally burned out from family business",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1s17ffi/how_do_you_tell_a_client_their_5k_app_idea_costs/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1s1lrkj/totally_burned_out_from_family_business/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Run a dev agency in the US, 10+ years in, 30+ person in-house team. This conversation happens every single week.</p> <p>Client arrives with an app idea. In their head"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019m 26 M and I\u2019ve been working at my family\u2019s business for 6-7 years now. It\u2019s a well/ septic contracting business. My dad is the owner and Im currently a manager/for"
     },
     {
-      "title": "I live in a ~1 Million population metro that does not contain a single mini-golf course. Do I have any chance of acting on this without decent startup capital?",
+      "title": "my client accidentally paid an invoice twice and now I need to refund quickly",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1s0zjh8/i_live_in_a_1_million_population_metro_that_does/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1s23l1u/my_client_accidentally_paid_an_invoice_twice_and/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>For background context I run a service-based small business that brings in around 300k per year and my salary is about 60k. My wife makes 70k working a normal office "
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>My client paid the same invoice twice yesterday once by check and once by ACH. They didn't realize it until this morning.</p> <p>I need to refund one payment ASAP, bu"
     },
     {
-      "title": "About to Lose My Business....",
+      "title": "Hired our 10th employee and the processes that worked at 5 people are falling apart",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1s180sf/about_to_lose_my_business/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1s25kga/hired_our_10th_employee_and_the_processes_that/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I'm involved in the Hemp industry in Texas. I'm sure many of you are aware, but they're about to ban THCA flower in a week. </p> <p>I know this could be a controversi"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Not sure if this is normal growing pains or if I messed something up.</p> <p>When we were a team of 5, everything ran smoothly. Everyone knew what they were doing, co"
     },
     {
-      "title": "Migrating to the EU",
+      "title": "Microsoft's \"Fix\" for Windows 11: Flowers After the Beating",
       "source": "Hacker News",
-      "url": "https://rz01.org/eu-migration/",
+      "url": "https://www.sambent.com/microsofts-plan-to-fix-windows-11-is-gaslighting/",
       "category": "tech",
       "stats": {
-        "points": 160,
-        "comments": 95
+        "points": 237,
+        "comments": 173
       }
     },
     {
-      "title": "POSSE \u2013 Publish on your Own Site, Syndicate Elsewhere",
+      "title": "Opera: Rewind The Web to 1996 (Opera at 30)",
       "source": "Hacker News",
-      "url": "https://indieweb.org/POSSE",
+      "url": "https://www.web-rewind.com",
       "category": "tech",
       "stats": {
-        "points": 170,
-        "comments": 42
+        "points": 82,
+        "comments": 38
       }
     },
     {
-      "title": "PC Gamer recommends RSS readers in a 37mb article that just keeps downloading",
+      "title": "Box of Secrets: Discreetly modding an apartment intercom to work with Apple Home",
       "source": "Hacker News",
-      "url": "https://stuartbreckenridge.net/2026-03-19-pc-gamer-recommends-rss-readers-in-a-37mb-article/",
+      "url": "https://www.jackhogan.me/blog/box-of-secrets/",
       "category": "tech",
       "stats": {
-        "points": 653,
-        "comments": 306
+        "points": 171,
+        "comments": 53
       }
     },
     {
-      "title": "GitHub appears to be struggling with measly three nines availability",
+      "title": "Log File Viewer for the Terminal",
       "source": "Hacker News",
-      "url": "https://www.theregister.com/2026/02/10/github_outages/",
+      "url": "https://lnav.org/",
       "category": "tech",
       "stats": {
-        "points": 51,
-        "comments": 14
+        "points": 179,
+        "comments": 23
       }
     },
     {
-      "title": "The gold standard of optimization: A look under the hood of RollerCoaster Tycoon",
+      "title": "Ripgrep is faster than grep, ag, git grep, ucg, pt, sift (2016)",
       "source": "Hacker News",
-      "url": "https://larstofus.com/2026/03/22/the-gold-standard-of-optimization-a-look-under-the-hood-of-rollercoaster-tycoon/",
+      "url": "https://burntsushi.net/ripgrep/",
       "category": "tech",
       "stats": {
-        "points": 409,
-        "comments": 117
+        "points": 94,
+        "comments": 43
       }
     }
   ],
   "trending": [
-    "MEMA issues evacuation warnings for parts of Molok",
-    "Green Coffee Beans COL -> UK",
-    "Top Coffee Shop Industry Trends and Statistics in ",
+    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
+    "Storm didn\u2019t stop tourists, locals from enjoying W",
+    "KITV 4 Island News | Honolulu, HI News & Weather",
+    "Daily Coffee News by Roast Magazine - Business new",
+    "Square Report Says Coffee Shops Are the Leading Lo",
+    "A downturn for Hawaii tourism: Travel Weekly",
+    "Is cream in coffee literally just thickened cream?",
     "News - World Coffee Portal",
     "Hawaii News Now - Breaking News, Latest News, Weat",
-    "What's new for Hawaii visitors in 2026: Travel Wee",
-    "A downturn for Hawaii tourism: Travel Weekly",
-    "News",
-    "Daily Coffee News by Roast Magazine - Business new",
-    "Hawaii Tourism Trends 2026 Revealed: Where to Go, "
+    "What's new for Hawaii visitors in 2026: Travel Wee"
   ]
 }
