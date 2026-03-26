@@ -1,35 +1,49 @@
 {
-  "generated": "2026-03-23",
-  "summary": {
-    "clicks": 9,
-    "impressions": 1874,
-    "avgPosition": 5.7,
-    "uniqueQueries": 70
-  },
-  "critical": [
+  "generated": "2026-03-26T00:30:00Z",
+  "period": "2026-03-19 to 2026-03-25",
+  "model": "claude-sonnet-4-6",
+  "summary": "Grand Opening week! Site is indexed and ranking. Biggest opportunity: 900+ Chinese-language impressions with 0 clicks — needs zh-CN content. Korean queries strong at pos 1-3. Brand query 'kona coffee donut' at #1.",
+  "alerts": [],
+  "quick_wins": [
     {
-      "issue": "/contact page returns 404",
-      "url": "https://www.konacoffeedonut.com/en/contact",
       "priority": "HIGH",
-      "action": "Add contact page or redirect to homepage"
-    }
-  ],
-  "opportunities": [
-    {
-      "type": "Chinese market - huge impression volume, zero clicks",
-      "queries": ["夏威夷科纳咖啡风味 (466 impr, pos 4.3)", "夏威夷科纳咖啡介绍 (446 impr, pos 7.0)", "夏威夷科纳适合冲美式吗 (434 impr, pos 6.4)"],
-      "action": "Improve Chinese page title/meta description CTR - currently getting top positions but no clicks. Add compelling Chinese meta descriptions."
+      "action": "Add Chinese (zh-CN) landing page or meta tags",
+      "reason": "3 Chinese queries totaling 914 impressions at pos 4-8, ZERO clicks. High-intent Chinese tourists searching Kona coffee info. Adding zh-CN content could unlock 50-100 clicks/week.",
+      "queries": ["夏威夷科纳咖啡风味 (320 imp, pos 4)", "夏威夷科纳适合冲美式吗 (301 imp, pos 6.2)", "夏威夷科纳咖啡 介绍 (293 imp, pos 8.4)"]
     },
     {
-      "type": "Korean branded queries high position, no clicks",
-      "queries": ["코나 커피 (35 impr, pos 2.4)", "하와이 코나 커피 (22 impr, pos 1.5)", "하와이 코나커피 (11 impr, pos 1)"],
-      "action": "Korean pages ranking #1-2 but no clicks. Review Korean page meta title/description for click appeal."
+      "priority": "HIGH", 
+      "action": "Improve CTR for 'kona coffee' (34 imp, pos 4.3, 0 clicks)",
+      "reason": "Position 4 with zero clicks — title/description not compelling enough for this generic query. A/B test title with 'Waikiki's Best Kona Coffee' angle.",
+      "action_detail": "Update meta title to include 'Waikiki' for geographic relevance"
     },
     {
-      "type": "Near-me queries need position improvement",
-      "queries": ["donuts near me (32 impr, pos 8.1)", "coffee near me (8 impr, pos 19.5)", "kona coffee near me (5 impr, pos 4.2)"],
-      "action": "Optimize Google Business Profile. Add structured data for 'near me' intent."
+      "priority": "MEDIUM",
+      "action": "Target 'kona coffee waikiki' more aggressively",
+      "reason": "pos 8.3, 6 impressions — this is our money keyword. Needs more page content targeting this phrase.",
+      "action_detail": "Add H2 or FAQ entry: 'Where to find Kona Coffee in Waikiki'"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Korean content enhancement",
+      "reason": "Korean queries (코나커피, 코나 커피, 하와이 코나 커피, 말라사다 도넛) = 86 total impressions at pos 1-6. Strong ranking but CTR low (2 clicks from 86 imp). Korean meta description could help.",
+      "action_detail": "Add Korean meta description targeting Korean tourists"
     }
   ],
-  "openingDate": "CORRECT - site says Late March ~ Early April 2026. No Feb 25 issue found."
+  "content_recommendations": [
+    "Create a 'Chinese visitors guide' page or section (zh-CN) — huge opportunity",
+    "Add FAQ: '와이키키에서 코나 커피 어디서?' (Korean tourist FAQ)",  
+    "Blog post: 'What is Kona Coffee? Your guide to Hawaii's famous coffee' — targets educational queries",
+    "Optimize 'donuts near me' page (pos 9.3, 27 imp, 1 click) — schema markup for local business"
+  ],
+  "technical_notes": [
+    "PageSpeed API quota exceeded — unable to run today. Check tomorrow.",
+    "Meta description correctly says 'Late March' — NO Feb 25 issue found. ✅",
+    "Site has 14 indexed pages — good coverage",
+    "GA4 showing 0 sessions — possible tracking issue or new property not yet receiving data"
+  ],
+  "opening_date_check": {
+    "status": "CLEAN ✅",
+    "detail": "No 'February' or 'Feb 25' found anywhere on homepage or FAQ. Meta description correctly states 'Grand Opening Late March at 2142 Kalākaua Ave'"
+  }
 }
