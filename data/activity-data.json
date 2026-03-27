@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-27T10:37:03.160419Z",
+  "lastUpdated": "2026-03-27T13:12:43.953360Z",
   "dates": [
     "2026-02-26",
     "2026-02-27",
@@ -343,6 +343,40 @@
       "hashtags_used": [],
       "session_id": "zoelumos_20260327_0111",
       "account": "zoelumos"
+    },
+    {
+      "likes": 22,
+      "comments": 9,
+      "follows": 6,
+      "unfollows": 0,
+      "replies": 0,
+      "start_time": "",
+      "end_time": "",
+      "duration_min": 0,
+      "hashtags_used": [],
+      "session_id": "zoelumos_20260327_0612",
+      "account": "zoelumos"
+    },
+    {
+      "likes": 23,
+      "comments": 8,
+      "follows": 0,
+      "unfollows": 0,
+      "replies": 0,
+      "start_time": "2026-03-27 03:18 PDT",
+      "end_time": "2026-03-27 03:53 PDT",
+      "duration_min": 34.9,
+      "hashtags_used": [
+        "boutiqueowner",
+        "cafeowner",
+        "coffeeshopowner",
+        "communityovercompetition",
+        "seotips",
+        "chicagosmallbusiness",
+        "localbusinessowner"
+      ],
+      "session_id": "zoelumos_ig_20260327_0337",
+      "account": "zoelumos_ig"
     }
   ]
 }
