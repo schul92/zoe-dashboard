@@ -1,7 +1,6 @@
 {
-  "lastUpdated": "2026-03-27T06:00:19.088367Z",
+  "lastUpdated": "2026-03-27T08:11:21.747216Z",
   "dates": [
-    "2026-02-25",
     "2026-02-26",
     "2026-02-27",
     "2026-02-28",
@@ -30,7 +29,8 @@
     "2026-03-23",
     "2026-03-24",
     "2026-03-25",
-    "2026-03-26"
+    "2026-03-26",
+    "2026-03-27"
   ],
   "accounts": {
     "kona_instagram": {
@@ -40,7 +40,6 @@
       "color": "#E1306C",
       "metrics": {
         "likes": [
-          0,
           0,
           0,
           69,
@@ -69,10 +68,10 @@
           6,
           13,
           4,
-          13
+          13,
+          0
         ],
         "comments": [
-          0,
           0,
           0,
           23,
@@ -101,10 +100,10 @@
           2,
           2,
           0,
-          2
+          2,
+          0
         ],
         "follows": [
-          0,
           0,
           0,
           0,
@@ -133,55 +132,12 @@
           0,
           0,
           0,
+          0,
           0
         ]
       },
-      "today": {
-        "likes": 13,
-        "comments": 2,
-        "follows": 0,
-        "unfollows": 0,
-        "replies": 0,
-        "sessions": 3
-      },
-      "sessions_today": [
-        {
-          "likes": 4,
-          "comments": 1,
-          "follows": 0,
-          "unfollows": 0,
-          "replies": 0,
-          "start_time": "",
-          "end_time": "",
-          "duration_min": 0,
-          "hashtags_used": [],
-          "session_id": "kona_instagram_20260326_1105"
-        },
-        {
-          "likes": 4,
-          "comments": 1,
-          "follows": 0,
-          "unfollows": 0,
-          "replies": 0,
-          "start_time": "",
-          "end_time": "",
-          "duration_min": 0,
-          "hashtags_used": [],
-          "session_id": "kona_instagram_20260326_1505"
-        },
-        {
-          "likes": 5,
-          "comments": 0,
-          "follows": 0,
-          "unfollows": 0,
-          "replies": 0,
-          "start_time": "",
-          "end_time": "",
-          "duration_min": 0,
-          "hashtags_used": [],
-          "session_id": "kona_instagram_20260326_2105"
-        }
-      ]
+      "today": {},
+      "sessions_today": []
     },
     "zoe_instagram": {
       "label": "Zoe IG @zoelumos",
@@ -190,7 +146,6 @@
       "color": "#8B5CF6",
       "metrics": {
         "likes": [
-          0,
           0,
           0,
           0,
@@ -219,10 +174,10 @@
           0,
           0,
           0,
+          0,
           0
         ],
         "comments": [
-          0,
           0,
           0,
           0,
@@ -236,6 +191,7 @@
           0,
           0,
           8,
+          0,
           0,
           0,
           0,
@@ -266,8 +222,8 @@
           0,
           0,
           0,
-          0,
           5,
+          0,
           0,
           0,
           0,
@@ -298,11 +254,11 @@
         "replies": [
           0,
           0,
-          0,
           3,
           18,
           24,
           55,
+          0,
           0,
           0,
           0,
@@ -340,7 +296,6 @@
         "replies": [
           0,
           0,
-          0,
           11,
           43,
           16,
@@ -367,189 +322,18 @@
           15,
           14,
           9,
-          14
+          14,
+          0
         ]
       },
-      "today": {
-        "likes": 26,
-        "comments": 0,
-        "follows": 17,
-        "unfollows": 0,
-        "replies": 14,
-        "sessions": 5
-      },
-      "sessions_today": [
-        {
-          "likes": 8,
-          "comments": 0,
-          "follows": 4,
-          "unfollows": 0,
-          "replies": 3,
-          "start_time": "",
-          "end_time": "",
-          "duration_min": 0,
-          "hashtags_used": [],
-          "session_id": "kona_bluesky_20260326_0817"
-        },
-        {
-          "likes": 0,
-          "comments": 0,
-          "follows": 0,
-          "unfollows": 0,
-          "replies": 2,
-          "start_time": "",
-          "end_time": "",
-          "duration_min": 0,
-          "hashtags_used": [],
-          "session_id": "kona_bluesky_20260326_1012"
-        },
-        {
-          "likes": 7,
-          "comments": 0,
-          "follows": 4,
-          "unfollows": 0,
-          "replies": 3,
-          "start_time": "",
-          "end_time": "",
-          "duration_min": 0,
-          "hashtags_used": [],
-          "session_id": "kona_bluesky_20260326_1241"
-        },
-        {
-          "likes": 3,
-          "comments": 0,
-          "follows": 5,
-          "unfollows": 0,
-          "replies": 3,
-          "start_time": "",
-          "end_time": "",
-          "duration_min": 0,
-          "hashtags_used": [],
-          "session_id": "kona_bluesky_20260326_1743"
-        },
-        {
-          "likes": 8,
-          "comments": 0,
-          "follows": 4,
-          "unfollows": 0,
-          "replies": 3,
-          "start_time": "",
-          "end_time": "",
-          "duration_min": 0,
-          "hashtags_used": [],
-          "session_id": "kona_bluesky_20260326_2241"
-        }
-      ]
+      "today": {},
+      "sessions_today": []
     }
   },
   "todaySessions": [
     {
-      "likes": 63,
-      "comments": 22,
-      "follows": 0,
-      "unfollows": 0,
-      "replies": 0,
-      "start_time": "",
-      "end_time": "",
-      "duration_min": 0,
-      "hashtags_used": [],
-      "session_id": "zoelumos_20260326_0204",
-      "account": "zoelumos"
-    },
-    {
-      "likes": 20,
-      "comments": 9,
-      "follows": 5,
-      "unfollows": 0,
-      "replies": 0,
-      "start_time": "",
-      "end_time": "",
-      "duration_min": 0,
-      "hashtags_used": [],
-      "session_id": "zoelumos_20260326_0322",
-      "account": "zoelumos"
-    },
-    {
-      "likes": 13,
-      "comments": 0,
-      "follows": 0,
-      "unfollows": 0,
-      "replies": 0,
-      "start_time": "",
-      "end_time": "",
-      "duration_min": 0,
-      "hashtags_used": [],
-      "session_id": "zoelumos_20260326_0538",
-      "account": "zoelumos"
-    },
-    {
       "likes": 8,
       "comments": 0,
-      "follows": 4,
-      "unfollows": 0,
-      "replies": 3,
-      "start_time": "",
-      "end_time": "",
-      "duration_min": 0,
-      "hashtags_used": [],
-      "session_id": "kona_bluesky_20260326_0817",
-      "account": "kona_bluesky"
-    },
-    {
-      "likes": 0,
-      "comments": 0,
-      "follows": 0,
-      "unfollows": 0,
-      "replies": 2,
-      "start_time": "",
-      "end_time": "",
-      "duration_min": 0,
-      "hashtags_used": [],
-      "session_id": "kona_bluesky_20260326_1012",
-      "account": "kona_bluesky"
-    },
-    {
-      "likes": 7,
-      "comments": 0,
-      "follows": 4,
-      "unfollows": 0,
-      "replies": 3,
-      "start_time": "",
-      "end_time": "",
-      "duration_min": 0,
-      "hashtags_used": [],
-      "session_id": "kona_bluesky_20260326_1241",
-      "account": "kona_bluesky"
-    },
-    {
-      "likes": 3,
-      "comments": 0,
-      "follows": 5,
-      "unfollows": 0,
-      "replies": 3,
-      "start_time": "",
-      "end_time": "",
-      "duration_min": 0,
-      "hashtags_used": [],
-      "session_id": "kona_bluesky_20260326_1743",
-      "account": "kona_bluesky"
-    },
-    {
-      "likes": 8,
-      "comments": 0,
-      "follows": 4,
-      "unfollows": 0,
-      "replies": 3,
-      "start_time": "",
-      "end_time": "",
-      "duration_min": 0,
-      "hashtags_used": [],
-      "session_id": "kona_bluesky_20260326_2241",
-      "account": "kona_bluesky"
-    },
-    {
-      "likes": 4,
-      "comments": 1,
       "follows": 0,
       "unfollows": 0,
       "replies": 0,
@@ -557,151 +341,8 @@
       "end_time": "",
       "duration_min": 0,
       "hashtags_used": [],
-      "session_id": "kona_instagram_20260326_1105",
-      "account": "kona_instagram"
-    },
-    {
-      "likes": 4,
-      "comments": 1,
-      "follows": 0,
-      "unfollows": 0,
-      "replies": 0,
-      "start_time": "",
-      "end_time": "",
-      "duration_min": 0,
-      "hashtags_used": [],
-      "session_id": "kona_instagram_20260326_1505",
-      "account": "kona_instagram"
-    },
-    {
-      "likes": 5,
-      "comments": 0,
-      "follows": 0,
-      "unfollows": 0,
-      "replies": 0,
-      "start_time": "",
-      "end_time": "",
-      "duration_min": 0,
-      "hashtags_used": [],
-      "session_id": "kona_instagram_20260326_2105",
-      "account": "kona_instagram"
-    },
-    {
-      "likes": 5,
-      "comments": 0,
-      "follows": 6,
-      "unfollows": 0,
-      "replies": 6,
-      "start_time": "08:17",
-      "end_time": "08:52",
-      "duration_min": 35.0,
-      "hashtags_used": [],
-      "session_id": "kona_twitter_20260326_0835",
-      "account": "kona_twitter"
-    },
-    {
-      "likes": 12,
-      "comments": 0,
-      "follows": 6,
-      "unfollows": 0,
-      "replies": 5,
-      "start_time": "09:15",
-      "end_time": "09:58",
-      "duration_min": 43.0,
-      "hashtags_used": [],
-      "session_id": "kona_twitter_20260326_0936",
-      "account": "kona_twitter"
-    },
-    {
-      "likes": 12,
-      "comments": 0,
-      "follows": 3,
-      "unfollows": 0,
-      "replies": 5,
-      "start_time": "11:15",
-      "end_time": "12:15",
-      "duration_min": 60.0,
-      "hashtags_used": [],
-      "session_id": "kona_twitter_20260326_1140",
-      "account": "kona_twitter"
-    },
-    {
-      "likes": 31,
-      "comments": 0,
-      "follows": 1,
-      "unfollows": 0,
-      "replies": 5,
-      "start_time": "13:30",
-      "end_time": "13:42",
-      "duration_min": 12.0,
-      "hashtags_used": [],
-      "session_id": "kona_twitter_20260326_1342",
-      "account": "kona_twitter"
-    },
-    {
-      "likes": 31,
-      "comments": 0,
-      "follows": 1,
-      "unfollows": 0,
-      "replies": 5,
-      "start_time": "13:30",
-      "end_time": "13:42",
-      "duration_min": 12.0,
-      "hashtags_used": [],
-      "session_id": "kona_twitter_20260326_1343",
-      "account": "kona_twitter"
-    },
-    {
-      "likes": 6,
-      "comments": 0,
-      "follows": 6,
-      "unfollows": 0,
-      "replies": 5,
-      "start_time": "15:16",
-      "end_time": "17:10",
-      "duration_min": 114.0,
-      "hashtags_used": [],
-      "session_id": "kona_twitter_20260326_1538",
-      "account": "kona_twitter"
-    },
-    {
-      "likes": 12,
-      "comments": 0,
-      "follows": 9,
-      "unfollows": 0,
-      "replies": 8,
-      "start_time": "17:16",
-      "end_time": "18:00",
-      "duration_min": 44.0,
-      "hashtags_used": [],
-      "session_id": "kona_twitter_20260326_1739",
-      "account": "kona_twitter"
-    },
-    {
-      "likes": 41,
-      "comments": 0,
-      "follows": 6,
-      "unfollows": 0,
-      "replies": 5,
-      "start_time": "19:15",
-      "end_time": "20:10",
-      "duration_min": 55.0,
-      "hashtags_used": [],
-      "session_id": "kona_twitter_20260326_1940",
-      "account": "kona_twitter"
-    },
-    {
-      "likes": 18,
-      "comments": 0,
-      "follows": 10,
-      "unfollows": 0,
-      "replies": 7,
-      "start_time": "21:15",
-      "end_time": "22:35",
-      "duration_min": 80.0,
-      "hashtags_used": [],
-      "session_id": "kona_twitter_20260326_2131",
-      "account": "kona_twitter"
+      "session_id": "zoelumos_20260327_0111",
+      "account": "zoelumos"
     }
   ]
 }
