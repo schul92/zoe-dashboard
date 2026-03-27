@@ -1,36 +1,26 @@
 {
   "metrics": {
-    "sessions": 338,
-    "users": 229,
-    "pageviews": 975,
-    "bounceRate": 60.7,
-    "avgSessionDuration": 185.2
+    "sessions": 297,
+    "users": 223,
+    "pageviews": 696,
+    "bounceRate": 63.3,
+    "avgSessionDuration": 128.8
   },
   "topPages": [
     {
       "page": "/",
-      "views": 348,
-      "sessions": 205
+      "views": 205,
+      "sessions": 171
     },
     {
       "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "views": 96,
-      "sessions": 37
+      "views": 64,
+      "sessions": 31
     },
     {
       "page": "/collections/treat",
-      "views": 71,
-      "sessions": 40
-    },
-    {
-      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "views": 40,
-      "sessions": 24
-    },
-    {
-      "page": "/blogs/news",
-      "views": 37,
-      "sessions": 25
+      "views": 54,
+      "sessions": 31
     },
     {
       "page": "/products/the-tab-bath-tablet",
@@ -38,38 +28,48 @@
       "sessions": 25
     },
     {
-      "page": "/pages/about-us",
-      "views": 30,
-      "sessions": 25
-    },
-    {
-      "page": "/collections/bath-product",
-      "views": 25,
-      "sessions": 18
-    },
-    {
-      "page": "/collections/paw-care",
-      "views": 25,
+      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "views": 32,
       "sessions": 19
     },
     {
-      "page": "/products/beef-wrapped-pumpkin",
-      "views": 24,
+      "page": "/pages/about-us",
+      "views": 25,
       "sessions": 21
+    },
+    {
+      "page": "/collections/bath-product",
+      "views": 23,
+      "sessions": 17
+    },
+    {
+      "page": "/products/beef-wrapped-pumpkin",
+      "views": 22,
+      "sessions": 19
+    },
+    {
+      "page": "/products/paw-balm-healthy-healing-butter-senior-old-sick-pets-dogs",
+      "views": 22,
+      "sessions": 9
+    },
+    {
+      "page": "/collections/paw-care",
+      "views": 18,
+      "sessions": 15
     }
   ],
   "trafficSources": [
     {
       "source": "Direct",
-      "sessions": 235
+      "sessions": 210
     },
     {
       "source": "Organic Search",
-      "sessions": 47
+      "sessions": 43
     },
     {
       "source": "Organic Shopping",
-      "sessions": 32
+      "sessions": 21
     },
     {
       "source": "Referral",
@@ -77,13 +77,17 @@
     },
     {
       "source": "Unassigned",
-      "sessions": 8
+      "sessions": 9
     },
     {
       "source": "Organic Social",
-      "sessions": 7
+      "sessions": 5
     }
   ],
   "period": "last30days",
-  "collectedAt": "2026-03-25"
+  "dateRange": {
+    "start": "2026-02-25",
+    "end": "2026-03-26"
+  },
+  "collectedAt": "2026-03-27"
 }
