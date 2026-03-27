@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-25T12:00:12.528681Z",
-  "version": "v2-2026-03-25",
+  "lastUpdated": "2026-03-26T12:00:10.228553Z",
+  "version": "v2-2026-03-26",
   "sources": {
     "brave_search": true,
     "twitter": false,
     "hackernews": true,
-    "reddit": true
+    "reddit": false
   },
   "headlines": [
     {
@@ -16,6 +16,13 @@
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
+      "source": "Brave Search",
+      "url": "https://www.kitv.com/",
+      "category": "hawaii",
+      "description": "Kapono\u2019s at The Lounge Opens a New Chapter for Hawaii\u2019s Music Industry \u00b7 Maui police officer honors fallen Officer Suzanne O by running 100-mile mountain race \u00b7 Wahiaw\u0101 Dam evacuation underway \u00b7 Maui "
+    },
+    {
       "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
       "source": "Brave Search",
       "url": "https://www.hawaiinewsnow.com/",
@@ -23,32 +30,25 @@
       "description": "First Alert Forecast: Flood Watch extended for Maui and the Big Island, more heavy rain possible today"
     },
     {
-      "title": "News",
+      "title": "On at HoMA | Honolulu Museum of Art",
       "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com/news/",
+      "url": "https://honolulumuseum.org/events",
       "category": "hawaii",
-      "description": "Some schools on Maui and Molokai will reopen Wednesday, March 25, while several campuses on Oahu and Hawaii Island remain closed."
+      "description": "Narrated by Hugh Dancy and featuring Claire Danes as the voice of Georgia O&#x27;Keeffe, this captivating new documentary delves into the life and legacy of the pioneering artist."
     },
     {
-      "title": "What's new for Hawaii visitors in 2026: Travel Weekly",
+      "title": "Oahu Events | This Week Hawaii",
       "source": "Brave Search",
-      "url": "https://www.travelweekly.com/Hawaii-Travel/hawaii-new-for-visitors-2026",
+      "url": "https://www.thisweekhawaii.com/event-calendar/oahu",
       "category": "hawaii",
-      "description": "In 2026, Hawaii will see <strong>new hotel openings, attractions, and restaurants, including direct flights from California, a new luau show on Kauai and chef Alan Wong&#x27;s restaurant on Oahu</stro"
+      "description": "Discover the best places to eat, drink, and stay on Oahu, Maui, Kauai, and Big Island. Plan your Hawaii adventure now!"
     },
     {
-      "title": "A downturn for Hawaii tourism: Travel Weekly",
+      "title": "TOP 10 BEST Events This Weekend in Honolulu, HI - Updated 2026 - Yelp",
       "source": "Brave Search",
-      "url": "https://www.travelweekly.com/Hawaii-Travel/Insights/downturn-for-hawaii-tourism-2026",
+      "url": "https://www.yelp.com/search?find_desc=Events+This+Weekend&find_loc=Honolulu,+HI",
       "category": "hawaii",
-      "description": "&quot;The near-term picture for Hawaii tourism remains poor,&quot; the report continued. Looking ahead, it said <strong>visitor arrivals and the average daily census are expected to decline in 2026 be"
-    },
-    {
-      "title": "Hawaii Tourism Trends 2026 Revealed: Where to Go, When to Visit, and How to Plan the Perfect Island Getaway - Travel And Tour World",
-      "source": "Brave Search",
-      "url": "https://www.travelandtourworld.com/news/article/hawaii-tourism-trends-2026-revealed-where-to-go-when-to-visit-and-how-to-plan-the-perfect-island-getaway/",
-      "category": "hawaii",
-      "description": "<strong>The first month of 2026 revealed a notable increase in tourism across the Hawaiian islands</strong>. More travellers arrived by air than in previous years, reflecting the continued appeal of H"
+      "description": "&quot;I love to support local events like the Honolulu Night Market (HNM)! It is once a month, on...&quot; more ... Neal S. Blaisdell Exhibition Hall, WaikikiClosed until Friday \u00b7 &quot;Not as crowded"
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
@@ -58,143 +58,80 @@
       "description": "&gt; Retail | Daily Coffee News Staff | March 23, 2026 \u00b7 New data from Square suggests coffee shops do more than cultivate community within their own four walls. They may also help knit nearby busines"
     },
     {
-      "title": "Square Report Says Coffee Shops Are the Leading Local Business Connectors",
+      "title": "2 banks, 2 coffee shops: 4 businesses now open in Boerne this spring | Community Impact",
       "source": "Brave Search",
-      "url": "https://dailycoffeenews.com/2026/03/23/square-report-says-coffee-shops-are-the-leading-local-business-connectors/",
+      "url": "https://communityimpact.com/san-antonio/boerne-fair-oaks-ranch/business/2026/03/25/2-banks-2-coffee-shops-4-businesses-now-open-in-boerne-this-spring/",
       "category": "coffee",
-      "description": "In a new \u201cLocal Economy Report,\u201d Square said coffee shops and casual dining businesses serve as the most common \u201cneighborhood connectors,\u201d sharing more \u201cregular\u201d customers with nearby businesses."
+      "description": "Business Bella Sera officially settles into new location in Boerne ... Selah Cafe Coffee Market opened on March 9. (Andrew Creelman/Community Impact) Selah Cafe Coffee Market opened on March 9. (Andre"
     },
     {
-      "title": "Top Coffee Shop Industry Trends and Statistics in 2026",
+      "title": "News - World Coffee Portal",
       "source": "Brave Search",
-      "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
+      "url": "https://www.worldcoffeeportal.com/news/",
       "category": "coffee",
-      "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
+      "description": "Breaking coffee business news and analysis"
     },
     {
-      "title": "Do Not Purchase the HiBrew H13 - Here's What Actually Happens",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1s2ti1v/do_not_purchase_the_hibrew_h13_heres_what/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Before spending my money, I verified with HiBrew's support team - not once, not twice, but three times - that the H13 includes a three-way solenoid valve. All three t"
-    },
-    {
-      "title": "Why does changing brew ratio feel more impactful than grind?",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1s2fhhc/why_does_changing_brew_ratio_feel_more_impactful/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Not troubleshooting a specific brew, just something I\u2019ve been noticing</p> <p>When a cup is off, adjusting grind size helps, but it often feels like a slow process to"
-    },
-    {
-      "title": "Why does coffee sometimes taste both sour and bitter at the same time?",
-      "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1s37fmr/why_does_coffee_sometimes_taste_both_sour_and/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Not troubleshooting a specific brew, just something I\u2019ve noticed</p> <p>I always thought sour = underextracted and bitter = overextracted</p> <p>But sometimes I get c"
-    },
-    {
-      "title": "I can see blue in the sky right now",
-      "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1s2q8ag/i_can_see_blue_in_the_sky_right_now/",
-      "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1s2q8ag/i_can_see_blue_in_the_sky_right_now/\"> <img alt=\"I can see blue in the sky right now\" src=\"https://preview.redd.it/htsbcjx442"
-    },
-    {
-      "title": "starting to learn Hawaiian featherwork",
-      "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1s2s51r/starting_to_learn_hawaiian_featherwork/",
-      "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1s2s51r/starting_to_learn_hawaiian_featherwork/\"> <img alt=\"starting to learn Hawaiian featherwork\" src=\"https://preview.redd.it/drcf"
-    },
-    {
-      "title": "Pieology closing all Hawaii locations, eliminating 56 jobs",
-      "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1s34a82/pieology_closing_all_hawaii_locations_eliminating/",
-      "category": "reddit",
-      "description": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Darwin343\"> /u/Darwin343 </a> <br /> <span><a href=\"https://www.bizjournals.com/pacific/news/2026/03/24/pieology-exits-hawaii.html\">[link]"
-    },
-    {
-      "title": "Things I wish I knew before buying a gas station and tire shop in my small home town",
-      "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1s2d0ho/things_i_wish_i_knew_before_buying_a_gas_station/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>My wife and I own and operate a gas station and tire shop in our small hometown in Missouri. While it pays all of the bills and we can take multiple vacations a year,"
-    },
-    {
-      "title": "I fired a client for the first time today and I'm still processing it.",
-      "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1s2js9y/i_fired_a_client_for_the_first_time_today_and_im/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>We'd been working together three months, they were my first regular client since starting my own business this year. But the relationship turned toxic fast. Unclear e"
-    },
-    {
-      "title": "Manufacturing. How are you supposed to come up with a product or compete when China can do it for 1/4th the price?",
-      "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1s2ki3m/manufacturing_how_are_you_supposed_to_come_up/",
-      "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Im a cnc machinist. I\u2019ve tried a Lawn Care business before, tried out gig work. I like to fantasize about having a home garage machine shop.</p> <p>My problems are, I"
-    },
-    {
-      "title": "Meta told to pay $375M for misleading users over child safety",
+      "title": "Personal Encyclopedias",
       "source": "Hacker News",
-      "url": "https://www.bbc.com/news/articles/cql75dn07n2o",
+      "url": "https://whoami.wiki/blog/personal-encyclopedias",
       "category": "tech",
       "stats": {
-        "points": 88,
-        "comments": 34
+        "points": 293,
+        "comments": 63
       }
     },
     {
-      "title": "I tried to prove I'm not AI. My aunt wasn't convinced",
+      "title": "Swift 6.3",
       "source": "Hacker News",
-      "url": "https://www.bbc.com/future/article/20260324-i-tried-to-prove-im-not-an-ai-deepfake",
+      "url": "https://www.swift.org/blog/swift-6.3-released/",
       "category": "tech",
       "stats": {
-        "points": 58,
-        "comments": 41
+        "points": 109,
+        "comments": 46
       }
     },
     {
-      "title": "TurboQuant: Redefining AI efficiency with extreme compression",
+      "title": "From zero to a RAG system: successes and failures",
       "source": "Hacker News",
-      "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/",
+      "url": "https://en.andros.dev/blog/aa31d744/from-zero-to-a-rag-system-successes-and-failures/",
       "category": "tech",
       "stats": {
-        "points": 207,
-        "comments": 49
+        "points": 36,
+        "comments": 10
       }
     },
     {
-      "title": "Looking at Unity made me understand the point of C++ coroutines",
+      "title": "Running Tesla Model 3's computer on my desk using parts from crashed cars",
       "source": "Hacker News",
-      "url": "https://mropert.github.io/2026/03/20/unity_cpp_coroutines/",
+      "url": "https://bugs.xdavidhu.me/tesla/2026/03/23/running-tesla-model-3s-computer-on-my-desk-using-parts-from-crashed-cars/",
       "category": "tech",
       "stats": {
-        "points": 41,
-        "comments": 22
+        "points": 664,
+        "comments": 217
       }
     },
     {
-      "title": "VitruvianOS \u2013 Desktop Linux Inspired by the BeOS",
+      "title": "Obsolete Sounds",
       "source": "Hacker News",
-      "url": "https://v-os.dev",
+      "url": "https://citiesandmemory.com/obsolete-sounds/",
       "category": "tech",
       "stats": {
-        "points": 174,
-        "comments": 103
+        "points": 53,
+        "comments": 7
       }
     }
   ],
   "trending": [
-    "Daily Coffee News by Roast Magazine - Business new",
     "Hawaii News Now - Breaking News, Latest News, Weat",
-    "What's new for Hawaii visitors in 2026: Travel Wee",
-    "Square Report Says Coffee Shops Are the Leading Lo",
-    "A downturn for Hawaii tourism: Travel Weekly",
-    "News",
-    "Do Not Purchase the HiBrew H13 - Here's What Actua",
-    "Hawaii Tourism Trends 2026 Revealed: Where to Go, ",
-    "Hawaii News, Weather, Sports, Breaking News & Live",
-    "Top Coffee Shop Industry Trends and Statistics in "
+    "2 banks, 2 coffee shops: 4 businesses now open in ",
+    "On at HoMA | Honolulu Museum of Art",
+    "Personal Encyclopedias",
+    "TOP 10 BEST Events This Weekend in Honolulu, HI - ",
+    "News - World Coffee Portal",
+    "KITV 4 Island News | Honolulu, HI News & Weather",
+    "Oahu Events | This Week Hawaii",
+    "Daily Coffee News by Roast Magazine - Business new",
+    "Hawaii News, Weather, Sports, Breaking News & Live"
   ]
 }
