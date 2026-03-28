@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-03-27T11:00:58Z",
+  "lastUpdated": "2026-03-28T11:00:18Z",
   "accounts": {
     "kona_instagram": {
       "handle": "@konacoffeedonut",
       "client": "KONA",
       "platform": "Instagram",
-      "current": 194,
+      "current": 201,
       "history": [
         {
           "date": "2026-02-28",
@@ -98,6 +98,10 @@
         {
           "date": "2026-03-27",
           "count": 194
+        },
+        {
+          "date": "2026-03-28",
+          "count": 201
         }
       ]
     },
@@ -105,7 +109,7 @@
       "handle": "@konacoffeedonut",
       "client": "KONA",
       "platform": "X/Twitter",
-      "current": 147,
+      "current": 156,
       "history": [
         {
           "date": "2026-02-28",
@@ -194,6 +198,10 @@
         {
           "date": "2026-03-27",
           "count": 147
+        },
+        {
+          "date": "2026-03-28",
+          "count": 156
         }
       ]
     },
@@ -201,7 +209,7 @@
       "handle": "konacoffeedonut.bsky.social",
       "client": "KONA",
       "platform": "Bluesky",
-      "current": 83,
+      "current": 88,
       "history": [
         {
           "date": "2026-02-28",
@@ -306,6 +314,10 @@
         {
           "date": "2026-03-27",
           "count": 83
+        },
+        {
+          "date": "2026-03-28",
+          "count": 88
         }
       ]
     },
@@ -405,6 +417,10 @@
         },
         {
           "date": "2026-03-27",
+          "count": 47
+        },
+        {
+          "date": "2026-03-28",
           "count": 47
         }
       ]
