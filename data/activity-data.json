@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-28T19:43:00.444874Z",
+  "lastUpdated": "2026-03-28T20:10:50.165272Z",
   "dates": [
     "2026-02-27",
     "2026-02-28",
@@ -69,7 +69,7 @@
           4,
           13,
           24,
-          19
+          27
         ],
         "comments": [
           0,
@@ -101,7 +101,7 @@
           0,
           2,
           9,
-          4
+          8
         ],
         "follows": [
           0,
@@ -137,12 +137,12 @@
         ]
       },
       "today": {
-        "likes": 19,
-        "comments": 4,
+        "likes": 27,
+        "comments": 8,
         "follows": 0,
         "unfollows": 0,
         "replies": 0,
-        "sessions": 2
+        "sessions": 3
       },
       "sessions_today": [
         {
@@ -168,6 +168,18 @@
           "duration_min": 0,
           "hashtags_used": [],
           "session_id": "kona_instagram_20260328_1011"
+        },
+        {
+          "likes": 8,
+          "comments": 4,
+          "follows": 0,
+          "unfollows": 0,
+          "replies": 0,
+          "start_time": "",
+          "end_time": "",
+          "duration_min": 0,
+          "hashtags_used": [],
+          "session_id": "kona_instagram_20260328_1310"
         }
       ]
     },
@@ -483,6 +495,19 @@
       "duration_min": 0,
       "hashtags_used": [],
       "session_id": "kona_instagram_20260328_1011",
+      "account": "kona_instagram"
+    },
+    {
+      "likes": 8,
+      "comments": 4,
+      "follows": 0,
+      "unfollows": 0,
+      "replies": 0,
+      "start_time": "",
+      "end_time": "",
+      "duration_min": 0,
+      "hashtags_used": [],
+      "session_id": "kona_instagram_20260328_1310",
       "account": "kona_instagram"
     },
     {
