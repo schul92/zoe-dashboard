@@ -1,13 +1,27 @@
 {
-  "lastUpdated": "2026-03-26T12:00:10.228553Z",
-  "version": "v2-2026-03-26",
+  "lastUpdated": "2026-03-28T12:00:15.359873Z",
+  "version": "v2-2026-03-28",
   "sources": {
     "brave_search": true,
     "twitter": false,
     "hackernews": true,
-    "reddit": false
+    "reddit": true
   },
   "headlines": [
+    {
+      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com/",
+      "category": "hawaii",
+      "description": "<strong>Prince Waikiki reopens House of Sakura bar March 27</strong> and debuts new happy hour menu at 100 Sails Restaurant &amp; Bar with live music at golf club."
+    },
+    {
+      "title": "News",
+      "source": "Brave Search",
+      "url": "https://www.hawaiinewsnow.com/news/",
+      "category": "hawaii",
+      "description": "An anonymous donor provided $25,000 to the Friends of the Library of Hawaii for these improvements. ... Updated: Mar. 26, 2026 at 8:58 AM HST| ... <strong>Firefighters put out a high-rise building fir"
+    },
     {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
       "source": "Brave Search",
@@ -16,39 +30,25 @@
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
     },
     {
-      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
+      "title": "DBEDT NEWS RELEASE: Visitor Spending and Visitor Arrivals Increased in January 2026 | Governor Josh Green, M.D.",
       "source": "Brave Search",
-      "url": "https://www.kitv.com/",
+      "url": "https://governor.hawaii.gov/newsroom/dbedt-news-release-visitor-spending-and-visitor-arrivals-increased-in-january-2026/",
       "category": "hawaii",
-      "description": "Kapono\u2019s at The Lounge Opens a New Chapter for Hawaii\u2019s Music Industry \u00b7 Maui police officer honors fallen Officer Suzanne O by running 100-mile mountain race \u00b7 Wahiaw\u0101 Dam evacuation underway \u00b7 Maui "
+      "description": "For January 2026, <strong>total arrivals (236,180 visitors, +16.7%) and total visitor spending ($664.7 million, +24.3%) increased compared to January 2025</strong>. Increased arrivals due to the Maui "
     },
     {
-      "title": "Hawaii News Now - Breaking News, Latest News, Weather & Traffic",
+      "title": "State tourism officials: No reason to cancel or postpone upcoming travel to Hawai\u02bbi | Big Island Now",
       "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com/",
+      "url": "https://bigislandnow.com/2026/03/22/state-tourism-officials-no-reason-to-cancel-or-postpone-upcoming-travel-to-hawai%CA%BBi/",
       "category": "hawaii",
-      "description": "First Alert Forecast: Flood Watch extended for Maui and the Big Island, more heavy rain possible today"
+      "description": "<strong>The islands remain safe and welcoming</strong>, and after two kona lows in a week, weather conditions are expected to improve early next week; Kaua\u02bbi and O\u02bbahu already are seeing improving con"
     },
     {
-      "title": "On at HoMA | Honolulu Museum of Art",
+      "title": "The Global Crisis Just Hit Your Hawaii Vacation",
       "source": "Brave Search",
-      "url": "https://honolulumuseum.org/events",
+      "url": "https://beatofhawaii.com/the-global-crisis-just-hit-your-hawaii-vacation/",
       "category": "hawaii",
-      "description": "Narrated by Hugh Dancy and featuring Claire Danes as the voice of Georgia O&#x27;Keeffe, this captivating new documentary delves into the life and legacy of the pioneering artist."
-    },
-    {
-      "title": "Oahu Events | This Week Hawaii",
-      "source": "Brave Search",
-      "url": "https://www.thisweekhawaii.com/event-calendar/oahu",
-      "category": "hawaii",
-      "description": "Discover the best places to eat, drink, and stay on Oahu, Maui, Kauai, and Big Island. Plan your Hawaii adventure now!"
-    },
-    {
-      "title": "TOP 10 BEST Events This Weekend in Honolulu, HI - Updated 2026 - Yelp",
-      "source": "Brave Search",
-      "url": "https://www.yelp.com/search?find_desc=Events+This+Weekend&find_loc=Honolulu,+HI",
-      "category": "hawaii",
-      "description": "&quot;I love to support local events like the Honolulu Night Market (HNM)! It is once a month, on...&quot; more ... Neal S. Blaisdell Exhibition Hall, WaikikiClosed until Friday \u00b7 &quot;Not as crowded"
+      "description": "If you already have 2026 travel booked or are in the middle of planning it, clearly everything has changed. Thinking about trips and their costs no longer looks the same as they did even just days ago"
     },
     {
       "title": "Daily Coffee News by Roast Magazine - Business news for specialty coffee professionals",
@@ -58,80 +58,136 @@
       "description": "&gt; Retail | Daily Coffee News Staff | March 23, 2026 \u00b7 New data from Square suggests coffee shops do more than cultivate community within their own four walls. They may also help knit nearby busines"
     },
     {
-      "title": "2 banks, 2 coffee shops: 4 businesses now open in Boerne this spring | Community Impact",
+      "title": "23-year-old Belton coffee shop owner uses TikTok to grow business",
       "source": "Brave Search",
-      "url": "https://communityimpact.com/san-antonio/boerne-fair-oaks-ranch/business/2026/03/25/2-banks-2-coffee-shops-4-businesses-now-open-in-boerne-this-spring/",
+      "url": "https://www.kwtx.com/2026/03/27/23-year-old-belton-coffee-shop-owner-uses-tiktok-grow-business/",
       "category": "coffee",
-      "description": "Business Bella Sera officially settles into new location in Boerne ... Selah Cafe Coffee Market opened on March 9. (Andrew Creelman/Community Impact) Selah Cafe Coffee Market opened on March 9. (Andre"
+      "description": "LOCAL BUSINESS: Young entrepreneur says social media posts help grow Wake &amp; Brew coffee shop in Belton"
     },
     {
-      "title": "News - World Coffee Portal",
+      "title": "Top Coffee Shop Industry Trends and Statistics in 2026",
       "source": "Brave Search",
-      "url": "https://www.worldcoffeeportal.com/news/",
+      "url": "https://pos.toasttab.com/blog/on-the-line/coffee-shop-industry-trends-and-statistics",
       "category": "coffee",
-      "description": "Breaking coffee business news and analysis"
+      "description": "It\u2019s two sides of the same coin: The industry is struggling to hire staff, because thousands of cafe and other hospitality workers have left the industry, and aren\u2019t willing to come back for the same "
     },
     {
-      "title": "Personal Encyclopedias",
+      "title": "[MOD] What have you been brewing this week?/ Coffee bean recommendations",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1s56iy3/mod_what_have_you_been_brewing_this_week_coffee/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hey everyone!</p> <p>Welcome back to the weekly <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> thread where you can share what you are brewing or ask for bea"
+    },
+    {
+      "title": "[MOD] The Daily Question Thread",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1s5wcdz/mod_the_daily_question_thread/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
+    },
+    {
+      "title": "Well at least they're being honest they're ripping us off. LOL.",
+      "source": "r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1s5k49g/well_at_least_theyre_being_honest_theyre_ripping/",
+      "category": "reddit",
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1s5k49g/well_at_least_theyre_being_honest_theyre_ripping/\"> <img alt=\"Well at least they're being honest they're ripping us off. LOL."
+    },
+    {
+      "title": "I didn't hear anything in the news about no deaths (or injuries even??) from flooding",
+      "source": "r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1s5f376/i_didnt_hear_anything_in_the_news_about_no_deaths/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Given the magnitude (1 billion in damages) of the flooding in the past few weeks, I thought it was pretty amazing there are no known deaths or missing people caused b"
+    },
+    {
+      "title": "Hawai\u02bbi's Corals Were Struggling To Survive. Then Came The Mud Floods",
+      "source": "r/hawaii",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1s57l7r/hawai\u02bbis_corals_were_struggling_to_survive_then/",
+      "category": "reddit",
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1s57l7r/hawai\u02bbis_corals_were_struggling_to_survive_then/\"> <img alt=\"Hawai\u02bbi's Corals Were Struggling To Survive. Then Came The Mud F"
+    },
+    {
+      "title": "Employee having mental health related issues",
+      "source": "r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1s5mvkl/employee_having_mental_health_related_issues/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I\u2019ve have an employee, a young lady, working with us for about 10 months now. She\u2019s been fantastic at what she does. About two months ago, she started showing up late"
+    },
+    {
+      "title": "Be skeptical if your bank calls you about an account problem",
+      "source": "r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1s5cc85/be_skeptical_if_your_bank_calls_you_about_an/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I just reported this to my bank. Call came in on our main business line with the name of our bank and the bank's customer service line. Guy asked for someone in &quot"
+    },
+    {
+      "title": "Quo (formerly OpenPhone) is reading your messages and terminating accounts based on what you text",
+      "source": "r/smallbusiness",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1s54ejt/quo_formerly_openphone_is_reading_your_messages/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I run a licensed B2B operation in Canada. I barely use Quo for client communication. Most of my buyers reach me on WhatsApp or email. The bulk of my texts on Quo are "
+    },
+    {
+      "title": "Cocoa-Way \u2013 Native macOS Wayland compositor for running Linux apps seamlessly",
       "source": "Hacker News",
-      "url": "https://whoami.wiki/blog/personal-encyclopedias",
+      "url": "https://github.com/J-x-Z/cocoa-way",
       "category": "tech",
       "stats": {
-        "points": 293,
-        "comments": 63
+        "points": 71,
+        "comments": 13
       }
     },
     {
-      "title": "Swift 6.3",
+      "title": "CERN uses tiny AI models burned into silicon for real-time LHC data filtering",
       "source": "Hacker News",
-      "url": "https://www.swift.org/blog/swift-6.3-released/",
+      "url": "https://theopenreader.org/Journalism:CERN_Uses_Tiny_AI_Models_Burned_into_Silicon_for_Real-Time_LHC_Data_Filtering",
       "category": "tech",
       "stats": {
-        "points": 109,
-        "comments": 46
+        "points": 116,
+        "comments": 62
       }
     },
     {
-      "title": "From zero to a RAG system: successes and failures",
+      "title": "Go hard on agents, not on your filesystem",
       "source": "Hacker News",
-      "url": "https://en.andros.dev/blog/aa31d744/from-zero-to-a-rag-system-successes-and-failures/",
+      "url": "https://jai.scs.stanford.edu/",
       "category": "tech",
       "stats": {
-        "points": 36,
-        "comments": 10
+        "points": 393,
+        "comments": 226
       }
     },
     {
-      "title": "Running Tesla Model 3's computer on my desk using parts from crashed cars",
+      "title": "AMD's Ryzen 9 9950X3D2 Dual Edition crams 208MB of cache into a single chip",
       "source": "Hacker News",
-      "url": "https://bugs.xdavidhu.me/tesla/2026/03/23/running-tesla-model-3s-computer-on-my-desk-using-parts-from-crashed-cars/",
+      "url": "https://arstechnica.com/gadgets/2026/03/amds-ryzen-9-9950x3d2-dual-edition-crams-208mb-of-cache-into-a-single-chip/",
       "category": "tech",
       "stats": {
-        "points": 664,
-        "comments": 217
+        "points": 189,
+        "comments": 96
       }
     },
     {
-      "title": "Obsolete Sounds",
+      "title": "Make macOS consistently bad unironically",
       "source": "Hacker News",
-      "url": "https://citiesandmemory.com/obsolete-sounds/",
+      "url": "https://lr0.org/blog/p/macos/",
       "category": "tech",
       "stats": {
-        "points": 53,
-        "comments": 7
+        "points": 432,
+        "comments": 313
       }
     }
   ],
   "trending": [
-    "Hawaii News Now - Breaking News, Latest News, Weat",
-    "2 banks, 2 coffee shops: 4 businesses now open in ",
-    "On at HoMA | Honolulu Museum of Art",
-    "Personal Encyclopedias",
-    "TOP 10 BEST Events This Weekend in Honolulu, HI - ",
-    "News - World Coffee Portal",
-    "KITV 4 Island News | Honolulu, HI News & Weather",
-    "Oahu Events | This Week Hawaii",
+    "DBEDT NEWS RELEASE: Visitor Spending and Visitor A",
+    "The Global Crisis Just Hit Your Hawaii Vacation",
     "Daily Coffee News by Roast Magazine - Business new",
-    "Hawaii News, Weather, Sports, Breaking News & Live"
+    "[MOD] What have you been brewing this week?/ Coffe",
+    "News",
+    "Hawaii News Now - Breaking News, Latest News, Weat",
+    "State tourism officials: No reason to cancel or po",
+    "Hawaii News, Weather, Sports, Breaking News & Live",
+    "Top Coffee Shop Industry Trends and Statistics in ",
+    "23-year-old Belton coffee shop owner uses TikTok t"
   ]
 }
