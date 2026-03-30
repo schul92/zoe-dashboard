@@ -1,25 +1,25 @@
 {
-  "collected_at": "2026-03-29T09:00:23.744235",
+  "collected_at": "2026-03-30T02:00:34.341743",
   "date_range": {
-    "start": "2026-02-27",
-    "end": "2026-03-29"
+    "start": "2026-02-28",
+    "end": "2026-03-30"
   },
   "overview": {
-    "sessions": 279,
-    "users": 211,
-    "pageviews": 706,
-    "bounce_rate": 0.6093189964157706
+    "sessions": 285,
+    "users": 214,
+    "pageviews": 715,
+    "bounceRate": 60.7
   },
   "top_pages": [
     {
       "page": "/",
-      "pageviews": 206,
-      "sessions": 163
+      "pageviews": 209,
+      "sessions": 166
     },
     {
       "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 58,
-      "sessions": 25
+      "pageviews": 59,
+      "sessions": 26
     },
     {
       "page": "/collections/treat",
@@ -47,14 +47,14 @@
       "sessions": 18
     },
     {
+      "page": "/products/paw-balm-healthy-healing-butter-senior-old-sick-pets-dogs",
+      "pageviews": 23,
+      "sessions": 10
+    },
+    {
       "page": "/products/beef-wrapped-pumpkin",
       "pageviews": 22,
       "sessions": 19
-    },
-    {
-      "page": "/products/paw-balm-healthy-healing-butter-senior-old-sick-pets-dogs",
-      "pageviews": 22,
-      "sessions": 9
     },
     {
       "page": "/collections/paw-care",
@@ -64,28 +64,28 @@
   ],
   "traffic_sources": [
     {
-      "channel": "Direct",
-      "sessions": 198
+      "source": "Direct",
+      "sessions": 201
     },
     {
-      "channel": "Organic Search",
-      "sessions": 38
+      "source": "Organic Search",
+      "sessions": 37
     },
     {
-      "channel": "Organic Shopping",
+      "source": "Organic Shopping",
       "sessions": 21
     },
     {
-      "channel": "Referral",
+      "source": "Referral",
       "sessions": 13
     },
     {
-      "channel": "Unassigned",
-      "sessions": 7
+      "source": "Organic Social",
+      "sessions": 8
     },
     {
-      "channel": "Organic Social",
-      "sessions": 5
+      "source": "Unassigned",
+      "sessions": 8
     }
   ]
 }
