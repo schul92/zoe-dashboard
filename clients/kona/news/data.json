@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-29T12:00:14.148626Z",
-  "version": "v2-2026-03-29",
+  "lastUpdated": "2026-03-30T12:00:18.511495Z",
+  "version": "v2-2026-03-30",
   "sources": {
     "brave_search": true,
     "twitter": false,
@@ -16,18 +16,18 @@
       "description": "<strong>Prince Waikiki reopens House of Sakura bar March 27</strong> and debuts new happy hour menu at 100 Sails Restaurant &amp; Bar with live music at golf club."
     },
     {
-      "title": "News",
-      "source": "Brave Search",
-      "url": "https://www.hawaiinewsnow.com/news/",
-      "category": "hawaii",
-      "description": "Community members, city officials, the University of Hawaii Rainbow Warriors football team, and even some local celebrities spent Saturday cleaning debris and trash from the beach."
-    },
-    {
       "title": "Hawaii News, Weather, Sports, Breaking News & Live Video | Honolulu, HI | KHON2",
       "source": "Brave Search",
       "url": "https://www.khon2.com",
       "category": "hawaii",
       "description": "Hawaii news, weather and sports. Honolulu, Kona, Hilo, Kauai and Maui County&#x27;s source for news, streaming video, weather, breaking news and sports. We are the news team that is working for Hawaii"
+    },
+    {
+      "title": "KITV 4 Island News | Honolulu, HI News & Weather",
+      "source": "Brave Search",
+      "url": "https://www.kitv.com/",
+      "category": "hawaii",
+      "description": "<strong>Passing showers move from Oahu to Maui today, with windward areas seeing the most rain and occasional downpours</strong>."
     },
     {
       "title": "On at HoMA | Honolulu Museum of Art",
@@ -72,114 +72,121 @@
       "description": "It\u2019s two sides of the same coin: ... \u2014 so coffee shops have experimented with increasing their pay and benefits, which leads to higher labor costs. However, making peace with higher labor costs is wor"
     },
     {
+      "title": "Why the Cost of Your Coffee Has Soared\u2014and Isn\u2019t Going Down Soon",
+      "source": "r/coffee",
+      "url": "https://www.reddit.com/r/Coffee/comments/1s76p0g/why_the_cost_of_your_coffee_has_soaredand_isnt/",
+      "category": "reddit",
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>One roaster\u2019s ride on the roller coaster of coffee pricing helps explain the many reasons consumers keep paying more for a cup of joe</p> </div><!-- SC_ON --> &#32; s"
+    },
+    {
       "title": "[MOD] The Daily Question Thread",
       "source": "r/coffee",
-      "url": "https://www.reddit.com/r/Coffee/comments/1s6r3w4/mod_the_daily_question_thread/",
+      "url": "https://www.reddit.com/r/Coffee/comments/1s7ma5u/mod_the_daily_question_thread/",
       "category": "reddit",
       "description": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"https://www.reddit.com/r/Coffee\">/r/Coffee</a> question thread!</p> <p>There are no stupid questions here, ask a question and get an ans"
     },
     {
-      "title": "You can\u2019t park there",
+      "title": "You ever go on a nice trip and then come back to HNL airport and get depressed on the drive home because everything looks buss",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1s6hgtg/you_cant_park_there/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1s7if2k/you_ever_go_on_a_nice_trip_and_then_come_back_to/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1s6hgtg/you_cant_park_there/\"> <img alt=\"You can\u2019t park there\" src=\"https://preview.redd.it/fh64sapivvrg1.jpeg?width=640&amp;crop=sma"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Just came back from a weeklong trip in vancouver, took an uber home to kakaako and he went Nimitz way.</p> <p>Brah I would be so over it if I was a tourist and that w"
     },
     {
-      "title": "State capitol evacuated amid possible bomb threat",
+      "title": "Featherwork update",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1s6e1k4/state_capitol_evacuated_amid_possible_bomb_threat/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1s7bc9d/featherwork_update/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p><a href=\"https://www.hawaiinewsnow.com/2026/03/28/state-capitol-evacuated-amid-possible-bomb-threat-nearby-streets-closed/\">https://www.hawaiinewsnow.com/2026/03/28/s"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1s7bc9d/featherwork_update/\"> <img alt=\"Featherwork update\" src=\"https://preview.redd.it/0yk10lugq2sg1.jpg?width=140&amp;height=78&am"
     },
     {
-      "title": "Fireworks at Kahala?",
+      "title": "Money taken from AIPAC or pro-Israel lobby by Brian Schatz and Ed Case",
       "source": "r/hawaii",
-      "url": "https://www.reddit.com/r/Hawaii/comments/1s6o6lr/fireworks_at_kahala/",
+      "url": "https://www.reddit.com/r/Hawaii/comments/1s7k3ly/money_taken_from_aipac_or_proisrael_lobby_by/",
       "category": "reddit",
-      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1s6o6lr/fireworks_at_kahala/\"> <img alt=\"Fireworks at Kahala?\" src=\"https://preview.redd.it/cct27skvmxrg1.jpeg?width=640&amp;crop=sma"
+      "description": "<table> <tr><td> <a href=\"https://www.reddit.com/r/Hawaii/comments/1s7k3ly/money_taken_from_aipac_or_proisrael_lobby_by/\"> <img alt=\"Money taken from AIPAC or pro-Israel lobby by Brian Schatz and Ed C"
     },
     {
-      "title": "Business has dried up. No income coming in. No assets. No way forward. Is bankruptcy the answer?",
+      "title": "Our first \"growth hire\" spent three months building dashboards nobody looked at and left for a bigger title elsewhere",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1s628ob/business_has_dried_up_no_income_coming_in_no/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1s7idy8/our_first_growth_hire_spent_three_months_building/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi everyone.</p> <p>I run a small, niche service business, and the past three years have been relentless. Our entire industry depends on government policy. New legisl"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Brought someone in specifically to own growth. solid resume, talked a good game in interviews, had experience at names people recognize.</p> <p>First month was resear"
     },
     {
-      "title": "Are \u201csmall manufacturing businesses\u201d the most underrated career path right now?",
+      "title": "When Do I Give Up?",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1s66keq/are_small_manufacturing_businesses_the_most/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1s7cvfu/when_do_i_give_up/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>Everyone around me is either chasing corporate jobs or trying to build something online, but I recently started looking into small manufacturing businesses (like food"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>TW; Suicide</p> <p>Hi there. I worked at a hobby store from 2019 - 2024. When my boss retired, I took out a business loan and purchased the business from her in 2024."
     },
     {
-      "title": "This is lonelier than I was expecting",
+      "title": "I\u2019m 27F, Built a marketing agency that made ~500k AED, partner fallout wiped the team now I\u2019m running it alone and unsure what to do",
       "source": "r/smallbusiness",
-      "url": "https://www.reddit.com/r/smallbusiness/comments/1s68qyx/this_is_lonelier_than_i_was_expecting/",
+      "url": "https://www.reddit.com/r/smallbusiness/comments/1s7g63c/im_27f_built_a_marketing_agency_that_made_500k/",
       "category": "reddit",
-      "description": "<!-- SC_OFF --><div class=\"md\"><p>I knew it would be lonely because there's a shit ton of hours spent in isolation building the infrastructure of the business before you're even &quot;open&quot;. </p>"
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>About two years ago I started a marketing agency with two partners. The first six months were slow, but after that we landed around 6\u20137 clients and generated roughly "
     },
     {
-      "title": "Overestimation of microplastics potentially caused by scientists' gloves",
+      "title": "Ghostmoon.app \u2013 The Swiss Army Knife for your macOS menu bar",
       "source": "Hacker News",
-      "url": "https://news.umich.edu/nitrile-and-latex-gloves-may-cause-overestimation-of-microplastics-u-m-study-reveals/",
+      "url": "https://www.mgrunwald.com/ghostmoon/",
       "category": "tech",
       "stats": {
-        "points": 33,
-        "comments": 11
-      }
-    },
-    {
-      "title": "Show HN: Sheet Ninja \u2013 Google Sheets as a CRUD Back End for Vibe Coders",
-      "source": "Hacker News",
-      "url": "https://sheetninja.io",
-      "category": "tech",
-      "stats": {
-        "points": 10,
+        "points": 23,
         "comments": 8
       }
     },
     {
-      "title": "Founder of GitLab battles cancer by founding companies",
+      "title": "The curious case of retro demo scene graphics",
       "source": "Hacker News",
-      "url": "https://sytse.com/cancer/",
+      "url": "https://www.datagubbe.se/aipixels/",
       "category": "tech",
       "stats": {
-        "points": 1123,
-        "comments": 216
+        "points": 223,
+        "comments": 46
       }
     },
     {
-      "title": "Miasma: A tool to trap AI web scrapers in an endless poison pit",
+      "title": "I use excalidraw to manage my diagrams for my blog",
       "source": "Hacker News",
-      "url": "https://github.com/austin-weeks/miasma",
+      "url": "https://blog.lysk.tech/excalidraw-frame-export/",
       "category": "tech",
       "stats": {
-        "points": 16,
-        "comments": 2
+        "points": 99,
+        "comments": 41
       }
     },
     {
-      "title": "Technology: The (nearly) perfect USB cable tester does exist",
+      "title": "ChatGPT won't let you type until Cloudflare reads your React state",
       "source": "Hacker News",
-      "url": "https://blog.literarily-starved.com/2026/02/technology-the-nearly-perfect-usb-cable-tester-does-exist/",
+      "url": "https://www.buchodi.com/chatgpt-wont-let-you-type-until-cloudflare-reads-your-react-state-i-decrypted-the-program-that-does-it/",
       "category": "tech",
       "stats": {
-        "points": 92,
-        "comments": 33
+        "points": 722,
+        "comments": 455
+      }
+    },
+    {
+      "title": "Hamilton-Jacobi-Bellman Equation: Reinforcement Learning and Diffusion Models",
+      "source": "Hacker News",
+      "url": "https://dani2442.github.io/posts/continuous-rl/",
+      "category": "tech",
+      "stats": {
+        "points": 59,
+        "comments": 16
       }
     }
   ],
   "trending": [
-    "Oahu Events | This Week Hawaii",
-    "News",
     "Daily Coffee News by Roast Magazine - Business new",
+    "Oahu Events | This Week Hawaii",
     "News - World Coffee Portal",
     "Hawaii News, Weather, Sports, Breaking News & Live",
-    "[MOD] The Daily Question Thread",
     "Hawaii News Now - Breaking News, Latest News, Weat",
+    "Why the Cost of Your Coffee Has Soared\u2014and Isn\u2019t G",
     "Top Coffee Shop Industry Trends and Statistics in ",
+    "KITV 4 Island News | Honolulu, HI News & Weather",
     "On at HoMA | Honolulu Museum of Art",
     "TOP 10 BEST Events This Weekend in Honolulu, HI - "
   ]
