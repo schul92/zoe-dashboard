@@ -1,49 +1,94 @@
 {
-  "generated": "2026-03-26T00:30:00Z",
-  "period": "2026-03-19 to 2026-03-25",
-  "model": "claude-sonnet-4-6",
-  "summary": "Grand Opening week! Site is indexed and ranking. Biggest opportunity: 900+ Chinese-language impressions with 0 clicks — needs zh-CN content. Korean queries strong at pos 1-3. Brand query 'kona coffee donut' at #1.",
-  "alerts": [],
-  "quick_wins": [
+  "generated": "2026-03-31",
+  "summary": {
+    "clicks": 18,
+    "impressions": 1317,
+    "avgPosition": 6.2,
+    "bestKeyword": "donut waikiki",
+    "uniqueQueries": 57
+  },
+  "keyInsights": [
+    "Brand query 'kona coffee donut' performing well: pos 1.2, 8 clicks, 16 impressions — CTR 50%",
+    "Chinese-language queries (夏威夷科纳咖啡) generating 886 impressions combined but 0 clicks — opportunity for Chinese-language content",
+    "Korean queries (코나 커피, 코나커피) strong impressions ~70 combined, positions 1-3 — brand is indexed well for KR market",
+    "'donuts near me' at pos 9.8 with 12 impressions — just outside top 10, push to page 1",
+    "'kona coffee' at pos 5.2 with 26 impressions — high volume generic term, optimize for it",
+    "donut waikiki at pos 1 — maintain this ranking",
+    "GA4 shows 0 sessions — either tracking not installed or very new site"
+  ],
+  "priorityActions": [
     {
       "priority": "HIGH",
-      "action": "Add Chinese (zh-CN) landing page or meta tags",
-      "reason": "3 Chinese queries totaling 914 impressions at pos 4-8, ZERO clicks. High-intent Chinese tourists searching Kona coffee info. Adding zh-CN content could unlock 50-100 clicks/week.",
-      "queries": ["夏威夷科纳咖啡风味 (320 imp, pos 4)", "夏威夷科纳适合冲美式吗 (301 imp, pos 6.2)", "夏威夷科纳咖啡 介绍 (293 imp, pos 8.4)"]
+      "action": "Chinese content page",
+      "detail": "夏威夷科纳咖啡 queries: 886 impressions, 0 clicks. Add Chinese-language about/menu section to capture this traffic",
+      "effort": "medium"
     },
     {
-      "priority": "HIGH", 
-      "action": "Improve CTR for 'kona coffee' (34 imp, pos 4.3, 0 clicks)",
-      "reason": "Position 4 with zero clicks — title/description not compelling enough for this generic query. A/B test title with 'Waikiki's Best Kona Coffee' angle.",
-      "action_detail": "Update meta title to include 'Waikiki' for geographic relevance"
-    },
-    {
-      "priority": "MEDIUM",
-      "action": "Target 'kona coffee waikiki' more aggressively",
-      "reason": "pos 8.3, 6 impressions — this is our money keyword. Needs more page content targeting this phrase.",
-      "action_detail": "Add H2 or FAQ entry: 'Where to find Kona Coffee in Waikiki'"
+      "priority": "HIGH",
+      "action": "Push 'donuts near me' to top 10",
+      "detail": "Currently pos 9.8 with 12 impressions. Schema markup, more local links, Google Business profile optimization",
+      "effort": "low"
     },
     {
       "priority": "MEDIUM",
-      "action": "Korean content enhancement",
-      "reason": "Korean queries (코나커피, 코나 커피, 하와이 코나 커피, 말라사다 도넛) = 86 total impressions at pos 1-6. Strong ranking but CTR low (2 clicks from 86 imp). Korean meta description could help.",
-      "action_detail": "Add Korean meta description targeting Korean tourists"
+      "action": "Install GA4 tracking",
+      "detail": "GA4 shows 0 sessions — verify tracking code is correctly installed on live site",
+      "effort": "low"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Optimize title for 'kona coffee waikiki'",
+      "detail": "Pos 16.8, 5 impressions. Target keyword not well-positioned. Add to homepage H1 or sub-header.",
+      "effort": "low"
+    },
+    {
+      "priority": "LOW",
+      "action": "Japanese content",
+      "detail": "コナ コーヒー ハワイ queries at pos 63-87 — low priority but Waikiki has heavy Japanese tourism",
+      "effort": "medium"
     }
   ],
-  "content_recommendations": [
-    "Create a 'Chinese visitors guide' page or section (zh-CN) — huge opportunity",
-    "Add FAQ: '와이키키에서 코나 커피 어디서?' (Korean tourist FAQ)",  
-    "Blog post: 'What is Kona Coffee? Your guide to Hawaii's famous coffee' — targets educational queries",
-    "Optimize 'donuts near me' page (pos 9.3, 27 imp, 1 click) — schema markup for local business"
-  ],
-  "technical_notes": [
-    "PageSpeed API quota exceeded — unable to run today. Check tomorrow.",
-    "Meta description correctly says 'Late March' — NO Feb 25 issue found. ✅",
-    "Site has 14 indexed pages — good coverage",
-    "GA4 showing 0 sessions — possible tracking issue or new property not yet receiving data"
-  ],
-  "opening_date_check": {
-    "status": "CLEAN ✅",
-    "detail": "No 'February' or 'Feb 25' found anywhere on homepage or FAQ. Meta description correctly states 'Grand Opening Late March at 2142 Kalākaua Ave'"
-  }
+  "openingDateStatus": "GOOD — website shows 'Late March ~ Early April 2026'. No Feb 25 mentions found.",
+  "quickWins": [
+    {
+      "query": "donuts near me",
+      "position": 9.8,
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0.0,
+      "potentialGain": 3
+    },
+    {
+      "query": "kona coffee",
+      "position": 5.2,
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0.0,
+      "potentialGain": 7
+    },
+    {
+      "query": "夏威夷科纳咖啡 介绍",
+      "position": 8.2,
+      "clicks": 0,
+      "impressions": 290,
+      "ctr": 0.0,
+      "potentialGain": 87
+    },
+    {
+      "query": "夏威夷科纳咖啡风味",
+      "position": 4.1,
+      "clicks": 0,
+      "impressions": 296,
+      "ctr": 0.0,
+      "potentialGain": 88
+    },
+    {
+      "query": "夏威夷科纳适合冲美式吗",
+      "position": 6.6,
+      "clicks": 0,
+      "impressions": 300,
+      "ctr": 0.0,
+      "potentialGain": 90
+    }
+  ]
 }
