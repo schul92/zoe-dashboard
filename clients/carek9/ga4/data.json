@@ -1,91 +1,133 @@
 {
-  "collected_at": "2026-03-30T02:00:34.341743",
-  "date_range": {
-    "start": "2026-02-28",
-    "end": "2026-03-30"
+  "collected_at": "2026-03-31T02:00:34.679717",
+  "period": "last_30_days",
+  "summary": {
+    "sessions": 428,
+    "users": 331,
+    "pageviews": 565
   },
-  "overview": {
-    "sessions": 285,
-    "users": 214,
-    "pageviews": 715,
-    "bounceRate": 60.7
+  "traffic_sources": {
+    "Direct": {
+      "sessions": 310,
+      "users": 250
+    },
+    "Organic Shopping": {
+      "sessions": 30,
+      "users": 8
+    },
+    "Organic Search": {
+      "sessions": 67,
+      "users": 61
+    },
+    "Organic Social": {
+      "sessions": 8,
+      "users": 7
+    },
+    "Referral": {
+      "sessions": 13,
+      "users": 5
+    }
   },
   "top_pages": [
     {
-      "page": "/",
-      "pageviews": 209,
-      "sessions": 166
+      "path": "/",
+      "pageviews": 204,
+      "sessions": 162
     },
     {
-      "page": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
-      "pageviews": 59,
-      "sessions": 26
-    },
-    {
-      "page": "/collections/treat",
+      "path": "/products/protein-chips-chicken-chips-beef-chips-pork-chips",
       "pageviews": 54,
-      "sessions": 31
+      "sessions": 22
     },
     {
-      "page": "/products/the-tab-bath-tablet",
-      "pageviews": 34,
-      "sessions": 24
+      "path": "/collections/treat",
+      "pageviews": 39,
+      "sessions": 25
     },
     {
-      "page": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
-      "pageviews": 32,
-      "sessions": 19
+      "path": "/products/the-tab-bath-tablet",
+      "pageviews": 30,
+      "sessions": 20
     },
     {
-      "page": "/pages/about-us",
-      "pageviews": 27,
-      "sessions": 23
-    },
-    {
-      "page": "/collections/bath-product",
-      "pageviews": 24,
-      "sessions": 18
-    },
-    {
-      "page": "/products/paw-balm-healthy-healing-butter-senior-old-sick-pets-dogs",
-      "pageviews": 23,
-      "sessions": 10
-    },
-    {
-      "page": "/products/beef-wrapped-pumpkin",
-      "pageviews": 22,
-      "sessions": 19
-    },
-    {
-      "page": "/collections/paw-care",
-      "pageviews": 18,
-      "sessions": 15
-    }
-  ],
-  "traffic_sources": [
-    {
-      "source": "Direct",
-      "sessions": 201
-    },
-    {
-      "source": "Organic Search",
-      "sessions": 37
-    },
-    {
-      "source": "Organic Shopping",
+      "path": "/pages/about-us",
+      "pageviews": 25,
       "sessions": 21
     },
     {
-      "source": "Referral",
+      "path": "/products/paw-balm-healthy-healing-butter-senior-old-sick-pets-dogs",
+      "pageviews": 22,
+      "sessions": 9
+    },
+    {
+      "path": "/products/chicken-wrapped-pumpkin-healthy-dog-treats",
+      "pageviews": 21,
       "sessions": 13
     },
     {
-      "source": "Organic Social",
+      "path": "/collections/bath-product",
+      "pageviews": 20,
+      "sessions": 14
+    },
+    {
+      "path": "/products/beef-wrapped-pumpkin",
+      "pageviews": 18,
+      "sessions": 16
+    },
+    {
+      "path": "/collections/soft-wellness-treats",
+      "pageviews": 11,
+      "sessions": 10
+    },
+    {
+      "path": "/pages/carek9-x-human-canine-collaborative",
+      "pageviews": 10,
+      "sessions": 10
+    },
+    {
+      "path": "/collections/food-topper",
+      "pageviews": 10,
+      "sessions": 9
+    },
+    {
+      "path": "/blogs/news",
+      "pageviews": 9,
       "sessions": 8
     },
     {
-      "source": "Unassigned",
-      "sessions": 8
+      "path": "/pages/contact-us",
+      "pageviews": 8,
+      "sessions": 7
+    },
+    {
+      "path": "/collections/paw-care",
+      "pageviews": 8,
+      "sessions": 6
+    },
+    {
+      "path": "/cart",
+      "pageviews": 8,
+      "sessions": 7
+    },
+    {
+      "path": "/collections/thin-crunchy-treats",
+      "pageviews": 7,
+      "sessions": 7
+    },
+    {
+      "path": "/products/paw-clean-pawder",
+      "pageviews": 7,
+      "sessions": 7
+    },
+    {
+      "path": "/products/premium-beef-training-treat-homemade-usda",
+      "pageviews": 6,
+      "sessions": 7
+    },
+    {
+      "path": "/products/pars-mint-dental-cookies",
+      "pageviews": 6,
+      "sessions": 6
     }
   ]
 }
