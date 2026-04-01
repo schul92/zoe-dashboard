@@ -1,94 +1,94 @@
 {
-  "generated": "2026-03-31",
+  "generated": "2026-04-01",
   "summary": {
-    "clicks": 18,
-    "impressions": 1317,
+    "clicks": 15,
+    "impressions": 1087,
     "avgPosition": 6.2,
-    "bestKeyword": "donut waikiki",
-    "uniqueQueries": 57
+    "bestKeyword": "kona coffee beans near me",
+    "uniqueQueries": 55
   },
   "keyInsights": [
-    "Brand query 'kona coffee donut' performing well: pos 1.2, 8 clicks, 16 impressions — CTR 50%",
-    "Chinese-language queries (夏威夷科纳咖啡) generating 886 impressions combined but 0 clicks — opportunity for Chinese-language content",
-    "Korean queries (코나 커피, 코나커피) strong impressions ~70 combined, positions 1-3 — brand is indexed well for KR market",
-    "'donuts near me' at pos 9.8 with 12 impressions — just outside top 10, push to page 1",
-    "'kona coffee' at pos 5.2 with 26 impressions — high volume generic term, optimize for it",
-    "donut waikiki at pos 1 — maintain this ranking",
-    "GA4 shows 0 sessions — either tracking not installed or very new site"
+    "Brand query 'kona coffee donut' at pos 1.2 — 7 clicks, 13 impressions. CTR ~54%. Strong brand presence.",
+    "Chinese queries (科纳咖啡, 夏威夷科纳咖啡) generating 742+ impressions on /zh/ page — very low CTR. Title/desc optimization needed.",
+    "Quick wins: 'donuts near me' pos 9.7, 'kona coffee' pos 5.7 — just outside top spots, high-value targets.",
+    "'coffee near me' at pos 13.8 — volume keyword not yet capturing clicks. Local SEO improvement needed.",
+    "GA4 still showing 0 sessions — tracking code verification urgent.",
+    "Japanese market: jpn 0 clicks / 24 impressions — Japanese content opportunity remains untapped.",
+    "Website opening date is CORRECT: 'Late March ~ Early April 2026' — no Feb 25 issues found."
   ],
   "priorityActions": [
     {
       "priority": "HIGH",
-      "action": "Chinese content page",
-      "detail": "夏威夷科纳咖啡 queries: 886 impressions, 0 clicks. Add Chinese-language about/menu section to capture this traffic",
-      "effort": "medium"
+      "action": "Fix GA4 tracking",
+      "detail": "GA4 shows 0 sessions. Verify gtag/measurement ID is correctly placed on live site.",
+      "effort": "low"
     },
     {
       "priority": "HIGH",
+      "action": "Optimize Chinese-language page CTR",
+      "detail": "/zh/about-kona-coffee has 742 impressions but nearly 0 CTR. Rewrite meta title/desc to be click-worthy in Chinese.",
+      "effort": "medium"
+    },
+    {
+      "priority": "MEDIUM",
       "action": "Push 'donuts near me' to top 10",
-      "detail": "Currently pos 9.8 with 12 impressions. Schema markup, more local links, Google Business profile optimization",
+      "detail": "Currently pos 9.7. Schema markup refresh + Google Business profile optimization.",
       "effort": "low"
     },
     {
       "priority": "MEDIUM",
-      "action": "Install GA4 tracking",
-      "detail": "GA4 shows 0 sessions — verify tracking code is correctly installed on live site",
-      "effort": "low"
-    },
-    {
-      "priority": "MEDIUM",
-      "action": "Optimize title for 'kona coffee waikiki'",
-      "detail": "Pos 16.8, 5 impressions. Target keyword not well-positioned. Add to homepage H1 or sub-header.",
+      "action": "Target 'kona coffee waikiki' and 'coffee near me'",
+      "detail": "High-intent local queries still ranking 13-18. Homepage H1 optimization + local citations.",
       "effort": "low"
     },
     {
       "priority": "LOW",
-      "action": "Japanese content",
-      "detail": "コナ コーヒー ハワイ queries at pos 63-87 — low priority but Waikiki has heavy Japanese tourism",
+      "action": "Japanese language content",
+      "detail": "24 impressions, 0 clicks from Japan. Waikiki has heavy Japanese tourism — consider /ja/ page.",
       "effort": "medium"
     }
   ],
-  "openingDateStatus": "GOOD — website shows 'Late March ~ Early April 2026'. No Feb 25 mentions found.",
+  "openingDateStatus": "GOOD — website shows Late March ~ Early April 2026. No Feb 25 mentions found.",
   "quickWins": [
     {
       "query": "donuts near me",
-      "position": 9.8,
+      "position": 9.7,
       "clicks": 0,
-      "impressions": 12,
+      "impressions": 11,
       "ctr": 0.0,
       "potentialGain": 3
     },
     {
       "query": "kona coffee",
-      "position": 5.2,
+      "position": 5.7,
       "clicks": 0,
-      "impressions": 26,
+      "impressions": 20,
       "ctr": 0.0,
-      "potentialGain": 7
+      "potentialGain": 6
     },
     {
       "query": "夏威夷科纳咖啡 介绍",
-      "position": 8.2,
+      "position": 8.0,
       "clicks": 0,
-      "impressions": 290,
+      "impressions": 241,
       "ctr": 0.0,
-      "potentialGain": 87
+      "potentialGain": 72
     },
     {
       "query": "夏威夷科纳咖啡风味",
       "position": 4.1,
       "clicks": 0,
-      "impressions": 296,
+      "impressions": 246,
       "ctr": 0.0,
-      "potentialGain": 88
+      "potentialGain": 73
     },
     {
       "query": "夏威夷科纳适合冲美式吗",
       "position": 6.6,
       "clicks": 0,
-      "impressions": 300,
+      "impressions": 250,
       "ctr": 0.0,
-      "potentialGain": 90
+      "potentialGain": 75
     }
   ]
 }
